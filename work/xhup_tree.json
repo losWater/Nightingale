@@ -1,0 +1,1003 @@
+{
+  "sha": "6154460b921be5dbabdb0a86a6164f5bd08440e8",
+  "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/6154460b921be5dbabdb0a86a6164f5bd08440e8",
+  "tree": [
+    {
+      "path": ".emmyrc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e447bb1e46fedd3d19731836277192876127526",
+      "size": 125,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/5e447bb1e46fedd3d19731836277192876127526"
+    },
+    {
+      "path": ".envrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1915870fa142f4f14450ae0f1ceccb45d2abd553",
+      "size": 50,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/1915870fa142f4f14450ae0f1ceccb45d2abd553"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d94007229275a48be0930c3ccc6a2a7b3f147b1",
+      "size": 277,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/3d94007229275a48be0930c3ccc6a2a7b3f147b1"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a5b6ce8bc4a01875c124a9fad0b5fb251417fc",
+      "size": 98,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/77a5b6ce8bc4a01875c124a9fad0b5fb251417fc"
+    },
+    {
+      "path": ".luarc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf0f82a28a9956e169775b72656280cd6cf6a4d2",
+      "size": 643,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/bf0f82a28a9956e169775b72656280cd6cf6a4d2"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85ee050028aa8fffd45ae321abe63af8d6d362a7",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/85ee050028aa8fffd45ae321abe63af8d6d362a7"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b828e8a0ec13bbc609d00d37b9a3ba2daeb91855",
+      "size": 3590,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b828e8a0ec13bbc609d00d37b9a3ba2daeb91855"
+    },
+    {
+      "path": ".yamllint.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b542c2e821570ef8e23da2a1fc5af0d552014e9",
+      "size": 271,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/2b542c2e821570ef8e23da2a1fc5af0d552014e9"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a041280bd00a9d068f503b8ee7ce35214bd24a1",
+      "size": 7652,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/0a041280bd00a9d068f503b8ee7ce35214bd24a1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e541261a958cfd57c9220bf14b5df158cf581908",
+      "size": 17700,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e541261a958cfd57c9220bf14b5df158cf581908"
+    },
+    {
+      "path": "calendar.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c60dd5a25b46ad92e250942183ed834388478f45",
+      "size": 1587,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/c60dd5a25b46ad92e250942183ed834388478f45"
+    },
+    {
+      "path": "cn_dicts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8b1c2b196bb48dbf9da9b600f8230ac5d33bfc0",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/f8b1c2b196bb48dbf9da9b600f8230ac5d33bfc0"
+    },
+    {
+      "path": "cn_dicts/ext",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "655e2a5d4163779363ee829b0d5947a51c9d23c6"
+    },
+    {
+      "path": "cn_dicts/flyhe_chars.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7b7323cb685ba7732f772b857b9b00d44cd3f6e",
+      "size": 904170,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/a7b7323cb685ba7732f772b857b9b00d44cd3f6e"
+    },
+    {
+      "path": "cn_dicts/flypy_base.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c3303f5cf46f03c9e60fd64f6436bab9eaec294",
+      "size": 25612548,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/8c3303f5cf46f03c9e60fd64f6436bab9eaec294"
+    },
+    {
+      "path": "cn_dicts/flypy_chars.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c2773335c8108bbe896b9af588d619e22045132",
+      "size": 121869,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/3c2773335c8108bbe896b9af588d619e22045132"
+    },
+    {
+      "path": "cn_dicts/flypy_chars_ext.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61f6ddeba1124556b97acd82609f1d26de4ffc58",
+      "size": 523444,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/61f6ddeba1124556b97acd82609f1d26de4ffc58"
+    },
+    {
+      "path": "cn_dicts/flypy_melt_eng.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e59f35b5842dd7a2d89ef7772d05067bd34bd257",
+      "size": 8493,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e59f35b5842dd7a2d89ef7772d05067bd34bd257"
+    },
+    {
+      "path": "custom_phrase.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "743280219fab2cab99d8f3b5acf15efa48550b5f",
+      "size": 1631,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/743280219fab2cab99d8f3b5acf15efa48550b5f"
+    },
+    {
+      "path": "custom_predict_rules.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "064bc30cf84a7b727cc9b97c1267986962417fdb",
+      "size": 77,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/064bc30cf84a7b727cc9b97c1267986962417fdb"
+    },
+    {
+      "path": "default.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec712b2f953bc8248cf86ca186d8fdb92784cc7",
+      "size": 1035,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/bec712b2f953bc8248cf86ca186d8fdb92784cc7"
+    },
+    {
+      "path": "default.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1deaffa1efa6590c197c2268b3400ef24cf16197",
+      "size": 12724,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/1deaffa1efa6590c197c2268b3400ef24cf16197"
+    },
+    {
+      "path": "dprint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26e73f0dd528417a02f920f305f5a7f162ece74a",
+      "size": 546,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/26e73f0dd528417a02f920f305f5a7f162ece74a"
+    },
+    {
+      "path": "easy_en.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "500b5a9cb91778f4603ba7a0735c09e512a7ff74",
+      "size": 480,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/500b5a9cb91778f4603ba7a0735c09e512a7ff74"
+    },
+    {
+      "path": "easy_en.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6891ce946740bb0cf869bbae812df86ff2ae9c66",
+      "size": 4164,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6891ce946740bb0cf869bbae812df86ff2ae9c66"
+    },
+    {
+      "path": "ecdict.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81b44d2b98dad4422f9bcfd36d9ef3efbe63ba5c",
+      "size": 186,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/81b44d2b98dad4422f9bcfd36d9ef3efbe63ba5c"
+    },
+    {
+      "path": "ecdict.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4928c03d5939a948b54f5369a8242a216dda2fd",
+      "size": 582,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e4928c03d5939a948b54f5369a8242a216dda2fd"
+    },
+    {
+      "path": "en_dicts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7c7374325726c9b1bc7e9f0ef4a1058dfde03eb",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/f7c7374325726c9b1bc7e9f0ef4a1058dfde03eb"
+    },
+    {
+      "path": "en_dicts/cn_en_flypy.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56d13dc6ca37614c8c9dc58a28052323425be4e8",
+      "size": 14243,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/56d13dc6ca37614c8c9dc58a28052323425be4e8"
+    },
+    {
+      "path": "en_dicts/easy_en.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ffb03b52242ec0837fca3e300583d89517b0d46",
+      "size": 4752164,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/9ffb03b52242ec0837fca3e300583d89517b0d46"
+    },
+    {
+      "path": "en_dicts/ecdict.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7c61f27484c1c4588ffb76abafb7092f60f16d7",
+      "size": 27378848,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b7c61f27484c1c4588ffb76abafb7092f60f16d7"
+    },
+    {
+      "path": "en_dicts/en.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0452291fd82e359c3304b279018c14422b856536",
+      "size": 369070,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/0452291fd82e359c3304b279018c14422b856536"
+    },
+    {
+      "path": "en_dicts/en_custom.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "725dc0cfad688118a84ef96a74d892b75c91b3ec",
+      "size": 3520,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/725dc0cfad688118a84ef96a74d892b75c91b3ec"
+    },
+    {
+      "path": "en_dicts/en_ext.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523a4781b28b9a34ecc396e41fd131c262026843",
+      "size": 52199,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/523a4781b28b9a34ecc396e41fd131c262026843"
+    },
+    {
+      "path": "en_dicts/en_ext_private.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddda7ae05764278ba3be947e715f97e2a084082a",
+      "size": 6446,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/ddda7ae05764278ba3be947e715f97e2a084082a"
+    },
+    {
+      "path": "fcitx5-theme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c7d72ef9067a819f808f73342e42bec841e3e4b",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/7c7d72ef9067a819f808f73342e42bec841e3e4b"
+    },
+    {
+      "path": "fcitx5-theme/wetype.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6525865aa08e09a40caac8b87f401f911b1fb84b",
+      "size": 4513,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6525865aa08e09a40caac8b87f401f911b1fb84b"
+    },
+    {
+      "path": "fcitx5-theme/wetype_liquidGlass.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6525865aa08e09a40caac8b87f401f911b1fb84b",
+      "size": 4513,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6525865aa08e09a40caac8b87f401f911b1fb84b"
+    },
+    {
+      "path": "flyhe.trime.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "173cdf109f353eaf73acba46a7d5fc873a2bda64",
+      "size": 300932,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/173cdf109f353eaf73acba46a7d5fc873a2bda64"
+    },
+    {
+      "path": "flyhe_fast.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a37e0bcdb07f89fbaaf761fb57b7ecf3a99c497",
+      "size": 5390,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/8a37e0bcdb07f89fbaaf761fb57b7ecf3a99c497"
+    },
+    {
+      "path": "flyhe_fast.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d5cbb677f4c9860e8e768bad2ba1da6719fa44",
+      "size": 287,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/23d5cbb677f4c9860e8e768bad2ba1da6719fa44"
+    },
+    {
+      "path": "flyhe_fast.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea0a68e3702862059a78b335aa967d49c9798c3c",
+      "size": 11124,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/ea0a68e3702862059a78b335aa967d49c9798c3c"
+    },
+    {
+      "path": "flypy_chord_rule.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c934fcd71840e44a3a587d35b631e2e98d950bbc",
+      "size": 2453,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/c934fcd71840e44a3a587d35b631e2e98d950bbc"
+    },
+    {
+      "path": "flypy_keymap.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "793347dd97660ca02f77410968244abbfe62cc54",
+      "size": 2846,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/793347dd97660ca02f77410968244abbfe62cc54"
+    },
+    {
+      "path": "flypy_radical.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b19224dbd86d72844efaac81a0a04dc9544ecd86",
+      "size": 1359182,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b19224dbd86d72844efaac81a0a04dc9544ecd86"
+    },
+    {
+      "path": "flypy_radical.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8efb042e880dc8e53789ee05a8995414db2b469d",
+      "size": 746,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/8efb042e880dc8e53789ee05a8995414db2b469d"
+    },
+    {
+      "path": "flypy_reverse.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aca2df01e633216240b5d0a29f3eec59839190eb",
+      "size": 996203,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/aca2df01e633216240b5d0a29f3eec59839190eb"
+    },
+    {
+      "path": "flypy_reverse.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f9725a38269d1cd25a436f3f4d5491cf0be5f3",
+      "size": 392,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e9f9725a38269d1cd25a436f3f4d5491cf0be5f3"
+    },
+    {
+      "path": "flypy_xhfast.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "079161698a7636b320b03c01bfc4226deaf0c61d",
+      "size": 16254,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/079161698a7636b320b03c01bfc4226deaf0c61d"
+    },
+    {
+      "path": "flypy_xhfast.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9a1c2c7860d77c1f2fa2d7cb95b1df6c1e0ec02",
+      "size": 863,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/a9a1c2c7860d77c1f2fa2d7cb95b1df6c1e0ec02"
+    },
+    {
+      "path": "flypy_xhfast.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e053be14551c2f653630868ab094012307b3bc3a",
+      "size": 16735,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e053be14551c2f653630868ab094012307b3bc3a"
+    },
+    {
+      "path": "fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab4fcc7c76b75a6c5b80a5d1fd5bd9ffe8cdc803",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/ab4fcc7c76b75a6c5b80a5d1fd5bd9ffe8cdc803"
+    },
+    {
+      "path": "fonts/iconfont.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db6d154cd1db1528d57b3637b5bb150a563a99bb",
+      "size": 724608,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/db6d154cd1db1528d57b3637b5bb150a563a99bb"
+    },
+    {
+      "path": "fonts/other-fonts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74fd4d0fc18b0623f55404524d00ec2927fc109b",
+      "size": 168,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/74fd4d0fc18b0623f55404524d00ec2927fc109b"
+    },
+    {
+      "path": "intro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60bea2001b62f68eaeb5c5944e5b811fa9174d4a",
+      "size": 9968,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/60bea2001b62f68eaeb5c5944e5b811fa9174d4a"
+    },
+    {
+      "path": "lua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce2483ee97d37eefc836f9a6d36b9863d4f273e2",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/ce2483ee97d37eefc836f9a6d36b9863d4f273e2"
+    },
+    {
+      "path": "lua/calculator.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd25d735b0ccbf85f730ab5d299ce1bc9d0938af",
+      "size": 11865,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/cd25d735b0ccbf85f730ab5d299ce1bc9d0938af"
+    },
+    {
+      "path": "lua/cand_selector.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049920bf1375ea6e95fc78b662ab0dcff667a0b3",
+      "size": 17511,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/049920bf1375ea6e95fc78b662ab0dcff667a0b3"
+    },
+    {
+      "path": "lua/charset.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f00ff1ebcd8b4b7ae31c1dece3e8b9bcbe931b7",
+      "size": 4898,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/4f00ff1ebcd8b4b7ae31c1dece3e8b9bcbe931b7"
+    },
+    {
+      "path": "lua/chinese_lunar.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fce73db784a4edfa4f3c26a46a21ef59274e300",
+      "size": 20520,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6fce73db784a4edfa4f3c26a46a21ef59274e300"
+    },
+    {
+      "path": "lua/chinese_number.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93af01ac0e0fb10eb9a3611ed2d3ac9b09dab035",
+      "size": 11759,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/93af01ac0e0fb10eb9a3611ed2d3ac9b09dab035"
+    },
+    {
+      "path": "lua/cn_en_custom.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56ce77911ba30aef2581d1450b59a01836ec5c19",
+      "size": 6253,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/56ce77911ba30aef2581d1450b59a01836ec5c19"
+    },
+    {
+      "path": "lua/cold_word_drop.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f00f26d77c3e5b8f6f5db43ae46d1e6e825bcc1f",
+      "size": 6861,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/f00f26d77c3e5b8f6f5db43ae46d1e6e825bcc1f"
+    },
+    {
+      "path": "lua/cold_word_records",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b68c1f7b5462226e5248a3b08ada0ff7c7d7ce7",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/3b68c1f7b5462226e5248a3b08ada0ff7c7d7ce7"
+    },
+    {
+      "path": "lua/cold_word_records/drop_words.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4900a74434cb543bc748a143c9b3ab2072ee5c1",
+      "size": 59,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b4900a74434cb543bc748a143c9b3ab2072ee5c1"
+    },
+    {
+      "path": "lua/cold_word_records/hide_words.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e32538d0a3d9f81fa65a1d68bac451f5084a789",
+      "size": 71,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/3e32538d0a3d9f81fa65a1d68bac451f5084a789"
+    },
+    {
+      "path": "lua/cold_word_records/reduce_freq_words.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9bfd037efd5184caaaa7374cb37a2bc47ffdc55",
+      "size": 85,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/d9bfd037efd5184caaaa7374cb37a2bc47ffdc55"
+    },
+    {
+      "path": "lua/commit_history.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f642f5f3c8a967b23c4a849b13608247b060070",
+      "size": 5753,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/4f642f5f3c8a967b23c4a849b13608247b060070"
+    },
+    {
+      "path": "lua/date_time.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9444a7cbbbe83cd0aa5d84556ffaed78ba605073",
+      "size": 18753,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/9444a7cbbbe83cd0aa5d84556ffaed78ba605073"
+    },
+    {
+      "path": "lua/easy_en.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbecd306d7021df672bb5a4922c99b011eca28e2",
+      "size": 3829,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/bbecd306d7021df672bb5a4922c99b011eca28e2"
+    },
+    {
+      "path": "lua/easy_navigator.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeed813624cfbfcc3a8a706fb1fefd258a6f95be",
+      "size": 3311,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/aeed813624cfbfcc3a8a706fb1fefd258a6f95be"
+    },
+    {
+      "path": "lua/flypy_fixed.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff1b9e0c774122a4908a29e7a91818e11b4f7873",
+      "size": 3409,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/ff1b9e0c774122a4908a29e7a91818e11b4f7873"
+    },
+    {
+      "path": "lua/flypy_fuzzy.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "737ef689b86b014d66ed5ebd3361b63ab850b857",
+      "size": 9237,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/737ef689b86b014d66ed5ebd3361b63ab850b857"
+    },
+    {
+      "path": "lua/flypy_help_menu.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e356ffcb0c9cda815060ea28fe88491549e694b",
+      "size": 3001,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/7e356ffcb0c9cda815060ea28fe88491549e694b"
+    },
+    {
+      "path": "lua/flypy_switcher.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c216d64f97b6210f209e8599fd41d482883fdd28",
+      "size": 20910,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/c216d64f97b6210f209e8599fd41d482883fdd28"
+    },
+    {
+      "path": "lua/keybinder.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b46518cf9f5364c06ddf4becd3f1038ee1c03085",
+      "size": 4218,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b46518cf9f5364c06ddf4becd3f1038ee1c03085"
+    },
+    {
+      "path": "lua/laTex.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e57365efe167081ce42fb6488cd1ad7c2ccdc136",
+      "size": 4746,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e57365efe167081ce42fb6488cd1ad7c2ccdc136"
+    },
+    {
+      "path": "lua/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ef08fe201d8d42a19bf61316a791984d863fb6b",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/4ef08fe201d8d42a19bf61316a791984d863fb6b"
+    },
+    {
+      "path": "lua/lib/config_api.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77da4589612e0b37ef51145a75394ff302f59347",
+      "size": 5658,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/77da4589612e0b37ef51145a75394ff302f59347"
+    },
+    {
+      "path": "lua/lib/env_api.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bf3ad35331240560091ab0251dc23fe3bc5b0ba",
+      "size": 6621,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/1bf3ad35331240560091ab0251dc23fe3bc5b0ba"
+    },
+    {
+      "path": "lua/lib/json.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3d7530a6a64f896589ae8e7fec5d25078f79a7a",
+      "size": 10014,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/a3d7530a6a64f896589ae8e7fec5d25078f79a7a"
+    },
+    {
+      "path": "lua/lib/librime.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60f14aa1c76a5d03c39da970592c914eb0e09fec",
+      "size": 24979,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/60f14aa1c76a5d03c39da970592c914eb0e09fec"
+    },
+    {
+      "path": "lua/lib/list.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "503c45b7c26c514b08864e795ab47f20b45c321b",
+      "size": 7744,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/503c45b7c26c514b08864e795ab47f20b45c321b"
+    },
+    {
+      "path": "lua/lib/logger.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f99a3a1c68074e3bb06e8808135a475f7be9c7c",
+      "size": 1889,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/2f99a3a1c68074e3bb06e8808135a475f7be9c7c"
+    },
+    {
+      "path": "lua/lib/metatable.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b946ceb79c92a081f2c1eb2f0ebba801a47276",
+      "size": 4868,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/29b946ceb79c92a081f2c1eb2f0ebba801a47276"
+    },
+    {
+      "path": "lua/lib/number_to_cn.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37890d608d8940649d733488e2d1b6db044f84e",
+      "size": 2359,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/a37890d608d8940649d733488e2d1b6db044f84e"
+    },
+    {
+      "path": "lua/lib/rime_helper.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0064b0942695dd10767ea95b8ce22eab166d1fe4",
+      "size": 3572,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/0064b0942695dd10767ea95b8ce22eab166d1fe4"
+    },
+    {
+      "path": "lua/lib/sendKeyCode.dll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bfdae84e7f13c56c7e8d5a50d31afec8d13c9e0",
+      "size": 112248,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6bfdae84e7f13c56c7e8d5a50d31afec8d13c9e0"
+    },
+    {
+      "path": "lua/lib/sendKeyCode.so",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "af25e4e36f0d7a7f16125d5b342ec6b4b514e232",
+      "size": 34032,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/af25e4e36f0d7a7f16125d5b342ec6b4b514e232"
+    },
+    {
+      "path": "lua/lib/string.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45c0818a7ba415bf1010bc50e96321b59d3e171b",
+      "size": 2397,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/45c0818a7ba415bf1010bc50e96321b59d3e171b"
+    },
+    {
+      "path": "lua/pair_punct.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931f3e787bf74c7cb44cfaebecdbe37587f261b5",
+      "size": 8164,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/931f3e787bf74c7cb44cfaebecdbe37587f261b5"
+    },
+    {
+      "path": "lua/pin_word.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ad0bb4de4132efbe3764392c9532e2e545aab1b",
+      "size": 8234,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/7ad0bb4de4132efbe3764392c9532e2e545aab1b"
+    },
+    {
+      "path": "lua/pin_word_record.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ff3a77dee97bbc90496bff3019fc3b1fd6d2992",
+      "size": 246,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/5ff3a77dee97bbc90496bff3019fc3b1fd6d2992"
+    },
+    {
+      "path": "lua/reduce_emoji.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e63a6d06eb9d447d6a9cbea0bdd19470303d4fa1",
+      "size": 1816,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e63a6d06eb9d447d6a9cbea0bdd19470303d4fa1"
+    },
+    {
+      "path": "lua/revert_commit_word.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c29144a3103f6d1c71b5e321705b95bb94515b",
+      "size": 2375,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/85c29144a3103f6d1c71b5e321705b95bb94515b"
+    },
+    {
+      "path": "lua/select_char.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f265d07a21bb016761846d4633ac0c14e22a29",
+      "size": 2230,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e9f265d07a21bb016761846d4633ac0c14e22a29"
+    },
+    {
+      "path": "lua/shortcut.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dad944bf32c2a9b66b350965e7f305b73e90c7ee",
+      "size": 17077,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/dad944bf32c2a9b66b350965e7f305b73e90c7ee"
+    },
+    {
+      "path": "lua/shortcut_config.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37db8123b1da397924aefff45610e259006a4c29",
+      "size": 6729,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/37db8123b1da397924aefff45610e259006a4c29"
+    },
+    {
+      "path": "lua/symbol_menu.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f2f70cfbc29ae4d02bcba732243214eef7d16c9",
+      "size": 2013,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/8f2f70cfbc29ae4d02bcba732243214eef7d16c9"
+    },
+    {
+      "path": "lua/word_append_space.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30612286ecff3d5bcd603378841ba430a42ce9e7",
+      "size": 8771,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/30612286ecff3d5bcd603378841ba430a42ce9e7"
+    },
+    {
+      "path": "lua/word_autocaps.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3200d35f268fb29fdf7845f4f409bed6ea7d4c45",
+      "size": 1675,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/3200d35f268fb29fdf7845f4f409bed6ea7d4c45"
+    },
+    {
+      "path": "melt_eng.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e80198ceffcd962aa8340027132e890e927e5d64",
+      "size": 481,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e80198ceffcd962aa8340027132e890e927e5d64"
+    },
+    {
+      "path": "melt_eng.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "479ac7e2127037b9a733908cc4a95b1c25a569e3",
+      "size": 1940,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/479ac7e2127037b9a733908cc4a95b1c25a569e3"
+    },
+    {
+      "path": "opencc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa05176cd3110a2878e504928ce1b2b070c2e99b",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/fa05176cd3110a2878e504928ce1b2b070c2e99b"
+    },
+    {
+      "path": "opencc/emoji-map.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e7d4c9abaa0272c59e25f6aa427a4a14aab257",
+      "size": 65915,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/88e7d4c9abaa0272c59e25f6aa427a4a14aab257"
+    },
+    {
+      "path": "opencc/emoji.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e823509653d2061bb8fcd492943ab83851fac6fa",
+      "size": 65719,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e823509653d2061bb8fcd492943ab83851fac6fa"
+    },
+    {
+      "path": "opencc/emoji.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9b4ad5434ab9784985abf2e9545de4f96760e90",
+      "size": 363,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/b9b4ad5434ab9784985abf2e9545de4f96760e90"
+    },
+    {
+      "path": "opencc/emoji.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70025dbda26f08d381516dff6a22f1c05ca27f44",
+      "size": 129690,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/70025dbda26f08d381516dff6a22f1c05ca27f44"
+    },
+    {
+      "path": "opencc/emoji_word.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e89614695930b4e7f10ffa5ea54f3888d728fe",
+      "size": 191440,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/19e89614695930b4e7f10ffa5ea54f3888d728fe"
+    },
+    {
+      "path": "opencc/others.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbfb7b5a5428cd75000f17c5d76a821b07c4a933",
+      "size": 56804,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/bbfb7b5a5428cd75000f17c5d76a821b07c4a933"
+    },
+    {
+      "path": "others",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e3ac4f047b2df3ddfe43e48c0b360e1590ffa8f",
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/trees/5e3ac4f047b2df3ddfe43e48c0b360e1590ffa8f"
+    },
+    {
+      "path": "others/emoji.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b6f33b5215d1090e225a9c4103dec5772a10bd2",
+      "size": 1461,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/3b6f33b5215d1090e225a9c4103dec5772a10bd2"
+    },
+    {
+      "path": "others/hanzi_multi-tone_with_weight.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdac6da264f00e59fdb5bb0331e4b554b226483b",
+      "size": 17815,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/fdac6da264f00e59fdb5bb0331e4b554b226483b"
+    },
+    {
+      "path": "others/hanzi_zhuyin_with_tone.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e152060c9c2861ed62c6d8d36a41031544f0a64",
+      "size": 118351,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/2e152060c9c2861ed62c6d8d36a41031544f0a64"
+    },
+    {
+      "path": "predict.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f68bc115fe9d8223a689d091226598001d25b83f",
+      "size": 20822812,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/f68bc115fe9d8223a689d091226598001d25b83f"
+    },
+    {
+      "path": "rime-yaml-schema.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba72600b30125415c944b5a8fd700767399079b8",
+      "size": 40876,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/ba72600b30125415c944b5a8fd700767399079b8"
+    },
+    {
+      "path": "squirrel.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fc3310236685cf270073c9ebcac45af9ffb7c51",
+      "size": 8407,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/6fc3310236685cf270073c9ebcac45af9ffb7c51"
+    },
+    {
+      "path": "squirrel.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91ce90734fecb83b30f82321e5a877a34795a253",
+      "size": 10282,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/91ce90734fecb83b30f82321e5a877a34795a253"
+    },
+    {
+      "path": "stylua.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12471472a3ca602c60ef43a79b2e987bd95f4c04",
+      "size": 59,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/12471472a3ca602c60ef43a79b2e987bd95f4c04"
+    },
+    {
+      "path": "symbols.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e97d335c2f79fac0af4b22d22e0e9629c5c9f25",
+      "size": 43821,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/7e97d335c2f79fac0af4b22d22e0e9629c5c9f25"
+    },
+    {
+      "path": "trime-schema.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "732f3e446399eab382cee992d2004fa9c6261fbd",
+      "size": 26980,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/732f3e446399eab382cee992d2004fa9c6261fbd"
+    },
+    {
+      "path": "user_custom_predict_rule.example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "159d308ddc53088546ea5b360bbf494773346147",
+      "size": 11197,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/159d308ddc53088546ea5b360bbf494773346147"
+    },
+    {
+      "path": "weasel.custom.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d8d8d4453cc38cb12ee28e80ab2ce2380467744",
+      "size": 1894,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/7d8d8d4453cc38cb12ee28e80ab2ce2380467744"
+    },
+    {
+      "path": "weasel.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312a39ada33cd2cba11e00ff87095da84215a7cd",
+      "size": 32098,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/312a39ada33cd2cba11e00ff87095da84215a7cd"
+    },
+    {
+      "path": "xhup.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a26bd8d6916e192a9a768586ed8be82960ee8ff",
+      "size": 186551,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/8a26bd8d6916e192a9a768586ed8be82960ee8ff"
+    },
+    {
+      "path": "zh-hans-t-essay-bgw.gram",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e36740fbbc83533acfed093295cb76ec247bc0ac",
+      "size": 10404864,
+      "url": "https://api.github.com/repos/boomker/rime-fast-xhup/git/blobs/e36740fbbc83533acfed093295cb76ec247bc0ac"
+    }
+  ],
+  "truncated": false
+}

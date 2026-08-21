@@ -1,0 +1,12 @@
+# 文本文件仓库内统一 LF（Mac/Linux/Rime 友好）；Windows 工作区也按 LF 检出
+* text=auto eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.gif binary
+*.deflate binary
+*.zip binary
+
+# 搜狗自定义短语是 UTF-16（含 NUL），显式按二进制，避免换行转换破坏编码
+releases/**/*搜狗*.txt binary

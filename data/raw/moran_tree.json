@@ -1,0 +1,981 @@
+{
+  "sha": "93cdc41e88e44c7872f95095c62806e42950fda2",
+  "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/93cdc41e88e44c7872f95095c62806e42950fda2",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6cae60b7d60027a394c9d229811a1bba9adc8a7b",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/6cae60b7d60027a394c9d229811a1bba9adc8a7b"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72d6a1578692c92d6d7d3aa299542ff2ce64de5f",
+      "size": 14,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/72d6a1578692c92d6d7d3aa299542ff2ce64de5f"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89571b742e8b2b15636d9bd0a34717f4baec0636",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/89571b742e8b2b15636d9bd0a34717f4baec0636"
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "381c42aea36fb1d169778021b3f1ff7aa97a04b1",
+      "size": 5038,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/381c42aea36fb1d169778021b3f1ff7aa97a04b1"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af108dccdcb0c5ae2677f192009ac3802513ee6a",
+      "size": 476,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/af108dccdcb0c5ae2677f192009ac3802513ee6a"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b7eab3d8f34beead500ede8740c685f973d3404",
+      "size": 7621,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/7b7eab3d8f34beead500ede8740c685f973d3404"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d77d2a34ac3669fa9b1f12ca613a5c233cebb24",
+      "size": 35347,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/4d77d2a34ac3669fa9b1f12ca613a5c233cebb24"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d4dcb31803604cbd41b6015898d4ab77b976c1",
+      "size": 3191,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/15d4dcb31803604cbd41b6015898d4ab77b976c1"
+    },
+    {
+      "path": "README-en.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f1cd809ae171137c7a4ec29985712b47c502185",
+      "size": 3277,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/4f1cd809ae171137c7a4ec29985712b47c502185"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da35f6226629f0a5e08f25855590f15a99db7f02",
+      "size": 2931,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/da35f6226629f0a5e08f25855590f15a99db7f02"
+    },
+    {
+      "path": "default.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd28ddf8a57d394cf890d4659d2d0d4d7b3b25f6",
+      "size": 1723,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/dd28ddf8a57d394cf890d4659d2d0d4d7b3b25f6"
+    },
+    {
+      "path": "etc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45cdc2d3478ff8993ea876539d803938b7d9330c",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/45cdc2d3478ff8993ea876539d803938b7d9330c"
+    },
+    {
+      "path": "etc/screenshot-bql.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eccd827fbba24d994f6260219b154736f291227f",
+      "size": 33345,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/eccd827fbba24d994f6260219b154736f291227f"
+    },
+    {
+      "path": "etc/screenshot-poem.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b1b8a592308b20d199f6d54cb6648147fe7493",
+      "size": 57299,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/c6b1b8a592308b20d199f6d54cb6648147fe7493"
+    },
+    {
+      "path": "key_bindings.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c055d9c76f7dd3bb57f13cba62ee9fa4e83905ed",
+      "size": 2954,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/c055d9c76f7dd3bb57f13cba62ee9fa4e83905ed"
+    },
+    {
+      "path": "lua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3b341efee1b0d69fba5adda90f582e0a332ca43",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/d3b341efee1b0d69fba5adda90f582e0a332ca43"
+    },
+    {
+      "path": "lua/moran.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "396f6e980d19d1d45437b462ac5c1ec8007733b1",
+      "size": 12385,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/396f6e980d19d1d45437b462ac5c1ec8007733b1"
+    },
+    {
+      "path": "lua/moran_aux_translator.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75a8fb1bbf6fbdc258b56267ec792225054dbd07",
+      "size": 18094,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/75a8fb1bbf6fbdc258b56267ec792225054dbd07"
+    },
+    {
+      "path": "lua/moran_charset_comment_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47e7491138834b1127a595a8d16d2389ad55d6a2",
+      "size": 33890,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/47e7491138834b1127a595a8d16d2389ad55d6a2"
+    },
+    {
+      "path": "lua/moran_charset_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f892f6cf2a1b4d0cd07b8407f59a69e2915649e9",
+      "size": 2997,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/f892f6cf2a1b4d0cd07b8407f59a69e2915649e9"
+    },
+    {
+      "path": "lua/moran_disable_phrase_memory.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55f99aefa9b10350e58250b7ded966b70dee11a3",
+      "size": 714,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/55f99aefa9b10350e58250b7ded966b70dee11a3"
+    },
+    {
+      "path": "lua/moran_english_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa379c5753050a9be3a82cb82cb05ca1e0e90eb",
+      "size": 3790,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/9fa379c5753050a9be3a82cb82cb05ca1e0e90eb"
+    },
+    {
+      "path": "lua/moran_express_translator.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5baefb485a725f8c451103af33bb91925827bf6a",
+      "size": 17557,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/5baefb485a725f8c451103af33bb91925827bf6a"
+    },
+    {
+      "path": "lua/moran_fix_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31a8f9c10ba77122d273bbed24e250e9bb4f54de",
+      "size": 2701,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/31a8f9c10ba77122d273bbed24e250e9bb4f54de"
+    },
+    {
+      "path": "lua/moran_hint_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b5ae91cc103ee19073302b9daf640387b2a81a0",
+      "size": 6334,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/2b5ae91cc103ee19073302b9daf640387b2a81a0"
+    },
+    {
+      "path": "lua/moran_ijrq_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c490c6c7fc56612346de4a304454701251155753",
+      "size": 5669,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/c490c6c7fc56612346de4a304454701251155753"
+    },
+    {
+      "path": "lua/moran_number.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9928d43be1fb2782ab0489a2d1ba00bf1696877",
+      "size": 6505,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/a9928d43be1fb2782ab0489a2d1ba00bf1696877"
+    },
+    {
+      "path": "lua/moran_pin.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd120e51628928b4f55d5a7c90486d7fe3d07064",
+      "size": 18523,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/fd120e51628928b4f55d5a7c90486d7fe3d07064"
+    },
+    {
+      "path": "lua/moran_processor.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee6e7cb31f20c61f4dd04c267eb24b1b2ffd5f9d",
+      "size": 12290,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/ee6e7cb31f20c61f4dd04c267eb24b1b2ffd5f9d"
+    },
+    {
+      "path": "lua/moran_reorder_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77ef0c5f993130e49aacb6abc473cc4040842c48",
+      "size": 8571,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/77ef0c5f993130e49aacb6abc473cc4040842c48"
+    },
+    {
+      "path": "lua/moran_shijian.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cadc3f435692b4e25cb8570aca45f8d265ba14e6",
+      "size": 86738,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cadc3f435692b4e25cb8570aca45f8d265ba14e6"
+    },
+    {
+      "path": "lua/moran_unicode.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c30d4c84c1f44b31dd386e508436de0038f0885",
+      "size": 1497,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/6c30d4c84c1f44b31dd386e508436de0038f0885"
+    },
+    {
+      "path": "lua/moran_unicode_display_filter.lua",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4251fbd8bc36c4e914de0d3bc7334207be275d0f",
+      "size": 1927,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/4251fbd8bc36c4e914de0d3bc7334207be275d0f"
+    },
+    {
+      "path": "make_simp_dist.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f2f1857aace736f9a7f32109843d206de057bcd0",
+      "size": 4751,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/f2f1857aace736f9a7f32109843d206de057bcd0"
+    },
+    {
+      "path": "moran.base.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d34d2f56b5d136ab75313815dcb0004436c4a064",
+      "size": 37135763,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/d34d2f56b5d136ab75313815dcb0004436c4a064"
+    },
+    {
+      "path": "moran.computer.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cac0cb32318054293516a4b37b2113e2c3462036",
+      "size": 135251,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cac0cb32318054293516a4b37b2113e2c3462036"
+    },
+    {
+      "path": "moran.extended.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f285d88e36afccef4f3a00a35c01bec52b0394d",
+      "size": 404,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/5f285d88e36afccef4f3a00a35c01bec52b0394d"
+    },
+    {
+      "path": "moran.moe.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f30203f47f77ef93a2244463bb90410f78eb3d9b",
+      "size": 5059430,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/f30203f47f77ef93a2244463bb90410f78eb3d9b"
+    },
+    {
+      "path": "moran.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50aff9571e52e8b082f222189b5bf2355fe6c4da",
+      "size": 16671,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/50aff9571e52e8b082f222189b5bf2355fe6c4da"
+    },
+    {
+      "path": "moran.tencent.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d40e568db28511b1e30a17d13751ca0eb1bd5e4",
+      "size": 25271387,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3d40e568db28511b1e30a17d13751ca0eb1bd5e4"
+    },
+    {
+      "path": "moran.words.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c00c3c1f4ef02d0b6668b0537d5b970b0857624",
+      "size": 252696,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3c00c3c1f4ef02d0b6668b0537d5b970b0857624"
+    },
+    {
+      "path": "moran.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca6765e39287baf720e4443d70e6d9f8a8196bfb",
+      "size": 8094,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/ca6765e39287baf720e4443d70e6d9f8a8196bfb"
+    },
+    {
+      "path": "moran_aux.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "349e7b16597914f55914248235fb2a5cdf25faf3",
+      "size": 13944,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/349e7b16597914f55914248235fb2a5cdf25faf3"
+    },
+    {
+      "path": "moran_charset.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46bba5ed3fc6778c7c02a3cbfad45ef959750437",
+      "size": 166683,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/46bba5ed3fc6778c7c02a3cbfad45ef959750437"
+    },
+    {
+      "path": "moran_charset.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dff405202c110888cb50e028e26a4f97f036140",
+      "size": 131,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/6dff405202c110888cb50e028e26a4f97f036140"
+    },
+    {
+      "path": "moran_custom_phrases.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c210c83e7d13a1256fb6eb17ba22cdc654db8925",
+      "size": 646,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/c210c83e7d13a1256fb6eb17ba22cdc654db8925"
+    },
+    {
+      "path": "moran_defs.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2f2e64513fd384f18de3a579685a4badca5b8cb",
+      "size": 1651,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/e2f2e64513fd384f18de3a579685a4badca5b8cb"
+    },
+    {
+      "path": "moran_english.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc61be8feb54f144d281ac764730f99798db8795",
+      "size": 1023523,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cc61be8feb54f144d281ac764730f99798db8795"
+    },
+    {
+      "path": "moran_english.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa4d578e96f3740f27f5858974a2891f6bf5ea17",
+      "size": 836,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/aa4d578e96f3740f27f5858974a2891f6bf5ea17"
+    },
+    {
+      "path": "moran_fixed.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "343e74c56851400eacf41761400130b1374edaf6",
+      "size": 1849309,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/343e74c56851400eacf41761400130b1374edaf6"
+    },
+    {
+      "path": "moran_fixed.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca4cdb11fb85d7de14712ab4efaee8a298993fbe",
+      "size": 7897,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/ca4cdb11fb85d7de14712ab4efaee8a298993fbe"
+    },
+    {
+      "path": "moran_fixed.symbols.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59ec1ccad5e71c7dbb0c72b5eb17333530419cc0",
+      "size": 20363,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/59ec1ccad5e71c7dbb0c72b5eb17333530419cc0"
+    },
+    {
+      "path": "moran_fixed_simp.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ecabcf9d693f16df344e8773055350aab900c64",
+      "size": 1819850,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3ecabcf9d693f16df344e8773055350aab900c64"
+    },
+    {
+      "path": "moran_japanese.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd4a5dc54b2edf4f3743202bdb7305aed0107d35",
+      "size": 7510197,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cd4a5dc54b2edf4f3743202bdb7305aed0107d35"
+    },
+    {
+      "path": "moran_japanese.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6c5f55753866a5df4c57aeb10799c8dd97d4bb",
+      "size": 1074,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cb6c5f55753866a5df4c57aeb10799c8dd97d4bb"
+    },
+    {
+      "path": "moran_reverse.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "779e5bb34d40c334b5e83e572dc1a3f836ad10e4",
+      "size": 1170,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/779e5bb34d40c334b5e83e572dc1a3f836ad10e4"
+    },
+    {
+      "path": "moran_sentence.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022e18abbce00afb9ce7f5ebb02847867b7be748",
+      "size": 7962,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/022e18abbce00afb9ce7f5ebb02847867b7be748"
+    },
+    {
+      "path": "opencc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d51ee05dd64ddcd537f6026e1f684c79bfa2cd19",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/d51ee05dd64ddcd537f6026e1f684c79bfa2cd19"
+    },
+    {
+      "path": "opencc/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13000fdd5a5a0d3d278acca12a7e235affea37ae",
+      "size": 258,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/13000fdd5a5a0d3d278acca12a7e235affea37ae"
+    },
+    {
+      "path": "opencc/moran_TSCharacters.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b132fc2c2028e8aa8c1e51262898a78900982694",
+      "size": 34680,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/b132fc2c2028e8aa8c1e51262898a78900982694"
+    },
+    {
+      "path": "opencc/moran_TSPhrases.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a7abe5468309fb748c1c8293577bb7b98c69879",
+      "size": 6210,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/1a7abe5468309fb748c1c8293577bb7b98c69879"
+    },
+    {
+      "path": "opencc/moran_chaifen.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abb45b6abf1b9ad69487aec56cf3ed2d4b3f2beb",
+      "size": 309,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/abb45b6abf1b9ad69487aec56cf3ed2d4b3f2beb"
+    },
+    {
+      "path": "opencc/moran_dzing_variants.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fb2418aee24261bf9eea5f6d47f6eb08e3e36d0",
+      "size": 22944,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3fb2418aee24261bf9eea5f6d47f6eb08e3e36d0"
+    },
+    {
+      "path": "opencc/moran_emoji.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb0ddcbe87c6080f11283fff5f0da8dc7bb93fe",
+      "size": 314,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3cb0ddcbe87c6080f11283fff5f0da8dc7bb93fe"
+    },
+    {
+      "path": "opencc/moran_emoji.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8b02f994e64d29e844708867adcbb60e7ae05c0",
+      "size": 220166,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/b8b02f994e64d29e844708867adcbb60e7ae05c0"
+    },
+    {
+      "path": "opencc/moran_pinyinhint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5f6c1151824b19c6252462da26b11166c13370b",
+      "size": 318,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/a5f6c1151824b19c6252462da26b11166c13370b"
+    },
+    {
+      "path": "opencc/moran_pinyinhint.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21a35c17f564ac217cf511f36ed9d31b73c440dd",
+      "size": 823137,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/21a35c17f564ac217cf511f36ed9d31b73c440dd"
+    },
+    {
+      "path": "opencc/moran_s2dzing.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7b00338b15b97f48c02479685abae754a383870",
+      "size": 578,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/f7b00338b15b97f48c02479685abae754a383870"
+    },
+    {
+      "path": "opencc/moran_t2dzing.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "853f0e43dd31dab68121af4ba1b91789f936958c",
+      "size": 316,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/853f0e43dd31dab68121af4ba1b91789f936958c"
+    },
+    {
+      "path": "opencc/moran_t2s.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f07acd32c22e8492e5b230a31e15edd1a4ecde8",
+      "size": 440,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0f07acd32c22e8492e5b230a31e15edd1a4ecde8"
+    },
+    {
+      "path": "punctuation.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a920179a59edf69eecc4d0f8905b5edb002053b",
+      "size": 2107,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/6a920179a59edf69eecc4d0f8905b5edb002053b"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a867720b74604d6b67e3b63b819fc56af0ef57c",
+      "size": 829,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0a867720b74604d6b67e3b63b819fc56af0ef57c"
+    },
+    {
+      "path": "recipe.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9ae475c7ba57884d2b1529db70e114736a9be0",
+      "size": 180,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/af9ae475c7ba57884d2b1529db70e114736a9be0"
+    },
+    {
+      "path": "recipes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "939020f066a315e1808e7aefb44171464ed3c0eb",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/939020f066a315e1808e7aefb44171464ed3c0eb"
+    },
+    {
+      "path": "recipes/dicts.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e93d3c737e56742afb0a41e6c01bd92044e73134",
+      "size": 158,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/e93d3c737e56742afb0a41e6c01bd92044e73134"
+    },
+    {
+      "path": "recipes/full.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc446ce863e4c16023339d528d56eab17096fa09",
+      "size": 240,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/fc446ce863e4c16023339d528d56eab17096fa09"
+    },
+    {
+      "path": "recipes/prelude.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d051223de5c108671b96b27099adf0a4f030a2a9",
+      "size": 176,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/d051223de5c108671b96b27099adf0a4f030a2a9"
+    },
+    {
+      "path": "recipes/squirrel.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57cb0ae18b12b2c156d8c92c7169b31f24aac075",
+      "size": 162,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/57cb0ae18b12b2c156d8c92c7169b31f24aac075"
+    },
+    {
+      "path": "recipes/zrlf.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7ad73652d19d4f5d9d53a4b9e3cce96960f832e",
+      "size": 117,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/c7ad73652d19d4f5d9d53a4b9e3cce96960f832e"
+    },
+    {
+      "path": "squirrel.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7028049f34353724d863aa5c0f4a65da5d80753b",
+      "size": 45488,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/7028049f34353724d863aa5c0f4a65da5d80753b"
+    },
+    {
+      "path": "symbols.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcd83669981ef5dec06ee76fbea3c82d6fc57661",
+      "size": 30648,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/fcd83669981ef5dec06ee76fbea3c82d6fc57661"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3763249691c39eb4318c4b6221914ed69881fe23",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/3763249691c39eb4318c4b6221914ed69881fe23"
+    },
+    {
+      "path": "tests/moran.charset.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7055825b8e1f201906652f0070df59dabfb75785",
+      "size": 1062,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/7055825b8e1f201906652f0070df59dabfb75785"
+    },
+    {
+      "path": "tests/moran.hint.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6305cec61b4fb9baffc432444e670f2d1c2a1aec",
+      "size": 4864,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/6305cec61b4fb9baffc432444e670f2d1c2a1aec"
+    },
+    {
+      "path": "tests/moran.ijrq.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388fd5c48b77cfe3511d3fb2736d0b4c995082ae",
+      "size": 1079,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/388fd5c48b77cfe3511d3fb2736d0b4c995082ae"
+    },
+    {
+      "path": "tests/moran.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8b38be96353ee99ef91c14cfe9b4fb85bd6506",
+      "size": 9626,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/9b8b38be96353ee99ef91c14cfe9b4fb85bd6506"
+    },
+    {
+      "path": "tests/moran_aux.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58d3c8f5818019e06d7972e76f16cc8b851c8702",
+      "size": 3754,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/58d3c8f5818019e06d7972e76f16cc8b851c8702"
+    },
+    {
+      "path": "tests/simp_moran.test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae522d734ee66dc3b41e09b545f1acb47f46402",
+      "size": 2140,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/6ae522d734ee66dc3b41e09b545f1acb47f46402"
+    },
+    {
+      "path": "tiger.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e3b5e446988373416cb20d2d55d021220e63f8a",
+      "size": 1486314,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3e3b5e446988373416cb20d2d55d021220e63f8a"
+    },
+    {
+      "path": "tiger.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e32c6f490faade1cd79277b346ce6fc6e7dcb5cd",
+      "size": 1541,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/e32c6f490faade1cd79277b346ce6fc6e7dcb5cd"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9eb82582f55c8bf306926b8ce306770a0e4d47fe",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/9eb82582f55c8bf306926b8ce306770a0e4d47fe"
+    },
+    {
+      "path": "tools/check_emoji.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b0f74d934450eac9c1361656690451a0f301723",
+      "size": 2073,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0b0f74d934450eac9c1361656690451a0f301723"
+    },
+    {
+      "path": "tools/check_simp_table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba978fb70052693f9a689baac6a4e116a544592",
+      "size": 888,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/dba978fb70052693f9a689baac6a4e116a544592"
+    },
+    {
+      "path": "tools/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06ae3e178a2316f648fcad294cdd81567f7492d6",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/06ae3e178a2316f648fcad294cdd81567f7492d6"
+    },
+    {
+      "path": "tools/data/chars.dict.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f769af33b4039439ac5138f3cbfd3955c19b92b",
+      "size": 2260,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/1f769af33b4039439ac5138f3cbfd3955c19b92b"
+    },
+    {
+      "path": "tools/data/chars.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2ebb513d4c4ee9f640c841be8f991e780fe2457",
+      "size": 1422295,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/f2ebb513d4c4ee9f640c841be8f991e780fe2457"
+    },
+    {
+      "path": "tools/data/moran_chai.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ab82b3f7d0ace0549bf3d118429f4c9c1e9682",
+      "size": 2185746,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/84ab82b3f7d0ace0549bf3d118429f4c9c1e9682"
+    },
+    {
+      "path": "tools/data/pinyin_simp.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dca30790cd79bf85a0bed8548363a241059acadb",
+      "size": 1191383,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/dca30790cd79bf85a0bed8548363a241059acadb"
+    },
+    {
+      "path": "tools/data/simp_chars.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff5fccb608f781a7f46f3b56c604a6cd373bc4a",
+      "size": 32661,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/bff5fccb608f781a7f46f3b56c604a6cd373bc4a"
+    },
+    {
+      "path": "tools/data/trad_chars.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a55bce5b7a110bf075431b1144c8599d7bd2dab8",
+      "size": 100754,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/a55bce5b7a110bf075431b1144c8599d7bd2dab8"
+    },
+    {
+      "path": "tools/data/zrlf.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0564fe6345996072a8e054036a6c7c2fdd435e6",
+      "size": 955558,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/e0564fe6345996072a8e054036a6c7c2fdd435e6"
+    },
+    {
+      "path": "tools/data/zrmdb.txt",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "4a599e2e706dfc4acefea2fb713b69c39e5e9779",
+      "size": 19,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/4a599e2e706dfc4acefea2fb713b69c39e5e9779"
+    },
+    {
+      "path": "tools/dazhu.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2ae7852361cfb8011811b18d6db47fa30effec87",
+      "size": 5251,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/2ae7852361cfb8011811b18d6db47fa30effec87"
+    },
+    {
+      "path": "tools/flypyify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1c8378e62876ada6dbcc023a8e0b63cf4d6645d",
+      "size": 3489,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/d1c8378e62876ada6dbcc023a8e0b63cf4d6645d"
+    },
+    {
+      "path": "tools/gen_chaifen_filter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7dd03b6a787039e285442d6fdec8fa63091a12",
+      "size": 251,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/2c7dd03b6a787039e285442d6fdec8fa63091a12"
+    },
+    {
+      "path": "tools/gen_chars.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2f9cf6f8a13d8095f6ae62aee5b865f0718dd0",
+      "size": 654,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/9a2f9cf6f8a13d8095f6ae62aee5b865f0718dd0"
+    },
+    {
+      "path": "tools/gen_mdx.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "84b6bf6837f43fe94bd822007cf4e5e4cfa76736",
+      "size": 1496,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/84b6bf6837f43fe94bd822007cf4e5e4cfa76736"
+    },
+    {
+      "path": "tools/gen_zrlf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc2b758140c0747e34317ca31d7f40d50509c9f5",
+      "size": 1174,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/dc2b758140c0747e34317ca31d7f40d50509c9f5"
+    },
+    {
+      "path": "tools/gen_zrmdb.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db77566f9ffbd4883980f7d3772f288d9809fe0b",
+      "size": 199,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/db77566f9ffbd4883980f7d3772f288d9809fe0b"
+    },
+    {
+      "path": "tools/llm_tradify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3645c9e11b1ae3397d828c00a416d0a003d81e06",
+      "size": 6258,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/3645c9e11b1ae3397d828c00a416d0a003d81e06"
+    },
+    {
+      "path": "tools/mdict",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5f0d5edb06d73ff5d503434fe2fa7df2d85f311",
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/trees/a5f0d5edb06d73ff5d503434fe2fa7df2d85f311"
+    },
+    {
+      "path": "tools/mdict/main.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87cf7bea0db7bad25ba7d4ad5b85726de16a5de8",
+      "size": 2395,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/87cf7bea0db7bad25ba7d4ad5b85726de16a5de8"
+    },
+    {
+      "path": "tools/resources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64dd061cd12edafda5b00e9d149412d49aa9cc2c",
+      "size": 741,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/64dd061cd12edafda5b00e9d149412d49aa9cc2c"
+    },
+    {
+      "path": "tools/rime_dict.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c0af124f304d99f0330c15fbbc6af8957bb1a6c",
+      "size": 3278,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0c0af124f304d99f0330c15fbbc6af8957bb1a6c"
+    },
+    {
+      "path": "tools/schemagen.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "63900a64ec3b1f70e1de0687751f35471e0df96c",
+      "size": 26468,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/63900a64ec3b1f70e1de0687751f35471e0df96c"
+    },
+    {
+      "path": "tools/sync_essay.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "971121d3834dd57571db2befa8b74a202d63fb18",
+      "size": 1335,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/971121d3834dd57571db2befa8b74a202d63fb18"
+    },
+    {
+      "path": "tools/sync_moe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e457cae270951a65c12dff7bab91c206f5a87e95",
+      "size": 4455,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/e457cae270951a65c12dff7bab91c206f5a87e95"
+    },
+    {
+      "path": "tools/sync_moe.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0d437292cc7eba9959dbd7e568b0fcc56da2d6d9",
+      "size": 548,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0d437292cc7eba9959dbd7e568b0fcc56da2d6d9"
+    },
+    {
+      "path": "tools/update_compact_dicts.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9c93b7bb72d4aec03d636368257be38b51cc03e7",
+      "size": 1151,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/9c93b7bb72d4aec03d636368257be38b51cc03e7"
+    },
+    {
+      "path": "tools/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdf913377dac2b63367d5a920bc80a41c28ff727",
+      "size": 4618,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/cdf913377dac2b63367d5a920bc80a41c28ff727"
+    },
+    {
+      "path": "tools/zrmify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf061875f95f5fda19b159e0ef11d31a080c373",
+      "size": 9408,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/0cf061875f95f5fda19b159e0ef11d31a080c373"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7a1750da5ea497562fd6669f365da6d74bc552d",
+      "size": 152726,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/a7a1750da5ea497562fd6669f365da6d74bc552d"
+    },
+    {
+      "path": "zrlf.schema.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f28b996d09bcf1b6b6cbc62c491f4fa94c7b2b7",
+      "size": 1163,
+      "url": "https://api.github.com/repos/rimeinn/rime-moran/git/blobs/2f28b996d09bcf1b6b6cbc62c491f4fa94c7b2b7"
+    }
+  ],
+  "truncated": false
+}

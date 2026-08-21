@@ -1,0 +1,1676 @@
+version: 0.1.8
+source: null
+info:
+  name: 冰雪四拼
+  author: 蓝落萧
+  version: 0.1.0
+  description: 从模板创建
+analysis:
+  classifier: {}
+  selector:
+    - 全符笔顺
+    - 取大优先
+form:
+  alphabet: qwertyuiopasdfghjklzxcvbnm
+  grouping:
+    补码-补: 声调-5
+    韵头-零: 韵头-e
+  mapping:
+    '1': e
+    '2': i
+    '3': u
+    '4': o
+    '5': a
+    声调-1: i
+    声调-2: e
+    声调-3: u
+    声调-4: a
+    声调-5: o
+    声母四分-零撮: k
+    声母四分-零合: s
+    声母四分-零开: r
+    声母四分-零齐: f
+    声母四分-b: b
+    声母四分-c: c
+    声母四分-ch: 'y'
+    声母四分-d: d
+    声母四分-f: f
+    声母四分-g: g
+    声母四分-h: h
+    声母四分-j: j
+    声母四分-k: k
+    声母四分-l: l
+    声母四分-m: m
+    声母四分-n: 'n'
+    声母四分-p: p
+    声母四分-q: q
+    声母四分-r: r
+    声母四分-s: s
+    声母四分-sh: v
+    声母四分-t: t
+    声母四分-x: x
+    声母四分-z: z
+    声母四分-zh: w
+    韵头-a: a
+    韵头-e: e
+    韵头-er: i
+    韵头-i: i
+    韵头-ia: u
+    韵头-ie: e
+    韵头-io: o
+    韵头-o: o
+    韵头-ü: a
+    韵头-u: u
+    韵头-üa: o
+    韵头-ua: i
+    韵头-üe: o
+    韵头-ue: u
+    韵头-uo: o
+    韵尾-i: i
+    韵尾-m: a
+    韵尾-n: o
+    韵尾-ng: e
+    韵尾-u: u
+encoder:
+  max_length: 6
+  auto_select_pattern: ([aeiou]$|[a-z]{4,})
+  short_code:
+    - length_equal: 1
+      schemes: [{prefix: 1}, {prefix: 2}, {prefix: 3}]
+    - length_equal: 2
+      schemes: [{prefix: 2}, {prefix: 3}, {prefix: 4}, {prefix: 5}]
+    - length_equal: 3
+      schemes: [{prefix: 3}, {prefix: 4}, {prefix: 5}]
+    - length_equal: 4
+      schemes: [{prefix: 4}, {prefix: 5}]
+    - length_equal: 5
+      schemes: [{prefix: 5}]
+    - length_in_range: [6, 10]
+      schemes: [{prefix: 6}]
+  rules:
+    - length_equal: 2
+      formula: AaBaBbBcAbAc
+    - length_equal: 3
+      formula: AaBaCaCbCcAb
+    - length_equal: 4
+      formula: AaBaCaDaDbDc
+    - length_equal: 5
+      formula: AaBaCaDaEaEb
+    - length_in_range: [6, 10]
+      formula: AaBaCaDaEaFa
+  sources:
+    s0:
+      object: null
+      next: s1
+    s1:
+      object: {type: 字音, subtype: 声母四分}
+      next: s2
+    s2:
+      object: {type: 字音, subtype: 韵头}
+      next: s3
+    s3:
+      object: {type: 字音, subtype: 韵尾}
+      next: s4
+    s4:
+      object: {type: 字音, subtype: 声调}
+      next: c0
+    s5:
+      object: {type: 字音, subtype: 补码}
+      next: null
+  conditions:
+    c0:
+      object: {type: 字音, subtype: 韵尾}
+      operator: 是
+      value: 韵尾-零
+      positive: s5
+      negative: null
+  priority_short_codes:
+    - - 那
+      - na4
+      - 2
+    - - 那个
+      - na4 ge4
+      - 2
+    - - 那么
+      - na4 me5
+      - 3
+    - - 那些
+      - na4 xie1
+      - 2
+    - - 那种
+      - na4 zhong3
+      - 2
+    - - 那儿
+      - na4 er2
+      - 2
+    - - 那里
+      - na4 li3
+      - 2
+    - - 那样
+      - na4 yang4
+      - 2
+    - - 那天
+      - na4 tian1
+      - 2
+    - - 那位
+      - na4 wei4
+      - 2
+    - - 哪个
+      - na3 ge4
+      - 3
+    - - 哪里
+      - na3 li3
+      - 3
+    - - 哪儿
+      - na3 er2
+      - 3
+    - - 哪
+      - na3
+      - 3
+    - - 哪些
+      - na3 xie1
+      - 3
+    - - 哪位
+      - na3 wei4
+      - 3
+    - - 哪样
+      - na3 yang4
+      - 3
+    - - 哪种
+      - na3 zhong3
+      - 3
+    - - 哪天
+      - na3 tian1
+      - 3
+    - - 这
+      - zhe4
+      - 1
+    - - 这个
+      - zhe4 ge4
+      - 2
+    - - 这样
+      - zhe4 yang4
+      - 2
+    - - 这么
+      - zhe4 me5
+      - 2
+    - - 这种
+      - zhe4 zhong3
+      - 2
+    - - 这些
+      - zhe4 xie1
+      - 2
+    - - 这里
+      - zhe4 li3
+      - 2
+    - - 这位
+      - zhe4 wei4
+      - 2
+    - - 这儿
+      - zhe4 er2
+      - 2
+    - - 我
+      - wo3
+      - 1
+    - - 你
+      - ni3
+      - 1
+    - - 他
+      - ta1
+      - 1
+    - - 她
+      - ta1
+      - 2
+    - - 它
+      - ta1
+      - 3
+    - - 他们
+      - ta1 men5
+      - 2
+    - - 你们
+      - ni3 men5
+      - 2
+    - - 您
+      - nin2
+      - 2
+    - - 它们
+      - ta1 men5
+      - 4
+    - - 咱们
+      - zan2 men5
+      - 4
+    - - 咱
+      - zan2
+      - 4
+    - - 怎么
+      - zen3 me5
+      - 2
+    - - 怎样
+      - zen3 yang4
+      - 2
+    - - 怎
+      - zen3
+      - 3
+    - - 今天
+      - jin1 tian1
+      - 2
+    - - 明天
+      - ming2 tian1
+      - 2
+    - - 每天
+      - mei3 tian1
+      - 3
+    - - 昨天
+      - zuo2 tian1
+      - 2
+    - - 夏天
+      - xia4 tian1
+      - 2
+    - - 冬天
+      - dong1 tian1
+      - 2
+    - - 春天
+      - chun1 tian1
+      - 2
+    - - 前天
+      - qian2 tian1
+      - 3
+    - - 后天
+      - hou4 tian1
+      - 3
+    - - 冬
+      - dong1
+      - 4
+    - - 秋
+      - qiu1
+      - 4
+    - - 夏
+      - xia4
+      - 4
+    - - 春
+      - chun1
+      - 4
+    - - 东
+      - dong1
+      - 3
+    - - 北
+      - bei3
+      - 3
+    - - 西
+      - xi1
+      - 3
+    - - 南
+      - nan2
+      - 3
+    - - 的
+      - de5
+      - 0
+    - - 了
+      - le5
+      - 0
+    - - 是
+      - shi4
+      - 1
+    - - 在
+      - zai4
+      - 1
+    - - 和
+      - he2
+      - 1
+    - - 背
+      - bei1
+      - 4
+    - - 被
+      - bei4
+      - 2
+    - - 现在
+      - xian4 zai4
+      - 2
+    - - 未来
+      - wei4 lai2
+      - 2
+    - - 过去
+      - guo4 qu4
+      - 2
+    - - 上
+      - shang4
+      - 2
+    - - 下
+      - xia4
+      - 2
+    - - 后
+      - hou4
+      - 2
+    - - 前
+      - qian2
+      - 2
+    - - 之前
+      - zhi1 qian2
+      - 2
+    - - 以后
+      - yi3 hou4
+      - 2
+    - - 以前
+      - yi3 qian2
+      - 2
+    - - 之后
+      - zhi1 hou4
+      - 2
+    - - 后面
+      - hou4 mian4
+      - 2
+    - - 后来
+      - hou4 lai2
+      - 2
+    - - 上面
+      - shang4 mian4
+      - 2
+    - - 下面
+      - xia4 mian4
+      - 2
+    - - 前面
+      - qian2 mian4
+      - 2
+    - - 最后
+      - zui4 hou4
+      - 3
+    - - 晚上
+      - wan3 shang4
+      - 2
+    - - 早上
+      - zao3 shang4
+      - 2
+    - - 下午
+      - xia4 wu3
+      - 2
+    - - 上午
+      - shang4 wu3
+      - 2
+    - - 下去
+      - xia4 qu4
+      - 3
+    - - 下来
+      - xia4 lai2
+      - 3
+    - - 上去
+      - shang4 qu4
+      - 3
+    - - 上来
+      - shang4 lai2
+      - 3
+    - - 来
+      - lai2
+      - 1
+    - - 去
+      - qu4
+      - 1
+    - - 出来
+      - chu1 lai2
+      - 2
+    - - 进去
+      - jin4 qu4
+      - 2
+    - - 出去
+      - chu1 qu4
+      - 2
+    - - 进来
+      - jin4 lai2
+      - 2
+    - - 一
+      - yi1
+      - 3
+    - - 两
+      - liang3
+      - 3
+    - - 二
+      - er4
+      - 3
+    - - 四
+      - si4
+      - 3
+    - - 零
+      - ling2
+      - 3
+    - - 十
+      - shi2
+      - 3
+    - - 八
+      - ba1
+      - 3
+    - - 九
+      - jiu3
+      - 3
+    - - 十二
+      - shi2 er4
+      - 4
+    - - 十一
+      - shi2 yi1
+      - 4
+    - - 六
+      - liu4
+      - 3
+    - - 七
+      - qi1
+      - 3
+    - - 四个
+      - si4 ge4
+      - 3
+    - - 一个
+      - yi1 ge4
+      - 3
+    - - 两个
+      - liang3 ge4
+      - 3
+    - - 三个
+      - san1 ge4
+      - 3
+    - - 第一
+      - di4 yi1
+      - 4
+    - - 第二
+      - di4 er4
+      - 4
+    - - 周一
+      - zhou1 yi1
+      - 4
+    - - 周五
+      - zhou1 wu3
+      - 4
+    - - 周六
+      - zhou1 liu4
+      - 4
+    - - 五个
+      - wu3 ge4
+      - 3
+    - - 第三
+      - di4 san1
+      - 4
+    - - 八个
+      - ba1 ge4
+      - 3
+    - - 第五
+      - di4 wu3
+      - 4
+    - - 六个
+      - liu4 ge4
+      - 3
+    - - 七个
+      - qi1 ge4
+      - 3
+    - - 第六
+      - di4 liu4
+      - 4
+    - - 第四
+      - di4 si4
+      - 4
+    - - 二十
+      - er4 shi2
+      - 4
+    - - 周二
+      - zhou1 er4
+      - 4
+    - - 周四
+      - zhou1 si4
+      - 4
+    - - 周三
+      - zhou1 san1
+      - 4
+    - - 九个
+      - jiu3 ge4
+      - 3
+    - - 星期一
+      - xing1 qi1 yi1
+      - 3
+    - - 星期五
+      - xing1 qi1 wu3
+      - 3
+    - - 五十
+      - wu3 shi2
+      - 4
+    - - 第七
+      - di4 qi1
+      - 4
+    - - 第八
+      - di4 ba1
+      - 4
+    - - 二个
+      - er4 ge4
+      - 3
+    - - 星期二
+      - xing1 qi1 er4
+      - 3
+    - - 四十
+      - si4 shi2
+      - 4
+    - - 第十
+      - di4 shi2
+      - 4
+    - - 十四
+      - shi2 si4
+      - 4
+    - - 十七
+      - shi2 qi1
+      - 4
+    - - 二十五
+      - er4 shi2 wu3
+      - 3
+    - - 十六
+      - shi2 liu4
+      - 4
+    - - 第五个
+      - di4 wu3 ge4
+      - 3
+    - - 十九
+      - shi2 jiu3
+      - 4
+    - - 八十
+      - ba1 shi2
+      - 4
+    - - 七十
+      - qi1 shi2
+      - 4
+    - - 第六个
+      - di4 liu4 ge4
+      - 3
+    - - 六十
+      - liu4 shi2
+      - 4
+    - - 九十
+      - jiu3 shi2
+      - 4
+    - - 星期三
+      - xing1 qi1 san1
+      - 3
+    - - 十八
+      - shi2 ba1
+      - 4
+    - - 十三
+      - shi2 san1
+      - 4
+    - - 三十
+      - san1 shi2
+      - 4
+    - - 十月
+      - shi2 yue4
+      - 4
+    - - 十五
+      - shi2 wu3
+      - 4
+    - - 十一月
+      - shi2 yi1 yue4
+      - 3
+    - - 几十
+      - ji3 shi2
+      - 4
+    - - 十几
+      - shi2 ji3
+      - 4
+    - - 周日
+      - zhou1 ri4
+      - 4
+    - - 星期六
+      - xing1 qi1 liu4
+      - 3
+    - - 星期日
+      - xing1 qi1 ri4
+      - 3
+    - - 星期四
+      - xing1 qi1 si4
+      - 3
+    - - 三月
+      - san1 yue4
+      - 4
+    - - 六月
+      - liu4 yue4
+      - 4
+    - - 七月
+      - qi1 yue4
+      - 4
+    - - 八月
+      - ba1 yue4
+      - 4
+    - - 四月
+      - si4 yue4
+      - 4
+    - - 九月
+      - jiu3 yue4
+      - 4
+    - - 五月
+      - wu3 yue4
+      - 4
+    - - 二月
+      - er4 yue4
+      - 4
+    - - 十二月
+      - shi2 er4 yue4
+      - 3
+    - - 五月份
+      - wu3 yue4 fen4
+      - 3
+    - - 十月份
+      - shi2 yue4 fen4
+      - 3
+    - - 七月份
+      - qi1 yue4 fen4
+      - 3
+    - - 三月份
+      - san1 yue4 fen4
+      - 3
+    - - 六月份
+      - liu4 yue4 fen4
+      - 3
+    - - 下个月
+      - xia4 ge4 yue4
+      - 3
+    - - 上个月
+      - shang4 ge4 yue4
+      - 3
+    - - 九月份
+      - jiu3 yue4 fen4
+      - 3
+    - - 四月份
+      - si4 yue4 fen4
+      - 3
+    - - 八月份
+      - ba1 yue4 fen4
+      - 3
+    - - 一月份
+      - yi1 yue4 fen4
+      - 3
+    - - 二月份
+      - er4 yue4 fen4
+      - 3
+    - - 万
+      - wan4
+      - 3
+    - - 亿
+      - yi4
+      - 3
+    - - 百
+      - bai3
+      - 3
+    - - 一万
+      - yi1 wan4
+      - 4
+    - - 一百
+      - yi1 bai3
+      - 4
+    - - 千
+      - qian1
+      - 3
+    - - 一千
+      - yi1 qian1
+      - 4
+    - - 五百
+      - wu3 bai3
+      - 4
+    - - 十万
+      - shi2 wan4
+      - 4
+    - - 三百
+      - san1 bai3
+      - 4
+    - - 两千
+      - liang3 qian1
+      - 4
+    - - 五千
+      - wu3 qian1
+      - 4
+    - - 三万
+      - san1 wan4
+      - 4
+    - - 八百
+      - ba1 bai3
+      - 4
+    - - 两百
+      - liang3 bai3
+      - 4
+    - - 一亿
+      - yi1 yi4
+      - 4
+    - - 五万
+      - wu3 wan4
+      - 4
+    - - 八万
+      - ba1 wan4
+      - 4
+    - - 二百
+      - er4 bai3
+      - 4
+    - - 四万
+      - si4 wan4
+      - 4
+    - - 八千
+      - ba1 qian1
+      - 4
+    - - 四百
+      - si4 bai3
+      - 4
+    - - 六千
+      - liu4 qian1
+      - 4
+    - - 四千
+      - si4 qian1
+      - 4
+    - - 不
+      - bu4
+      - 1
+    - - 有
+      - you3
+      - 1
+    - - 就
+      - jiu4
+      - 1
+    - - 也
+      - ye3
+      - 2
+    - - 好
+      - hao3
+      - 2
+    - - 自己
+      - zi4 ji3
+      - 2
+    - - 个
+      - ge4
+      - 1
+    - - 人
+      - ren2
+      - 1
+    - - 我们
+      - wo3 men5
+      - 2
+    - - 中
+      - zhong1
+      - 2
+    - - 水
+      - shui3
+      - 3
+    - - 火
+      - huo3
+      - 3
+    - - 木
+      - mu4
+      - 3
+    - - 土
+      - tu3
+      - 3
+    - - 金
+      - jin1
+      - 3
+    - - 甲
+      - jia3
+      - 4
+    - - 乙
+      - yi3
+      - 4
+    - - 丙
+      - bing3
+      - 4
+    - - 丁
+      - ding1
+      - 4
+    - - 二十四
+      - er4 shi2 si4
+      - 3
+    - - 二十八
+      - er4 shi2 ba1
+      - 3
+    - - 三十六
+      - san1 shi2 liu4
+      - 3
+    - - 二十一
+      - er4 shi2 yi1
+      - 3
+    - - 二十三
+      - er4 shi2 san1
+      - 3
+    - - 二十六
+      - er4 shi2 liu4
+      - 3
+    - - 三十五
+      - san1 shi2 wu3
+      - 3
+    - - 三十二
+      - san1 shi2 er4
+      - 3
+    - - 九十九
+      - jiu3 shi2 jiu3
+      - 3
+    - - 二十七
+      - er4 shi2 qi1
+      - 3
+    - - 四十三
+      - si4 shi2 san1
+      - 3
+    - - 八十七
+      - ba1 shi2 qi1
+      - 3
+    - - 二十二
+      - er4 shi2 er4
+      - 3
+    - - 九十八
+      - jiu3 shi2 ba1
+      - 3
+    - - 二十九
+      - er4 shi2 jiu3
+      - 3
+    - - 三十三
+      - san1 shi2 san1
+      - 3
+    - - 四十五
+      - si4 shi2 wu3
+      - 3
+    - - 三十四
+      - san1 shi2 si4
+      - 3
+    - - 三十一
+      - san1 shi2 yi1
+      - 3
+    - - 九十三
+      - jiu3 shi2 san1
+      - 3
+    - - 三十九
+      - san1 shi2 jiu3
+      - 3
+    - - 四十八
+      - si4 shi2 ba1
+      - 3
+    - - 八十五
+      - ba1 shi2 wu3
+      - 3
+    - - 五十六
+      - wu3 shi2 liu4
+      - 3
+    - - 五十九
+      - wu3 shi2 jiu3
+      - 3
+    - - 七十四
+      - qi1 shi2 si4
+      - 3
+    - - 五十五
+      - wu3 shi2 wu3
+      - 3
+    - - 三十七
+      - san1 shi2 qi1
+      - 3
+    - - 三十八
+      - san1 shi2 ba1
+      - 3
+    - - 四十一
+      - si4 shi2 yi1
+      - 3
+    - - 四十二
+      - si4 shi2 er4
+      - 3
+    - - 四十四
+      - si4 shi2 si4
+      - 3
+    - - 四十六
+      - si4 shi2 liu4
+      - 3
+    - - 四十七
+      - si4 shi2 qi1
+      - 3
+    - - 四十九
+      - si4 shi2 jiu3
+      - 3
+    - - 五十一
+      - wu3 shi2 yi1
+      - 3
+    - - 五十二
+      - wu3 shi2 er4
+      - 3
+    - - 五十三
+      - wu3 shi2 san1
+      - 3
+    - - 五十四
+      - wu3 shi2 si4
+      - 3
+    - - 五十七
+      - wu3 shi2 qi1
+      - 3
+    - - 五十八
+      - wu3 shi2 ba1
+      - 3
+    - - 六十一
+      - liu4 shi2 yi1
+      - 3
+    - - 六十二
+      - liu4 shi2 er4
+      - 3
+    - - 六十三
+      - liu4 shi2 san1
+      - 3
+    - - 六十四
+      - liu4 shi2 si4
+      - 3
+    - - 六十五
+      - liu4 shi2 wu3
+      - 3
+    - - 六十六
+      - liu4 shi2 liu4
+      - 3
+    - - 六十七
+      - liu4 shi2 qi1
+      - 3
+    - - 六十八
+      - liu4 shi2 ba1
+      - 3
+    - - 六十九
+      - liu4 shi2 jiu3
+      - 3
+    - - 七十一
+      - qi1 shi2 yi1
+      - 3
+    - - 七十二
+      - qi1 shi2 er4
+      - 3
+    - - 七十三
+      - qi1 shi2 san1
+      - 3
+    - - 七十五
+      - qi1 shi2 wu3
+      - 3
+    - - 七十六
+      - qi1 shi2 liu4
+      - 3
+    - - 七十七
+      - qi1 shi2 qi1
+      - 3
+    - - 七十八
+      - qi1 shi2 ba1
+      - 3
+    - - 七十九
+      - qi1 shi2 jiu3
+      - 3
+    - - 八十一
+      - ba1 shi2 yi1
+      - 3
+    - - 八十二
+      - ba1 shi2 er4
+      - 3
+    - - 八十三
+      - ba1 shi2 san1
+      - 3
+    - - 八十四
+      - ba1 shi2 si4
+      - 3
+    - - 八十六
+      - ba1 shi2 liu4
+      - 3
+    - - 八十八
+      - ba1 shi2 ba1
+      - 3
+    - - 八十九
+      - ba1 shi2 jiu3
+      - 3
+    - - 九十一
+      - jiu3 shi2 yi1
+      - 3
+    - - 九十二
+      - jiu3 shi2 er4
+      - 3
+    - - 九十四
+      - jiu3 shi2 si4
+      - 3
+    - - 九十五
+      - jiu3 shi2 wu3
+      - 3
+    - - 九十六
+      - jiu3 shi2 liu4
+      - 3
+    - - 九十七
+      - jiu3 shi2 qi1
+      - 3
+    - - 三千
+      - san1 qian1
+      - 4
+    - - 六百
+      - liu4 bai3
+      - 4
+    - - 七百
+      - qi1 bai3
+      - 4
+    - - 十亿
+      - shi2 yi4
+      - 4
+    - - 七千
+      - qi1 qian1
+      - 4
+    - - 九百
+      - jiu3 bai3
+      - 4
+    - - 三亿
+      - san1 yi4
+      - 4
+    - - 六万
+      - liu4 wan4
+      - 4
+    - - 二千
+      - er4 qian1
+      - 4
+    - - 七万
+      - qi1 wan4
+      - 4
+    - - 二万
+      - er4 wan4
+      - 4
+    - - 二亿
+      - er4 yi4
+      - 4
+    - - 四亿
+      - si4 yi4
+      - 4
+    - - 五亿
+      - wu3 yi4
+      - 4
+    - - 六亿
+      - liu4 yi4
+      - 4
+    - - 七亿
+      - qi1 yi4
+      - 4
+    - - 八亿
+      - ba1 yi4
+      - 4
+    - - 九千
+      - jiu3 qian1
+      - 4
+    - - 九万
+      - jiu3 wan4
+      - 4
+    - - 九亿
+      - jiu3 yi4
+      - 4
+    - - 第九
+      - di4 jiu3
+      - 4
+    - - 一月
+      - yi1 yue4
+      - 4
+    - - 没
+      - mei2
+      - 1
+    - - 啊
+      - a5
+      - 2
+    - - 吗
+      - ma5
+      - 2
+    - - 得
+      - de5
+      - 2
+    - - 以
+      - yi3
+      - 2
+    - - 为
+      - wei2
+      - 2
+    - - 未
+      - wei4
+      - 3
+    - - 五
+      - wu3
+      - 3
+    - - 咯
+      - ka3
+      - 4
+    - - 卡
+      - ka3
+      - 3
+    - - 雨
+      - yu3
+      - 4
+    - - 三
+      - san1
+      - 3
+    - - 几
+      - ji3
+      - 3
+    - - 几个
+      - ji3 ge4
+      - 2
+    - - 十个
+      - shi2 ge4
+      - 3
+    - - 十几个
+      - shi2 ji3 ge4
+      - 3
+    - - 十五个
+      - shi2 wu3 ge4
+      - 4
+    - - 十二个
+      - shi2 er4 ge4
+      - 4
+    - - 十一个
+      - shi2 yi1 ge4
+      - 4
+    - - 十三个
+      - shi2 san1 ge4
+      - 4
+    - - 十六个
+      - shi2 liu4 ge4
+      - 4
+    - - 十八个
+      - shi2 ba1 ge4
+      - 4
+    - - 十四个
+      - shi2 si4 ge4
+      - 4
+    - - 十七个
+      - shi2 qi1 ge4
+      - 4
+    - - 十九个
+      - shi2 jiu3 ge4
+      - 4
+    - - 都
+      - dou1
+      - 1
+    - - 看
+      - kan4
+      - 1
+    - - 会
+      - hui4
+      - 2
+    - - 想
+      - xiang3
+      - 1
+    - - 吧
+      - ba5
+      - 2
+    - - 能
+      - neng2
+      - 2
+    - - 又
+      - you4
+      - 2
+    - - 狗
+      - gou3
+      - 3
+    - - 猫
+      - mao1
+      - 3
+    - - 吃
+      - chi1
+      - 2
+    - - 出
+      - chu1
+      - 1
+    - - 词
+      - ci2
+      - 3
+    - - 字
+      - zi4
+      - 3
+    - - 小
+      - xiao3
+      - 3
+    - - 大
+      - da4
+      - 3
+    - - 月
+      - yue4
+      - 3
+    - - 们
+      - men5
+      - 4
+    - - 咋
+      - za3
+      - 3
+    - - 数
+      - shu3
+      - 2
+    - - 干
+      - gan4
+      - 3
+    - - 地
+      - de5
+      - 0
+    - - 啦
+      - la5
+      - 2
+    - - 神
+      - shen2
+      - 4
+    - - 噢
+      - o1
+      - 4
+    - - 蛮
+      - man2
+      - 4
+    - - 拍
+      - pai1
+      - 2
+    - - 呃
+      - e5
+      - 4
+    - - 每
+      - mei3
+      - 2
+    - - 远
+      - yuan3
+      - 4
+    - - 元
+      - yuan2
+      - 3
+    - - 行
+      - xing2
+      - 2
+    - - 性
+      - xing4
+      - 3
+    - - 妈妈
+      - ma1 ma1
+      - 2
+    - - 父母
+      - fu4 mu3
+      - 2
+    - - 爸爸
+      - ba4 ba4
+      - 2
+    - - 姐
+      - jie3
+      - 3
+    - - 妹
+      - mei4
+      - 3
+    - - 爸
+      - ba4
+      - 3
+    - - 哥
+      - ge1
+      - 3
+    - - 姐姐
+      - jie3 jie3
+      - 3
+    - - 兄弟
+      - xiong1 di4
+      - 3
+    - - 哥哥
+      - ge1 ge1
+      - 3
+    - - 爸妈
+      - ba4 ma1
+      - 2
+    - - 妹妹
+      - mei4 mei4
+      - 3
+    - - 父亲
+      - fu4 qin1
+      - 3
+    - - 母亲
+      - mu3 qin1
+      - 3
+    - - 姐妹
+      - jie3 mei4
+      - 3
+    - - 弟弟
+      - di4 di4
+      - 3
+    - - 老妈
+      - lao3 ma1
+      - 3
+    - - 老爸
+      - lao3 ba4
+      - 3
+    - - 我爸
+      - wo3 ba4
+      - 3
+    - - 种
+      - zhong4
+      - 3
+    - - 往
+      - wang3
+      - 3
+    - - 天
+      - tian1
+      - 2
+    - - 短
+      - duan3
+      - 4
+    - - 空
+      - kong1
+      - 3
+    - - 版
+      - ban3
+      - 4
+    - - 共
+      - gong4
+      - 3
+    - - 胸
+      - xiong1
+      - 3
+    - - 作
+      - zuo4
+      - 3
+    - - 什么
+      - shen2 me5
+      - 1
+    - - 一样
+      - yi1 yang4
+      - 3
+    - - 一下
+      - yi1 xia4
+      - 3
+    - - 一种
+      - yi1 zhong3
+      - 3
+    - - 一些
+      - yi1 xie1
+      - 3
+    - - 一次
+      - yi1 ci4
+      - 3
+    - - 一起
+      - yi1 qi3
+      - 3
+    - - 一点
+      - yi1 dian3
+      - 3
+    - - 一天
+      - yi1 tian1
+      - 3
+    - - 一般
+      - yi1 ban1
+      - 3
+    - - 一切
+      - yi1 qie4
+      - 3
+    - - 一只
+      - yi1 zhi1
+      - 3
+    - - 一直
+      - yi1 zhi2
+      - 2
+    - - 一定
+      - yi1 ding4
+      - 3
+    - - 一年
+      - yi1 nian2
+      - 3
+    - - 一生
+      - yi1 sheng1
+      - 3
+    - - 一条
+      - yi1 tiao2
+      - 3
+    - - 一件
+      - yi1 jian4
+      - 3
+    - - 一场
+      - yi1 chang3
+      - 3
+    - - 一位
+      - yi1 wei4
+      - 3
+    - - 一边
+      - yi1 bian1
+      - 3
+    - - 里
+      - li3
+      - 2
+    - - 左
+      - zuo3
+      - 4
+    - - 右
+      - you4
+      - 4
+    - - 中
+      - zhong4
+      - 2
+    - - 中午
+      - zhong1 wu3
+      - 2
+    - - 过来
+      - guo4 lai2
+      - 2
+    - - 可以
+      - ke3 yi3
+      - 2
+    - - 要
+      - yao4
+      - 2
+    - - 不会
+      - bu4 hui4
+      - 2
+    - - 不能
+      - bu4 neng2
+      - 2
+    - - 不要
+      - bu4 yao4
+      - 2
+    - - 可
+      - ke3
+      - 2
+    - - 应该
+      - ying1 gai1
+      - 2
+    - - 需要
+      - xu1 yao4
+      - 2
+    - - 必须
+      - bi4 xu1
+      - 2
+    - - 最近
+      - zui4 jin4
+      - 3
+    - - 最好
+      - zui4 hao3
+      - 3
+    - - 最大
+      - zui4 da4
+      - 3
+    - - 更好
+      - geng4 hao3
+      - 3
+    - - 很大
+      - hen3 da4
+      - 3
+    - - 更新
+      - geng1 xin1
+      - 3
+    - - 很少
+      - hen3 shao3
+      - 3
+    - - 最美
+      - zui4 mei3
+      - 3
+    - - 最高
+      - zui4 gao1
+      - 3
+    - - 最新
+      - zui4 xin1
+      - 3
+    - - 很难
+      - hen3 nan2
+      - 3
+    - - 很快
+      - hen3 kuai4
+      - 3
+    - - 很多
+      - hen3 duo1
+      - 3
+    - - 很
+      - hen3
+      - 2
+    - - 最
+      - zui4
+      - 2
+    - - 很小
+      - hen3 xiao3
+      - 3
+    - - 最多
+      - zui4 duo1
+      - 3
+    - - 很长
+      - hen3 chang2
+      - 3
+    - - 最低
+      - zui4 di1
+      - 3
+    - - 很强
+      - hen3 qiang2
+      - 3
+    - - 最强
+      - zui4 qiang2
+      - 3
+    - - 最少
+      - zui4 shao3
+      - 3
+    - - 最小
+      - zui4 xiao3
+      - 3
+algebra:
+  声母四分:
+    - type: xform
+      from: ^[nm]g\d$
+      to: 零开
+    - type: xform
+      from: ^([bpmfdtnlgkhjqxzcsr]h?|yu?|[aoew]).+$
+      to: $1
+    - type: xform
+      from: ^w$
+      to: 零合
+    - type: xform
+      from: ^y$
+      to: 零齐
+    - type: xform
+      from: ^yu$
+      to: 零撮
+    - type: xform
+      from: ^[aoe]$
+      to: 零开
+  韵头:
+    - type: xform
+      from: ((?<=[jqx])u|yu|v)
+      to: ü
+    - type: xform
+      from: yi?
+      to: i
+    - type: xform
+      from: wu?
+      to: u
+    - type: xform
+      from: iu
+      to: iou
+    - type: xform
+      from: u([in])
+      to: ue$1
+    - type: xform
+      from: ^.*?([aeiouü].*|m|ng?)\d$
+      to: $1
+    - type: xform
+      from: ao
+      to: au
+    - type: xform
+      from: ^(?=[mn])
+      to: 零
+    - type: xform
+      from: (.+)[iunm]g?$
+      to: $1
+  韵尾:
+    - type: xform
+      from: ^([jqxy])u
+      to: $1v
+    - type: xform
+      from: ao
+      to: au
+    - type: xform
+      from: yi?
+      to: i
+    - type: xform
+      from: wu?
+      to: u
+    - type: xform
+      from: iu
+      to: iou
+    - type: xform
+      from: u([in])
+      to: ue$1
+    - type: xform
+      from: ^.*?([aeiouv].*|m|ng?)\d$
+      to: $1
+    - type: xform
+      from: ^(?=[mn])
+      to: 零
+    - type: xform
+      to: $1
+      from: ^.+?([iunm]|ng)?$
+    - type: xform
+      from: ^$
+      to: 零
+  补码:
+    - type: xform
+      from: ^.+$
+      to: 补
+optimization:
+  objective:
+    characters_short:
+      duplication: 1
+      pair_equivalence: 1
+    words_short:
+      duplication: 1
+      pair_equivalence: 1
+  metaheuristic:
+    algorithm: SimulatedAnnealing
+    parameters:
+      t_max: 1
+      t_min: 0.000001
+      steps: 100000
+  constraints:
+    elements:
+      - {element: '1'}
+      - {element: '2'}
+      - {element: '3'}
+      - {element: '4'}
+      - {element: '5'}
+      - {element: 声母四分-b}
+      - {element: 声母四分-p}
+      - {element: 声母四分-m}
+      - {element: 声母四分-f}
+      - {element: 声母四分-d}
+      - {element: 声母四分-t}
+      - {element: 声母四分-n}
+      - {element: 声母四分-l}
+      - {element: 声母四分-g}
+      - {element: 声母四分-k}
+      - {element: 声母四分-h}
+      - {element: 声母四分-j}
+      - {element: 声母四分-q}
+      - {element: 声母四分-x}
+      - {element: 声母四分-z}
+      - {element: 声母四分-c}
+      - {element: 声母四分-s}
+      - {element: 声母四分-r}
+      - {element: 声母四分-zh}
+      - {element: 声母四分-ch}
+      - {element: 声母四分-sh}
+      - {element: 韵头-a}
+      - {element: 韵头-e}
+      - {element: 韵头-i}
+      - {element: 韵头-o}
+      - {element: 韵头-u}
+      - {element: 韵头-er, keys: [a, e, i, o, u]}
+      - {element: 韵头-ia, keys: [a, e, i, o, u]}
+      - {element: 韵头-ie, keys: [a, e, i, o, u]}
+      - {element: 韵头-io, keys: [a, e, i, o, u]}
+      - {element: 韵头-ua, keys: [a, e, i, o, u]}
+      - {element: 韵头-ue}
+      - {element: 韵头-uo}
+      - {element: 韵头-ü, keys: [a, e, i, o, u]}
+      - {element: 韵头-üa, keys: [a, e, i, o, u]}
+      - {element: 韵头-üe, keys: [a, e, i, o, u]}
+      - {element: 韵尾-i}
+      - {element: 韵尾-u}
+      - {element: 韵尾-n}
+      - {element: 韵尾-ng}
+      - {element: 韵尾-m}
+      - {element: 声调-1, keys: [a, e, i, o, u]}
+      - {element: 声调-2, keys: [a, e, i, o, u]}
+      - {element: 声调-3, keys: [a, e, i, o, u]}
+      - {element: 声调-4, keys: [a, e, i, o, u]}
+      - {element: 声调-5, keys: [a, e, i, o, u]}
+      - {element: 声母四分-零合, keys: [b, p, m, t, 'n', g, k, h, q, x, z, s, r]}
+      - {element: 声母四分-零开, keys: [b, p, m, t, 'n', g, k, h, q, x, z, s, r]}
+      - {element: 声母四分-零齐}
+      - {element: 声母四分-零撮, keys: [b, p, m, t, 'n', g, k, h, q, x, z, s, r]}

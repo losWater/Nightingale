@@ -1,0 +1,540 @@
+version: '0.1'
+source: mswb
+info:
+  name: 米十五笔
+  version: 2023.05.30
+  author: 李明
+  description: http://xukt.ysepan.com/
+analysis:
+  classifier:
+    竖钩: 5
+    竖提: 6
+    横折提: 6
+    竖折: 6
+    横折折: 6
+    竖弯: 6
+    横折弯: 6
+    竖弯钩: 6
+    横折弯钩: 6
+    撇点: 6
+    撇折: 6
+    斜钩: 6
+    横斜钩: 6
+  degenerator:
+    feature:
+      捺: 点
+      提: 横
+    no_cross: false
+  selector:
+    - 结构完整
+    - 连续笔顺
+    - 根少优先
+    - 能连不交
+    - 能散不连
+    - 取大优先
+  customize:
+    兀:
+      - '1'
+      - 儿
+    "\ue093":
+      - 丷
+      - 王
+    "\ue016":
+      - 丷
+      - 干
+    "\ue064":
+      - 三
+      - 人
+    耂:
+      - 土
+      - '3'
+    母:
+      - "\ue405"
+      - '1'
+      - "\ue00d"
+    "\ue00b":
+      - 丷
+      - 三
+      - 人
+    万:
+      - 丆
+      - '5'
+    主:
+      - '4'
+      - 王
+    兰:
+      - 丷
+      - 三
+    击:
+      - 二
+      - 山
+    午:
+      - '3'
+      - 干
+    垂:
+      - '3'
+      - '1'
+      - 士
+    奂:
+      - "\ue0bc"
+      - "\ue407"
+      - 人
+    夹:
+      - '1'
+      - 䒑
+      - 人
+    未:
+      - 二
+      - 小
+    末:
+      - 二
+      - 小
+    羊:
+      - 丷
+      - 三
+      - '2'
+    兆:
+      - 儿
+      - "\ue42b"
+    必:
+      - 心
+      - '3'
+    非:
+      - '2'
+      - 三
+      - '2'
+      - 三
+    韭:
+      - '2'
+      - 三
+      - '2'
+      - 三
+      - '1'
+    州:
+      - 川
+      - "\ue448"
+    身:
+      - '3'
+      - 冂
+      - 三
+      - '3'
+    秉:
+      - "\ue44b"
+      - "\ue431"
+    冓:
+      - 三
+      - "\ue001"
+      - 冂
+      - "\ue43a"
+    "\ue022":
+      - 三
+      - "\ue001"
+      - 八
+    豖:
+      - 豕
+      - '4'
+    曲:
+      - "\ue439"
+      - 龷
+    "\ue0d3":
+      - "\ue439"
+      - "\ue001"
+      - 三
+    "\ue066":
+      - 艹
+      - 日
+    "\ue050":
+      - '1'
+      - "\ue41a"
+    "\ue083":
+      - "\ue423"
+      - "\ue00d"
+    乍:
+      - "\ue078"
+      - '2'
+      - 二
+    卅:
+      - '1'
+      - 川
+    丌:
+      - '1'
+      - "\ue0e3"
+form:
+  alphabet: qwertyuiopasdfghjklzxcvbnm
+  mapping_type: 1
+  grouping:
+    "\ue401": 力
+    "\ue432": 彐
+    "\ue431": 彐
+    "\ue446": 八
+    "\ue087": 八
+    攵: 文
+    夂: 文
+    曰: 日
+    "\ue070": 日
+    "\ue00c": 日
+    "\ue43a": 土
+    "\ue445": 小
+    "\ue442": 小
+    "\ue43d": 人
+    "\ue444": 厶
+    "\ue416": 七
+    "\ue011": 匕
+    "\ue43f": 匕
+    "\ue443": "\ue068"
+    "\ue439": 冂
+    "\ue441": 乃
+    "\ue437": 止
+    "\ue0c6": 足
+    "\ue400": 斤
+    "\ue403": 勹
+    氺: 水
+    "\ue0d9": 水
+    "\ue42b": 水
+    "\ue42c": 水
+    龵: 手
+    "\ue40b": 手
+    "\ue0d2": 月
+    "\ue08c": 用
+    "\ue44b": 禾
+    "\ue420": 豕
+    "\ue440": "\ue405"
+    "\ue0d0": 雨
+    "\ue0c8": 车
+    "\ue0d6": 几
+    朩: 木
+    "\ue012": 丬
+    龰: 止
+    "\ue044": "\ue001"
+    "\ue451": 止
+    覀: 西
+    "\ue429": 扌
+    "\ue406": 口
+    "\ue427": 勹
+    乑: 豕
+    "\ue449": 大
+    "\ue043": 大
+    "\ue447": 灬
+    車: 车
+    "\ue452": 十
+    "\ue020": "\ue0bc"
+    "\ue453": 手
+  mapping:
+    '1': s
+    '2': e
+    '3': r
+    '4': w
+    '5': j
+    '6': l
+    气: q
+    "\ue078": q
+    "\ue40f": q
+    刀: q
+    力: q
+    方: q
+    马: q
+    犭: q
+    五: w
+    讠: w
+    亠: w
+    山: e
+    "\ue018": e
+    "\ue03e": e
+    巾: e
+    彐: e
+    "\ue0b4": e
+    八: r
+    亻: r
+    土: t
+    士: t
+    干: t
+    "\ue002": t
+    雨: t
+    田: t
+    言: 'y'
+    "\ue434": 'y'
+    龴: 'y'
+    厶: 'y'
+    衤: 'y'
+    礻: 'y'
+    鱼: 'y'
+    也: 'y'
+    月: u
+    "\ue0cd": u
+    用: u
+    文: u
+    夕: u
+    "\ue423": u
+    "\ue0bc": u
+    日: i
+    灬: i
+    宀: i
+    冖: i
+    㠯: i
+    口: o
+    囗: o
+    尸: p
+    毛: p
+    小: p
+    大: p
+    彳: p
+    车: p
+    金: a
+    钅: a
+    人: a
+    石: s
+    丆: s
+    米: d
+    "\ue41e": d
+    二: d
+    工: d
+    "\ue0e3": d
+    "\ue001": d
+    冫: d
+    丷: d
+    "\ue088": d
+    "\ue00d": d
+    王: f
+    三: f
+    龶: f
+    四: f
+    目: f
+    罒: f
+    "\ue428": f
+    广: g
+    疒: g
+    厂: g
+    "\ue409": g
+    古: g
+    弓: g
+    "\ue422": g
+    "\ue0b7": g
+    "\ue079": g
+    贝: h
+    且: h
+    "\ue419": h
+    火: h
+    "\ue024": h
+    "\ue404": h
+    "\ue40c": h
+    "\ue057": h
+    禾: h
+    "\ue40e": h
+    "\ue454": h
+    丁: j
+    扌: j
+    刂: j
+    九: j
+    子: j
+    孑: j
+    了: j
+    斤: j
+    十: k
+    "\ue40a": k
+    廿: k
+    艹: k
+    廾: k
+    龷: k
+    丬: k
+    䒑: k
+    又: k
+    立: l
+    七: l
+    匕: l
+    "\ue417": l
+    弋: l
+    戈: l
+    戋: l
+    幺: l
+    "\ue023": l
+    纟: l
+    之: z
+    辶: z
+    廴: z
+    舟: z
+    长: z
+    豸: z
+    豕: z
+    "\ue09e": z
+    爫: z
+    西: x
+    酉: x
+    彡: x
+    "\ue068": x
+    心: x
+    忄: x
+    乂: x
+    川: c
+    "\ue41a": c
+    门: c
+    镸: c
+    匚: c
+    凵: c
+    "\ue009": c
+    "\ue007": c
+    "\ue44a": c
+    冂: c
+    "\ue02a": c
+    "\ue418": c
+    虫: c
+    寸: c
+    水: v
+    氵: v
+    "\ue42d": v
+    "\ue448": v
+    皿: v
+    "\ue407": v
+    "\ue436": v
+    手: v
+    耳: b
+    卩: b
+    "\ue0b2": b
+    阝: b
+    巳: b
+    巴: b
+    㔾: b
+    勹: b
+    女: 'n'
+    白: 'n'
+    臼: 'n'
+    乃: 'n'
+    止: 'n'
+    足: 'n'
+    几: 'n'
+    儿: 'n'
+    "\ue424": 'n'
+    "\ue07f": 'n'
+    木: m
+    "\ue430": m
+    "\ue42e": m
+    "\ue42f": m
+    "\ue408": m
+    "\ue405": m
+    卜: m
+    "\ue402": m
+    首字母-b: b
+    首字母-p: p
+    首字母-m: m
+    首字母-f: f
+    首字母-d: d
+    首字母-t: t
+    首字母-n: 'n'
+    首字母-l: l
+    首字母-g: g
+    首字母-k: k
+    首字母-h: h
+    首字母-j: j
+    首字母-q: q
+    首字母-x: x
+    首字母-z: z
+    首字母-c: c
+    首字母-s: s
+    首字母-r: r
+    首字母-y: 'y'
+    首字母-w: w
+    首字母-a: a
+    首字母-o: o
+    首字母-e: e
+encoder:
+  max_length: 4
+  auto_select_length: 4
+  short_code:
+    - length_equal: 1
+      schemes: [{prefix: 1}, {prefix: 2}, {prefix: 3}]
+  rules:
+    - length_equal: 2
+      formula: AaAbBaBb
+    - length_equal: 3
+      formula: AaBaCaCb
+    - length_in_range: [4, 10]
+      formula: AaBaCaZa
+  sources:
+    s0:
+      object: null
+      next: s1
+    s1:
+      object: {type: 字根, rootIndex: 1}
+      next: c0
+    s2:
+      object: {type: 字根, rootIndex: 2}
+      next: c1
+    s3:
+      object: {type: 字根, rootIndex: -1}
+      next: s4
+    s4:
+      object: {type: 字音, subtype: 首字母}
+      next: null
+    s5:
+      object: {type: 字根, rootIndex: 1}
+      next: s7
+    s6:
+      object: {type: 字音, subtype: 首字母}
+      next: null
+    s7:
+      object: {type: 字根, rootIndex: 1}
+      next: s10
+    s8:
+      object: {type: 笔画, rootIndex: 1, strokeIndex: 1}
+      next: c3
+    s9:
+      object: {type: 笔画, rootIndex: 1, strokeIndex: 2}
+      next: c4
+    s10:
+      object: {type: 字根, rootIndex: 1}
+      next: null
+    s11:
+      object: {type: 字音, subtype: 首字母}
+      next: s12
+    s12:
+      object: {type: 字音, subtype: 首字母}
+      next: null
+    s13:
+      object: {type: 笔画, rootIndex: 1, strokeIndex: 3}
+      next: null
+    s14:
+      object: {type: 字音, subtype: 首字母}
+      next: null
+  conditions:
+    c0:
+      object: {type: 字根, rootIndex: 2}
+      operator: 存在
+      positive: s2
+      negative: c2
+    c1:
+      object: {type: 字根, rootIndex: 3}
+      operator: 存在
+      positive: s3
+      negative: s6
+    c2:
+      object: {type: 汉字}
+      operator: 匹配
+      value: '[气五山八土言月日口车金石米王广火子十立之西川水巴女木]'
+      positive: s5
+      negative: s8
+    c3:
+      object: {type: 笔画, rootIndex: 1, strokeIndex: 2}
+      operator: 存在
+      positive: s9
+      negative: s11
+    c4:
+      object: {type: 笔画, rootIndex: 1, strokeIndex: 3}
+      operator: 存在
+      positive: s13
+      negative: s14
+optimization:
+  objective:
+    characters_full:
+      duplication: 1
+      pair_equivalence: 1
+    characters_short:
+      duplication: 1
+      pair_equivalence: 1
+    words_full:
+      duplication: 1
+      pair_equivalence: 1
+  metaheuristic:
+    algorithm: SimulatedAnnealing
+    parameters:
+      t_max: 1
+      t_min: 1.0e-5
+      steps: 10000

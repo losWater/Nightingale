@@ -1,0 +1,20 @@
+# 外部克隆仓库（hanzi-chai 等，按需自行 clone 到 repos/）
+repos/
+
+# 退火/优化临时输出（单次可达数 GB）
+work/optimize/output-*/
+work/optimize/hot_run.log
+
+# 中间拼装大表（20MB 级，可由脚本重算）
+work/*_assembled.tsv
+work/v031_full.tsv
+
+# Python / 编辑器
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.swp
+
+# 嵌套的外部 git 克隆（早期研究用的辅助码 wiki），不入库
+data/raw/fuzhuma-wiki/

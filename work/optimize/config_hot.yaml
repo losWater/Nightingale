@@ -1,0 +1,8063 @@
+version: '0.4'
+source: null
+info:
+  name: 夜莺码
+  author: nightingale
+  version: '0.1'
+  description: 143根 音形方案 · 小鹤双拼 · 字根不落p键
+form:
+  alphabet: qwertyuiopasdfghjklzxcvbnm
+  mapping_type: 1
+  mapping:
+    mzm-n: n
+    mzm-iang: l
+    szm-g: g
+    mzm-i: i
+    szm-b: b
+    mzm-ong: s
+    szm-t: t
+    szm-k: k
+    szm-ch: i
+    mzm-ing: k
+    mzm-en: f
+    mzm-uai: k
+    szm-f: f
+    szm-q: q
+    mzm-uan: r
+    mzm-ia: x
+    szm-w: w
+    szm-c: c
+    mzm-an: j
+    mzm-ve: t
+    szm-p: p
+    mzm-ai: d
+    mzm-eng: g
+    mzm-ei: w
+    mzm-in: b
+    mzm-e: e
+    mzm-iong: s
+    mzm-uo: o
+    szm-h: h
+    mzm-ui: v
+    mzm-un: y
+    szm-o: o
+    mzm-ao: c
+    mzm-v: v
+    mzm-ou: z
+    szm-z: z
+    mzm-r: r
+    mzm-ie: p
+    mzm-a: a
+    mzm-ng: g
+    szm-j: j
+    szm-e: e
+    mzm-u: u
+    mzm-ian: m
+    mzm-o: o
+    mzm-ua: x
+    szm-m: m
+    szm-l: l
+    mzm-ang: h
+    mzm-uang: l
+    szm-r: r
+    szm-a: a
+    szm-y: y
+    szm-d: d
+    mzm-ue: t
+    mzm-m: m
+    szm-s: s
+    mzm-iu: q
+    mzm-iao: n
+    szm-n: n
+    szm-x: x
+    szm-zh: v
+    szm-sh: u
+    木: w
+    土: g
+    亻: x
+    日: v
+    钅: d
+    '1': d
+    女: y
+    月: l
+    '2': y
+    又: l
+    '3': u
+    虫: f
+    十: s
+    八: f
+    '5': r
+    火: t
+    王: a
+    山: w
+    贝: m
+    讠: c
+    大: x
+    忄: n
+    石: t
+    辶: q
+    寸: k
+    人: e
+    儿: k
+    目: s
+    鱼: m
+    宀: i
+    疒: m
+    田: w
+    力: u
+    匕: a
+    鸟: c
+    巾: y
+    马: z
+    厶: q
+    子: a
+    广: r
+    米: l
+    工: i
+    尸: q
+    灬: n
+    冫: f
+    方: f
+    干: m
+    车: t
+    几: i
+    足: q
+    立: b
+    止: r
+    夕: f
+    戈: a
+    彳: h
+    舟: t
+    巴: t
+    而: b
+    刀: i
+    丁: j
+    西: q
+    臼: s
+    二: u
+    牛: b
+    丰: y
+    衣: k
+    文: j
+    鬼: s
+    卩: b
+    气: s
+    句: i
+    彐: s
+    廿: v
+    水: o
+    未: e
+    冂: o
+    册: j
+    五: g
+    亠: t
+    丷: i
+    皿: e
+    龶: n
+    士: g
+    罒: j
+    口: o
+    氵: k
+    艹: z
+    扌: j
+    纟: e
+    '4': h
+    犭: b
+    ⺈: t
+    小: i
+    衤: h
+    习: d
+    古: e
+    夫: z
+    户: t
+    豕: d
+    殳: k
+    囗: n
+    㐅: y
+    七: m
+    用: i
+    骨: c
+    辛: n
+    电: e
+    手: o
+    勿: i
+    也: a
+    束: u
+    长: h
+    麻: d
+    丬: l
+    ⺆: e
+    片: i
+    巛: t
+    为: l
+    阝: z
+    ㇏: a
+    𠂉: g
+    𰀁: r
+    匚: o
+    ㇒: x
+    : j
+    付: w
+    尚: e
+    兄: f
+    介: c
+    高: d
+    : z
+    勺: r
+    𠂇: c
+    厉: e
+    各: r
+    爫: a
+    固: q
+    : a
+    于: d
+    玉: h
+    谷: y
+    斤: g
+    甫: a
+    ⺋:
+      element: 巴
+    乂:
+      element: 㐅
+    可:
+      element: 丁
+    夂:
+      element: 文
+    弋:
+      element: 戈
+    死:
+      element: 夕
+    牜:
+      element: 牛
+    犬:
+      element: 犭
+    甘:
+      element: 廿
+    白:
+      element: 臼
+    门:
+      element: 冂
+    :
+      element: 足
+    :
+      element: 车
+    心:
+      element: 忄
+    龴:
+      element: 厶
+    己:
+      element: 巴
+    歹:
+      element: 夕
+    ⺌:
+      element: 小
+    巳:
+      element: 巴
+    覀:
+      element: 西
+    言:
+      element: 讠
+    攵:
+      element: 文
+    自:
+      element: 目
+    :
+      element: 月
+    冖:
+      element: 宀
+    廴:
+      element: 辶
+    厂:
+      element: 广
+    三:
+      element: 二
+    ㇈:
+      element: '5'
+    刂:
+      element: 刀
+    𠆢:
+      element: 人
+    千:
+      element: 干
+    糸:
+      element: 纟
+    '6':
+      element: '5'
+encoder:
+  max_length: 4
+  select_keys:
+  - _
+  - ;
+  auto_select_length: 4
+  sources:
+    s0:
+      object: null
+      next: c0
+    s1:
+      object:
+        type: 字音
+        subtype: szm
+      next: s11
+    s2:
+      object:
+        type: 字音
+        subtype: szm
+      next: s3
+    s3:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s10
+    s4:
+      object:
+        type: 字音
+        subtype: szm
+      next: s5
+    s5:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s6
+    s6:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s14
+    s7:
+      object:
+        type: 字音
+        subtype: szm
+      next: s8
+    s8:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s9
+    s9:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s13
+    s10:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s15
+    s11:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s12
+    s12:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s16
+    s13:
+      object:
+        type: 字根
+        rootIndex: -1
+      next: null
+      index: 0
+    s14:
+      object:
+        type: 字根
+        rootIndex: -1
+      index: 0
+      next: null
+    s15:
+      object:
+        type: 字根
+        rootIndex: 2
+      index: 0
+      next: null
+    s16:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: null
+  conditions:
+    c0:
+      object:
+        type: 字根
+        rootIndex: 2
+      operator: 存在
+      positive: c1
+      negative: s1
+    c1:
+      object:
+        type: 字根
+        rootIndex: 3
+      operator: 存在
+      positive: c2
+      negative: s2
+    c2:
+      object:
+        type: 字根
+        rootIndex: 4
+      operator: 存在
+      positive: s7
+      negative: s4
+  short_code:
+  - length_equal: 1
+    schemes:
+    - prefix: 3
+  rules:
+  - length_equal: 2
+    formula: AaAbBaBb
+  - length_equal: 3
+    formula: AaBaCaCb
+  - length_in_range:
+    - 4
+    - 10
+    formula: AaBaCaDa
+optimization:
+  objective:
+    characters_full:
+      tiers:
+      - top: 5458
+        duplication: 100
+      duplication: 200
+      pair_equivalence: 11.4514
+      levels: []
+    characters_short:
+      tiers:
+      - top: 1500
+        levels:
+        - length: 3
+          frequency: -35.89
+      - top: 5458
+        duplication: 1
+      duplication: 200
+      pair_equivalence: 11.4514
+      levels: []
+  metaheuristic:
+    algorithm: SimulatedAnnealing
+    parameters:
+      t_max: 1.0
+      t_min: 0.01
+      steps: 3000
+generated_mapping_space:
+  mzm-n:
+  - value: n
+    score: 0.0
+  mzm-iang:
+  - value: l
+    score: 0.0
+  szm-g:
+  - value: g
+    score: 0.0
+  mzm-i:
+  - value: i
+    score: 0.0
+  szm-b:
+  - value: b
+    score: 0.0
+  mzm-ong:
+  - value: s
+    score: 0.0
+  szm-t:
+  - value: t
+    score: 0.0
+  szm-k:
+  - value: k
+    score: 0.0
+  szm-ch:
+  - value: i
+    score: 0.0
+  mzm-ing:
+  - value: k
+    score: 0.0
+  mzm-en:
+  - value: f
+    score: 0.0
+  mzm-uai:
+  - value: k
+    score: 0.0
+  szm-f:
+  - value: f
+    score: 0.0
+  szm-q:
+  - value: q
+    score: 0.0
+  mzm-uan:
+  - value: r
+    score: 0.0
+  mzm-ia:
+  - value: x
+    score: 0.0
+  szm-w:
+  - value: w
+    score: 0.0
+  szm-c:
+  - value: c
+    score: 0.0
+  mzm-an:
+  - value: j
+    score: 0.0
+  mzm-ve:
+  - value: t
+    score: 0.0
+  szm-p:
+  - value: p
+    score: 0.0
+  mzm-ai:
+  - value: d
+    score: 0.0
+  mzm-eng:
+  - value: g
+    score: 0.0
+  mzm-ei:
+  - value: w
+    score: 0.0
+  mzm-in:
+  - value: b
+    score: 0.0
+  mzm-e:
+  - value: e
+    score: 0.0
+  mzm-iong:
+  - value: s
+    score: 0.0
+  mzm-uo:
+  - value: o
+    score: 0.0
+  szm-h:
+  - value: h
+    score: 0.0
+  mzm-ui:
+  - value: v
+    score: 0.0
+  mzm-un:
+  - value: y
+    score: 0.0
+  szm-o:
+  - value: o
+    score: 0.0
+  mzm-ao:
+  - value: c
+    score: 0.0
+  mzm-v:
+  - value: v
+    score: 0.0
+  mzm-ou:
+  - value: z
+    score: 0.0
+  szm-z:
+  - value: z
+    score: 0.0
+  mzm-r:
+  - value: r
+    score: 0.0
+  mzm-ie:
+  - value: p
+    score: 0.0
+  mzm-a:
+  - value: a
+    score: 0.0
+  mzm-ng:
+  - value: g
+    score: 0.0
+  szm-j:
+  - value: j
+    score: 0.0
+  szm-e:
+  - value: e
+    score: 0.0
+  mzm-u:
+  - value: u
+    score: 0.0
+  mzm-ian:
+  - value: m
+    score: 0.0
+  mzm-o:
+  - value: o
+    score: 0.0
+  mzm-ua:
+  - value: x
+    score: 0.0
+  szm-m:
+  - value: m
+    score: 0.0
+  szm-l:
+  - value: l
+    score: 0.0
+  mzm-ang:
+  - value: h
+    score: 0.0
+  mzm-uang:
+  - value: l
+    score: 0.0
+  szm-r:
+  - value: r
+    score: 0.0
+  szm-a:
+  - value: a
+    score: 0.0
+  szm-y:
+  - value: y
+    score: 0.0
+  szm-d:
+  - value: d
+    score: 0.0
+  mzm-ue:
+  - value: t
+    score: 0.0
+  mzm-m:
+  - value: m
+    score: 0.0
+  szm-s:
+  - value: s
+    score: 0.0
+  mzm-iu:
+  - value: q
+    score: 0.0
+  mzm-iao:
+  - value: n
+    score: 0.0
+  szm-n:
+  - value: n
+    score: 0.0
+  szm-x:
+  - value: x
+    score: 0.0
+  szm-zh:
+  - value: v
+    score: 0.0
+  szm-sh:
+  - value: u
+    score: 0.0
+  木:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  土:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  亻:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  日:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  钅:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  '1':
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  女:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  月:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  '2':
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  又:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  '3':
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  虫:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  十:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  八:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  '5':
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  火:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  王:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  山:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  贝:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  讠:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  大:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  忄:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  石:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  辶:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  寸:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  人:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  儿:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  目:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  鱼:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  宀:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  疒:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  田:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  力:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  匕:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  鸟:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  巾:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  马:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  厶:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  子:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  广:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  米:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  工:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  尸:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  灬:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  冫:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  方:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  干:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  车:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  几:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  足:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  立:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  止:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  夕:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  戈:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  彳:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  舟:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  巴:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  而:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  刀:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  丁:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  西:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  臼:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  二:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  牛:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  丰:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  衣:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  文:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  鬼:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  卩:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  气:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  句:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  彐:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  廿:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  水:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  未:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  冂:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  册:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  五:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  亠:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  丷:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  皿:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  龶:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  士:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  罒:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  口:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  氵:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  艹:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  扌:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  纟:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  '4':
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  犭:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  ⺈:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  小:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  衤:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  习:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  古:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  夫:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  户:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  豕:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  殳:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  囗:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  㐅:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  七:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  用:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  骨:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  辛:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  电:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  手:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  勿:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  也:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  束:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  长:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  麻:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  丬:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  ⺆:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  片:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  巛:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  为:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  阝:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  ㇏:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  𠂉:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  𰀁:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  匚:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  ㇒:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  :
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  付:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  尚:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  兄:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  介:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  高:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  :
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  勺:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  𠂇:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  厉:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  各:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  爫:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  固:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  :
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  于:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  玉:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  谷:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  斤:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  甫:
+  - value: q
+    score: 0.0
+  - value: w
+    score: 0.0
+  - value: e
+    score: 0.0
+  - value: r
+    score: 0.0
+  - value: t
+    score: 0.0
+  - value: y
+    score: 0.0
+  - value: u
+    score: 0.0
+  - value: i
+    score: 0.0
+  - value: o
+    score: 0.0
+  - value: a
+    score: 0.0
+  - value: s
+    score: 0.0
+  - value: d
+    score: 0.0
+  - value: f
+    score: 0.0
+  - value: g
+    score: 0.0
+  - value: h
+    score: 0.0
+  - value: j
+    score: 0.0
+  - value: k
+    score: 0.0
+  - value: l
+    score: 0.0
+  - value: z
+    score: 0.0
+  - value: x
+    score: 0.0
+  - value: c
+    score: 0.0
+  - value: v
+    score: 0.0
+  - value: b
+    score: 0.0
+  - value: n
+    score: 0.0
+  - value: m
+    score: 0.0
+  ⺋:
+  - value:
+      element: 巴
+    score: 0.0
+  乂:
+  - value:
+      element: 㐅
+    score: 0.0
+  可:
+  - value:
+      element: 丁
+    score: 0.0
+  夂:
+  - value:
+      element: 文
+    score: 0.0
+  弋:
+  - value:
+      element: 戈
+    score: 0.0
+  死:
+  - value:
+      element: 夕
+    score: 0.0
+  牜:
+  - value:
+      element: 牛
+    score: 0.0
+  犬:
+  - value:
+      element: 犭
+    score: 0.0
+  甘:
+  - value:
+      element: 廿
+    score: 0.0
+  白:
+  - value:
+      element: 臼
+    score: 0.0
+  门:
+  - value:
+      element: 冂
+    score: 0.0
+  :
+  - value:
+      element: 足
+    score: 0.0
+  :
+  - value:
+      element: 车
+    score: 0.0
+  心:
+  - value:
+      element: 忄
+    score: 0.0
+  龴:
+  - value:
+      element: 厶
+    score: 0.0
+  己:
+  - value:
+      element: 巴
+    score: 0.0
+  歹:
+  - value:
+      element: 夕
+    score: 0.0
+  ⺌:
+  - value:
+      element: 小
+    score: 0.0
+  巳:
+  - value:
+      element: 巴
+    score: 0.0
+  覀:
+  - value:
+      element: 西
+    score: 0.0
+  言:
+  - value:
+      element: 讠
+    score: 0.0
+  攵:
+  - value:
+      element: 文
+    score: 0.0
+  自:
+  - value:
+      element: 目
+    score: 0.0
+  :
+  - value:
+      element: 月
+    score: 0.0
+  冖:
+  - value:
+      element: 宀
+    score: 0.0
+  廴:
+  - value:
+      element: 辶
+    score: 0.0
+  厂:
+  - value:
+      element: 广
+    score: 0.0
+  三:
+  - value:
+      element: 二
+    score: 0.0
+  ㇈:
+  - value:
+      element: '5'
+    score: 0.0
+  刂:
+  - value:
+      element: 刀
+    score: 0.0
+  𠆢:
+  - value:
+      element: 人
+    score: 0.0
+  千:
+  - value:
+      element: 干
+    score: 0.0
+  糸:
+  - value:
+      element: 纟
+    score: 0.0
+  '6':
+  - value:
+      element: '5'
+    score: 0.0

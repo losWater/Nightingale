@@ -1,0 +1,6 @@
+ena,1=嗯
+enar,1=嗯
+fuax,1=呒
+mua,1=呣
+muat,1=呣
+jiky,1=脊

@@ -1,0 +1,76 @@
+# 夜莺码 · Rime 方案（自动生成，勿手改：scripts/make_rime.py）
+# 音形方案：小鹤双拼声韵 + 首末根形码两位，最长四码
+schema:
+  schema_id: yeying
+  name: 夜莺码
+  version: "0.4"
+  author:
+    - 夜莺码项目
+  description: |
+    小鹤双拼 + 首末字根形码，单字最长四码；
+    一/二/三简 + 词全码 + 四字词声母简拼，候选顺序与搜狗自定义短语版完全一致。
+  dependencies: []
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  max_code_length: 4
+  # 想要"四码唯一自动上屏"就把下面两行取消注释
+  # auto_select: true
+  # auto_select_unique_candidate: true
+
+translator:
+  dictionary: yeying
+  enable_charset_filter: false
+  enable_sentence: false
+  enable_encoder: false
+  encode_commit_history: false
+  enable_completion: false      # 只出精确匹配，与搜狗自定义短语行为一致
+  enable_user_dict: false       # 固定候选顺序（想让常用字自动前移就改 true）
+  initial_quality: 1
+
+key_binder:
+  bindings:
+    - { when: has_menu, accept: semicolon, send: 2 }     # 分号=二选
+    - { when: has_menu, accept: apostrophe, send: 3 }    # 引号=三选
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+
+menu:
+  page_size: 5
+  alternative_select_keys: "1234567890"
