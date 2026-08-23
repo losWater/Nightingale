@@ -18587,7 +18587,7 @@
 恶名昭彰	emvv
 耳目昭彰	emvv
 耳目一新	emyx
-恩	en
+嗯	en
 嗯	ena
 恩爱	enai
 嗯	enar
@@ -18618,6 +18618,7 @@
 恩人	enrf
 恩施	enui
 恩师	enui
+恩	env
 儿女之情	envq
 恩	envr
 儿女心肠	enxi

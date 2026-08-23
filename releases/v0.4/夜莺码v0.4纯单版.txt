@@ -4822,7 +4822,9 @@
 誒	eibs
 诶	eibs
 欸	eimk
-恩	en
+嗯	en
+嗯	ena
+嗯	enar
 煾	encr
 蒽	enf
 蒽	enfr
@@ -4835,6 +4837,7 @@
 摁	enn
 摁	ennr
 奀	enns
+恩	env
 恩	envr
 二	er
 咡	era
