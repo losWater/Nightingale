@@ -28359,7 +28359,7 @@
 㙊	vhzt
 㙣	vhzt
 墇	vhzt
-至	vi
+之	vi
 只	via
 只	viab
 呮	viab
@@ -28440,7 +28440,6 @@
 芷	vifg
 藢	vifk
 䓋	vifo
-芝	vifq
 蘵	vifq
 䓌	vifr
 芖	vifs
@@ -28606,11 +28605,10 @@
 㣥	viox
 徏	viox
 轾	vioz
-之	viq
+晊	viq
 黹	viqb
 㫑	viqf
 䦯	viqk
-之	viqq
 晊	viqz
 殖	vir
 怾	virb
@@ -28652,7 +28650,6 @@
 㲍	vito
 禔	vitq
 疐	vitq
-之	vitq
 㸟	vitq
 跖	vitr
 祗	vitt
@@ -28731,7 +28728,7 @@
 胝	viyt
 胵	viyz
 膣	viyz
-志	viz
+至	viz
 墆	vizb
 瓆	vizb
 贄	vizb
