@@ -38,7 +38,8 @@ form:
     '5': o
     足: t
     皿: y
-    '4': t
+    '4':
+      element: ㇏
     固: g
     szm-w: w
     口: a
@@ -102,7 +103,8 @@ form:
     mzm-in: b
     szm-a: a
     mzm-ei: w
-    ㇒: x
+    ㇒:
+      element: '3'
     卩: f
     于:
       element: 干
