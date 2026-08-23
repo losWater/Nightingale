@@ -1357,9 +1357,9 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: ㇏
+  - element: 4
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 6062185
 - 词: 乌
@@ -1403,7 +1403,7 @@
     index: 0
   - element: ㇒
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 55330
 - 词: 乐
@@ -39122,7 +39122,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 131051
 - 词: 泜
@@ -51332,7 +51332,7 @@
     index: 0
   - element: 目
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 10716
 - 词: 眩
@@ -52509,7 +52509,7 @@
     index: 0
   - element: 石
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 1644
 - 词: 砮
@@ -63641,7 +63641,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 118328
 - 词: 芟
@@ -73992,7 +73992,7 @@
     index: 0
   - element: 贝
     index: 0
-  - element: '4'
+  - element: ㇏
     index: 0
   频率: 48209
 - 词: 购
