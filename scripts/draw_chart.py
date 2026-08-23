@@ -35,7 +35,7 @@ def font_for(ch, size):
     return None  # 需文字标签兜底
 
 LABELS = {"\U00030001": "养头", "": "学头", "": "党头", "": "官腹"}
-STROKES = {"1": "横", "2": "竖", "3": "撇", "4": "点", "5": "折"}
+STROKES = {"1": "横", "2": "竖", "3": "撇", "4": "点", "5": "折", "㇏": "㇏", "㇒": "㇒", "6": "折²"}
 
 cfg = yaml.safe_load(open(BASE / "releases/v0.4/夜莺码v0.4键位布局.yaml", encoding="utf-8"))
 mapping = cfg["form"]["mapping"]
@@ -119,10 +119,10 @@ for r, row in enumerate(ROWS):
                 disp_a = "折²" if a == "6" else a
                 if disp_a == "折²":
                     lf = ImageFont.truetype(MSYH, ATT_SIZE)
-                    d.text((cx, cy + MAIN_SIZE - ATT_SIZE), disp_a, font=lf, fill="#aaa")
+                    d.text((cx, cy + MAIN_SIZE - ATT_SIZE), disp_a, font=lf, fill="#e88")
                     cx += d.textlength(disp_a, font=lf) + 6
                 else:
-                    cx += draw_glyph(cx, cy + MAIN_SIZE - ATT_SIZE - 2, a, ATT_SIZE, "#aaa")
+                    cx += draw_glyph(cx, cy + MAIN_SIZE - ATT_SIZE - 2, a, ATT_SIZE, "#e88" if a in STROKES else "#aaa")
             cx += 8
     yy += ROW_H[r] + GAP
 
