@@ -1836,6 +1836,7 @@
 撲	bune
 轐	bune
 輹	bunk
+不	bunn
 捬	buno
 不	bunq
 不	bunt
@@ -1870,6 +1871,7 @@
 尃	buvx
 钚	buw
 钸	buwb
+钚	buwn
 钚	buwq
 钚	buwt
 鸔	buxq
@@ -1979,6 +1981,7 @@
 杮	bwvb
 梖	bwvb
 㭭	bwvd
+杯	bwvn
 柸	bwvn
 杯	bwvq
 椑	bwvt
@@ -3008,6 +3011,7 @@
 島	dcxm
 鳥	dcxv
 軇	dcxx
+到	dczd
 翿	dczu
 燾	dczv
 瓙	dczv
@@ -5568,6 +5572,7 @@
 莩	fufh
 蕧	fufk
 菔	fufl
+芣	fufn
 苻	fufo
 荂	fufo
 芣	fufq
@@ -5689,6 +5694,7 @@
 緮	fuok
 韛	fuok
 䵾	fuol
+罘	fuon
 付	fuoo
 弣	fuoo
 紨	fuoo
@@ -8082,6 +8088,7 @@
 耲	hkqt
 怀	hkr
 懐	hkrl
+怀	hkrn
 怀	hkrq
 怀	hkrt
 䃶	hkrt
@@ -8093,6 +8100,7 @@
 槐	hkva
 櫰	hkvt
 壊	hkzl
+坏	hkzn
 坏	hkzq
 坏	hkzt
 壞	hkzt
@@ -8484,6 +8492,7 @@
 环	hrz
 𤩽	hrzg
 瓛	hrzg
+环	hrzn
 环	hrzq
 瑍	hrzs
 环	hrzt
@@ -21032,6 +21041,7 @@
 旆	pwxb
 斾	pwxb
 裴	pwxl
+衃	pwxn
 衃	pwxq
 衃	pwxt
 胚	pwy
@@ -21063,6 +21073,7 @@
 䯽	pzna
 抙	pznc
 捊	pznh
+抔	pznn
 抔	pznq
 抔	pznt
 㩠	pznv
@@ -28151,6 +28162,7 @@
 胗	vfyx
 珍	vfz
 珎	vfzb
+臻	vfzk
 瑧	vfzk
 珍	vfzo
 圳	vfzq
@@ -28715,6 +28727,8 @@
 摯	vizc
 址	vizg
 縶	vizg
+致	vizk
+郅	vizl
 埴	vizn
 䥍	vizn
 坁	vizo
@@ -28734,6 +28748,7 @@
 鷙	vizv
 璏	vizx
 覟	vizx
+至	vizz
 䟈	vizz
 站	vj
 噡	vjab

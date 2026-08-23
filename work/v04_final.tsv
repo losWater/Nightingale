@@ -84,14 +84,14 @@
 三	{"element":"szm-s","index":0} {"element":"mzm-an","index":0} {"element":"三","index":0} {"element":"三","index":0}	3822743
 上	{"element":"szm-sh","index":0} {"element":"mzm-ang","index":0} {"element":"2","index":0} {"element":"二","index":0}	17672983
 下	{"element":"szm-x","index":0} {"element":"mzm-ia","index":0} {"element":"1","index":0} {"element":"卜","index":0}	7533527
-不	{"element":"szm-b","index":0} {"element":"mzm-u","index":0} {"element":"1","index":0} {"element":"4","index":0}	32331838
+不	{"element":"szm-b","index":0} {"element":"mzm-u","index":0} {"element":"不","index":0}	32331838
 与	{"element":"szm-y","index":0} {"element":"mzm-u","index":0} {"element":"与","index":0}	11869898
 丏	{"element":"szm-m","index":0} {"element":"mzm-ian","index":0} {"element":"1","index":0} {"element":"5","index":0}	485
 丐	{"element":"szm-g","index":0} {"element":"mzm-ai","index":0} {"element":"1","index":0} {"element":"2","index":0} {"element":"丂","index":0}	5811
 丑	{"element":"szm-ch","index":0} {"element":"mzm-ou","index":0} {"element":"5","index":0} {"element":"","index":0}	206669
 专	{"element":"szm-zh","index":0} {"element":"mzm-uan","index":0} {"element":"专","index":0}	691960
 且	{"element":"szm-q","index":0} {"element":"mzm-ie","index":0} {"element":"且","index":0}	1212211
-丕	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"1","index":0}	10168
+丕	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"不","index":0} {"element":"1","index":0}	10168
 世	{"element":"szm-sh","index":0} {"element":"mzm-i","index":0} {"element":"廿","index":0} {"element":"6","index":0}	797793
 丘	{"element":"szm-q","index":0} {"element":"mzm-iu","index":0} {"element":"㇒","index":0} {"element":"工","index":0}	105533
 丙	{"element":"szm-b","index":0} {"element":"mzm-ing","index":0} {"element":"1","index":0} {"element":"人","index":0}	87685
@@ -319,7 +319,7 @@
 侁	{"element":"szm-sh","index":0} {"element":"mzm-en","index":0} {"element":"亻","index":0} {"element":"儿","index":0}	257
 侂	{"element":"szm-t","index":0} {"element":"mzm-uo","index":0} {"element":"亻","index":0} {"element":"七","index":0}	1045
 侃	{"element":"szm-k","index":0} {"element":"mzm-an","index":0} {"element":"亻","index":0} {"element":"","index":0}	31150
-侄	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"亻","index":0} {"element":"土","index":0}	9336
+侄	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"亻","index":0} {"element":"至","index":0}	9336
 侈	{"element":"szm-ch","index":0} {"element":"mzm-i","index":0} {"element":"亻","index":0} {"element":"夕","index":0}	10348
 侉	{"element":"szm-k","index":0} {"element":"mzm-ua","index":0} {"element":"亻","index":0} {"element":"5","index":0}	504
 例	{"element":"szm-l","index":0} {"element":"mzm-i","index":0} {"element":"亻","index":0} {"element":"刂","index":0}	525541
@@ -419,7 +419,7 @@
 偌	{"element":"szm-r","index":0} {"element":"mzm-uo","index":0} {"element":"亻","index":0} {"element":"口","index":0}	6712
 偎	{"element":"szm-w","index":0} {"element":"mzm-ei","index":0} {"element":"亻","index":0} {"element":"田","index":0} {"element":"1","index":0} {"element":"戈","index":0}	2424
 偏	{"element":"szm-p","index":0} {"element":"mzm-ian","index":0} {"element":"亻","index":0} {"element":"","index":0}	730592
-偓	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"亻","index":0} {"element":"土","index":0}	397
+偓	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"亻","index":0} {"element":"尸","index":0} {"element":"至","index":0}	397
 偕	{"element":"szm-x","index":0} {"element":"mzm-ie","index":0} {"element":"亻","index":0} {"element":"白","index":0}	9020
 做	{"element":"szm-z","index":0} {"element":"mzm-uo","index":0} {"element":"亻","index":0} {"element":"攵","index":0}	7527841
 停	{"element":"szm-t","index":0} {"element":"mzm-ing","index":0} {"element":"亻","index":0} {"element":"丁","index":0}	596176
@@ -593,14 +593,14 @@
 初	{"element":"szm-ch","index":0} {"element":"mzm-u","index":0} {"element":"衤","index":0} {"element":"刀","index":0}	554447
 删	{"element":"szm-sh","index":0} {"element":"mzm-an","index":0} {"element":"册","index":0} {"element":"刂","index":0}	136652
 判	{"element":"szm-p","index":0} {"element":"mzm-an","index":0} {"element":"丷","index":0} {"element":"刂","index":0}	192495
-刨	{"element":"szm-b","index":0} {"element":"mzm-ao","index":0} {"element":"3","index":0} {"element":"刂","index":0}	0
-刨	{"element":"szm-p","index":0} {"element":"mzm-ao","index":0} {"element":"3","index":0} {"element":"刂","index":0}	16423
+刨	{"element":"szm-b","index":0} {"element":"mzm-ao","index":0} {"element":"勹","index":0} {"element":"巳","index":0} {"element":"刂","index":0}	0
+刨	{"element":"szm-p","index":0} {"element":"mzm-ao","index":0} {"element":"勹","index":0} {"element":"巳","index":0} {"element":"刂","index":0}	16423
 利	{"element":"szm-l","index":0} {"element":"mzm-i","index":0} {"element":"禾","index":0} {"element":"刂","index":0}	1943040
 别	{"element":"szm-b","index":0} {"element":"mzm-ie","index":0} {"element":"口","index":0} {"element":"刂","index":0}	1595352
 刬	{"element":"szm-ch","index":0} {"element":"mzm-an","index":0} {"element":"二","index":0} {"element":"戈","index":0} {"element":"刂","index":0}	94
 刭	{"element":"szm-j","index":0} {"element":"mzm-ing","index":0} {"element":"5","index":0} {"element":"刂","index":0}	229
 刮	{"element":"szm-g","index":0} {"element":"mzm-ua","index":0} {"element":"千","index":0} {"element":"刂","index":0}	109535
-到	{"element":"szm-d","index":0} {"element":"mzm-ao","index":0} {"element":"1","index":0} {"element":"刂","index":0}	14948468
+到	{"element":"szm-d","index":0} {"element":"mzm-ao","index":0} {"element":"至","index":0} {"element":"刂","index":0}	14948468
 刳	{"element":"szm-k","index":0} {"element":"mzm-u","index":0} {"element":"大","index":0} {"element":"刂","index":0}	265
 制	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"3","index":0} {"element":"刂","index":0}	1438715
 刷	{"element":"szm-sh","index":0} {"element":"mzm-ua","index":0} {"element":"尸","index":0} {"element":"刂","index":0}	465990
@@ -684,15 +684,15 @@
 勤	{"element":"szm-q","index":0} {"element":"mzm-in","index":0} {"element":"廿","index":0} {"element":"力","index":0}	162726
 勰	{"element":"szm-x","index":0} {"element":"mzm-ie","index":0} {"element":"力","index":0} {"element":"心","index":0}	1162
 勺	{"element":"szm-sh","index":0} {"element":"mzm-ao","index":0} {"element":"勺","index":0} {"element":"勺","index":0}	86849
-勾	{"element":"szm-g","index":0} {"element":"mzm-ou","index":0} {"element":"3","index":0} {"element":"厶","index":0}	90476
+勾	{"element":"szm-g","index":0} {"element":"mzm-ou","index":0} {"element":"勹","index":0} {"element":"厶","index":0}	90476
 勿	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"勿","index":0} {"element":"勿","index":0}	78965
-匀	{"element":"szm-y","index":0} {"element":"mzm-un","index":0} {"element":"3","index":0} {"element":"冫","index":0}	69897
-包	{"element":"szm-b","index":0} {"element":"mzm-ao","index":0} {"element":"3","index":0} {"element":"巳","index":0}	1303157
+匀	{"element":"szm-y","index":0} {"element":"mzm-un","index":0} {"element":"勹","index":0} {"element":"冫","index":0}	69897
+包	{"element":"szm-b","index":0} {"element":"mzm-ao","index":0} {"element":"勹","index":0} {"element":"巳","index":0}	1303157
 匆	{"element":"szm-c","index":0} {"element":"mzm-ong","index":0} {"element":"勿","index":0} {"element":"4","index":0}	12818
-匈	{"element":"szm-x","index":0} {"element":"mzm-iong","index":0} {"element":"3","index":0} {"element":"5","index":0} {"element":"乂","index":0} {"element":"凵","index":0}	10948
-匍	{"element":"szm-p","index":0} {"element":"mzm-u","index":0} {"element":"3","index":0} {"element":"甫","index":0}	952
+匈	{"element":"szm-x","index":0} {"element":"mzm-iong","index":0} {"element":"勹","index":0} {"element":"乂","index":0} {"element":"凵","index":0}	10948
+匍	{"element":"szm-p","index":0} {"element":"mzm-u","index":0} {"element":"勹","index":0} {"element":"甫","index":0}	952
 匏	{"element":"szm-p","index":0} {"element":"mzm-ao","index":0} {"element":"大","index":0} {"element":"巳","index":0}	1401
-匐	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"3","index":0} {"element":"田","index":0}	1024
+匐	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"勹","index":0} {"element":"1","index":0} {"element":"口","index":0} {"element":"田","index":0}	1024
 匕	{"element":"szm-b","index":0} {"element":"mzm-i","index":0} {"element":"匕","index":0} {"element":"匕","index":0}	2706
 化	{"element":"szm-h","index":0} {"element":"mzm-ua","index":0} {"element":"亻","index":0} {"element":"","index":0}	2616481
 北	{"element":"szm-b","index":0} {"element":"mzm-ei","index":0} {"element":"","index":0} {"element":"匕","index":0}	1367136
@@ -862,8 +862,8 @@
 吠	{"element":"szm-f","index":0} {"element":"mzm-ei","index":0} {"element":"口","index":0} {"element":"犬","index":0}	4138
 吡	{"element":"szm-b","index":0} {"element":"mzm-i","index":0} {"element":"口","index":0} {"element":"比","index":0}	10511
 吣	{"element":"szm-q","index":0} {"element":"mzm-in","index":0} {"element":"口","index":0} {"element":"心","index":0}	143
-否	{"element":"szm-f","index":0} {"element":"mzm-ou","index":0} {"element":"1","index":0} {"element":"口","index":0}	244509
-否	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"口","index":0}	0
+否	{"element":"szm-f","index":0} {"element":"mzm-ou","index":0} {"element":"不","index":0} {"element":"口","index":0}	244509
+否	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"不","index":0} {"element":"口","index":0}	0
 吧	{"element":"szm-b","index":0} {"element":"mzm-a","index":0} {"element":"口","index":0} {"element":"巴","index":0}	4794757
 吨	{"element":"szm-d","index":0} {"element":"mzm-un","index":0} {"element":"口","index":0} {"element":"6","index":0}	251920
 吩	{"element":"szm-f","index":0} {"element":"mzm-en","index":0} {"element":"口","index":0} {"element":"刀","index":0}	1392
@@ -949,7 +949,7 @@
 咡	{"element":"szm-e","index":0} {"element":"mzm-r","index":0} {"element":"口","index":0} {"element":"耳","index":0}	37
 咣	{"element":"szm-g","index":0} {"element":"mzm-uang","index":0} {"element":"口","index":0} {"element":"儿","index":0}	5105
 咤	{"element":"szm-zh","index":0} {"element":"mzm-a","index":0} {"element":"口","index":0} {"element":"七","index":0}	1880
-咥	{"element":"szm-x","index":0} {"element":"mzm-i","index":0} {"element":"口","index":0} {"element":"土","index":0}	557
+咥	{"element":"szm-x","index":0} {"element":"mzm-i","index":0} {"element":"口","index":0} {"element":"至","index":0}	557
 咦	{"element":"szm-y","index":0} {"element":"mzm-i","index":0} {"element":"口","index":0} {"element":"人","index":0}	15721
 咧	{"element":"szm-l","index":0} {"element":"mzm-ie","index":0} {"element":"口","index":0} {"element":"刂","index":0}	21476
 咨	{"element":"szm-z","index":0} {"element":"mzm-i","index":0} {"element":"冫","index":0} {"element":"口","index":0}	76256
@@ -1089,7 +1089,7 @@
 喋	{"element":"szm-zh","index":0} {"element":"mzm-a","index":0} {"element":"口","index":0} {"element":"木","index":0}	0
 喏	{"element":"szm-n","index":0} {"element":"mzm-uo","index":0} {"element":"口","index":0} {"element":"口","index":0}	5000
 喑	{"element":"szm-y","index":0} {"element":"mzm-in","index":0} {"element":"口","index":0} {"element":"日","index":0}	803
-喔	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"口","index":0} {"element":"土","index":0}	55969
+喔	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"口","index":0} {"element":"尸","index":0} {"element":"至","index":0}	55969
 喘	{"element":"szm-ch","index":0} {"element":"mzm-uan","index":0} {"element":"口","index":0} {"element":"而","index":0}	30737
 喙	{"element":"szm-h","index":0} {"element":"mzm-ui","index":0} {"element":"口","index":0} {"element":"豕","index":0}	11638
 喜	{"element":"szm-x","index":0} {"element":"mzm-i","index":0} {"element":"士","index":0} {"element":"口","index":0}	510924
@@ -1265,7 +1265,7 @@
 坌	{"element":"szm-b","index":0} {"element":"mzm-en","index":0} {"element":"八","index":0} {"element":"土","index":0}	643
 坍	{"element":"szm-t","index":0} {"element":"mzm-an","index":0} {"element":"土","index":0} {"element":"亠","index":0}	4191
 坎	{"element":"szm-k","index":0} {"element":"mzm-an","index":0} {"element":"土","index":0} {"element":"人","index":0}	113725
-坏	{"element":"szm-h","index":0} {"element":"mzm-uai","index":0} {"element":"土","index":0} {"element":"4","index":0}	456206
+坏	{"element":"szm-h","index":0} {"element":"mzm-uai","index":0} {"element":"土","index":0} {"element":"不","index":0}	456206
 坐	{"element":"szm-z","index":0} {"element":"mzm-uo","index":0} {"element":"人","index":0} {"element":"土","index":0}	1137876
 坑	{"element":"szm-k","index":0} {"element":"mzm-eng","index":0} {"element":"土","index":0} {"element":"几","index":0}	346592
 坒	{"element":"szm-b","index":0} {"element":"mzm-i","index":0} {"element":"比","index":0} {"element":"土","index":0}	9
@@ -1318,7 +1318,7 @@
 垡	{"element":"szm-f","index":0} {"element":"mzm-a","index":0} {"element":"亻","index":0} {"element":"土","index":0}	1438
 垢	{"element":"szm-g","index":0} {"element":"mzm-ou","index":0} {"element":"土","index":0} {"element":"口","index":0}	16071
 垣	{"element":"szm-y","index":0} {"element":"mzm-uan","index":0} {"element":"土","index":0} {"element":"1","index":0}	34542
-垤	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"土","index":0} {"element":"土","index":0}	317
+垤	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"土","index":0} {"element":"至","index":0}	317
 垦	{"element":"szm-k","index":0} {"element":"mzm-en","index":0} {"element":"彐","index":0} {"element":"6","index":0} {"element":"㇒","index":0} {"element":"㇏","index":0} {"element":"土","index":0}	10012
 垧	{"element":"szm-sh","index":0} {"element":"mzm-ang","index":0} {"element":"土","index":0} {"element":"口","index":0}	288
 垩	{"element":"szm-e","index":0} {"element":"mzm-e","index":0} {"element":"1","index":0} {"element":"土","index":0}	627
@@ -1686,7 +1686,7 @@
 学	{"element":"szm-x","index":0} {"element":"mzm-ue","index":0} {"element":"","index":0} {"element":"子","index":0}	3726674
 孩	{"element":"szm-h","index":0} {"element":"mzm-ai","index":0} {"element":"子","index":0} {"element":"人","index":0}	487013
 孪	{"element":"szm-l","index":0} {"element":"mzm-uan","index":0} {"element":"亠","index":0} {"element":"子","index":0}	2117
-孬	{"element":"szm-n","index":0} {"element":"mzm-ao","index":0} {"element":"1","index":0} {"element":"子","index":0}	1813
+孬	{"element":"szm-n","index":0} {"element":"mzm-ao","index":0} {"element":"不","index":0} {"element":"女","index":0} {"element":"子","index":0}	1813
 孰	{"element":"szm-sh","index":0} {"element":"mzm-u","index":0} {"element":"亠","index":0} {"element":"㇏","index":0}	28742
 孱	{"element":"szm-ch","index":0} {"element":"mzm-an","index":0} {"element":"尸","index":0} {"element":"子","index":0}	755
 孳	{"element":"szm-z","index":0} {"element":"mzm-i","index":0} {"element":"丷","index":0} {"element":"子","index":0}	1082
@@ -1718,7 +1718,7 @@
 审	{"element":"szm-sh","index":0} {"element":"mzm-en","index":0} {"element":"宀","index":0} {"element":"2","index":0}	271638
 客	{"element":"szm-k","index":0} {"element":"mzm-e","index":0} {"element":"宀","index":0} {"element":"各","index":0}	731949
 宣	{"element":"szm-x","index":0} {"element":"mzm-uan","index":0} {"element":"宀","index":0} {"element":"1","index":0}	275723
-室	{"element":"szm-sh","index":0} {"element":"mzm-i","index":0} {"element":"宀","index":0} {"element":"土","index":0}	519375
+室	{"element":"szm-sh","index":0} {"element":"mzm-i","index":0} {"element":"宀","index":0} {"element":"至","index":0}	519375
 宥	{"element":"szm-y","index":0} {"element":"mzm-ou","index":0} {"element":"宀","index":0} {"element":"","index":0}	7013
 宦	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"宀","index":0} {"element":"2","index":0}	7911
 宧	{"element":"szm-y","index":0} {"element":"mzm-i","index":0} {"element":"宀","index":0} {"element":"2","index":0}	205
@@ -1804,7 +1804,7 @@
 屈	{"element":"szm-q","index":0} {"element":"mzm-u","index":0} {"element":"尸","index":0} {"element":"出","index":0}	77516
 屉	{"element":"szm-t","index":0} {"element":"mzm-i","index":0} {"element":"尸","index":0} {"element":"6","index":0}	10585
 届	{"element":"szm-j","index":0} {"element":"mzm-ie","index":0} {"element":"尸","index":0} {"element":"2","index":0}	470646
-屋	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"尸","index":0} {"element":"土","index":0}	352625
+屋	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"尸","index":0} {"element":"至","index":0}	352625
 屎	{"element":"szm-sh","index":0} {"element":"mzm-i","index":0} {"element":"尸","index":0} {"element":"米","index":0}	51907
 屏	{"element":"szm-b","index":0} {"element":"mzm-ing","index":0} {"element":"尸","index":0} {"element":"2","index":0}	0
 屏	{"element":"szm-p","index":0} {"element":"mzm-ing","index":0} {"element":"尸","index":0} {"element":"2","index":0}	249091
@@ -2000,7 +2000,7 @@
 帼	{"element":"szm-g","index":0} {"element":"mzm-uo","index":0} {"element":"巾","index":0} {"element":"玉","index":0}	2003
 帽	{"element":"szm-m","index":0} {"element":"mzm-ao","index":0} {"element":"巾","index":0} {"element":"目","index":0}	82262
 幂	{"element":"szm-m","index":0} {"element":"mzm-i","index":0} {"element":"冖","index":0} {"element":"巾","index":0}	23018
-幄	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"巾","index":0} {"element":"土","index":0}	1153
+幄	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"巾","index":0} {"element":"尸","index":0} {"element":"至","index":0}	1153
 幅	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"巾","index":0} {"element":"田","index":0}	330763
 幌	{"element":"szm-h","index":0} {"element":"mzm-uang","index":0} {"element":"巾","index":0} {"element":"儿","index":0}	7859
 幔	{"element":"szm-m","index":0} {"element":"mzm-an","index":0} {"element":"巾","index":0} {"element":"又","index":0}	3312
@@ -2193,7 +2193,7 @@
 忽	{"element":"szm-h","index":0} {"element":"mzm-u","index":0} {"element":"勿","index":0} {"element":"心","index":0}	107297
 忾	{"element":"szm-k","index":0} {"element":"mzm-ai","index":0} {"element":"忄","index":0} {"element":"气","index":0}	342
 忿	{"element":"szm-f","index":0} {"element":"mzm-en","index":0} {"element":"八","index":0} {"element":"心","index":0}	2279
-怀	{"element":"szm-h","index":0} {"element":"mzm-uai","index":0} {"element":"忄","index":0} {"element":"4","index":0}	267573
+怀	{"element":"szm-h","index":0} {"element":"mzm-uai","index":0} {"element":"忄","index":0} {"element":"不","index":0}	267573
 态	{"element":"szm-t","index":0} {"element":"mzm-ai","index":0} {"element":"大","index":0} {"element":"心","index":0}	376900
 怂	{"element":"szm-s","index":0} {"element":"mzm-ong","index":0} {"element":"人","index":0} {"element":"心","index":0}	21845
 怃	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"忄","index":0} {"element":"儿","index":0}	192
@@ -2473,7 +2473,7 @@
 抑	{"element":"szm-y","index":0} {"element":"mzm-i","index":0} {"element":"扌","index":0} {"element":"卩","index":0}	70478
 抒	{"element":"szm-sh","index":0} {"element":"mzm-u","index":0} {"element":"扌","index":0} {"element":"予","index":0}	9232
 抓	{"element":"szm-zh","index":0} {"element":"mzm-ua","index":0} {"element":"扌","index":0} {"element":"㇏","index":0}	417925
-抔	{"element":"szm-p","index":0} {"element":"mzm-ou","index":0} {"element":"扌","index":0} {"element":"4","index":0}	437
+抔	{"element":"szm-p","index":0} {"element":"mzm-ou","index":0} {"element":"扌","index":0} {"element":"不","index":0}	437
 投	{"element":"szm-t","index":0} {"element":"mzm-ou","index":0} {"element":"扌","index":0} {"element":"殳","index":0}	1217235
 抖	{"element":"szm-d","index":0} {"element":"mzm-ou","index":0} {"element":"扌","index":0} {"element":"2","index":0}	88499
 抗	{"element":"szm-k","index":0} {"element":"mzm-ang","index":0} {"element":"扌","index":0} {"element":"几","index":0}	370833
@@ -2648,7 +2648,7 @@
 揕	{"element":"szm-zh","index":0} {"element":"mzm-en","index":0} {"element":"扌","index":0} {"element":"6","index":0}	20
 揖	{"element":"szm-y","index":0} {"element":"mzm-i","index":0} {"element":"扌","index":0} {"element":"口","index":0} {"element":"耳","index":0}	4136
 揠	{"element":"szm-y","index":0} {"element":"mzm-a","index":0} {"element":"扌","index":0} {"element":"女","index":0}	167
-握	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"扌","index":0} {"element":"土","index":0}	154454
+握	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"扌","index":0} {"element":"尸","index":0} {"element":"至","index":0}	154454
 揣	{"element":"szm-ch","index":0} {"element":"mzm-uai","index":0} {"element":"扌","index":0} {"element":"而","index":0}	14127
 揩	{"element":"szm-k","index":0} {"element":"mzm-ai","index":0} {"element":"扌","index":0} {"element":"白","index":0}	3956
 揪	{"element":"szm-j","index":0} {"element":"mzm-iu","index":0} {"element":"扌","index":0} {"element":"火","index":0}	19299
@@ -2827,7 +2827,7 @@
 旧	{"element":"szm-j","index":0} {"element":"mzm-iu","index":0} {"element":"2","index":0} {"element":"日","index":0}	535611
 旨	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"匕","index":0} {"element":"日","index":0}	34111
 早	{"element":"szm-z","index":0} {"element":"mzm-ao","index":0} {"element":"日","index":0} {"element":"十","index":0}	980483
-旬	{"element":"szm-x","index":0} {"element":"mzm-un","index":0} {"element":"3","index":0} {"element":"日","index":0}	25602
+旬	{"element":"szm-x","index":0} {"element":"mzm-un","index":0} {"element":"勹","index":0} {"element":"日","index":0}	25602
 旭	{"element":"szm-x","index":0} {"element":"mzm-u","index":0} {"element":"3","index":0} {"element":"日","index":0}	135042
 旮	{"element":"szm-g","index":0} {"element":"mzm-a","index":0} {"element":"3","index":0} {"element":"日","index":0}	899
 旯	{"element":"szm-l","index":0} {"element":"mzm-a","index":0} {"element":"日","index":0} {"element":"㇈","index":0}	395
@@ -2883,7 +2883,7 @@
 晁	{"element":"szm-ch","index":0} {"element":"mzm-ao","index":0} {"element":"日","index":0} {"element":"4","index":0}	4139
 晃	{"element":"szm-h","index":0} {"element":"mzm-uang","index":0} {"element":"日","index":0} {"element":"儿","index":0}	60293
 晅	{"element":"szm-x","index":0} {"element":"mzm-uan","index":0} {"element":"日","index":0} {"element":"1","index":0}	131
-晊	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"日","index":0} {"element":"土","index":0}	267
+晊	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"日","index":0} {"element":"至","index":0}	267
 晋	{"element":"szm-j","index":0} {"element":"mzm-in","index":0} {"element":"1","index":0} {"element":"日","index":0}	189127
 晌	{"element":"szm-sh","index":0} {"element":"mzm-ang","index":0} {"element":"日","index":0} {"element":"口","index":0}	1517
 晏	{"element":"szm-y","index":0} {"element":"mzm-an","index":0} {"element":"日","index":0} {"element":"女","index":0}	23645
@@ -3014,7 +3014,7 @@
 杩	{"element":"szm-m","index":0} {"element":"mzm-a","index":0} {"element":"木","index":0} {"element":"马","index":0}	528
 杪	{"element":"szm-m","index":0} {"element":"mzm-iao","index":0} {"element":"木","index":0} {"element":"3","index":0}	460
 杭	{"element":"szm-h","index":0} {"element":"mzm-ang","index":0} {"element":"木","index":0} {"element":"几","index":0}	122202
-杯	{"element":"szm-b","index":0} {"element":"mzm-ei","index":0} {"element":"木","index":0} {"element":"4","index":0}	787971
+杯	{"element":"szm-b","index":0} {"element":"mzm-ei","index":0} {"element":"木","index":0} {"element":"不","index":0}	787971
 杰	{"element":"szm-j","index":0} {"element":"mzm-ie","index":0} {"element":"木","index":0} {"element":"灬","index":0}	433970
 杲	{"element":"szm-g","index":0} {"element":"mzm-ao","index":0} {"element":"日","index":0} {"element":"木","index":0}	3757
 杳	{"element":"szm-y","index":0} {"element":"mzm-ao","index":0} {"element":"木","index":0} {"element":"日","index":0}	2293
@@ -3140,7 +3140,7 @@
 桉	{"element":"szm-a","index":0} {"element":"mzm-n","index":0} {"element":"木","index":0} {"element":"女","index":0}	4050
 桊	{"element":"szm-j","index":0} {"element":"mzm-uan","index":0} {"element":"丷","index":0} {"element":"木","index":0}	24
 桌	{"element":"szm-zh","index":0} {"element":"mzm-uo","index":0} {"element":"卜","index":0} {"element":"日","index":0} {"element":"木","index":0}	370229
-桎	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"木","index":0} {"element":"土","index":0}	594
+桎	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"木","index":0} {"element":"至","index":0}	594
 桐	{"element":"szm-t","index":0} {"element":"mzm-ong","index":0} {"element":"木","index":0} {"element":"口","index":0}	82319
 桑	{"element":"szm-s","index":0} {"element":"mzm-ang","index":0} {"element":"又","index":0} {"element":"木","index":0}	197760
 桓	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"木","index":0} {"element":"1","index":0}	40391
@@ -3372,7 +3372,7 @@
 步	{"element":"szm-b","index":0} {"element":"mzm-u","index":0} {"element":"","index":0} {"element":"3","index":0}	744451
 武	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"1","index":0} {"element":"","index":0}	532388
 歧	{"element":"szm-q","index":0} {"element":"mzm-i","index":0} {"element":"","index":0} {"element":"又","index":0}	27055
-歪	{"element":"szm-w","index":0} {"element":"mzm-ai","index":0} {"element":"1","index":0} {"element":"","index":0}	67762
+歪	{"element":"szm-w","index":0} {"element":"mzm-ai","index":0} {"element":"不","index":0} {"element":"1","index":0} {"element":"","index":0}	67762
 歹	{"element":"szm-d","index":0} {"element":"mzm-ai","index":0} {"element":"歹","index":0} {"element":"歹","index":0}	5336
 死	{"element":"szm-s","index":0} {"element":"mzm-i","index":0} {"element":"死","index":0} {"element":"死","index":0}	1217897
 歼	{"element":"szm-j","index":0} {"element":"mzm-ian","index":0} {"element":"歹","index":0} {"element":"千","index":0}	37318
@@ -3748,7 +3748,7 @@
 渡	{"element":"szm-d","index":0} {"element":"mzm-u","index":0} {"element":"氵","index":0} {"element":"又","index":0}	132958
 渣	{"element":"szm-zh","index":0} {"element":"mzm-a","index":0} {"element":"氵","index":0} {"element":"1","index":0}	116558
 渤	{"element":"szm-b","index":0} {"element":"mzm-o","index":0} {"element":"氵","index":0} {"element":"力","index":0}	11461
-渥	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"氵","index":0} {"element":"土","index":0}	7698
+渥	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"氵","index":0} {"element":"尸","index":0} {"element":"至","index":0}	7698
 温	{"element":"szm-w","index":0} {"element":"mzm-en","index":0} {"element":"氵","index":0} {"element":"皿","index":0}	571435
 渫	{"element":"szm-x","index":0} {"element":"mzm-ie","index":0} {"element":"氵","index":0} {"element":"木","index":0}	177
 渭	{"element":"szm-w","index":0} {"element":"mzm-ei","index":0} {"element":"氵","index":0} {"element":"","index":0}	16705
@@ -4263,7 +4263,7 @@
 玫	{"element":"szm-m","index":0} {"element":"mzm-ei","index":0} {"element":"王","index":0} {"element":"攵","index":0}	28525
 玭	{"element":"szm-p","index":0} {"element":"mzm-in","index":0} {"element":"王","index":0} {"element":"比","index":0}	542
 玮	{"element":"szm-w","index":0} {"element":"mzm-ei","index":0} {"element":"王","index":0} {"element":"韦","index":0}	45279
-环	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"王","index":0} {"element":"4","index":0}	637511
+环	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"王","index":0} {"element":"不","index":0}	637511
 现	{"element":"szm-x","index":0} {"element":"mzm-ian","index":0} {"element":"王","index":0} {"element":"见","index":0}	2225601
 玱	{"element":"szm-q","index":0} {"element":"mzm-iang","index":0} {"element":"王","index":0} {"element":"⺋","index":0}	83
 玲	{"element":"szm-l","index":0} {"element":"mzm-ing","index":0} {"element":"王","index":0} {"element":"龴","index":0}	141655
@@ -4441,7 +4441,7 @@
 甪	{"element":"szm-l","index":0} {"element":"mzm-u","index":0} {"element":"3","index":0} {"element":"用","index":0}	599
 甫	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"甫","index":0} {"element":"甫","index":0}	57382
 甬	{"element":"szm-y","index":0} {"element":"mzm-ong","index":0} {"element":"龴","index":0} {"element":"","index":0}	12957
-甭	{"element":"szm-b","index":0} {"element":"mzm-eng","index":0} {"element":"1","index":0} {"element":"用","index":0}	5566
+甭	{"element":"szm-b","index":0} {"element":"mzm-eng","index":0} {"element":"不","index":0} {"element":"用","index":0}	5566
 甯	{"element":"szm-n","index":0} {"element":"mzm-ing","index":0} {"element":"宀","index":0} {"element":"","index":0}	3862
 田	{"element":"szm-t","index":0} {"element":"mzm-ian","index":0} {"element":"田","index":0} {"element":"田","index":0}	855481
 由	{"element":"szm-y","index":0} {"element":"mzm-ou","index":0} {"element":"日","index":0} {"element":"2","index":0}	3757258
@@ -4449,7 +4449,7 @@
 申	{"element":"szm-sh","index":0} {"element":"mzm-en","index":0} {"element":"日","index":0} {"element":"2","index":0}	362309
 电	{"element":"szm-d","index":0} {"element":"mzm-ian","index":0} {"element":"电","index":0} {"element":"电","index":0}	1612295
 男	{"element":"szm-n","index":0} {"element":"mzm-an","index":0} {"element":"田","index":0} {"element":"力","index":0}	1263110
-甸	{"element":"szm-d","index":0} {"element":"mzm-ian","index":0} {"element":"3","index":0} {"element":"田","index":0}	40040
+甸	{"element":"szm-d","index":0} {"element":"mzm-ian","index":0} {"element":"勹","index":0} {"element":"田","index":0}	40040
 町	{"element":"szm-d","index":0} {"element":"mzm-ing","index":0} {"element":"田","index":0} {"element":"丁","index":0}	226524
 画	{"element":"szm-h","index":0} {"element":"mzm-ua","index":0} {"element":"1","index":0} {"element":"田","index":0} {"element":"凵","index":0}	822340
 甾	{"element":"szm-z","index":0} {"element":"mzm-ai","index":0} {"element":"巛","index":0} {"element":"田","index":0}	1814
@@ -4526,7 +4526,7 @@
 痊	{"element":"szm-q","index":0} {"element":"mzm-uan","index":0} {"element":"疒","index":0} {"element":"王","index":0}	1605
 痍	{"element":"szm-y","index":0} {"element":"mzm-i","index":0} {"element":"疒","index":0} {"element":"人","index":0}	329
 痒	{"element":"szm-y","index":0} {"element":"mzm-ang","index":0} {"element":"疒","index":0} {"element":"羊","index":0}	68063
-痓	{"element":"szm-ch","index":0} {"element":"mzm-i","index":0} {"element":"疒","index":0} {"element":"土","index":0}	5
+痓	{"element":"szm-ch","index":0} {"element":"mzm-i","index":0} {"element":"疒","index":0} {"element":"至","index":0}	5
 痔	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"疒","index":0} {"element":"寸","index":0}	14540
 痕	{"element":"szm-h","index":0} {"element":"mzm-en","index":0} {"element":"疒","index":0} {"element":"彐","index":0} {"element":"6","index":0} {"element":"㇒","index":0} {"element":"㇏","index":0}	48747
 痘	{"element":"szm-d","index":0} {"element":"mzm-ou","index":0} {"element":"疒","index":0} {"element":"1","index":0}	57733
@@ -5001,7 +5001,7 @@
 窍	{"element":"szm-q","index":0} {"element":"mzm-iao","index":0} {"element":"宀","index":0} {"element":"八","index":0} {"element":"工","index":0} {"element":"丂","index":0}	12388
 窎	{"element":"szm-d","index":0} {"element":"mzm-iao","index":0} {"element":"宀","index":0} {"element":"鸟","index":0}	29
 窑	{"element":"szm-y","index":0} {"element":"mzm-ao","index":0} {"element":"宀","index":0} {"element":"山","index":0}	60184
-窒	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"宀","index":0} {"element":"土","index":0}	3941
+窒	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"宀","index":0} {"element":"八","index":0} {"element":"至","index":0}	3941
 窕	{"element":"szm-t","index":0} {"element":"mzm-iao","index":0} {"element":"宀","index":0} {"element":"4","index":0}	861
 窖	{"element":"szm-j","index":0} {"element":"mzm-iao","index":0} {"element":"宀","index":0} {"element":"口","index":0}	10680
 窗	{"element":"szm-ch","index":0} {"element":"mzm-uang","index":0} {"element":"宀","index":0} {"element":"夂","index":0}	234991
@@ -5291,7 +5291,7 @@
 结	{"element":"szm-j","index":0} {"element":"mzm-ie","index":0} {"element":"纟","index":0} {"element":"口","index":0}	745391
 绔	{"element":"szm-k","index":0} {"element":"mzm-u","index":0} {"element":"纟","index":0} {"element":"5","index":0}	307
 绕	{"element":"szm-r","index":0} {"element":"mzm-ao","index":0} {"element":"纟","index":0} {"element":"儿","index":0}	189078
-绖	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"纟","index":0} {"element":"土","index":0}	84
+绖	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"纟","index":0} {"element":"至","index":0}	84
 绗	{"element":"szm-h","index":0} {"element":"mzm-ang","index":0} {"element":"纟","index":0} {"element":"丁","index":0}	704
 绘	{"element":"szm-h","index":0} {"element":"mzm-ui","index":0} {"element":"纟","index":0} {"element":"厶","index":0}	117475
 给	{"element":"szm-g","index":0} {"element":"mzm-ei","index":0} {"element":"纟","index":0} {"element":"口","index":0}	6985613
@@ -5404,7 +5404,7 @@
 罔	{"element":"szm-w","index":0} {"element":"mzm-ang","index":0} {"element":"冂","index":0} {"element":"6","index":0}	3733
 罕	{"element":"szm-h","index":0} {"element":"mzm-an","index":0} {"element":"冖","index":0} {"element":"干","index":0}	69113
 罗	{"element":"szm-l","index":0} {"element":"mzm-uo","index":0} {"element":"罒","index":0} {"element":"夕","index":0}	1417500
-罘	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"罒","index":0} {"element":"4","index":0}	558
+罘	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"罒","index":0} {"element":"不","index":0}	558
 罚	{"element":"szm-f","index":0} {"element":"mzm-a","index":0} {"element":"罒","index":0} {"element":"刂","index":0}	122882
 罟	{"element":"szm-g","index":0} {"element":"mzm-u","index":0} {"element":"罒","index":0} {"element":"古","index":0}	1232
 罡	{"element":"szm-g","index":0} {"element":"mzm-ang","index":0} {"element":"罒","index":0} {"element":"","index":0}	4156
@@ -5483,7 +5483,7 @@
 者	{"element":"szm-zh","index":0} {"element":"mzm-e","index":0} {"element":"耂","index":0} {"element":"日","index":0}	3942562
 耆	{"element":"szm-q","index":0} {"element":"mzm-i","index":0} {"element":"耂","index":0} {"element":"匕","index":0} {"element":"日","index":0}	12464
 耇	{"element":"szm-g","index":0} {"element":"mzm-ou","index":0} {"element":"耂","index":0} {"element":"句","index":0}	47
-耋	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"耂","index":0} {"element":"匕","index":0} {"element":"1","index":0} {"element":"厶","index":0} {"element":"土","index":0}	521
+耋	{"element":"szm-d","index":0} {"element":"mzm-ie","index":0} {"element":"耂","index":0} {"element":"匕","index":0} {"element":"至","index":0}	521
 而	{"element":"szm-e","index":0} {"element":"mzm-r","index":0} {"element":"而","index":0} {"element":"而","index":0}	9619021
 耍	{"element":"szm-sh","index":0} {"element":"mzm-ua","index":0} {"element":"而","index":0} {"element":"女","index":0}	69165
 耏	{"element":"szm-e","index":0} {"element":"mzm-r","index":0} {"element":"而","index":0} {"element":"彡","index":0}	26
@@ -5704,9 +5704,9 @@
 臬	{"element":"szm-n","index":0} {"element":"mzm-ie","index":0} {"element":"自","index":0} {"element":"木","index":0}	2952
 臭	{"element":"szm-ch","index":0} {"element":"mzm-ou","index":0} {"element":"自","index":0} {"element":"犬","index":0}	101605
 臭	{"element":"szm-x","index":0} {"element":"mzm-iu","index":0} {"element":"自","index":0} {"element":"犬","index":0}	0
-至	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"土","index":0}	3258212
-致	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"攵","index":0}	557891
-臻	{"element":"szm-zh","index":0} {"element":"mzm-en","index":0} {"element":"1","index":0} {"element":"𠆢","index":0}	30652
+至	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"至","index":0}	3258212
+致	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"至","index":0} {"element":"攵","index":0}	557891
+臻	{"element":"szm-zh","index":0} {"element":"mzm-en","index":0} {"element":"至","index":0} {"element":"三","index":0} {"element":"人","index":0} {"element":"千","index":0} {"element":"𠆢","index":0}	30652
 臼	{"element":"szm-j","index":0} {"element":"mzm-iu","index":0} {"element":"臼","index":0} {"element":"臼","index":0}	8990
 臾	{"element":"szm-y","index":0} {"element":"mzm-u","index":0} {"element":"臼","index":0} {"element":"人","index":0}	513
 舀	{"element":"szm-y","index":0} {"element":"mzm-ao","index":0} {"element":"爫","index":0} {"element":"臼","index":0}	14037
@@ -5787,7 +5787,7 @@
 芟	{"element":"szm-sh","index":0} {"element":"mzm-an","index":0} {"element":"艹","index":0} {"element":"殳","index":0}	235
 芠	{"element":"szm-w","index":0} {"element":"mzm-en","index":0} {"element":"艹","index":0} {"element":"文","index":0}	52
 芡	{"element":"szm-q","index":0} {"element":"mzm-ian","index":0} {"element":"艹","index":0} {"element":"人","index":0}	7165
-芣	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"艹","index":0} {"element":"4","index":0}	1432
+芣	{"element":"szm-f","index":0} {"element":"mzm-u","index":0} {"element":"艹","index":0} {"element":"不","index":0}	1432
 芤	{"element":"szm-k","index":0} {"element":"mzm-ou","index":0} {"element":"艹","index":0} {"element":"6","index":0}	197
 芥	{"element":"szm-g","index":0} {"element":"mzm-ai","index":0} {"element":"艹","index":0} {"element":"介","index":0}	0
 芥	{"element":"szm-j","index":0} {"element":"mzm-ie","index":0} {"element":"艹","index":0} {"element":"介","index":0}	37074
@@ -6156,7 +6156,7 @@
 薳	{"element":"szm-w","index":0} {"element":"mzm-ei","index":0} {"element":"艹","index":0} {"element":"辶","index":0}	35
 薷	{"element":"szm-r","index":0} {"element":"mzm-u","index":0} {"element":"艹","index":0} {"element":"而","index":0}	851
 薸	{"element":"szm-p","index":0} {"element":"mzm-iao","index":0} {"element":"艹","index":0} {"element":"小","index":0}	44
-薹	{"element":"szm-t","index":0} {"element":"mzm-ai","index":0} {"element":"艹","index":0} {"element":"土","index":0}	951
+薹	{"element":"szm-t","index":0} {"element":"mzm-ai","index":0} {"element":"艹","index":0} {"element":"士","index":0} {"element":"口","index":0} {"element":"冖","index":0} {"element":"至","index":0}	951
 薿	{"element":"szm-n","index":0} {"element":"mzm-i","index":0} {"element":"艹","index":0} {"element":"匕","index":0} {"element":"𠂉","index":0} {"element":"大","index":0} {"element":"龴","index":0} {"element":"5","index":0} {"element":"龰","index":0}	24
 藁	{"element":"szm-g","index":0} {"element":"mzm-ao","index":0} {"element":"艹","index":0} {"element":"木","index":0}	1499
 藉	{"element":"szm-j","index":0} {"element":"mzm-i","index":0} {"element":"艹","index":0} {"element":"日","index":0}	19890
@@ -6258,7 +6258,7 @@
 蛤	{"element":"szm-g","index":0} {"element":"mzm-e","index":0} {"element":"虫","index":0} {"element":"口","index":0}	0
 蛤	{"element":"szm-h","index":0} {"element":"mzm-a","index":0} {"element":"虫","index":0} {"element":"口","index":0}	25914
 蛩	{"element":"szm-q","index":0} {"element":"mzm-iong","index":0} {"element":"工","index":0} {"element":"虫","index":0}	578
-蛭	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"虫","index":0} {"element":"土","index":0}	2995
+蛭	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"虫","index":0} {"element":"至","index":0}	2995
 蛮	{"element":"szm-m","index":0} {"element":"mzm-an","index":0} {"element":"亠","index":0} {"element":"虫","index":0}	971629
 蛰	{"element":"szm-zh","index":0} {"element":"mzm-e","index":0} {"element":"扌","index":0} {"element":"虫","index":0}	7331
 蛱	{"element":"szm-j","index":0} {"element":"mzm-ia","index":0} {"element":"虫","index":0} {"element":"大","index":0}	789
@@ -6370,7 +6370,7 @@
 蠼	{"element":"szm-q","index":0} {"element":"mzm-u","index":0} {"element":"虫","index":0} {"element":"又","index":0}	164
 血	{"element":"szm-x","index":0} {"element":"mzm-ie","index":0} {"element":"3","index":0} {"element":"皿","index":0}	660910
 血	{"element":"szm-x","index":0} {"element":"mzm-ue","index":0} {"element":"3","index":0} {"element":"皿","index":0}	0
-衃	{"element":"szm-p","index":0} {"element":"mzm-ei","index":0} {"element":"3","index":0} {"element":"4","index":0}	13
+衃	{"element":"szm-p","index":0} {"element":"mzm-ei","index":0} {"element":"3","index":0} {"element":"皿","index":0} {"element":"不","index":0}	13
 衄	{"element":"szm-n","index":0} {"element":"mzm-v","index":0} {"element":"3","index":0} {"element":"","index":0}	706
 衅	{"element":"szm-x","index":0} {"element":"mzm-in","index":0} {"element":"3","index":0} {"element":"𰀁","index":0}	3321
 行	{"element":"szm-h","index":0} {"element":"mzm-ang","index":0} {"element":"彳","index":0} {"element":"丁","index":0}	361739
@@ -6518,7 +6518,7 @@
 觿	{"element":"szm-x","index":0} {"element":"mzm-i","index":0} {"element":"⺈","index":0} {"element":"口","index":0}	185
 言	{"element":"szm-y","index":0} {"element":"mzm-an","index":0} {"element":"言","index":0} {"element":"言","index":0}	481513
 訄	{"element":"szm-q","index":0} {"element":"mzm-iu","index":0} {"element":"3","index":0} {"element":"言","index":0}	31
-訇	{"element":"szm-h","index":0} {"element":"mzm-ong","index":0} {"element":"3","index":0} {"element":"言","index":0}	339
+訇	{"element":"szm-h","index":0} {"element":"mzm-ong","index":0} {"element":"勹","index":0} {"element":"言","index":0}	339
 訚	{"element":"szm-y","index":0} {"element":"mzm-in","index":0} {"element":"门","index":0} {"element":"言","index":0}	593
 訾	{"element":"szm-z","index":0} {"element":"mzm-i","index":0} {"element":"","index":0} {"element":"言","index":0}	3416
 詈	{"element":"szm-l","index":0} {"element":"mzm-i","index":0} {"element":"罒","index":0} {"element":"言","index":0}	567
@@ -6940,7 +6940,7 @@
 轻	{"element":"szm-q","index":0} {"element":"mzm-ing","index":0} {"element":"","index":0} {"element":"工","index":0}	613224
 轼	{"element":"szm-sh","index":0} {"element":"mzm-i","index":0} {"element":"","index":0} {"element":"工","index":0}	2866
 载	{"element":"szm-z","index":0} {"element":"mzm-ai","index":0} {"element":"十","index":0} {"element":"","index":0}	318413
-轾	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"","index":0} {"element":"土","index":0}	72
+轾	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"","index":0} {"element":"至","index":0}	72
 轿	{"element":"szm-j","index":0} {"element":"mzm-iao","index":0} {"element":"","index":0} {"element":"2","index":0}	36126
 辀	{"element":"szm-zh","index":0} {"element":"mzm-ou","index":0} {"element":"","index":0} {"element":"舟","index":0}	69
 辁	{"element":"szm-q","index":0} {"element":"mzm-uan","index":0} {"element":"","index":0} {"element":"王","index":0}	25
@@ -6996,8 +6996,8 @@
 迓	{"element":"szm-y","index":0} {"element":"mzm-a","index":0} {"element":"1","index":0} {"element":"辶","index":0}	213
 返	{"element":"szm-f","index":0} {"element":"mzm-an","index":0} {"element":"㇒","index":0} {"element":"辶","index":0}	134516
 迕	{"element":"szm-w","index":0} {"element":"mzm-u","index":0} {"element":"𠂉","index":0} {"element":"辶","index":0}	162
-还	{"element":"szm-h","index":0} {"element":"mzm-ai","index":0} {"element":"1","index":0} {"element":"辶","index":0}	12829849
-还	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"1","index":0} {"element":"辶","index":0}	675255
+还	{"element":"szm-h","index":0} {"element":"mzm-ai","index":0} {"element":"不","index":0} {"element":"辶","index":0}	12829849
+还	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"不","index":0} {"element":"辶","index":0}	675255
 这	{"element":"szm-zh","index":0} {"element":"mzm-e","index":0} {"element":"文","index":0} {"element":"辶","index":0}	16995923
 进	{"element":"szm-j","index":0} {"element":"mzm-in","index":0} {"element":"二","index":0} {"element":"辶","index":0}	2398613
 远	{"element":"szm-y","index":0} {"element":"mzm-uan","index":0} {"element":"二","index":0} {"element":"辶","index":0}	1076255
@@ -7110,7 +7110,7 @@
 邰	{"element":"szm-t","index":0} {"element":"mzm-ai","index":0} {"element":"厶","index":0} {"element":"阝","index":0}	2298
 邱	{"element":"szm-q","index":0} {"element":"mzm-iu","index":0} {"element":"㇒","index":0} {"element":"阝","index":0}	107970
 邲	{"element":"szm-b","index":0} {"element":"mzm-i","index":0} {"element":"㇏","index":0} {"element":"阝","index":0}	388
-邳	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"阝","index":0}	2709
+邳	{"element":"szm-p","index":0} {"element":"mzm-i","index":0} {"element":"不","index":0} {"element":"1","index":0} {"element":"阝","index":0}	2709
 邴	{"element":"szm-b","index":0} {"element":"mzm-ing","index":0} {"element":"1","index":0} {"element":"阝","index":0}	1041
 邵	{"element":"szm-sh","index":0} {"element":"mzm-ao","index":0} {"element":"刀","index":0} {"element":"阝","index":0}	74917
 邶	{"element":"szm-b","index":0} {"element":"mzm-ei","index":0} {"element":"","index":0} {"element":"阝","index":0}	548
@@ -7124,9 +7124,9 @@
 郁	{"element":"szm-y","index":0} {"element":"mzm-u","index":0} {"element":"𠂇","index":0} {"element":"阝","index":0}	82319
 郃	{"element":"szm-h","index":0} {"element":"mzm-e","index":0} {"element":"𠆢","index":0} {"element":"阝","index":0}	746
 郄	{"element":"szm-q","index":0} {"element":"mzm-ie","index":0} {"element":"乂","index":0} {"element":"阝","index":0}	887
-郅	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"1","index":0} {"element":"阝","index":0}	6143
-郇	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"3","index":0} {"element":"阝","index":0}	53
-郇	{"element":"szm-x","index":0} {"element":"mzm-un","index":0} {"element":"3","index":0} {"element":"阝","index":0}	1013
+郅	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"至","index":0} {"element":"阝","index":0}	6143
+郇	{"element":"szm-h","index":0} {"element":"mzm-uan","index":0} {"element":"勹","index":0} {"element":"日","index":0} {"element":"阝","index":0}	53
+郇	{"element":"szm-x","index":0} {"element":"mzm-un","index":0} {"element":"勹","index":0} {"element":"日","index":0} {"element":"阝","index":0}	1013
 郈	{"element":"szm-h","index":0} {"element":"mzm-ou","index":0} {"element":"㇒","index":0} {"element":"阝","index":0}	162
 郊	{"element":"szm-j","index":0} {"element":"mzm-iao","index":0} {"element":"亠","index":0} {"element":"阝","index":0}	27474
 郎	{"element":"szm-l","index":0} {"element":"mzm-ang","index":0} {"element":"㇏","index":0} {"element":"阝","index":0}	196872
@@ -7279,7 +7279,7 @@
 钗	{"element":"szm-ch","index":0} {"element":"mzm-ai","index":0} {"element":"钅","index":0} {"element":"㇏","index":0}	13687
 钘	{"element":"szm-x","index":0} {"element":"mzm-ing","index":0} {"element":"钅","index":0} {"element":"2","index":0}	178
 钙	{"element":"szm-g","index":0} {"element":"mzm-ai","index":0} {"element":"钅","index":0} {"element":"1","index":0} {"element":"2","index":0} {"element":"丂","index":0}	166915
-钚	{"element":"szm-b","index":0} {"element":"mzm-u","index":0} {"element":"钅","index":0} {"element":"4","index":0}	2946
+钚	{"element":"szm-b","index":0} {"element":"mzm-u","index":0} {"element":"钅","index":0} {"element":"不","index":0}	2946
 钛	{"element":"szm-t","index":0} {"element":"mzm-ai","index":0} {"element":"钅","index":0} {"element":"㇏","index":0}	38581
 钜	{"element":"szm-j","index":0} {"element":"mzm-u","index":0} {"element":"钅","index":0} {"element":"1","index":0}	25258
 钝	{"element":"szm-d","index":0} {"element":"mzm-un","index":0} {"element":"钅","index":0} {"element":"6","index":0}	17750
@@ -7341,7 +7341,7 @@
 铗	{"element":"szm-j","index":0} {"element":"mzm-ia","index":0} {"element":"钅","index":0} {"element":"大","index":0}	333
 铘	{"element":"szm-y","index":0} {"element":"mzm-e","index":0} {"element":"钅","index":0} {"element":"阝","index":0}	98
 铙	{"element":"szm-n","index":0} {"element":"mzm-ao","index":0} {"element":"钅","index":0} {"element":"儿","index":0}	757
-铚	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"钅","index":0} {"element":"土","index":0}	360
+铚	{"element":"szm-zh","index":0} {"element":"mzm-i","index":0} {"element":"钅","index":0} {"element":"至","index":0}	360
 铛	{"element":"szm-ch","index":0} {"element":"mzm-eng","index":0} {"element":"钅","index":0} {"element":"彐","index":0}	8437
 铛	{"element":"szm-d","index":0} {"element":"mzm-ang","index":0} {"element":"钅","index":0} {"element":"彐","index":0}	444
 铜	{"element":"szm-t","index":0} {"element":"mzm-ong","index":0} {"element":"钅","index":0} {"element":"口","index":0}	184038
@@ -8240,7 +8240,7 @@
 龉	{"element":"szm-y","index":0} {"element":"mzm-u","index":0} {"element":"","index":0} {"element":"口","index":0}	390
 龊	{"element":"szm-ch","index":0} {"element":"mzm-uo","index":0} {"element":"","index":0} {"element":"足","index":0}	660
 龋	{"element":"szm-q","index":0} {"element":"mzm-u","index":0} {"element":"","index":0} {"element":"","index":0}	6953
-龌	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"","index":0} {"element":"土","index":0}	985
+龌	{"element":"szm-w","index":0} {"element":"mzm-o","index":0} {"element":"","index":0} {"element":"人","index":0} {"element":"6","index":0} {"element":"2","index":0} {"element":"尸","index":0} {"element":"至","index":0}	985
 龙	{"element":"szm-l","index":0} {"element":"mzm-ong","index":0} {"element":"𠂇","index":0} {"element":"㇏","index":0}	1131949
 龚	{"element":"szm-g","index":0} {"element":"mzm-ong","index":0} {"element":"𠂇","index":0} {"element":"八","index":0}	53516
 龛	{"element":"szm-k","index":0} {"element":"mzm-an","index":0} {"element":"𠆢","index":0} {"element":"㇏","index":0}	5947

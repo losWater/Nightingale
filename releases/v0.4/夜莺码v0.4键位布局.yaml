@@ -80,6 +80,9 @@ form:
     鸟: d
     阝: l
     '3': x
+    勹:
+      element: '3'
+    不: n
     冂: h
     囗: v
     束: y
@@ -91,6 +94,8 @@ form:
     mzm-ian: m
     日: q
     土: z
+    至:
+      element: 土
     巾: b
     罒: o
     文: k
