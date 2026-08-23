@@ -15228,7 +15228,7 @@
 埌	lhzt
 琅	lhzt
 㙟	lhzy
-立	li
+里	li
 哩	lia
 唎	liad
 呖	liaf
@@ -15499,7 +15499,6 @@
 盭	lioy
 䋥	lioz
 貍	lioz
-里	liq
 曞	liqg
 㬏	liqq
 㮚	liqv
