@@ -52,7 +52,7 @@ for L in (1, 2, 3):
 # 副读音三简补位与竞争（实战练字问题#1/#2，2026-08-19）
 # 空位直取；占位时按判定树竞争：持有者为便利户(全码基础层无重)且频≤5万、挑战者字频>3倍 → 夺位
 # 特批夺位（用户逐案裁定）：乐yto←岳、佛fus←伏；否决案：的dik(帝留)、大dds、给jig等>5万持有者一律不动
-EXTRA_GRANT = {("乐", "yto"), ("佛", "fus")}
+EXTRA_GRANT = {("乐", "ytx"), ("佛", "fus")}
 holder_of = {p: c for c, p in assigned.items()}
 code_chars = {}
 for c in chars:
