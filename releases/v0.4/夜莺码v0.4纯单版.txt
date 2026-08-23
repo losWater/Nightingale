@@ -3732,6 +3732,7 @@
 点	dm
 嚸	dmaa
 唸	dmar
+点	dmav
 㚲	dmba
 詀	dmba
 婰	dmbb
@@ -4389,6 +4390,7 @@
 醏	duoq
 罜	duoz
 督	duq
+都	duql
 督	duql
 裻	duql
 錖	duqn
@@ -4616,6 +4618,7 @@
 阧	dzlq
 陡	dzlt
 瞗	dzlv
+陡	dzlz
 㢄	dzmn
 㞳	dzmq
 豆	dzn
@@ -4629,6 +4632,7 @@
 酘	dzoa
 㓸	dzod
 斣	dzoq
+都	dzql
 鬬	dzqm
 鬭	dzqm
 閗	dzqq
@@ -10300,7 +10304,7 @@
 趐	iizu
 騺	iizv
 产	ij
-啴	ija
+觇	ija
 丳	ijaq
 啴	ijat
 單	ijat
@@ -10308,6 +10312,7 @@
 嚵	ijat
 囅	ijat
 辴	ijat
+觇	ijax
 婵	ijb
 㚲	ijba
 幨	ijbb
@@ -10430,7 +10435,7 @@
 緾	ijoz
 纏	ijoz
 纒	ijoz
-觇	ijq
+旵	ijq
 䦓	ijqa
 㬄	ijqb
 䦲	ijqb
@@ -11314,6 +11319,7 @@
 魕	jiak
 叽	jial
 鬾	jial
+乩	jiao
 哜	jiaq
 嗘	jias
 戢	jiat
@@ -11631,7 +11637,7 @@
 䍤	jioy
 緝	jioy
 丮	jioz
-乩	jiq
+耤	jiq
 暩	jiqb
 耭	jiqk
 䣢	jiql
@@ -15666,6 +15672,7 @@
 塛	lizv
 瑮	lizv
 瓅	lizv
+里	lizz
 理	lizz
 兰	lj
 㘓	ljao
@@ -25937,6 +25944,7 @@
 徒	tuoq
 徒	tuot
 兎	tuot
+徒	tuoz
 凸	tuq
 凸	tuqn
 䖘	tuqt
@@ -27464,12 +27472,14 @@
 腧	uuyd
 㽰	uuyq
 束	uuyy
+墅	uuz
 瑹	uuzb
 㻿	uuzj
 䟉	uuzj
 䞖	uuzt
 尌	uuzx
 璹	uuzx
+墅	uuzz
 水	uv
 帨	uvb
 说	uvbl
@@ -27943,7 +27953,9 @@
 㪿	veom
 辄	veoo
 乇	veos
+者	veq
 晣	veqm
+者	veqq
 磔	ver
 砓	vera
 慴	verk
@@ -27952,7 +27964,6 @@
 磔	verv
 䂞	verv
 仛	vess
-者	vet
 乽	veto
 者	vetq
 䠦	vetq
@@ -28751,7 +28762,10 @@
 至	vizz
 䟈	vizz
 站	vj
+占	vja
+占	vjaa
 噡	vjab
+战	vjat
 單	vjat
 戰	vjat
 谵	vjb
@@ -28840,7 +28854,6 @@
 綻	vjoq
 辗	vjot
 醆	vjot
-占	vjq
 占	vjqa
 䦓	vjqa
 閚	vjqk
@@ -29397,6 +29410,8 @@
 助	vuq
 助	vuqf
 曯	vuqj
+翥	vuqu
+煮	vuqv
 砫	vur
 劯	vurf
 硃	vurk
@@ -29412,7 +29427,7 @@
 㑏	vusx
 㑳	vusx
 住	vusz
-翥	vut
+躅	vut
 煑	vutc
 躅	vutj
 䘄	vutj
@@ -33917,7 +33932,9 @@
 䥺	yewx
 腋	yey
 腋	yeyt
+野	yez
 瓛	yezg
+野	yezq
 墷	yezz
 璍	yezz
 样	yh
@@ -37406,3 +37423,4 @@
 走	zzzq
 赱	zzzq
 走	zzzt
+走	zzzz

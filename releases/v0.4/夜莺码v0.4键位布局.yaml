@@ -43,6 +43,7 @@ form:
     固: g
     szm-w: w
     口: a
+    占: a
     衣: l
     尚: h
     丁: n
@@ -93,7 +94,10 @@ form:
     mzm-u: u
     mzm-ian: m
     日: q
+    者: q
     土: z
+    里: z
+    走: z
     至:
       element: 土
     巾: b

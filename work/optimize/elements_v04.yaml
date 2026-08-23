@@ -721,7 +721,7 @@
     index: 0
   - element: 钅
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 1
 - 词: 䲟
@@ -1588,7 +1588,7 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: 卜
+  - element: 占
     index: 0
   - element: 6
     index: 0
@@ -3988,7 +3988,7 @@
     index: 0
   - element: 亻
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 1719
 - 词: 俜
@@ -4934,7 +4934,7 @@
     index: 0
   - element: 亻
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 195522
 - 词: 傩
@@ -5110,7 +5110,7 @@
     index: 0
   - element: 亻
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 2348
 - 词: 僰
@@ -8133,9 +8133,9 @@
     index: 0
   - element: mzm-an
     index: 0
-  - element: 卜
+  - element: 占
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 928402
 - 词: 卡
@@ -8476,7 +8476,7 @@
     index: 0
   - element: 厂
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 28092
 - 词: 厚
@@ -11061,7 +11061,7 @@
     index: 0
   - element: 口
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 41594
 - 词: 哪
@@ -11699,7 +11699,7 @@
     index: 0
   - element: 口
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 5232
 - 词: 啬
@@ -12095,7 +12095,7 @@
     index: 0
   - element: 口
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 3445
 - 词: 喳
@@ -12865,7 +12865,7 @@
     index: 0
   - element: 口
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 13
 - 词: 噌
@@ -14152,7 +14152,7 @@
     index: 0
   - element: 土
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 92
 - 词: 坬
@@ -14746,7 +14746,7 @@
     index: 0
   - element: 土
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 117266
 - 词: 埋
@@ -14757,7 +14757,7 @@
     index: 0
   - element: 土
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 0
 - 词: 埌
@@ -15318,7 +15318,7 @@
     index: 0
   - element: 土
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 125566
 - 词: 堼
@@ -15569,7 +15569,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 日
+  - element: 里
     index: 0
   - element: 土
     index: 0
@@ -16495,7 +16495,7 @@
     index: 0
   - element: 大
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 36130
 - 词: 奥
@@ -17331,7 +17331,7 @@
     index: 0
   - element: 女
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 419
 - 词: 娑
@@ -19971,7 +19971,7 @@
     index: 0
   - element: 尸
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 30777
 - 词: 屡
@@ -21797,7 +21797,7 @@
     index: 0
   - element: 巾
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 76676
 - 词: 帘
@@ -22127,7 +22127,7 @@
     index: 0
   - element: 巾
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 0
 - 词: 幢
@@ -22138,7 +22138,7 @@
     index: 0
   - element: 巾
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 40997
 - 词: 幪
@@ -22402,7 +22402,7 @@
     index: 0
   - element: 广
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 3323107
 - 词: 庙
@@ -23601,7 +23601,7 @@
     index: 0
   - element: 彳
     index: 0
-  - element: 龰
+  - element: 走
     index: 0
   频率: 69353
 - 词: 徕
@@ -25031,7 +25031,7 @@
     index: 0
   - element: 忄
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 586
 - 词: 悟
@@ -25416,7 +25416,7 @@
     index: 0
   - element: 忄
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 2012
 - 词: 惧
@@ -26076,7 +26076,7 @@
     index: 0
   - element: 忄
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 3078
 - 词: 憨
@@ -26164,7 +26164,7 @@
     index: 0
   - element: 忄
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 825490
 - 词: 懈
@@ -26448,7 +26448,7 @@
     index: 0
   - element: mzm-an
     index: 0
-  - element: 卜
+  - element: 占
     index: 0
   - element: 戈
     index: 0
@@ -26703,7 +26703,7 @@
     index: 0
   - element: 户
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 5
 - 词: 扃
@@ -27572,7 +27572,7 @@
     index: 0
   - element: 扌
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 4695
 - 词: 拉
@@ -28683,7 +28683,7 @@
     index: 0
   - element: 扌
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 8467
 - 词: 掇
@@ -29871,7 +29871,7 @@
     index: 0
   - element: 扌
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 231253
 - 词: 撤
@@ -32137,7 +32137,7 @@
     index: 0
   - element: 日
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 42416
 - 词: 暕
@@ -32302,7 +32302,7 @@
     index: 0
   - element: 日
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 1095
 - 词: 曌
@@ -32324,7 +32324,7 @@
     index: 0
   - element: 日
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 12444
 - 词: 曛
@@ -35844,7 +35844,7 @@
     index: 0
   - element: 木
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 1169
 - 词: 楯
@@ -36328,7 +36328,7 @@
     index: 0
   - element: 木
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 371
 - 词: 槭
@@ -36647,7 +36647,7 @@
     index: 0
   - element: 木
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 305
 - 词: 橱
@@ -37615,7 +37615,7 @@
     index: 0
   - element: 毛
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 4334
 - 词: 毪
@@ -38902,7 +38902,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 129185
 - 词: 沿
@@ -40200,7 +40200,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 1606
 - 词: 浭
@@ -41179,7 +41179,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 15435
 - 词: 渝
@@ -42796,7 +42796,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 846
 - 词: 潵
@@ -42840,7 +42840,7 @@
     index: 0
   - element: 氵
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 9302
 - 词: 潽
@@ -43839,7 +43839,7 @@
     index: 0
   - element: mzm-ian
     index: 0
-  - element: 卜
+  - element: 占
     index: 0
   - element: 灬
     index: 0
@@ -44598,7 +44598,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 耂
+  - element: 者
     index: 0
   - element: 灬
     index: 0
@@ -46118,7 +46118,7 @@
     index: 0
   - element: 犭
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 16295
 - 词: 狺
@@ -46349,7 +46349,7 @@
     index: 0
   - element: 犭
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 417351
 - 词: 猫
@@ -46987,7 +46987,7 @@
     index: 0
   - element: 王
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 1022
 - 词: 玹
@@ -47515,7 +47515,7 @@
     index: 0
   - element: 王
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 1645639
 - 词: 琇
@@ -49308,7 +49308,7 @@
     index: 0
   - element: 田
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 2724
 - 词: 疆
@@ -51673,7 +51673,7 @@
     index: 0
   - element: 目
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 15402
 - 词: 睽
@@ -51937,7 +51937,7 @@
     index: 0
   - element: 目
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 26200
 - 词: 瞵
@@ -52476,7 +52476,7 @@
     index: 0
   - element: 石
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 2180
 - 词: 砫
@@ -54819,7 +54819,7 @@
     index: 0
   - element: 禾
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 61
 - 词: 穟
@@ -55281,7 +55281,7 @@
     index: 0
   - element: 立
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 2197202
 - 词: 竞
@@ -55336,7 +55336,7 @@
     index: 0
   - element: 立
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 254608
 - 词: 竦
@@ -56370,7 +56370,7 @@
     index: 0
   - element: ⺮
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 5533
 - 词: 篁
@@ -56920,7 +56920,7 @@
     index: 0
   - element: 米
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 0
 - 词: 粘
@@ -56931,7 +56931,7 @@
     index: 0
   - element: 米
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 155166
 - 词: 粜
@@ -58471,7 +58471,7 @@
     index: 0
   - element: 纟
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 81379
 - 词: 绫
@@ -59065,7 +59065,7 @@
     index: 0
   - element: 纟
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 52065
 - 词: 缡
@@ -59582,7 +59582,7 @@
     index: 0
   - element: 罒
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 186167
 - 词: 罴
@@ -60130,7 +60130,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 耂
+  - element: 者
     index: 0
   - element: 习
     index: 0
@@ -60306,9 +60306,9 @@
     index: 0
   - element: mzm-e
     index: 0
-  - element: 耂
+  - element: 者
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 3942562
 - 词: 耆
@@ -63322,7 +63322,7 @@
     index: 0
   - element: 舟
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 142
 - 词: 艨
@@ -64290,7 +64290,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 3023
 - 词: 苯
@@ -66116,7 +66116,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 3269
 - 词: 萝
@@ -66347,7 +66347,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 709133
 - 词: 著
@@ -66358,7 +66358,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 0
 - 词: 葙
@@ -66435,7 +66435,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 285753
 - 词: 葩
@@ -67689,7 +67689,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 50492
 - 词: 薰
@@ -71022,7 +71022,7 @@
     index: 0
   - element: 衤
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 19663
 - 词: 褛
@@ -71394,7 +71394,7 @@
     index: 0
   - element: mzm-an
     index: 0
-  - element: 2
+  - element: 占
     index: 0
   - element: 见
     index: 0
@@ -72804,7 +72804,7 @@
     index: 0
   - element: 讠
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 183607
 - 词: 诹
@@ -74080,7 +74080,7 @@
     index: 0
   - element: 贝
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 544935
 - 词: 贵
@@ -74355,7 +74355,7 @@
     index: 0
   - element: 贝
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 77772
 - 词: 赍
@@ -74674,7 +74674,7 @@
     index: 0
   - element: 土
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 3777
 - 词: 走
@@ -74683,9 +74683,9 @@
     index: 0
   - element: mzm-ou
     index: 0
-  - element: 土
+  - element: 走
     index: 0
-  - element: 龰
+  - element: 走
     index: 0
   频率: 2489858
 - 词: 赳
@@ -74694,9 +74694,9 @@
     index: 0
   - element: mzm-iu
     index: 0
-  - element: 土
+  - element: 走
     index: 0
-  - element: '2'
+  - element: 2
     index: 0
   频率: 902
 - 词: 赴
@@ -74705,7 +74705,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 卜
     index: 0
@@ -74716,7 +74716,7 @@
     index: 0
   - element: mzm-ao
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 乂
     index: 0
@@ -74727,7 +74727,7 @@
     index: 0
   - element: mzm-an
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 干
     index: 0
@@ -74738,7 +74738,7 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 己
     index: 0
@@ -74749,7 +74749,7 @@
     index: 0
   - element: mzm-en
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 彡
     index: 0
@@ -74760,7 +74760,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 且
     index: 0
@@ -74771,7 +74771,7 @@
     index: 0
   - element: mzm-ie
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 且
     index: 0
@@ -74782,7 +74782,7 @@
     index: 0
   - element: mzm-ao
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 口
     index: 0
@@ -74793,7 +74793,7 @@
     index: 0
   - element: mzm-ue
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 戈
     index: 0
@@ -74804,7 +74804,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 彐
     index: 0
@@ -74815,7 +74815,7 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 人
     index: 0
@@ -74826,7 +74826,7 @@
     index: 0
   - element: mzm-ie
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 刂
     index: 0
@@ -74837,7 +74837,7 @@
     index: 0
   - element: mzm-ang
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 尚
     index: 0
@@ -74848,7 +74848,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 又
     index: 0
@@ -74859,7 +74859,7 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 龶
     index: 0
@@ -74870,7 +74870,7 @@
     index: 0
   - element: mzm-an
     index: 0
-  - element: 土
+  - element: 走
     index: 0
   - element: 贝
     index: 0
@@ -75510,7 +75510,7 @@
     index: 0
   - element: 
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 3270
 - 词: 踯
@@ -75543,7 +75543,7 @@
     index: 0
   - element: 
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 6702
 - 词: 踶
@@ -75961,7 +75961,7 @@
     index: 0
   - element: 
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 739
 - 词: 躏
@@ -78687,7 +78687,7 @@
     index: 0
   - element: mzm-ou
     index: 0
-  - element: 耂
+  - element: 者
     index: 0
   - element: 阝
     index: 0
@@ -78698,7 +78698,7 @@
     index: 0
   - element: mzm-u
     index: 0
-  - element: 耂
+  - element: 者
     index: 0
   - element: 阝
     index: 0
@@ -79666,9 +79666,9 @@
     index: 0
   - element: mzm-i
     index: 0
-  - element: 日
+  - element: 里
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 7046887
 - 词: 重
@@ -79679,7 +79679,7 @@
     index: 0
   - element: 千
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 992751
 - 词: 重
@@ -79690,7 +79690,7 @@
     index: 0
   - element: 千
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 992751
 - 词: 野
@@ -79699,7 +79699,7 @@
     index: 0
   - element: mzm-e
     index: 0
-  - element: 日
+  - element: 里
     index: 0
   - element: 予
     index: 0
@@ -79712,7 +79712,7 @@
     index: 0
   - element: 日
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 1995503
 - 词: 釐
@@ -79723,7 +79723,7 @@
     index: 0
   - element: 未
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 390
 - 词: 金
@@ -80449,7 +80449,7 @@
     index: 0
   - element: 钅
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 106718
 - 词: 钼
@@ -81230,7 +81230,7 @@
     index: 0
   - element: 钅
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 40840
 - 词: 锃
@@ -81461,7 +81461,7 @@
     index: 0
   - element: 钅
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 5029
 - 词: 锘
@@ -81835,7 +81835,7 @@
     index: 0
   - element: 钅
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 3647
 - 词: 锻
@@ -82847,7 +82847,7 @@
     index: 0
   - element: 门
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 2664
 - 词: 阇
@@ -82858,7 +82858,7 @@
     index: 0
   - element: 门
     index: 0
-  - element: 日
+  - element: 者
     index: 0
   频率: 140
 - 词: 阈
@@ -83210,7 +83210,7 @@
     index: 0
   - element: 阝
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 50
 - 词: 阿
@@ -83474,7 +83474,7 @@
     index: 0
   - element: 阝
     index: 0
-  - element: 龰
+  - element: 走
     index: 0
   频率: 17976
 - 词: 院
@@ -84409,7 +84409,7 @@
     index: 0
   - element: 
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 32434
 - 词: 青
@@ -85608,7 +85608,7 @@
     index: 0
   - element: 
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 58
 - 词: 飑
@@ -87830,7 +87830,7 @@
     index: 0
   - element: 鱼
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 3625
 - 词: 鲈
@@ -88138,7 +88138,7 @@
     index: 0
   - element: 鱼
     index: 0
-  - element: 
+  - element: 里
     index: 0
   频率: 45202
 - 词: 鲥
@@ -89986,7 +89986,7 @@
     index: 0
   - element: 艹
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 85
 - 词: 黉
@@ -90030,7 +90030,7 @@
     index: 0
   - element: 禾
     index: 0
-  - element: 口
+  - element: 占
     index: 0
   频率: 60859
 - 词: 黑

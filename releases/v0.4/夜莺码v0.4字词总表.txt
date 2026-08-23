@@ -14878,6 +14878,7 @@
 道貌岸然	dmar
 唸	dmar
 盗名暗世	dmau
+点	dmav
 㚲	dmba
 詀	dmba
 婰	dmbb
@@ -16895,6 +16896,7 @@
 肚脐	duqi
 毒气	duqi
 赌气	duqi
+都	duql
 督	duql
 裻	duql
 赌钱	duqm
@@ -18120,6 +18122,7 @@
 陡	dzlt
 瞗	dzlv
 豆类	dzlw
+陡	dzlz
 㢄	dzmn
 㞳	dzmq
 都没	dzmw
@@ -18145,6 +18148,7 @@
 电子琴	dzqb
 斗气	dzqi
 电子器件	dzqj
+都	dzql
 电子签名	dzqm
 鬬	dzqm
 鬭	dzqm
@@ -37734,7 +37738,7 @@
 趐	iizu
 騺	iizv
 产	ij
-啴	ija
+觇	ija
 丳	ijaq
 啴	ijat
 單	ijat
@@ -37742,6 +37746,7 @@
 嚵	ijat
 囅	ijat
 辴	ijat
+觇	ijax
 婵	ijb
 㚲	ijba
 处惊不变	ijbb
@@ -37965,7 +37970,7 @@
 产品	ijpb
 船坚炮利	ijpl
 冲积平原	ijpy
-觇	ijq
+旵	ijq
 䦓	ijqa
 钗荆裙布	ijqb
 㬄	ijqb
@@ -42012,6 +42017,7 @@
 鬾	jial
 吉安	jian
 积案	jian
+乩	jiao
 哜	jiaq
 嗘	jias
 戢	jiat
@@ -42721,7 +42727,7 @@
 击破	jipo
 急迫	jipo
 吉普	jipu
-乩	jiq
+耤	jiq
 暩	jiqb
 机器	jiqi
 及其	jiqi
@@ -54966,6 +54972,7 @@ $	k
 塛	lizv
 瑮	lizv
 瓅	lizv
+里	lizz
 理	lizz
 乱臣贼子	lizz
 兰	lj
@@ -85312,6 +85319,7 @@ $	k
 徒	tuoq
 徒	tuot
 兎	tuot
+徒	tuoz
 土坯	tupi
 图片	tupm
 涂片	tupm
@@ -91960,6 +91968,7 @@ $	k
 束	uuyy
 射石饮羽	uuyy
 书友	uuyz
+墅	uuz
 束身自爱	uuza
 束手自毙	uuzb
 瑹	uuzb
@@ -91979,6 +91988,7 @@ $	k
 尌	uuzx
 璹	uuzx
 实实在在	uuzz
+墅	uuzz
 水	uv
 甚至	uv
 水岸	uvan
@@ -94269,7 +94279,9 @@ $	k
 㪿	veom
 辄	veoo
 乇	veos
+者	veq
 晣	veqm
+者	veqq
 磔	ver
 砓	vera
 这人	verf
@@ -94285,7 +94297,6 @@ $	k
 抓耳搔腮	vess
 仛	vess
 折损	vesy
-者	vet
 知恩图报	vetb
 折腾	vetg
 蔗糖	veth
@@ -96591,8 +96602,11 @@ $	k
 䟈	vizz
 站	vj
 直接	vj
+占	vja
+占	vjaa
 噡	vjab
 忠君爱国	vjag
+战	vjat
 單	vjat
 戰	vjat
 谵	vjb
@@ -96849,7 +96863,6 @@ $	k
 战平	vjpk
 站票	vjpn
 重迹屏气	vjpq
-占	vjq
 占	vjqa
 䦓	vjqa
 卓绝千古	vjqg
@@ -99032,7 +99045,9 @@ $	k
 猪圈	vuqr
 仗势欺人	vuqr
 朱雀	vuqt
+翥	vuqu
 枕石寝绳	vuqu
+煮	vuqv
 置身其中	vuqv
 正身清心	vuqx
 直上青云	vuqy
@@ -99074,7 +99089,7 @@ $	k
 㑳	vusx
 竹笋	vusy
 住	vusz
-翥	vut
+躅	vut
 纸上谈兵	vutb
 赘食太仓	vutc
 煑	vutc
@@ -99082,8 +99097,8 @@ $	k
 主题	vuti
 主体	vuti
 猪蹄	vuti
-躅	vutj
 竹炭	vutj
+躅	vutj
 䘄	vutj
 䠱	vutj
 祩	vutk
@@ -114377,6 +114392,7 @@ $	k
 也有	yeyz
 夜游	yeyz
 也由	yeyz
+野	yez
 也在	yezd
 一而再	yezd
 瓛	yezg
@@ -114384,6 +114400,7 @@ $	k
 椰子	yezi
 幺蛾子	yezi
 也做	yezo
+野	yezq
 墷	yezz
 璍	yezz
 衣服	yf
@@ -127066,3 +127083,4 @@ $	k
 自作自受	zzzu
 咂嘴咂舌	zzzu
 走走	zzzz
+走	zzzz
