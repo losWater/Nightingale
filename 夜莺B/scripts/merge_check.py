@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""合并检查器：python merge_check.py 根1 根2 ... [--name 部件名]  两项都报：三简堆(新增≥3)、全码撞"""
+"""合并检查器：python merge_check.py 根1+根2 ...；二简排除后检查新增三码竞争与全码撞。"""
 import io,sys,json,zlib
 from collections import defaultdict
 sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
@@ -29,20 +29,26 @@ def report(group):
     G=[resolve(x) for x in group]; S=set(G)
     for P in G:
         u=users(P); print(f"  {name(P)} 首/末 {len(u)}字:",' '.join(f"{c}{freq[c]//10000}" for c in u[:14]))
-    # 三简堆：同音节首根∈S（主读音，频≥1万）；只报合并后新出现的≥3堆
+    # 每音节最高频字占二简并排除；余下每首根只有一个三码位。
+    two={}
+    for c,v in r.items():
+        if freq[c]<10000: continue
+        for _,cd in v:
+            s=cd[:2]
+            if s not in two or (freq[c],c)>(freq[two[s]],two[s]): two[s]=c
     hits=defaultdict(set)
     for c,v in r.items():
         if freq[c]<10000: continue
-        s=v[0][1][:2]; hh=[x for x in chain(c,0) if x in S]
-        if hh: hits[s].add((c,hh[0]))
-    new3=[]; two=0
+        for _,cd in v:
+            s=cd[:2]
+            if c==two.get(s): continue
+            hh=[x for x in chain(c,0) if x in S]
+            if hh: hits[s].add((c,hh[0]))
+    new2=[]
     for s,cs in hits.items():
         if len({x for _,x in cs})>1:
-            per=defaultdict(int)
-            for c,x in cs: per[x]+=1
-            if len(cs)>=3 and max(per.values())<3: new3.append((s,sorted(cs,key=lambda x:-freq[x[0]])))
-            elif len(cs)==2: two+=1
-    print(f"  三简：新增≥3堆 {len(new3)} 个，=2堆 {two} 个",' | '.join(s+':'+' '.join(f"{c}{freq[c]//10000}" for c,x in cs) for s,cs in new3[:6]))
+            new2.append((s,sorted(cs,key=lambda x:-freq[x[0]])))
+    print(f"  三简：排除二简后新增竞争堆 {len(new2)} 个",' | '.join(s+':'+' '.join(f"{c}{freq[c]//10000}" for c,x in cs) for s,cs in new2[:6]))
     # 全码撞
     hits=defaultdict(list)
     for c,v in r.items():

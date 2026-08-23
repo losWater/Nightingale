@@ -9,14 +9,27 @@ db={(chr(e['unicode']) if e.get('unicode') else e.get('name')):e for e in rep}
 byname={e.get('name'):k for k,e in db.items() if e.get('name')}
 r=json.load(open(B+'work/readings.json',encoding='utf-8')); freq={c:v[0][0] for c,v in r.items()}
 cfg=yaml.safe_load(open(B+'夜莺B/work/根集.yaml',encoding='utf-8'))
-def resolve(x): return byname.get(x,x)
+rules=yaml.safe_load(open(B+'夜莺B/work/拆分规则.yaml',encoding='utf-8'))
+custom={str(k):str(v) for k,v in rules.get('custom_elements',{}).items()}
+custom_labels={v:k for k,v in custom.items()}
+def resolve(x): return custom.get(str(x),byname.get(x,x))
 HOST={}
 for root,atts in cfg['roots'].items():
     HOST[resolve(root)]=root
     for a in atts: HOST[resolve(a)]=root
 for root,atts in cfg.get('anchors',{}).items():
     for a in atts: HOST[resolve(a)]=a   # 锚定根自己是根（键位随宿主），这里保留自身名
-def name(k): return db.get(k,{}).get('name',k) if len(k)==1 and 0xE000<=ord(k)<=0xF8FF else k
+FORMAL_SPLITS={}
+formal_path=B+'夜莺B/work/analysis.tsv.splits.tsv'
+try:
+    for line in open(formal_path,encoding='utf-8'):
+        c,_,seq=line.rstrip('\n').partition('\t')
+        if c and seq: FORMAL_SPLITS[c]=seq.split()
+except FileNotFoundError:
+    pass
+def name(k):
+    if k in custom_labels: return custom_labels[k]
+    return db.get(k,{}).get('name',k) if len(k)==1 and 0xE000<=ord(k)<=0xF8FF else k
 def glyph(k):
     e=db.get(k); gs=e['glyphs'] if e else []
     for g in gs:
@@ -64,6 +77,15 @@ def chain(c,idx):
     return out
 def root_of(c,idx):
     """沿链找根；返回 (根名, 经由部件)"""
+    if c in FORMAL_SPLITS and FORMAL_SPLITS[c]:
+        item=FORMAL_SPLITS[c][0 if idx==0 else -1]
+        if item in HOST: return HOST[item],item
+        if item in ('1','一'): return '横',item
+        if item in ('2','丨'): return '竖',item
+        if item in ('3','丿'): return '撇',item
+        if item in ('4','丶'): return '点',item
+        if item in ('5','6','乙'): return '折',item
+        return name(item),item
     g=glyph(c); k=c; depth=0
     while depth<8:
         if k in HOST: return HOST[k],k

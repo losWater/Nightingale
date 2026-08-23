@@ -18,3 +18,11 @@ Thumbs.db
 
 # 嵌套的外部 git 克隆（早期研究用的辅助码 wiki），不入库
 data/raw/fuzhuma-wiki/
+
+# 夜莺B 正式分析器的可重生成中间产物
+夜莺B/work/analysis.tsv
+夜莺B/work/analysis.tsv.splits.tsv
+夜莺B/work/analysis_charset.txt
+夜莺B/work/analysis_config.yaml
+夜莺B/work/.candidate_check/
+夜莺B/work/.rule_audit/
