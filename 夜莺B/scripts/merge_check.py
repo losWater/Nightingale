@@ -47,7 +47,8 @@ def report(group):
     new2=[]
     for s,cs in hits.items():
         if len({x for _,x in cs})>1:
-            new2.append((s,sorted(cs,key=lambda x:-freq[x[0]])))
+            preferred=rules.get('short_code_overrides',{}).get(str(s),{}).get(name(group[0]))
+            new2.append((s,sorted(cs,key=lambda x:(x[0]!=preferred,-freq[x[0]]))))
     print(f"  三简：排除二简后新增竞争堆 {len(new2)} 个",' | '.join(s+':'+' '.join(f"{c}{freq[c]//10000}" for c,x in cs) for s,cs in new2[:6]))
     # 全码撞
     hits=defaultdict(list)

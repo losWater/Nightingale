@@ -14,6 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 import yaml
+from build_analysis import frame_match, selected_glyph
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 HERE = Path(__file__).resolve().parent.parent
@@ -104,6 +105,33 @@ def main():
         print("    自动=" + " ".join(label(x) for x in auto_seq))
         if missing:
             print("    ⚠ 引用了非当前元素: " + " ".join(missing))
+
+    print("\n== 字架审计")
+    frame_rows = []
+    for char, seq in formal.items():
+        for kind, spec in rules.get("frames", {}).items():
+            if frame_match(str(kind), selected_glyph(char)):
+                # 完整成根者（如襄）优先，是合法的边界保护。
+                expected = str(spec.get("host", kind))
+                actual = hosts.get(seq[0], label(seq[0])) if seq else "—"
+                state = "整字根优先" if seq == [char] and char in hosts else (
+                    "已接管" if actual == expected else "⚠ 未接管")
+                frame_rows.append((char, str(kind), actual, state))
+                break
+    active_frames = {str(kind): spec for kind, spec in rules.get("frames", {}).items()
+                     if not spec.get("structural_only")}
+    counts = Counter(kind for _, kind, _, state in frame_rows if state == "已接管")
+    protected = [char for char, _, _, state in frame_rows if state == "整字根优先"]
+    failed = [(char, kind, actual) for char, kind, actual, state in frame_rows if state.startswith("⚠")]
+    print("  已接管: " + " ".join(f"{kind}{counts[kind]}" for kind in active_frames))
+    conceptual = [str(kind) for kind, spec in rules.get("frames", {}).items()
+                  if spec.get("structural_only")]
+    if conceptual:
+        print("  概念字架（暂无用户）: " + " ".join(conceptual))
+    if protected:
+        print("  整字根优先: " + " ".join(protected))
+    if failed:
+        print("  ⚠ 未接管: " + " ".join(f"{c}({kind}→{actual})" for c, kind, actual in failed))
 
     # 直接元素就业：既统计主根自身，也统计挂靠形和锚定形。
     use = Counter(x for seq in formal.values() for x in seq)

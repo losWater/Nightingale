@@ -15,6 +15,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import yaml
+from build_analysis import apply_postprocess
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 HERE = Path(__file__).resolve().parent.parent
@@ -64,7 +65,9 @@ def load_host(candidate=None, exclude=None):
             host[resolve(item)] = str(item)
     if candidate is not None:
         group = candidate if isinstance(candidate, (list, tuple)) else [candidate]
-        group_name = label(group[0])
+        # 组首若已属于正式宿主（尤其 1~5 笔画家），必须沿用该宿主名；
+        # 否则会把“弓挂折”误算成独立的“5”键，虚报三码分流收益。
+        group_name = host.get(group[0], label(group[0]))
         aliases = {label(item) for item in group} | {str(item) for item in group}
         for child, parent in list(host.items()):
             if parent in aliases:
@@ -94,7 +97,9 @@ def assemble_config(cfg, temp_dir, title):
     cmd = ["bun", str(BASE / "scripts/assemble.ts"), str(config_path), str(output_path),
            str(WORK / "analysis_charset.txt")]
     subprocess.run(cmd, cwd=BASE, check=True)
-    return Path(str(output_path) + ".splits.tsv")
+    split_path = Path(str(output_path) + ".splits.tsv")
+    apply_postprocess(split_path, config_path, RULES)
+    return split_path
 
 
 def assemble_candidate(candidate, temp_dir):
@@ -137,21 +142,27 @@ def forms(splits, readings):
     return out
 
 
-def short_state(form, freq, minimum):
+def short_state(form, freq, minimum, reading_freq=None):
+    reading_freq = reading_freq or {(c, syl): freq[c] for c, syl in form}
     # 每个音节先拿掉唯一的二简字 ab；余下每个首根堆只有一个三码位 abx。
     two_code = {}
     for c, syl in form:
-        if freq[c] < minimum:
+        if reading_freq[(c, syl)] < minimum:
             continue
-        if syl not in two_code or (freq[c], c) > (freq[two_code[syl]], two_code[syl]):
+        preferred = RULES.get("two_code_overrides", {}).get(str(syl))
+        if preferred == c:
+            two_code[syl] = c
+        elif preferred != two_code.get(syl) and (syl not in two_code or
+              (reading_freq[(c, syl)], c) > (reading_freq[(two_code[syl], syl)], two_code[syl])):
             two_code[syl] = c
     piles = defaultdict(set)
     for (c, syl), (head, _) in form.items():
-        if freq[c] >= minimum and c != two_code.get(syl):
+        if reading_freq[(c, syl)] >= minimum and c != two_code.get(syl):
             piles[(syl, head)].add(c)
     losers = set()
-    for (syl, _), chars in piles.items():
-        ordered = sorted(chars, key=lambda c: -freq[c])
+    for (syl, head), chars in piles.items():
+        preferred = RULES.get("short_code_overrides", {}).get(str(syl), {}).get(str(head))
+        ordered = sorted(chars, key=lambda c: (c != preferred, -reading_freq[(c, syl)], -freq[c]))
         losers.update((c, syl) for c in ordered[1:])
     return losers, piles
 
@@ -256,6 +267,7 @@ def main():
 
     readings = json.loads((BASE / "work/readings.json").read_text(encoding="utf-8"))
     freq = {c: rs[0][0] for c, rs in readings.items()}
+    reading_freq = {(c, code[:2]): value for c, rs in readings.items() for value, code in rs}
     base = forms(base_splits, readings)
     rooted = forms(rooted_splits, readings)
     common = set(base) & set(rooted)
@@ -269,8 +281,8 @@ def main():
         print(f"  {syl} {c}{freq[c]//10000}: {base[(c,syl)][0]}-{base[(c,syl)][1]} → "
               f"{rooted[(c,syl)][0]}-{rooted[(c,syl)][1]}")
 
-    old_losers, old_piles = short_state(base, freq, minimum)
-    new_losers, new_piles = short_state(rooted, freq, minimum)
+    old_losers, old_piles = short_state(base, freq, minimum, reading_freq)
+    new_losers, new_piles = short_state(rooted, freq, minimum, reading_freq)
     show_short("三简新增掉全码", new_losers - old_losers, rooted, new_piles, freq)
     show_short("三简获救", old_losers - new_losers, rooted, new_piles, freq)
     show_char_summary("三简", old_losers, new_losers)

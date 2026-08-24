@@ -1,0 +1,251 @@
+﻿单字	字频序	原码	候选码	策略	保留根	改入键	单字撞数	二字词撞	四字词撞	舒适序
+仕	2127	uier	uiej	保留首根	亻	j	0			1
+仕	2127	uier	uied	保留首根	亻	d	0			2
+仕	2127	uier	uies	保留首根	亻	s	0			4
+仕	2127	uier	uiel	保留首根	亻	l	0			5
+仕	2127	uier	uiea	保留首根	亻	a	0			6
+仕	2127	uier	uieg	保留首根	亻	g	0			7
+仕	2127	uier	uieh	保留首根	亻	h	0			8
+仕	2127	uier	uieu	保留首根	亻	u	0			10
+仕	2127	uier	uiee	保留首根	亻	e	0			11
+仕	2127	uier	uiei	保留首根	亻	i	0			12
+仕	2127	uier	uiew	保留首根	亻	w	0			13
+仕	2127	uier	uieo	保留首根	亻	o	0			14
+仕	2127	uier	uiey	保留首根	亻	y	0			16
+仕	2127	uier	uiem	保留首根	亻	m	0			18
+仕	2127	uier	uiev	保留首根	亻	v	0			19
+仕	2127	uier	uiex	保留首根	亻	x	0			21
+仕	2127	uier	uieb	保留首根	亻	b	0			22
+仕	2127	uier	uiez	保留首根	亻	z	0			23
+仕	2127	uier	uieq	保留首根	亻	q	0			24
+仕	2127	uier	uiep	保留首根	亻	p	0			25
+仕	2127	uier	uifr	保留末根	土	f	0			0
+仕	2127	uier	uikr	保留末根	土	k	0			3
+仕	2127	uier	uilr	保留末根	土	l	0			5
+仕	2127	uier	uiar	保留末根	土	a	0			6
+仕	2127	uier	uiur	保留末根	土	u	0			10
+仕	2127	uier	uiwr	保留末根	土	w	0			13
+仕	2127	uier	uior	保留末根	土	o	0			14
+仕	2127	uier	uinr	保留末根	土	n	0			17
+仕	2127	uier	uimr	保留末根	土	m	0			18
+仕	2127	uier	uicr	保留末根	土	c	0			20
+仕	2127	uier	uibr	保留末根	土	b	0			22
+仕	2127	uier	uizr	保留末根	土	z	0			23
+仕	2127	uier	uipr	保留末根	土	p	0			25
+仕	2127	uier	uien	保留首根	亻	n	0	施恩 师恩		17
+仕	2127	uier	uijr	保留末根	土	j	0	试卷		1
+仕	2127	uier	uidr	保留末根	土	d	0	时段 事端		2
+仕	2127	uier	uisr	保留末根	土	s	0	失算 试算		4
+仕	2127	uier	uigr	保留末根	土	g	0	使馆 试管 士官 事关 食管 石棺		7
+仕	2127	uier	uihr	保留末根	土	h	0	使唤 十环		8
+仕	2127	uier	uiir	保留末根	土	i	0	试穿 失传		12
+仕	2127	uier	uitr	保留末根	土	t	0	师团 使团		15
+仕	2127	uier	uiyr	保留末根	土	y	0	师院		16
+仕	2127	uier	uivr	保留末根	土	v	0	师专		19
+仕	2127	uier	uixr	保留末根	土	x	0	诗选		21
+仕	2127	uier	uiqr	保留末根	土	q	0	实权 石泉 事权		24
+仕	2127	uier	uief	保留首根	亻	f	1			0
+仕	2127	uier	uiek	保留首根	亻	k	1			3
+仕	2127	uier	uiet	保留首根	亻	t	1			15
+仕	2127	uier	uiec	保留首根	亻	c	1			20
+仕	2127	uier	uirr	保留末根	土	r	1	湿软		9
+怖	3024	bupa	bupf	保留首根	忄	f	0			0
+怖	3024	bupa	bupj	保留首根	忄	j	0			1
+怖	3024	bupa	bupd	保留首根	忄	d	0			2
+怖	3024	bupa	bups	保留首根	忄	s	0			4
+怖	3024	bupa	bupl	保留首根	忄	l	0			5
+怖	3024	bupa	bupg	保留首根	忄	g	0			7
+怖	3024	bupa	buph	保留首根	忄	h	0			8
+怖	3024	bupa	bupr	保留首根	忄	r	0			9
+怖	3024	bupa	bupu	保留首根	忄	u	0			10
+怖	3024	bupa	bupe	保留首根	忄	e	0			11
+怖	3024	bupa	bupo	保留首根	忄	o	0			14
+怖	3024	bupa	bupt	保留首根	忄	t	0			15
+怖	3024	bupa	bupy	保留首根	忄	y	0			16
+怖	3024	bupa	bupm	保留首根	忄	m	0			18
+怖	3024	bupa	bupv	保留首根	忄	v	0			19
+怖	3024	bupa	bupc	保留首根	忄	c	0			20
+怖	3024	bupa	bupx	保留首根	忄	x	0			21
+怖	3024	bupa	bupz	保留首根	忄	z	0			23
+怖	3024	bupa	bupq	保留首根	忄	q	0			24
+怖	3024	bupa	bupp	保留首根	忄	p	0			25
+怖	3024	bupa	buja	保留末根	巾	j	0			1
+怖	3024	bupa	busa	保留末根	巾	s	0			4
+怖	3024	bupa	bula	保留末根	巾	l	0			5
+怖	3024	bupa	buaa	保留末根	巾	a	0			6
+怖	3024	bupa	buga	保留末根	巾	g	0			7
+怖	3024	bupa	buha	保留末根	巾	h	0			8
+怖	3024	bupa	bura	保留末根	巾	r	0			9
+怖	3024	bupa	buea	保留末根	巾	e	0			11
+怖	3024	bupa	buwa	保留末根	巾	w	0			13
+怖	3024	bupa	buoa	保留末根	巾	o	0			14
+怖	3024	bupa	buta	保留末根	巾	t	0			15
+怖	3024	bupa	buna	保留末根	巾	n	0			17
+怖	3024	bupa	buva	保留末根	巾	v	0			19
+怖	3024	bupa	buca	保留末根	巾	c	0			20
+怖	3024	bupa	buxa	保留末根	巾	x	0			21
+怖	3024	bupa	buba	保留末根	巾	b	0			22
+怖	3024	bupa	buza	保留末根	巾	z	0			23
+怖	3024	bupa	buqa	保留末根	巾	q	0			24
+怖	3024	bupa	bupk	保留首根	忄	k	0	不平		3
+怖	3024	bupa	bupi	保留首根	忄	i	0	布匹		12
+怖	3024	bupa	bupw	保留首根	忄	w	0	不配		13
+怖	3024	bupa	bupn	保留首根	忄	n	0	补票 布票		17
+怖	3024	bupa	bupb	保留首根	忄	b	0	补品		22
+怖	3024	bupa	bufa	保留末根	巾	f	0	步伐 不乏 不法 补发 步法		0
+怖	3024	bupa	buda	保留末根	巾	d	0	不大		2
+怖	3024	bupa	buua	保留末根	巾	u	0	捕杀		10
+怖	3024	bupa	buia	保留末根	巾	i	0	不差		12
+怖	3024	bupa	buya	保留末根	巾	y	0	补牙 不雅		16
+怖	3024	bupa	buma	保留末根	巾	m	0	补码		18
+怖	3024	bupa	buka	保留末根	巾	k	1			3
+柚	3062	yzso	yzsf	保留首根	木	f	0			0
+柚	3062	yzso	yzsj	保留首根	木	j	0			1
+柚	3062	yzso	yzsd	保留首根	木	d	0			2
+柚	3062	yzso	yzsk	保留首根	木	k	0			3
+柚	3062	yzso	yzsl	保留首根	木	l	0			5
+柚	3062	yzso	yzsa	保留首根	木	a	0			6
+柚	3062	yzso	yzsg	保留首根	木	g	0			7
+柚	3062	yzso	yzst	保留首根	木	t	0			15
+柚	3062	yzso	yzsn	保留首根	木	n	0			17
+柚	3062	yzso	yzsm	保留首根	木	m	0			18
+柚	3062	yzso	yzsc	保留首根	木	c	0			20
+柚	3062	yzso	yzsx	保留首根	木	x	0			21
+柚	3062	yzso	yzsb	保留首根	木	b	0			22
+柚	3062	yzso	yzsz	保留首根	木	z	0			23
+柚	3062	yzso	yzsq	保留首根	木	q	0			24
+柚	3062	yzso	yzsp	保留首根	木	p	0			25
+柚	3062	yzso	yzfo	保留末根	田	f	0			0
+柚	3062	yzso	yzjo	保留末根	田	j	0			1
+柚	3062	yzso	yzdo	保留末根	田	d	0			2
+柚	3062	yzso	yzko	保留末根	田	k	0			3
+柚	3062	yzso	yzlo	保留末根	田	l	0			5
+柚	3062	yzso	yzao	保留末根	田	a	0			6
+柚	3062	yzso	yzeo	保留末根	田	e	0			11
+柚	3062	yzso	yzyo	保留末根	田	y	0			16
+柚	3062	yzso	yzvo	保留末根	田	v	0			19
+柚	3062	yzso	yzxo	保留末根	田	x	0			21
+柚	3062	yzso	yzqo	保留末根	田	q	0			24
+柚	3062	yzso	yzsu	保留首根	木	u	0		英姿飒爽	10
+柚	3062	yzso	yzss	保留首根	木	s	0	油松		4
+柚	3062	yzso	yzsh	保留首根	木	h	0	忧桑		8
+柚	3062	yzso	yzsr	保留首根	木	r	0	油酸		9
+柚	3062	yzso	yzse	保留首根	木	e	0	忧色 有色		11
+柚	3062	yzso	yzsi	保留首根	木	i	0	游丝 忧思		12
+柚	3062	yzso	yzsy	保留首根	木	y	0	有损		16
+柚	3062	yzso	yzsv	保留首根	木	v	0	幽邃		19
+柚	3062	yzso	yzgo	保留末根	田	g	0	有过 油锅		7
+柚	3062	yzso	yzho	保留末根	田	h	0	诱惑 有货		8
+柚	3062	yzso	yzuo	保留末根	田	u	0	游说 又说		10
+柚	3062	yzso	yzwo	保留末根	田	w	0	由我 优渥		13
+柚	3062	yzso	yzmo	保留末根	田	m	0	幽默 油墨		18
+柚	3062	yzso	yzco	保留末根	田	c	0	有错		20
+柚	3062	yzso	yzsw	保留首根	木	w	1			13
+柚	3062	yzso	yzro	保留末根	田	r	1			9
+柚	3062	yzso	yzoo	保留末根	田	o	1			14
+柚	3062	yzso	yzno	保留末根	田	n	2			17
+柚	3062	yzso	yzbo	保留末根	田	b	1			22
+柚	3062	yzso	yzzo	保留末根	田	z	2			23
+柚	3062	yzso	yzio	保留末根	田	i	1	邮戳		12
+柚	3062	yzso	yzto	保留末根	田	t	1	幼托		15
+柚	3062	yzso	yzpo	保留末根	田	p	1	诱迫		25
+肿	2056	vswu	vswj	保留首根	月	j	0			1
+肿	2056	vswu	vswk	保留首根	月	k	0			3
+肿	2056	vswu	vsws	保留首根	月	s	0			4
+肿	2056	vswu	vswl	保留首根	月	l	0			5
+肿	2056	vswu	vswa	保留首根	月	a	0			6
+肿	2056	vswu	vswg	保留首根	月	g	0			7
+肿	2056	vswu	vswr	保留首根	月	r	0			9
+肿	2056	vswu	vswe	保留首根	月	e	0			11
+肿	2056	vswu	vswi	保留首根	月	i	0			12
+肿	2056	vswu	vswo	保留首根	月	o	0			14
+肿	2056	vswu	vswt	保留首根	月	t	0			15
+肿	2056	vswu	vswy	保留首根	月	y	0			16
+肿	2056	vswu	vswn	保留首根	月	n	0			17
+肿	2056	vswu	vswm	保留首根	月	m	0			18
+肿	2056	vswu	vswv	保留首根	月	v	0			19
+肿	2056	vswu	vswc	保留首根	月	c	0			20
+肿	2056	vswu	vswx	保留首根	月	x	0			21
+肿	2056	vswu	vswb	保留首根	月	b	0			22
+肿	2056	vswu	vswz	保留首根	月	z	0			23
+肿	2056	vswu	vswq	保留首根	月	q	0			24
+肿	2056	vswu	vswp	保留首根	月	p	0			25
+肿	2056	vswu	vsku	保留末根	笔画/非根	k	0			3
+肿	2056	vswu	vsau	保留末根	笔画/非根	a	0			6
+肿	2056	vswu	vshu	保留末根	笔画/非根	h	0			8
+肿	2056	vswu	vsiu	保留末根	笔画/非根	i	0			12
+肿	2056	vswu	vsmu	保留末根	笔画/非根	m	0			18
+肿	2056	vswu	vscu	保留末根	笔画/非根	c	0			20
+肿	2056	vswu	vswf	保留首根	月	f	0	中文 重温		0
+肿	2056	vswu	vswd	保留首根	月	d	0	中外		2
+肿	2056	vswu	vswh	保留首根	月	h	0	众望		8
+肿	2056	vswu	vsww	保留首根	月	w	0	中尉 中卫 重围 众位		13
+肿	2056	vswu	vsju	保留末根	笔画/非根	j	0	重聚 终局 中举		1
+肿	2056	vswu	vsdu	保留末根	笔画/非根	d	0	中毒 重读 重度		2
+肿	2056	vswu	vssu	保留末根	笔画/非根	s	0	重塑 中速		4
+肿	2056	vswu	vslu	保留末根	笔画/非根	l	0	中路		5
+肿	2056	vswu	vsgu	保留末根	笔画/非根	g	0	钟鼓 忠骨 中古 重估		7
+肿	2056	vswu	vsru	保留末根	笔画/非根	r	0	钟乳		9
+肿	2056	vswu	vsuu	保留末根	笔画/非根	u	0	中暑 中枢 种树		10
+肿	2056	vswu	vsou	保留末根	笔画/非根	o	0	中欧		14
+肿	2056	vswu	vstu	保留末根	笔画/非根	t	0	中途 中土		15
+肿	2056	vswu	vsyu	保留末根	笔画/非根	y	0	终于 忠于 重于 中雨		16
+肿	2056	vswu	vsvu	保留末根	笔画/非根	v	0	种猪 重铸		19
+肿	2056	vswu	vsbu	保留末根	笔画/非根	b	0	中部		22
+肿	2056	vswu	vseu	保留末根	笔画/非根	e	1			11
+肿	2056	vswu	vsfu	保留末根	笔画/非根	f	1	重复 重负		0
+肿	2056	vswu	vsnu	保留末根	笔画/非根	n	1	众怒		17
+肿	2056	vswu	vsxu	保留末根	笔画/非根	x	1	种畜 终须		21
+肿	2056	vswu	vszu	保留末根	笔画/非根	z	1	种族 重组		23
+肿	2056	vswu	vsqu	保留末根	笔画/非根	q	1	中区 终曲		24
+肿	2056	vswu	vspu	保留末根	笔画/非根	p	1	中铺		25
+蔬	2434	uufu	uufd	保留首根	艹	d	0			2
+蔬	2434	uufu	uufk	保留首根	艹	k	0			3
+蔬	2434	uufu	uufs	保留首根	艹	s	0			4
+蔬	2434	uufu	uufl	保留首根	艹	l	0			5
+蔬	2434	uufu	uufr	保留首根	艹	r	0			9
+蔬	2434	uufu	uufi	保留首根	艹	i	0			12
+蔬	2434	uufu	uufo	保留首根	艹	o	0			14
+蔬	2434	uufu	uuft	保留首根	艹	t	0			15
+蔬	2434	uufu	uufy	保留首根	艹	y	0			16
+蔬	2434	uufu	uufn	保留首根	艹	n	0			17
+蔬	2434	uufu	uufm	保留首根	艹	m	0			18
+蔬	2434	uufu	uufv	保留首根	艹	v	0			19
+蔬	2434	uufu	uufc	保留首根	艹	c	0			20
+蔬	2434	uufu	uufx	保留首根	艹	x	0			21
+蔬	2434	uufu	uufz	保留首根	艹	z	0			23
+蔬	2434	uufu	uufq	保留首根	艹	q	0			24
+蔬	2434	uufu	uufp	保留首根	艹	p	0			25
+蔬	2434	uufu	uulu	保留末根	笔画/非根	l	0			5
+蔬	2434	uufu	uuau	保留末根	笔画/非根	a	0			6
+蔬	2434	uufu	uugu	保留末根	笔画/非根	g	0			7
+蔬	2434	uufu	uueu	保留末根	笔画/非根	e	0			11
+蔬	2434	uufu	uuou	保留末根	笔画/非根	o	0			14
+蔬	2434	uufu	uunu	保留末根	笔画/非根	n	0			17
+蔬	2434	uufu	uucu	保留末根	笔画/非根	c	0			20
+蔬	2434	uufu	uuxu	保留末根	笔画/非根	x	0			21
+蔬	2434	uufu	uuff	保留首根	艹	f	0		舒舒服服 是是非非	0
+蔬	2434	uufu	uufg	保留首根	艹	g	0		闪闪发光	7
+蔬	2434	uufu	uufe	保留首根	艹	e	0		赏善罚恶	11
+蔬	2434	uufu	uuqu	保留末根	笔画/非根	q	0		实事求是	24
+蔬	2434	uufu	uufj	保留首根	艹	j	0	书贩		1
+蔬	2434	uufu	uufa	保留首根	艹	a	0	书法 抒发		6
+蔬	2434	uufu	uufw	保留首根	艹	w	0	书费		13
+蔬	2434	uufu	uuju	保留末根	笔画/非根	j	0	数据 输局		1
+蔬	2434	uufu	uuku	保留末根	笔画/非根	k	0	书库		3
+蔬	2434	uufu	uuhu	保留末根	笔画/非根	h	0	疏忽 倏忽		8
+蔬	2434	uufu	uuiu	保留末根	笔画/非根	i	0	输出 书橱		12
+蔬	2434	uufu	uutu	保留末根	笔画/非根	t	0	属兔		15
+蔬	2434	uufu	uumu	保留末根	笔画/非根	m	0	数目 树木 书目		18
+蔬	2434	uufu	uubu	保留末根	笔画/非根	b	0	恕不		22
+蔬	2434	uufu	uuzu	保留末根	笔画/非根	z	0	数组 叔祖		23
+蔬	2434	uufu	uupu	保留末根	笔画/非根	p	0	书铺		25
+蔬	2434	uufu	uudu	保留末根	笔画/非根	d	0	数独	审时度势	2
+蔬	2434	uufu	uuru	保留末根	笔画/非根	r	0	输入	上善若水	9
+蔬	2434	uufu	uuuu	保留末根	笔画/非根	u	0	叔叔 蜀黍 数数 书塾	生生世世	10
+蔬	2434	uufu	uuwu	保留末根	笔画/非根	w	0	书屋	涉世未深	13
+蔬	2434	uufu	uuyu	保留末根	笔画/非根	y	0	属于 术语 疏于	少生优生	16
+蔬	2434	uufu	uufb	保留首根	艹	b	1			22
+蔬	2434	uufu	uufh	保留首根	艹	h	1	书房 书坊		8
+蔬	2434	uufu	uusu	保留末根	笔画/非根	s	1	菽粟		4
+蔬	2434	uufu	uuvu	保留末根	笔画/非根	v	1	属猪		19

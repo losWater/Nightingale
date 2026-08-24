@@ -8,6 +8,7 @@ rep=json.loads(zlib.decompress(open(B+'repos/webchai/packages/hanzi-chai/src/dat
 db={(chr(e['unicode']) if e.get('unicode') else e.get('name')):e for e in rep}
 byname={e.get('name'):k for k,e in db.items() if e.get('name')}
 r=json.load(open(B+'work/readings.json',encoding='utf-8')); freq={c:v[0][0] for c,v in r.items()}
+reading_freq={(c,cd[:2]):f for c,v in r.items() for f,cd in v}
 cfg=yaml.safe_load(open(B+'夜莺B/work/根集.yaml',encoding='utf-8'))
 rules=yaml.safe_load(open(B+'夜莺B/work/拆分规则.yaml',encoding='utf-8'))
 custom={str(k):str(v) for k,v in rules.get('custom_elements',{}).items()}
@@ -75,6 +76,20 @@ def chain(c,idx):
         if not ops: break
         out.append(ops[idx]); g=glyph(ops[idx])
     return out
+def component_root(k,idx):
+    """从正式拆分给出的首/末部件继续向同方向递归，直到命中现有根或笔画。"""
+    start=k
+    for depth in range(9):
+        if k in HOST: return HOST[k],start
+        g=glyph(k)
+        if not g or g.get('type')!='compound': break
+        ops=[o for o in g.get('operandList',[]) if o]
+        if not ops: break
+        k=ops[idx]
+    if k in HOST: return HOST[k],start
+    st=strokes(k)
+    if st: return cls(st[0] if idx==0 else st[-1]),start
+    return name(start),start
 def root_of(c,idx):
     """沿链找根；返回 (根名, 经由部件)"""
     if c in FORMAL_SPLITS and FORMAL_SPLITS[c]:
@@ -85,7 +100,7 @@ def root_of(c,idx):
         if item in ('3','丿'): return '撇',item
         if item in ('4','丶'): return '点',item
         if item in ('5','6','乙'): return '折',item
-        return name(item),item
+        return component_root(item,idx)
     g=glyph(c); k=c; depth=0
     while depth<8:
         if k in HOST: return HOST[k],k
@@ -99,6 +114,10 @@ def root_of(c,idx):
     return '?','?'
 def head(c): return root_of(c,0)
 def tail(c): return root_of(c,-1)
+def short_order(syl,host,chars):
+    """三码堆排序：显式单字输入优先级覆盖词组总字频。"""
+    preferred=rules.get('short_code_overrides',{}).get(str(syl),{}).get(str(host))
+    return sorted(chars,key=lambda c:(c!=preferred,-reading_freq.get((c,syl),0),-freq[c]))
 if __name__=='__main__':
     top=sorted(r,key=lambda c:-freq[c])
     N=int(sys.argv[1]) if len(sys.argv)>1 else 3500

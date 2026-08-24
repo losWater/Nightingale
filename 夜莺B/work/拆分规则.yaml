@@ -2,6 +2,14 @@
 # component_splits 会编译到 config.analysis.customize，必须覆盖部件的完整根序列。
 # boundary_candidates 只用于选根阶段的反事实检查，不进入正式拆分。
 component_splits:
+  重: [千, 里]
+  万: [横, 撇, 折]
+  丑: [折, 土]
+  我: [我四, 戈]
+  成: [戊, 折]
+  尹: [争字底, 撇]
+  兆: [冫, 冫, 儿]
+  庚字心: [争字底, 人]
   每: [卧人, 母]
   中: [口, 竖]
   上: [卜, 横]
@@ -11,15 +19,54 @@ component_splits:
   事: [横, 口, 争字底]
   史: [口, 乂]
   吏: [横, 口, 乂]
-  头: [点, 大]
+  头: [冬字底, 大]
+  尽: [尺, 冬字底]
   武: [横, 弋, 止]
 
 # 夜莺B自定义部件。值为不与 chai 字库冲突的稳定 PUA。
 custom_elements:
   互中间: "\uE849"
+  赢字架: "\uE84E"
+  襄省: "\uE83C"  # chai 名“囊下”，即襄去掉亠
+
+# 二简位按当前读音本身的频率排序；若整个音节没有有效频率候选，可人工指定。
+two_code_overrides:
+  mq: 谬
+
+# 三码位按“单字直接输入倾向”人工修正；不能用词组总字频机械决定。
+short_code_overrides:
+  cj:
+    夕: 残
+  pu:
+    亻: 仆
+
+# 实际输入音别名；不足两键的音码按小鹤规则双击。frequency 为该入口独立权重。
+reading_aliases:
+  嗯:
+    - {code: en, frequency: 157982, sound: [szm-e, mzm-n]}
+    - {code: ng, frequency: 0, sound: [szm-n, mzm-ng]}
+  谁:
+    - {code: uw, frequency: 1508124, sound: [szm-sh, mzm-ei], anneal: false}
+    - {code: uv, frequency: 377031, sound: [szm-sh, mzm-ui]}
+  噢:
+    - {code: ao, frequency: 0, sound: [szm-a, mzm-ao]}
+
+# 已存在读音入口的频率重排；保留旧音作为容错，但不让它参与主码评测。
+reading_frequency_overrides:
+  嗯: {en: 157982, ng: 0}
+  谁: {uv: 377031}
 
 # 交叉借笔结构无法用 chai 的 component_splits 表达；这里覆写最终整字根序列。
 sequence_overrides:
+  乘: [禾, 北字旁, 匕]
+  剩: [禾, 北字旁, 匕, 刀]
+  嵊: [山, 禾, 北字旁, 匕]
+  年: [卧人, 土, 竖]
+  承: [了, 三, 水]
+  兵: [丘, 八]
+  戌: [戊, 横]
+  戍: [戊, 点]
+  庚: [广, 争字底, 人]
   羲: [点, 点, 王, 禾, 戈, 横, 折]
   曦: [日, 点, 点, 王, 禾, 戈, 横, 折]
   爔: [火, 点, 点, 王, 禾, 戈, 横, 折]
@@ -42,6 +89,9 @@ sequence_overrides:
   鄘: [广, 折, 二, 冂, 举字底, 阝]
   隶: [争字底, 氺]
   逮: [争字底, 氺, 辶]
+  # 前1500同音同首末硬碰撞：按主人裁决强制最终码元序列。
+  骂: [口, 口]
+  侯: [亻, 竖]
 
 # 字架最终会编译为 data.glyph_customization / transformers；目前先保存裁决语义。
 frames:
@@ -57,6 +107,14 @@ frames:
   玨:
     host: 王
     examples: {班: 刂, 斑: 文}
+  赢:
+    host: 赢字架
+    examples: {赢: 贝, 嬴: 女, 羸: 羊, 蠃: 虫, 臝: 果}
+    note: "吂+月X凡 → 赢字架+X；用于赢／嬴／羸／蠃／臝并传播到瀛等嵌套用户"
+  襄:
+    host: 衣
+    structural_only: true
+    note: "襄保留字架身份并挂衣键；当前字库尚无向襄架内另塞部件的用户"
 
 # 人工边界说明，供检查器与后续审计理解规则来源。
 boundary_candidates:

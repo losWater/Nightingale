@@ -15,7 +15,8 @@ from pathlib import Path
 
 import yaml
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 HERE = Path(__file__).resolve().parent.parent
 BASE = HERE.parent
 WORK = HERE / "work"
@@ -25,6 +26,7 @@ PLACEHOLDER_KEYS = "abcdefghijklmnopqrstuvwxyz"
 rep = json.loads(zlib.decompress(
     (BASE / "repos/webchai/packages/hanzi-chai/src/data/repertoire.json.deflate").read_bytes()
 ))
+REP_BY_CHAR = {chr(row["unicode"]): row for row in rep if row.get("unicode")}
 BY_NAME = {
     row.get("name"): chr(row["unicode"])
     for row in rep
@@ -59,6 +61,138 @@ def apply_sequence_overrides(path, rules):
         raise ValueError("sequence_overrides 字符不在分析字集: " + " ".join(sorted(missing)))
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return len(applied)
+
+
+def selected_glyph(char):
+    row = REP_BY_CHAR.get(char)
+    glyphs = row.get("glyphs", []) if row else []
+    return next((g for g in glyphs if g.get("type") == "compound" and "G" in g.get("tags", [])),
+                next((g for g in glyphs if g.get("type") == "compound"), None))
+
+
+def read_sequences(path):
+    out = {}
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        char, sep, raw = line.partition("\t")
+        if sep and raw:
+            out[char] = raw.split()
+    return out
+
+
+def write_sequences(path, sequences):
+    Path(path).write_text("\n".join(c + "\t" + " ".join(seq) for c, seq in sequences.items()) + "\n",
+                          encoding="utf-8")
+
+
+def frame_match(kind, glyph):
+    if not glyph:
+        return None
+    ops = [x for x in glyph.get("operandList", []) if x]
+    op = glyph.get("operator")
+    if kind == "赢":
+        # 赢／嬴／羸／蠃／臝：吂在上，月-X-凡在下；X 是字架中的换芯。
+        if op != "⿱" or len(ops) != 2 or ops[0] != element("吂"):
+            return None
+        bottom = selected_glyph(ops[1])
+        bottom_ops = [x for x in (bottom or {}).get("operandList", []) if x]
+        if ((bottom or {}).get("operator") == "⿲" and len(bottom_ops) == 3 and
+                bottom_ops[0] == element("月") and bottom_ops[2] == element("凡")):
+            return bottom_ops[1]
+        return None
+    patterns = {
+        "衣": ("⿳", element("亠"), element("衣省")),
+        "行": ("⿲", element("彳"), element("亍")),
+        "辡": ("⿲", element("辛旁"), element("辛")),
+        "玨": ("⿲", element("王"), element("王")),
+    }
+    expected = patterns.get(kind)
+    if not expected or len(ops) != 3:
+        return None
+    operator, left, right = expected
+    return ops[1] if op == operator and ops[0] == left and ops[2] == right else None
+
+
+def apply_frames(path, config_path, rules):
+    """把 ⿳/⿲ 外框改写为“字架 + 中间件”，并传播到嵌套用户。"""
+    frames = rules.get("frames", {})
+    if not frames:
+        return 0
+    sequences = read_sequences(path)
+    mapping = yaml.safe_load(Path(config_path).read_text(encoding="utf-8"))["form"]["mapping"]
+    matches = []
+    for char in sequences:
+        glyph = selected_glyph(char)
+        for kind in frames:
+            middle = frame_match(str(kind), glyph)
+            if middle:
+                matches.append((char, str(kind), middle))
+                break
+
+    # 从显式样例反推出该字架在 chai 序列中的前后缀。这样 PUA 中间件也能
+    # 直接从原字序列剥出，无需让 assemble.ts 单独接受 PUA 字符集。
+    affixes = {}
+    for kind, spec in frames.items():
+        for sample, declared in spec.get("examples", {}).items():
+            if sample not in sequences:
+                continue
+            declared_seq = []
+            for token in str(declared).split("+"):
+                e = element(token)
+                declared_seq.extend(sequences.get(e, [e]))
+            old = sequences[sample]
+            for i in range(len(old) - len(declared_seq) + 1):
+                if old[i:i + len(declared_seq)] == declared_seq:
+                    affixes[str(kind)] = (old[:i], old[i + len(declared_seq):])
+                    break
+            if str(kind) in affixes:
+                break
+
+    replacements = []
+    direct = {}
+    for char, kind, middle in matches:
+        old = sequences[char]
+        # 完整字已经成根时，根边界优先于字架（例如襄）。
+        if len(old) == 1 and old[0] == char and char in mapping:
+            continue
+        declared = frames[kind].get("examples", {}).get(char)
+        if declared is not None:
+            middle_seq = [element(x) for x in str(declared).split("+")]
+        else:
+            prefix, suffix = affixes.get(kind, ([], []))
+            if (len(old) >= len(prefix) + len(suffix) and old[:len(prefix)] == prefix and
+                    (not suffix or old[-len(suffix):] == suffix)):
+                end = len(old) - len(suffix) if suffix else len(old)
+                middle_seq = old[len(prefix):end]
+            else:
+                middle_seq = sequences.get(middle, [middle])
+        new = [element(frames[kind].get("host", kind)), *middle_seq]
+        direct[char] = new
+        if old != new:
+            replacements.append((old, new))
+
+    # 先传播至蓑、蘅、癍等嵌套用户，再覆盖顶层字本身。
+    replacements.sort(key=lambda pair: len(pair[0]), reverse=True)
+    for char, seq in list(sequences.items()):
+        if char in direct:
+            continue
+        for old, new in replacements:
+            i = 0
+            while len(old) and i <= len(seq) - len(old):
+                if seq[i:i + len(old)] == old:
+                    seq = seq[:i] + new + seq[i + len(old):]
+                    i += len(new)
+                else:
+                    i += 1
+        sequences[char] = seq
+    sequences.update(direct)
+    write_sequences(path, sequences)
+    return len(direct)
+
+
+def apply_postprocess(path, config_path, rules):
+    frame_count = apply_frames(path, config_path, rules)
+    override_count = apply_sequence_overrides(path, rules)
+    return frame_count, override_count
 
 
 def main():
@@ -121,7 +255,9 @@ def main():
         output = WORK / "analysis.tsv"
         cmd = ["bun", str(BASE / "scripts/assemble.ts"), str(config_path), str(output), str(charset_path)]
         subprocess.run(cmd, cwd=BASE, check=True)
-        count = apply_sequence_overrides(Path(str(output) + ".splits.tsv"), rules)
+        frame_count, count = apply_postprocess(Path(str(output) + ".splits.tsv"), config_path, rules)
+        if frame_count:
+            print(f"字架改写 {frame_count} → {output}.splits.tsv")
         if count:
             print(f"整字序列覆写 {count} → {output}.splits.tsv")
 
