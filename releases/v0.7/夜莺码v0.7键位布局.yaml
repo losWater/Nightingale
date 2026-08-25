@@ -1,0 +1,723 @@
+version: '0.7'
+source: 夜莺B线程0定稿解
+info:
+  name: 夜莺码0.7
+  author: nightingale
+  description: 小鹤双拼音码＋首末字根形码；夜莺B人工选根与终局退火线程0
+form:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  mapping_type: 1
+  mapping:
+    饣: g
+    方: l
+    兔: x
+    几: d
+    之: f
+    斤: f
+    力: k
+    宀: s
+    : y
+    气: u
+    mzm-ing: k
+    mzm-r: r
+    皿: t
+    '5': z
+    九: h
+    黑: t
+    口: j
+    : h
+    暴: k
+    氏: n
+    mzm-n: n
+    片: x
+    szm-z: z
+    mzm-iong: s
+    尧: h
+    mzm-eng: g
+    骨: b
+    佥: p
+    : d
+    白: l
+    mzm-ie: p
+    : e
+    szm-f: f
+    亻: z
+    szm-y: y
+    爫: b
+    禾: c
+    子: x
+    小: f
+    米: b
+    扌: e
+    鸟: c
+    勿: x
+    俞: e
+    丽: d
+    又: g
+    至: h
+    mzm-u: u
+    mzm-ian: m
+    弗: k
+    巾: g
+    击: b
+    十: b
+    mzm-iao: n
+    古: r
+    予: g
+    mzm-ei: w
+    卩: p
+    mzm-ua: x
+    毛: h
+    : k
+    永: n
+    居: g
+    mzm-uang: l
+    氵: o
+    钅: n
+    及: s
+    厶: k
+    五: q
+    艹: q
+    禸: o
+    szm-l: l
+    井: j
+    韦: e
+    马: n
+    寸: n
+    mzm-an: j
+    车: c
+    习: n
+    耂: k
+    牙: k
+    见: q
+    兼: j
+    szm-x: x
+    mzm-iang: l
+    殳: w
+    彳: y
+    丘: e
+    szm-q: q
+    夷: h
+    也: h
+    匚: l
+    干: x
+    mzm-i: i
+    mzm-ang: h
+    mzm-iu: q
+    向: q
+    辶: o
+    szm-h: h
+    利: e
+    已: t
+    戈: b
+    mzm-ui: v
+    mzm-ia: x
+    火: w
+    西: y
+    丰: x
+    交: e
+    止: y
+    单: s
+    szm-p: p
+    szm-d: d
+    mzm-ve: t
+    工: s
+    乃: n
+    王: t
+    纟: f
+    mzm-uan: r
+    雨: l
+    母: l
+    mzm-e: e
+    mzm-en: f
+    '2': y
+    mzm-ou: z
+    广: c
+    : d
+    szm-k: k
+    : m
+    廿: i
+    mzm-a: a
+    szm-zh: v
+    大: v
+    竹: m
+    szm-n: n
+    田: a
+    szm-j: j
+    mzm-uo: o
+    '4': d
+    且: r
+    儿: n
+    足: k
+    民: m
+    szm-w: w
+    衣: g
+    商: r
+    尸: t
+    未: s
+    mzm-m: m
+    厉: s
+    音: e
+    : h
+    角: h
+    刍: m
+    mzm-o: o
+    szm-r: r
+    矢: s
+    八: v
+    示: q
+    豕: y
+    无: a
+    木: a
+    立: h
+    鹿: b
+    莫: q
+    '3': k
+    囗: i
+    束: g
+    耳: m
+    弟: b
+    日: a
+    土: p
+    文: q
+    乐: j
+    龙: k
+    犭: h
+    mzm-in: b
+    szm-a: a
+    mzm-ue: t
+    mzm-uai: k
+    讠: f
+    szm-e: e
+    牛: n
+    夕: x
+    szm-c: c
+    szm-sh: u
+    : l
+    长: h
+    '1': r
+    辛: h
+    匕: g
+    象: b
+    mzm-ao: c
+    行: x
+    刀: o
+    亠: b
+    㐄: h
+    szm-o: o
+    mzm-ng: g
+    臣: m
+    卵: i
+    szm-t: t
+    山: u
+    mzm-v: v
+    : d
+    瓦: s
+    szm-s: s
+    礻: v
+    来: k
+    甫: l
+    mzm-un: y
+    忄: v
+    卜: s
+    石: c
+    专: k
+    szm-b: b
+    鬼: n
+    人: d
+    鱼: y
+    szm-ch: i
+    mzm-ong: s
+    隹: p
+    女: m
+    虫: w
+    mzm-ai: d
+    里: w
+    szm-m: m
+    今: v
+    鬲: h
+    以: o
+    艮: w
+    付: t
+    szm-g: g
+    免:
+      element: 兔
+    :
+      element: 几
+    :
+      element: 几
+    凡:
+      element: 几
+    斥:
+      element: 斤
+    为:
+      element: 力
+    办:
+      element: 力
+    冖:
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    亦:
+      element: 
+    :
+      element: 
+    罒:
+      element: 皿
+    四:
+      element: 皿
+    署:
+      element: 皿
+    血:
+      element: 皿
+    乙:
+      element: '5'
+    弓:
+      element: '5'
+    飞:
+      element: '5'
+    '6':
+      element: '5'
+    丸:
+      element: 九
+    熏:
+      element: 黑
+    :
+      element: 
+    氐:
+      element: 氏
+    :
+      element: 氏
+    丬:
+      element: 片
+    爿:
+      element: 片
+    :
+      element: 片
+    非:
+      element: 片
+    秉:
+      element: 
+    肀:
+      element: 
+    聿:
+      element: 
+    彐:
+      element: 
+    :
+      element: 
+    彑:
+      element: 
+    互:
+      element: 
+    :
+      element: 
+    自:
+      element: 白
+    臼:
+      element: 白
+    :
+      element: 白
+    亚:
+      element: 
+    采:
+      element: 爫
+    釆:
+      element: 爫
+    爪:
+      element: 爫
+    瓜:
+      element: 爫
+    了:
+      element: 子
+    :
+      element: 小
+    :
+      element: 小
+    :
+      element: 小
+    手:
+      element: 扌
+    :
+      element: 扌
+    :
+      element: 鸟
+    乌:
+      element: 鸟
+    岛:
+      element: 鸟
+    :
+      element: 鸟
+    :
+      element: 勿
+    两:
+      element: 丽
+    夂:
+      element: 又
+    攵:
+      element: 又
+    久:
+      element: 又
+    各:
+      element: 又
+    缶:
+      element: 击
+    :
+      element: 十
+    :
+      element: 十
+    卬:
+      element: 卩
+    阝:
+      element: 卩
+    :
+      element: 卩
+    皮:
+      element: 毛
+    水:
+      element: 氵
+    冫:
+      element: 氵
+    氺:
+      element: 氵
+    金:
+      element: 钅
+    :
+      element: 钅
+    龴:
+      element: 厶
+    卅:
+      element: 艹
+    卌:
+      element: 艹
+    :
+      element: 艹
+    廾:
+      element: 艹
+    :
+      element: 禸
+    丁:
+      element: 寸
+    可:
+      element: 寸
+    才:
+      element: 寸
+    东:
+      element: 车
+    :
+      element: 车
+    :
+      element: 车
+    舟:
+      element: 车
+    贝:
+      element: 见
+    页:
+      element: 见
+    凵:
+      element: 匚
+    冂:
+      element: 匚
+    门:
+      element: 匚
+    巨:
+      element: 匚
+    勹:
+      element: 匚
+    匃:
+      element: 匚
+    :
+      element: 匚
+    千:
+      element: 干
+    于:
+      element: 干
+    :
+      element: 向
+    :
+      element: 向
+    囱:
+      element: 向
+    囟:
+      element: 向
+    身:
+      element: 向
+    廴:
+      element: 辶
+    巳:
+      element: 已
+    巴:
+      element: 已
+    己:
+      element: 已
+    㔾:
+      element: 已
+    弋:
+      element: 戈
+    戋:
+      element: 戈
+    戊:
+      element: 戈
+    戉:
+      element: 戈
+    :
+      element: 戈
+    灬:
+      element: 火
+    酉:
+      element: 西
+    覀:
+      element: 西
+    龶:
+      element: 丰
+    乂:
+      element: 交
+    㐅:
+      element: 交
+    :
+      element: 工
+    玨:
+      element: 王
+    玉:
+      element: 王
+    糸:
+      element: 纟
+    幺:
+      element: 纟
+    乡:
+      element: 纟
+    :
+      element: 雨
+    而:
+      element: 雨
+    面:
+      element: 雨
+    毋:
+      element: 母
+    毌:
+      element: 母
+    丨:
+      element: '2'
+    :
+      element: '2'
+    :
+      element: '2'
+    乔:
+      element: '2'
+    川:
+      element: '2'
+    巛:
+      element: '2'
+    :
+      element: '2'
+    州:
+      element: '2'
+    厂:
+      element: 广
+    疒:
+      element: 广
+    :
+      element: 
+    龹:
+      element: 
+    :
+      element: 
+    :
+      element: 
+    龷:
+      element: 廿
+    甘:
+      element: 廿
+    :
+      element: 廿
+    革:
+      element: 廿
+    犬:
+      element: 大
+    夫:
+      element: 大
+    天:
+      element: 大
+    太:
+      element: 大
+    :
+      element: 竹
+    由:
+      element: 田
+    甲:
+      element: 田
+    申:
+      element: 田
+    电:
+      element: 田
+    :
+      element: 田
+    丶:
+      element: '4'
+    :
+      element: '4'
+    :
+      element: 且
+    兀:
+      element: 儿
+    丌:
+      element: 儿
+    :
+      element: 足
+    走:
+      element: 足
+    :
+      element: 衣
+    襄:
+      element: 衣
+    :
+      element: 衣
+    啇:
+      element: 商
+    户:
+      element: 尸
+    戶:
+      element: 尸
+    尺:
+      element: 尸
+    末:
+      element: 未
+    朱:
+      element: 未
+    㠯:
+      element: 
+    失:
+      element: 矢
+    丷:
+      element: 八
+    㡀:
+      element: 八
+    豸:
+      element: 豕
+    豖:
+      element: 豕
+    豙:
+      element: 立
+    :
+      element: 鹿
+    羊:
+      element: 鹿
+    :
+      element: 鹿
+    丿:
+      element: '3'
+    :
+      element: '3'
+    彡:
+      element: '3'
+    朿:
+      element: 束
+    柬:
+      element: 束
+    :
+      element: 弟
+    月: r
+    目:
+      element: 日
+    曰:
+      element: 日
+    士:
+      element: 土
+    壬:
+      element: 土
+    尤:
+      element: 龙
+    言:
+      element: 讠
+    牜:
+      element: 牛
+    :
+      element: 牛
+    :
+      element: 牛
+    :
+      element: 夕
+    歹:
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 夕
+    癶:
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 
+    疋:
+      element: 
+    一:
+      element: '1'
+    二:
+      element: '1'
+    三:
+      element: '1'
+    辡:
+      element: 辛
+    :
+      element: 匕
+    :
+      element: 匕
+    七:
+      element: 匕
+    :
+      element: 匕
+    刂:
+      element: 刀
+    :
+      element: 刀
+    ⺈:
+      element: 刀
+    巸:
+      element: 臣
+    :
+      element: 臣
+    卯:
+      element: 卵
+    :
+      element: 卵
+    :
+      element: 卵
+    印:
+      element: 卵
+    :
+      element: 卵
+    出:
+      element: 山
+    衤:
+      element: 礻
+    心:
+      element: 忄
+    必:
+      element: 忄
+    :
+      element: 忄
+    :
+      element: 卜
+    :
+      element: 人
+    入:
+      element: 人
+    :
+      element: 鱼
+    :
+      element: 虫
+    令:
+      element: 今
+    :
+      element: 艮
+    :
+      element: 月
