@@ -74,6 +74,7 @@ def main() -> None:
     ap.add_argument("--readings", type=Path, default=DEFAULT_READINGS)
     ap.add_argument("--code", type=Path, default=DEFAULT_CODE)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--asset", type=Path, help="直接审计既有保护字表，不重新按双字频榜生成")
     ap.add_argument("--add", nargs="*", default=[], help="人工补选字")
     args = ap.parse_args()
 
@@ -89,27 +90,30 @@ def main() -> None:
         raise SystemExit(f"外部榜只有{len(public)}字，无法截取前{args.public_top}")
     irank = {char: rank for rank, char in enumerate(internal, 1)}
     prank = {char: rank for rank, char in enumerate(public, 1)}
-    chosen = set(internal[: args.internal_top]) | set(public[: args.public_top])
+    asset_order = lines(args.asset) if args.asset else []
+    chosen = (set(asset_order) if args.asset else
+              set(internal[: args.internal_top]) | set(public[: args.public_top]))
     chosen.update(args.add)
 
     # 双表最佳百分位排序只用于人工浏览；是否入选仍严格按上面的并集规则。
-    ordered = sorted(
-        chosen,
-        key=lambda char: (
-            min(irank.get(char, 10**9) / args.internal_top,
-                prank.get(char, 10**9) / args.public_top),
-            irank.get(char, 10**9),
-            prank.get(char, 10**9),
-            char,
-        ),
-    )
+    ordered = ([*asset_order, *(x for x in args.add if x not in asset_order)] if args.asset else
+               sorted(
+                   chosen,
+                   key=lambda char: (
+                       min(irank.get(char, 10**9) / args.internal_top,
+                           prank.get(char, 10**9) / args.public_top),
+                       irank.get(char, 10**9),
+                       prank.get(char, 10**9),
+                       char,
+                   ),
+               ))
     rows = code_rows(args.code)
     short = collision_groups(rows, chosen, "short")
     full = collision_groups(rows, chosen, "full")
     blockers = external_blockers(rows, chosen, irank, "short")
 
     args.out.mkdir(parents=True, exist_ok=True)
-    stem = f"内部前{args.internal_top}_并_外部前{args.public_top}"
+    stem = args.asset.stem + "_原始资产" if args.asset else f"内部前{args.internal_top}_并_外部前{args.public_top}"
     list_path = args.out / f"{stem}_{len(chosen)}字.txt"
     detail_path = args.out / f"{stem}_{len(chosen)}字_明细.tsv"
     report_path = args.out / f"{stem}_{len(chosen)}字_审计.md"
