@@ -13,7 +13,7 @@
     "D:\\nightingale\\work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "f96e0646d6cd25bfaeafba4acdb0cbf0b9b9ed9f6e93a04b32c7bf1d47b33ef4",
     "D:\\nightingale\\work\\重开工程\\02_规范拆分\\结构等价例外_待验收.yaml": "fe8ba7c9362401d10067fa285b9ffb7ddee0f7a1875a4ddcf44009459d8ff5f7",
     "D:\\nightingale\\work\\夜莺0.85\\07_词频裁决F\\字词候选裁决.tsv": "0509b5f116df8ebe1d56b3864b94b3b851b630ee76ca7535bbf8717d8ed4bf52",
-    "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\单字码位裁决.tsv": "15c7b483c829d00dae90418b39b3d463b7b79e47b4b2a132d27c19e51998eacc",
+    "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\单字码位裁决.tsv": "504d16cd15a855427000d5f53c784b9fce7cf50d1e1742a23e2ee0adedc8b7be",
     "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\无理码表.tsv": "0f25a1800cf381e25b7488fc8a7118488bd47df975b6aab378aae00ea7d85fcd"
   },
   "counts": {
@@ -25,10 +25,10 @@
   },
   "outputs": {
     "README.md": "edc4343eabf8ffdc94c6910b08f3e8616e9dfa6e98cb6424377c524c1323ec98",
-    "夜莺码v0.8.5单字版.txt": "a7e3c6645e7facc1b4812feae83a531574056d9a7d26afa92216fbdbd4da0c9b",
+    "夜莺码v0.8.5单字版.txt": "76e49c73f0a1a849f26963eef518caa9c5e4e8060a542c70e6b9bdd0c615bf74",
     "夜莺码v0.8.5单字版_搜狗.txt": "c33a9112ccd3c53bafb9ed8e6d5111307f16f2fb3b7dc7dae520b1687b826c78",
     "夜莺码v0.8.5单字版_搜狗_含快符.txt": "7319c195a6ac966ecc6e5e329d5f6d96de3f887ae14f1f2c52ee0df4f95a7d11",
-    "夜莺码v0.8.5单字裁决.tsv": "15c7b483c829d00dae90418b39b3d463b7b79e47b4b2a132d27c19e51998eacc",
+    "夜莺码v0.8.5单字裁决.tsv": "504d16cd15a855427000d5f53c784b9fce7cf50d1e1742a23e2ee0adedc8b7be",
     "夜莺码v0.8.5字根练习.txt": "a5babee20f789b1eb4362b39c56014715ac6ed5dc2e19077176339a50bc67b03",
     "夜莺码v0.8.5字根练习器.html": "3ff07ac1124cbb1b6614aa91ae33e8318251202ae8b1632410204f118795debf",
     "夜莺码v0.8.5字词裁决.tsv": "0509b5f116df8ebe1d56b3864b94b3b851b630ee76ca7535bbf8717d8ed4bf52",

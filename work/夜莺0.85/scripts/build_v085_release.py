@@ -277,7 +277,7 @@ def main() -> None:
               args.combined, args.combined_sogou, args.combined_sogou_quick,
               args.config, args.splits, args.presentation, args.decisions, args.single_decisions, args.irrational]
     input_hashes = {str(path.resolve()): sha256(path) for path in inputs}
-    write_code_first(args.single, args.release / "夜莺码v0.8.5单字版.txt")
+    copy_exact(args.single, args.release / "夜莺码v0.8.5单字版.txt")
     copies = [
         (args.single_sogou, "夜莺码v0.8.5单字版_搜狗.txt"),
         (args.single_sogou_quick, "夜莺码v0.8.5单字版_搜狗_含快符.txt"),
