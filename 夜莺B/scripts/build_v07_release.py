@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import csv
 import json
 import re
 import sys
@@ -14,6 +15,7 @@ from pathlib import Path
 import yaml
 from PIL import Image, ImageDraw, ImageFont
 from fontTools.ttLib import TTCollection, TTFont
+from short_code_overrides import apply_candidate_order, apply_overrides
 
 
 HERE = Path(__file__).resolve().parent
@@ -68,17 +70,126 @@ def trace_key(mapping, element):
     return None
 
 
+def load_quick_symbols():
+    result = defaultdict(list)
+    path = BROOT / "work/快符.txt"
+    for line in path.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if not line or line.startswith(";"):
+            continue
+        left, phrase = line.split("=", 1)
+        code, position = left.rsplit(",", 1)
+        result[code].append((int(position), phrase))
+    return result
+
+
+def insert_positioned(entries, additions):
+    """按1基候选位插入，不覆盖已有候选，其余候选顺延。"""
+    grouped = defaultdict(list)
+    for entry in entries:
+        grouped[entry[0]].append(entry[4])
+    for code, rows in additions.items():
+        for position, phrase in sorted(rows):
+            if phrase in grouped[code]:
+                continue
+            target = max(0, min(position - 1, len(grouped[code])))
+            grouped[code].insert(target, phrase)
+    return [(code, phrase) for code in sorted(grouped) for phrase in grouped[code]]
+
+
+def load_root_char_secondaries(rows):
+    """为未出简的字根字生成 abx 二选；abxx 标准主码继续保留。"""
+    manual = yaml.safe_load((BROOT / "work/简码资产.yaml").read_text(encoding="utf-8"))
+    if not manual.get("root_char_three_secondary", False):
+        return defaultdict(list)
+    root_cfg = yaml.safe_load((BROOT / "work/根集.yaml").read_text(encoding="utf-8"))
+    roots = set()
+    for host, children in (root_cfg.get("roots") or {}).items():
+        roots.add(str(host))
+        roots.update(str(child) for child in (children or []))
+    for host, children in (root_cfg.get("anchors") or {}).items():
+        roots.add(str(host))
+        roots.update(str(child) for child in (children or []))
+    # 只有能作为独立汉字出现在码表中的单字符根才属于“字根字”。
+    roots = {root for root in roots if len(root) == 1}
+    additions = defaultdict(list)
+    seen = set()
+    for row in rows:
+        char, full, short = row[0], row[1], row[3]
+        if (
+            char in roots
+            and len(full) == 4
+            and full[2] == full[3]
+            and short == full
+            and (full[:3], char) not in seen
+        ):
+            additions[full[:3]].append((2, char))
+            seen.add((full[:3], char))
+    return additions
+
+
+def load_word_yield_three_secondaries(rows, manual):
+    """为人工让出四码词位的单字补 abx 三码二选。"""
+    wanted = {
+        str(full): str(char)
+        for full, char in (manual.get("word_yield_three_secondaries") or {}).items()
+    }
+    additions = defaultdict(list)
+    found = set()
+    for row in rows:
+        char, full = str(row[0]), str(row[1])
+        if wanted.get(full) == char and len(full) == 4:
+            additions[full[:3]].append((2, char))
+            found.add(full)
+    missing = set(wanted) - found
+    if missing:
+        raise ValueError("词位让出补偿码未在四码表中找到：" + " ".join(sorted(missing)))
+    return additions
+
+
+def load_default_word_first_codes(rows, elements, manual):
+    """找出低频单字应默认让给前排词组的四码位。"""
+    policy = manual.get("default_word_first") or {}
+    if not policy:
+        return set()
+    rank_from = int(policy["character_rank_from"])
+    two_word_rank_top = int(policy["two_word_rank_top"])
+
+    # 同一码若还存在阈值以内的常用字，不能被低频同码字连带拖后。
+    code_min_rank = {}
+    for item, row in zip(elements, rows):
+        rank = int(item.get("排序序号", 10**12)) + 1
+        code = str(row[1])
+        code_min_rank[code] = min(rank, code_min_rank.get(code, rank))
+
+    word_codes = set()
+    path = BROOT / "work/lexicon/目标词库_四码位.tsv"
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            two_rank = int(row["two_top_rank"]) if row.get("two_top_rank") else None
+            if two_rank is not None and two_rank <= two_word_rank_top:
+                word_codes.add(str(row["code"]))
+    return {
+        code for code, rank in code_min_rank.items()
+        if rank >= rank_from and code in word_codes
+    }
+
+
 def build_layout(solution_path, release):
     source = yaml.safe_load(solution_path.read_text(encoding="utf-8"))
+    release_form = dict(source["form"])
+    # Full optimizer configs carry the 170-root decision space.  A release
+    # layout needs only the resolved mapping, not every candidate key.
+    release_form.pop("mapping_space", None)
     layout = {
         "version": "0.7",
-        "source": "夜莺B线程0定稿解",
+        "source": "夜莺B 0.7正式布局",
         "info": {
             "name": "夜莺码0.7",
             "author": "nightingale",
             "description": "小鹤双拼音码＋首末字根形码；夜莺B人工选根与终局退火线程0",
         },
-        "form": source["form"],
+        "form": release_form,
     }
     path = release / "夜莺码v0.7键位布局.yaml"
     path.write_text(yaml.safe_dump(layout, allow_unicode=True, sort_keys=False, width=10000),
@@ -89,6 +200,7 @@ def build_layout(solution_path, release):
 def build_table(code_path, elements_path, release):
     elements = yaml.safe_load(elements_path.read_text(encoding="utf-8"))
     rows = [line.split("\t") for line in code_path.read_text(encoding="utf-8").splitlines()]
+    apply_overrides(rows)
     if len(elements) != len(rows):
         raise ValueError(f"code/elements 行数不一致：{len(rows)} != {len(elements)}")
     entries = []
@@ -116,10 +228,94 @@ def build_table(code_path, elements_path, release):
         if ident not in seen:
             seen.add(ident)
             unique.append(entry)
+    unique = apply_candidate_order(unique)
+    additions = load_quick_symbols()
+    for code, positioned in load_root_char_secondaries(rows).items():
+        additions[code].extend(positioned)
+    for code, positioned in load_word_yield_three_secondaries(rows, manual).items():
+        additions[code].extend(positioned)
+    no_yield_rows = insert_positioned(unique, additions)
+    no_yield_path = release / "夜莺码v0.7纯单版_不让位.txt"
+    no_yield_path.write_text(
+        "".join(f"{phrase}\t{code}\n" for code, phrase in no_yield_rows),
+        encoding="utf-8", newline="\n"
+    )
+    plain_placeholders = {
+        str(code): str(phrase)
+        for code, phrase in (manual.get("plain_table_placeholders") or {}).items()
+    }
+    automatic_word_first = load_default_word_first_codes(rows, elements, manual)
+    for code in automatic_word_first:
+        plain_placeholders.setdefault(code, "①")
+    for code, phrase in plain_placeholders.items():
+        additions[code].append((1, phrase))
+    pure_rows = insert_positioned(unique, additions)
     path = release / "夜莺码v0.7纯单版.txt"
-    path.write_text("".join(f"{char}\t{code}\n" for code, _, _, _, char in unique),
+    path.write_text("".join(f"{phrase}\t{code}\n" for code, phrase in pure_rows),
                     encoding="utf-8", newline="\n")
-    return path, unique, elements, rows
+    sogou = release / "夜莺码v0.7纯单版搜狗短语.txt"
+    quick_rows = load_quick_symbols()
+    symbol_count = sum(len(rows) for code, rows in quick_rows.items() if len(code) == 1)
+    shortcut_count = sum(len(rows) for code, rows in quick_rows.items() if len(code) > 1)
+    lines = ["; 夜莺码 v0.7 纯单版 · 搜狗自定义短语挂接",
+             f"; 小鹤双拼 + 首末字根 · 含{symbol_count}条一简次选快符及{shortcut_count}条快捷短语", ""]
+    by_code = defaultdict(list)
+    for code, phrase in pure_rows:
+        # 普通纯单表靠可见符号占位；带序号的搜狗表直接使用候选序号，不收占位符。
+        if plain_placeholders.get(code) == phrase:
+            continue
+        by_code[code].append(phrase)
+    sogou_offsets = {
+        str(code): int(offset)
+        for code, offset in (manual.get("sogou_candidate_offsets") or {}).items()
+    }
+    for code in automatic_word_first:
+        sogou_offsets[code] = max(1, sogou_offsets.get(code, 0))
+    for code in sorted(by_code):
+        offset = sogou_offsets.get(code, 0)
+        lines.extend(f"{code},{position + offset}={phrase}"
+                     for position, phrase in enumerate(by_code[code], 1))
+    sogou.write_text("\r\n".join(lines) + "\r\n", encoding="utf-16", newline="")
+
+    # 无简词综合版：收入精选六万二字词，但不加入简拼词。每个已裁决让位码
+    # 最多只允许排名最高的一条词置于单字之前，其余同码词仍排在单字之后。
+    words_by_code = defaultdict(list)
+    lexicon_path = BROOT / "work/lexicon/二字词_精选60000.tsv"
+    with lexicon_path.open(encoding="utf-8-sig", newline="") as handle:
+        for rank, word_row in enumerate(csv.DictReader(handle, delimiter="\t"), 1):
+            words_by_code[str(word_row["code"])].append((rank, str(word_row["word"])))
+    chars_by_code = defaultdict(list)
+    for code, phrase in no_yield_rows:
+        chars_by_code[code].append(phrase)
+    word_first_codes = set(sogou_offsets) | automatic_word_first
+    word_first_overrides = {
+        str(code): str(word)
+        for code, word in (manual.get("word_first_overrides") or {}).items()
+    }
+    mixed_rows = []
+    for code in sorted(set(chars_by_code) | set(words_by_code)):
+        chars = chars_by_code.get(code, [])
+        words = [word for _, word in words_by_code.get(code, [])]
+        if code in word_first_codes and words:
+            preferred = word_first_overrides.get(code)
+            if preferred is not None:
+                if preferred not in words:
+                    raise ValueError(f"指定首选词不在精选二字词表：{code}={preferred}")
+                words = [preferred] + [word for word in words if word != preferred]
+            phrases = words[:1] + chars + words[1:]
+        else:
+            phrases = chars + words
+        seen_phrases = set()
+        for phrase in phrases:
+            if phrase not in seen_phrases:
+                seen_phrases.add(phrase)
+                mixed_rows.append((code, phrase))
+    mixed_path = release / "夜莺码v0.7字词版_无简词.txt"
+    mixed_path.write_text(
+        "".join(f"{phrase}\t{code}\n" for code, phrase in mixed_rows),
+        encoding="utf-8", newline="\n"
+    )
+    return path, no_yield_path, mixed_path, unique, elements, rows
 
 
 def root_catalog(layout, resolve):
@@ -229,7 +425,7 @@ def build_chart(layout, release, resolve, label):
                         cx += draw.textlength(text, font=font) + 8
                 cy += group_height + 5
         yy += row_heights[row_index] + gap
-    draw.text((42, height - 42), "夜莺0.7 · 夜莺B人工选根 · 终局退火线程0 · 2026-08-25",
+    draw.text((42, height - 42), "夜莺0.7 · 夜莺B人工选根 · 终局退火线程0 · 2026-08-27",
               font=sub_font, fill="#999")
     path = release / "夜莺码v0.7字根图.png"
     image.save(path)
@@ -318,11 +514,18 @@ def main():
     if not config.exists():
         config = args.run / "solution-0.yaml"
     layout = build_layout(config, args.release)
-    table, entries, _, _ = build_table(args.run / "code.txt", args.elements, args.release)
+    table, no_yield_table, mixed_table, entries, _, _ = build_table(
+        args.run / "code.txt", args.elements, args.release
+    )
     chart = build_chart(layout, args.release, resolve, label)
     lookup, char_count = build_lookup(entries, args.release, label)
     practice, practice_page, root_count = build_practice(layout, args.release, resolve)
-    print(f"纯单版：{table}（{len(entries)} 条）")
+    table_count = sum(1 for _ in table.open(encoding="utf-8"))
+    print(f"纯单版：{table}（{table_count} 条）")
+    no_yield_count = sum(1 for _ in no_yield_table.open(encoding="utf-8"))
+    print(f"不让位纯单版：{no_yield_table}（{no_yield_count} 条）")
+    mixed_count = sum(1 for _ in mixed_table.open(encoding="utf-8"))
+    print(f"无简词字词版：{mixed_table}（{mixed_count} 条）")
     print(f"字根图：{chart}")
     print(f"查码页：{lookup}（{char_count} 字）")
     print(f"字根练习：{practice} / {practice_page}（{root_count} 主根）")

@@ -23,30 +23,32 @@ def word_weight(rank: int) -> float:
     return 0.05
 
 
-def character_weight(rank: int) -> float:
-    if rank <= 1500:
-        return 1.0
-    if rank <= 3500:
-        return 0.5
-    if rank <= 5000:
-        return 0.2
-    return 0.0
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("config", type=Path, help="布局 config.yaml")
     parser.add_argument("code", type=Path, help="与 analysis_elements.yaml 对齐的 code.txt")
+    parser.add_argument("--elements", type=Path, default=BASE / "work" / "analysis_elements.yaml")
     parser.add_argument("--move", action="append", default=[], help="附加移动，如 夕=m；可重复")
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--ignore-root",
+        action="append",
+        default=[],
+        help="ignore roots added after a frozen experiment asset was built",
+    )
     args = parser.parse_args()
 
-    elements = yaml.safe_load((BASE / "work" / "analysis_elements.yaml").read_text(encoding="utf-8"))
+    elements = yaml.safe_load(args.elements.read_text(encoding="utf-8"))
     roots = set(yaml.safe_load((BASE / "work" / "根集.yaml").read_text(encoding="utf-8"))["roots"])
-    mapping = yaml.safe_load(args.config.read_text(encoding="utf-8"))["form"]["mapping"]
+    roots.difference_update(args.ignore_root)
+    config = yaml.safe_load(args.config.read_text(encoding="utf-8"))
+    mapping = config["form"]["mapping"]
     code_rows = [line.split("\t") for line in args.code.read_text(encoding="utf-8").splitlines()]
     if len(code_rows) != len(elements):
         raise ValueError(f"code/elements 行数不一致: {len(code_rows)} != {len(elements)}")
+    for item, row in zip(elements, code_rows):
+        if str(item["词"]) != row[0]:
+            raise ValueError(f"code/elements 错位: {item['词']} != {row[0]}")
 
     moves = {}
     for text in args.move:
@@ -85,20 +87,44 @@ def main() -> None:
             four_rank = int(row["four_top_rank"]) if row["four_top_rank"] else None
             targets[row["code"]] = (row, two_rank, four_rank)
 
-    order = sorted(range(len(elements)), key=lambda i: -int(elements[i].get("频率", 0)))
+    # 与 libchai 的预处理顺序一致：新版资产可显式指定保护顺序；旧资产回退到频率序。
+    if any(item.get("排序序号") is not None for item in elements):
+        order = sorted(range(len(elements)), key=lambda i: (
+            int(elements[i].get("排序序号", 10**12)), i
+        ))
+    else:
+        order = sorted(range(len(elements)), key=lambda i: -int(elements[i].get("频率", 0)))
+
+    objective = config["optimization"]["objective"]["character_word_collision"]
+    configured_targets = objective["targets"]
+    tiers = objective.get("character_tiers", [])
+
+    def character_factor(rank: int) -> float:
+        for tier in tiers:
+            if rank <= int(tier["top"]):
+                return float(tier["factor"])
+        return 0.0
     result = []
     for char_rank, i in enumerate(order[:5000], 1):
+        # A character that is actually emitted in fewer than four keys never
+        # competes with a four-key word at its theoretical full-code slot.
+        if len(code_rows[i][3]) < len(code_rows[i][1]):
+            continue
         code = full_codes[i]
-        if code not in targets:
+        if code not in targets or code not in configured_targets:
             continue
         lex, two_rank, four_rank = targets[code]
-        char_factor = character_weight(char_rank)
+        target = configured_targets[code]
+        char_factor = character_factor(char_rank)
+        total_score = char_factor * float(target.get("soft", 0.0))
+        # 下面两项只为展示二字／四字来源；总分严格以本轮配置中的 target.soft 为准。
         two_score = char_factor * word_weight(two_rank) if two_rank else 0.0
-        four_score = char_factor * word_weight(four_rank) * 0.25 if four_rank else 0.0
-        is_hard = bool(char_rank <= 1500 and two_rank and two_rank <= 10000 and code not in FIXED_BASELINE)
+        four_score = max(0.0, total_score - two_score)
+        hard_top = int(target.get("hard_character_top", 0))
+        is_hard = bool(target.get("hard", False) and char_rank <= hard_top)
         result.append({
             "类型": "固定基线" if code in FIXED_BASELINE else "硬词撞" if is_hard else "软词撞",
-            "加权分": two_score + four_score,
+            "加权分": total_score,
             "单字": elements[i]["词"],
             "字频序": char_rank,
             "全码": code,

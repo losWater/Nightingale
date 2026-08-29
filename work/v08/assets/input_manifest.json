@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "purpose": "nightingale-v08-baseline-measurement",
+  "source": {
+    "config": {
+      "path": "D:\\nightingale\\夜莺B\\work\\analysis_config_compat.yaml",
+      "sha256": "8393CCC7A2ABF3E0217136B0A712BA62B5E70528E6EAFD9DC5A9137CC39D4A27"
+    },
+    "elements": {
+      "path": "D:\\nightingale\\夜莺B\\work\\analysis_elements.yaml",
+      "sha256": "6F90CF2387A70BCE9D85CC9403CCE6F12379E820B61D5655AE9AB4C3D9B53F6C"
+    }
+  },
+  "output": {
+    "config": {
+      "path": "D:\\nightingale\\work\\v08\\assets\\baseline_measurement_config.yaml",
+      "sha256": "BDBC1E5702277BC042D09C0621E25913421D26F495CB12B377B63B41CE6033E3"
+    },
+    "elements": {
+      "path": "D:\\nightingale\\work\\v08\\assets\\elements.yaml",
+      "sha256": "A316DAE65E9B0A779EB507B84A089B620918F89BCEDB2D20C103BA4626B8B413"
+    }
+  },
+  "transform": {
+    "rows": 8455,
+    "one_codes": 26,
+    "removed_level_2": 405,
+    "character_tiers": [
+      300,
+      500,
+      1500
+    ],
+    "performance_top": 6000,
+    "objective_weights": "all-zero-measurement-only",
+    "discarded_objectives": [
+      "character_word_collision",
+      "auxiliary_two_char"
+    ],
+    "single_character_short_code": "fixed-one-code_then_prefix2-count1_then_prefix3-count1"
+  }
+}

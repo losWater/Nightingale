@@ -1,0 +1,37 @@
+experiment_id: EXP-20260827-05
+date: 2026-08-27
+purpose: 前6000三码字单变量可达边界探测
+status: completed_boundary_probe
+conclusion: 仅优化前6000三码字可稳定超过3690，但不能作为发布参数
+baseline:
+  source: ../EXP-20260827-04
+  top6000_three_code: 3305
+calibration:
+  steps: 1000
+  output: calibration/output-08-27+18_41_27
+  t_max: 3.8796
+  t_min: 0.0151546875
+run:
+  threads: 4
+  steps_per_thread: 200000
+  output: run/output-08-27+18_42_49
+  search_method:
+    random_move: 0.90
+    random_swap: 0.09
+    random_full_key_swap: 0.01
+  objective:
+    top6000_three_code_frequency: -100.0
+    every_other_weight: 0.0
+  best_thread: 1
+  top6000_three_code_by_thread:
+    0: 3759
+    1: 3769
+    2: 3761
+    3: 3754
+inputs_sha256:
+  run_config: 3BEBC0CE90C4FEDBD5A624D69B5C8ED01C86909CEF6440C7762A911EF2FB3EC2
+  elements: A316DAE65E9B0A779EB507B84A089B620918F89BCEDB2D20C103BA4626B8B413
+  chai_exe: D466D39C351BA4AA1CD0E953FD7F30EAF86CF97689E3DC9E149A6988CCFE3530
+  distribution: F0DB710F1D8519778938830134909BC3BE47E37A501614B4422D85FA03308D7F
+  equivalence: BF5BFC394BB91D6A8D5EA3485BA01AD30F85BDA18AF9C1CBC9BC8BAEED78FAA1
+

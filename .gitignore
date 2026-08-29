@@ -4,6 +4,10 @@ repos/
 # 退火/优化临时输出（单次可达数 GB）
 work/optimize/output-*/
 work/optimize/hot_run.log
+# 早期从仓库根目录启动的运行输出；保留目录本身，只是不纳入 Git。
+/output-*/
+# 0.8 实验只版本化 manifest、报告、配置摘要和精选候选，完整运行目录可由 manifest 重现。
+work/v08/experiments/**/output-*/
 
 # 中间拼装大表（20MB 级，可由脚本重算）
 work/*_assembled.tsv
@@ -12,6 +16,8 @@ work/v031_full.tsv
 # Python / 编辑器
 __pycache__/
 *.pyc
+.pytest_cache/
+/tests/.tmp/
 .DS_Store
 Thumbs.db
 *.swp

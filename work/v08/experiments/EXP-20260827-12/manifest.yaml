@@ -1,0 +1,31 @@
+schema_version: 1
+experiment_id: EXP-20260827-12
+status: completed
+question: 轻量前300有效全码重保护能否消除EXP-11新增重码，同时守住三码和简码手感？
+hypothesis: 权重2可能已有选择力；权重8作为较强对照，仍远低于三码与跨排累计目标。
+controlled_variables:
+  source: work/v08/assets/baseline_measurement_config.yaml
+  elements: work/v08/assets/elements.yaml
+  temperature:
+    t_max: 4.455057485836668
+    t_min: 0.0021753210380061855
+  steps: 20000
+  threads_per_profile: 4
+  base_profile: layered-handfeel-v1
+variables:
+  - profile: layered-handfeel-v1-fullguard2
+    top300_effective_full_duplication_weight: 2.0
+  - profile: layered-handfeel-v1-fullguard8
+    top300_effective_full_duplication_weight: 8.0
+acceptance:
+  primary:
+    - 前300有效全码重不高于基线0
+    - 前6000三码保持在EXP-11正常分布附近
+    - 前300与前1500简码大跨小跨不得明显恶化
+  reporting: 使用9项对话摘要；37项完整报告后台兜底
+known_limitations:
+  - 四链短跑只测参数方向和选择力，不产生正式候选。
+result:
+  decision: 权重2仅2/4链清零，权重8为4/4但三码代价偏大；两档形成边界，下一轮测试中间权重4。
+  evidence: work/v08/experiments/EXP-20260827-12/report.md
+  full_metrics: work/v08/experiments/EXP-20260827-12/full_metrics_report.md

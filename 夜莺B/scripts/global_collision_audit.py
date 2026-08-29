@@ -5,15 +5,16 @@ import sys
 from collections import defaultdict
 
 from candidate_root_check import WORK, forms, full_pairs, load_host, parse_splits, short_state
+from reading_frequencies import aggregate_syllable_frequencies, load_readings, primary_readings
 
 BASE = WORK.parent.parent
 
 
 def main():
     minimum = int(float(sys.argv[1]) * 10000) if len(sys.argv) > 1 else 10000
-    readings = json.loads((BASE / "work/readings.json").read_text(encoding="utf-8"))
-    freq = {char: rows[0][0] for char, rows in readings.items()}
-    reading_freq = {(char, code[:2]): value for char, rows in readings.items() for value, code in rows}
+    readings = load_readings(BASE / "work/v08/assets/readings.json")
+    freq, _ = primary_readings(readings)
+    reading_freq = aggregate_syllable_frequencies(readings)
     form = forms(parse_splits(WORK / "analysis.tsv.splits.tsv", load_host()), readings)
     losers, piles = short_state(form, freq, minimum, reading_freq)
     pairs = full_pairs(form)

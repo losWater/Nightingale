@@ -4,20 +4,18 @@ import json
 from collections import defaultdict
 
 from candidate_root_check import RULES, WORK, forms, load_host, parse_splits
+from reading_frequencies import aggregate_syllable_frequencies, load_readings, primary_readings
 
 BASE = WORK.parent.parent
 
 
 def main():
-    readings = json.loads((BASE / "work/readings.json").read_text(encoding="utf-8"))
-    total = {c: rows[0][0] for c, rows in readings.items()}
-    reading_freq = {}
+    readings = load_readings(BASE / "work/v08/assets/readings.json")
+    total, primary_codes = primary_readings(readings)
+    reading_freq = aggregate_syllable_frequencies(readings)
     primary = {}
     for char, rows in readings.items():
-        primary[char] = rows[0][1][:2]
-        for value, code in rows:
-            key = (char, code[:2])
-            reading_freq[key] = max(value, reading_freq.get(key, -1))
+        primary[char] = primary_codes[char][:2]
 
     form = forms(parse_splits(WORK / "analysis.tsv.splits.tsv", load_host()), readings)
     syllables = defaultdict(set)

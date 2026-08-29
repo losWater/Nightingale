@@ -1,0 +1,288 @@
+schema_version: 1
+records:
+  - id: BUG-0001
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 分层fingering未按字频加权
+    symptom: 分层手感指标中，每个层内字只贡献一次，不能体现同层内不同字频的差异。
+    minimal_reproduction:
+      location: repos/libchai/src/objectives/cache.rs
+      evidence:
+        - 全局路径使用 frequency * label。
+        - 分层路径使用 sign * label，未乘 frequency。
+    root_cause: 分层缓存最初按字数型指标实现，后来被用于解释加权手感，但实现口径没有同步升级。
+    why_not_caught: 历史报告只查看汇总数值，未用两个不同字频的最小样例验证梯度。
+    impact:
+      - 任何启用tiers.fingering并声称按字频优化常用字手感的实验。
+      - 尚未确认v0.7最终布局是否实际启用了该字段；需另行核查。
+    fix_plan:
+      - 明确保留“按字数”还是新增“按字频”字段，避免静默改变旧配置语义。
+      - 0.8使用明确命名的字频加权实现。
+    prevention:
+      - 每个新目标函数必须提供最小方向测试和口径说明。
+    resolution:
+      - 保留旧tiers.fingering按字计数语义，新增明确命名的weighted_fingering字频加权指标。
+      - 按层加权键对总量归一化；报告明确标注“加权”口径。
+    regression_test:
+      - 同一指法事件、频率10:1的两个对象贡献严格为10:1。
+      - 旧配置兼容测试和新字段完整资产编码均通过。
+    evidence: work/v08/tests/BUG-0001_分层字频加权指法验证.md
+
+  - id: RISK-0001
+    discovered: 2026-08-27
+    status: mitigated
+    severity: medium
+    title: 简码组合当量混入不可优化的音码内部键对
+    symptom: abx的pair_equivalence同时统计a到b和b到x，前者固定，后者才受根布局影响。
+    cause_hypothesis: 通用指标按整串相邻键设计，没有区分音码段和型码段。
+    impact:
+      - 参数含义不直观。
+      - 报告值被固定成本稀释，不适合直接解释布局优劣。
+    mitigation_plan:
+      - 增加“音末到首型”专项目标与报告。
+      - 用bao音节验证bcz/bcs与bck/bcj/bcu的方向。
+    resolution:
+      - 新增phonetic_shape_transition_equivalence，只统计三码及以上编码的第二键到第三键。
+      - 按对象频率累计并按参与频率归一化；全局和分层均可配置，旧pair_equivalence语义不变。
+    regression_test:
+      - Rust最小测试验证bcz提取c到z、bck提取c到k，二码对象不参与。
+      - release引擎在完整夜莺资产上接受新字段并报告指标；相关Python回归22项通过。
+    evidence: work/v08/tests/RISK-0001_音型过渡当量验证.md
+
+  - id: RISK-0002
+    discovered: 2026-08-27
+    status: open
+    severity: high
+    title: 历史文档中的过时规则可能污染新会话
+    symptom: 旧交接文档仍含根数、音节进度、五笔画固定、多重简码等历史说法。
+    cause_hypothesis: 文档只有追加式交接，没有版本状态和唯一真源规则。
+    impact:
+      - 新会话可能从过时状态继续工作。
+      - 同一概念存在多个互相冲突的说明。
+    mitigation_plan:
+      - 以工程规范规定新会话固定读取顺序。
+      - 在旧入口顶部增加醒目的当前版本指针。
+      - 后续建立文档陈旧检查。
+
+  - id: RISK-0003
+    discovered: 2026-08-27
+    status: open
+    severity: high
+    title: 历史脚本存在原地改输入和临时变更难溯源风险
+    symptom: 部分运行器会直接改写input_config.yaml；过去也存在用临时命令生成或调整中间资产的工作方式。
+    cause_hypothesis: 项目早期以快速探索为主，尚未区分只读分析、实验构建和正式发布写权限。
+    impact:
+      - 同名实验输入可能在运行前后不一致。
+      - 无法仅凭结果目录还原真实运行参数。
+      - 码表调整可能缺少稳定实现入口和回归测试。
+    mitigation_plan:
+      - 禁止临时脚本和命令行直接修改码表及正式资产。
+      - 所有写入逻辑使用版本化脚本与结构化裁决资产。
+      - 运行器复制实际运行配置并保存哈希，不原地改输入。
+      - 未登记脚本不得进入0.8正式生成链。
+
+  - id: BUG-0002
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 字词交叉增量缓存漏掉仅简码发生变化的字
+    symptom: 最近变化词在输出简码前采集，只包含全码变化；由竞争者移动引起的简码易主可能不刷新交叉缓存。
+    root_cause: 变化集合采集时机和过滤条件不覆盖简码的间接竞争变化。
+    impact:
+      - 退火期间hard/soft字词交叉目标可能漂移。
+      - 收尾全量重算前保存的最优判断可能基于错误目标。
+    fix_plan:
+      - 先构造三字最小资产，证明增量与全量不一致。
+      - 在简码输出后收集全码或简码变化对象，或由交叉缓存遍历变化标志。
+    regression_test:
+      - 竞争者移动导致目标字获得/失去简码时，增量soft/hard必须等于全量重算。
+    resolution:
+      - 将变化集合采集移动到简码输出之后，并同时收集全码或简码实际变化的对象。
+      - 三字Rust专项测试、全库Rust测试、release重建及Rust/Python完整资产对账均通过。
+    evidence: work/v08/tests/BUG-0002_简码间接变化缓存验证.md
+
+  - id: BUG-0003
+    discovered: 2026-08-27
+    status: verified
+    severity: critical
+    title: 独立字词交叉复算器三处口径偏离libchai
+    symptom: audit_cross_collision缺全局hard top回退、忽略排序序号、也未排除已有真实简码的字。
+    root_cause: 引擎扩展后独立审计脚本没有同步迁移全部语义。
+    impact:
+      - 可能恒报0或恒带噪声，无法检出增量缓存漂移。
+      - 原正式退火门禁失效。
+    fix_plan:
+      - 按libchai唯一口径重写独立复算，并使用独立测试夹具。
+      - 修复前从正式门禁摘牌。
+    regression_test:
+      - 10项Python单元回归已通过，覆盖核心语义及坏输入拒绝。
+      - 当前Rust引擎与独立复算器跨语言集成测试通过，真实完整资产均为硬18、软40.5125。
+    evidence: work/v08/tests/BUG-0003_交叉复算器验证.md
+
+  - id: BUG-0004
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 最终简码审计缺少反向所有权和三码检查
+    symptom: 只核对显式名单正向结果，名单外字抢一/二简不可见，三码所有权也未核对；同字多码会被字典覆盖。
+    impact:
+      - 简码竞争错误可能在门禁全绿时进入发布。
+    fix_plan:
+      - 建立码位到全部字音/全部码的反向索引。
+      - 同时核对固定一简、二简顶替、三码所有权和允许的同字多码。
+    resolution:
+      - 改以资产行号保存身份，建立简码位到全部资产行的反向索引，不再用同字音字典覆盖。
+      - 独立复算显式一二简和自动三码，严格复刻频率或排序序号、自然全码占位及候选容量语义。
+      - 解析错误、配置冲突和所有权不符均返回失败，不再只生成看似正常的报告。
+    regression_test:
+      - 10项最小测试覆盖反向抢位、三码、同字多码、排序、配置兼容和坏输入。
+      - release完整资产8455行精确对账，所有权差异0；相关合并回归32项通过。
+    evidence: work/v08/tests/BUG-0004_简码所有权门禁验证.md
+
+  - id: BUG-0005
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: frontier汇总在metric格式变化时静默漏结果
+    symptom: 正则未命中直接return None，调用方continue；0.8改变层级标签后会无声丢候选。
+    impact:
+      - Pareto集合可能只基于部分线程或部分配置。
+    fix_plan:
+      - 优先改用结构化metric；过渡期解析失败必须报出文件并终止。
+    resolution:
+      - 过渡期文本解析改为缺任一指标段即报告段名和文件并终止，不再返回None后continue。
+      - profile与线程完整性以manifest为契约；目录、线程集合和零有效候选均执行失败即停。
+      - 该脚本继续标记为历史指标分析器；0.8格式变化会明确阻断，后续结构化输出另行迁移。
+    regression_test:
+      - 7项专项测试覆盖格式破坏、manifest/profile/thread/output缺失与零有效候选。
+      - 历史真实suite的36个结果全部读取；相关合并回归39项通过。
+    evidence: work/v08/tests/BUG-0005_前沿汇总失败即停验证.md
+
+  - id: BUG-0006
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 同字同双拼音码的多音频率被最后一行覆盖
+    symptom: global_collision_audit等用字典推导式保存(char, code前两位)，后行冷门声调读音可覆盖热门读音。
+    impact:
+      - 好、少、教、传等字可能错误跌出频率门槛和三码堆。
+    fix_plan:
+      - 先定义同音码多读音的频率聚合契约，再统一所有消费脚本。
+      - 禁止隐式last-wins。
+    resolution:
+      - 新增唯一聚合模块reading_frequencies.py；同字同双拼音码求和，不同音码隔离，畸形输入失败。
+      - global_collision_audit、candidate_root_check、polyphone_slot_audit已统一迁移。
+    regression_test:
+      - 5项单元测试通过；两个完整数据审计脚本运行通过。
+    evidence: work/v08/tests/BUG-0006_同音码频率聚合验证.md
+
+  - id: BUG-0007
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 随机布局生成器不能正确传播条件约束
+    symptom: 条件元素读取尚未随机化或之后会变化的旧mapping，生成后也不复查依赖链。
+    impact:
+      - 0.8启用条件约束后可能把非法布局当合法随机起点。
+    fix_plan:
+      - 实现依赖排序/约束求解和最终全量合法性验证。
+      - 未知操作符及循环依赖必须报错，seed必须记录。
+    resolution:
+      - 建立条件依赖图并用随机化回溯求解，空间内模板旧值不参与本轮判断。
+      - 单选元素同样重建；生成后逐元素全量验证，未知引用/操作符、环和无解均失败。
+      - seed改为必填并写入输出配置的experiment.random_seed。
+    regression_test:
+      - 三元素依赖链连续1000 seed均合法；另有7项测试覆盖回溯、环、坏条件、无解和复现。
+      - 完整474元素资产同seed文件哈希一致，release引擎编码通过；合并回归47项通过。
+    evidence: work/v08/tests/BUG-0007_随机起点条件约束验证.md
+
+  - id: BUG-0008
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 历史运行器原地改写实验输入并覆盖日志
+    symptom: run_final_protection直接修改input_config.yaml，并以固定日志名写出。
+    impact:
+      - 无法证明运行前输入与运行后目录中的输入一致。
+    fix_plan:
+      - 0.8禁用该脚本。
+      - 新运行器复制actual_config并写manifest、哈希和唯一日志目录。
+    resolution:
+      - 源实验目录改为只读，output-run必填且必须不存在；配置和日志只写入新目录。
+      - manifest记录参数、命令、状态、时间及源配置/实际配置/全部运行资产SHA-256。
+      - 非零返回与异常记录failed，日志排他创建，拒绝覆盖历史证据。
+    regression_test:
+      - 5项专项测试覆盖源配置不变、manifest哈希、拒绝覆盖及失败前无残留。
+      - 历史实验1步1线程真实短跑完成且源配置哈希不变；合并回归52项通过。
+    evidence: work/v08/tests/BUG-0008_运行目录不可变与manifest验证.md
+
+  - id: BUG-0009
+    discovered: 2026-08-27
+    status: verified
+    severity: high
+    title: 读音别名追加顺序破坏首条主读音契约
+    symptom: apply_reading_aliases把高频别名追加队尾，而多个脚本使用rows[0]作为字频/主读音；嗯因此可能被当零频。
+    impact:
+      - 字频、简码竞争和多音审计在不同脚本中结论分裂。
+    fix_plan:
+      - 明确定义readings资产排序与频率聚合契约。
+      - 从原始资产幂等重建别名，不原地追加；加载时断言。
+    resolution:
+      - 建立排序断言、统一主读音入口和纯函数式别名生成器。
+      - 生成0.8独立规范资产；三个当前审计消费者已迁移。
+    regression_test:
+      - 9项读音契约测试通过；相关回归总计20项通过。
+    evidence: work/v08/tests/BUG-0009_读音排序契约验证.md
+
+  - id: RISK-0004
+    discovered: 2026-08-27
+    status: open
+    severity: high
+    title: 排序序号只标注部分对象时会打乱单字连续区和保护层
+    mitigation_plan:
+      - 启用排序序号时要求全量标注并断言所有单字连续在词之前。
+      - 全仓巡检所有自行按频率排序的脚本。
+
+  - id: RISK-0005
+    discovered: 2026-08-27
+    status: open
+    severity: medium
+    title: resume未验证checkpoint与当前输入同源
+    mitigation_plan:
+      - 恢复前比较配置、elements、可执行文件和实验manifest哈希。
+
+  - id: RISK-0006
+    discovered: 2026-08-27
+    status: mitigated
+    severity: medium
+    title: 读音别名原地追加无法反映删除改频及多后缀读音
+    mitigation_plan:
+      - 改为原始资产加规则的纯函数式重建。
+      - 对多后缀字要求显式指定目标读音形码后缀。
+
+  - id: RISK-0007
+    discovered: 2026-08-27
+    status: open
+    severity: high
+    title: 布局物化脚本静默忽略元素缺失和约束覆盖不全
+    mitigation_plan:
+      - 强制solution与模板可变元素全集匹配。
+      - 输出前验证mapping_space全部条件并保存输入哈希。
+
+  - id: BUG-0011
+    discovered: 2026-08-27
+    status: verified
+    severity: medium
+    title: 候选手感审计曾按elements物理行误切常用字层
+    symptom: 首版audit_v08_handfeel_candidates直接对code/elements原始行取前300/500/1500，与chai内部频率排序后的层级不一致。
+    impact:
+      - 具体坏键对和热力报告与chai分层指标矛盾，可能错误归因到冷字。
+    root_cause:
+      - code.txt为方便对账保持资产原始顺序，而chai编码前会按全量排序序号或频率降序重排；审计器漏复现该步骤。
+    resolution:
+      - 审计器按libchai契约复现排序：存在任一排序序号时按序号/原始顺序，否则按频率稳定降序。
+      - 修正后基线前300大跨复算为0.39%，线程1/2均为0，与chai metric一致。
+    prevention:
+      - 所有分层审计禁止直接按elements物理行切片；必须调用统一排序契约或与引擎层级值交叉核对。
+    evidence: work/v08/experiments/EXP-20260827-06/handfeel_and_heat_audit.md

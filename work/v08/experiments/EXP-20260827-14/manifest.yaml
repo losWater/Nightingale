@@ -1,0 +1,26 @@
+schema_version: 1
+experiment_id: EXP-20260827-14
+status: completed_pending_decision
+question: 新混合移动邻域是否优于历史纯单根移动，值得进入正式长跑？
+controlled_variables:
+  objective: layered-handfeel-v1-fullguard4
+  source: work/v08/assets/baseline_measurement_config.yaml
+  t_max: 4.455057485836668
+  t_min: 0.0021753210380061855
+  steps: 20000
+  threads_per_group: 4
+variables:
+  mixed: 0.90移动 / 0.09交换 / 0.01整键交换
+  move_only: 1.00移动 / 0交换 / 0整键交换
+acceptance:
+  - 使用固定9项摘要和完整37项后台门禁
+  - 不按单次最高值裁决，比较四链分布与明显坏例
+  - 若差异仅为噪声，选择更简单的纯移动
+result:
+  completed_runs: 8
+  full_metrics_report: work/v08/experiments/EXP-20260827-14/full_metrics_report.md
+  observation:
+    - mixed 与 move-only 各完成4链×2万步，完整指标门禁通过。
+    - move-only 的4链全部保持前300有效全码重为0；mixed仅2/4链为0。
+    - 两组前6000三码与手感交叉，未显示mixed有足以抵消复杂度和高频保护风险的稳定优势。
+  decision: 尚未作产品裁决；按预注册验收规则，move-only是当前默认延续方向，待主人确认。

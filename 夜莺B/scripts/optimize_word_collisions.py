@@ -12,7 +12,7 @@ import yaml
 
 BASE = Path(__file__).resolve().parents[1]
 KEYS = "abcdefghijklmnopqrstuvwxyz"
-FIXED = {"wjhv", "iruu"}
+FIXED = {"wjhv", "iruu", "yuhh"}
 
 
 def duplicates(codes, order, top):
@@ -35,6 +35,9 @@ def main():
     ap.add_argument("--output", type=Path, required=True)
     ap.add_argument("--inspect-only", action="store_true")
     ap.add_argument("--swaps", action="store_true", help="枚举碰撞相关根与所有主根的键位互换")
+    ap.add_argument("--root", help="只枚举指定主根的移动")
+    ap.add_argument("--top1500-words", type=int, default=10000)
+    ap.add_argument("--top3500-words", type=int, default=2000)
     args = ap.parse_args()
 
     elements = yaml.safe_load((BASE / "work" / "analysis_elements.yaml").read_text(encoding="utf-8"))
@@ -107,9 +110,9 @@ def main():
             wr = word_ranks.get(code)
             if not wr or code in FIXED:
                 continue
-            if rank <= 1500 and wr <= 10000:
+            if rank <= 1500 and wr <= args.top1500_words:
                 hard1500_10000.append(i)
-            elif rank <= 3500 and wr <= 2000:
+            elif rank <= 3500 and wr <= args.top3500_words:
                 hard3500_2000.append(i)
         return {
             "hard1500x10000": len(hard1500_10000),
@@ -150,7 +153,7 @@ def main():
                 metric = evaluate(make_codes(extra_moves={
                     root_a: root_keys[root_b], root_b: root_keys[root_a],
                 }))
-                if metric["hard1500x10000"] or metric["full1500"] or metric["short1500"]:
+                if metric["hard1500x10000"] or metric["hard3500x2000"]:
                     continue
                 rows.append({"root": root_a, "from": root_keys[root_a],
                              "to": root_keys[root_b], "swap_root": root_b,
@@ -168,11 +171,13 @@ def main():
             print(row)
         return
     for root, source in root_keys.items():
+        if args.root and root != args.root:
+            continue
         for destination in KEYS:
             if destination == source:
                 continue
             metric = evaluate(make_codes(root, destination))
-            if metric["hard1500x10000"] or metric["full1500"] or metric["short1500"]:
+            if metric["hard1500x10000"] or metric["hard3500x2000"]:
                 continue
             rows.append({"root": root, "from": source, "to": destination, **metric})
     rows.sort(key=lambda x: (
@@ -181,8 +186,9 @@ def main():
     ))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter="\t")
-        writer.writeheader(); writer.writerows(rows)
+        if rows:
+            writer = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter="\t")
+            writer.writeheader(); writer.writerows(rows)
     print(f"feasible={len(rows)} output={args.output}")
     for row in rows[:30]:
         print(row)

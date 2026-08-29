@@ -1,0 +1,11313 @@
+version: '0.8'
+source: mswb
+info:
+  name: 夜莺0.8基线测量
+  author: nightingale
+  version: b-analysis
+  description: 由夜莺B根集与拆分规则自动生成；键位仅为分析占位
+data:
+  repertoire:
+    :
+      unicode: 61440
+      tygf: 0
+      gb2312: 0
+      name: 禺字底
+      gf0014_id: null
+      readings: []
+      glyphs:
+      - type: derived_component
+        source: 禺
+        strokes:
+        - feature: reference
+          index: 4
+        - feature: reference
+          index: 5
+        - feature: reference
+          index: 6
+        - feature: reference
+          index: 7
+        - feature: reference
+          index: 8
+      ambiguous: false
+    :
+      unicode: 61441
+      tygf: 0
+      gb2312: 0
+      name: 草头
+      gf0014_id: null
+      readings: []
+      glyphs:
+      - type: compound
+        operator: ⿱
+        operandList:
+        - 艹
+        - 日
+      ambiguous: false
+  glyph_customization:
+    辩:
+      type: compound
+      tags:
+      - 辩字框
+      operator: ⿻
+      operandList:
+      - 
+      - 讠
+    黄:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 龷
+      - 更
+    高:
+      type: compound
+      operator: ⿰
+      operandList:
+      - 
+      - 口
+    尚:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 龸
+      - 口
+    :
+      type: compound
+      operator: ⿰
+      operandList:
+      - 鱼
+      - 大
+    兵:
+      type: compound
+      operator: ⿰
+      operandList:
+      - 
+      - 
+    辨:
+      type: compound
+      tags:
+      - 辩字框
+      operator: ⿻
+      operandList:
+      - 
+      - 
+    斑:
+      type: compound
+      tags:
+      - 玨框
+      operator: ⿻
+      operandList:
+      - 玨
+      - 文
+    命:
+      type: compound
+      operator: ⿰
+      operandList:
+      - 合
+      - 卩
+    夌:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 土
+      - 
+    丝:
+      type: compound
+      operator: ⿰
+      operandList:
+      - 纟
+      - 纟
+    班:
+      type: compound
+      tags:
+      - 玨框
+      operator: ⿻
+      operandList:
+      - 玨
+      - 
+    隺:
+      type: compound
+      tags:
+      - 笔画搭挂
+      operator: ⿻
+      operandList:
+      - 冖
+      - 隹
+    :
+      type: basic_component
+      strokes:
+      - feature: 横
+        start:
+        - 8
+        - 18
+        curveList:
+        - command: h
+          parameterList:
+          - 85
+      - feature: 撇
+        start:
+        - 45
+        - 4
+        curveList:
+        - command: c
+          parameterList:
+          - -8
+          - 26
+          - -22
+          - 42
+          - -39
+          - 56
+    莫:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 
+      - 大
+    㝵:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 旦
+      - 寸
+    辫:
+      type: compound
+      tags:
+      - 辩字框
+      operator: ⿻
+      operandList:
+      - 
+      - 纟
+    章:
+      type: compound
+      operator: ⿱
+      operandList:
+      - 音
+      - 十
+    彧:
+      type: compound
+      operator: ⿲
+      operandList:
+      - 戈
+      - 
+      - 
+    象:
+      type: derived_component
+      source: 
+      strokes:
+      - feature: 撇
+        start:
+        - 27
+        - 16
+        curveList:
+        - command: c
+          parameterList:
+          - -2
+          - 4
+          - -3
+          - 6
+          - -12
+          - 16
+      - feature: 横撇
+        start:
+        - 24
+        - 20
+        curveList:
+        - command: h
+          parameterList:
+          - 48
+        - command: c
+          parameterList:
+          - -6
+          - 5
+          - -10
+          - 6
+          - -20
+          - 10
+      - feature: 竖
+        start:
+        - 25
+        - 30
+        curveList:
+        - command: v
+          parameterList:
+          - 10
+      - feature: 横折
+        start:
+        - 25
+        - 30
+        curveList:
+        - command: h
+          parameterList:
+          - 50
+        - command: v
+          parameterList:
+          - 10
+      - feature: 横
+        start:
+        - 25
+        - 40
+        curveList:
+        - command: h
+          parameterList:
+          - 50
+      - feature: reference
+        index: 0
+      - feature: reference
+        index: 1
+      - feature: reference
+        index: 2
+      - feature: reference
+        index: 3
+      - feature: reference
+        index: 4
+      - feature: reference
+        index: 5
+    旞:
+      type: compound
+      operator: ⿰
+      operandList:
+      - 
+      - 遂
+  tags:
+  - 落字框
+  - 兴字底
+  - 同字心
+  - 赢字框
+  - 彀字框
+  - 微字框
+  - 戈部截断
+  - 中竖截断
+  - 横向包夹
+  - 行框
+  - 衣框
+  glyph_sources:
+  - G
+analysis:
+  classifier:
+    横折折撇: 5
+    横折提: 6
+    竖钩: 2
+    横折弯钩: 6
+    横斜钩: 6
+    竖弯钩: 6
+    撇点: 6
+    竖折: 6
+    弯钩: 5
+    横折弯: 6
+    撇折: 6
+    斜钩: 6
+    横折折: 6
+    竖弯: 6
+    竖提: 6
+  degenerator:
+    feature:
+      提: 横
+      捺: 点
+    no_cross: false
+  selector:
+  - 结构完整
+  - 连续笔顺
+  - 根少优先
+  - 能连不交
+  - 能散不连
+  - 取大优先
+  customize:
+    重:
+    - 千
+    - 里
+    万:
+    - '1'
+    - '3'
+    - '5'
+    丑:
+    - '5'
+    - 土
+    我:
+    - 
+    - 戈
+    成:
+    - 戊
+    - '5'
+    尹:
+    - 
+    - '3'
+    兆:
+    - 冫
+    - 冫
+    - 儿
+    庚字心:
+    - 
+    - 人
+    每:
+    - 
+    - 母
+    中:
+    - 口
+    - '2'
+    上:
+    - 卜
+    - '1'
+    下:
+    - '1'
+    - 卜
+    虍:
+    - 卜
+    - 厂
+    - 匕
+    妻字头:
+    - '1'
+    - 肀
+    事:
+    - '1'
+    - 口
+    - 
+    史:
+    - 口
+    - 乂
+    吏:
+    - '1'
+    - 口
+    - 乂
+    头:
+    - 
+    - 大
+    尽:
+    - 尺
+    - 
+    武:
+    - '1'
+    - 弋
+    - 止
+algebra:
+  mzm:
+  - type: xform
+    from: ^[aeiouv](.)\d$
+    to: $1
+  - type: xform
+    from: ^.*?([aeiouv].*|m|ng?)\d$
+    to: $1
+  szm:
+  - type: xform
+    from: ^([aeioubpmfdtnlgkhjqxzcsryw]h?|^).+$
+    to: $1
+form:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  mapping_type: 1
+  mapping:
+    mzm-n: n
+    mzm-iang: l
+    szm-g: g
+    mzm-i: i
+    szm-b: b
+    mzm-ong: s
+    szm-t: t
+    szm-k: k
+    szm-ch: i
+    mzm-ing: k
+    mzm-en: f
+    mzm-uai: k
+    szm-f: f
+    szm-q: q
+    mzm-uan: r
+    mzm-ia: x
+    szm-w: w
+    szm-c: c
+    mzm-an: j
+    mzm-ve: t
+    szm-p: p
+    mzm-ai: d
+    mzm-eng: g
+    mzm-ei: w
+    mzm-in: b
+    mzm-e: e
+    mzm-iong: s
+    mzm-uo: o
+    szm-h: h
+    mzm-ui: v
+    mzm-un: y
+    szm-o: o
+    mzm-ao: c
+    mzm-v: v
+    mzm-ou: z
+    szm-z: z
+    mzm-r: r
+    mzm-ie: p
+    mzm-a: a
+    mzm-ng: g
+    szm-j: j
+    szm-e: e
+    mzm-u: u
+    mzm-ian: m
+    mzm-o: o
+    mzm-ua: x
+    szm-m: m
+    szm-l: l
+    mzm-ang: h
+    mzm-uang: l
+    szm-r: r
+    szm-a: a
+    szm-y: y
+    szm-d: d
+    mzm-ue: t
+    mzm-m: m
+    szm-s: s
+    mzm-iu: q
+    mzm-iao: n
+    szm-n: n
+    szm-x: x
+    szm-zh: v
+    szm-sh: u
+    '1': h
+    '2': u
+    '3': p
+    '4': d
+    专: i
+    '5': v
+    : d
+    母: y
+    亻: d
+    彳: k
+    人: g
+    讠: y
+    饣: q
+    艹: z
+    辶: m
+    忄: l
+    扌: p
+    氵: i
+    木: a
+    未: h
+    女: x
+    虫: g
+    月: u
+    口: n
+    囗: w
+    宀: w
+    尸: s
+    禾: t
+    利: j
+    匚: f
+    臣: v
+    豕: l
+    禸: b
+    象: x
+    鬼: o
+    佥: n
+    : g
+    兼: c
+    厶: j
+    钅: v
+    纟: o
+    马: m
+    方: c
+    广: c
+    厉: b
+    干: e
+    已: w
+    以: u
+    : r
+    衣: k
+    行: l
+    立: y
+    音: s
+    夷: j
+    乙:
+      element: '5'
+    且: q
+    夕: y
+    殳: x
+    勿: k
+    矢: h
+    兔: e
+    卩: q
+    辛: y
+    王: e
+    匕: w
+    习: h
+    日: m
+    土: b
+    田: f
+    里: k
+    丽: x
+    五: e
+    白: j
+    又: t
+    小: e
+    八: j
+    : m
+    大: h
+    儿: u
+    几: w
+    子: h
+    十: x
+    寸: l
+    力: l
+    工: q
+    刀: k
+    角: l
+    爫: s
+    米: f
+    来: g
+    也: s
+    古: q
+    商: x
+    向: n
+    井: w
+    示: v
+    今: l
+    片: e
+    㐄: y
+    予: o
+    卜: w
+    廿: h
+    及: o
+    刍: e
+    竹: s
+    弟: r
+    车: f
+    甫: a
+    付: z
+    俞: y
+    弗: g
+    卵: j
+    : k
+    无: f
+    戈: j
+    气: x
+    文: k
+    丰: q
+    鹿: v
+    龙: m
+    石: k
+    斤: k
+    雨: t
+    山: r
+    束: x
+    艮: v
+    亠: o
+    : r
+    : r
+    : b
+    巾: t
+    : t
+    秉:
+      element: 
+    交: r
+    尧: f
+    居: b
+    乃: r
+    暴: c
+    黑: j
+    莫: b
+    毛: h
+    皮:
+      element: 毛
+    击: m
+    牙: t
+    见: l
+    氏: a
+    民: g
+    至: m
+    瓦: s
+    : d
+    鬲: s
+    骨: e
+    乐: v
+    丘: r
+    单: b
+    长: q
+    永: s
+    牛: w
+    九: d
+    耂: x
+    皿: q
+    止: e
+    耳: t
+    西: q
+    火: j
+    足: y
+    之: i
+    隹: g
+    礻: r
+    犭: u
+    鱼: p
+    鸟: f
+    韦: g
+    一:
+      element: '1'
+    丨:
+      element: '2'
+    :
+      element: '2'
+    :
+      element: '2'
+    乔:
+      element: '2'
+    丿:
+      element: '3'
+    :
+      element: '3'
+    丶:
+      element: '4'
+    :
+      element: '4'
+    弓:
+      element: '5'
+    飞:
+      element: '5'
+    毋:
+      element: 母
+    毌:
+      element: 母
+    :
+      element: 人
+    入:
+      element: 人
+    言:
+      element: 讠
+    卅:
+      element: 艹
+    卌:
+      element: 艹
+    :
+      element: 艹
+    廾:
+      element: 艹
+    廴:
+      element: 辶
+    心:
+      element: 忄
+    必:
+      element: 忄
+    :
+      element: 忄
+    手:
+      element: 扌
+    :
+      element: 扌
+    水:
+      element: 氵
+    冫:
+      element: 氵
+    氺:
+      element: 氵
+    末:
+      element: 未
+    朱:
+      element: 未
+    :
+      element: 虫
+    :
+      element: 月
+    冖:
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    :
+      element: 宀
+    户:
+      element: 尸
+    戶:
+      element: 尸
+    尺:
+      element: 尸
+    凵:
+      element: 匚
+    冂:
+      element: 匚
+    门:
+      element: 匚
+    巨:
+      element: 匚
+    勹:
+      element: 匚
+    匃:
+      element: 匚
+    :
+      element: 匚
+    巸:
+      element: 臣
+    :
+      element: 臣
+    豸:
+      element: 豕
+    豖:
+      element: 豕
+    :
+      element: 禸
+    :
+      element: 
+    龴:
+      element: 厶
+    金:
+      element: 钅
+    :
+      element: 钅
+    糸:
+      element: 纟
+    幺:
+      element: 纟
+    乡:
+      element: 纟
+    厂:
+      element: 广
+    疒:
+      element: 广
+    千:
+      element: 干
+    于:
+      element: 干
+    巳:
+      element: 已
+    巴:
+      element: 已
+    己:
+      element: 已
+    㔾:
+      element: 已
+    亦:
+      element: 
+    :
+      element: 
+    :
+      element: 衣
+    襄:
+      element: 衣
+    :
+      element: 衣
+    豙:
+      element: 立
+    :
+      element: 且
+    :
+      element: 夕
+    歹:
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 夕
+    癶:
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 夕
+    :
+      element: 勿
+    失:
+      element: 矢
+    免:
+      element: 兔
+    卬:
+      element: 卩
+    阝:
+      element: 卩
+    :
+      element: 卩
+    辡:
+      element: 辛
+    玨:
+      element: 王
+    玉:
+      element: 王
+    :
+      element: 匕
+    :
+      element: 匕
+    七:
+      element: 匕
+    :
+      element: 匕
+    目:
+      element: 日
+    曰:
+      element: 日
+    士:
+      element: 土
+    壬:
+      element: 土
+    由:
+      element: 田
+    甲:
+      element: 田
+    申:
+      element: 田
+    电:
+      element: 田
+    :
+      element: 田
+    两:
+      element: 丽
+    自:
+      element: 白
+    臼:
+      element: 白
+    :
+      element: 白
+    夂:
+      element: 又
+    攵:
+      element: 又
+    久:
+      element: 又
+    各:
+      element: 又
+    :
+      element: 小
+    :
+      element: 小
+    :
+      element: 小
+    丷:
+      element: 八
+    㡀:
+      element: 八
+    :
+      element: 
+    龹:
+      element: 
+    :
+      element: 
+    :
+      element: 
+    龵:
+      element: 
+    犬:
+      element: 大
+    夫:
+      element: 大
+    天:
+      element: 大
+    太:
+      element: 大
+    兀:
+      element: 儿
+    丌:
+      element: 儿
+    :
+      element: 几
+    :
+      element: 几
+    凡:
+      element: 几
+    了:
+      element: 子
+    :
+      element: 十
+    :
+      element: 十
+    丁:
+      element: 寸
+    可:
+      element: 寸
+    才:
+      element: 寸
+    为:
+      element: 力
+    办:
+      element: 力
+    :
+      element: 工
+    刂:
+      element: 刀
+    :
+      element: 刀
+    ⺈:
+      element: 刀
+    采:
+      element: 爫
+    釆:
+      element: 爫
+    爪:
+      element: 爫
+    瓜:
+      element: 爫
+    啇:
+      element: 商
+    :
+      element: 向
+    :
+      element: 向
+    囱:
+      element: 向
+    囟:
+      element: 向
+    身:
+      element: 向
+    令:
+      element: 今
+    丬:
+      element: 片
+    爿:
+      element: 片
+    :
+      element: 片
+    非:
+      element: 片
+    :
+      element: 卜
+    龷:
+      element: 廿
+    甘:
+      element: 廿
+    :
+      element: 廿
+    革:
+      element: 廿
+    :
+      element: 竹
+    :
+      element: 弟
+    东:
+      element: 车
+    :
+      element: 车
+    :
+      element: 车
+    卯:
+      element: 卵
+    :
+      element: 卵
+    :
+      element: 卵
+    印:
+      element: 卵
+    :
+      element: 卵
+    㠯:
+      element: 
+    弋:
+      element: 戈
+    戋:
+      element: 戈
+    戊:
+      element: 戈
+    戉:
+      element: 戈
+    :
+      element: 戈
+    龶:
+      element: 丰
+    :
+      element: 鹿
+    尤:
+      element: 龙
+    斥:
+      element: 斤
+    :
+      element: 雨
+    而:
+      element: 雨
+    面:
+      element: 雨
+    出:
+      element: 山
+    朿:
+      element: 束
+    柬:
+      element: 束
+    :
+      element: 艮
+    :
+      element: 
+    疋:
+      element: 
+    亚:
+      element: 
+    肀:
+      element: 
+    聿:
+      element: 
+    彐:
+      element: 
+    :
+      element: 
+    彑:
+      element: 
+    互:
+      element: 
+    :
+      element: 
+    乂:
+      element: 交
+    㐅:
+      element: 交
+    熏:
+      element: 黑
+    缶:
+      element: 击
+    贝:
+      element: 见
+    页:
+      element: 见
+    氐:
+      element: 氏
+    :
+      element: 氏
+    牜:
+      element: 牛
+    :
+      element: 牛
+    :
+      element: 牛
+    丸:
+      element: 九
+    罒:
+      element: 皿
+    四:
+      element: 皿
+    署:
+      element: 皿
+    血:
+      element: 皿
+    酉:
+      element: 西
+    覀:
+      element: 西
+    灬:
+      element: 火
+    :
+      element: 足
+    走:
+      element: 足
+    衤:
+      element: 礻
+    :
+      element: 鱼
+    :
+      element: 鸟
+    乌:
+      element: 鸟
+    岛:
+      element: 鸟
+    :
+      element: 鸟
+    舟:
+      element: 车
+    羊:
+      element: 鹿
+    :
+      element: 鹿
+    二:
+      element: '1'
+    三:
+      element: '1'
+    川:
+      element: '2'
+    巛:
+      element: '2'
+    :
+      element: '2'
+    州:
+      element: '2'
+    彡:
+      element: '3'
+    '6':
+      element: '5'
+  mapping_space: &id001
+    mzm-n:
+    - value: n
+      score: 0.0
+    mzm-iang:
+    - value: l
+      score: 0.0
+    szm-g:
+    - value: g
+      score: 0.0
+    mzm-i:
+    - value: i
+      score: 0.0
+    szm-b:
+    - value: b
+      score: 0.0
+    mzm-ong:
+    - value: s
+      score: 0.0
+    szm-t:
+    - value: t
+      score: 0.0
+    szm-k:
+    - value: k
+      score: 0.0
+    szm-ch:
+    - value: i
+      score: 0.0
+    mzm-ing:
+    - value: k
+      score: 0.0
+    mzm-en:
+    - value: f
+      score: 0.0
+    mzm-uai:
+    - value: k
+      score: 0.0
+    szm-f:
+    - value: f
+      score: 0.0
+    szm-q:
+    - value: q
+      score: 0.0
+    mzm-uan:
+    - value: r
+      score: 0.0
+    mzm-ia:
+    - value: x
+      score: 0.0
+    szm-w:
+    - value: w
+      score: 0.0
+    szm-c:
+    - value: c
+      score: 0.0
+    mzm-an:
+    - value: j
+      score: 0.0
+    mzm-ve:
+    - value: t
+      score: 0.0
+    szm-p:
+    - value: p
+      score: 0.0
+    mzm-ai:
+    - value: d
+      score: 0.0
+    mzm-eng:
+    - value: g
+      score: 0.0
+    mzm-ei:
+    - value: w
+      score: 0.0
+    mzm-in:
+    - value: b
+      score: 0.0
+    mzm-e:
+    - value: e
+      score: 0.0
+    mzm-iong:
+    - value: s
+      score: 0.0
+    mzm-uo:
+    - value: o
+      score: 0.0
+    szm-h:
+    - value: h
+      score: 0.0
+    mzm-ui:
+    - value: v
+      score: 0.0
+    mzm-un:
+    - value: y
+      score: 0.0
+    szm-o:
+    - value: o
+      score: 0.0
+    mzm-ao:
+    - value: c
+      score: 0.0
+    mzm-v:
+    - value: v
+      score: 0.0
+    mzm-ou:
+    - value: z
+      score: 0.0
+    szm-z:
+    - value: z
+      score: 0.0
+    mzm-r:
+    - value: r
+      score: 0.0
+    mzm-ie:
+    - value: p
+      score: 0.0
+    mzm-a:
+    - value: a
+      score: 0.0
+    mzm-ng:
+    - value: g
+      score: 0.0
+    szm-j:
+    - value: j
+      score: 0.0
+    szm-e:
+    - value: e
+      score: 0.0
+    mzm-u:
+    - value: u
+      score: 0.0
+    mzm-ian:
+    - value: m
+      score: 0.0
+    mzm-o:
+    - value: o
+      score: 0.0
+    mzm-ua:
+    - value: x
+      score: 0.0
+    szm-m:
+    - value: m
+      score: 0.0
+    szm-l:
+    - value: l
+      score: 0.0
+    mzm-ang:
+    - value: h
+      score: 0.0
+    mzm-uang:
+    - value: l
+      score: 0.0
+    szm-r:
+    - value: r
+      score: 0.0
+    szm-a:
+    - value: a
+      score: 0.0
+    szm-y:
+    - value: y
+      score: 0.0
+    szm-d:
+    - value: d
+      score: 0.0
+    mzm-ue:
+    - value: t
+      score: 0.0
+    mzm-m:
+    - value: m
+      score: 0.0
+    szm-s:
+    - value: s
+      score: 0.0
+    mzm-iu:
+    - value: q
+      score: 0.0
+    mzm-iao:
+    - value: n
+      score: 0.0
+    szm-n:
+    - value: n
+      score: 0.0
+    szm-x:
+    - value: x
+      score: 0.0
+    szm-zh:
+    - value: v
+      score: 0.0
+    szm-sh:
+    - value: u
+      score: 0.0
+    '1':
+    - value: h
+      score: 0.0
+    '2':
+    - value: u
+      score: 0.0
+    '3':
+    - value: p
+      score: 0.0
+    '4':
+    - value: d
+      score: 0.0
+    专:
+    - value: a
+      score: 0.0018980918082330581
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0018980918082330581
+    - value: q
+      score: 0.0018980918082330581
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0018980918082330581
+    '5':
+    - value: v
+      score: 0.0
+    :
+    - value: a
+      score: 0.008309899528931977
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.008309899528931977
+    - value: q
+      score: 0.008309899528931977
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.008309899528931977
+    母:
+    - value: a
+      score: 0.0033964904529638403
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0033964904529638403
+    - value: q
+      score: 0.0033964904529638403
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0033964904529638403
+    亻:
+    - value: a
+      score: 0.05786907140231118
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.05786907140231118
+    - value: q
+      score: 0.05786907140231118
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.05786907140231118
+    彳:
+    - value: a
+      score: 0.016719504363127635
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.016719504363127635
+    - value: q
+      score: 0.016719504363127635
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.016719504363127635
+    人:
+    - value: a
+      score: 0.0644310678636029
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0644310678636029
+    - value: q
+      score: 0.0644310678636029
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0644310678636029
+    讠:
+    - value: a
+      score: 0.02736208837265093
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.02736208837265093
+    - value: q
+      score: 0.02736208837265093
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.02736208837265093
+    饣:
+    - value: a
+      score: 0.0016463012008050345
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0016463012008050345
+    - value: q
+      score: 0.0016463012008050345
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0016463012008050345
+    艹:
+    - value: a
+      score: 0.024290482981661282
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.024290482981661282
+    - value: q
+      score: 0.024290482981661282
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.024290482981661282
+    辶:
+    - value: a
+      score: 0.035675835056406945
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.035675835056406945
+    - value: q
+      score: 0.035675835056406945
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.035675835056406945
+    忄:
+    - value: a
+      score: 0.022688863006777388
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.022688863006777388
+    - value: q
+      score: 0.022688863006777388
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.022688863006777388
+    扌:
+    - value: a
+      score: 0.03725577345612675
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03725577345612675
+    - value: q
+      score: 0.03725577345612675
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03725577345612675
+    氵:
+    - value: a
+      score: 0.03763687526005225
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03763687526005225
+    - value: q
+      score: 0.03763687526005225
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03763687526005225
+    木:
+    - value: a
+      score: 0.03340600330045335
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03340600330045335
+    - value: q
+      score: 0.03340600330045335
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03340600330045335
+    未:
+    - value: a
+      score: 0.0034594358741551192
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0034594358741551192
+    - value: q
+      score: 0.0034594358741551192
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0034594358741551192
+    女:
+    - value: a
+      score: 0.029840349568518363
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.029840349568518363
+    - value: q
+      score: 0.029840349568518363
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.029840349568518363
+    虫:
+    - value: a
+      score: 0.004535198710528481
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.004535198710528481
+    - value: q
+      score: 0.004535198710528481
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.004535198710528481
+    月:
+    - value: a
+      score: 0.03614866827917692
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03614866827917692
+    - value: q
+      score: 0.03614866827917692
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03614866827917692
+    口:
+    - value: a
+      score: 0.11468210599312564
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.11468210599312564
+    - value: q
+      score: 0.11468210599312564
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.11468210599312564
+    囗:
+    - value: a
+      score: 0.007307183559569269
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.007307183559569269
+    - value: q
+      score: 0.007307183559569269
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.007307183559569269
+    宀:
+    - value: a
+      score: 0.023881060149960817
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.023881060149960817
+    - value: q
+      score: 0.023881060149960817
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.023881060149960817
+    尸:
+    - value: a
+      score: 0.009065276803954492
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.009065276803954492
+    - value: q
+      score: 0.009065276803954492
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.009065276803954492
+    禾:
+    - value: a
+      score: 0.03082588098482286
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03082588098482286
+    - value: q
+      score: 0.03082588098482286
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03082588098482286
+    利:
+    - value: a
+      score: 0.0021279396047551805
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0021279396047551805
+    - value: q
+      score: 0.0021279396047551805
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0021279396047551805
+    匚:
+    - value: a
+      score: 0.01945056393162825
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01945056393162825
+    - value: q
+      score: 0.01945056393162825
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01945056393162825
+    臣:
+    - value: a
+      score: 0.0005139909882492594
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0005139909882492594
+    - value: q
+      score: 0.0005139909882492594
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0005139909882492594
+    豕:
+    - value: a
+      score: 0.004139006205107295
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.004139006205107295
+    - value: q
+      score: 0.004139006205107295
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.004139006205107295
+    禸:
+    - value: a
+      score: 0.0011374015831520454
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0011374015831520454
+    - value: q
+      score: 0.0011374015831520454
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0011374015831520454
+    象:
+    - value: a
+      score: 0.0018299796695142817
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0018299796695142817
+    - value: q
+      score: 0.0018299796695142817
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0018299796695142817
+    鬼:
+    - value: a
+      score: 0.0006892876065629914
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0006892876065629914
+    - value: q
+      score: 0.0006892876065629914
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0006892876065629914
+    佥:
+    - value: a
+      score: 0.0012970954382598373
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0012970954382598373
+    - value: q
+      score: 0.0012970954382598373
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0012970954382598373
+    :
+    - value: a
+      score: 0.0009450344235839305
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0009450344235839305
+    - value: q
+      score: 0.0009450344235839305
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0009450344235839305
+    兼:
+    - value: a
+      score: 0.0006674241082162766
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0006674241082162766
+    - value: q
+      score: 0.0006674241082162766
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0006674241082162766
+    厶:
+    - value: a
+      score: 0.03023888922998797
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03023888922998797
+    - value: q
+      score: 0.03023888922998797
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03023888922998797
+    钅:
+    - value: a
+      score: 0.008942511867810869
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.008942511867810869
+    - value: q
+      score: 0.008942511867810869
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.008942511867810869
+    纟:
+    - value: a
+      score: 0.01821459716125083
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01821459716125083
+    - value: q
+      score: 0.01821459716125083
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01821459716125083
+    马:
+    - value: a
+      score: 0.005760303130221834
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.005760303130221834
+    - value: q
+      score: 0.005760303130221834
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.005760303130221834
+    方:
+    - value: a
+      score: 0.006195868868540613
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006195868868540613
+    - value: q
+      score: 0.006195868868540613
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006195868868540613
+    广:
+    - value: a
+      score: 0.013314459554952049
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.013314459554952049
+    - value: q
+      score: 0.013314459554952049
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.013314459554952049
+    厉:
+    - value: a
+      score: 0.00012088968982236157
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.00012088968982236157
+    - value: q
+      score: 0.00012088968982236157
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.00012088968982236157
+    干:
+    - value: a
+      score: 0.012339238275638287
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012339238275638287
+    - value: q
+      score: 0.012339238275638287
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012339238275638287
+    已:
+    - value: a
+      score: 0.019577898758291495
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.019577898758291495
+    - value: q
+      score: 0.019577898758291495
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.019577898758291495
+    以:
+    - value: a
+      score: 0.010474909328147377
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.010474909328147377
+    - value: q
+      score: 0.010474909328147377
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.010474909328147377
+    :
+    - value: a
+      score: 0.002399847842820829
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.002399847842820829
+    - value: q
+      score: 0.002399847842820829
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.002399847842820829
+    衣:
+    - value: a
+      score: 0.0029248484056921473
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0029248484056921473
+    - value: q
+      score: 0.0029248484056921473
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0029248484056921473
+    行:
+    - value: a
+      score: 0.004098003099118422
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.004098003099118422
+    - value: q
+      score: 0.004098003099118422
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.004098003099118422
+    立:
+    - value: a
+      score: 0.012073758816198191
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012073758816198191
+    - value: q
+      score: 0.012073758816198191
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012073758816198191
+    音:
+    - value: a
+      score: 0.0015331058206307412
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0015331058206307412
+    - value: q
+      score: 0.0015331058206307412
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0015331058206307412
+    夷:
+    - value: a
+      score: 8.46344319077836e-05
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 8.46344319077836e-05
+    - value: q
+      score: 8.46344319077836e-05
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 8.46344319077836e-05
+    乙:
+    - value:
+        element: '5'
+      score: 0.0
+    且:
+    - value: a
+      score: 0.006106575815187619
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006106575815187619
+    - value: q
+      score: 0.006106575815187619
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006106575815187619
+    夕:
+    - value: a
+      score: 0.021596017732265764
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.021596017732265764
+    - value: q
+      score: 0.021596017732265764
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.021596017732265764
+    殳:
+    - value: a
+      score: 0.006771236376419746
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006771236376419746
+    - value: q
+      score: 0.006771236376419746
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006771236376419746
+    勿:
+    - value: a
+      score: 0.003933937634888976
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.003933937634888976
+    - value: q
+      score: 0.003933937634888976
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.003933937634888976
+    矢:
+    - value: a
+      score: 0.0035889840169231585
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0035889840169231585
+    - value: q
+      score: 0.0035889840169231585
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0035889840169231585
+    兔:
+    - value: a
+      score: 0.0010435535103842793
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0010435535103842793
+    - value: q
+      score: 0.0010435535103842793
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0010435535103842793
+    卩:
+    - value: a
+      score: 0.02553836101131801
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.02553836101131801
+    - value: q
+      score: 0.02553836101131801
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.02553836101131801
+    辛:
+    - value: a
+      score: 0.0005519068528718022
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0005519068528718022
+    - value: q
+      score: 0.0005519068528718022
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0005519068528718022
+    王:
+    - value: a
+      score: 0.014794245524855767
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.014794245524855767
+    - value: q
+      score: 0.014794245524855767
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.014794245524855767
+    匕:
+    - value: a
+      score: 0.024311437855501817
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.024311437855501817
+    - value: q
+      score: 0.024311437855501817
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.024311437855501817
+    习:
+    - value: a
+      score: 0.001352716840313749
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.001352716840313749
+    - value: q
+      score: 0.001352716840313749
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.001352716840313749
+    日:
+    - value: a
+      score: 0.07988951294544053
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.07988951294544053
+    - value: q
+      score: 0.07988951294544053
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.07988951294544053
+    土:
+    - value: a
+      score: 0.06226647941235818
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.06226647941235818
+    - value: q
+      score: 0.06226647941235818
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.06226647941235818
+    田:
+    - value: a
+      score: 0.01544655860773306
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01544655860773306
+    - value: q
+      score: 0.01544655860773306
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01544655860773306
+    里:
+    - value: a
+      score: 0.011082301264611988
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.011082301264611988
+    - value: q
+      score: 0.011082301264611988
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.011082301264611988
+    丽:
+    - value: a
+      score: 0.003819356267742901
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.003819356267742901
+    - value: q
+      score: 0.003819356267742901
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.003819356267742901
+    五:
+    - value: a
+      score: 0.0017253857363837511
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0017253857363837511
+    - value: q
+      score: 0.0017253857363837511
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0017253857363837511
+    白:
+    - value: a
+      score: 0.05436429898221464
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.05436429898221464
+    - value: q
+      score: 0.05436429898221464
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.05436429898221464
+    又:
+    - value: a
+      score: 0.05770006873127238
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.05770006873127238
+    - value: q
+      score: 0.05770006873127238
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.05770006873127238
+    小:
+    - value: a
+      score: 0.032864617258557625
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.032864617258557625
+    - value: q
+      score: 0.032864617258557625
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.032864617258557625
+    八:
+    - value: a
+      score: 0.03138553072628523
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03138553072628523
+    - value: q
+      score: 0.03138553072628523
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03138553072628523
+    :
+    - value: a
+      score: 0.01278482664292075
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01278482664292075
+    - value: q
+      score: 0.01278482664292075
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01278482664292075
+    大:
+    - value: a
+      score: 0.04591804381441896
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.04591804381441896
+    - value: q
+      score: 0.04591804381441896
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.04591804381441896
+    儿:
+    - value: a
+      score: 0.018579525647247738
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.018579525647247738
+    - value: q
+      score: 0.018579525647247738
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.018579525647247738
+    几:
+    - value: a
+      score: 0.010120583444203203
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.010120583444203203
+    - value: q
+      score: 0.010120583444203203
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.010120583444203203
+    子:
+    - value: a
+      score: 0.07657259926162585
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.07657259926162585
+    - value: q
+      score: 0.07657259926162585
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.07657259926162585
+    十:
+    - value: a
+      score: 0.0641193719845179
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0641193719845179
+    - value: q
+      score: 0.0641193719845179
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0641193719845179
+    寸:
+    - value: a
+      score: 0.059675912128386334
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.059675912128386334
+    - value: q
+      score: 0.059675912128386334
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.059675912128386334
+    力:
+    - value: a
+      score: 0.027881423044575374
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.027881423044575374
+    - value: q
+      score: 0.027881423044575374
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.027881423044575374
+    工:
+    - value: a
+      score: 0.009505584937609122
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.009505584937609122
+    - value: q
+      score: 0.009505584937609122
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.009505584937609122
+    刀:
+    - value: a
+      score: 0.02551922388219333
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.02551922388219333
+    - value: q
+      score: 0.02551922388219333
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.02551922388219333
+    角:
+    - value: a
+      score: 0.001643339868126413
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.001643339868126413
+    - value: q
+      score: 0.001643339868126413
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.001643339868126413
+    爫:
+    - value: a
+      score: 0.0058834676033823596
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0058834676033823596
+    - value: q
+      score: 0.0058834676033823596
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0058834676033823596
+    米:
+    - value: a
+      score: 0.006220679324164597
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006220679324164597
+    - value: q
+      score: 0.006220679324164597
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006220679324164597
+    来:
+    - value: a
+      score: 0.012208505897220896
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012208505897220896
+    - value: q
+      score: 0.012208505897220896
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012208505897220896
+    也:
+    - value: a
+      score: 0.03647246279346229
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03647246279346229
+    - value: q
+      score: 0.03647246279346229
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03647246279346229
+    古:
+    - value: a
+      score: 0.0027454399268880968
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0027454399268880968
+    - value: q
+      score: 0.0027454399268880968
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0027454399268880968
+    商:
+    - value: a
+      score: 0.0013660547342514231
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0013660547342514231
+    - value: q
+      score: 0.0013660547342514231
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0013660547342514231
+    向:
+    - value: a
+      score: 0.004911697411800196
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.004911697411800196
+    - value: q
+      score: 0.004911697411800196
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.004911697411800196
+    井:
+    - value: a
+      score: 0.0021522493998493
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0021522493998493
+    - value: q
+      score: 0.0021522493998493
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0021522493998493
+    示:
+    - value: a
+      score: 0.0026403309578263497
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0026403309578263497
+    - value: q
+      score: 0.0026403309578263497
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0026403309578263497
+    今:
+    - value: a
+      score: 0.003543277676174534
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.003543277676174534
+    - value: q
+      score: 0.003543277676174534
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.003543277676174534
+    片:
+    - value: a
+      score: 0.012860826415650612
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012860826415650612
+    - value: q
+      score: 0.012860826415650612
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012860826415650612
+    㐄:
+    - value: a
+      score: 0.0006084269653619946
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0006084269653619946
+    - value: q
+      score: 0.0006084269653619946
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0006084269653619946
+    予:
+    - value: a
+      score: 0.0010736595664444385
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0010736595664444385
+    - value: q
+      score: 0.0010736595664444385
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0010736595664444385
+    卜:
+    - value: a
+      score: 0.022718369757312194
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.022718369757312194
+    - value: q
+      score: 0.022718369757312194
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.022718369757312194
+    廿:
+    - value: a
+      score: 0.010222247273975292
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.010222247273975292
+    - value: q
+      score: 0.010222247273975292
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.010222247273975292
+    及:
+    - value: a
+      score: 0.005513354554532138
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.005513354554532138
+    - value: q
+      score: 0.005513354554532138
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.005513354554532138
+    刍:
+    - value: a
+      score: 0.0003511558600941922
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0003511558600941922
+    - value: q
+      score: 0.0003511558600941922
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0003511558600941922
+    竹:
+    - value: a
+      score: 0.014236382298789069
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.014236382298789069
+    - value: q
+      score: 0.014236382298789069
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.014236382298789069
+    弟:
+    - value: a
+      score: 0.0028552313111628097
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0028552313111628097
+    - value: q
+      score: 0.0028552313111628097
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0028552313111628097
+    车:
+    - value: a
+      score: 0.012148351286705989
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012148351286705989
+    - value: q
+      score: 0.012148351286705989
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012148351286705989
+    甫:
+    - value: a
+      score: 0.0004932933845225844
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0004932933845225844
+    - value: q
+      score: 0.0004932933845225844
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0004932933845225844
+    付:
+    - value: a
+      score: 0.0009008855832163283
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0009008855832163283
+    - value: q
+      score: 0.0009008855832163283
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0009008855832163283
+    俞:
+    - value: a
+      score: 0.0005692108704722902
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0005692108704722902
+    - value: q
+      score: 0.0005692108704722902
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0005692108704722902
+    弗:
+    - value: a
+      score: 0.0011916707060718294
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0011916707060718294
+    - value: q
+      score: 0.0011916707060718294
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0011916707060718294
+    卵:
+    - value: a
+      score: 0.0008613854502240376
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0008613854502240376
+    - value: q
+      score: 0.0008613854502240376
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0008613854502240376
+    :
+    - value: a
+      score: 0.0016287879963296924
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0016287879963296924
+    - value: q
+      score: 0.0016287879963296924
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0016287879963296924
+    无:
+    - value: a
+      score: 0.0027878022518600257
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0027878022518600257
+    - value: q
+      score: 0.0027878022518600257
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0027878022518600257
+    戈:
+    - value: a
+      score: 0.055701381830002276
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.055701381830002276
+    - value: q
+      score: 0.055701381830002276
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.055701381830002276
+    气:
+    - value: a
+      score: 0.0014547579004454679
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0014547579004454679
+    - value: q
+      score: 0.0014547579004454679
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0014547579004454679
+    文:
+    - value: a
+      score: 0.012131038842146087
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012131038842146087
+    - value: q
+      score: 0.012131038842146087
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012131038842146087
+    丰:
+    - value: a
+      score: 0.008128794752768329
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.008128794752768329
+    - value: q
+      score: 0.008128794752768329
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.008128794752768329
+    鹿:
+    - value: a
+      score: 0.00021796826226648785
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.00021796826226648785
+    - value: q
+      score: 0.00021796826226648785
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.00021796826226648785
+    龙:
+    - value: a
+      score: 0.015252512500427667
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.015252512500427667
+    - value: q
+      score: 0.015252512500427667
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.015252512500427667
+    石:
+    - value: a
+      score: 0.0041766652953194715
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0041766652953194715
+    - value: q
+      score: 0.0041766652953194715
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0041766652953194715
+    斤:
+    - value: a
+      score: 0.009861354310130487
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.009861354310130487
+    - value: q
+      score: 0.009861354310130487
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.009861354310130487
+    雨:
+    - value: a
+      score: 0.016483508356158083
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.016483508356158083
+    - value: q
+      score: 0.016483508356158083
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.016483508356158083
+    山:
+    - value: a
+      score: 0.011030515120498232
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.011030515120498232
+    - value: q
+      score: 0.011030515120498232
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.011030515120498232
+    束:
+    - value: a
+      score: 0.0016934738324916173
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0016934738324916173
+    - value: q
+      score: 0.0016934738324916173
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0016934738324916173
+    艮:
+    - value: a
+      score: 0.01644328251324924
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01644328251324924
+    - value: q
+      score: 0.01644328251324924
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01644328251324924
+    亠:
+    - value: a
+      score: 0.006086067074492507
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006086067074492507
+    - value: q
+      score: 0.006086067074492507
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006086067074492507
+    :
+    - value: a
+      score: 0.01815486984714854
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01815486984714854
+    - value: q
+      score: 0.01815486984714854
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01815486984714854
+    :
+    - value: a
+      score: 0.03333470428396577
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.03333470428396577
+    - value: q
+      score: 0.03333470428396577
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.03333470428396577
+    :
+    - value: a
+      score: 0.0029168115649290927
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0029168115649290927
+    - value: q
+      score: 0.0029168115649290927
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0029168115649290927
+    巾:
+    - value: a
+      score: 0.008718037992877117
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.008718037992877117
+    - value: q
+      score: 0.008718037992877117
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.008718037992877117
+    :
+    - value: a
+      score: 0.007369999602148375
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.007369999602148375
+    - value: q
+      score: 0.007369999602148375
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.007369999602148375
+    秉:
+    - value:
+        element: 
+      score: 0.0
+    交:
+    - value: a
+      score: 0.01698508048474924
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01698508048474924
+    - value: q
+      score: 0.01698508048474924
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01698508048474924
+    尧:
+    - value: a
+      score: 0.0007568792566121071
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0007568792566121071
+    - value: q
+      score: 0.0007568792566121071
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0007568792566121071
+    居:
+    - value: a
+      score: 0.0016879601225176792
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0016879601225176792
+    - value: q
+      score: 0.0016879601225176792
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0016879601225176792
+    乃:
+    - value: a
+      score: 0.0014004337544377484
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0014004337544377484
+    - value: q
+      score: 0.0014004337544377484
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0014004337544377484
+    暴:
+    - value: a
+      score: 0.0004511883296645161
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0004511883296645161
+    - value: q
+      score: 0.0004511883296645161
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0004511883296645161
+    黑:
+    - value: a
+      score: 0.001607718614981831
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.001607718614981831
+    - value: q
+      score: 0.001607718614981831
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.001607718614981831
+    莫:
+    - value: a
+      score: 0.0013646737043145904
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0013646737043145904
+    - value: q
+      score: 0.0013646737043145904
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0013646737043145904
+    毛:
+    - value: a
+      score: 0.000966935099692764
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.000966935099692764
+    - value: q
+      score: 0.000966935099692764
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.000966935099692764
+    皮:
+    - value:
+        element: 毛
+      score: 0.0
+    击:
+    - value: a
+      score: 0.0011822776205466878
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0011822776205466878
+    - value: q
+      score: 0.0011822776205466878
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0011822776205466878
+    牙:
+    - value: a
+      score: 0.001570795644459603
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.001570795644459603
+    - value: q
+      score: 0.001570795644459603
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.001570795644459603
+    见:
+    - value: a
+      score: 0.01934223288984956
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01934223288984956
+    - value: q
+      score: 0.01934223288984956
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01934223288984956
+    氏:
+    - value: a
+      score: 0.0027670243441671747
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0027670243441671747
+    - value: q
+      score: 0.0027670243441671747
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0027670243441671747
+    民:
+    - value: a
+      score: 0.0011163906948165841
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0011163906948165841
+    - value: q
+      score: 0.0011163906948165841
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0011163906948165841
+    至:
+    - value: a
+      score: 0.011486557378784954
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.011486557378784954
+    - value: q
+      score: 0.011486557378784954
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.011486557378784954
+    瓦:
+    - value: a
+      score: 0.0008139282847313737
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0008139282847313737
+    - value: q
+      score: 0.0008139282847313737
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0008139282847313737
+    :
+    - value: a
+      score: 0.0001398206062931601
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0001398206062931601
+    - value: q
+      score: 0.0001398206062931601
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0001398206062931601
+    鬲:
+    - value: a
+      score: 0.0003778177682716829
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0003778177682716829
+    - value: q
+      score: 0.0003778177682716829
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0003778177682716829
+    骨:
+    - value: a
+      score: 0.0005742447394631506
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0005742447394631506
+    - value: q
+      score: 0.0005742447394631506
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0005742447394631506
+    乐:
+    - value: a
+      score: 0.0008996468201825361
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0008996468201825361
+    - value: q
+      score: 0.0008996468201825361
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0008996468201825361
+    丘:
+    - value: a
+      score: 0.00040226883886185325
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.00040226883886185325
+    - value: q
+      score: 0.00040226883886185325
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.00040226883886185325
+    单:
+    - value: a
+      score: 0.0016533476259852492
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0016533476259852492
+    - value: q
+      score: 0.0016533476259852492
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0016533476259852492
+    长:
+    - value: a
+      score: 0.005757400290555612
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.005757400290555612
+    - value: q
+      score: 0.005757400290555612
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.005757400290555612
+    永:
+    - value: a
+      score: 0.0005668954394475428
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0005668954394475428
+    - value: q
+      score: 0.0005668954394475428
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0005668954394475428
+    牛:
+    - value: a
+      score: 0.007737192957413547
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.007737192957413547
+    - value: q
+      score: 0.007737192957413547
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.007737192957413547
+    九:
+    - value: a
+      score: 0.0013134135016089395
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0013134135016089395
+    - value: q
+      score: 0.0013134135016089395
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0013134135016089395
+    耂:
+    - value: a
+      score: 0.014162923006470646
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.014162923006470646
+    - value: q
+      score: 0.014162923006470646
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.014162923006470646
+    皿:
+    - value: a
+      score: 0.007054697975841374
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.007054697975841374
+    - value: q
+      score: 0.007054697975841374
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.007054697975841374
+    止:
+    - value: a
+      score: 0.00648003932395997
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.00648003932395997
+    - value: q
+      score: 0.00648003932395997
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.00648003932395997
+    耳:
+    - value: a
+      score: 0.0022691055503335396
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0022691055503335396
+    - value: q
+      score: 0.0022691055503335396
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0022691055503335396
+    西:
+    - value: a
+      score: 0.01191281132695176
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.01191281132695176
+    - value: q
+      score: 0.01191281132695176
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.01191281132695176
+    火:
+    - value: a
+      score: 0.012180415371571062
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.012180415371571062
+    - value: q
+      score: 0.012180415371571062
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.012180415371571062
+    足:
+    - value: a
+      score: 0.011787153960915306
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.011787153960915306
+    - value: q
+      score: 0.011787153960915306
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.011787153960915306
+    之:
+    - value: a
+      score: 0.006191162163856396
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.006191162163856396
+    - value: q
+      score: 0.006191162163856396
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.006191162163856396
+    隹:
+    - value: a
+      score: 0.00474076050572424
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.00474076050572424
+    - value: q
+      score: 0.00474076050572424
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.00474076050572424
+    礻:
+    - value: a
+      score: 0.008778511340739256
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.008778511340739256
+    - value: q
+      score: 0.008778511340739256
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.008778511340739256
+    犭:
+    - value: a
+      score: 0.0019622566600218275
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0019622566600218275
+    - value: q
+      score: 0.0019622566600218275
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0019622566600218275
+    鱼:
+    - value: a
+      score: 0.0022239786869704702
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.0022239786869704702
+    - value: q
+      score: 0.0022239786869704702
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.0022239786869704702
+    鸟:
+    - value: a
+      score: 0.002775971296546893
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.002775971296546893
+    - value: q
+      score: 0.002775971296546893
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.002775971296546893
+    韦:
+    - value: a
+      score: 0.001103203990444859
+    - value: b
+      score: 0.0
+    - value: c
+      score: 0.0
+    - value: d
+      score: 0.0
+    - value: e
+      score: 0.0
+    - value: f
+      score: 0.0
+    - value: g
+      score: 0.0
+    - value: h
+      score: 0.0
+    - value: i
+      score: 0.0
+    - value: j
+      score: 0.0
+    - value: k
+      score: 0.0
+    - value: l
+      score: 0.0
+    - value: m
+      score: 0.0
+    - value: n
+      score: 0.0
+    - value: o
+      score: 0.0
+    - value: p
+      score: 0.001103203990444859
+    - value: q
+      score: 0.001103203990444859
+    - value: r
+      score: 0.0
+    - value: s
+      score: 0.0
+    - value: t
+      score: 0.0
+    - value: u
+      score: 0.0
+    - value: v
+      score: 0.0
+    - value: w
+      score: 0.0
+    - value: x
+      score: 0.0
+    - value: y
+      score: 0.0
+    - value: z
+      score: 0.001103203990444859
+    一:
+    - value:
+        element: '1'
+      score: 0.0
+    丨:
+    - value:
+        element: '2'
+      score: 0.0
+    :
+    - value:
+        element: '2'
+      score: 0.0
+    :
+    - value:
+        element: '2'
+      score: 0.0
+    乔:
+    - value:
+        element: '2'
+      score: 0.0
+    丿:
+    - value:
+        element: '3'
+      score: 0.0
+    :
+    - value:
+        element: '3'
+      score: 0.0
+    丶:
+    - value:
+        element: '4'
+      score: 0.0
+    :
+    - value:
+        element: '4'
+      score: 0.0
+    弓:
+    - value:
+        element: '5'
+      score: 0.0
+    飞:
+    - value:
+        element: '5'
+      score: 0.0
+    毋:
+    - value:
+        element: 母
+      score: 0.0
+    毌:
+    - value:
+        element: 母
+      score: 0.0
+    :
+    - value:
+        element: 人
+      score: 0.0
+    入:
+    - value:
+        element: 人
+      score: 0.0
+    言:
+    - value:
+        element: 讠
+      score: 0.0
+    卅:
+    - value:
+        element: 艹
+      score: 0.0
+    卌:
+    - value:
+        element: 艹
+      score: 0.0
+    :
+    - value:
+        element: 艹
+      score: 0.0
+    廾:
+    - value:
+        element: 艹
+      score: 0.0
+    廴:
+    - value:
+        element: 辶
+      score: 0.0
+    心:
+    - value:
+        element: 忄
+      score: 0.0
+    必:
+    - value:
+        element: 忄
+      score: 0.0
+    :
+    - value:
+        element: 忄
+      score: 0.0
+    手:
+    - value:
+        element: 扌
+      score: 0.0
+    :
+    - value:
+        element: 扌
+      score: 0.0
+    水:
+    - value:
+        element: 氵
+      score: 0.0
+    冫:
+    - value:
+        element: 氵
+      score: 0.0
+    氺:
+    - value:
+        element: 氵
+      score: 0.0
+    末:
+    - value:
+        element: 未
+      score: 0.0
+    朱:
+    - value:
+        element: 未
+      score: 0.0
+    :
+    - value:
+        element: 虫
+      score: 0.0
+    :
+    - value:
+        element: 月
+      score: 0.0
+    冖:
+    - value:
+        element: 宀
+      score: 0.0
+    :
+    - value:
+        element: 宀
+      score: 0.0
+    :
+    - value:
+        element: 宀
+      score: 0.0
+    :
+    - value:
+        element: 宀
+      score: 0.0
+    :
+    - value:
+        element: 宀
+      score: 0.0
+    户:
+    - value:
+        element: 尸
+      score: 0.0
+    戶:
+    - value:
+        element: 尸
+      score: 0.0
+    尺:
+    - value:
+        element: 尸
+      score: 0.0
+    凵:
+    - value:
+        element: 匚
+      score: 0.0
+    冂:
+    - value:
+        element: 匚
+      score: 0.0
+    门:
+    - value:
+        element: 匚
+      score: 0.0
+    巨:
+    - value:
+        element: 匚
+      score: 0.0
+    勹:
+    - value:
+        element: 匚
+      score: 0.0
+    匃:
+    - value:
+        element: 匚
+      score: 0.0
+    :
+    - value:
+        element: 匚
+      score: 0.0
+    巸:
+    - value:
+        element: 臣
+      score: 0.0
+    :
+    - value:
+        element: 臣
+      score: 0.0
+    豸:
+    - value:
+        element: 豕
+      score: 0.0
+    豖:
+    - value:
+        element: 豕
+      score: 0.0
+    :
+    - value:
+        element: 禸
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    龴:
+    - value:
+        element: 厶
+      score: 0.0
+    金:
+    - value:
+        element: 钅
+      score: 0.0
+    :
+    - value:
+        element: 钅
+      score: 0.0
+    糸:
+    - value:
+        element: 纟
+      score: 0.0
+    幺:
+    - value:
+        element: 纟
+      score: 0.0
+    乡:
+    - value:
+        element: 纟
+      score: 0.0
+    厂:
+    - value:
+        element: 广
+      score: 0.0
+    疒:
+    - value:
+        element: 广
+      score: 0.0
+    千:
+    - value:
+        element: 干
+      score: 0.0
+    于:
+    - value:
+        element: 干
+      score: 0.0
+    巳:
+    - value:
+        element: 已
+      score: 0.0
+    巴:
+    - value:
+        element: 已
+      score: 0.0
+    己:
+    - value:
+        element: 已
+      score: 0.0
+    㔾:
+    - value:
+        element: 已
+      score: 0.0
+    亦:
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 衣
+      score: 0.0
+    襄:
+    - value:
+        element: 衣
+      score: 0.0
+    :
+    - value:
+        element: 衣
+      score: 0.0
+    豙:
+    - value:
+        element: 立
+      score: 0.0
+    :
+    - value:
+        element: 且
+      score: 0.0
+    :
+    - value:
+        element: 夕
+      score: 0.0
+    歹:
+    - value:
+        element: 夕
+      score: 0.0
+    :
+    - value:
+        element: 夕
+      score: 0.0
+    :
+    - value:
+        element: 夕
+      score: 0.0
+    癶:
+    - value:
+        element: 夕
+      score: 0.0
+    :
+    - value:
+        element: 夕
+      score: 0.0
+    :
+    - value:
+        element: 夕
+      score: 0.0
+    :
+    - value:
+        element: 勿
+      score: 0.0
+    失:
+    - value:
+        element: 矢
+      score: 0.0
+    免:
+    - value:
+        element: 兔
+      score: 0.0
+    卬:
+    - value:
+        element: 卩
+      score: 0.0
+    阝:
+    - value:
+        element: 卩
+      score: 0.0
+    :
+    - value:
+        element: 卩
+      score: 0.0
+    辡:
+    - value:
+        element: 辛
+      score: 0.0
+    玨:
+    - value:
+        element: 王
+      score: 0.0
+    玉:
+    - value:
+        element: 王
+      score: 0.0
+    :
+    - value:
+        element: 匕
+      score: 0.0
+    :
+    - value:
+        element: 匕
+      score: 0.0
+    七:
+    - value:
+        element: 匕
+      score: 0.0
+    :
+    - value:
+        element: 匕
+      score: 0.0
+    目:
+    - value:
+        element: 日
+      score: 0.0
+    曰:
+    - value:
+        element: 日
+      score: 0.0
+    士:
+    - value:
+        element: 土
+      score: 0.0
+    壬:
+    - value:
+        element: 土
+      score: 0.0
+    由:
+    - value:
+        element: 田
+      score: 0.0
+    甲:
+    - value:
+        element: 田
+      score: 0.0
+    申:
+    - value:
+        element: 田
+      score: 0.0
+    电:
+    - value:
+        element: 田
+      score: 0.0
+    :
+    - value:
+        element: 田
+      score: 0.0
+    两:
+    - value:
+        element: 丽
+      score: 0.0
+    自:
+    - value:
+        element: 白
+      score: 0.0
+    臼:
+    - value:
+        element: 白
+      score: 0.0
+    :
+    - value:
+        element: 白
+      score: 0.0
+    夂:
+    - value:
+        element: 又
+      score: 0.0
+    攵:
+    - value:
+        element: 又
+      score: 0.0
+    久:
+    - value:
+        element: 又
+      score: 0.0
+    各:
+    - value:
+        element: 又
+      score: 0.0
+    :
+    - value:
+        element: 小
+      score: 0.0
+    :
+    - value:
+        element: 小
+      score: 0.0
+    :
+    - value:
+        element: 小
+      score: 0.0
+    丷:
+    - value:
+        element: 八
+      score: 0.0
+    㡀:
+    - value:
+        element: 八
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    龹:
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    龵:
+    - value:
+        element: 
+      score: 0.0
+    犬:
+    - value:
+        element: 大
+      score: 0.0
+    夫:
+    - value:
+        element: 大
+      score: 0.0
+    天:
+    - value:
+        element: 大
+      score: 0.0
+    太:
+    - value:
+        element: 大
+      score: 0.0
+    兀:
+    - value:
+        element: 儿
+      score: 0.0
+    丌:
+    - value:
+        element: 儿
+      score: 0.0
+    :
+    - value:
+        element: 几
+      score: 0.0
+    :
+    - value:
+        element: 几
+      score: 0.0
+    凡:
+    - value:
+        element: 几
+      score: 0.0
+    了:
+    - value:
+        element: 子
+      score: 0.0
+    :
+    - value:
+        element: 十
+      score: 0.0
+    :
+    - value:
+        element: 十
+      score: 0.0
+    丁:
+    - value:
+        element: 寸
+      score: 0.0
+    可:
+    - value:
+        element: 寸
+      score: 0.0
+    才:
+    - value:
+        element: 寸
+      score: 0.0
+    为:
+    - value:
+        element: 力
+      score: 0.0
+    办:
+    - value:
+        element: 力
+      score: 0.0
+    :
+    - value:
+        element: 工
+      score: 0.0
+    刂:
+    - value:
+        element: 刀
+      score: 0.0
+    :
+    - value:
+        element: 刀
+      score: 0.0
+    ⺈:
+    - value:
+        element: 刀
+      score: 0.0
+    采:
+    - value:
+        element: 爫
+      score: 0.0
+    釆:
+    - value:
+        element: 爫
+      score: 0.0
+    爪:
+    - value:
+        element: 爫
+      score: 0.0
+    瓜:
+    - value:
+        element: 爫
+      score: 0.0
+    啇:
+    - value:
+        element: 商
+      score: 0.0
+    :
+    - value:
+        element: 向
+      score: 0.0
+    :
+    - value:
+        element: 向
+      score: 0.0
+    囱:
+    - value:
+        element: 向
+      score: 0.0
+    囟:
+    - value:
+        element: 向
+      score: 0.0
+    身:
+    - value:
+        element: 向
+      score: 0.0
+    令:
+    - value:
+        element: 今
+      score: 0.0
+    丬:
+    - value:
+        element: 片
+      score: 0.0
+    爿:
+    - value:
+        element: 片
+      score: 0.0
+    :
+    - value:
+        element: 片
+      score: 0.0
+    非:
+    - value:
+        element: 片
+      score: 0.0
+    :
+    - value:
+        element: 卜
+      score: 0.0
+    龷:
+    - value:
+        element: 廿
+      score: 0.0
+    甘:
+    - value:
+        element: 廿
+      score: 0.0
+    :
+    - value:
+        element: 廿
+      score: 0.0
+    革:
+    - value:
+        element: 廿
+      score: 0.0
+    :
+    - value:
+        element: 竹
+      score: 0.0
+    :
+    - value:
+        element: 弟
+      score: 0.0
+    东:
+    - value:
+        element: 车
+      score: 0.0
+    :
+    - value:
+        element: 车
+      score: 0.0
+    :
+    - value:
+        element: 车
+      score: 0.0
+    卯:
+    - value:
+        element: 卵
+      score: 0.0
+    :
+    - value:
+        element: 卵
+      score: 0.0
+    :
+    - value:
+        element: 卵
+      score: 0.0
+    印:
+    - value:
+        element: 卵
+      score: 0.0
+    :
+    - value:
+        element: 卵
+      score: 0.0
+    㠯:
+    - value:
+        element: 
+      score: 0.0
+    弋:
+    - value:
+        element: 戈
+      score: 0.0
+    戋:
+    - value:
+        element: 戈
+      score: 0.0
+    戊:
+    - value:
+        element: 戈
+      score: 0.0
+    戉:
+    - value:
+        element: 戈
+      score: 0.0
+    :
+    - value:
+        element: 戈
+      score: 0.0
+    龶:
+    - value:
+        element: 丰
+      score: 0.0
+    :
+    - value:
+        element: 鹿
+      score: 0.0
+    尤:
+    - value:
+        element: 龙
+      score: 0.0
+    斥:
+    - value:
+        element: 斤
+      score: 0.0
+    :
+    - value:
+        element: 雨
+      score: 0.0
+    而:
+    - value:
+        element: 雨
+      score: 0.0
+    面:
+    - value:
+        element: 雨
+      score: 0.0
+    出:
+    - value:
+        element: 山
+      score: 0.0
+    朿:
+    - value:
+        element: 束
+      score: 0.0
+    柬:
+    - value:
+        element: 束
+      score: 0.0
+    :
+    - value:
+        element: 艮
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    疋:
+    - value:
+        element: 
+      score: 0.0
+    亚:
+    - value:
+        element: 
+      score: 0.0
+    肀:
+    - value:
+        element: 
+      score: 0.0
+    聿:
+    - value:
+        element: 
+      score: 0.0
+    彐:
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    彑:
+    - value:
+        element: 
+      score: 0.0
+    互:
+    - value:
+        element: 
+      score: 0.0
+    :
+    - value:
+        element: 
+      score: 0.0
+    乂:
+    - value:
+        element: 交
+      score: 0.0
+    㐅:
+    - value:
+        element: 交
+      score: 0.0
+    熏:
+    - value:
+        element: 黑
+      score: 0.0
+    缶:
+    - value:
+        element: 击
+      score: 0.0
+    贝:
+    - value:
+        element: 见
+      score: 0.0
+    页:
+    - value:
+        element: 见
+      score: 0.0
+    氐:
+    - value:
+        element: 氏
+      score: 0.0
+    :
+    - value:
+        element: 氏
+      score: 0.0
+    牜:
+    - value:
+        element: 牛
+      score: 0.0
+    :
+    - value:
+        element: 牛
+      score: 0.0
+    :
+    - value:
+        element: 牛
+      score: 0.0
+    丸:
+    - value:
+        element: 九
+      score: 0.0
+    罒:
+    - value:
+        element: 皿
+      score: 0.0
+    四:
+    - value:
+        element: 皿
+      score: 0.0
+    署:
+    - value:
+        element: 皿
+      score: 0.0
+    血:
+    - value:
+        element: 皿
+      score: 0.0
+    酉:
+    - value:
+        element: 西
+      score: 0.0
+    覀:
+    - value:
+        element: 西
+      score: 0.0
+    灬:
+    - value:
+        element: 火
+      score: 0.0
+    :
+    - value:
+        element: 足
+      score: 0.0
+    走:
+    - value:
+        element: 足
+      score: 0.0
+    衤:
+    - value:
+        element: 礻
+      score: 0.0
+    :
+    - value:
+        element: 鱼
+      score: 0.0
+    :
+    - value:
+        element: 鸟
+      score: 0.0
+    乌:
+    - value:
+        element: 鸟
+      score: 0.0
+    岛:
+    - value:
+        element: 鸟
+      score: 0.0
+    :
+    - value:
+        element: 鸟
+      score: 0.0
+    舟:
+    - value:
+        element: 车
+      score: 0.0
+    羊:
+    - value:
+        element: 鹿
+      score: 0.0
+    :
+    - value:
+        element: 鹿
+      score: 0.0
+    二:
+    - value:
+        element: '1'
+      score: 0.0
+    三:
+    - value:
+        element: '1'
+      score: 0.0
+    川:
+    - value:
+        element: '2'
+      score: 0.0
+    巛:
+    - value:
+        element: '2'
+      score: 0.0
+    :
+    - value:
+        element: '2'
+      score: 0.0
+    州:
+    - value:
+        element: '2'
+      score: 0.0
+    彡:
+    - value:
+        element: '3'
+      score: 0.0
+    '6':
+    - value:
+        element: '5'
+      score: 0.0
+encoder:
+  max_length: 4
+  select_keys:
+  - _
+  - ;
+  auto_select_length: 4
+  auto_select_pattern: ''
+  sources:
+    s0:
+      object: null
+      next: c0
+    s1:
+      object:
+        type: 字音
+        subtype: szm
+      next: s11
+    s2:
+      object:
+        type: 字音
+        subtype: szm
+      next: s3
+    s3:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s10
+    s4:
+      object:
+        type: 字音
+        subtype: szm
+      next: s5
+    s5:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s6
+    s6:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s14
+    s7:
+      object:
+        type: 字音
+        subtype: szm
+      next: s8
+    s8:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s9
+    s9:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s13
+    s10:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s15
+    s11:
+      object:
+        type: 字音
+        subtype: mzm
+      next: s12
+    s12:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: s16
+    s13:
+      object:
+        type: 字根
+        rootIndex: -1
+      next: null
+      index: 0
+    s14:
+      object:
+        type: 字根
+        rootIndex: -1
+      index: 0
+      next: null
+    s15:
+      object:
+        type: 字根
+        rootIndex: 2
+      index: 0
+      next: null
+    s16:
+      object:
+        type: 字根
+        rootIndex: 1
+      index: 0
+      next: null
+  conditions:
+    c0:
+      object:
+        type: 字根
+        rootIndex: 2
+      operator: 存在
+      positive: c1
+      negative: s1
+    c1:
+      object:
+        type: 字根
+        rootIndex: 3
+      operator: 存在
+      positive: c2
+      negative: s2
+    c2:
+      object:
+        type: 字根
+        rootIndex: 4
+      operator: 存在
+      positive: s7
+      negative: s4
+  rules:
+  - length_equal: 2
+    formula: AaAbBaBb
+  - length_equal: 3
+    formula: AaBaCaCb
+  - length_in_range:
+    - 4
+    - 10
+    formula: AaBaCaDa
+  short_code:
+  - length_equal: 1
+    schemes:
+    - prefix: 2
+      count: 1
+    - prefix: 3
+      count: 1
+optimization:
+  objective:
+    characters_full:
+      tiers:
+      - top: 300
+        duplication: 0.0
+        duplication_squared: 0.0
+        effective_duplication: 0.0
+        effective_duplication_squared: 0.0
+        weighted_fingering:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 500
+        duplication: 0.0
+        duplication_squared: 0.0
+        effective_duplication: 0.0
+        effective_duplication_squared: 0.0
+        weighted_fingering:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 1500
+        duplication: 0.0
+        duplication_squared: 0.0
+        effective_duplication: 0.0
+        effective_duplication_squared: 0.0
+        weighted_fingering:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 6000
+        duplication: 0.0
+        duplication_squared: 0.0
+        effective_duplication: 0.0
+        effective_duplication_squared: 0.0
+      duplication: 0.0
+      effective_duplication: 0.0
+      pair_equivalence: 0.0
+      phonetic_shape_transition_equivalence: 0.0
+      fingering:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+    characters_short:
+      tiers:
+      - top: 300
+        duplication: 0.0
+        duplication_squared: 0.0
+        levels:
+        - length: 3
+          frequency: -15.0
+        weighted_fingering:
+        - 0.0
+        - 80.0
+        - 15.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 500
+        duplication: 0.0
+        duplication_squared: 0.0
+        levels:
+        - length: 3
+          frequency: -15.0
+        weighted_fingering:
+        - 0.0
+        - 80.0
+        - 15.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 1500
+        duplication: 0.0
+        duplication_squared: 0.0
+        levels:
+        - length: 3
+          frequency: -15.0
+        weighted_fingering:
+        - 0.0
+        - 80.0
+        - 15.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        phonetic_shape_transition_equivalence: 0.0
+      - top: 6000
+        duplication: 0.0
+        duplication_squared: 0.0
+        levels:
+        - length: 3
+          frequency: -75.0
+      duplication: 0.0
+      pair_equivalence: 0.0
+      phonetic_shape_transition_equivalence: 0.0
+      fingering:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      levels:
+      - length: 1
+        frequency: 0.0
+      - length: 2
+        frequency: 0.0
+      - length: 3
+        frequency: 0.0
+    regularization_strength: 0.0
+  metaheuristic:
+    algorithm: SimulatedAnnealing
+    parameters:
+      t_max: 0.003
+      t_min: 1.0e-06
+      steps: 1000
+    report_after: 0.99
+    update_interval: 1000
+generated_mapping_space: *id001

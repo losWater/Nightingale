@@ -1,0 +1,31 @@
+experiment_id: EXP-20260827-06
+date: 2026-08-27
+profile: layered-handfeel-v1
+status: completed_short_weight_probe
+source: ../../assets/baseline_measurement_config.yaml
+calibration:
+  steps: 1000
+  t_max: 4.382691201322713
+  t_min: 0.008559943752583423
+  output: calibration/output-08-27+18_53_18
+run:
+  threads: 4
+  steps_per_thread: 20000
+  output: run/output-08-27+18_53_44
+  config_sha256: 8655D554CBB61F08B92EDDF563A2582421A12EB4F1B1229790944F3F013774D3
+weights:
+  three_code:
+    top300: -15.0
+    top500: -15.0
+    top1500: -15.0
+    top6000: -70.0
+  short_weighted_fingering:
+    tiers: [300, 500, 1500]
+    large_row_crossing: 100.0
+    small_row_crossing: 20.0
+pareto_candidates:
+  - thread: 2
+    reason: 最高总分、前6000三码3741、跨排全面优秀
+  - thread: 1
+    reason: 前1500三码1008且前1500小跨最低8.26%
+

@@ -1,0 +1,21 @@
+schema_version: 1
+experiment_id: EXP-20260827-13
+status: completed
+question: 中间权重4能否稳定清零前300有效全码重，并降低guard8的三码代价？
+controlled_variables:
+  source: work/v08/assets/baseline_measurement_config.yaml
+  profile: layered-handfeel-v1-fullguard4
+  t_max: 4.455057485836668
+  t_min: 0.0021753210380061855
+  steps: 20000
+  threads: 4
+acceptance:
+  - 四链前300有效全码重均为0
+  - 前6000三码中位数明显优于guard8的3770.5，并接近guard2的3783.5
+  - 简码跨排与第三键热力无明显异常
+known_limitations:
+  - 参数定标短跑，不产生正式候选。
+result:
+  decision: 采用权重4作为后续前300有效全码重轻保护参数。
+  evidence: work/v08/experiments/EXP-20260827-13/report.md
+  full_metrics: work/v08/experiments/EXP-20260827-13/full_metrics_report.md

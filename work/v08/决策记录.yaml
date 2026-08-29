@@ -1,0 +1,46 @@
+schema_version: 1
+records:
+  - id: ADR-0001
+    date: 2026-08-27
+    status: accepted
+    title: 夜莺0.8重新排列字根但不重新选根
+    problem: v0.7重码表现达标，但简码手感、分层当量和键位热度仍有改进空间。
+    decision:
+      - 继承根集、人工拆分、字架、读音修正和结构性重码例外。
+      - 不继承布局相关无理码、简码冻结、字词让位及候选顺序。
+      - 重新抽取和比较多个字根布局。
+    reasons:
+      - 专家评审认为字根选择合理，主要问题在排列。
+      - 布局下游补丁依赖旧键位，直接继承会污染新实验。
+    alternatives:
+      - option: 继续微调v0.7
+        rejected_because: 容易被既有局部最优和大量下游补丁锁住。
+      - option: 重新选根
+        rejected_because: 现有根集经过逐音节人工过堂，暂无证据需要推翻。
+    affected:
+      - work/v08/继承边界.yaml
+      - work/v08/README.md
+    verification:
+      - v0.8预检必须证明旧布局补丁未进入训练资产。
+
+  - id: ADR-0002
+    date: 2026-08-27
+    status: accepted
+    title: 0.8不设飞键并优先优化简码手感
+    problem: 音形方案可用飞键改善手感，但会破坏读音规则；当前夜莺三码覆盖和简码手感仍弱于目标。
+    decision:
+      - 前两码严格保持小鹤双拼。
+      - 一简、二简、三码均参加手感评价，简码手感优先于全码手感。
+      - 提高三码覆盖目标，降低全码指标的主导权但保留可用底线。
+    reasons:
+      - 保持方案规则统一和可解释性。
+      - 用户实际输入中简码比全码更重要。
+    alternatives:
+      - option: 对难按音节设置飞键
+        rejected_because: 增加无理记忆并破坏统一双拼入口。
+    affected:
+      - work/v08/退火参数审计.md
+    verification:
+      - 音码冻结测试。
+      - 分层简码手感报告。
+

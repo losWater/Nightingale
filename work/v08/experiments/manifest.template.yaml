@@ -1,0 +1,46 @@
+schema_version: 1
+experiment_id: EXP-YYYYMMDD-NN
+status: draft  # draft | blocked | running | completed | invalidated
+question: ""
+hypothesis: ""
+created_at: ""
+
+provenance:
+  git_commit: ""
+  worktree_clean: false
+  diff_sha256: ""
+  executable:
+    path: ""
+    sha256: ""
+
+inputs:
+  config: {path: "", sha256: ""}
+  elements: {path: "", sha256: ""}
+  frequencies: {path: "", sha256: ""}
+  readings: {path: "", sha256: ""}
+  equivalence: {path: "", sha256: ""}
+  distribution: {path: "", sha256: ""}
+
+controlled_variables: []
+independent_variables: []
+acceptance_criteria: []
+
+optimizer:
+  algorithm: SimulatedAnnealing
+  starts: []
+  seeds: []
+  threads: 1
+  t_max: null
+  t_min: null
+  steps: null
+  stopping_rule: ""
+
+command: ""
+output_directory: ""
+started_at: null
+finished_at: null
+result_summary: ""
+known_limitations: []
+related_decisions: []
+related_issues: []
+

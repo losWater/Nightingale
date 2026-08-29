@@ -16,6 +16,7 @@ from pathlib import Path
 
 import yaml
 from build_analysis import apply_postprocess
+from reading_frequencies import aggregate_syllable_frequencies, load_readings, primary_readings
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 HERE = Path(__file__).resolve().parent.parent
@@ -265,9 +266,9 @@ def main():
         rooted_path = assemble_group(group, temp_dir)
         rooted_splits = parse_splits(rooted_path, load_host(group))
 
-    readings = json.loads((BASE / "work/readings.json").read_text(encoding="utf-8"))
-    freq = {c: rs[0][0] for c, rs in readings.items()}
-    reading_freq = {(c, code[:2]): value for c, rs in readings.items() for value, code in rs}
+    readings = load_readings(BASE / "work/v08/assets/readings.json")
+    freq, _ = primary_readings(readings)
+    reading_freq = aggregate_syllable_frequencies(readings)
     base = forms(base_splits, readings)
     rooted = forms(rooted_splits, readings)
     common = set(base) & set(rooted)
