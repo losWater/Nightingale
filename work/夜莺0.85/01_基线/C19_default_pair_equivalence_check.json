@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "metric": "default_short_pair_equivalence",
+  "inputs": {
+    "D:\\nightingale\\work\\重开工程\\04_Chai输入\\夜莺0.8退火元素表_一简c为才.yaml": "3f186c8926a70ceb807c1e5b4709b1551284ec19bea126f437a4e447be529251",
+    "D:\\nightingale\\tools\\chai-win\\assets\\equivalence.txt": "bf5bfc394bb91d6a8d5ea3485ba01ad30f85bda18af9c1cbc9bc8baeed78faa1",
+    "D:\\nightingale\\work\\重开工程\\05_退火实验\\终局练蛊0063_20260829\\组9_seed910001\\card_11_seed_910011\\output-08-29+03_17_32\\code.txt": "a144d8921766c02c03255c4d1246a511bd4c16c672e6b9c72c40ff07ccc20db7"
+  },
+  "candidates": {
+    "C19": {
+      "identities": 8454,
+      "weighted_pairs": 2843822533,
+      "pair_equivalence": 1.340587592425544,
+      "code": "D:\\nightingale\\work\\重开工程\\05_退火实验\\终局练蛊0063_20260829\\组9_seed910001\\card_11_seed_910011\\output-08-29+03_17_32\\code.txt",
+      "code_sha256": "a144d8921766c02c03255c4d1246a511bd4c16c672e6b9c72c40ff07ccc20db7"
+    }
+  }
+}

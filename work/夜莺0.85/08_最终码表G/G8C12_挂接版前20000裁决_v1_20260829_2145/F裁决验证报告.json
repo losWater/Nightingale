@@ -1,0 +1,3409 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "inputs": {
+    "D:\\nightingale\\work\\夜莺0.85\\06_词表裁决\\E_G8C12身份级综合字词审查接口_v4_20260829_2140\\夜莺0.8_正式单字基线_无简词综合字词审查表.txt": "1ea02207ec989dca6df391fbe89eb492ba8c45127bc12e5acc46fcae8a2ec1d1",
+    "D:\\nightingale\\work\\夜莺0.85\\07_词频裁决F\\字词候选裁决.tsv": "0509b5f116df8ebe1d56b3864b94b3b851b630ee76ca7535bbf8717d8ed4bf52"
+  },
+  "base_slots": 68290,
+  "base_entries": 91425,
+  "result_slots": 68290,
+  "result_entries": 91426,
+  "decision_slots": 225,
+  "changed_slots": 211,
+  "already_satisfied_or_unchanged": 14,
+  "undeclared_slots_unchanged": true,
+  "sogou_rule": "仅单字；保留综合表绝对候选序号；词位留空不压缩",
+  "changes": [
+    {
+      "decision": "G8C12-W001",
+      "code": "jijn",
+      "action": "unchanged_decision",
+      "before": [
+        "矶",
+        "计较",
+        "犄角"
+      ],
+      "after": [
+        "矶",
+        "计较",
+        "犄角"
+      ]
+    },
+    {
+      "decision": "G8C12-W002",
+      "code": "xujq",
+      "action": "changed",
+      "before": [
+        "绪",
+        "许久",
+        "酗酒",
+        "叙旧"
+      ],
+      "after": [
+        "许久",
+        "绪",
+        "酗酒",
+        "叙旧"
+      ]
+    },
+    {
+      "decision": "G8C12-W003",
+      "code": "xmig",
+      "action": "changed",
+      "before": [
+        "羡",
+        "现成",
+        "县城",
+        "线程"
+      ],
+      "after": [
+        "现成",
+        "羡",
+        "县城",
+        "线程"
+      ]
+    },
+    {
+      "decision": "G8C12-W004",
+      "code": "xmba",
+      "action": "changed",
+      "before": [
+        "洗",
+        "冼"
+      ],
+      "after": [
+        "先把",
+        "洗",
+        "冼"
+      ]
+    },
+    {
+      "decision": "G8C12-W005",
+      "code": "jnjr",
+      "action": "changed",
+      "before": [
+        "礁",
+        "胶卷",
+        "交卷"
+      ],
+      "after": [
+        "胶卷",
+        "礁",
+        "交卷"
+      ]
+    },
+    {
+      "decision": "G8C12-W006",
+      "code": "yjtz",
+      "action": "changed",
+      "before": [
+        "堰",
+        "烟头"
+      ],
+      "after": [
+        "烟头",
+        "堰"
+      ]
+    },
+    {
+      "decision": "G8C12-W007",
+      "code": "jmrs",
+      "action": "changed",
+      "before": [
+        "箭",
+        "兼容"
+      ],
+      "after": [
+        "兼容",
+        "箭"
+      ]
+    },
+    {
+      "decision": "G8C12-W008",
+      "code": "uihg",
+      "action": "unchanged_decision",
+      "before": [
+        "噬",
+        "失衡"
+      ],
+      "after": [
+        "噬",
+        "失衡"
+      ]
+    },
+    {
+      "decision": "G8C12-W009",
+      "code": "jxfh",
+      "action": "changed",
+      "before": [
+        "伽",
+        "家访",
+        "甲方"
+      ],
+      "after": [
+        "甲方",
+        "伽",
+        "家访"
+      ]
+    },
+    {
+      "decision": "G8C12-W010",
+      "code": "qiva",
+      "action": "unchanged_decision",
+      "before": [
+        "脐",
+        "欺诈",
+        "气炸"
+      ],
+      "after": [
+        "脐",
+        "欺诈",
+        "气炸"
+      ]
+    },
+    {
+      "decision": "G8C12-W011",
+      "code": "dmih",
+      "action": "changed",
+      "before": [
+        "扂",
+        "电厂",
+        "店长",
+        "电场"
+      ],
+      "after": [
+        "电厂",
+        "扂",
+        "店长",
+        "电场"
+      ]
+    },
+    {
+      "decision": "G8C12-W012",
+      "code": "ufyy",
+      "action": "changed",
+      "before": [
+        "屾",
+        "神韵",
+        "身孕"
+      ],
+      "after": [
+        "神韵",
+        "屾",
+        "身孕"
+      ]
+    },
+    {
+      "decision": "G8C12-W013",
+      "code": "yiys",
+      "action": "changed",
+      "before": [
+        "劓",
+        "医用",
+        "易用"
+      ],
+      "after": [
+        "医用",
+        "劓",
+        "易用"
+      ]
+    },
+    {
+      "decision": "G8C12-W014",
+      "code": "ykxk",
+      "action": "changed",
+      "before": [
+        "蓥",
+        "影星",
+        "硬性"
+      ],
+      "after": [
+        "影星",
+        "蓥",
+        "硬性"
+      ]
+    },
+    {
+      "decision": "G8C12-W016",
+      "code": "wusy",
+      "action": "changed",
+      "before": [
+        "鹜",
+        "无损",
+        "污损"
+      ],
+      "after": [
+        "无损",
+        "鹜",
+        "污损"
+      ]
+    },
+    {
+      "decision": "G8C12-W017",
+      "code": "zibc",
+      "action": "changed",
+      "before": [
+        "恣",
+        "自保",
+        "自爆",
+        "自曝"
+      ],
+      "after": [
+        "自保",
+        "恣",
+        "自爆",
+        "自曝"
+      ]
+    },
+    {
+      "decision": "G8C12-W018",
+      "code": "qutn",
+      "action": "changed",
+      "before": [
+        "𫭟",
+        "曲调"
+      ],
+      "after": [
+        "曲调",
+        "𫭟"
+      ]
+    },
+    {
+      "decision": "G8C12-W020",
+      "code": "xiyr",
+      "action": "changed",
+      "before": [
+        "舄",
+        "巇",
+        "戏院",
+        "西苑"
+      ],
+      "after": [
+        "戏院",
+        "舄",
+        "巇",
+        "西苑"
+      ]
+    },
+    {
+      "decision": "G8C12-W022",
+      "code": "xmqr",
+      "action": "changed",
+      "before": [
+        "㬎",
+        "线圈"
+      ],
+      "after": [
+        "线圈",
+        "㬎"
+      ]
+    },
+    {
+      "decision": "G8C12-W023",
+      "code": "dikk",
+      "action": "changed",
+      "before": [
+        "氐",
+        "地块"
+      ],
+      "after": [
+        "地块",
+        "氐"
+      ]
+    },
+    {
+      "decision": "G8C12-W025",
+      "code": "fujy",
+      "action": "changed",
+      "before": [
+        "缚",
+        "夫君"
+      ],
+      "after": [
+        "夫君",
+        "缚"
+      ]
+    },
+    {
+      "decision": "G8C12-W028",
+      "code": "yjir",
+      "action": "changed",
+      "before": [
+        "戭",
+        "扊",
+        "言传"
+      ],
+      "after": [
+        "言传",
+        "戭",
+        "扊"
+      ]
+    },
+    {
+      "decision": "G8C12-W030",
+      "code": "cjcy",
+      "action": "changed",
+      "before": [
+        "惭",
+        "残存"
+      ],
+      "after": [
+        "残存",
+        "惭"
+      ]
+    },
+    {
+      "decision": "G8C12-W031",
+      "code": "vuxn",
+      "action": "changed",
+      "before": [
+        "苎",
+        "住校",
+        "注销"
+      ],
+      "after": [
+        "住校",
+        "苎",
+        "注销"
+      ]
+    },
+    {
+      "decision": "G8C12-W032",
+      "code": "sihy",
+      "action": "changed",
+      "before": [
+        "嘶",
+        "厮混"
+      ],
+      "after": [
+        "厮混",
+        "嘶"
+      ]
+    },
+    {
+      "decision": "G8C12-W033",
+      "code": "wuuh",
+      "action": "unchanged_decision",
+      "before": [
+        "吾",
+        "误伤",
+        "无上",
+        "无伤"
+      ],
+      "after": [
+        "吾",
+        "误伤",
+        "无上",
+        "无伤"
+      ]
+    },
+    {
+      "decision": "G8C12-W034",
+      "code": "xiwh",
+      "action": "changed",
+      "before": [
+        "觿",
+        "希望"
+      ],
+      "after": [
+        "希望",
+        "觿"
+      ]
+    },
+    {
+      "decision": "G8C12-W035",
+      "code": "jphy",
+      "action": "changed",
+      "before": [
+        "喈",
+        "结婚"
+      ],
+      "after": [
+        "结婚",
+        "喈"
+      ]
+    },
+    {
+      "decision": "G8C12-W036",
+      "code": "hvdc",
+      "action": "changed",
+      "before": [
+        "𬤝",
+        "回到",
+        "挥刀"
+      ],
+      "after": [
+        "回到",
+        "𬤝",
+        "挥刀"
+      ]
+    },
+    {
+      "decision": "G8C12-W037",
+      "code": "liyz",
+      "action": "changed",
+      "before": [
+        "嫠",
+        "理由",
+        "利诱"
+      ],
+      "after": [
+        "理由",
+        "嫠",
+        "利诱"
+      ]
+    },
+    {
+      "decision": "G8C12-W038",
+      "code": "tsyh",
+      "action": "changed",
+      "before": [
+        "鲖",
+        "同样",
+        "峒",
+        "痛痒"
+      ],
+      "after": [
+        "同样",
+        "鲖",
+        "峒",
+        "痛痒"
+      ]
+    },
+    {
+      "decision": "G8C12-W039",
+      "code": "mgxl",
+      "action": "changed",
+      "before": [
+        "甍",
+        "梦想",
+        "梦乡"
+      ],
+      "after": [
+        "梦想",
+        "甍",
+        "梦乡"
+      ]
+    },
+    {
+      "decision": "G8C12-W040",
+      "code": "duzi",
+      "action": "changed",
+      "before": [
+        "妒",
+        "肚子",
+        "独自",
+        "犊子",
+        "独资"
+      ],
+      "after": [
+        "肚子",
+        "妒",
+        "独自",
+        "犊子",
+        "独资"
+      ]
+    },
+    {
+      "decision": "G8C12-W041",
+      "code": "vill",
+      "action": "changed",
+      "before": [
+        "挚",
+        "质量"
+      ],
+      "after": [
+        "质量",
+        "挚"
+      ]
+    },
+    {
+      "decision": "G8C12-W042",
+      "code": "wwxp",
+      "action": "changed",
+      "before": [
+        "薳",
+        "𫇭",
+        "威胁",
+        "猥亵"
+      ],
+      "after": [
+        "威胁",
+        "薳",
+        "𫇭",
+        "猥亵"
+      ]
+    },
+    {
+      "decision": "G8C12-W043",
+      "code": "mmbc",
+      "action": "changed",
+      "before": [
+        "湎",
+        "面包",
+        "绵薄"
+      ],
+      "after": [
+        "面包",
+        "湎",
+        "绵薄"
+      ]
+    },
+    {
+      "decision": "G8C12-W044",
+      "code": "uiyj",
+      "action": "changed",
+      "before": [
+        "鼫",
+        "实验",
+        "试验",
+        "誓言",
+        "饰演",
+        "食言",
+        "十堰",
+        "食盐",
+        "试演",
+        "失言"
+      ],
+      "after": [
+        "实验",
+        "鼫",
+        "试验",
+        "誓言",
+        "饰演",
+        "食言",
+        "十堰",
+        "食盐",
+        "试演",
+        "失言"
+      ]
+    },
+    {
+      "decision": "G8C12-W045",
+      "code": "qima",
+      "action": "changed",
+      "before": [
+        "蛴",
+        "蜞",
+        "起码",
+        "其",
+        "骑马"
+      ],
+      "after": [
+        "起码",
+        "蛴",
+        "蜞",
+        "其",
+        "骑马"
+      ]
+    },
+    {
+      "decision": "G8C12-W046",
+      "code": "jkvg",
+      "action": "changed",
+      "before": [
+        "猄",
+        "竞争",
+        "净整"
+      ],
+      "after": [
+        "竞争",
+        "猄",
+        "净整"
+      ]
+    },
+    {
+      "decision": "G8C12-W047",
+      "code": "iggo",
+      "action": "changed",
+      "before": [
+        "珹",
+        "成果",
+        "城郭"
+      ],
+      "after": [
+        "成果",
+        "珹",
+        "城郭"
+      ]
+    },
+    {
+      "decision": "G8C12-W048",
+      "code": "jnxy",
+      "action": "changed",
+      "before": [
+        "藠",
+        "教训"
+      ],
+      "after": [
+        "教训",
+        "藠"
+      ]
+    },
+    {
+      "decision": "G8C12-W049",
+      "code": "xkxk",
+      "action": "changed",
+      "before": [
+        "荇",
+        "星星",
+        "行星",
+        "猩猩",
+        "行刑",
+        "醒醒",
+        "星形"
+      ],
+      "after": [
+        "星星",
+        "荇",
+        "行星",
+        "猩猩",
+        "行刑",
+        "醒醒",
+        "星形"
+      ]
+    },
+    {
+      "decision": "G8C12-W050",
+      "code": "jijp",
+      "action": "changed",
+      "before": [
+        "畿",
+        "季节",
+        "集结"
+      ],
+      "after": [
+        "季节",
+        "畿",
+        "集结"
+      ]
+    },
+    {
+      "decision": "G8C12-W051",
+      "code": "jnhr",
+      "action": "changed",
+      "before": [
+        "噍",
+        "交换",
+        "叫唤",
+        "交欢"
+      ],
+      "after": [
+        "交换",
+        "噍",
+        "叫唤",
+        "交欢"
+      ]
+    },
+    {
+      "decision": "G8C12-W052",
+      "code": "yiwj",
+      "action": "changed",
+      "before": [
+        "繄",
+        "一万",
+        "亿万",
+        "一晚",
+        "一碗",
+        "已晚"
+      ],
+      "after": [
+        "一万",
+        "繄",
+        "亿万",
+        "一晚",
+        "一碗",
+        "已晚"
+      ]
+    },
+    {
+      "decision": "G8C12-W053",
+      "code": "kewh",
+      "action": "changed",
+      "before": [
+        "匼",
+        "渴望",
+        "可望"
+      ],
+      "after": [
+        "渴望",
+        "匼",
+        "可望"
+      ]
+    },
+    {
+      "decision": "G8C12-W054",
+      "code": "xmjb",
+      "action": "changed",
+      "before": [
+        "缐",
+        "先进",
+        "现金",
+        "现今"
+      ],
+      "after": [
+        "先进",
+        "缐",
+        "现金",
+        "现今"
+      ]
+    },
+    {
+      "decision": "G8C12-W055",
+      "code": "mcxm",
+      "action": "changed",
+      "before": [
+        "芼",
+        "冒险",
+        "毛线"
+      ],
+      "after": [
+        "冒险",
+        "芼",
+        "毛线"
+      ]
+    },
+    {
+      "decision": "G8C12-W056",
+      "code": "uiba",
+      "action": "changed",
+      "before": [
+        "浉",
+        "十八"
+      ],
+      "after": [
+        "十八",
+        "浉"
+      ]
+    },
+    {
+      "decision": "G8C12-W057",
+      "code": "uibk",
+      "action": "changed",
+      "before": [
+        "湜",
+        "士兵",
+        "柿饼"
+      ],
+      "after": [
+        "士兵",
+        "湜",
+        "柿饼"
+      ]
+    },
+    {
+      "decision": "G8C12-W058",
+      "code": "yima",
+      "action": "changed",
+      "before": [
+        "翌",
+        "螠",
+        "姨妈",
+        "翼",
+        "一码",
+        "译码"
+      ],
+      "after": [
+        "姨妈",
+        "翌",
+        "螠",
+        "翼",
+        "一码",
+        "译码"
+      ]
+    },
+    {
+      "decision": "G8C12-W059",
+      "code": "xian",
+      "action": "changed",
+      "before": [
+        "饻",
+        "西安",
+        "溪岸",
+        "西岸"
+      ],
+      "after": [
+        "西安",
+        "饻",
+        "溪岸",
+        "西岸"
+      ]
+    },
+    {
+      "decision": "G8C12-W060",
+      "code": "hrbc",
+      "action": "changed",
+      "before": [
+        "漶",
+        "环保",
+        "环抱"
+      ],
+      "after": [
+        "环保",
+        "漶",
+        "环抱"
+      ]
+    },
+    {
+      "decision": "G8C12-W061",
+      "code": "xljn",
+      "action": "changed",
+      "before": [
+        "𬙋",
+        "香蕉",
+        "相交",
+        "橡胶",
+        "相较"
+      ],
+      "after": [
+        "香蕉",
+        "𬙋",
+        "相交",
+        "橡胶",
+        "相较"
+      ]
+    },
+    {
+      "decision": "G8C12-W062",
+      "code": "jptz",
+      "action": "changed",
+      "before": [
+        "颉",
+        "街头",
+        "接头"
+      ],
+      "after": [
+        "街头",
+        "颉",
+        "接头"
+      ]
+    },
+    {
+      "decision": "G8C12-W063",
+      "code": "yuyb",
+      "action": "changed",
+      "before": [
+        "嵎",
+        "语音",
+        "玉音",
+        "余音",
+        "摇身一变"
+      ],
+      "after": [
+        "语音",
+        "嵎",
+        "玉音",
+        "余音",
+        "摇身一变"
+      ]
+    },
+    {
+      "decision": "G8C12-W064",
+      "code": "yizc",
+      "action": "changed",
+      "before": [
+        "嫕",
+        "一早",
+        "臆造"
+      ],
+      "after": [
+        "一早",
+        "嫕",
+        "臆造"
+      ]
+    },
+    {
+      "decision": "G8C12-W065",
+      "code": "heuh",
+      "action": "changed",
+      "before": [
+        "𬌗",
+        "和尚"
+      ],
+      "after": [
+        "和尚",
+        "𬌗"
+      ]
+    },
+    {
+      "decision": "G8C12-W066",
+      "code": "tjbd",
+      "action": "changed",
+      "before": [
+        "澹",
+        "坦白"
+      ],
+      "after": [
+        "坦白",
+        "澹"
+      ]
+    },
+    {
+      "decision": "G8C12-W067",
+      "code": "vrfa",
+      "action": "changed",
+      "before": [
+        "僎",
+        "转发"
+      ],
+      "after": [
+        "转发",
+        "僎"
+      ]
+    },
+    {
+      "decision": "G8C12-W068",
+      "code": "yjee",
+      "action": "changed",
+      "before": [
+        "酽",
+        "厌恶"
+      ],
+      "after": [
+        "厌恶",
+        "酽"
+      ]
+    },
+    {
+      "decision": "G8C12-W069",
+      "code": "djbd",
+      "action": "changed",
+      "before": [
+        "澹",
+        "蛋白",
+        "单摆"
+      ],
+      "after": [
+        "蛋白",
+        "澹",
+        "单摆"
+      ]
+    },
+    {
+      "decision": "G8C12-W070",
+      "code": "kejm",
+      "action": "changed",
+      "before": [
+        "缂",
+        "可见",
+        "课件",
+        "课间"
+      ],
+      "after": [
+        "可见",
+        "缂",
+        "课件",
+        "课间"
+      ]
+    },
+    {
+      "decision": "G8C12-W071",
+      "code": "yiln",
+      "action": "changed",
+      "before": [
+        "殪",
+        "医疗",
+        "意料",
+        "衣料"
+      ],
+      "after": [
+        "医疗",
+        "殪",
+        "意料",
+        "衣料"
+      ]
+    },
+    {
+      "decision": "G8C12-W072",
+      "code": "libm",
+      "action": "changed",
+      "before": [
+        "浬",
+        "里边"
+      ],
+      "after": [
+        "里边",
+        "浬"
+      ]
+    },
+    {
+      "decision": "G8C12-W073",
+      "code": "yugc",
+      "action": "changed",
+      "before": [
+        "悆",
+        "预告"
+      ],
+      "after": [
+        "预告",
+        "悆"
+      ]
+    },
+    {
+      "decision": "G8C12-W074",
+      "code": "xuww",
+      "action": "changed",
+      "before": [
+        "冔",
+        "虚伪",
+        "许巍"
+      ],
+      "after": [
+        "虚伪",
+        "冔",
+        "许巍"
+      ]
+    },
+    {
+      "decision": "G8C12-W075",
+      "code": "xmyz",
+      "action": "changed",
+      "before": [
+        "岘",
+        "现有",
+        "鲜有",
+        "心满意足"
+      ],
+      "after": [
+        "现有",
+        "岘",
+        "鲜有",
+        "心满意足"
+      ]
+    },
+    {
+      "decision": "G8C12-W076",
+      "code": "heig",
+      "action": "changed",
+      "before": [
+        "隺",
+        "合成",
+        "合称"
+      ],
+      "after": [
+        "合成",
+        "隺",
+        "合称"
+      ]
+    },
+    {
+      "decision": "G8C12-W077",
+      "code": "qiyz",
+      "action": "changed",
+      "before": [
+        "颀",
+        "汽油"
+      ],
+      "after": [
+        "汽油",
+        "颀"
+      ]
+    },
+    {
+      "decision": "G8C12-W078",
+      "code": "ytqq",
+      "action": "changed",
+      "before": [
+        "彟",
+        "月球",
+        "曰"
+      ],
+      "after": [
+        "月球",
+        "彟",
+        "曰"
+      ]
+    },
+    {
+      "decision": "G8C12-W079",
+      "code": "wuya",
+      "action": "changed",
+      "before": [
+        "屼",
+        "乌鸦",
+        "无涯"
+      ],
+      "after": [
+        "乌鸦",
+        "屼",
+        "无涯"
+      ]
+    },
+    {
+      "decision": "G8C12-W080",
+      "code": "xplz",
+      "action": "changed",
+      "before": [
+        "撷",
+        "泄露",
+        "泄漏"
+      ],
+      "after": [
+        "泄露",
+        "撷",
+        "泄漏"
+      ]
+    },
+    {
+      "decision": "G8C12-W081",
+      "code": "yrig",
+      "action": "changed",
+      "before": [
+        "羱",
+        "远程"
+      ],
+      "after": [
+        "远程",
+        "羱"
+      ]
+    },
+    {
+      "decision": "G8C12-W082",
+      "code": "yctz",
+      "action": "changed",
+      "before": [
+        "㙘",
+        "摇头"
+      ],
+      "after": [
+        "摇头",
+        "㙘"
+      ]
+    },
+    {
+      "decision": "G8C12-W083",
+      "code": "yikc",
+      "action": "changed",
+      "before": [
+        "镱",
+        "依靠",
+        "倚靠",
+        "艺考"
+      ],
+      "after": [
+        "依靠",
+        "镱",
+        "倚靠",
+        "艺考"
+      ]
+    },
+    {
+      "decision": "G8C12-W084",
+      "code": "gcdh",
+      "action": "changed",
+      "before": [
+        "诰",
+        "高档"
+      ],
+      "after": [
+        "高档",
+        "诰"
+      ]
+    },
+    {
+      "decision": "G8C12-W085",
+      "code": "lqgj",
+      "action": "changed",
+      "before": [
+        "珋",
+        "流感",
+        "流干"
+      ],
+      "after": [
+        "流感",
+        "珋",
+        "流干"
+      ]
+    },
+    {
+      "decision": "G8C12-W086",
+      "code": "xiyh",
+      "action": "changed",
+      "before": [
+        "𬶮",
+        "夕阳",
+        "西洋"
+      ],
+      "after": [
+        "夕阳",
+        "𬶮",
+        "西洋"
+      ]
+    },
+    {
+      "decision": "G8C12-W087",
+      "code": "wwjk",
+      "action": "changed",
+      "before": [
+        "碨",
+        "未经",
+        "味精",
+        "胃镜"
+      ],
+      "after": [
+        "未经",
+        "碨",
+        "味精",
+        "胃镜"
+      ]
+    },
+    {
+      "decision": "G8C12-W088",
+      "code": "vilk",
+      "action": "changed",
+      "before": [
+        "扺",
+        "指令"
+      ],
+      "after": [
+        "指令",
+        "扺"
+      ]
+    },
+    {
+      "decision": "G8C12-W089",
+      "code": "yjhd",
+      "action": "changed",
+      "before": [
+        "唁",
+        "沿海",
+        "烟海"
+      ],
+      "after": [
+        "沿海",
+        "唁",
+        "烟海"
+      ]
+    },
+    {
+      "decision": "G8C12-W090",
+      "code": "bixp",
+      "action": "changed",
+      "before": [
+        "荜",
+        "萆",
+        "鼻血",
+        "辟邪",
+        "避邪",
+        "碧血"
+      ],
+      "after": [
+        "鼻血",
+        "荜",
+        "萆",
+        "辟邪",
+        "避邪",
+        "碧血"
+      ]
+    },
+    {
+      "decision": "G8C12-W091",
+      "code": "vibk",
+      "action": "changed",
+      "before": [
+        "泜",
+        "治病",
+        "致病"
+      ],
+      "after": [
+        "治病",
+        "泜",
+        "致病"
+      ]
+    },
+    {
+      "decision": "G8C12-W092",
+      "code": "jiyz",
+      "action": "changed",
+      "before": [
+        "觊",
+        "基友",
+        "既有",
+        "机油",
+        "集邮",
+        "极右"
+      ],
+      "after": [
+        "基友",
+        "觊",
+        "既有",
+        "机油",
+        "集邮",
+        "极右"
+      ]
+    },
+    {
+      "decision": "G8C12-W093",
+      "code": "ihxq",
+      "action": "changed",
+      "before": [
+        "菖",
+        "长袖",
+        "厂休"
+      ],
+      "after": [
+        "长袖",
+        "菖",
+        "厂休"
+      ]
+    },
+    {
+      "decision": "G8C12-W094",
+      "code": "jlbw",
+      "action": "changed",
+      "before": [
+        "洚",
+        "奖杯",
+        "江北",
+        "将被"
+      ],
+      "after": [
+        "奖杯",
+        "洚",
+        "江北",
+        "将被"
+      ]
+    },
+    {
+      "decision": "G8C12-W095",
+      "code": "yilv",
+      "action": "changed",
+      "before": [
+        "挹",
+        "一律",
+        "疑虑",
+        "衣履",
+        "一缕"
+      ],
+      "after": [
+        "一律",
+        "挹",
+        "疑虑",
+        "衣履",
+        "一缕"
+      ]
+    },
+    {
+      "decision": "G8C12-W096",
+      "code": "yugh",
+      "action": "changed",
+      "before": [
+        "龉",
+        "浴缸",
+        "鱼缸",
+        "渔港"
+      ],
+      "after": [
+        "浴缸",
+        "龉",
+        "鱼缸",
+        "渔港"
+      ]
+    },
+    {
+      "decision": "G8C12-W097",
+      "code": "ziyj",
+      "action": "changed",
+      "before": [
+        "嵫",
+        "字眼",
+        "自成一家"
+      ],
+      "after": [
+        "字眼",
+        "嵫",
+        "自成一家"
+      ]
+    },
+    {
+      "decision": "G8C12-W098",
+      "code": "fgyy",
+      "action": "changed",
+      "before": [
+        "崶",
+        "风云",
+        "风韵"
+      ],
+      "after": [
+        "风云",
+        "崶",
+        "风韵"
+      ]
+    },
+    {
+      "decision": "G8C12-W099",
+      "code": "xugz",
+      "action": "changed",
+      "before": [
+        "顼",
+        "虚构"
+      ],
+      "after": [
+        "虚构",
+        "顼"
+      ]
+    },
+    {
+      "decision": "G8C12-W100",
+      "code": "jxke",
+      "action": "changed",
+      "before": [
+        "镓",
+        "夹克",
+        "甲壳",
+        "加壳"
+      ],
+      "after": [
+        "夹克",
+        "镓",
+        "甲壳",
+        "加壳"
+      ]
+    },
+    {
+      "decision": "G8C12-W101",
+      "code": "jmdr",
+      "action": "changed",
+      "before": [
+        "𬣡",
+        "间断",
+        "简短",
+        "尖端",
+        "剪短"
+      ],
+      "after": [
+        "间断",
+        "𬣡",
+        "简短",
+        "尖端",
+        "剪短"
+      ]
+    },
+    {
+      "decision": "G8C12-W102",
+      "code": "xkks",
+      "action": "changed",
+      "before": [
+        "铏",
+        "星空"
+      ],
+      "after": [
+        "星空",
+        "铏"
+      ]
+    },
+    {
+      "decision": "G8C12-W103",
+      "code": "yjjp",
+      "action": "changed",
+      "before": [
+        "𫄧",
+        "眼界",
+        "沿街"
+      ],
+      "after": [
+        "眼界",
+        "𫄧",
+        "沿街"
+      ]
+    },
+    {
+      "decision": "G8C12-W104",
+      "code": "hrxn",
+      "action": "changed",
+      "before": [
+        "荁",
+        "欢笑"
+      ],
+      "after": [
+        "欢笑",
+        "荁"
+      ]
+    },
+    {
+      "decision": "G8C12-W105",
+      "code": "ufse",
+      "action": "changed",
+      "before": [
+        "瘆",
+        "深色",
+        "神色"
+      ],
+      "after": [
+        "深色",
+        "瘆",
+        "神色"
+      ]
+    },
+    {
+      "decision": "G8C12-W106",
+      "code": "wuih",
+      "action": "changed",
+      "before": [
+        "寤",
+        "无偿",
+        "无常",
+        "武昌",
+        "五常",
+        "舞场"
+      ],
+      "after": [
+        "无偿",
+        "寤",
+        "无常",
+        "武昌",
+        "五常",
+        "舞场"
+      ]
+    },
+    {
+      "decision": "G8C12-W107",
+      "code": "quyt",
+      "action": "changed",
+      "before": [
+        "岨",
+        "取悦"
+      ],
+      "after": [
+        "取悦",
+        "岨"
+      ]
+    },
+    {
+      "decision": "G8C12-W108",
+      "code": "xbxs",
+      "action": "changed",
+      "before": [
+        "莘",
+        "心胸"
+      ],
+      "after": [
+        "心胸",
+        "莘"
+      ]
+    },
+    {
+      "decision": "G8C12-W109",
+      "code": "fuxq",
+      "action": "changed",
+      "before": [
+        "菔",
+        "腐朽",
+        "拂袖",
+        "辅修"
+      ],
+      "after": [
+        "腐朽",
+        "菔",
+        "拂袖",
+        "辅修"
+      ]
+    },
+    {
+      "decision": "G8C12-W110",
+      "code": "jiuz",
+      "action": "changed",
+      "before": [
+        "𫌀",
+        "棘手",
+        "寄售",
+        "吉首"
+      ],
+      "after": [
+        "棘手",
+        "𫌀",
+        "寄售",
+        "吉首"
+      ]
+    },
+    {
+      "decision": "G8C12-W111",
+      "code": "yivc",
+      "action": "changed",
+      "before": [
+        "臆",
+        "依照",
+        "遗照",
+        "一兆",
+        "遗诏"
+      ],
+      "after": [
+        "依照",
+        "臆",
+        "遗照",
+        "一兆",
+        "遗诏"
+      ]
+    },
+    {
+      "decision": "G8C12-W112",
+      "code": "dixk",
+      "action": "changed",
+      "before": [
+        "茋",
+        "地形"
+      ],
+      "after": [
+        "地形",
+        "茋"
+      ]
+    },
+    {
+      "decision": "G8C12-W113",
+      "code": "yifh",
+      "action": "changed",
+      "before": [
+        "佁",
+        "以防",
+        "一方",
+        "乙方"
+      ],
+      "after": [
+        "以防",
+        "佁",
+        "一方",
+        "乙方"
+      ]
+    },
+    {
+      "decision": "G8C12-W114",
+      "code": "jxxn",
+      "action": "changed",
+      "before": [
+        "荚",
+        "驾校",
+        "假笑"
+      ],
+      "after": [
+        "驾校",
+        "荚",
+        "假笑"
+      ]
+    },
+    {
+      "decision": "G8C12-W115",
+      "code": "yjan",
+      "action": "changed",
+      "before": [
+        "虤",
+        "延安",
+        "沿岸"
+      ],
+      "after": [
+        "延安",
+        "虤",
+        "沿岸"
+      ]
+    },
+    {
+      "decision": "G8C12-W116",
+      "code": "liso",
+      "action": "changed",
+      "before": [
+        "疠",
+        "利索",
+        "理所"
+      ],
+      "after": [
+        "利索",
+        "疠",
+        "理所"
+      ]
+    },
+    {
+      "decision": "G8C12-W117",
+      "code": "jtjn",
+      "action": "changed",
+      "before": [
+        "砄",
+        "绝交"
+      ],
+      "after": [
+        "绝交",
+        "砄"
+      ]
+    },
+    {
+      "decision": "G8C12-W118",
+      "code": "xpvc",
+      "action": "changed",
+      "before": [
+        "獬",
+        "写照"
+      ],
+      "after": [
+        "写照",
+        "獬"
+      ]
+    },
+    {
+      "decision": "G8C12-W119",
+      "code": "xmfj",
+      "action": "changed",
+      "before": [
+        "伭",
+        "嫌犯",
+        "掀翻",
+        "嫌烦"
+      ],
+      "after": [
+        "嫌犯",
+        "伭",
+        "掀翻",
+        "嫌烦"
+      ]
+    },
+    {
+      "decision": "G8C12-W120",
+      "code": "qlxm",
+      "action": "changed",
+      "before": [
+        "蔃",
+        "抢先",
+        "抢险"
+      ],
+      "after": [
+        "抢先",
+        "蔃",
+        "抢险"
+      ]
+    },
+    {
+      "decision": "G8C12-W121",
+      "code": "hvhl",
+      "action": "changed",
+      "before": [
+        "哕",
+        "辉煌",
+        "灰黄"
+      ],
+      "after": [
+        "辉煌",
+        "哕",
+        "灰黄"
+      ]
+    },
+    {
+      "decision": "G8C12-W122",
+      "code": "getn",
+      "action": "changed",
+      "before": [
+        "塥",
+        "格调",
+        "各条"
+      ],
+      "after": [
+        "格调",
+        "塥",
+        "各条"
+      ]
+    },
+    {
+      "decision": "G8C12-W123",
+      "code": "iiql",
+      "action": "changed",
+      "before": [
+        "眵",
+        "持枪"
+      ],
+      "after": [
+        "持枪",
+        "眵"
+      ]
+    },
+    {
+      "decision": "G8C12-W124",
+      "code": "tifh",
+      "action": "changed",
+      "before": [
+        "倜",
+        "提防"
+      ],
+      "after": [
+        "提防",
+        "倜"
+      ]
+    },
+    {
+      "decision": "G8C12-W125",
+      "code": "xnhy",
+      "action": "changed",
+      "before": [
+        "鸮",
+        "销魂",
+        "消魂"
+      ],
+      "after": [
+        "销魂",
+        "鸮",
+        "消魂"
+      ]
+    },
+    {
+      "decision": "G8C12-W126",
+      "code": "jizc",
+      "action": "changed",
+      "before": [
+        "跽",
+        "急躁",
+        "及早",
+        "祭灶"
+      ],
+      "after": [
+        "急躁",
+        "跽",
+        "及早",
+        "祭灶"
+      ]
+    },
+    {
+      "decision": "G8C12-W127",
+      "code": "qiya",
+      "action": "changed",
+      "before": [
+        "鲯",
+        "气压",
+        "欺压"
+      ],
+      "after": [
+        "气压",
+        "鲯",
+        "欺压"
+      ]
+    },
+    {
+      "decision": "G8C12-W128",
+      "code": "jnxn",
+      "action": "changed",
+      "before": [
+        "茭",
+        "叫嚣",
+        "娇小",
+        "较小"
+      ],
+      "after": [
+        "叫嚣",
+        "茭",
+        "娇小",
+        "较小"
+      ]
+    },
+    {
+      "decision": "G8C12-W129",
+      "code": "yuir",
+      "action": "changed",
+      "before": [
+        "熨",
+        "渔船"
+      ],
+      "after": [
+        "渔船",
+        "熨"
+      ]
+    },
+    {
+      "decision": "G8C12-W130",
+      "code": "sifh",
+      "action": "changed",
+      "before": [
+        "伺",
+        "四方",
+        "私房"
+      ],
+      "after": [
+        "四方",
+        "伺",
+        "私房"
+      ]
+    },
+    {
+      "decision": "G8C12-W131",
+      "code": "lqbk",
+      "action": "changed",
+      "before": [
+        "鎏",
+        "溜冰"
+      ],
+      "after": [
+        "溜冰",
+        "鎏"
+      ]
+    },
+    {
+      "decision": "G8C12-W132",
+      "code": "jiya",
+      "action": "changed",
+      "before": [
+        "鲚",
+        "挤压",
+        "积压",
+        "羁押"
+      ],
+      "after": [
+        "挤压",
+        "鲚",
+        "积压",
+        "羁押"
+      ]
+    },
+    {
+      "decision": "G8C12-W133",
+      "code": "xixy",
+      "action": "changed",
+      "before": [
+        "菥",
+        "喜讯"
+      ],
+      "after": [
+        "喜讯",
+        "菥"
+      ]
+    },
+    {
+      "decision": "G8C12-W134",
+      "code": "baya",
+      "action": "changed",
+      "before": [
+        "鲅",
+        "拔牙"
+      ],
+      "after": [
+        "拔牙",
+        "鲅"
+      ]
+    },
+    {
+      "decision": "G8C12-W135",
+      "code": "qmxy",
+      "action": "changed",
+      "before": [
+        "荨",
+        "谦逊"
+      ],
+      "after": [
+        "谦逊",
+        "荨"
+      ]
+    },
+    {
+      "decision": "G8C12-W136",
+      "code": "fuai",
+      "action": "changed",
+      "before": [
+        "幞",
+        "父爱",
+        "抚爱"
+      ],
+      "after": [
+        "父爱",
+        "幞",
+        "抚爱"
+      ]
+    },
+    {
+      "decision": "G8C12-W137",
+      "code": "xliy",
+      "action": "changed",
+      "before": [
+        "鲞",
+        "香椿",
+        "香醇"
+      ],
+      "after": [
+        "香椿",
+        "鲞",
+        "香醇"
+      ]
+    },
+    {
+      "decision": "G8C12-W138",
+      "code": "whwo",
+      "action": "changed",
+      "before": [
+        "罔",
+        "忘我"
+      ],
+      "after": [
+        "忘我",
+        "罔"
+      ]
+    },
+    {
+      "decision": "G8C12-W139",
+      "code": "heqy",
+      "action": "changed",
+      "before": [
+        "鹖",
+        "合群"
+      ],
+      "after": [
+        "合群",
+        "鹖"
+      ]
+    },
+    {
+      "decision": "G8C12-W140",
+      "code": "zint",
+      "action": "changed",
+      "before": [
+        "髭",
+        "自虐"
+      ],
+      "after": [
+        "自虐",
+        "髭"
+      ]
+    },
+    {
+      "decision": "G8C12-W141",
+      "code": "uiya",
+      "action": "changed",
+      "before": [
+        "𫚕",
+        "施压",
+        "是呀"
+      ],
+      "after": [
+        "施压",
+        "𫚕",
+        "是呀"
+      ]
+    },
+    {
+      "decision": "G8C12-W142",
+      "code": "zall",
+      "action": "changed",
+      "before": [
+        "拶",
+        "杂粮"
+      ],
+      "after": [
+        "杂粮",
+        "拶"
+      ]
+    },
+    {
+      "decision": "G8C12-W143",
+      "code": "yihl",
+      "action": "changed",
+      "before": [
+        "呓",
+        "一晃"
+      ],
+      "after": [
+        "一晃",
+        "呓"
+      ]
+    },
+    {
+      "decision": "G8C12-W144",
+      "code": "wuyh",
+      "action": "changed",
+      "before": [
+        "鼯",
+        "峿",
+        "无恙",
+        "握手言和"
+      ],
+      "after": [
+        "无恙",
+        "鼯",
+        "峿",
+        "握手言和"
+      ]
+    },
+    {
+      "decision": "G8C12-W145",
+      "code": "jmmp",
+      "action": "changed",
+      "before": [
+        "鞬",
+        "歼灭",
+        "毽"
+      ],
+      "after": [
+        "歼灭",
+        "鞬",
+        "毽"
+      ]
+    },
+    {
+      "decision": "G8C12-W146",
+      "code": "tkxp",
+      "action": "changed",
+      "before": [
+        "莛",
+        "停歇",
+        "听写"
+      ],
+      "after": [
+        "停歇",
+        "莛",
+        "听写"
+      ]
+    },
+    {
+      "decision": "G8C12-W147",
+      "code": "cixs",
+      "action": "changed",
+      "before": [
+        "莿",
+        "雌雄"
+      ],
+      "after": [
+        "雌雄",
+        "莿"
+      ]
+    },
+    {
+      "decision": "G8C12-W148",
+      "code": "vfue",
+      "action": "changed",
+      "before": [
+        "袗",
+        "震慑"
+      ],
+      "after": [
+        "震慑",
+        "袗"
+      ]
+    },
+    {
+      "decision": "G8C12-W149",
+      "code": "hswd",
+      "action": "changed",
+      "before": [
+        "訇",
+        "红外"
+      ],
+      "after": [
+        "红外",
+        "訇"
+      ]
+    },
+    {
+      "decision": "G8C12-W150",
+      "code": "hche",
+      "action": "changed",
+      "before": [
+        "嚎",
+        "好喝"
+      ],
+      "after": [
+        "好喝",
+        "嚎"
+      ]
+    },
+    {
+      "decision": "G8C12-W151",
+      "code": "hjlw",
+      "action": "changed",
+      "before": [
+        "捍",
+        "扞",
+        "含泪"
+      ],
+      "after": [
+        "含泪",
+        "捍",
+        "扞"
+      ]
+    },
+    {
+      "decision": "G8C12-W152",
+      "code": "jifh",
+      "action": "changed",
+      "before": [
+        "佶",
+        "机房",
+        "己方",
+        "寄放"
+      ],
+      "after": [
+        "机房",
+        "佶",
+        "己方",
+        "寄放"
+      ]
+    },
+    {
+      "decision": "G8C12-W153",
+      "code": "ffys",
+      "action": "changed",
+      "before": [
+        "鼢",
+        "奋勇"
+      ],
+      "after": [
+        "奋勇",
+        "鼢"
+      ]
+    },
+    {
+      "decision": "G8C12-W154",
+      "code": "hjyh",
+      "action": "changed",
+      "before": [
+        "嵅",
+        "涵养",
+        "汉阳"
+      ],
+      "after": [
+        "涵养",
+        "嵅",
+        "汉阳"
+      ]
+    },
+    {
+      "decision": "G8C12-W155",
+      "code": "yulz",
+      "action": "changed",
+      "before": [
+        "觎",
+        "雨露"
+      ],
+      "after": [
+        "雨露",
+        "觎"
+      ]
+    },
+    {
+      "decision": "G8C12-W156",
+      "code": "thth",
+      "action": "changed",
+      "before": [
+        "埫",
+        "堂堂",
+        "塘",
+        "糖糖",
+        "太皇太后"
+      ],
+      "after": [
+        "堂堂",
+        "埫",
+        "塘",
+        "糖糖",
+        "太皇太后"
+      ]
+    },
+    {
+      "decision": "G8C12-W157",
+      "code": "uirj",
+      "action": "changed",
+      "before": [
+        "炻",
+        "释然",
+        "使然",
+        "受宠若惊"
+      ],
+      "after": [
+        "释然",
+        "炻",
+        "使然",
+        "受宠若惊"
+      ]
+    },
+    {
+      "decision": "G8C12-W158",
+      "code": "hrqq",
+      "action": "changed",
+      "before": [
+        "㬊",
+        "环球",
+        "寰球"
+      ],
+      "after": [
+        "环球",
+        "㬊",
+        "寰球"
+      ]
+    },
+    {
+      "decision": "G8C12-W159",
+      "code": "jnya",
+      "action": "changed",
+      "before": [
+        "峤",
+        "脚丫"
+      ],
+      "after": [
+        "脚丫",
+        "峤"
+      ]
+    },
+    {
+      "decision": "G8C12-W160",
+      "code": "hrie",
+      "action": "changed",
+      "before": [
+        "豢",
+        "换车"
+      ],
+      "after": [
+        "换车",
+        "豢"
+      ]
+    },
+    {
+      "decision": "G8C12-W161",
+      "code": "rfda",
+      "action": "changed",
+      "before": [
+        "讱",
+        "人大"
+      ],
+      "after": [
+        "人大",
+        "讱"
+      ]
+    },
+    {
+      "decision": "G8C12-W162",
+      "code": "eehc",
+      "action": "changed",
+      "before": [
+        "𫫇",
+        "噩耗"
+      ],
+      "after": [
+        "噩耗",
+        "𫫇"
+      ]
+    },
+    {
+      "decision": "G8C12-W163",
+      "code": "qing",
+      "action": "changed",
+      "before": [
+        "欹",
+        "岂能"
+      ],
+      "after": [
+        "岂能",
+        "欹"
+      ]
+    },
+    {
+      "decision": "G8C12-W164",
+      "code": "jqbd",
+      "action": "changed",
+      "before": [
+        "氿",
+        "九百",
+        "举棋不定"
+      ],
+      "after": [
+        "九百",
+        "氿",
+        "举棋不定"
+      ]
+    },
+    {
+      "decision": "G8C12-W165",
+      "code": "boke",
+      "action": "changed",
+      "before": [
+        "𬭛",
+        "博客",
+        "播客"
+      ],
+      "after": [
+        "博客",
+        "𬭛",
+        "播客"
+      ]
+    },
+    {
+      "decision": "G8C12-W166",
+      "code": "lijb",
+      "action": "changed",
+      "before": [
+        "缡",
+        "礼金",
+        "历尽"
+      ],
+      "after": [
+        "礼金",
+        "缡",
+        "历尽"
+      ]
+    },
+    {
+      "decision": "G8C12-W167",
+      "code": "jisv",
+      "action": "changed",
+      "before": [
+        "瘠",
+        "脊髓",
+        "几岁",
+        "击碎",
+        "精诚所至"
+      ],
+      "after": [
+        "脊髓",
+        "瘠",
+        "几岁",
+        "击碎",
+        "精诚所至"
+      ]
+    },
+    {
+      "decision": "G8C12-W168",
+      "code": "jmqp",
+      "action": "changed",
+      "before": [
+        "暕",
+        "剪切",
+        "建",
+        "贱妾"
+      ],
+      "after": [
+        "剪切",
+        "暕",
+        "建",
+        "贱妾"
+      ]
+    },
+    {
+      "decision": "G8C12-W169",
+      "code": "llbd",
+      "action": "changed",
+      "before": [
+        "粱",
+        "两百",
+        "亮白"
+      ],
+      "after": [
+        "两百",
+        "粱",
+        "亮白"
+      ]
+    },
+    {
+      "decision": "G8C12-W170",
+      "code": "gvgs",
+      "action": "changed",
+      "before": [
+        "刽",
+        "归功",
+        "归公"
+      ],
+      "after": [
+        "归功",
+        "刽",
+        "归公"
+      ]
+    },
+    {
+      "decision": "G8C12-W171",
+      "code": "xifa",
+      "action": "changed",
+      "before": [
+        "俙",
+        "戏法",
+        "洗发"
+      ],
+      "after": [
+        "戏法",
+        "俙",
+        "洗发"
+      ]
+    },
+    {
+      "decision": "G8C12-W172",
+      "code": "xiuj",
+      "action": "changed",
+      "before": [
+        "裼",
+        "西山"
+      ],
+      "after": [
+        "西山",
+        "裼"
+      ]
+    },
+    {
+      "decision": "G8C12-W173",
+      "code": "vibm",
+      "action": "changed",
+      "before": [
+        "滍",
+        "质变",
+        "支边"
+      ],
+      "after": [
+        "质变",
+        "滍",
+        "支边"
+      ]
+    },
+    {
+      "decision": "G8C12-W174",
+      "code": "jicy",
+      "action": "changed",
+      "before": [
+        "犄",
+        "𬶨",
+        "寄存",
+        "积存"
+      ],
+      "after": [
+        "寄存",
+        "犄",
+        "𬶨",
+        "积存"
+      ]
+    },
+    {
+      "decision": "G8C12-W175",
+      "code": "lixb",
+      "action": "changed",
+      "before": [
+        "藜",
+        "蓠",
+        "离心",
+        "立新"
+      ],
+      "after": [
+        "离心",
+        "藜",
+        "蓠",
+        "立新"
+      ]
+    },
+    {
+      "decision": "G8C12-W176",
+      "code": "cvmm",
+      "action": "changed",
+      "before": [
+        "毳",
+        "催眠"
+      ],
+      "after": [
+        "催眠",
+        "毳"
+      ]
+    },
+    {
+      "decision": "G8C12-W177",
+      "code": "ykxb",
+      "action": "changed",
+      "before": [
+        "荥",
+        "迎新"
+      ],
+      "after": [
+        "迎新",
+        "荥"
+      ]
+    },
+    {
+      "decision": "G8C12-W178",
+      "code": "yzmn",
+      "action": "changed",
+      "before": [
+        "蝣",
+        "幼苗"
+      ],
+      "after": [
+        "幼苗",
+        "蝣"
+      ]
+    },
+    {
+      "decision": "G8C12-W179",
+      "code": "jifw",
+      "action": "changed",
+      "before": [
+        "偈",
+        "计费",
+        "积肥",
+        "击飞",
+        "基肥"
+      ],
+      "after": [
+        "计费",
+        "偈",
+        "积肥",
+        "击飞",
+        "基肥"
+      ]
+    },
+    {
+      "decision": "G8C12-W180",
+      "code": "pubi",
+      "action": "changed",
+      "before": [
+        "濮",
+        "扑鼻"
+      ],
+      "after": [
+        "扑鼻",
+        "濮"
+      ]
+    },
+    {
+      "decision": "G8C12-W181",
+      "code": "hjlq",
+      "action": "changed",
+      "before": [
+        "撖",
+        "寒流",
+        "韩流"
+      ],
+      "after": [
+        "寒流",
+        "撖",
+        "韩流"
+      ]
+    },
+    {
+      "decision": "G8C12-W182",
+      "code": "ssge",
+      "action": "changed",
+      "before": [
+        "耸",
+        "颂歌"
+      ],
+      "after": [
+        "颂歌",
+        "耸"
+      ]
+    },
+    {
+      "decision": "G8C12-W183",
+      "code": "yzan",
+      "action": "changed",
+      "before": [
+        "卣",
+        "幽暗",
+        "猷",
+        "右岸"
+      ],
+      "after": [
+        "幽暗",
+        "卣",
+        "猷",
+        "右岸"
+      ]
+    },
+    {
+      "decision": "G8C12-W184",
+      "code": "jiln",
+      "action": "changed",
+      "before": [
+        "殛",
+        "寂寥"
+      ],
+      "after": [
+        "寂寥",
+        "殛"
+      ]
+    },
+    {
+      "decision": "G8C12-W185",
+      "code": "vumm",
+      "action": "changed",
+      "before": [
+        "蠋",
+        "煮面"
+      ],
+      "after": [
+        "煮面",
+        "蠋"
+      ]
+    },
+    {
+      "decision": "G8C12-W186",
+      "code": "guch",
+      "action": "changed",
+      "before": [
+        "牿",
+        "谷仓"
+      ],
+      "after": [
+        "谷仓",
+        "牿"
+      ]
+    },
+    {
+      "decision": "G8C12-W187",
+      "code": "goan",
+      "action": "changed",
+      "before": [
+        "馘",
+        "国安"
+      ],
+      "after": [
+        "国安",
+        "馘"
+      ]
+    },
+    {
+      "decision": "G8C12-W188",
+      "code": "jkvl",
+      "action": "changed",
+      "before": [
+        "肼",
+        "精装",
+        "精壮",
+        "经幢"
+      ],
+      "after": [
+        "精装",
+        "肼",
+        "精壮",
+        "经幢"
+      ]
+    },
+    {
+      "decision": "G8C12-W189",
+      "code": "igiu",
+      "action": "changed",
+      "before": [
+        "牚",
+        "惩处",
+        "乘除"
+      ],
+      "after": [
+        "惩处",
+        "牚",
+        "乘除"
+      ]
+    },
+    {
+      "decision": "G8C12-W190",
+      "code": "qmch",
+      "action": "changed",
+      "before": [
+        "慊",
+        "潜藏",
+        "前舱"
+      ],
+      "after": [
+        "潜藏",
+        "慊",
+        "前舱"
+      ]
+    },
+    {
+      "decision": "G8C12-W191",
+      "code": "zigw",
+      "action": "changed",
+      "before": [
+        "觜",
+        "自给"
+      ],
+      "after": [
+        "自给",
+        "觜"
+      ]
+    },
+    {
+      "decision": "G8C12-W192",
+      "code": "zibd",
+      "action": "changed",
+      "before": [
+        "粢",
+        "自白"
+      ],
+      "after": [
+        "自白",
+        "粢"
+      ]
+    },
+    {
+      "decision": "G8C12-W193",
+      "code": "xide",
+      "action": "changed",
+      "before": [
+        "粞",
+        "西德"
+      ],
+      "after": [
+        "西德",
+        "粞"
+      ]
+    },
+    {
+      "decision": "G8C12-W194",
+      "code": "dsve",
+      "action": "changed",
+      "before": [
+        "胨",
+        "动辄"
+      ],
+      "after": [
+        "动辄",
+        "胨"
+      ]
+    },
+    {
+      "decision": "G8C12-W195",
+      "code": "xice",
+      "action": "changed",
+      "before": [
+        "牺",
+        "恓",
+        "西侧"
+      ],
+      "after": [
+        "西侧",
+        "牺",
+        "恓"
+      ]
+    },
+    {
+      "decision": "G8C12-W196",
+      "code": "fuxn",
+      "action": "changed",
+      "before": [
+        "茯",
+        "莩",
+        "拂晓",
+        "芙",
+        "附小"
+      ],
+      "after": [
+        "拂晓",
+        "茯",
+        "莩",
+        "芙",
+        "附小"
+      ]
+    },
+    {
+      "decision": "G8C12-W197",
+      "code": "yjmz",
+      "action": "changed",
+      "before": [
+        "蝘",
+        "眼眸"
+      ],
+      "after": [
+        "眼眸",
+        "蝘"
+      ]
+    },
+    {
+      "decision": "G8C12-W198",
+      "code": "jkvv",
+      "action": "changed",
+      "before": [
+        "腈",
+        "颈椎"
+      ],
+      "after": [
+        "颈椎",
+        "腈"
+      ]
+    },
+    {
+      "decision": "G8C12-W199",
+      "code": "yjmp",
+      "action": "changed",
+      "before": [
+        "蜒",
+        "湮灭"
+      ],
+      "after": [
+        "湮灭",
+        "蜒"
+      ]
+    },
+    {
+      "decision": "G8C12-W200",
+      "code": "yiyz",
+      "action": "changed",
+      "before": [
+        "𫖮",
+        "已有",
+        "亦有",
+        "益友"
+      ],
+      "after": [
+        "已有",
+        "𫖮",
+        "亦有",
+        "益友"
+      ]
+    },
+    {
+      "decision": "G8C12-W201",
+      "code": "yjba",
+      "action": "changed",
+      "before": [
+        "沇",
+        "盐巴",
+        "演"
+      ],
+      "after": [
+        "盐巴",
+        "沇",
+        "演"
+      ]
+    },
+    {
+      "decision": "G8C12-W202",
+      "code": "yzkv",
+      "action": "changed",
+      "before": [
+        "铕",
+        "有愧"
+      ],
+      "after": [
+        "有愧",
+        "铕"
+      ]
+    },
+    {
+      "decision": "G8C12-W203",
+      "code": "dcys",
+      "action": "changed",
+      "before": [
+        "鱽",
+        "盗用",
+        "到"
+      ],
+      "after": [
+        "盗用",
+        "鱽",
+        "到"
+      ]
+    },
+    {
+      "decision": "G8C12-W204",
+      "code": "iubk",
+      "action": "changed",
+      "before": [
+        "濋",
+        "出兵"
+      ],
+      "after": [
+        "出兵",
+        "濋"
+      ]
+    },
+    {
+      "decision": "G8C12-W205",
+      "code": "yhmk",
+      "action": "changed",
+      "before": [
+        "蛘",
+        "扬名"
+      ],
+      "after": [
+        "扬名",
+        "蛘"
+      ]
+    },
+    {
+      "decision": "G8C12-W206",
+      "code": "lkzy",
+      "action": "changed",
+      "before": [
+        "鸰",
+        "令尊"
+      ],
+      "after": [
+        "令尊",
+        "鸰"
+      ]
+    },
+    {
+      "decision": "G8C12-W207",
+      "code": "yumn",
+      "action": "changed",
+      "before": [
+        "蜮",
+        "鱼苗",
+        "育苗"
+      ],
+      "after": [
+        "鱼苗",
+        "蜮",
+        "育苗"
+      ]
+    },
+    {
+      "decision": "G8C12-W208",
+      "code": "hokr",
+      "action": "changed",
+      "before": [
+        "钬",
+        "货款"
+      ],
+      "after": [
+        "货款",
+        "钬"
+      ]
+    },
+    {
+      "decision": "G8C12-W209",
+      "code": "vizy",
+      "action": "changed",
+      "before": [
+        "跱",
+        "至尊"
+      ],
+      "after": [
+        "至尊",
+        "跱"
+      ]
+    },
+    {
+      "decision": "G8C12-W210",
+      "code": "xpbo",
+      "action": "changed",
+      "before": [
+        "渫",
+        "血泊",
+        "泄",
+        "谐波"
+      ],
+      "after": [
+        "血泊",
+        "渫",
+        "泄",
+        "谐波"
+      ]
+    },
+    {
+      "decision": "G8C12-W211",
+      "code": "jyxq",
+      "action": "changed",
+      "before": [
+        "葰",
+        "俊秀"
+      ],
+      "after": [
+        "俊秀",
+        "葰"
+      ]
+    },
+    {
+      "decision": "G8C12-W212",
+      "code": "uiyy",
+      "action": "changed",
+      "before": [
+        "鲥",
+        "峙",
+        "时运",
+        "示",
+        "诗云",
+        "事出有因"
+      ],
+      "after": [
+        "时运",
+        "鲥",
+        "峙",
+        "示",
+        "诗云",
+        "事出有因"
+      ]
+    },
+    {
+      "decision": "G8C12-W213",
+      "code": "piid",
+      "action": "changed",
+      "before": [
+        "譬",
+        "劈柴"
+      ],
+      "after": [
+        "劈柴",
+        "譬"
+      ]
+    },
+    {
+      "decision": "G8C12-W214",
+      "code": "jixq",
+      "action": "changed",
+      "before": [
+        "芰",
+        "芨",
+        "机修",
+        "藉"
+      ],
+      "after": [
+        "机修",
+        "芰",
+        "芨",
+        "藉"
+      ]
+    },
+    {
+      "decision": "G8C12-W215",
+      "code": "yjsr",
+      "action": "changed",
+      "before": [
+        "黡",
+        "盐酸",
+        "演算",
+        "验算"
+      ],
+      "after": [
+        "盐酸",
+        "黡",
+        "演算",
+        "验算"
+      ]
+    },
+    {
+      "decision": "G8C12-W216",
+      "code": "lama",
+      "action": "changed",
+      "before": [
+        "鞡",
+        "喇嘛",
+        "辣妈"
+      ],
+      "after": [
+        "喇嘛",
+        "鞡",
+        "辣妈"
+      ]
+    },
+    {
+      "decision": "G8C12-W217",
+      "code": "yuiy",
+      "action": "changed",
+      "before": [
+        "尉",
+        "愚蠢",
+        "鱼唇"
+      ],
+      "after": [
+        "愚蠢",
+        "尉",
+        "鱼唇"
+      ]
+    },
+    {
+      "decision": "G8C12-W218",
+      "code": "jpfa",
+      "action": "changed",
+      "before": [
+        "价",
+        "揭发",
+        "解法",
+        "解乏"
+      ],
+      "after": [
+        "揭发",
+        "价",
+        "解法",
+        "解乏"
+      ]
+    },
+    {
+      "decision": "G8C12-W219",
+      "code": "juee",
+      "action": "changed",
+      "before": [
+        "醵",
+        "车",
+        "巨额"
+      ],
+      "after": [
+        "巨额",
+        "醵",
+        "车"
+      ]
+    },
+    {
+      "decision": "G8C12-W220",
+      "code": "uely",
+      "action": "changed",
+      "before": [
+        "折",
+        "社论"
+      ],
+      "after": [
+        "社论",
+        "折"
+      ]
+    },
+    {
+      "decision": "G8C12-W221",
+      "code": "lcxq",
+      "action": "changed",
+      "before": [
+        "落",
+        "老朽"
+      ],
+      "after": [
+        "老朽",
+        "落"
+      ]
+    },
+    {
+      "decision": "G8C12-W222",
+      "code": "iiii",
+      "action": "unchanged_decision",
+      "before": [
+        "尺",
+        "迟迟",
+        "痴痴",
+        "吃吃"
+      ],
+      "after": [
+        "尺",
+        "迟迟",
+        "痴痴",
+        "吃吃"
+      ]
+    },
+    {
+      "decision": "G8C12-W223",
+      "code": "yimn",
+      "action": "unchanged_decision",
+      "before": [
+        "蚁",
+        "疫苗",
+        "一秒"
+      ],
+      "after": [
+        "蚁",
+        "疫苗",
+        "一秒"
+      ]
+    },
+    {
+      "decision": "G8C12-W224",
+      "code": "yrlc",
+      "action": "already_satisfied",
+      "before": [
+        "元老",
+        "怨"
+      ],
+      "after": [
+        "元老",
+        "怨"
+      ]
+    },
+    {
+      "decision": "G8C12-W225",
+      "code": "qimg",
+      "action": "unchanged_decision",
+      "before": [
+        "欺",
+        "启蒙"
+      ],
+      "after": [
+        "欺",
+        "启蒙"
+      ]
+    },
+    {
+      "decision": "G8C12-W226",
+      "code": "ielq",
+      "action": "unchanged_decision",
+      "before": [
+        "撤",
+        "车流"
+      ],
+      "after": [
+        "撤",
+        "车流"
+      ]
+    },
+    {
+      "decision": "G8C12-W227",
+      "code": "julh",
+      "action": "unchanged_decision",
+      "before": [
+        "拘",
+        "巨浪"
+      ],
+      "after": [
+        "拘",
+        "巨浪"
+      ]
+    },
+    {
+      "decision": "G8C12-W228",
+      "code": "jmxm",
+      "action": "unchanged_decision",
+      "before": [
+        "茧",
+        "艰险",
+        "剑仙"
+      ],
+      "after": [
+        "茧",
+        "艰险",
+        "剑仙"
+      ]
+    },
+    {
+      "decision": "G8C12-W229",
+      "code": "yull",
+      "action": "unchanged_decision",
+      "before": [
+        "俞",
+        "揄",
+        "雨量",
+        "余粮",
+        "余量",
+        "衣衫褴褛"
+      ],
+      "after": [
+        "俞",
+        "揄",
+        "雨量",
+        "余粮",
+        "余量",
+        "衣衫褴褛"
+      ]
+    },
+    {
+      "decision": "G8C12-W230",
+      "code": "yuuh",
+      "action": "unchanged_decision",
+      "before": [
+        "裕",
+        "遇上"
+      ],
+      "after": [
+        "裕",
+        "遇上"
+      ]
+    },
+    {
+      "decision": "G8C12-W231",
+      "code": "yuan",
+      "action": "changed",
+      "before": [
+        "虞",
+        "饫",
+        "预案"
+      ],
+      "after": [
+        "预案",
+        "虞",
+        "饫"
+      ]
+    },
+    {
+      "decision": "G8C12-W232",
+      "code": "yrtn",
+      "action": "unchanged_decision",
+      "before": [
+        "垣",
+        "远眺",
+        "袁"
+      ],
+      "after": [
+        "垣",
+        "远眺",
+        "袁"
+      ]
+    }
+  ],
+  "outputs": {
+    "夜莺0.85_G8C12挂接版_无简词_v1.txt": "e31d22e00fa288d87ea9096ee28b77c48b56447afb2297e0ef0b7521ec906e2f",
+    "夜莺0.85_G8C12挂接版_无简词_v1_搜狗词库版.txt": "da074fb4f806a6b69e289e253d3ca24978ee3c4c90fa902f45db2d5f77ce1b36"
+  }
+}

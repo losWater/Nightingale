@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "inputs": {
+    "D:\\nightingale\\work\\夜莺0.85\\03_第二届32强\\G8C12_单字码表\\C12_seed_868011\\纯单字试用表.txt": "02f8bf541cfb7086d43fb1b52f7da573a7c523deff91dd747e99a79e3cf45781",
+    "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\G8C12_显式码位操作.tsv": "b82e793a6d3e564d9e3763b04000f1e1b15f9f0d2da4982da9fb4894be9ccef2"
+  },
+  "base_slots": 12998,
+  "base_entries": 13556,
+  "result_slots": 13003,
+  "result_entries": 13564,
+  "target_slots": 30,
+  "changes": [
+    {
+      "operation": "G8-OP001",
+      "source": "G8C12-C001",
+      "code": "uuo",
+      "before": [
+        "树"
+      ],
+      "after": [
+        "术"
+      ],
+      "note": "三码由树改给术"
+    },
+    {
+      "operation": "G8-OP002",
+      "source": "G8C12-C001",
+      "code": "uuoy",
+      "before": [
+        "树"
+      ],
+      "after": [
+        "树"
+      ],
+      "note": "树退回自身全码"
+    },
+    {
+      "operation": "G8-OP003",
+      "source": "G8C12-C001",
+      "code": "uuoa",
+      "before": [
+        "术",
+        "疏",
+        "梳",
+        "书"
+      ],
+      "after": [
+        "疏",
+        "梳",
+        "术",
+        "书"
+      ],
+      "note": "疏梳为实际全码候选，术书按出简让全追加"
+    },
+    {
+      "operation": "G8-OP004",
+      "source": "G8C12-C002",
+      "code": "yif",
+      "before": [
+        "亿"
+      ],
+      "after": [
+        "依"
+      ],
+      "note": "亿退全码后依取得三码"
+    },
+    {
+      "operation": "G8-OP005",
+      "source": "G8C12-C002",
+      "code": "yifl",
+      "before": [
+        "亿"
+      ],
+      "after": [
+        "亿"
+      ],
+      "note": "亿回到自身全码"
+    },
+    {
+      "operation": "G8-OP006",
+      "source": "G8C12-C002",
+      "code": "yifn",
+      "before": [
+        "依",
+        "仪"
+      ],
+      "after": [
+        "仪",
+        "依"
+      ],
+      "note": "仪首选，依保留全码次选"
+    },
+    {
+      "operation": "G8-OP007",
+      "source": "G8C12-C003",
+      "code": "yic",
+      "before": [
+        "怡"
+      ],
+      "after": [
+        "忆"
+      ],
+      "note": "怡退全码后忆取得三码"
+    },
+    {
+      "operation": "G8-OP008",
+      "source": "G8C12-C003",
+      "code": "yich",
+      "before": [
+        "怡"
+      ],
+      "after": [
+        "怡"
+      ],
+      "note": "怡回到自身全码"
+    },
+    {
+      "operation": "G8-OP009",
+      "source": "G8C12-C003",
+      "code": "yicl",
+      "before": [
+        "忆",
+        "驿",
+        "怿"
+      ],
+      "after": [
+        "驿",
+        "怿",
+        "忆"
+      ],
+      "note": "驿怿为实际全码候选，忆按出简让全追加"
+    },
+    {
+      "operation": "G8-OP010",
+      "source": "G8C12-C004",
+      "code": "qiyq",
+      "before": [
+        "鳍",
+        "岐"
+      ],
+      "after": [
+        "岐",
+        "鳍"
+      ],
+      "note": "交换鳍岐候选顺序"
+    },
+    {
+      "operation": "G8-OP011",
+      "source": "G8C12-C005",
+      "code": "yusa",
+      "before": [
+        "於",
+        "瘀"
+      ],
+      "after": [
+        "瘀",
+        "於"
+      ],
+      "note": "交换於瘀候选顺序"
+    },
+    {
+      "operation": "G8-OP012",
+      "source": "G8C12-C006",
+      "code": "jm",
+      "before": [
+        "间"
+      ],
+      "after": [
+        "见"
+      ],
+      "note": "见晋升二简"
+    },
+    {
+      "operation": "G8-OP013",
+      "source": "G8C12-C006",
+      "code": "jmw",
+      "before": [
+        "戬"
+      ],
+      "after": [
+        "间"
+      ],
+      "note": "间降为三码"
+    },
+    {
+      "operation": "G8-OP014",
+      "source": "G8C12-C006",
+      "code": "jmwq",
+      "before": [
+        "间"
+      ],
+      "after": [
+        "间"
+      ],
+      "note": "间保留自身全码"
+    },
+    {
+      "operation": "G8-OP015",
+      "source": "G8C12-C006",
+      "code": "jmwr",
+      "before": [
+        "戬"
+      ],
+      "after": [
+        "戬"
+      ],
+      "note": "戬退回自身全码"
+    },
+    {
+      "operation": "G8-OP016",
+      "source": "G8C12-C006",
+      "code": "jmz",
+      "before": [
+        "见"
+      ],
+      "after": [
+        "贱"
+      ],
+      "note": "贱取得三码"
+    },
+    {
+      "operation": "G8-OP017",
+      "source": "G8C12-C006",
+      "code": "jmzz",
+      "before": [
+        "见"
+      ],
+      "after": [
+        "见"
+      ],
+      "note": "见保留自身全码"
+    },
+    {
+      "operation": "G8-OP018",
+      "source": "G8C12-C006",
+      "code": "jmzr",
+      "before": [
+        "贱",
+        "践"
+      ],
+      "after": [
+        "践",
+        "贱"
+      ],
+      "note": "践首选，贱按出简让全追加"
+    },
+    {
+      "operation": "G8-OP019",
+      "source": "G8C12-C007",
+      "code": "qiba",
+      "before": [
+        "淇",
+        "泣"
+      ],
+      "after": [
+        "泣",
+        "淇"
+      ],
+      "note": "交换淇泣候选顺序"
+    },
+    {
+      "operation": "G8-OP020",
+      "source": "G8C12-C008",
+      "code": "pii",
+      "before": [
+        "屁"
+      ],
+      "after": [
+        "劈"
+      ],
+      "note": "屁退全码后劈取得三码"
+    },
+    {
+      "operation": "G8-OP021",
+      "source": "G8C12-C008",
+      "code": "piis",
+      "before": [
+        "劈",
+        "辟"
+      ],
+      "after": [
+        "辟",
+        "劈"
+      ],
+      "note": "辟首选，劈按出简让全追加"
+    },
+    {
+      "operation": "G8-OP022",
+      "source": "G8C12-C008",
+      "code": "piit",
+      "before": [
+        "屁"
+      ],
+      "after": [
+        "屁"
+      ],
+      "note": "屁退回自身全码"
+    },
+    {
+      "operation": "G8-OP023",
+      "source": "G8C12-U001",
+      "code": "jicp",
+      "before": [
+        "即"
+      ],
+      "after": [
+        "骥",
+        "即"
+      ],
+      "note": "骥无理码首选，即按出简让全保留"
+    },
+    {
+      "operation": "G8-OP024",
+      "source": "G8C12-U002",
+      "code": "jice",
+      "before": [],
+      "after": [
+        "霁"
+      ],
+      "note": "霁新增空码无理码"
+    },
+    {
+      "operation": "G8-OP025",
+      "source": "G8C12-U003",
+      "code": "jxph",
+      "before": [
+        "加"
+      ],
+      "after": [
+        "迦",
+        "加"
+      ],
+      "note": "迦取内部加的全码，加按出简让全保留"
+    },
+    {
+      "operation": "G8-OP026",
+      "source": "G8C12-U004",
+      "code": "hjow",
+      "before": [
+        "函"
+      ],
+      "after": [
+        "涵",
+        "函"
+      ],
+      "note": "涵取内部函的全码，函按出简让全保留"
+    },
+    {
+      "operation": "G8-OP027",
+      "source": "G8C12-U005",
+      "code": "qiyp",
+      "before": [],
+      "after": [
+        "鳍"
+      ],
+      "note": "鳍顺取鱼与耂所得空码"
+    },
+    {
+      "operation": "G8-OP028",
+      "source": "G8C12-U006",
+      "code": "wuff",
+      "before": [],
+      "after": [
+        "侮"
+      ],
+      "note": "侮顺取亻与卧人所得空码"
+    },
+    {
+      "operation": "G8-OP029",
+      "source": "G8C12-U007",
+      "code": "jmra",
+      "before": [],
+      "after": [
+        "箭"
+      ],
+      "note": "箭顺取竹与八所得空码"
+    },
+    {
+      "operation": "G8-OP030",
+      "source": "G8C12-U008",
+      "code": "jxfp",
+      "before": [],
+      "after": [
+        "伽"
+      ],
+      "note": "伽顺取亻与力所得空码"
+    }
+  ],
+  "outputs": {
+    "夜莺0.85_G8C12正式单字码表_v4.txt": "0e461ff78c144c4e1abf6d6210a31621b66f20070170b48356ddc9c638d58a00",
+    "夜莺0.85_G8C12正式单字码表_v4_搜狗.txt": "144c58627dfcc32dd6588b375d3952b326328a590b8de4471a83dcaa9f6d6063"
+  }
+}

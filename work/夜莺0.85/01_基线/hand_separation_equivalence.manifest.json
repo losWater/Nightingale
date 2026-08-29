@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "purpose": "phonetic-shape hand separation",
+  "left": "acdefgqrstvwxz",
+  "right": "bhijklmnopuy",
+  "b_hand": "right",
+  "same_hand_cost": 1,
+  "cross_hand_cost": 0,
+  "rows": 676,
+  "output": "D:\\nightingale\\work\\夜莺0.85\\01_基线\\hand_separation_equivalence.txt",
+  "sha256": "bae5cabb8c244dc9ed3156823defa1b097897f86761a699dfe686a6f56b4d289"
+}
