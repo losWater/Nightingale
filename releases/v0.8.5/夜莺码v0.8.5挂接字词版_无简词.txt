@@ -86,7 +86,7 @@
 都	dz
 额	ee
 欸	ei
-恩	en
+嗯	en
 二	er
 法	fa
 分	ff
@@ -1096,7 +1096,7 @@
 莪	eex
 鳄	eey
 娥	eez
-嗯	enh
+恩	ene
 摁	enl
 蒽	enx
 儿	era

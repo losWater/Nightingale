@@ -1,6 +1,7 @@
 操作编号	裁决来源	操作	码	最终候选	说明
-G8-OP035	G8C12-C010	SET_SLOT	enh	嗯	嗯新增en读音身份，按口与忄得到自然三码
-G8-OP036	G8C12-C010	SET_SLOT	enhc	嗯	嗯新增en读音身份的保留全码
+G8-OP035	G8C12-C011	SET_SLOT	en	嗯	嗯取得en二简，恩退出该码位
+G8-OP036	G8C12-C011	SET_SLOT	enhc	嗯	嗯取得二简后保留en身份自然全码
+G8-OP037	G8C12-C011	SET_SLOT	ene	恩	恩从en二简退到自然三码
 G8-OP001	G8C12-C001	SET_SLOT	uuo	术	三码由树改给术
 G8-OP002	G8C12-C001	SET_SLOT	uuoy	树	树退回自身全码
 G8-OP003	G8C12-C001	SET_SLOT	uuoa	疏/梳/术/书	疏梳为实际全码候选，术书按出简让全追加
