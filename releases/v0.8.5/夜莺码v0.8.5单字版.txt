@@ -1096,6 +1096,7 @@ eew	恶
 eex	莪
 eey	鳄
 eez	娥
+enh	嗯
 enl	摁
 enx	蒽
 era	儿
@@ -6180,6 +6181,7 @@ eezr	娥
 eezy	婀
 eitg	欸
 enec	恩
+enhc	嗯
 enlc	摁
 enxc	蒽
 eraa	儿

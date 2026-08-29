@@ -1096,6 +1096,7 @@
 莪	eex
 鳄	eey
 娥	eez
+嗯	enh
 摁	enl
 蒽	enx
 儿	era
@@ -17581,6 +17582,7 @@
 恩	enec
 恩恩	enen
 恩公	engs
+嗯	enhc
 恩惠	enhv
 儿女成行	enih
 儿女成群	eniq

@@ -300,7 +300,7 @@ def main() -> None:
     lookup, char_count, split_count = build_lookup(
         args.single, args.splits, args.release, args.practice_template, args.repo / "data/jdhe/ChaiPUA.ttf"
     )
-    reverse_lookup, reverse_code_count, reverse_entry_count = build_reverse_lookup(
+    reverse_code_count, reverse_entry_count = build_reverse_lookup(
         args.combined, args.release / "夜莺码v0.8.5编码反查.html"
     )
 
