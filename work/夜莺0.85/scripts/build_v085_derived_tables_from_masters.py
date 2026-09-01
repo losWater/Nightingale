@@ -156,6 +156,15 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def source_key(path: Path, repository: Path) -> str:
+    """用仓库相对路径记录真源，避免发布清单绑定某台机器。"""
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(repository).as_posix()
+    except ValueError:
+        return resolved.as_posix()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--single", type=Path, required=True)
@@ -205,11 +214,12 @@ def main() -> None:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     for legacy_name in ("夜莺码v0.8.5单字版_搜狗.txt", "夜莺码v0.8.5单字版_搜狗_含快符.txt"):
         manifest["outputs"].pop(legacy_name, None)
+    repository = args.release_dir.resolve().parents[1]
     manifest["derived_from_masters"] = {
-        str(args.single.resolve()): sha256(args.single),
-        str(args.combined.resolve()): sha256(args.combined),
-        str(args.quick.resolve()): sha256(args.quick),
-        str(args.short_words.resolve()): sha256(args.short_words),
+        source_key(args.single, repository): sha256(args.single),
+        source_key(args.combined, repository): sha256(args.combined),
+        source_key(args.quick, repository): sha256(args.quick),
+        source_key(args.short_words, repository): sha256(args.short_words),
     }
     for name in list(manifest["outputs"]):
         output_path = args.release_dir / name
@@ -226,7 +236,7 @@ def main() -> None:
         manifest["outputs"][short_word_name] = sha256(args.short_words)
     extension_name = None
     if args.extension_characters:
-        manifest["derived_from_masters"][str(args.extension_characters.resolve())] = sha256(args.extension_characters)
+        manifest["derived_from_masters"][source_key(args.extension_characters, repository)] = sha256(args.extension_characters)
         try:
             extension_name = args.extension_characters.resolve().relative_to(args.release_dir.resolve()).as_posix()
         except ValueError:
@@ -235,7 +245,11 @@ def main() -> None:
         manifest["outputs"][extension_name] = sha256(args.extension_characters)
     else:
         manifest["outputs"].pop("夜莺码v0.8.5扩展字表.tsv", None)
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     print(
         f"single_master={len(single_rows)} combined_master={len(combined_rows)} "
         f"short_words={len(short_words)} extension_characters={len(extension_characters)} quick={len(quick)} "

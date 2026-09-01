@@ -36,14 +36,14 @@ def main() -> None:
     if count != 1 and text.count('["秉",""]') != 1:
         raise SystemExit("字根表中秉条目数异常")
     text = re.sub(r'(\["毛",")[^"]*("\])', r'\1\2', text, count=1)
-    root_table.write_text(text, encoding="utf-8")
+    root_table.write_text(text, encoding="utf-8", newline="\n")
 
     practice = TOOLS / "夜莺码v0.8.5字根练习.txt"
     practice_text = practice.read_text(encoding="utf-8")
     practice_text, count = re.subn(r'^毛\tm\t.*$', '毛\tm\t', practice_text, count=1, flags=re.M)
     if count != 1:
         raise SystemExit("字根练习表中未找到毛根")
-    practice.write_text(practice_text, encoding="utf-8")
+    practice.write_text(practice_text, encoding="utf-8", newline="\n")
 
     manifest_path = RELEASE / "发布清单.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -59,7 +59,11 @@ def main() -> None:
         and path != manifest_path
         and "99_参考资料" not in path.relative_to(RELEASE).parts
     }
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     print("字根表与发布清单已刷新")
 
 

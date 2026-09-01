@@ -64,10 +64,10 @@
     "03_字根与拆分/夜莺码 v0.8.5 字根表含附属.pdf": "523ec62aef712eda3f6b347e7131fb906a1da5eaf46db1c20c49366071212d34",
     "03_字根与拆分/夜莺码 v0.8.5 字根表含附属_01.png": "1bc1a099f082665034c74eed18713244f75168c4d0e9a4626a657971f3158d98",
     "03_字根与拆分/夜莺码v0.8.5字架说明.txt": "c1f8c85236004fce942ba33b8d31697091f6b1543c33dd535e332a3e61dac06b",
-    "03_字根与拆分/夜莺码v0.8.5字根表.html": "12a56d2c2ee202e2d7562e1fc5b0cdbbbe4e3d2a6e428b849726fae302087c07",
+    "03_字根与拆分/夜莺码v0.8.5字根表.html": "cf997de8bd69144fb1faa6cd5dbed837a895a5d4b668fc366289e2f510eafb7d",
     "03_字根与拆分/夜莺鹤0.8.5拆分表.html": "598ed4da090c2d1a22f8e5d81eaca2cc3a9b87d2f38d46ebfb7b7195654ee1fb",
     "03_字根与拆分/夜莺鹤0.8.5拆分表.txt": "a686737a88e55a4c3beeffb66075886d2c8e0edf32921cedaa59629f53de4fc8",
-    "04_查询与练习/夜莺码v0.8.5字根练习.txt": "435cbbb11eeeaa8d2d9dcb059300202aa99cdb1599cb1cb7a40d5cc1dbe39b1d",
+    "04_查询与练习/夜莺码v0.8.5字根练习.txt": "00a9dfb282be73d6bed8f72c0f60da32fbdf3955443832b4ceb62639a6bafaad",
     "04_查询与练习/夜莺码v0.8.5字根练习器.html": "f48ecfcd3d168e17f0e788c09f34b16fdedb4f1809679b2a6feb95f98679cf98",
     "04_查询与练习/夜莺码v0.8.5拆分查询.html": "a38800f1907188ff1217c231a32af7d14826201486b1828f23b85eb30e0927c8",
     "04_查询与练习/夜莺码v0.8.5编码反查.html": "435f78aa6febf33f4715e098f341d67d2af3226899e8a98a7e930b65faff332b",
@@ -90,10 +90,10 @@
     "README.md": "5e6f1256476595c7cdadab3bcddb6fb78116175c4c67ee794c2e0d0a0b8e5e38"
   },
   "derived_from_masters": {
-    "D:\\nightingale\\releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5单字版.txt": "f20de35a656ca3282f4abf4e241376dabc24e0654eae7bb8d57341ea8d35e705",
-    "D:\\nightingale\\releases\\v0.8.5\\01_正式码表\\夜莺0.8.5字词表.txt": "a46772d00d3e02871c250209d1fa0b2414c00c5e5fb0368466a0f31b8b168c32",
-    "D:\\nightingale\\symbo.txt": "356e07bf2ff8bb0d18a79d1ab17688aa86e803d905b1d2c67e22a776993a8ddf",
-    "D:\\nightingale\\releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5简词表.tsv": "ce52dc3e025cf155a73ab54af1dd4e56639d4a18f53a188005d5620815ed4267",
-    "D:\\nightingale\\releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5扩展字表.tsv": "686e98011de82a86e2906c439c43be619a6dc3e593e78d02206963eb03a80e2f"
+    "releases/v0.8.5/01_正式码表/夜莺码v0.8.5单字版.txt": "f20de35a656ca3282f4abf4e241376dabc24e0654eae7bb8d57341ea8d35e705",
+    "releases/v0.8.5/01_正式码表/夜莺0.8.5字词表.txt": "a46772d00d3e02871c250209d1fa0b2414c00c5e5fb0368466a0f31b8b168c32",
+    "symbo.txt": "356e07bf2ff8bb0d18a79d1ab17688aa86e803d905b1d2c67e22a776993a8ddf",
+    "releases/v0.8.5/01_正式码表/夜莺码v0.8.5简词表.tsv": "ce52dc3e025cf155a73ab54af1dd4e56639d4a18f53a188005d5620815ed4267",
+    "releases/v0.8.5/01_正式码表/夜莺码v0.8.5扩展字表.tsv": "686e98011de82a86e2906c439c43be619a6dc3e593e78d02206963eb03a80e2f"
   }
 }
