@@ -32,3 +32,25 @@ data/raw/fuzhuma-wiki/
 夜莺B/work/analysis_config.yaml
 夜莺B/work/.candidate_check/
 夜莺B/work/.rule_audit/
+
+# 0.8.5 实战维护脚本生成的逐次回滚备份；正式裁决保存在发布参数表中。
+work/夜莺0.85/11_实战问题修复备份/
+
+# 0.8.6 实验的完整候选码表可由脚本重建，只保留摘要、指标与清单。
+work/夜莺0.86/**/R*_*/
+
+# 夜莺B 的退火与批量验证运行目录（通常数百 MB 至数 GB）。
+夜莺B/work/*_runs/
+
+# 临时分析接口与拆分缓存。
+夜莺B/work/.frame_elements.tsv
+夜莺B/work/.frame_elements.tsv.splits.tsv
+夜莺B/work/.frame_elements.txt
+
+# 重构时就地保存的历史运行现场，仅供本机考古。
+archive/experiment-runs/
+work/重开工程/05_退火实验/
+
+# 0.8.5 海量参数卡与比赛全量运行结果；保留精选正式卡、裁决和报告。
+work/夜莺0.85/02_参数实验/
+work/夜莺0.85/03_第二届32强/

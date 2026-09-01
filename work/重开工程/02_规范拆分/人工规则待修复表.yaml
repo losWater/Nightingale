@@ -1,0 +1,66 @@
+schema_version: 1
+description: >-
+  记录人工规范拆分规则自身的错误。本表只是待修复队列，
+  不会自动修改人工规则、8105字待核验表或退火元素表。
+
+pending_rule_fixes:
+  - id: RULE-0001
+    target: 我
+    layer: component_split_rule
+    status: applied_and_persistence_verified
+    detected_at: "2026-08-27 22:18 +10:00"
+    current_rule: [我四, 戈]
+    confirmed_facts:
+      - 当前人工规则为[我四,戈]
+      - 我四存在于hanzi-chai字库，但不属于当前夜莺根集、附属根或锚定根
+      - 当前8105字待核验表中“我”的最终结果为[戈]
+    causal_hypothesis: >-
+      推测是人工规则引用了非根“我四”，导致 Chai 在取根时无法保留该部分，
+      进而生成只有[戈]的结果。该因果关系尚未通过单规则反事实运行验证。
+    verification_result: >-
+      将规则替换为[撇,横,折,横,戈]后，完整重生成得到预期序列；随后继续修改
+      另一条规则并连续重生成两次，该结果均未回退。该反事实结果支持原因果假设，
+      但不把Chai内部丢失“我四”的具体机制记为已经完全证明。
+    applied_at: "2026-08-27 23:05 +10:00"
+    raw_structure: [平撇, 横, 竖钩, 提, 戈]
+    expected_rule: [撇, 横, 折, 横, 戈]
+    normalization: {平撇: 撇, 横: 横, 竖钩: 折, 提: 横, 戈: 戈}
+    expected_head_root: 撇
+    expected_tail_root: 戈
+    downstream_issue: SPLIT-0001
+    causal_verification:
+      - 使用同一根集与字集，分别运行当前规则和候选规则
+      - 确认将规则改为[撇,横,折,横,戈]后，“我”的完整根序列和首末根按预期改变
+      - 确认除预期传播用户外没有非预期变化
+    acceptance:
+      - 单规则反事实证实或否定上述因果推测
+      - 因果验证通过后，正式人工规范拆分中“我”精确为[撇,横,折,横,戈]
+      - 新生成的8105字规范拆分表中“我”的首根为撇、末根为戈
+      - 新退火元素表中所有“我”的字音条目都使用撇和戈作为形码首末根
+      - 修改其他规则并重新生成后，上述结果仍不回退
+  - id: RULE-0002
+    target: 虎字头
+    layer: component_split_rule
+    status: applied_and_persistence_verified
+    detected_at: "2026-08-27 22:38 +10:00"
+    current_rule: {虭: [卜, 厂, 匕]}
+    confirmed_facts:
+      - 历史参考规则的左侧为虍
+      - 重开工程待验收规则的左侧误写为虭
+      - ONLY-P反事实中虭规则对8105字集零命中，且虭本字仍拆为[虫,刀]
+      - 虎字头家族在ALL重跑中未得到期望的[卜,厂,匕]结构
+    cause: 人工规则迁移时发生字符误录，将虍写成虭
+    applied_at: "2026-08-27 23:05 +10:00"
+    verification_result:
+      - 虍本部件ONLY-P直接结果为[卜,厂,匕]
+      - 规则传播至8105字集中的39个字
+      - 我字修复在本次修改后未回退
+      - 不修改规则再次完整生成，TSV与前次结果SHA-256完全一致
+    expected_rule: {虍: [卜, 厂, 匕]}
+    must_not_change_yet:
+      - 02_规范拆分/人工规范拆分_待验收.yaml
+      - 02_规范拆分/最终规范拆分表_待核验.tsv
+    acceptance:
+      - 修正后虍本部件的规范结构为[卜,厂,匕]
+      - 虎字头家族产生预期命中，虭本字不再被误作为规则目标
+      - ALL与ONLY-P均无非预期传播

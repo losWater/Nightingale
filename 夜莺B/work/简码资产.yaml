@@ -1,0 +1,137 @@
+# 夜莺 B 人工简码资产。键位按 QWERTY；不是按字频自动生成。
+# 字根字可选捷径：保留 abxx 主码，同时在 abx 的二选补入字根字。
+root_char_three_secondary: true
+
+# 搜狗挂接时为系统词候选预留的前置空位；纯单通用码表不受影响。
+sogou_candidate_offsets:
+  xkfa: 1  # 刑法／刑罚首选；省的 xǐng 入口让位，常用 shěng 另有 ugf
+  uizo: 1  # 诗作／视作首选；似的 shì 为冷门入口，常用 sì 另走 sizo
+  wwyr: 1  # 委员／惟愿首选；卫取得三码 wwy，微退回 wwyg
+  vuqr: 1  # 主权／猪圈等系统词首选；贮二选、苎三选
+  yian: 1  # 议案／疑案等系统词首选；椅另有顺取主码 yiav
+  yivj: 1  # 驿站／一战等系统词首选；怡的自然容错码二选
+  bclo: 1  # 保罗／剥落／包罗等系统词首选；刨另有常用读音三码 pcl
+  yutn: 1  # 语调系统词首选；尉的常见读音另走 wwtn
+  yijk: 1  # “已经”等极高频系统词首选；咿退居二选
+  wumd: 1  # 雾霾系统词首选；机器人宝频显示诬的独立单打频率明显更低
+  liqk: 1  # 沥青／理清／厘清等系统词首选；荔高度词组化
+  qiya: 1  # 气压／欺压等系统词首选；鳍高度词组化
+  viya: 1  # 质押／枝丫／吱呀等系统词首选；酯退后
+  svyr: 1  # 随缘／随员／绥远等系统词首选；隋退后
+  doda: 1  # “多大”口语频率很高；朵退后
+  qkcv: 1  # 清脆／青翠等系统词首选；庆另取得三码 qkc
+  luyb: 1  # 录音首选；陆恢复三码 luy，鲁退回 luya
+  wudh: 1  # 武当首选；舞取得三码 wud，午退回干净全码 wudb
+  yuee: 1  # 余额首选；俞取得三码 yue，愈退回干净全码 yuev
+  qule: 1  # 取乐首选；区退到三码 qul
+  qumm: 1  # 曲面首选；娶取得三码 qum
+  wwtn: 1  # 微调首选；尉（wèi）补到 wwt 二选，尾仍为一选
+  qiug: 1  # 齐声首选；岐补到 qiu 二选，气仍为一选
+  ddzu: 1  # 傣族首选；岱取得三码 ddz，代升二简 dd，带退到 ddq
+  yudy: 1  # 愚钝首选；毓生僻，直接后置且不补三码
+  jicd: 1  # 荠菜／集采优先；矶独立单打低频，后置且不补三码
+  lqcy: 1  # 留存首选；硫取得三码 lqc，瘤退回干净全码 lqca
+  jixq: 1  # 机修首选；祭取得三码 jix，冀退回干净全码 jixv
+  jmmo: 1  # 建模首选；箭另有顺取主码 jmmv，自然码保留为二选容错
+  jnfg: 1  # 交锋首选；缴取得三码 jnf，绞退回干净全码 jnfe
+  yigj: 1  # 乙肝首选；裔另有顺取主码 yigl，自然码保留为二选容错
+  djmo: 1  # 淡漠／石墨等词首选；诞取得三码 djm，耽退回干净全码 djmn
+
+# 无候选序号的普通纯单码表，用可见符号占住准备让给词的候选位。
+# 搜狗序号表和字词混合表不得收入这些占位符。
+plain_table_placeholders:
+  xkfa: "①"
+  uizo: "①"
+  wwyr: "①"
+  vuqr: "①"
+  yian: "①"
+  yivj: "①"
+  bclo: "①"
+  yutn: "①"
+  yijk: "①"
+  wumd: "①"
+  liqk: "①"
+  qiya: "①"
+  viya: "①"
+  svyr: "①"
+  doda: "①"
+  qkcv: "①"
+  luyb: "①"
+  wudh: "①"
+  yuee: "①"
+  qule: "①"
+  qumm: "①"
+  wwtn: "①"
+  qiug: "①"
+  ddzu: "①"
+  yudy: "①"
+  jicd: "①"
+  lqcy: "①"
+  jixq: "①"
+  jmmo: "①"
+  jnfg: "①"
+  yigj: "①"
+  djmo: "①"
+
+# 综合字词表中，人工让位码明确指定唯一获得首选的词；避免词库重排改变裁决。
+# 未列出的人工／自动让位码仍取精选二字词表中排名最高的一词。
+word_first_overrides:
+  jmmo: 建模
+
+# 人工词位让出补偿码：指定字在让出四码首选后，补到其三码二选。
+# 不随低频字自动让位规则扩散。
+word_yield_three_secondaries:
+  vuqr: 贮
+  bclo: 刨
+  yutn: 尉
+  yijk: 咿
+  wumd: 诬
+  liqk: 荔
+  qiya: 鳍
+  viya: 酯
+  svyr: 隋
+  doda: 朵
+  wwtn: 尉
+  qiug: 岐
+
+# 低频字默认向常用词让位。若同一码还含阈值以内的常用字，则不自动处理。
+default_word_first:
+  character_rank_from: 3762
+  two_word_rank_top: 30000
+
+one_code:
+  q: 去
+  w: 我
+  e: 而
+  r: 人
+  t: 他
+  y: 有
+  u: 是
+  i: 吃
+  o: 哦
+  p: 平
+  a: 啊
+  s: 所
+  d: 的
+  f: 发
+  g: 更
+  h: 和
+  j: 就
+  k: 看
+  l: 了
+  z: 在
+  x: 小
+  c: 才
+  v: 中
+  b: 不
+  n: 你
+  m: 没
+
+# 不参加退火竞争、定稿后直接补回的正式读音资产。
+extra_codes:
+  uw: 谁  # shei：全字集唯一使用者
+  bigg: 匕  # 根字打法容错；主码按笔画为 bikz，bigg 下排在毙之后
+  yian: 椅  # 自然首末码容错；主码顺取“木＋大”为 yiav
+  yivj: 怡  # 自然首末码容错；主码顺取“忄＋厶”为 yivk
+  jmmo: 箭  # 自然首末码容错；主码顺取“竹头＋八”为 jmmv
+  yigj: 裔  # 自然首末码容错；主码顺取“衣＋冂”为 yigl

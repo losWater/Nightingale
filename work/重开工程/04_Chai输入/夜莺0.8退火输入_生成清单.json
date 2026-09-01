@@ -1,0 +1,25 @@
+{
+  "status": "v0.8_annealing_input_pending_algorithm_run",
+  "glyphs": 8105,
+  "reading_items": 8454,
+  "element_rows": 8454,
+  "special_weight_overrides": 2,
+  "residual_items": 9,
+  "residual_frequency": 61287,
+  "zero_effective_weight_rows": 265,
+  "inputs": {
+    "work\\重开工程\\03_字音频率\\Chai总频_分读音比例融合预览.tsv": "17282310669e2fa70c2b77ee3ec7b05ce787ea506573bd7f65dc9e10be3a9603",
+    "work\\重开工程\\03_字音频率\\SUBTLEX分读音频率表_退火候选版.tsv": "c990de67af4ca5edd333f4942d9752d799c90b2b0bee73ad76c667950d77422b",
+    "work\\重开工程\\03_字音频率\\特殊优化权重裁决.json": "ecdc1cb62672bbb007acbfb7a7d03d59979ce21f046d466a67f63c6485e6479c",
+    "work\\重开工程\\03_字音频率\\退火候选仍未分配频率.tsv": "13e3e24255db161acaa278804cd49e7e655524bae8dbbe4e6c38d4c9f7e82037",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "f96e0646d6cd25bfaeafba4acdb0cbf0b9b9ed9f6e93a04b32c7bf1d47b33ef4",
+    "D:\\nightingale\\work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "f60d122926e78ece9dccf4ae4f5a949aa613c5c31a649e82632ab039f22b3c1d",
+    "D:\\nightingale\\work\\重开工程\\02_规范拆分\\Chai部件名称别名.yaml": "6f22e3fadb2603f8b2a7c873f0395d0af6b3804c16bb3b447d4cf50ddd098052",
+    "D:\\nightingale\\work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5"
+  },
+  "outputs": {
+    "work\\重开工程\\03_字音频率\\退火有效权重表.tsv": "64bdb8beb0f0b1f4f38a932fa3beb6b70a78c0aa4a9d1c43b1ae523ffb6a5ecc",
+    "work\\重开工程\\04_Chai输入\\夜莺0.8退火元素表_待核验.yaml": "7dc5236e2e56decc715ac25d581d0c0392332ab73988fb1aa15983e8e5e6fbd0",
+    "work\\重开工程\\04_Chai输入\\夜莺0.8退火基础配置_待核验.yaml": "62efcf67db62d83b9dfbfc199f6d11714f51e587d0e82d124e7f2d155d10e246"
+  }
+}

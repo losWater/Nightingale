@@ -1,0 +1,8 @@
+pie=1,披
+piet=1,貔
+piet=2,豼
+pit=1,批
+pitn=2,坯
+pitn=4,噽
+bkq=1,秉
+bkqq=1,秉

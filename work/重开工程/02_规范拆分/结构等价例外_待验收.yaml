@@ -1,0 +1,31 @@
+schema_version: 1
+description: >-
+  记录由Chai笔画退化与结构识别自然产生、经人工接受，但不能注册为附属根的
+  结构等价现象。本表只作审计说明，不进入根映射或人工拆分配置。
+
+accepted_implicit_equivalences:
+  - id: EQUIV-0001
+    glyph: 孑
+    chai_result: [子]
+    status: accepted_with_presentation_alias
+    reason: >-
+      Chai字库将孑定义为“了的两笔＋提”，当前退化规则又将提归横，因此自然
+      识别为子根。该结果结构完整，不属于部分丢失。
+    rejected_implementation:
+      attempted_change: 将孑加入子的附属根
+      observed_effect: >-
+        Chai开始优先输出孑这一具体根形，使子、好、孙、孖等105字的完整拆分
+        从子变为孑；这不是单纯的文档登记，因此已回退。
+    rejected_anchor_experiment:
+      attempted_change: 将孑作为独立根并锚定在子键
+      observed_effect: >-
+        子、孑、好、孙、孖等105字仍发生子→孑的具体根形反转，且涉及首末根时
+        显示为独立的孑；未达到“只让孑本字独立、普通子家族保持子”的验收条件，
+        因此已回退。
+    expected_final_split: [子]
+    presentation_layer:
+      root_chart: 将孑显示在子根下
+      root_trainer: 将孑作为子根的练习提示项
+      structural_root_config: 禁止写入
+      chai_mapping: 禁止写入
+      canonical_split: 保持孑拆为[子]

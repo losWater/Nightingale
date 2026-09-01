@@ -1,0 +1,396 @@
+schema_version: 1
+status: accepted_guarded_structural_rules
+description: 27条逐字验收的历史结构裁决；精确前态守卫，禁止token子串传播。
+candidate_sha256: 6647c7b088fd40ebf3a2c65a97d657626ff57be7b3b6bd20125a422fc0a9128a
+delta_sha256: f20a68bbd15a2ca27be7811ecff505bc7066ab9d081993c6641d366909c0d17d
+guarded_rewrites:
+  年:
+    expected_before:
+    - 卧人
+    - 一
+    - 丨
+    - 十
+    canonical_after:
+    - 卧人
+    - 横
+    - 竖
+    - 横
+    - 竖
+    decision_at: 2026-08-28 01:46 +10:00
+    reason: 用户确认首根卧人、末根竖；撤销旧记录把中间横竖横命名为土的解释， 改用逐笔根完整记录，避免虚构部件且不漏笔。
+  承:
+    expected_before:
+    - 了
+    - 三
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 了
+    - 三
+    - 水
+    decision_at: 2026-08-28 01:46 +10:00
+    reason: 用户确认维持历史专门规定。
+  兵:
+    expected_before:
+    - 撇
+    - 卢字头
+    - 丨
+    - 一
+    - 八
+    canonical_after:
+    - 丘
+    - 八
+    decision_at: 2026-08-28 01:46 +10:00
+    reason: 丘是现有根，但Chai未能从穿插结构中取出。
+  戌:
+    expected_before:
+    - 厂
+    - 一
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 戊
+    - 横
+    decision_at: 2026-08-28 01:46 +10:00
+    reason: 戊是现有根，但Chai未能从穿插结构中取出。
+  戍:
+    expected_before:
+    - 厂
+    - 丶
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 戊
+    - 点
+    decision_at: 2026-08-28 01:46 +10:00
+    reason: 戊是现有根，但Chai未能从穿插结构中取出。
+  羲:
+    expected_before:
+    - 美字头
+    - 禾
+    - 一
+    - 折
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 美字头
+    - 禾
+    - 戈
+    - 横
+    - 折
+    decision_at: 2026-08-31 00:18 +10:00
+    reason: 实战复核确认羲与美、姜、羡的上部为同一美字头；恢复美字头整体，同时继续保留Chai未能从穿插结构中取出的戈根。
+  曦:
+    expected_before:
+    - 日
+    - 美字头
+    - 禾
+    - 一
+    - 折
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 日
+    - 美字头
+    - 禾
+    - 戈
+    - 横
+    - 折
+    decision_at: 2026-08-31 00:18 +10:00
+    reason: 继承羲修正后的美字头与戈结构，外加日。
+  爔:
+    expected_before:
+    - 火
+    - 美字头
+    - 禾
+    - 一
+    - 折
+    - 折
+    - 撇
+    - 丶
+    canonical_after:
+    - 火
+    - 美字头
+    - 禾
+    - 戈
+    - 横
+    - 折
+    decision_at: 2026-08-31 00:18 +10:00
+    reason: 继承羲修正后的美字头与戈结构，外加火。
+  彖:
+    expected_before:
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 恢复现有大根互中间，避免Chai将其散拆为两折。
+  缘:
+    expected_before:
+    - 纟
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 纟
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  喙:
+    expected_before:
+    - 口
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 口
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  篆:
+    expected_before:
+    - 竹头
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 竹头
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  椽:
+    expected_before:
+    - 木
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 木
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  掾:
+    expected_before:
+    - 扌
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 扌
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  橼:
+    expected_before:
+    - 木
+    - 纟
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 木
+    - 纟
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 恢复彖部位的互中间大根，同时修正历史序列覆写漏记字形中纟的问题。
+  瑑:
+    expected_before:
+    - 王
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 王
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  禒:
+    expected_before:
+    - 礻
+    - 折
+    - 折
+    - 豕
+    canonical_after:
+    - 礻
+    - 互中间
+    - 豕
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复。
+  蠡:
+    expected_before:
+    - 折
+    - 折
+    - 豕
+    - 虫
+    - 虫
+    canonical_after:
+    - 互中间
+    - 豕
+    - 虫
+    - 虫
+    decision_at: 2026-08-28 01:53 +10:00
+    reason: 继承彖的结构修复，并保留下方两个虫。
+  临:
+    expected_before:
+    - 丨
+    - 丨
+    - 卧人
+    - 丶
+    - 囗
+    - 丨
+    canonical_after:
+    - 览字头
+    - 囗
+    - 竖
+    decision_at: 2026-08-28 01:55 +10:00
+    reason: 恢复Chai散拆后漏取的现有大根览字头。
+  庸:
+    expected_before:
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    canonical_after:
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 修正Chai将下部错误套为青字底加竖的部件边界。
+  墉:
+    expected_before:
+    - 土
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    canonical_after:
+    - 土
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 继承庸的结构修复。
+  慵:
+    expected_before:
+    - 忄
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    canonical_after:
+    - 忄
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 继承庸的结构修复。
+  镛:
+    expected_before:
+    - 钅
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    canonical_after:
+    - 钅
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 继承庸的结构修复。
+  鳙:
+    expected_before:
+    - 鱼
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    canonical_after:
+    - 鱼
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 继承庸的结构修复。
+  鄘:
+    expected_before:
+    - 广
+    - 折
+    - 二
+    - 青字底
+    - 丨
+    - 阝
+    canonical_after:
+    - 广
+    - 折
+    - 二
+    - 冂
+    - 举字底
+    - 阝
+    decision_at: 2026-08-28 01:57 +10:00
+    reason: 继承庸的结构修复，并保留末尾阝。
+  隶:
+    expected_before:
+    - 折
+    - 二
+    - 氺
+    canonical_after:
+    - 争字底
+    - 氺
+    decision_at: 2026-08-28 01:59 +10:00
+    reason: 恢复Chai散拆后漏取的现有大根争字底。
+  逮:
+    expected_before:
+    - 折
+    - 二
+    - 氺
+    - 辶
+    canonical_after:
+    - 争字底
+    - 氺
+    - 辶
+    decision_at: 2026-08-28 01:59 +10:00
+    reason: 继承隶的结构修复，并保留末尾辶。
+excluded_encoding_layer_decisions:
+- 侯
+- 匕
+- 媚
+- 怡
+- 椅
+- 箭
+- 裔
+- 骂
+sources:
+  work\重开工程\02_规范拆分\历史序列覆写迁移盘点_待验收.yaml: 94b0e91234525d4989364b544c3f7f8f677dc898d2728e98378b3297b4cd9678
+  candidate_runs:
+  - 20260828_015942_704377+1000
+  - 20260828_015934_452554+1000

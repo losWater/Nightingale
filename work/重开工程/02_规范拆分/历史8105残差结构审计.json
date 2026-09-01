@@ -1,0 +1,25 @@
+{
+  "status": "read_only_audit",
+  "raw_differences": 103,
+  "counts": {
+    "accepted_27_structural": 2,
+    "accepted_frame_semantics": 9,
+    "accepted_manual_rule_semantics": 18,
+    "accepted_propagating_structural": 5,
+    "canonical_host_equivalent": 61,
+    "deferred_encoding_layer": 8
+  },
+  "unexplained_count": 0,
+  "unexplained": [],
+  "inputs": {
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "f96e0646d6cd25bfaeafba4acdb0cbf0b9b9ed9f6e93a04b32c7bf1d47b33ef4",
+    "夜莺B\\work\\最终规范拆分表_人工阅读.tsv": "214d016a130c0cd8a995073a0afbd93cc9e0c65b8df437810cbbc083590b5446",
+    "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "f60d122926e78ece9dccf4ae4f5a949aa613c5c31a649e82632ab039f22b3c1d",
+    "work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5",
+    "work\\重开工程\\02_规范拆分\\历史序列覆写迁移盘点_待验收.yaml": "94b0e91234525d4989364b544c3f7f8f677dc898d2728e98378b3297b4cd9678",
+    "work\\重开工程\\02_规范拆分\\正式历史结构裁决规则.yaml": "6649e698e8269e824eac772090727f6e50f1a98c5ee70cf2a9e7086c4d6e52fc",
+    "work\\重开工程\\02_规范拆分\\正式字架规则.yaml": "56cdd9b22366e60fc25b0d54d65130b2ed1b312d7cc758d223257a5d27a83333",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_生成清单.json": "c7900ea62200cd0daf9a7d9acad1227e74015568836507e4f81d370260ea7e37",
+    "work\\重开工程\\scripts\\audit_legacy_8105_residuals.py": "c13b9f512aefb8b554598bdff667523cebdab363074c067eb91d944bf68cbbfb"
+  }
+}

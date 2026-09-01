@@ -20,6 +20,16 @@ import yaml
 ROWS = ("qwertyuiop", "asdfghjkl", "zxcvbnm")
 STROKE_LABELS = {"1": "横", "2": "竖", "3": "撇", "4": "点", "5": "折"}
 STROKE_NAMES = {value: key for key, value in STROKE_LABELS.items()}
+PRESENTATION_NAMES = {"卧人": "每字头", "印字旁": "印左边"}
+TEMPLATE_DIR = Path(__file__).resolve().parents[3] / "apps" / "v085" / "templates"
+
+
+def present_name(value: str) -> str:
+    return PRESENTATION_NAMES.get(str(value), str(value))
+
+
+def present_split(value: str) -> str:
+    return " ＋ ".join(present_name(part.strip()) for part in re.split(r"\s*＋\s*", value))
 
 
 def sha256(path: Path) -> str:
@@ -142,7 +152,7 @@ def root_catalog(layout: dict, roots_path: Path, resolve, presentation_aliases: 
     return mains, subsidiaries, anchors
 
 
-def build_practice(layout: dict, release: Path, roots_path: Path, template: Path, resolve, aliases):
+def build_practice(layout: dict, release: Path, roots_path: Path, resolve, aliases):
     mains, subsidiaries, anchors = root_catalog(layout, roots_path, resolve, aliases)
     lines = []
     for keyboard_row in ROWS:
@@ -150,20 +160,20 @@ def build_practice(layout: dict, release: Path, roots_path: Path, template: Path
             for root in mains.get(key, []):
                 hints = []
                 if subsidiaries.get(root):
-                    hints.append("附属: " + " ".join(subsidiaries[root]))
+                    hints.append("附属: " + " ".join(present_name(item) for item in subsidiaries[root]))
                 if anchors.get(root):
-                    hints.append("锚定同键: " + " ".join(anchors[root]))
-                name = f"{root}(笔画)" if root in STROKE_NAMES else root
+                    hints.append("锚定同键: " + " ".join(present_name(item) for item in anchors[root]))
+                name = f"{root}(笔画)" if root in STROKE_NAMES else present_name(root)
+                if root == "囗":
+                    name = "囗-[（框）]-"
                 lines.append(f"{name}\t{key}\t{'；'.join(hints)}")
     data_path = release / "夜莺码v0.8.5字根练习.txt"
     data_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    page = template.read_text(encoding="utf-8")
-    page = page.replace("<title>元素重复练习器</title>", "<title>夜莺码 v0.8.5 字根练习器</title>")
-    page = re.sub(r"简单鹤\s*V?1\.0", "夜莺码 v0.8.5", page, flags=re.I)
-    page = page.replace("简单鹤V1.0", "夜莺码v0.8.5")
+    page_template = TEMPLATE_DIR / "root_practice.html"
     page_path = release / "夜莺码v0.8.5字根练习器.html"
-    page_path.write_text(page, encoding="utf-8")
+    # 练习器模板中保留了历史发布页的原始换行；按字节复制可避免无意义的整页变更。
+    page_path.write_bytes(page_template.read_bytes())
     if not any(line.startswith("子\t") and "孑" in line for line in lines):
         raise SystemExit("presentation alias 孑 was not attached to 子 in practice data")
     return data_path, page_path, len(lines)
@@ -210,13 +220,12 @@ def build_lookup(single_path: Path, split_path: Path, release: Path, template: P
     by_char = read_single_table(single_path)
     splits = read_splits(split_path)
     data = {
-        char: {"codes": sorted(codes, key=lambda item: (len(item[0]), item[0], item[1])), "split": splits.get(char, "")}
+        char: {"codes": sorted(codes, key=lambda item: (len(item[0]), item[0], item[1])), "split": present_split(splits.get(char, "")) if splits.get(char) else ""}
         for char, codes in by_char.items()
     }
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     font = embedded_font(template, fallback_font)
-    html = r"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>夜莺码 v0.8.5 拆分查询</title><style>
-@font-face{font-family:Chai;src:url(data:font/ttf;base64,__FONT__)}:root{--bg:#f5f6f8;--card:#fff;--fg:#191c20;--muted:#707680;--accent:#6d3be7;--chip:#f0eaff;--line:#e2e5e9}@media(prefers-color-scheme:dark){:root{--bg:#111419;--card:#1a1e25;--fg:#eceef1;--muted:#9ba1aa;--accent:#b69cff;--chip:#302650;--line:#2c323b}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:Chai,"Microsoft YaHei",sans-serif;display:flex;justify-content:center;padding:8vh 16px}.wrap{width:min(680px,100%)}h1{font-size:22px;margin:0 0 5px}.sub{color:var(--muted);font-size:13px;margin-bottom:18px}input{width:100%;font:inherit;font-size:22px;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg);outline:0}.list{display:grid;gap:11px;margin-top:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.char{font-size:35px;margin-right:12px}.split{color:var(--muted)}.split b{color:var(--accent);font-size:18px}.codes{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}.chip{background:var(--chip);color:var(--accent);border-radius:8px;padding:4px 9px;font:17px Consolas,monospace}.chip small{color:var(--muted);font:12px Chai,sans-serif;margin-left:5px}</style></head><body><main class="wrap"><h1>夜莺码 v0.8.5 拆分查询</h1><div class="sub">正式单字接口 C v5 · 输入汉字查看简码、全码、候选位与8105规范拆分</div><input id="q" autofocus placeholder="输入汉字……"><div id="out" class="list"></div></main><script>const DATA=__DATA__;const q=document.querySelector('#q'),out=document.querySelector('#out');function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}function render(){out.innerHTML='';for(const ch of [...q.value].filter(x=>/\S/.test(x)).slice(0,50)){const d=DATA[ch],card=document.createElement('section');card.className='card';if(!d){card.innerHTML=`<span class=char>${esc(ch)}</span><span class=split>不在码表中</span>`}else{const chips=d.codes.map(([c,r])=>`<span class=chip>${c}<small>${r===1?'首选':'第'+r+'候选'}</small></span>`).join('');card.innerHTML=`<span class=char>${esc(ch)}</span>${d.split?`<span class=split>拆分 <b>${esc(d.split)}</b></span>`:'<span class=split>暂无规范拆分</span>'}<div class=codes>${chips}</div>`}out.append(card)}}q.addEventListener('input',render)</script></body></html>"""
+    html = (TEMPLATE_DIR / "split_lookup.html").read_text(encoding="utf-8")
     target = release / "夜莺码v0.8.5拆分查询.html"
     target.write_text(html.replace("__FONT__", font).replace("__DATA__", blob), encoding="utf-8")
     return target, len(data), sum(1 for char in data if char in splits)
@@ -237,8 +246,7 @@ def build_reverse_lookup(combined_path: Path, target: Path) -> tuple[int, int]:
     if not by_code:
         raise SystemExit(f"empty combined table: {combined_path}")
     data = json.dumps(by_code, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    html = r'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>夜莺码 v0.8.5 编码反查</title><style>
-:root{--bg:#f5f6f8;--card:#fff;--fg:#191c20;--muted:#707680;--accent:#6d3be7;--chip:#f0eaff;--line:#e2e5e9}@media(prefers-color-scheme:dark){:root{--bg:#111419;--card:#1a1e25;--fg:#eceef1;--muted:#9ba1aa;--accent:#b69cff;--chip:#302650;--line:#2c323b}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Microsoft YaHei",sans-serif;display:flex;justify-content:center;padding:8vh 16px}.wrap{width:min(760px,100%)}h1{font-size:22px;margin:0 0 5px}.sub,.empty{color:var(--muted);font-size:13px}.sub{margin-bottom:18px}input{width:100%;font:22px Consolas,monospace;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg);outline:0}.section{margin-top:18px}.section h2{font-size:15px;margin:0 0 9px;color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:8px 0}.code{color:var(--accent);font:19px Consolas,monospace;margin-right:10px}.count{color:var(--muted);font-size:12px}.items{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.item{background:var(--chip);border-radius:8px;padding:5px 9px;font-size:18px}.item small{color:var(--muted);font-size:11px;margin-left:5px}.word{font-size:16px}.prefix{max-height:55vh;overflow:auto}.hidden{display:none}</style></head><body><main class="wrap"><h1>夜莺码 v0.8.5 编码反查</h1><div class="sub">数据来自正式挂接字词接口G · 精确码显示完整候选 · 前缀最多展示200个码位</div><input id="q" maxlength="4" autofocus autocomplete="off" spellcheck="false" placeholder="输入编码，例如 jix"><section id="exact" class="section"></section><section id="family" class="section prefix"></section></main><script>const DATA=__DATA__;const q=document.querySelector('#q'),exact=document.querySelector('#exact'),family=document.querySelector('#family');function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}function card(code,items){return `<div class=card><span class=code>${code}</span><span class=count>${items.length}项</span><div class=items>${items.map((x,i)=>`<span class="item ${[...x].length>1?'word':''}">${esc(x)}<small>${[...x].length===1?'字':'词'} · ${i+1}</small></span>`).join('')}</div></div>`}function render(){const v=q.value.toLowerCase().replace(/[^a-z]/g,'').slice(0,4);if(q.value!==v)q.value=v;if(!v){exact.innerHTML='';family.innerHTML='';return}const hit=DATA[v];exact.innerHTML=`<h2>精确匹配</h2>${hit?card(v,hit):'<div class=empty>这个码没有候选。</div>'}`;const codes=Object.keys(DATA).filter(x=>x.startsWith(v)&&x!==v).slice(0,200);family.innerHTML=`<h2>前缀家族（${codes.length}${codes.length===200?'＋':''}个码位）</h2>${codes.length?codes.map(x=>card(x,DATA[x])).join(''):'<div class=empty>没有更长的同前缀码。</div>'}`}q.addEventListener('input',render)</script></body></html>'''
+    html = (TEMPLATE_DIR / "reverse_lookup.html").read_text(encoding="utf-8")
     target.write_text(html.replace("__DATA__", data), encoding="utf-8")
     # Validate the exact embedded payload before accepting the page.
     rendered = target.read_text(encoding="utf-8")
@@ -264,7 +272,10 @@ def main() -> None:
     parser.add_argument("--roots-dir", type=Path, required=True)
     parser.add_argument("--splits", type=Path, required=True)
     parser.add_argument("--presentation", type=Path, required=True)
-    parser.add_argument("--practice-template", type=Path, required=True)
+    parser.add_argument(
+        "--practice-template", type=Path,
+        help="已废弃的兼容参数；现在固定使用apps/v085/templates/root_practice.html",
+    )
     parser.add_argument("--decisions", type=Path, required=True)
     parser.add_argument("--single-decisions", type=Path, required=True)
     parser.add_argument("--irrational", type=Path, required=True)
@@ -272,16 +283,23 @@ def main() -> None:
     if args.release.exists():
         raise SystemExit(f"release directory already exists: {args.release}")
     args.release.mkdir(parents=True)
+    tables = args.release / "01_正式码表"
+    sogou = args.release / "02_输入法挂接" / "搜狗输入法"
+    roots_and_splits = args.release / "03_字根与拆分"
+    tools = args.release / "04_查询与练习"
+    maintenance = args.release / "05_维护与裁决"
+    for directory in (tables, sogou, roots_and_splits, tools, maintenance):
+        directory.mkdir(parents=True)
 
     inputs = [args.single, args.single_sogou, args.single_sogou_quick,
               args.combined, args.combined_sogou, args.combined_sogou_quick,
               args.config, args.splits, args.presentation, args.decisions, args.single_decisions, args.irrational]
     input_hashes = {str(path.resolve()): sha256(path) for path in inputs}
-    copy_exact(args.single, args.release / "夜莺码v0.8.5单字版.txt")
+    copy_exact(args.single, tables / "夜莺码v0.8.5单字版.txt")
     copies = [
-        (args.single_sogou, "夜莺码v0.8.5单字版_搜狗.txt"),
-        (args.single_sogou_quick, "夜莺码v0.8.5单字版_搜狗_含快符.txt"),
-        (args.combined, "夜莺码v0.8.5挂接字词版_无简词.txt"),
+        (args.single_sogou, "夜莺码v0.8.5无二字词版_搜狗.txt"),
+        (args.single_sogou_quick, "夜莺码v0.8.5无二字词版_搜狗_含快符.txt"),
+        (args.combined, "夜莺0.8.5字词表.txt"),
         (args.combined_sogou, "夜莺码v0.8.5挂接字词版_搜狗词库.txt"),
         (args.combined_sogou_quick, "夜莺码v0.8.5挂接字词版_搜狗词库_含快符.txt"),
         (args.decisions, "夜莺码v0.8.5字词裁决.tsv"),
@@ -289,19 +307,25 @@ def main() -> None:
         (args.irrational, "夜莺码v0.8.5无理码表.tsv"),
     ]
     for source, name in copies:
-        copy_exact(source, args.release / name)
+        if "搜狗" in name:
+            destination = sogou / name
+        elif "裁决" in name:
+            destination = maintenance / name
+        else:
+            destination = tables / name
+        copy_exact(source, destination)
 
-    layout, layout_path = build_layout(args.config, args.release)
+    layout, layout_path = build_layout(args.config, tables)
     resolve, _ = load_resolver(args.repo, args.roots_dir)
     aliases = load_presentation_aliases(args.presentation)
     practice_data, practice_page, root_count = build_practice(
-        layout, args.release, args.roots_dir / "根集.yaml", args.practice_template, resolve, aliases
+        layout, tools, args.roots_dir / "根集.yaml", resolve, aliases
     )
     lookup, char_count, split_count = build_lookup(
-        args.single, args.splits, args.release, args.practice_template, args.repo / "data/jdhe/ChaiPUA.ttf"
+        args.single, args.splits, tools, TEMPLATE_DIR / "root_practice.html", args.repo / "data/jdhe/ChaiPUA.ttf"
     )
     reverse_code_count, reverse_entry_count = build_reverse_lookup(
-        args.combined, args.release / "夜莺码v0.8.5编码反查.html"
+        args.combined, tools / "夜莺码v0.8.5编码反查.html"
     )
 
     notes = args.release / "README.md"
@@ -317,7 +341,7 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    outputs = sorted(path for path in args.release.iterdir() if path.is_file())
+    outputs = sorted(path for path in args.release.rglob("*") if path.is_file())
     manifest = {
         "schema_version": 1,
         "version": "0.8.5",
@@ -325,7 +349,7 @@ def main() -> None:
         "inputs": input_hashes,
         "counts": {"practice_roots": root_count, "lookup_chars": char_count, "lookup_chars_with_split": split_count,
                    "reverse_lookup_codes": reverse_code_count, "reverse_lookup_entries": reverse_entry_count},
-        "outputs": {path.name: sha256(path) for path in outputs},
+        "outputs": {path.relative_to(args.release).as_posix(): sha256(path) for path in outputs},
     }
     manifest_path = args.release / "发布清单.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "glyphs": 8105,
+  "reading_items": 8454,
+  "element_rows": 8454,
+  "identity_sets_equal": true,
+  "all_element_sequences_length_4": true,
+  "all_elements_mapped": true,
+  "element_frequencies_match_weights": true,
+  "special_override_pairs": [
+    [
+      "谁",
+      "shei"
+    ],
+    [
+      "谁",
+      "shui"
+    ]
+  ],
+  "original_zero_items": 336,
+  "fused_zero_items": 264,
+  "effective_zero_items": 265,
+  "positive_to_zero_items": 32,
+  "zero_to_positive_items": 103,
+  "original_frequency_sum": "2522799818",
+  "fused_frequency_sum": "2521220566",
+  "effective_weight_sum": "2519725656",
+  "residual_items": 9,
+  "residual_frequency": 61287,
+  "top_change_file_sha256": "04f4fac4cf926471b8daa1d33cb5271756595ff74b8aa145b62544ba42ec3588"
+}

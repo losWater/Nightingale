@@ -1,0 +1,577 @@
+schema_version: 1
+status: accepted_guarded_structural_rules
+description: 字架由结构树审计确认范围；正式生成仅应用逐字验收的精确前后序列，禁止token子串传播。
+candidate_sha256: c16de30bd81d5d80740fed107ebaf924027d287a5ddea2a7ac7414300c486705
+delta_sha256: 2b5c0356a3b961d1452133dc5844c45b9e9cbb0cce3a32c503215e43744e992c
+unchanged_equivalent:
+- 斑
+- 癍
+complete_root_precedence:
+- 襄
+frames:
+  衣:
+    topology:
+      operator: ⿳
+      outer_first: 亠
+      outer_last: 衣省
+    host_root: 衣
+    examples:
+      哀: 口
+      衰:
+      - 口
+      - 横
+      裹: 果
+    legacy_direct_hit_count: 10
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits:
+    - 亵
+    - 哀
+    - 衮
+    - 衰
+    - 衷
+    - 袤
+    - 裒
+    - 裛
+    - 裹
+    - 褒
+    audited_nested_hits:
+    - 榱
+    - 滚
+    - 磙
+    - 缞
+    - 蓑
+    - 锿
+    accepted_at: 2026-08-28 01:08 +10:00
+    accepted_notes:
+    - 果按日加木展开，不按田加木，避免共享中竖和非连续取根
+    - 襄虽匹配衣字架拓扑，但完整附属根优先，不参与改写
+  行:
+    topology:
+      operator: ⿲
+      outer_first: 彳
+      outer_last: 亍
+    host_root: 行
+    examples:
+      街: 圭
+    legacy_direct_hit_count: 9
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits:
+    - 衍
+    - 衎
+    - 衒
+    - 衔
+    - 街
+    - 衙
+    - 衠
+    - 衡
+    - 衢
+    audited_nested_hits:
+    - 愆
+    - 蘅
+    accepted_at: 2026-08-28 01:10 +10:00
+  辡:
+    topology:
+      operator: ⿲
+      outer_first: 辛旁
+      outer_last: 辛
+    host_root: 辛
+    examples:
+      辩: 讠
+      辨: 刂
+      瓣: 瓜
+      辫: 纟
+    legacy_direct_hit_count: 4
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits:
+    - 瓣
+    - 辨
+    - 辩
+    - 辫
+    audited_nested_hits: []
+    accepted_at: 2026-08-28 01:12 +10:00
+    representation_note: 用户已验收编码语义。正式结构表建议保留字架形辡，例如辩=[辡,讠]； 编码首根再通过附属关系归并为辛。旧人工阅读表的[辛,讠]只是宿主折叠显示。
+    representation_verified_at: 2026-08-28 01:32 +10:00
+  玨:
+    topology:
+      operator: ⿲
+      outer_first: 王
+      outer_last: 王
+    host_root: 王
+    examples:
+      班: 刂
+      斑: 文
+    legacy_direct_hit_count: 2
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits:
+    - 斑
+    - 班
+    audited_nested_hits:
+    - 癍
+    semantic_changes:
+    - 班
+    already_equivalent:
+    - 斑
+    - 癍
+    accepted_at: 2026-08-28 01:14 +10:00
+    representation_note: 结构表保留玨形，编码宿主归并为王
+  赢:
+    topology:
+      operator: ⿱
+      top: 吂
+      bottom:
+        operator: ⿲
+        outer_first: 月
+        outer_last: 凡
+    host_root: 赢字架
+    frame_identity: independent_root_with_frame_behavior
+    examples:
+      赢: 贝
+      嬴: 女
+      羸: 羊
+      蠃: 虫
+      臝: 果
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits:
+    - 嬴
+    - 羸
+    - 蠃
+    - 赢
+    audited_nested_hits:
+    - 瀛
+    accepted_at: 2026-08-28 01:16 +10:00
+    accepted_notes:
+    - 赢字架本身是独立根，不是只为规则虚构的抽象字架
+    - 该独立根同时具有容纳贝、女、羊、虫、果等中芯的字架表现形式
+    - 臝不在当前8105字集，只保留未来字集扩展时的结构样例
+guarded_rewrites:
+  亵:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 扌
+    - 丸
+    - 衣省
+    canonical_after:
+    - 衣
+    - 扌
+    - 丸
+  哀:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 口
+    - 衣省
+    canonical_after:
+    - 衣
+    - 口
+  嬴:
+    frame: 赢
+    expected_before:
+    - 亠
+    - 折
+    - 口
+    - 月
+    - 女
+    - 凡
+    canonical_after:
+    - 赢字架
+    - 女
+  愆:
+    frame: 行
+    expected_before:
+    - 彳
+    - 氵
+    - 一
+    - 丁
+    - 心
+    canonical_after:
+    - 行
+    - 氵
+    - 心
+  榱:
+    frame: 衣
+    expected_before:
+    - 木
+    - 亠
+    - 口
+    - 一
+    - 衣省
+    canonical_after:
+    - 木
+    - 衣
+    - 口
+    - 横
+  滚:
+    frame: 衣
+    expected_before:
+    - 氵
+    - 亠
+    - 八
+    - 厶
+    - 衣省
+    canonical_after:
+    - 氵
+    - 衣
+    - 八
+    - 厶
+  瀛:
+    frame: 赢
+    expected_before:
+    - 氵
+    - 亠
+    - 折
+    - 口
+    - 月
+    - 女
+    - 凡
+    canonical_after:
+    - 氵
+    - 赢字架
+    - 女
+  班:
+    frame: 玨
+    expected_before:
+    - 玨
+    - 丶
+    - 丿
+    canonical_after:
+    - 玨
+    - 刂
+  瓣:
+    frame: 辡
+    expected_before:
+    - 立
+    - 左字框
+    - 瓜
+    - 辛
+    canonical_after:
+    - 辡
+    - 瓜
+  磙:
+    frame: 衣
+    expected_before:
+    - 石
+    - 亠
+    - 八
+    - 厶
+    - 衣省
+    canonical_after:
+    - 石
+    - 衣
+    - 八
+    - 厶
+  缞:
+    frame: 衣
+    expected_before:
+    - 纟
+    - 亠
+    - 口
+    - 一
+    - 衣省
+    canonical_after:
+    - 纟
+    - 衣
+    - 口
+    - 横
+  羸:
+    frame: 赢
+    expected_before:
+    - 亠
+    - 折
+    - 口
+    - 月
+    - 羊
+    - 凡
+    canonical_after:
+    - 赢字架
+    - 羊
+  蓑:
+    frame: 衣
+    expected_before:
+    - 艹
+    - 亠
+    - 口
+    - 一
+    - 衣省
+    canonical_after:
+    - 艹
+    - 衣
+    - 口
+    - 横
+  蘅:
+    frame: 行
+    expected_before:
+    - 艹
+    - 彳
+    - 鱼
+    - 大
+    - 一
+    - 丁
+    canonical_after:
+    - 艹
+    - 行
+    - 鱼
+    - 大
+  蠃:
+    frame: 赢
+    expected_before:
+    - 亠
+    - 折
+    - 口
+    - 月
+    - 虫
+    - 凡
+    canonical_after:
+    - 赢字架
+    - 虫
+  衍:
+    frame: 行
+    expected_before:
+    - 彳
+    - 氵
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 氵
+  衎:
+    frame: 行
+    expected_before:
+    - 彳
+    - 干
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 干
+  衒:
+    frame: 行
+    expected_before:
+    - 彳
+    - 亠
+    - 幺
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 亠
+    - 幺
+  衔:
+    frame: 行
+    expected_before:
+    - 彳
+    - 钅
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 钅
+  街:
+    frame: 行
+    expected_before:
+    - 彳
+    - 土
+    - 土
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 土
+    - 土
+  衙:
+    frame: 行
+    expected_before:
+    - 彳
+    - 五
+    - 口
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 五
+    - 口
+  衠:
+    frame: 行
+    expected_before:
+    - 彳
+    - 十
+    - 具字头
+    - 八
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 十
+    - 具字头
+    - 八
+  衡:
+    frame: 行
+    expected_before:
+    - 彳
+    - 鱼
+    - 大
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 鱼
+    - 大
+  衢:
+    frame: 行
+    expected_before:
+    - 彳
+    - 目
+    - 目
+    - 隹
+    - 一
+    - 丁
+    canonical_after:
+    - 行
+    - 目
+    - 目
+    - 隹
+  衮:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 八
+    - 厶
+    - 衣省
+    canonical_after:
+    - 衣
+    - 八
+    - 厶
+  衰:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 口
+    - 一
+    - 衣省
+    canonical_after:
+    - 衣
+    - 口
+    - 横
+  衷:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 口
+    - 竖
+    - 衣省
+    canonical_after:
+    - 衣
+    - 口
+    - 竖
+  袤:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 予
+    - 丿
+    - 衣省
+    canonical_after:
+    - 衣
+    - 予
+    - 丿
+  裒:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 臼
+    - 衣省
+    canonical_after:
+    - 衣
+    - 臼
+  裛:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 口
+    - 巴
+    - 衣省
+    canonical_after:
+    - 衣
+    - 口
+    - 巴
+  裹:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 日
+    - 木
+    - 衣省
+    canonical_after:
+    - 衣
+    - 日
+    - 木
+  褒:
+    frame: 衣
+    expected_before:
+    - 亠
+    - 亻
+    - 口
+    - 木
+    - 衣省
+    canonical_after:
+    - 衣
+    - 亻
+    - 口
+    - 木
+  赢:
+    frame: 赢
+    expected_before:
+    - 亠
+    - 折
+    - 口
+    - 月
+    - 贝
+    - 凡
+    canonical_after:
+    - 赢字架
+    - 贝
+  辨:
+    frame: 辡
+    expected_before:
+    - 刂
+    - 八
+    - 丶
+    - 丿
+    canonical_after:
+    - 辡
+    - 刂
+  辩:
+    frame: 辡
+    expected_before:
+    - 刂
+    - 八
+    - 讠
+    canonical_after:
+    - 辡
+    - 讠
+  辫:
+    frame: 辡
+    expected_before:
+    - 刂
+    - 八
+    - 纟
+    canonical_after:
+    - 辡
+    - 纟
+  锿:
+    frame: 衣
+    expected_before:
+    - 钅
+    - 亠
+    - 口
+    - 衣省
+    canonical_after:
+    - 钅
+    - 衣
+    - 口
+sources:
+  work\重开工程\02_规范拆分\字架迁移盘点_待验收.yaml: e98737491c65cf30d3ee8b16807b64dbc02d6f2246ed7a0787e28554d25d5b2d
+  work\重开工程\02_规范拆分\字架迁移审计.json: fb28b345f20df8ae0896698e85def8a71c6d2d6dd700a5c79cb2ad0f38819a4f
+  candidate_runs:
+  - 20260828_013232+1000
+  - 20260828_013219+1000

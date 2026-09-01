@@ -1,0 +1,214 @@
+schema_version: 1
+status: audit_only_do_not_apply
+legacy_source: 夜莺B/work/拆分规则.yaml#sequence_overrides
+
+structural_candidates:
+  - 乘
+  - 剩
+  - 嵊
+  - 年
+  - 承
+  - 兵
+  - 戌
+  - 戍
+  - 庚
+  - 羲
+  - 曦
+  - 爔
+  - 彖
+  - 缘
+  - 喙
+  - 篆
+  - 椽
+  - 掾
+  - 橼
+  - 瑑
+  - 禒
+  - 蠡
+  - 临
+  - 庸
+  - 墉
+  - 慵
+  - 镛
+  - 鳙
+  - 鄘
+  - 隶
+  - 逮
+
+already_owned_by_new_rule:
+  乘: 传播式整字结构覆写_待验收.yaml#乘
+  剩: 传播式整字结构覆写_待验收.yaml#乘
+  嵊: 传播式整字结构覆写_待验收.yaml#乘
+
+deferred_encoding_layer_decisions:
+  policy: >-
+    以下项目均不进入唯一规范结构8105；原始裁决完整保留，待附加码／无理码规则阶段
+    使用另一套规则迁移。不得因未进入结构层而将其视为废弃。
+  entries:
+    骂:
+      target_sequence: [口, 口]
+      origin: 结构性重码的无理码裁决
+    侯:
+      target_sequence: [亻, 竖]
+      origin: 结构性重码的无理码裁决
+    媚:
+      target_sequence: [女, 尸]
+      origin: 后加顺取无理码
+    箭:
+      target_sequence: [竹头, 八]
+      origin: 后加顺取无理码
+    裔:
+      target_sequence: [衣, 冂]
+      origin: 后加顺取无理码
+    匕:
+      target_sequence: [撇, 折]
+      origin: 后加字根字本字编码特例
+    椅:
+      target_sequence: [木, 大]
+      origin: 后加字词避撞无理码
+    怡:
+      target_sequence: [忄, 厶]
+      origin: 后加字词避撞无理码
+  decision_at: "2026-08-28 01:59 +10:00"
+
+accepted_structural_decisions:
+  年:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [卧人, 横, 竖, 横, 竖]
+    reason: >-
+      用户确认首根卧人、末根竖；撤销旧记录把中间横竖横命名为土的解释，
+      改用逐笔根完整记录，避免虚构部件且不漏笔。
+    decision_at: "2026-08-28 01:46 +10:00"
+  承:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [了, 三, 水]
+    reason: 用户确认维持历史专门规定。
+    decision_at: "2026-08-28 01:46 +10:00"
+  兵:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [丘, 八]
+    reason: 丘是现有根，但Chai未能从穿插结构中取出。
+    decision_at: "2026-08-28 01:46 +10:00"
+  戌:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [戊, 横]
+    reason: 戊是现有根，但Chai未能从穿插结构中取出。
+    decision_at: "2026-08-28 01:46 +10:00"
+  戍:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [戊, 点]
+    reason: 戊是现有根，但Chai未能从穿插结构中取出。
+    decision_at: "2026-08-28 01:46 +10:00"
+  羲:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [点, 点, 王, 禾, 戈, 横, 折]
+    reason: >-
+      用户确认整套恢复历史拆法：上部不用美字头，而取点、点、王；
+      下部恢复Chai未能从穿插结构中取出的戈根。
+    decision_at: "2026-08-28 01:50 +10:00"
+  曦:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [日, 点, 点, 王, 禾, 戈, 横, 折]
+    reason: 继承羲的整套历史拆法，外加日。
+    decision_at: "2026-08-28 01:50 +10:00"
+  爔:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [火, 点, 点, 王, 禾, 戈, 横, 折]
+    reason: 继承羲的整套历史拆法，外加火。
+    decision_at: "2026-08-28 01:50 +10:00"
+  彖:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [互中间, 豕]
+    reason: 恢复现有大根互中间，避免Chai将其散拆为两折。
+    decision_at: "2026-08-28 01:53 +10:00"
+  缘:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [纟, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  喙:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [口, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  篆:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [竹头, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  椽:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [木, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  掾:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [扌, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  橼:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [木, 纟, 互中间, 豕]
+    reason: >-
+      恢复彖部位的互中间大根，同时修正历史序列覆写漏记字形中纟的问题。
+    decision_at: "2026-08-28 01:53 +10:00"
+  瑑:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [王, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  禒:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [礻, 互中间, 豕]
+    reason: 继承彖的结构修复。
+    decision_at: "2026-08-28 01:53 +10:00"
+  蠡:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [互中间, 豕, 虫, 虫]
+    reason: 继承彖的结构修复，并保留下方两个虫。
+    decision_at: "2026-08-28 01:53 +10:00"
+  临:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [览字头, 囗, 竖]
+    reason: 恢复Chai散拆后漏取的现有大根览字头。
+    decision_at: "2026-08-28 01:55 +10:00"
+  庸:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [广, 折, 二, 冂, 举字底]
+    reason: 修正Chai将下部错误套为青字底加竖的部件边界。
+    decision_at: "2026-08-28 01:57 +10:00"
+  墉:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [土, 广, 折, 二, 冂, 举字底]
+    reason: 继承庸的结构修复。
+    decision_at: "2026-08-28 01:57 +10:00"
+  慵:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [忄, 广, 折, 二, 冂, 举字底]
+    reason: 继承庸的结构修复。
+    decision_at: "2026-08-28 01:57 +10:00"
+  镛:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [钅, 广, 折, 二, 冂, 举字底]
+    reason: 继承庸的结构修复。
+    decision_at: "2026-08-28 01:57 +10:00"
+  鳙:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [鱼, 广, 折, 二, 冂, 举字底]
+    reason: 继承庸的结构修复。
+    decision_at: "2026-08-28 01:57 +10:00"
+  鄘:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [广, 折, 二, 冂, 举字底, 阝]
+    reason: 继承庸的结构修复，并保留末尾阝。
+    decision_at: "2026-08-28 01:57 +10:00"
+  隶:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [争字底, 氺]
+    reason: 恢复Chai散拆后漏取的现有大根争字底。
+    decision_at: "2026-08-28 01:59 +10:00"
+  逮:
+    status: accepted_pending_candidate_build
+    canonical_sequence: [争字底, 氺, 辶]
+    reason: 继承隶的结构修复，并保留末尾辶。
+    decision_at: "2026-08-28 01:59 +10:00"

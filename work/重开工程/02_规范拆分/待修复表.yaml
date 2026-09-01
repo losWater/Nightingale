@@ -1,0 +1,34 @@
+schema_version: 1
+description: >-
+  只记录已发现但尚未接入正式生成链的拆分问题。
+  本表不会自动修改根集、8105字待核验表或退火元素表。
+
+pending_fixes:
+  - id: SPLIT-0001
+    character: 我
+    layer: canonical_root_sequence
+    status: fixed_and_persistence_verified
+    depends_on: RULE-0001
+    detected_at: "2026-08-27 22:08 +10:00"
+    recorded_at: "2026-08-27 22:11 +10:00"
+    structural_analysis: [我四, 戈]
+    current_result: [戈]
+    expected_result: [撇, 横, 折, 横, 戈]
+    confirmed_facts:
+      - 当前生成结果为[戈]
+      - 用户判定期望完整根序列为[撇,横,折,横,戈]，首末根为[撇,戈]
+    suspected_cause: >-
+      推测上游人工规则引用非根“我四”是导致当前结果的原因；
+      尚需 RULE-0001 的单规则反事实验证。
+    fixed_at: "2026-08-27 23:05 +10:00"
+    verification_result: >-
+      当前规则及连续两次完整重生成均得到[撇,横,折,横,戈]；修复持久性已验证。
+      反事实支持疑似原因，但不把Chai内部具体机制记为完全证明。
+    must_not_change:
+      - 01_根集/根集_待完整性复核.yaml
+      - 02_规范拆分/最终规范拆分表_待核验.tsv
+      - 02_规范拆分/最终规范拆分表_待核验.html
+    acceptance:
+      - 新的8105字规范拆分表中“我”的完整根序列精确为[撇,横,折,横,戈]
+      - 新的退火元素表中所有“我”的字音条目均使用[撇,戈]作为形码首末根
+      - 修改其他字后重新生成，上述两项仍必须通过

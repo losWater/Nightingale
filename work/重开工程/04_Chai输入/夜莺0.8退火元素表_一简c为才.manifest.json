@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "design": "0052",
+  "source": "D:\\nightingale\\work\\重开工程\\04_Chai输入\\夜莺0.8退火元素表_待核验.yaml",
+  "source_sha256": "7dc5236e2e56decc715ac25d581d0c0392332ab73988fb1aa15983e8e5e6fbd0",
+  "output": "D:\\nightingale\\work\\重开工程\\04_Chai输入\\夜莺0.8退火元素表_一简c为才.yaml",
+  "output_sha256": "3f186c8926a70ceb807c1e5b4709b1551284ec19bea126f437a4e447be529251",
+  "identities": 8454,
+  "glyphs": 8105,
+  "swap": {
+    "from": {
+      "identity": [
+        "从",
+        "cong"
+      ],
+      "original_index": 58
+    },
+    "cai": {
+      "identity": [
+        "才",
+        "cai"
+      ],
+      "original_index": 93
+    }
+  },
+  "tier_membership_unchanged": [
+    300,
+    500,
+    1500,
+    1674,
+    3527,
+    6000
+  ],
+  "frequency_unchanged": true
+}

@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-28T02:50+10:00",
+  "status": "fresh_annealing_elements_pending_validation",
+  "glyphs": 8105,
+  "reading_items": 8454,
+  "element_rows": 8454,
+  "zero_frequency_rows": 336,
+  "rows_with_short_code_metadata": 0,
+  "inputs": {
+    "work\\重开工程\\03_字音频率\\全新字音频率表_待核验.tsv": "4cb66080acaa1d111896af42e139269271add797d556545a72e6a784f5723dae",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "f96e0646d6cd25bfaeafba4acdb0cbf0b9b9ed9f6e93a04b32c7bf1d47b33ef4",
+    "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "f60d122926e78ece9dccf4ae4f5a949aa613c5c31a649e82632ab039f22b3c1d",
+    "work\\重开工程\\02_规范拆分\\Chai部件名称别名.yaml": "6f22e3fadb2603f8b2a7c873f0395d0af6b3804c16bb3b447d4cf50ddd098052",
+    "work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5",
+    "work\\重开工程\\scripts\\build_fresh_annealing_elements.py": "b12d29fc8d5dda54fe7cb7d0fa48ac22e06c78ab3340699568c7afe6dc5a097d"
+  },
+  "outputs": {
+    "work\\重开工程\\04_Chai输入\\全新退火元素表_待核验.yaml": "1e6684be59f5f90237fa4206188acebe22600bc6622a422948cc28795a1a8396",
+    "work\\重开工程\\04_Chai输入\\全新退火基础配置_待核验.yaml": "0d5e38da4639a9a434a6d33b4db33ef6b871d3ee47e8bbc984167748e116a256"
+  },
+  "historical_assets_read": []
+}

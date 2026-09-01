@@ -1,0 +1,770 @@
+{
+  "metadata": {
+    "run_time": "2026-08-28T00:19+10:00",
+    "run_dir": "D:\\nightingale\\work\\重开工程\\05_退火实验\\人工拆分传播核验\\20260828_001927+1000",
+    "inputs": {
+      "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "f60d122926e78ece9dccf4ae4f5a949aa613c5c31a649e82632ab039f22b3c1d",
+      "work\\重开工程\\02_规范拆分\\人工规范拆分_待验收.yaml": "54bb7f5d940cccb19744825fad9b13dddff0c515847fdb30a8537970f2e42a6a",
+      "work\\重开工程\\02_规范拆分\\传播式整字结构覆写_待验收.yaml": "035076138df11c03ae6a6d043fe0960da53aeff92d85c8a23bb4ca95c25cf947",
+      "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "97eba8404187590e53ede65cdb95f416403c4c2c0c053915f1112b00ecef6230",
+      "work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5",
+      "work\\重开工程\\scripts\\chai_split_runner.ts": "6393df553a988fa93d9bb5d9f62a1c1c61ad350dc3cd9d060dcfd6b8f8653c66",
+      "work\\重开工程\\scripts\\audit_manual_split_propagation.py": "1401cc387098dc3fcac6b55afbd9f2d1871b90c99cd0eca2ca74b9fa91ff4183"
+    },
+    "engine": {
+      "repository": "D:\\nightingale\\repos\\webchai",
+      "commit": "00f4f1b9d652b2db0868f30050d7d5608c35334c",
+      "dirty": true,
+      "status": [
+        "M packages/hanzi-chai/src/config.ts",
+        " M packages/hanzi-chai/src/repertoire.ts"
+      ],
+      "diff_sha256": "c6a7344bf712c1d6f3ba599ed36bd7a2dc25b6043610207b62891f157eb6bcbd"
+    },
+    "counts": {
+      "glyphs": 8105,
+      "rules": 20,
+      "runs": 22,
+      "baseline_mismatches": 0
+    }
+  },
+  "rules": [
+    {
+      "index": 1,
+      "part": "重",
+      "declared": [
+        "千",
+        "里"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "撇",
+        "一",
+        "申",
+        "二"
+      ],
+      "only_direct": [
+        "千",
+        "里"
+      ],
+      "all_direct": [
+        "千",
+        "里"
+      ],
+      "hit_count": 5,
+      "interaction_count": 0,
+      "hits": [
+        "懂",
+        "董",
+        "踵",
+        "重",
+        "锺"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 2,
+      "part": "万",
+      "declared": [
+        "横",
+        "撇",
+        "折"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "一",
+        "折",
+        "丿"
+      ],
+      "only_direct": [
+        "横",
+        "撇",
+        "折"
+      ],
+      "all_direct": [
+        "横",
+        "撇",
+        "折"
+      ],
+      "hit_count": 7,
+      "interaction_count": 0,
+      "hits": [
+        "万",
+        "劢",
+        "疠",
+        "虿",
+        "趸",
+        "迈",
+        "𬇕"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 3,
+      "part": "丑",
+      "declared": [
+        "折",
+        "土"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "折",
+        "丨",
+        "二"
+      ],
+      "only_direct": [
+        "折",
+        "土"
+      ],
+      "all_direct": [
+        "折",
+        "土"
+      ],
+      "hit_count": 13,
+      "interaction_count": 0,
+      "hits": [
+        "丑",
+        "侴",
+        "妞",
+        "峱",
+        "忸",
+        "扭",
+        "杻",
+        "狃",
+        "纽",
+        "羞",
+        "衄",
+        "钮",
+        "馐"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 4,
+      "part": "我",
+      "declared": [
+        "撇",
+        "横",
+        "折",
+        "横",
+        "戈"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "撇",
+        "扌",
+        "折",
+        "撇",
+        "丶"
+      ],
+      "only_direct": [
+        "撇",
+        "横",
+        "折",
+        "横",
+        "戈"
+      ],
+      "all_direct": [
+        "撇",
+        "横",
+        "折",
+        "横",
+        "戈"
+      ],
+      "hit_count": 12,
+      "interaction_count": 0,
+      "hits": [
+        "俄",
+        "哦",
+        "娥",
+        "峨",
+        "我",
+        "涐",
+        "硪",
+        "莪",
+        "蛾",
+        "锇",
+        "饿",
+        "鹅"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 5,
+      "part": "成",
+      "declared": [
+        "戊",
+        "折"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "厂",
+        "折",
+        "折",
+        "撇",
+        "丶"
+      ],
+      "only_direct": [
+        "戊",
+        "折"
+      ],
+      "all_direct": [
+        "戊",
+        "折"
+      ],
+      "hit_count": 8,
+      "interaction_count": 0,
+      "hits": [
+        "城",
+        "宬",
+        "成",
+        "晟",
+        "珹",
+        "盛",
+        "诚",
+        "铖"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 6,
+      "part": "尹",
+      "declared": [
+        "争字底",
+        "撇"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "折",
+        "二",
+        "丿"
+      ],
+      "only_direct": [
+        "争字底",
+        "撇"
+      ],
+      "all_direct": [
+        "争字底",
+        "撇"
+      ],
+      "hit_count": 15,
+      "interaction_count": 0,
+      "hits": [
+        "伊",
+        "君",
+        "咿",
+        "尹",
+        "捃",
+        "洢",
+        "珺",
+        "窘",
+        "笋",
+        "群",
+        "莙",
+        "裙",
+        "郡",
+        "鲪",
+        "𫖳"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 7,
+      "part": "兆",
+      "declared": [
+        "冫",
+        "冫",
+        "儿"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "丿",
+        "冫",
+        "折",
+        "撇",
+        "点"
+      ],
+      "only_direct": [
+        "冫",
+        "冫",
+        "儿"
+      ],
+      "all_direct": [
+        "冫",
+        "冫",
+        "儿"
+      ],
+      "hit_count": 19,
+      "interaction_count": 0,
+      "hits": [
+        "佻",
+        "兆",
+        "姚",
+        "挑",
+        "旐",
+        "晁",
+        "朓",
+        "桃",
+        "洮",
+        "珧",
+        "眺",
+        "祧",
+        "窕",
+        "跳",
+        "逃",
+        "铫",
+        "鼗",
+        "𫖯",
+        "𬶐"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 8,
+      "part": "庚字心",
+      "declared": [
+        "争字底",
+        "人"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "折",
+        "夫"
+      ],
+      "only_direct": [
+        "争字底",
+        "人"
+      ],
+      "all_direct": [
+        "争字底",
+        "人"
+      ],
+      "hit_count": 3,
+      "interaction_count": 0,
+      "hits": [
+        "庚",
+        "赓",
+        "鹒"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 9,
+      "part": "每",
+      "declared": [
+        "卧人",
+        "母"
+      ],
+      "state": "auto_satisfies",
+      "auto_direct": [
+        "卧人",
+        "母"
+      ],
+      "only_direct": [
+        "卧人",
+        "母"
+      ],
+      "all_direct": [
+        "卧人",
+        "母"
+      ],
+      "hit_count": 0,
+      "interaction_count": 0,
+      "hits": [],
+      "interactions": []
+    },
+    {
+      "index": 10,
+      "part": "中",
+      "declared": [
+        "口",
+        "竖"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "口",
+        "丨"
+      ],
+      "only_direct": [
+        "口",
+        "竖"
+      ],
+      "all_direct": [
+        "口",
+        "竖"
+      ],
+      "hit_count": 13,
+      "interaction_count": 0,
+      "hits": [
+        "中",
+        "仲",
+        "冲",
+        "忠",
+        "忡",
+        "盅",
+        "种",
+        "翀",
+        "肿",
+        "舯",
+        "茽",
+        "衷",
+        "钟"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 11,
+      "part": "上",
+      "declared": [
+        "卜",
+        "横"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "卢字头",
+        "一"
+      ],
+      "only_direct": [
+        "卜",
+        "横"
+      ],
+      "all_direct": [
+        "卜",
+        "横"
+      ],
+      "hit_count": 16,
+      "interaction_count": 0,
+      "hits": [
+        "上",
+        "俶",
+        "叔",
+        "嘁",
+        "婌",
+        "寂",
+        "忐",
+        "戚",
+        "椒",
+        "槭",
+        "淑",
+        "琡",
+        "督",
+        "菽",
+        "让",
+        "蹙"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 12,
+      "part": "下",
+      "declared": [
+        "横",
+        "卜"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "一",
+        "卜"
+      ],
+      "only_direct": [
+        "横",
+        "卜"
+      ],
+      "all_direct": [
+        "横",
+        "卜"
+      ],
+      "hit_count": 4,
+      "interaction_count": 0,
+      "hits": [
+        "下",
+        "吓",
+        "忑",
+        "虾"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 13,
+      "part": "虍",
+      "declared": [
+        "卜",
+        "厂",
+        "匕"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "卢字头",
+        "折",
+        "丿",
+        "七"
+      ],
+      "only_direct": [
+        "卜",
+        "厂",
+        "匕"
+      ],
+      "all_direct": [
+        "卜",
+        "厂",
+        "匕"
+      ],
+      "hit_count": 39,
+      "interaction_count": 0,
+      "hits": [
+        "䴘",
+        "唬",
+        "嘘",
+        "噱",
+        "墟",
+        "嫭",
+        "巇",
+        "彪",
+        "掳",
+        "搋",
+        "摅",
+        "滤",
+        "滹",
+        "澽",
+        "猇",
+        "琥",
+        "璩",
+        "甗",
+        "篪",
+        "罅",
+        "蘧",
+        "虎",
+        "虏",
+        "虐",
+        "虑",
+        "虒",
+        "虓",
+        "虔",
+        "虚",
+        "虞",
+        "虢",
+        "虤",
+        "褫",
+        "觑",
+        "谑",
+        "遽",
+        "醵",
+        "饕",
+        "齇"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 14,
+      "part": "妻字头",
+      "declared": [
+        "横",
+        "肀"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "一",
+        "折",
+        "二",
+        "丨"
+      ],
+      "only_direct": [
+        "横",
+        "肀"
+      ],
+      "all_direct": [
+        "横",
+        "肀"
+      ],
+      "hit_count": 4,
+      "interaction_count": 0,
+      "hits": [
+        "凄",
+        "妻",
+        "萋",
+        "郪"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 15,
+      "part": "事",
+      "declared": [
+        "横",
+        "口",
+        "争字底"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "一",
+        "口",
+        "折",
+        "二",
+        "竖"
+      ],
+      "only_direct": [
+        "横",
+        "口",
+        "争字底"
+      ],
+      "all_direct": [
+        "横",
+        "口",
+        "争字底"
+      ],
+      "hit_count": 1,
+      "interaction_count": 0,
+      "hits": [
+        "事"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 16,
+      "part": "史",
+      "declared": [
+        "口",
+        "乂"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "口",
+        "㐅"
+      ],
+      "only_direct": [
+        "口",
+        "乂"
+      ],
+      "all_direct": [
+        "口",
+        "乂"
+      ],
+      "hit_count": 2,
+      "interaction_count": 0,
+      "hits": [
+        "史",
+        "驶"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 17,
+      "part": "吏",
+      "declared": [
+        "横",
+        "口",
+        "乂"
+      ],
+      "state": "ok",
+      "auto_direct": [
+        "一",
+        "口",
+        "㐅"
+      ],
+      "only_direct": [
+        "横",
+        "口",
+        "乂"
+      ],
+      "all_direct": [
+        "横",
+        "口",
+        "乂"
+      ],
+      "hit_count": 2,
+      "interaction_count": 0,
+      "hits": [
+        "使",
+        "吏"
+      ],
+      "interactions": []
+    },
+    {
+      "index": 18,
+      "part": "头",
+      "declared": [
+        "冬字底",
+        "大"
+      ],
+      "state": "auto_satisfies",
+      "auto_direct": [
+        "冬字底",
+        "大"
+      ],
+      "only_direct": [
+        "冬字底",
+        "大"
+      ],
+      "all_direct": [
+        "冬字底",
+        "大"
+      ],
+      "hit_count": 0,
+      "interaction_count": 0,
+      "hits": [],
+      "interactions": []
+    },
+    {
+      "index": 19,
+      "part": "尽",
+      "declared": [
+        "尺",
+        "冬字底"
+      ],
+      "state": "auto_satisfies",
+      "auto_direct": [
+        "尺",
+        "冬字底"
+      ],
+      "only_direct": [
+        "尺",
+        "冬字底"
+      ],
+      "all_direct": [
+        "尺",
+        "冬字底"
+      ],
+      "hit_count": 0,
+      "interaction_count": 0,
+      "hits": [],
+      "interactions": []
+    },
+    {
+      "index": 20,
+      "part": "武",
+      "declared": [
+        "横",
+        "弋",
+        "止"
+      ],
+      "state": "auto_satisfies",
+      "auto_direct": [
+        "一",
+        "弋",
+        "止"
+      ],
+      "only_direct": [
+        "一",
+        "弋",
+        "止"
+      ],
+      "all_direct": [
+        "一",
+        "弋",
+        "止"
+      ],
+      "hit_count": 0,
+      "interaction_count": 0,
+      "hits": [],
+      "interactions": []
+    }
+  ],
+  "structural_override_hits": {
+    "乘": [
+      "乘",
+      "剩",
+      "嵊"
+    ]
+  },
+  "baseline_mismatches": []
+}

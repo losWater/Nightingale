@@ -1,0 +1,58 @@
+# 字词冲突的唯一机器可读裁决资产。Markdown 只作说明，不参与状态判断。
+policies:
+  same_initial_character: retain_single
+  # 若同码二字词全部以该单字开头，误出单字只相当于词尚未打完；无需回删。
+
+decisions:
+  uizo: {char: 似, action: word_first, note: 冷门 shì 入口让诗作／视作；常用 sì 另走 sizo}
+  uize: {char: 使, action: retain_single, note: 实则／失责偏书面，保留高频单字使}
+  fuve: {char: 父, action: retain_single, note: 附着存在误音，覆辙多嵌长词，保留父}
+  xkfa: {char: 省, action: word_first, note: xǐng 冷门入口让刑法／刑罚；常用 shěng 另有 ugf}
+  jimb: {char: 计, action: retain_single, note: jim 必须给急解除急／箕重码，保留计}
+  bikz: {char: 匕, action: retain_single, note: 匕的无理主码；bik 已由币占用，闭口压力不足}
+  zdbj: {char: 哉, action: retain_single, note: 搜狗候选中再版甚至落后于在办／再办／在班等句子切片，实际独立词压力很低，保留哉}
+  vuqr: {char: 贮, action: word_first, note: 主权等词优先；贮有三码次选}
+  xmyl: {char: 陷, action: retain_single, note: 仅撞较弱四字简词，保留陷}
+  ybyv: {char: 隐, action: retain_single, note: 仅撞较弱四字简词，保留隐}
+  bclo: {char: 刨, action: word_first, note: 保罗／剥落等词优先；刨有三码次选}
+  yutn: {char: 尉, action: word_first, note: 语调等词优先；尉有三码次选}
+  jitv: {char: 忌, action: resolved_by_short, note: 忌取得 jit，释放击退／鸡腿}
+  yivj: {char: 怡, action: word_first, note: 词位优先；怡另有独立主码 yivk}
+  yian: {char: 椅, action: word_first, note: 词位优先；椅另有独立主码 yiav}
+  jnhe: {char: 狡, action: retain_single, note: 相撞词排名较后，保留狡}
+  qitn: {char: 琦, action: retain_single, note: 保护姓名用字琦}
+  liqk: {char: 荔, action: word_first, note: 沥青／理清等词优先；荔有三码次选}
+  jkqr: {char: 菁, action: retain_single, note: 保护姓名用字菁}
+  wumd: {char: 诬, action: word_first, note: 雾霾优先；诬有三码次选}
+  svyr: {char: 隋, action: word_first, note: 随缘等词优先；隋有三码次选}
+  qiya: {char: 鳍, action: word_first, note: 气压／欺压优先；鳍有三码次选}
+  jmzo: {char: 健, action: retain_single, note: 间作生僻，保留健}
+  yijk: {char: 咿, action: word_first, note: 已经等词优先；咿有三码次选}
+  yzbj: {char: 右, action: retain_single, note: 二字词生僻且四字词较弱，保留右}
+  ddzq: {char: 贷, action: false_collision, note: 弹电子琴首字应读 tán，不是 dàn}
+  qmmo: {char: 谴, action: retain_single, note: 阡陌偏文学且常嵌长语境，保留谴}
+  viya: {char: 酯, action: word_first, note: 质押等词优先；酯有三码次选}
+  bwqj: {char: 蓓, action: retain_single, note: 仅撞较弱四字简词，保留蓓}
+
+  # 近期连锁腾位；这些字已有简码，因此通常不会出现在“无简码”主审计表中。
+  wwyr: {char: 卫, action: resolved_by_short, note: 卫取得 wwy，词位优先}
+  qkcv: {char: 庆, action: resolved_by_short, note: 庆取得 qkc，清脆／青翠优先}
+  luyb: {char: 陆, action: resolved_by_short, note: 陆恢复 luy，录音优先}
+  wudh: {char: 舞, action: resolved_by_short, note: 舞取得 wud，武当优先}
+  yuee: {char: 俞, action: resolved_by_short, note: 俞取得 yue，余额优先}
+  wwtn: {char: 尉, action: word_first, note: 微调优先；尉（wèi）补到 wwt 二选，尾保持一选，慰仍走 wwtv}
+  qiug: {char: 岐, action: word_first, note: 齐声优先；岐补到 qiu 二选，气保持一选}
+  ddzu: {char: 岱, action: resolved_by_short, note: 岱取得 ddz，傣族优先；代升到 dd，带退到 ddq}
+  yudy: {char: 毓, action: word_first, note: 毓为生僻字，愚钝具有更强直接输入需求；词优先且不补三码}
+  jicd: {char: 矶, action: word_first, note: 荠菜／集采优先；矶单打频次低，集采又是宝频机器人未收录的现代常用词；不补三码}
+  lqcy: {char: 硫, action: resolved_by_short, note: 硫取得 lqc，瘤退回干净全码 lqca；留存优先}
+  jixq: {char: 祭, action: resolved_by_short, note: 祭取得 jix，冀退回干净全码 jixv；机修优先}
+  qule: {char: 区, action: resolved_by_short, note: 区退到 qul，取乐优先}
+  qumm: {char: 娶, action: resolved_by_short, note: 娶取得 qum，曲面优先}
+  doda: {char: 朵, action: word_first, note: 多大优先；朵有三码次选}
+  jmmo: {char: 箭, action: word_first, note: 箭主码改为顺取 jmmv；自然码 jmmo 保留容错，只让建模一个候选位}
+  vjbj: {char: 粘, action: retain_single, note: zhān 的实际使用频率不低，粘是常用动词；展板仅列约 1.9 万，保留单字首选}
+  jnfg: {char: 缴, action: resolved_by_short, note: 缴取得 jnf；绞退回无词撞的 jnfe；交锋在 jnfg 首选}
+  yigj: {char: 裔, action: word_first, note: 接受一条有记忆成本的顺取无理码：裔主码 yigl，疑保留三码 yig 并在全码让位；yigj 保留裔的自然容错，乙肝首选}
+  djmo: {char: 诞, action: resolved_by_short, note: 诞取得 djm；耽的频率主要由耽误、耽搁等固定词贡献，退回无词撞的 djmn；djmo 让一个词位}
+  jigd: {char: 饥, action: retain_single, note: 技改虽有一定词频但领域性较强；饥只有饣＋几两根，无低成本腾位路径，保留单字首选}

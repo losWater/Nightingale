@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-08-31T02:25+10:00",
+  "status": "pending_validation",
+  "glyphs": 8105,
+  "rules": 20,
+  "run_dir": "D:\\nightingale\\work\\重开工程\\05_退火实验\\生成8105规范拆分表\\20260828_022249+1000",
+  "archived_previous_table": "D:\\nightingale\\work\\重开工程\\99_历史参考\\历次8105表_20260828_022249+1000",
+  "inputs": {
+    "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "2e4892647a94c94732044542ec10da6ae6cdf8a9a0c70bc815dab6003ad067e1",
+    "work\\重开工程\\02_规范拆分\\人工规范拆分_待验收.yaml": "54bb7f5d940cccb19744825fad9b13dddff0c515847fdb30a8537970f2e42a6a",
+    "work\\重开工程\\02_规范拆分\\传播式整字结构覆写_待验收.yaml": "8a8f5c03bfd648359fff3e7ec68431ac2f460596745031f47dbde69122f8fcc0",
+    "work\\重开工程\\02_规范拆分\\正式字架规则.yaml": "56cdd9b22366e60fc25b0d54d65130b2ed1b312d7cc758d223257a5d27a83333",
+    "work\\重开工程\\02_规范拆分\\正式历史结构裁决规则.yaml": "8b27e79af6622e2b7250b68317f6c79d78e5973b04d2e4b371c39f3d9d69a130",
+    "work\\重开工程\\02_规范拆分\\Chai部件名称别名.yaml": "6f22e3fadb2603f8b2a7c873f0395d0af6b3804c16bb3b447d4cf50ddd098052",
+    "work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5",
+    "work\\重开工程\\scripts\\chai_split_runner.ts": "6393df553a988fa93d9bb5d9f62a1c1c61ad350dc3cd9d060dcfd6b8f8653c66",
+    "work\\重开工程\\scripts\\build_canonical_8105.py": "140d7044b6b8a3ef5e798444a8d44ebe32e0acbcad527397232cff1fea033e95",
+    "work\\重开工程\\scripts\\audit_same_split_characters.py": "f137a9242930050fe85a1305ac41de21a48b33821d537a4f4785e7398bc787d1"
+  },
+  "outputs": {
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "9c4db5f9582e492c887332a0a24d755a94fe64d8f6aba3b4e6229af2e80d78bd",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.txt": "9c4db5f9582e492c887332a0a24d755a94fe64d8f6aba3b4e6229af2e80d78bd",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.html": "1f5970a800f53e8135900be87c15a1a33caaf2b30424752881f06c835f823f54",
+    "work\\重开工程\\02_规范拆分\\同拆字检查.json": "552a40beb77ec5e61d8917242b384f7fa4eb2419509512ca5e93b6ae2f218d66",
+    "work\\重开工程\\02_规范拆分\\同拆字检查_结构候选组.tsv": "3d0468d1b4d15617ccad7dc65676daf15fc318a5ad3c81ce458d80b63a4bb458",
+    "work\\重开工程\\02_规范拆分\\同拆字检查_同首末骨架组.tsv": "9789091c5392d933975ac4bd7ac8a988b5cbd89f2078e5e9d0ebbf8061ad7a44",
+    "work\\重开工程\\02_规范拆分\\同拆字检查.md": "b775d06bd8f330494b4f0855ab1b7ed19af02f0d7b3344b28e695a195fddc72e"
+  },
+  "engine": {
+    "repository": "D:\\nightingale\\repos\\webchai",
+    "commit": "00f4f1b9d652b2db0868f30050d7d5608c35334c",
+    "dirty": true,
+    "status": [
+      "M packages/hanzi-chai/src/config.ts",
+      " M packages/hanzi-chai/src/repertoire.ts"
+    ],
+    "diff_sha256": "c6a7344bf712c1d6f3ba599ed36bd7a2dc25b6043610207b62891f157eb6bcbd"
+  },
+  "known_pending_rule_issues": [
+    "RULE-0001",
+    "RULE-0002"
+  ],
+  "structural_override_hits": {
+    "乘": [
+      "乘",
+      "剩",
+      "嵊"
+    ],
+    "噩": [
+      "噩"
+    ],
+    "爽": [
+      "爽"
+    ],
+    "奭": [
+      "奭",
+      "襫"
+    ]
+  },
+  "frame_rule_hits": {
+    "衣": [
+      "亵",
+      "哀",
+      "榱",
+      "滚",
+      "磙",
+      "缞",
+      "蓑",
+      "衮",
+      "衰",
+      "衷",
+      "袤",
+      "裒",
+      "裛",
+      "裹",
+      "褒",
+      "锿"
+    ],
+    "赢": [
+      "嬴",
+      "瀛",
+      "羸",
+      "蠃",
+      "赢"
+    ],
+    "行": [
+      "愆",
+      "蘅",
+      "衍",
+      "衎",
+      "衒",
+      "衔",
+      "街",
+      "衙",
+      "衠",
+      "衡",
+      "衢"
+    ],
+    "玨": [
+      "班"
+    ],
+    "辡": [
+      "瓣",
+      "辨",
+      "辩",
+      "辫"
+    ]
+  },
+  "legacy_structural_rule_hits": [
+    "年",
+    "承",
+    "兵",
+    "戌",
+    "戍",
+    "羲",
+    "曦",
+    "爔",
+    "彖",
+    "缘",
+    "喙",
+    "篆",
+    "椽",
+    "掾",
+    "橼",
+    "瑑",
+    "禒",
+    "蠡",
+    "临",
+    "庸",
+    "墉",
+    "慵",
+    "镛",
+    "鳙",
+    "鄘",
+    "隶",
+    "逮"
+  ]
+}

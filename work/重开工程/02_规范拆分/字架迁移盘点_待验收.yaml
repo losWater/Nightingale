@@ -1,0 +1,88 @@
+schema_version: 1
+status: audit_only_do_not_apply
+description: >-
+  从旧工程恢复的字架语义盘点。当前只用于审计，尚未接入8105生成流程。
+  每条规则必须完成直接命中、嵌套传播、根合法性和同拆候选增量验收后才能启用。
+
+legacy_sources:
+  declarations: 夜莺B/work/拆分规则.yaml
+  decisions: 夜莺B/work/选根台账.md
+  log: 夜莺B/work/工作日志_2026-08-24.md
+  implementation_reference: 夜莺B/scripts/build_analysis.py
+  risk_audit: work/v08/code_audit/claude_审计报告_2026-08-27.md
+
+frames:
+  衣:
+    topology: {operator: "⿳", outer_first: 亠, outer_last: 衣省}
+    host_root: 衣
+    examples: {哀: 口, 衰: [口, 横], 裹: 果}
+    legacy_direct_hit_count: 10
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits: [亵, 哀, 衮, 衰, 衷, 袤, 裒, 裛, 裹, 褒]
+    audited_nested_hits: [榱, 滚, 磙, 缞, 蓑, 锿]
+    accepted_at: "2026-08-28 01:08 +10:00"
+    accepted_notes:
+      - 果按日加木展开，不按田加木，避免共享中竖和非连续取根
+      - 襄虽匹配衣字架拓扑，但完整附属根优先，不参与改写
+  行:
+    topology: {operator: "⿲", outer_first: 彳, outer_last: 亍}
+    host_root: 行
+    examples: {街: 圭}
+    legacy_direct_hit_count: 9
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits: [衍, 衎, 衒, 衔, 街, 衙, 衠, 衡, 衢]
+    audited_nested_hits: [愆, 蘅]
+    accepted_at: "2026-08-28 01:10 +10:00"
+  辡:
+    topology: {operator: "⿲", outer_first: 辛旁, outer_last: 辛}
+    host_root: 辛
+    examples: {辩: 讠, 辨: 刂, 瓣: 瓜, 辫: 纟}
+    legacy_direct_hit_count: 4
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits: [瓣, 辨, 辩, 辫]
+    audited_nested_hits: []
+    accepted_at: "2026-08-28 01:12 +10:00"
+    representation_note: >-
+      用户已验收编码语义。正式结构表建议保留字架形辡，例如辩=[辡,讠]；
+      编码首根再通过附属关系归并为辛。旧人工阅读表的[辛,讠]只是宿主折叠显示。
+    representation_verified_at: "2026-08-28 01:32 +10:00"
+  玨:
+    topology: {operator: "⿲", outer_first: 王, outer_last: 王}
+    host_root: 王
+    examples: {班: 刂, 斑: 文}
+    legacy_direct_hit_count: 2
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits: [斑, 班]
+    audited_nested_hits: [癍]
+    semantic_changes: [班]
+    already_equivalent: [斑, 癍]
+    accepted_at: "2026-08-28 01:14 +10:00"
+    representation_note: 结构表保留玨形，编码宿主归并为王
+  赢:
+    topology:
+      operator: "⿱"
+      top: 吂
+      bottom: {operator: "⿲", outer_first: 月, outer_last: 凡}
+    host_root: 赢字架
+    frame_identity: independent_root_with_frame_behavior
+    examples: {赢: 贝, 嬴: 女, 羸: 羊, 蠃: 虫, 臝: 果}
+    migration_status: candidate_accepted_pending_formal_compiler
+    audited_direct_hits: [嬴, 羸, 蠃, 赢]
+    audited_nested_hits: [瀛]
+    accepted_at: "2026-08-28 01:16 +10:00"
+    accepted_notes:
+      - 赢字架本身是独立根，不是只为规则虚构的抽象字架
+      - 该独立根同时具有容纳贝、女、羊、虫、果等中芯的字架表现形式
+      - 臝不在当前8105字集，只保留未来字集扩展时的结构样例
+  襄:
+    host_root: 衣
+    structural_only: true
+    complete_root_precedence: true
+    legacy_direct_hit_count: 0
+    migration_status: complete_root_precedence_accepted
+    accepted_at: "2026-08-28 01:08 +10:00"
+
+rejected_legacy_candidates:
+  弜: {reason: 不直观且可分辨用户少}
+  㗊: {reason: 不直观且可分辨用户少}
+  𦬇: {reason: 不直观且可分辨用户少}

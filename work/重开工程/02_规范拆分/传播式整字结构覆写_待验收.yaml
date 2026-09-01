@@ -1,0 +1,46 @@
+schema_version: 1
+description: >-
+  只记录因交叉借笔、非连续边界等原因无法由Chai analysis.customize表达，
+  但属于唯一规范结构的传播式覆写。不得放入无理码、容错码或编码裁决。
+
+propagating_structural_overrides:
+  乘:
+    status: validated_and_persistence_verified
+    reason: 禾的撇捺被北字心穿插，普通部件自定义无法保留非连续禾根
+    chai_sequence: [千, 北字旁, 匕, 丿, 丶]
+    canonical_sequence: [禾, 北字旁, 匕]
+    expected_direct_glyph: 乘
+    expected_family_examples: [剩, 嵊]
+    verified_hits: [乘, 剩, 嵊]
+    verified_at: "2026-08-28 00:20 +10:00"
+    persistence_tsv_sha256: 97eba8404187590e53ede65cdb95f416403c4c2c0c053915f1112b00ecef6230
+  噩:
+    status: validated_and_persistence_verified
+    reason: 王根的中间区域被四个口穿插，Chai按连续笔顺将王拆散
+    chai_sequence: [一, 丨, 口, 口, 口, 口, 二]
+    canonical_sequence: [王, 口, 口, 口, 口]
+    expected_direct_glyph: 噩
+    expected_family_examples: []
+    verified_hits: [噩]
+    verified_at: "2026-08-28 00:26 +10:00"
+    persistence_tsv_sha256: 72594ed2ae1ee62907b2b00084486fdd99c3719d344ccbcbeeffaedf9c9303a5
+  爽:
+    status: validated_and_persistence_verified
+    reason: 大的捺被四个交叉形穿插，Chai按连续笔顺将大拆成左字框和末点
+    chai_sequence: [左字框, 㐅, 㐅, 㐅, 㐅, 丶]
+    canonical_sequence: [大, 㐅, 㐅, 㐅, 㐅]
+    expected_direct_glyph: 爽
+    expected_family_examples: []
+    verified_hits: [爽]
+    verified_at: "2026-08-28 00:33 +10:00"
+    persistence_tsv_sha256: e5af4bdba6f1879c91613af72970ebd6d05dfb39e48fc8e97bd7ee21149897af
+  奭:
+    status: validated_and_persistence_verified
+    reason: 大的捺被皕穿插，Chai按连续笔顺将大拆成左字框和末点；百不是现有根，须展开为横加白
+    chai_sequence: [左字框, 一, 白, 一, 白, 丶]
+    canonical_sequence: [大, 横, 白, 横, 白]
+    expected_direct_glyph: 奭
+    expected_family_examples: [襫]
+    verified_hits: [奭, 襫]
+    verified_at: "2026-08-28 00:36 +10:00"
+    persistence_tsv_sha256: 56811cbe6b722bb5c9831470be50ac50f52c1d781380b7a5a31a5918f7a695e1

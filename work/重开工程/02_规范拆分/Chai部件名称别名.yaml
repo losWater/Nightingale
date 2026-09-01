@@ -1,0 +1,10 @@
+schema_version: 1
+status: accepted_repertoire_name_aliases
+description: 夜莺规范根名到Chai字库实际部件名的显式映射；只解决名称身份，不改变编码宿主。
+aliases:
+  襄省:
+    chai_name: 囊下
+    expected_glyph_id: U+E83C
+    host_root: 衣
+    accepted_at: "2026-08-28 02:20 +10:00"
+    reason: 用户确认囊拆为囊字头加襄省；Chai字库将同一部件登记为囊下。

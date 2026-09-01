@@ -1,0 +1,18 @@
+{
+  "run_time": "2026-08-28T00:00+10:00",
+  "counts": {
+    "aligned": 2030,
+    "mismatch": 0,
+    "unresolved": 0
+  },
+  "checked": 2030,
+  "inputs": {
+    "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "f60d122926e78ece9dccf4ae4f5a949aa613c5c31a649e82632ab039f22b3c1d",
+    "work\\重开工程\\02_规范拆分\\人工规范拆分_待验收.yaml": "54bb7f5d940cccb19744825fad9b13dddff0c515847fdb30a8537970f2e42a6a",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "d29b98f284ef9483492fd3890093622fce82b691387b58831df213d10ae411c9",
+    "work\\重开工程\\04_Chai输入\\结构分析基线_待审计.yaml": "4442ade25cad9acb7efff9cd523de154b453135c520bd2d1945bd1f6a82006d5",
+    "work\\重开工程\\scripts\\chai_split_runner.ts": "6393df553a988fa93d9bb5d9f62a1c1c61ad350dc3cd9d060dcfd6b8f8653c66",
+    "work\\重开工程\\scripts\\audit_two_root_top_level_boundaries.py": "f2759f3814a1a47eb8e7bf5b209c8a005d0c9e6f160d0de9ab38054a71e2016a"
+  },
+  "exceptions": []
+}
