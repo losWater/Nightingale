@@ -44,6 +44,13 @@ def main() -> None:
         *common, "--release-dir", str(RELEASE),
         "--output-dir", str(ATTACHMENTS / "搜狗输入法"),
     ])
+    run([
+        str(SCRIPTS / "build_v085_sogou_wubi_table.py"),
+        "--combined", str(TABLES / "夜莺0.8.5字词表.txt"),
+        "--extension-characters", str(TABLES / "夜莺码v0.8.5扩展字表.tsv"),
+        "--quick", str(ROOT / "symbo.txt"),
+        "--output", str(ATTACHMENTS / "搜狗输入法" / "夜莺码v0.8.5搜狗五笔版.txt"),
+    ])
     if not args.skip_palm:
         run([
             str(SCRIPTS / "build_v085_palm_tables.py"),

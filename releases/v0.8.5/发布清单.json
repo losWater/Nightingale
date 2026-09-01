@@ -57,6 +57,7 @@
     "02_输入法挂接/手心输入法_旧版备份.zip": "7b5b9bf9b68f20696df49739b889bc73a5dcb0e9f41e9640f47b497c2da0cc1a",
     "02_输入法挂接/搜狗输入法/夜莺码v0.8.5挂接字词版_搜狗词库.txt": "4984952f0c01fe524fbd8b089f6288ec04027a5cdfe48a6dab5e40e6baaa08c5",
     "02_输入法挂接/搜狗输入法/夜莺码v0.8.5挂接字词版_搜狗词库_含快符.txt": "28d76e9d19ecb1ad18b1ae86d434ab72d54f477ac0995924c8690cb9c2c2cea6",
+    "02_输入法挂接/搜狗输入法/夜莺码v0.8.5搜狗五笔版.txt": "a982cb8c9814ea75df5dcdcd41b90b983640eac54fd591e37302795ac6bb2c54",
     "02_输入法挂接/搜狗输入法/夜莺码v0.8.5无二字词版_搜狗.txt": "2c737d0e0464f7ee7b456e3ccc644a2e7b6afdbf6629546b06c6d281bcfa03e7",
     "02_输入法挂接/搜狗输入法/夜莺码v0.8.5无二字词版_搜狗_含快符.txt": "389fc15b08885f6a121c87b5ea20664648b3f94ae5a9cd960f22183500494251",
     "03_字根与拆分/夜莺码 v0.8.5 字根表.pdf": "afd04c5ba1977eb7f5d867eecb7011dc9d56ee7fed42287cedea69f66ecc9207",
@@ -87,7 +88,7 @@
     "05_维护与裁决/普通词序采用简单鹤_交接说明.md": "48d36fadd68b6880a255bf7183cd88450be99261b65608f6a82a3f1b4c00c42a",
     "05_维护与裁决/普通词序采用简单鹤_变更摘要.json": "ae9d6da8a2e2fcdda9b6f3aac68959233db3db3965a5e70199af5d1a67c314bf",
     "05_维护与裁决/普通词序采用简单鹤_变更明细.tsv": "a8b261cc81ae93b7db80c62a0b65fce41950e7697aded3e077ed350fb15c578d",
-    "README.md": "5e6f1256476595c7cdadab3bcddb6fb78116175c4c67ee794c2e0d0a0b8e5e38"
+    "README.md": "052f1bd857d12831f8d3d0ff9e5b34322e5d21e09aeca6164e0f7c918305025c"
   },
   "derived_from_masters": {
     "releases/v0.8.5/01_正式码表/夜莺码v0.8.5单字版.txt": "f20de35a656ca3282f4abf4e241376dabc24e0654eae7bb8d57341ea8d35e705",
