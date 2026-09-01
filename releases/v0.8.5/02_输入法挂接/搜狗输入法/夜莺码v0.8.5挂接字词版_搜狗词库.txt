@@ -580,6 +580,7 @@ bhn,1=邦
 bho,1=棒
 bht,1=塝
 bhv,1=膀
+bhw,1=邦
 bhx,1=蒡
 bia,1=弊
 bib,1=濞

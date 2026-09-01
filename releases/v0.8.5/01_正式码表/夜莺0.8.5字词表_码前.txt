@@ -2423,6 +2423,7 @@ bhv	包含着
 bhv	被害者
 bhv	笔和纸
 bhv	病患者
+bhw	邦
 bhw	不好玩
 bhw	白话文
 bhw	保护网

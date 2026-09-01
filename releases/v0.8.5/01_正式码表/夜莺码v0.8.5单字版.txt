@@ -576,6 +576,7 @@
 搒	bhl
 蚌	bhm
 邦	bhn
+邦	bhw
 棒	bho
 塝	bht
 膀	bhv
