@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-09-02T00:44:52+10:00",
+  "inputs": {
+    "releases\\v0.8.5\\01_正式码表\\夜莺0.8.5字词表.txt": "aa0544c94690d9faa0584e880f2dabc0a82e9a543ef77695e5e664a4272e87e0",
+    "releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5单字版.txt": "f20de35a656ca3282f4abf4e241376dabc24e0654eae7bb8d57341ea8d35e705",
+    "releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5简词表.tsv": "8d269efa1ca9f20b5243f3547a21384ba4f10537ad1ec8001a80212e96782d9f",
+    "releases\\v0.8.5\\01_正式码表\\夜莺码v0.8.5扩展字表.tsv": "686e98011de82a86e2906c439c43be619a6dc3e593e78d02206963eb03a80e2f",
+    "releases\\v0.8.5\\99_参考资料\\参考\\简单鹤V9.3.0纯词库 (1).txt": "4a9d987820f69df7d7775e9ce60b13ffb7334ab09cf8ca4899496fb0445644e1"
+  },
+  "combined_rows_before": 172672,
+  "combined_rows_after": 211007,
+  "codes_changed": 38543,
+  "words_added": 38335,
+  "short_word_rank_updates": 3828,
+  "anchored_decision_words": 472,
+  "quick_symbol_codes_frozen": [
+    "xing"
+  ],
+  "jdhe": {
+    "jdhe_rows": 150600,
+    "jdhe_skipped_unknown_char": 2,
+    "jdhe_recoded": 3050,
+    "jdhe_new_words": 38780,
+    "jdhe_long_words_ignored": 0
+  },
+  "recoded_examples": [
+    [
+      "腌臜",
+      "aaza",
+      "yjza"
+    ],
+    [
+      "哀乐",
+      "aiyt",
+      "aile"
+    ],
+    [
+      "案宗",
+      "anzl",
+      "anzs"
+    ],
+    [
+      "拗劲",
+      "aojk",
+      "nqjb"
+    ],
+    [
+      "拗口",
+      "aokz",
+      "nqkz"
+    ],
+    [
+      "本宗",
+      "bfzl",
+      "bfzs"
+    ],
+    [
+      "别总",
+      "bpzl",
+      "bpzs"
+    ],
+    [
+      "霸总",
+      "bazl",
+      "bazs"
+    ],
+    [
+      "八百",
+      "babe",
+      "babd"
+    ],
+    [
+      "把我",
+      "bawo",
+      "bw"
+    ],
+    [
+      "半宿",
+      "bjxq",
+      "bjsu"
+    ],
+    [
+      "罢休",
+      "baxo",
+      "baxq"
+    ],
+    [
+      "宾从",
+      "bbcl",
+      "bbcs"
+    ],
+    [
+      "槟榔",
+      "bblh",
+      "bklh"
+    ],
+    [
+      "宝刹",
+      "bcia",
+      "bcua"
+    ],
+    [
+      "暴露",
+      "bclu",
+      "bl"
+    ],
+    [
+      "保修",
+      "bcxo",
+      "bcxq"
+    ],
+    [
+      "报修",
+      "bcxo",
+      "bcxq"
+    ],
+    [
+      "包扎",
+      "bcza",
+      "bcva"
+    ],
+    [
+      "白葱",
+      "bdcl",
+      "bdcs"
+    ],
+    [
+      "白鹤",
+      "bdeh",
+      "bdhe"
+    ],
+    [
+      "白种",
+      "bdis",
+      "bdvs"
+    ],
+    [
+      "败露",
+      "bdlu",
+      "bdlz"
+    ],
+    [
+      "白露",
+      "bdlu",
+      "bdlz"
+    ],
+    [
+      "白术",
+      "bdvu",
+      "bduu"
+    ],
+    [
+      "百宝",
+      "bebc",
+      "bdbc"
+    ],
+    [
+      "百般",
+      "bebj",
+      "bdbj"
+    ],
+    [
+      "百病",
+      "bebk",
+      "bdbk"
+    ],
+    [
+      "百变",
+      "bebm",
+      "bdbm"
+    ],
+    [
+      "百遍",
+      "bebm",
+      "bdbm"
+    ]
+  ]
+}
