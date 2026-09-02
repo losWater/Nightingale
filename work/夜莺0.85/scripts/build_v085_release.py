@@ -160,9 +160,9 @@ def build_practice(layout: dict, release: Path, roots_path: Path, resolve, alias
             for root in mains.get(key, []):
                 hints = []
                 if subsidiaries.get(root):
-                    hints.append("附属: " + " ".join(present_name(item) for item in subsidiaries[root]))
+                    hints.append("附属: " + " ".join(dict.fromkeys(present_name(item) for item in subsidiaries[root])))
                 if anchors.get(root):
-                    hints.append("锚定同键: " + " ".join(present_name(item) for item in anchors[root]))
+                    hints.append("锚定同键: " + " ".join(dict.fromkeys(present_name(item) for item in anchors[root])))
                 name = f"{root}(笔画)" if root in STROKE_NAMES else present_name(root)
                 if root == "囗":
                     name = "囗-[（框）]-"
@@ -316,6 +316,8 @@ def main() -> None:
         copy_exact(source, destination)
 
     layout, layout_path = build_layout(args.config, tables)
+    root_yaml = yaml.safe_load((args.roots_dir / "根集.yaml").read_text(encoding="utf-8"))
+    PRESENTATION_NAMES.update({str(k): str(v) for k, v in (root_yaml.get("presentation_names") or {}).items()})
     resolve, _ = load_resolver(args.repo, args.roots_dir)
     aliases = load_presentation_aliases(args.presentation)
     practice_data, practice_page, root_count = build_practice(

@@ -6,12 +6,12 @@
 5	m	采	采	附属根	爫	首	采	cǎi	采	cdmm	cdm	2
 6	m	采	采	附属根	爫	末	菜	cài	艹 ＋ 采	cdxm	cd	4
 7	v	亠	亠	主根	亠	首	率	lǜ / shuài	亠 ＋ 幺 ＋ 冫 ＋ 撇 ＋ 点 ＋ 十	lvvp ukvp	lv uk	38
-8	v	亠	亠	主根	亠	末	丹	dān	周字框 ＋ 亠	djnv	djn	4
+8	v	亠	亠	主根	亠	末	丹	dān	⺆ ＋ 亠	djnv	djn	4
 9	l	然左角	然左角	附属根	夕	首	然	rán	然左角 ＋ 犬 ＋ 灬	rjlr	rj	2
 10	e	长	长	主根	长	首	长	cháng / zhǎng	长	ihee vhee	ihe vhe	1
 11	e	长	长	主根	长	末	怅	chàng	忄 ＋ 长	ihce	ihc	11
 12	c	艮	艮	主根	艮	首	退	tuì	艮 ＋ 辶	tvcp	tv	4
-13	c	艮	艮	主根	艮	末	跟	gēn	足旁 ＋ 艮	gfzc	gf	48
+13	c	艮	艮	主根	艮	末	跟	gēn	⻊ ＋ 艮	gfzc	gf	48
 14	i	养字头	养字头	附属根	美字头	首	养	yǎng	养字头 ＋ 乔字底	yhia	yhi	1
 15	i	养字头	养字头	附属根	美字头	末	醭	bú	酉 ＋ 业无横 ＋ 一 ＋ 养字头	buei	bue	9
 16	q	秉	秉	主根	秉	末	秉	bǐng	秉	bkqq	bkq	1
@@ -23,8 +23,8 @@
 22	q	争字底	争字底	主根	争字底	末	琤	chēng	王 ＋ ⺈ ＋ 争字底	iggq	igg	13
 23	q	目	目	附属根	日	首	眼	yǎn	目 ＋ 艮	yjqc	yj	70
 24	q	目	目	附属根	日	末	目	mù	目	muqq	mu	44
-25	e	轻字边	轻字边	附属根	工	首	劲	jìn	轻字边 ＋ 力	jbep jkep	jbe	5
-26	e	轻字边	轻字边	附属根	工	末	经	jīng	纟 ＋ 轻字边	jkje	jk	13
+25	e	轻右	轻字边	附属根	工	首	劲	jìn	轻右 ＋ 力	jbep jkep	jbe	5
+26	e	轻右	轻字边	附属根	工	末	经	jīng	纟 ＋ 轻右	jkje	jk	13
 27	d	音	音	主根	音	首	戆	zhuàng	音 ＋ 十 ＋ 夂 ＋ 工 ＋ 贝 ＋ 心	ghdc vldc	ghd vld	11
 28	d	音	音	主根	音	末	谙	ān	讠 ＋ 音	andd	and	7
 29	i	帝字头	帝字头	附属根	宀	首	帝	dì	帝字头 ＋ 巾	diia	dii	4
@@ -32,14 +32,14 @@
 31	g	无	无	主根	无	末	呒	m	口 ＋ 无	mmhg wuhg	mmh	8
 32	a	文	文	主根	文	首	刘	liú	文 ＋ 刂	lqas	lq	14
 33	a	文	文	主根	文	末	坟	fén	土 ＋ 文	ffta	fft	17
-34	a	弟省	弟省	附属根	弟	末	第	dì	竹头 ＋ 弟省	dira	dir	1
+34	a	弟省	弟省	附属根	弟	末	第	dì	⺮ ＋ 弟省	dira	dir	1
 35	t	具字头	具字头	附属根	且	首	具	jù	具字头 ＋ 八	juta	jut	1
 36	t	具字头	具字头	附属根	且	末	置	zhì	罒 ＋ 十 ＋ 具字头	viat	via	8
 37	k	旅下角	旅下角	附属根	氏	末	旅	lǚ	方 ＋ 每字头 ＋ 旅下角	lvsk	lvs	4
 38	q	曰	曰	附属根	日	首	曰	yuē	曰	ytqq	ytq	1
 39	q	曰	曰	附属根	日	末	汩	gǔ	氵 ＋ 曰	gubq	gubq	2
-40	p	左字框	左字框	附属根	十	首	布	bù	左字框 ＋ 巾	bupa	bup	17
-41	p	左字框	左字框	附属根	十	末	贼	zéi	贝 ＋ 戈 ＋ 左字框	zwzp	zw	5
+40	p	𠂇	左字框	附属根	十	首	布	bù	𠂇 ＋ 巾	bupa	bup	17
+41	p	𠂇	左字框	附属根	十	末	贼	zéi	贝 ＋ 戈 ＋ 𠂇	zwzp	zw	5
 42	v	己	己	附属根	已	首	改	gǎi	己 ＋ 攵	gdvq	gdv	3
 43	v	己	己	附属根	已	末	皑	ái	白 ＋ 山 ＋ 己	aiyv	aiy	21
 44	p	卬	卬	附属根	卩	首	卬	áng	卬	ahpp	ahp	2
@@ -57,7 +57,7 @@
 56	a	囟	囟	附属根	向	首	囟	xìn	囟	xbaa	xbaa	1
 57	a	囟	囟	附属根	向	末	瑙	nǎo	王 ＋ 巛 ＋ 囟	ncga	ncg	3
 58	r	兔	兔	主根	兔	首	兔	tù	兔	turr	tur	2
-59	r	兔	兔	主根	兔	末	儳	chán	亻 ＋ ⺈ ＋ 口 ＋ 比字旁 ＋ 匕 ＋ 兔	ijfr	ijf	7
+59	r	兔	兔	主根	兔	末	儳	chán	亻 ＋ ⺈ ＋ 口 ＋ 比左 ＋ 匕 ＋ 兔	ijfr	ijf	7
 60	l	夜下角	夜下角	附属根	夕	末	液	yè	氵 ＋ 亠 ＋ 亻 ＋ 夜下角	yebl	yeb	4
 61	e	车	车	主根	车	首	连	lián	车 ＋ 辶	lmep	lm	3
 62	e	车	车	主根	车	末	车	chē	车	ieee juee	ie	22
@@ -88,7 +88,7 @@
 87	z	页	页	附属根	见	末	顿	dùn	一 ＋ 凵 ＋ 折 ＋ 页	dynz	dy	66
 88	i	户	户	附属根	尸	首	户	hù	户	huii	hu	21
 89	i	户	户	附属根	尸	末	护	hù	扌 ＋ 户	huli	hul	9
-90	p	鬼	鬼	主根	鬼	首	魃	bá	鬼 ＋ 左字框 ＋ 又 ＋ 丶	bapa	bap	10
+90	p	鬼	鬼	主根	鬼	首	魃	bá	鬼 ＋ 𠂇 ＋ 又 ＋ 丶	bapa	bap	10
 91	p	鬼	鬼	主根	鬼	末	瑰	guī	王 ＋ 鬼	gvgp	gvg	15
 92	p	毌	毌	附属根	母	首	贯	guàn	毌 ＋ 贝	grpz	grp	2
 93	p	毌	毌	附属根	母	末	毌	guàn	毌	grpp	grpp	1
@@ -103,7 +103,7 @@
 102	r	熏	熏	附属根	黑	末	醺	xūn	酉 ＋ 熏	xyer	xye	6
 103	n	片	片	主根	片	首	版	bǎn	片 ＋ 反字框 ＋ 又	bjnq	bj	6
 104	n	片	片	主根	片	末	片	piàn	片	pmnn	pm	1
-105	e	拣字边	拣字边	附属根	车	末	练	liàn	纟 ＋ 拣字边	lmje	lmj	3
+105	e	拣右	拣字边	附属根	车	末	练	liàn	纟 ＋ 拣右	lmje	lmj	3
 106	d	丸	丸	附属根	九	首	丸	wán	丸	wjdd	wjd	1
 107	d	丸	丸	附属根	九	末	亵	xiè	衣 ＋ 扌 ＋ 丸	xpnd	xpn	6
 108	a	饣	饣	主根	饣	首	饭	fàn	饣 ＋ 反字框 ＋ 又	fjaq	fj	47
@@ -118,7 +118,7 @@
 117	w	亚	亚	附属根	业无横	末	亚	yà	亚	yaww	ya	10
 118	z	见	见	主根	见	首	觃	yàn	见 ＋ 子	yjzn	yjzn	2
 119	z	见	见	主根	见	末	见	jiàn	见	jmzz xmzz	jm	35
-120	w	角	角	主根	角	首	觥	gōng	角 ＋ 尚字头 ＋ 兀	gswa	gsw	15
+120	w	角	角	主根	角	首	觥	gōng	角 ＋ ⺌ ＋ 兀	gswa	gsw	15
 121	w	角	角	主根	角	末	角	jiǎo	角	jnww jtww	jnw jtw	7
 122	y	鱼	鱼	主根	鱼	首	鲍	bào	鱼 ＋ 勹 ＋ 巳	bcyv	bcy	109
 123	y	鱼	鱼	主根	鱼	末	鲎	hòu	学无子 ＋ 鱼	hziy	hzi	12
@@ -140,7 +140,7 @@
 139	y	山	山	主根	山	首	岑	cén	山 ＋ 今	cfyz	cf	134
 140	y	山	山	主根	山	末	山	shān	山	ujyy	uj	24
 141	a	兀	兀	附属根	儿	首	虺	huǐ	兀 ＋ 虫	hvam	hva	2
-142	a	兀	兀	附属根	儿	末	光	guāng	尚字头 ＋ 兀	glga	gl	39
+142	a	兀	兀	附属根	儿	末	光	guāng	⺌ ＋ 兀	glga	gl	39
 143	w	冂	冂	附属根	匚	首	刚	gāng	冂 ＋ 㐅 ＋ 刂	ghws	gh	11
 144	w	冂	冂	附属根	匚	末	嶲	xī	山 ＋ 隹 ＋ 丨 ＋ 折 ＋ 冂	xiyw	xiyw	1
 145	t	土	土	主根	土	首	去	qù	土 ＋ 厶	qutt	q	189
@@ -155,13 +155,13 @@
 154	y	丁	丁	附属根	寸	首	丁	dīng	丁	dkyy	dky	2
 155	y	丁	丁	附属根	寸	末	宁	níng	宀 ＋ 丁	nkiy	nk	30
 156	i	宀	宀	主根	宀	首	安	ān	宀 ＋ 女	aniz	an	117
-157	i	尚头	尚头	附属根	宀	首	党	dǎng	尚头 ＋ 儿	dhia	dhi	9
-158	l	登字头	登字头	附属根	夕	首	登	dēng	登字头 ＋ 一 ＋ 口 ＋ 丷 ＋ 一	dgln	dgl	4
+157	i	堂无土	尚头	附属根	宀	首	党	dǎng	堂无土 ＋ 儿	dhia	dhi	9
+158	l	癶	登字头	附属根	夕	首	登	dēng	癶 ＋ 一 ＋ 口 ＋ 丷 ＋ 一	dgln	dgl	4
 159	y	末	末	附属根	未	首	末	mò	末	moyy	moy	1
 160	y	末	末	附属根	未	末	抹	mǒ	扌 ＋ 末	maly moly	mal	7
 161	t	匕	匕	主根	匕	首	鸨	bǎo	匕 ＋ 十 ＋ 鸟	bcty	bct	6
-162	t	匕	匕	主根	匕	末	比	bǐ	比字旁 ＋ 匕	bitt	bi	100
-163	i	冖	冖	附属根	宀	首	农	nóng	冖 ＋ 衣省	nsin	ns	15
+162	t	匕	匕	主根	匕	末	比	bǐ	比左 ＋ 匕	bitt	bi	100
+163	i	冖	冖	附属根	宀	首	农	nóng	冖 ＋ 𧘇	nsin	ns	15
 164	m	革	革	附属根	廿	首	鞍	ān	革 ＋ 宀 ＋ 女	anmz	anm	34
 165	m	革	革	附属根	廿	末	革	gé	革	gemm	gem	2
 166	o	追字心	追字心	主根	追字心	首	追	zhuī	追字心 ＋ 辶	vvop	vv	2
@@ -172,7 +172,7 @@
 171	g	王	王	主根	王	首	球	qiú	王 ＋ 一 ＋ 氺 ＋ 丶	qqga	qq	170
 172	g	王	王	主根	王	末	全	quán	全字头 ＋ 王	qrgg	qr	51
 173	n	襄省	襄省	附属根	衣	末	囊	náng	囊字头 ＋ 襄省	nhin	nh	5
-174	n	风省	风省	附属根	几	首	风	fēng	风省 ＋ 㐅	fgnn	fg	11
+174	n	⺇	风省	附属根	几	首	风	fēng	⺇ ＋ 㐅	fgnn	fg	11
 175	l	扌	扌	主根	扌	首	把	bǎ	扌 ＋ 巴	balv	ba	295
 176	q	聿	聿	附属根	争字底	首	建	jiàn	聿 ＋ 廴	jmqp	jmq	2
 177	q	聿	聿	附属根	争字底	末	津	jīn	氵 ＋ 聿	jbbq	jbb	9
@@ -210,7 +210,7 @@
 209	q	甫	甫	主根	甫	首	逋	bū	甫 ＋ 辶	buqp	buq	4
 210	q	甫	甫	主根	甫	末	哺	bǔ	口 ＋ 甫	buhq	buh	18
 211	p	朿	朿	附属根	束	首	刺	cì	朿 ＋ 刂	cips	cip	4
-212	p	朿	朿	附属根	束	末	策	cè	竹头 ＋ 朿	cerp	cer	3
+212	p	朿	朿	附属根	束	末	策	cè	⺮ ＋ 朿	cerp	cer	3
 213	y	至	至	主根	至	首	到	dào	至 ＋ 刂	dcys	dc	5
 214	y	至	至	主根	至	末	耋	dié	耂 ＋ 匕 ＋ 至	dppy	dpp	22
 215	p	电	电	附属根	田	首	电	diàn	电	dmpp	dmp	1
@@ -219,7 +219,7 @@
 218	h	兼	兼	主根	兼	末	兼	jiān	兼	jmhh	jmh	14
 219	i	囊字头	囊字头	附属根	宀	首	蠹	dù	囊字头 ＋ 石 ＋ 虫 ＋ 虫	duim	dui	3
 220	q	日	日	主根	日	首	是	shì	日 ＋ 定字底	uiqk	u	136
-221	q	日	日	主根	日	末	曾	céng / zēng	丷 ＋ 囗 ＋ 尚字头 ＋ 日	cgaq zgaq	cg	148
+221	q	日	日	主根	日	末	曾	céng / zēng	丷 ＋ 囗 ＋ ⺌ ＋ 日	cgaq zgaq	cg	148
 222	m	虫	虫	主根	虫	首	蚌	bèng / bàng	虫 ＋ 丰	bgmw bhmw	bgm bhm	141
 223	m	虫	虫	主根	虫	末	强	qiáng	弓 ＋ 口 ＋ 虫	jlom qlom	ql	59
 224	b	氵	氵	主根	氵	首	没	méi	氵 ＋ 殳	mobt mwbt	m	488
@@ -228,8 +228,8 @@
 227	q	互	互	附属根	争字底	末	冱	hù	冫 ＋ 互	hubq	hubq	2
 228	j	勿	勿	主根	勿	首	匆	cōng	勿 ＋ 点	csja	csj	4
 229	j	勿	勿	主根	勿	末	赐	cì	贝 ＋ 日 ＋ 勿	cizj	ciz	15
-230	n	周字框	周字框	附属根	几	首	周	zhōu	周字框 ＋ 土 ＋ 口	vznh	vz	7
-231	t	肄字旁	肄字旁	附属根	匕	首	疑	yí	肄字旁 ＋ 龴 ＋ 疋	yitk	yit	2
+230	n	⺆	周字框	附属根	几	首	周	zhōu	⺆ ＋ 土 ＋ 口	vznh	vz	7
+231	t	肄左	肄字旁	附属根	匕	首	疑	yí	肄左 ＋ 龴 ＋ 疋	yitk	yit	2
 232	z	商	商	主根	商	首	商	shāng	商	uhzz	uhz	1
 233	z	商	商	主根	商	末	熵	shāng	火 ＋ 商	uhrz	uhr	3
 234	p	卩	卩	主根	卩	末	却	què	土 ＋ 厶 ＋ 卩	qttp	qt	10
@@ -237,7 +237,7 @@
 236	a	乔	乔	附属根	竖	末	桥	qiáo	木 ＋ 乔	qnoa	qn	11
 237	y	岛	岛	附属根	鸟	首	岛	dǎo	岛	dcyy	dcy	1
 238	y	岛	岛	附属根	鸟	末	捣	dǎo	扌 ＋ 岛	dcly	dcl	2
-239	r	竹头	竹头	附属根	竹	首	等	děng	竹头 ＋ 土 ＋ 寸	dgry	dg	129
+239	r	⺮	竹头	附属根	竹	首	等	děng	⺮ ＋ 土 ＋ 寸	dgry	dg	129
 240	i	龹	龹	附属根	美字头	首	眷	juàn	龹 ＋ 目	jriq	jri	8
 241	y	可	可	附属根	寸	首	可	kě	可	keyy	ke	3
 242	y	可	可	附属根	寸	末	阿	ā	阝 ＋ 可	aapy eepy	aa	47
@@ -278,11 +278,11 @@
 277	v	巴	巴	附属根	已	首	巴	bā	巴	bavv	bav	2
 278	v	巴	巴	附属根	已	末	色	sè	⺈ ＋ 巴	sesv udsv	se	37
 279	a	罒	罒	附属根	皿	首	罗	luó	罒 ＋ 夕	loal	lo	22
-280	i	差字头	差字头	附属根	美字头	首	差	chà / chā / chāi	差字头 ＋ 工	ciie iaie idie	ia	15
+280	i	⺶	差字头	附属根	美字头	首	差	chà / chā / chāi	⺶ ＋ 工	ciie iaie idie	ia	15
 281	p	变字头	变字头	主根	变字头	首	变	biàn	变字头 ＋ 又	bmpq	bm	12
 282	r	臧字框	臧字框	附属根	戈	首	臧	zāng	臧字框 ＋ 臣	zhrk	zhr	1
 283	v	巳	巳	附属根	已	首	导	dǎo	巳 ＋ 寸	dcvy	dcv	4
-284	v	巳	巳	附属根	已	末	跑	pǎo	足旁 ＋ 勹 ＋ 巳	pczv	pc	26
+284	v	巳	巳	附属根	已	末	跑	pǎo	⻊ ＋ 勹 ＋ 巳	pczv	pc	26
 285	s	疒	疒	附属根	广	首	疼	téng	疒 ＋ 夂 ＋ 冬字底	tgsa	tg	102
 286	n	鬲	鬲	主根	鬲	首	鬲	gé / lì	鬲	genn linn	gen	5
 287	n	鬲	鬲	主根	鬲	末	滆	gé	氵 ＋ 鬲	gebn	geb	9
@@ -292,7 +292,7 @@
 291	n	交	交	主根	交	末	校	xiào	木 ＋ 交	jnon xnon	xn	19
 292	a	血	血	附属根	皿	首	衄	nǜ	血 ＋ 折 ＋ 土	nvat	nva	4
 293	a	血	血	附属根	皿	末	血	xiě	血	xpaa xtaa	xpa xta	3
-294	a	卢字头	卢字头	附属根	卜	首	卡	kǎ / qiǎ	卢字头 ＋ 一 ＋ 卜	kaaa qxaa	ka	18
+294	a	⺊	卢字头	附属根	卜	首	卡	kǎ / qiǎ	⺊ ＋ 一 ＋ 卜	kaaa qxaa	ka	18
 295	w	勹	勹	附属根	匚	首	包	bāo	勹 ＋ 巳	bcwv	bcw	17
 296	a	署	署	附属根	皿	首	署	shǔ	署	uuaa	uua	1
 297	a	署	署	附属根	皿	末	曙	shǔ	日 ＋ 署	uuqa	uuqa	3
@@ -302,7 +302,7 @@
 301	d	讠	讠	主根	讠	首	该	gāi	讠 ＋ 亠 ＋ 折 ＋ 丿 ＋ 人	gddg	gd	157
 302	d	讠	讠	主根	讠	末	辩	biàn	辡 ＋ 讠	bmsd	bms	1
 303	w	见二	见二	附属根	匚	首	盎	àng	见二 ＋ 大 ＋ 皿	ahwa	ahw	8
-304	c	雨头	雨头	附属根	雨	首	需	xū	雨头 ＋ 而	xucc	xu	36
+304	c	⻗	雨头	附属根	雨	首	需	xū	⻗ ＋ 而	xucc	xu	36
 305	s	暴	暴	主根	暴	首	暴	bào	暴	bcss	bcs	1
 306	s	暴	暴	主根	暴	末	瀑	pù	氵 ＋ 暴	bcbs pubs	bcb	4
 307	t	且	且	主根	且	首	助	zhù	且 ＋ 力	vutp	vut	5
@@ -348,7 +348,7 @@
 347	y	才	才	附属根	寸	末	才	cái	才	cdyy	c	6
 348	p	亦	亦	附属根	变字头	首	亦	yì	亦	yipp	yip	4
 349	p	亦	亦	附属根	变字头	末	㑊	yì	亻 ＋ 亦	yifp	yifp	2
-350	w	降下角	降下角	主根	降下角	末	舛	chuǎn	夕 ＋ 降下角	irlw	irl	19
+350	w	㐄	降下角	主根	降下角	末	舛	chuǎn	夕 ＋ 㐄	irlw	irl	19
 351	i	龵	龵	附属根	美字头	首	看	kàn / kān	龵 ＋ 目	kjiq	k	3
 352	e	舟	舟	锚定根	车	首	航	háng	舟 ＋ 亠 ＋ 几	hhen	hh	37
 353	e	舟	舟	锚定根	车	末	舟	zhōu	舟	vzee	vzee	2
@@ -360,16 +360,16 @@
 359	g	入	入	附属根	人	末	入	rù	入	rugg	rug	1
 360	n	北字旁	北字旁	附属根	片	首	北	běi	北字旁 ＋ 匕	bwnt	bwn	4
 361	z	啇	啇	附属根	商	末	滴	dī	氵 ＋ 啇	dibz	dib	7
-362	i	美字头	美字头	主根	美字头	首	美	měi	美字头 ＋ 大	mwin	mw	10
+362	i	𦍌	美字头	主根	美字头	首	美	měi	𦍌 ＋ 大	mwin	mw	10
 363	q	及	及	主根	及	首	及	jí	及	jiqq	ji	1
 364	q	及	及	主根	及	末	级	jí	纟 ＋ 及	jijq	jij	12
-365	z	足旁	足旁	附属根	足	首	跌	diē	足旁 ＋ 失	dpzr	dp	99
+365	z	⻊	足旁	附属根	足	首	跌	diē	⻊ ＋ 失	dpzr	dp	99
 366	l	夕	夕	主根	夕	首	名	míng	夕 ＋ 口	mklh	mk	11
 367	l	夕	夕	主根	夕	末	多	duō	夕 ＋ 夕	doll	do	29
 368	q	彐	彐	附属根	争字底	首	灵	líng	彐 ＋ 火	lkqr	lkq	5
 369	q	彐	彐	附属根	争字底	末	扫	sǎo	扌 ＋ 彐	sclq	sc	16
 370	l	歹	歹	附属根	夕	首	列	liè	歹 ＋ 刂	lpls	lp	26
-371	l	歹	歹	附属根	夕	末	夙	sù	风省 ＋ 歹	sunl	sun	2
+371	l	歹	歹	附属根	夕	末	夙	sù	⺇ ＋ 歹	sunl	sun	2
 372	d	龙	龙	主根	龙	首	龚	gōng	龙 ＋ 龷 ＋ 八	gsda	gsd	8
 373	d	龙	龙	主根	龙	末	龙	lóng	龙	lsdd	ls	15
 374	x	艹	艹	主根	艹	首	草	cǎo	艹 ＋ 日 ＋ 十	ccxp	cc	422
@@ -406,26 +406,26 @@
 405	s	方	方	主根	方	末	方	fāng	方	fhss	fh	38
 406	h	口	口	主根	口	首	啊	a	口 ＋ 阝 ＋ 可	aahy	a	340
 407	h	口	口	主根	口	末	和	hé	禾 ＋ 口	hewh howh huwh	h	420
-408	r	灬	灬	附属根	火	末	点	diǎn	卢字头 ＋ 口 ＋ 灬	dmar	dm	56
+408	r	灬	灬	附属根	火	末	点	diǎn	⺊ ＋ 口 ＋ 灬	dmar	dm	56
 409	w	门	门	附属根	匚	首	问	wèn	门 ＋ 口	wfwh	wf	53
 410	w	门	门	附属根	匚	末	们	men	亻 ＋ 门	mffw	mf	4
 411	z	女	女	主根	女	首	好	hǎo / hào	女 ＋ 子	hczn	hc	155
 412	z	女	女	主根	女	末	接	jiē	扌 ＋ 立 ＋ 女	jplz	jp	94
 413	s	辡	辡	附属根	辛	首	辫	biàn	辡 ＋ 纟	bmsj	bmsj	4
 414	r	竹	竹	主根	竹	末	竹	zhú	竹	vurr	vur	1
-415	g	尚字头	尚字头	附属根	小	首	当	dāng / dàng	尚字头 ＋ 彐	dhgq	dh	11
+415	g	⺌	尚字头	附属根	小	首	当	dāng / dàng	⺌ ＋ 彐	dhgq	dh	11
 416	e	覀	覀	附属根	西	首	票	piào	覀 ＋ 示	pney	pn	13
 417	p	节字底	节字底	附属根	卩	首	卫	wèi	节字底 ＋ 一	wwpn	wwp	1
 418	p	节字底	节字底	附属根	卩	末	疖	jiē	疒 ＋ 节字底	jpsp	jps	4
 419	w	龶	龶	附属根	丰	首	熬	áo	龶 ＋ 折 ＋ 丿 ＋ 攵 ＋ 灬	aowr	aow	25
 420	w	龶	龶	附属根	丰	末	生	shēng	丿 ＋ 龶	ugew	ug	30
-421	k	畏字底带横	畏字底带横	附属根	定字底	末	宸	chén	宀 ＋ 厂 ＋ 一 ＋ 畏字底带横	ifik	ifi	21
+421	k	畏下	畏字底带横	附属根	定字底	末	宸	chén	宀 ＋ 厂 ＋ 一 ＋ 畏下	ifik	ifi	21
 422	p	在字框	在字框	附属根	十	首	在	zài	在字框 ＋ 土	zdpt	z	2
 423	m	甘	甘	附属根	廿	首	某	mǒu	甘 ＋ 木	mzmo	mz	3
 424	m	甘	甘	附属根	廿	末	绀	gàn	纟 ＋ 甘	gjjm	gjj	12
 425	g	止	止	主根	止	首	此	cǐ	止 ＋ 匕	cigt	ci	33
 426	g	止	止	主根	止	末	斌	bīn	文 ＋ 一 ＋ 弋 ＋ 止	bbag	bb	24
-427	t	比字旁	比字旁	附属根	匕	首	毕	bì	比字旁 ＋ 匕 ＋ 十	bitp	bit	7
+427	t	比左	比字旁	附属根	匕	首	毕	bì	比左 ＋ 匕 ＋ 十	bitp	bit	7
 428	e	彡	彡	锚定根	撇	首	须	xū	彡 ＋ 页	xuez	xue	2
 429	e	彡	彡	锚定根	撇	末	参	cān / shēn	厶 ＋ 大 ＋ 彡	cfte cjte ufte	cj	56
 430	o	飞	飞	附属根	折	末	飞	fēi	飞	fwoo	fwo	1
@@ -442,18 +442,18 @@
 441	v	韦	韦	主根	韦	末	韩	hán	十 ＋ 日 ＋ 十 ＋ 韦	hjpv	hjp	17
 442	g	隹	隹	主根	隹	首	雠	chóu	隹 ＋ 讠 ＋ 隹	izgg	izg	10
 443	g	隹	隹	主根	隹	末	推	tuī	扌 ＋ 隹	tvlg	tvl	76
-444	n	犬	犬	附属根	大	首	飙	biāo	犬 ＋ 犬 ＋ 犬 ＋ 风省 ＋ 㐅	bnnn	bnn	2
+444	n	犬	犬	附属根	大	首	飙	biāo	犬 ＋ 犬 ＋ 犬 ＋ ⺇ ＋ 㐅	bnnn	bnn	2
 445	n	犬	犬	附属根	大	末	获	huò	艹 ＋ 犭 ＋ 犬	hoxn	hox	31
 446	b	氺	氺	附属根	氵	末	康	kāng	广 ＋ 折 ＋ 二 ＋ 氺	khsb	kh	28
 447	m	釆	釆	附属根	爫	首	翻	fān	釆 ＋ 田 ＋ 习 ＋ 习	fjmm	fjm	7
 448	t	殳	殳	主根	殳	首	殳	shū	殳	uutt	uut	1
-449	t	殳	殳	主根	殳	末	段	duàn	撇 ＋ 卢字头 ＋ 二 ＋ 殳	dret	dr	35
+449	t	殳	殳	主根	殳	末	段	duàn	撇 ＋ ⺊ ＋ 二 ＋ 殳	dret	dr	35
 450	s	刂	刂	附属根	刀	末	别	bié	口 ＋ 力 ＋ 刂	bphs	bp	94
 451	u	牙	牙	主根	牙	首	邪	xié	牙 ＋ 阝	xpup	xpu	6
 452	u	牙	牙	主根	牙	末	穿	chuān	宀 ＋ 八 ＋ 牙	iriu	ir	11
 453	e	囗	囗	主根	囗	首	团	tuán	囗 ＋ 才	trey	tr	28
 454	d	尤	尤	附属根	龙	首	尤	yóu	尤	yzdd	yzd	1
-455	d	尤	尤	附属根	龙	末	蹴	cù	足旁 ＋ 享字头 ＋ 小 ＋ 尤	cuzd	cuz	12
+455	d	尤	尤	附属根	龙	末	蹴	cù	⻊ ＋ 享字头 ＋ 小 ＋ 尤	cuzd	cuz	12
 456	a	囱	囱	附属根	向	首	囱	cōng	囱	csaa	csa	1
 457	a	囱	囱	附属根	向	末	窗	chuāng	宀 ＋ 八 ＋ 囱	ilia	ili	2
 458	k	南字心	南字心	锚定根	鹿	末	睾	gāo	丿 ＋ 罒 ＋ 土 ＋ 南字心	gcek	gce	13
@@ -464,7 +464,7 @@
 463	t	厶	厶	主根	厶	末	丢	diū	壬 ＋ 厶	dqtt	dq	71
 464	m	里	里	主根	里	首	墅	shù	里 ＋ 予 ＋ 土	uumt	uum	3
 465	m	里	里	主根	里	末	里	lǐ	里	limm	li	35
-466	q	彑	彑	附属根	争字底	首	彘	zhì	彑 ＋ 比字旁 ＋ 矢 ＋ 匕	viqt	viq	2
+466	q	彑	彑	附属根	争字底	首	彘	zhì	彑 ＋ 比左 ＋ 矢 ＋ 匕	viqt	viq	2
 467	c	而	而	附属根	雨	首	鸸	ér	而 ＋ 鸟	ercy	erc	6
 468	c	而	而	附属根	雨	末	而	ér	而	ercc	e	30
 469	j	杨字边	杨字边	附属根	勿	末	场	chǎng	土 ＋ 杨字边	ihtj	ih	18
@@ -476,7 +476,7 @@
 475	l	象	象	主根	象	末	像	xiàng	亻 ＋ 象	xlfl	xlf	4
 476	r	弋	弋	附属根	戈	首	贰	èr	弋 ＋ 二 ＋ 贝	errz	err	5
 477	r	弋	弋	附属根	戈	末	代	dài	亻 ＋ 弋	ddfr	ddf	5
-478	m	爫	爫	主根	爫	首	爱	ài	爫 ＋ 冖 ＋ 左字框 ＋ 又	aimq	ai	17
+478	m	爫	爫	主根	爫	首	爱	ài	爫 ＋ 冖 ＋ 𠂇 ＋ 又	aimq	ai	17
 479	r	黑	黑	主根	黑	首	黑	hēi	黑	hwrr	hw	13
 480	r	黑	黑	主根	黑	末	嘿	hēi	口 ＋ 黑	hwhr	hwh	6
 481	g	付	付	主根	付	首	付	fù	付	fugg	fug	1
@@ -485,7 +485,7 @@
 484	y	自	自	附属根	白	末	馗	kuí	九 ＋ 丷 ＋ 一 ＋ 自	kvdy	kvd	7
 485	q	夂	夂	附属根	又	首	条	tiáo	夂 ＋ 一 ＋ 小	tnqg	tn	11
 486	q	夂	夂	附属根	又	末	复	fù	每字头 ＋ 日 ＋ 夂	fufq	fuf	48
-487	n	大	大	主根	大	首	套	tào	大 ＋ 一 ＋ 卢字头 ＋ 二 ＋ 厶	tcnt	tc	27
+487	n	大	大	主根	大	首	套	tào	大 ＋ 一 ＋ ⺊ ＋ 二 ＋ 厶	tcnt	tc	27
 488	n	大	大	主根	大	末	大	dà	大	dann ddnn	da	121
 489	k	氐	氐	附属根	氏	首	邸	dǐ	氐 ＋ 阝	dikp	dik	3
 490	k	氐	氐	附属根	氏	末	低	dī	亻 ＋ 氐	difk	dif	14
@@ -504,7 +504,7 @@
 503	p	由	由	附属根	田	首	迪	dí	由 ＋ 辶	dipp	dip	6
 504	p	由	由	附属根	田	末	抽	chōu	扌 ＋ 由	izlp	iz	18
 505	m	毛	毛	主根	毛	首	毽	jiàn	毛 ＋ 聿 ＋ 廴	jmmp	jmm	8
-506	m	毛	毛	主根	毛	末	笔	bǐ	竹头 ＋ 毛	birm	bir	23
+506	m	毛	毛	主根	毛	末	笔	bǐ	⺮ ＋ 毛	birm	bir	23
 507	b	冫	冫	附属根	氵	首	凑	còu	冫 ＋ 春字头 ＋ 天	czbn	cz	39
 508	b	冫	冫	附属根	氵	末	均	jūn	土 ＋ 勹 ＋ 冫	jytb	jy	11
 509	b	尧	尧	主根	尧	首	翘	qiào	尧 ＋ 习 ＋ 习	qnbm	qnb	2
@@ -516,7 +516,7 @@
 515	n	衣	衣	主根	衣	首	哀	āi	衣 ＋ 口	ainh	ain	12
 516	n	衣	衣	主根	衣	末	装	zhuāng	丬 ＋ 士 ＋ 衣	vlnn	vl	19
 517	g	全字头	全字头	附属根	人	首	个	gè	全字头 ＋ 丨	gega	ge	42
-518	u	骨	骨	主根	骨	首	髌	bìn	骨 ＋ 宀 ＋ 撇 ＋ 卢字头 ＋ 丨 ＋ 一 ＋ 八	bbua	bbu	19
+518	u	骨	骨	主根	骨	首	髌	bìn	骨 ＋ 宀 ＋ 撇 ＋ ⺊ ＋ 丨 ＋ 一 ＋ 八	bbua	bbu	19
 519	u	骨	骨	主根	骨	末	骨	gǔ	骨	guuu	guu	5
 520	e	皮	皮	主根	皮	首	皮	pí	皮	piee	pi	2
 521	e	皮	皮	主根	皮	末	波	bō	氵 ＋ 皮	bobe	bo	23
@@ -535,14 +535,14 @@
 534	p	力	力	主根	力	末	动	dòng	二 ＋ 厶 ＋ 力	dsnp	ds	89
 535	t	佥	佥	主根	佥	首	剑	jiàn	佥 ＋ 刂	jmts	jmt	3
 536	t	佥	佥	主根	佥	末	捡	jiǎn	扌 ＋ 佥	jmlt	jml	14
-537	o	官字底	官字底	附属根	追字心	末	馆	guǎn	饣 ＋ 宀 ＋ 官字底	grao	gra	12
+537	o	㠯	官字底	附属根	追字心	末	馆	guǎn	饣 ＋ 宀 ＋ 㠯	grao	gra	12
 538	b	水	水	附属根	氵	首	凼	dàng	水 ＋ 凵	dhbw	dhb	5
 539	b	水	水	附属根	氵	末	水	shuǐ	水	uvbb	uv	17
 540	w	匃	匃	附属根	匚	末	噶	gá	口 ＋ 艹 ＋ 日 ＋ 匃	gahw	ga	17
 541	l	井	井	主根	井	首	进	jìn	井 ＋ 辶	jblp	jbl	2
 542	l	井	井	主根	井	末	耕	gēng	二 ＋ 木 ＋ 井	ggnl	ggn	6
 543	f	每字头	卧人	主根	卧人	首	年	nián	每字头 ＋ 横 ＋ 竖 ＋ 横 ＋ 竖	nmfa	nm	17
-544	n	衣省	衣省	附属根	衣	末	表	biǎo	龶 ＋ 衣省	bnwn	bn	25
+544	n	𧘇	衣省	附属根	衣	末	表	biǎo	龶 ＋ 𧘇	bnwn	bn	25
 545	n	览字头	览字头	主根	览字头	首	监	jiān	览字头 ＋ 皿	jmna	jmn	4
 546	p	十	十	主根	十	首	南	nán	十 ＋ 冂 ＋ 南字心	napk njpk	nj	37
 547	p	十	十	主根	十	末	平	píng	一 ＋ 丷 ＋ 十	pknp	p	143
@@ -551,17 +551,17 @@
 550	y	白	白	主根	白	末	怕	pà	忄 ＋ 白	pacy	pa	41
 551	n	三	三	锚定根	横	首	三	sān	三	sjnn	sj	5
 552	n	三	三	锚定根	横	末	仨	sā	亻 ＋ 三	safn	saf	4
-553	m	贵字头	贵字头	附属根	虫	首	遣	qiǎn	贵字头 ＋ 官字底 ＋ 辶	qmmp	qmm	3
+553	m	贵字头	贵字头	附属根	虫	首	遣	qiǎn	贵字头 ＋ 㠯 ＋ 辶	qmmp	qmm	3
 554	a	弟	弟	主根	弟	首	剃	tì	弟 ＋ 刂	tias	tia	4
 555	a	弟	弟	主根	弟	末	弟	dì	弟	diaa	dia	9
 556	k	疋	疋	附属根	定字底	首	蛋	dàn	疋 ＋ 虫	djkm	djk	3
 557	k	疋	疋	附属根	定字底	末	楚	chǔ	木 ＋ 木 ＋ 疋	iuok	iuo	14
 558	a	儿	儿	主根	儿	首	儿	ér	儿	eraa	era	1
 559	a	儿	儿	主根	儿	末	况	kuàng	冫 ＋ 口 ＋ 儿	klba	kl	95
-560	j	卯字旁	卯字旁	附属根	卵	首	卿	qīng	卯字旁 ＋ 即字旁 ＋ 卩	qkjp	qkj	1
+560	j	卯左	卯字旁	附属根	卵	首	卿	qīng	卯左 ＋ 即字旁 ＋ 卩	qkjp	qkj	1
 561	g	小	小	主根	小	首	尜	gá	小 ＋ 大 ＋ 小	gagg	gag	5
 562	g	小	小	主根	小	末	小	xiǎo	小	xngg	x	71
-563	v	青字底	青字底	附属根	月	末	有	yǒu	左字框 ＋ 青字底	yzpv	y	112
+563	v	青字底	青字底	附属根	月	末	有	yǒu	𠂇 ＋ 青字底	yzpv	y	112
 564	a	师字旁	师字旁	锚定根	竖	首	归	guī	师字旁 ＋ 彐	gvaq	gva	3
 565	y	鸟省	鸟省	附属根	鸟	首	凫	fú	鸟省 ＋ 几	fuyn	fuy	3
 566	v	乃	乃	主根	乃	首	尕	gǎ	乃 ＋ 小	gavg	gav	6
@@ -651,7 +651,7 @@
 650	k	颐字旁	颐字旁	附属根	臣	首	颐	yí	颐字旁 ＋ 页	yikz	yik	2
 651	k	颐字旁	颐字旁	附属根	臣	末	茝	chǎi	艹 ＋ 颐字旁	idxk	idx	3
 652	i	尸	尸	主根	尸	首	尼	ní	尸 ＋ 匕	niit	ni	53
-653	i	尸	尸	主根	尸	末	卢	lú	卢字头 ＋ 尸	luai	lua	10
+653	i	尸	尸	主根	尸	末	卢	lú	⺊ ＋ 尸	luai	lua	10
 654	l	乙	乙	附属根	折	首	乙	yǐ	乙	yill	yil	1
 655	l	乙	乙	附属根	折	末	吃	chī	口 ＋ 每字头 ＋ 乙	iihl	i	21
 656	v	犭	犭	主根	犭	首	猫	māo	犭 ＋ 艹 ＋ 田	mcvp	mc	83

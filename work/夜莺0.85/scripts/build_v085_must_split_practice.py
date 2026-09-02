@@ -162,6 +162,9 @@ def build_questions() -> tuple[list[dict], list[dict]]:
     codes, char_order = read_codes()
     splits = read_splits()
     roots = root_catalog()
+    root_yaml = yaml.safe_load((ROOTS_DIR / "根集.yaml").read_text(encoding="utf-8"))
+    presentation = dict(PRESENTATION_NAMES)
+    presentation.update({str(k): str(v) for k, v in (root_yaml.get("presentation_names") or {}).items()})
     pronunciations = read_pronunciations(set(char_order))
     rank = {char: index for index, char in enumerate(char_order)}
     usable_chars = [char for char in char_order if char in splits and any(len(code) == 4 for code in codes[char])]
@@ -204,7 +207,7 @@ def build_questions() -> tuple[list[dict], list[dict]]:
             shortest_length = min(map(len, codes[char]))
             short_codes = [code for code in codes[char] if len(code) == shortest_length]
             split = splits[char]
-            display_split = [PRESENTATION_NAMES.get(part, part) for part in split]
+            display_split = [presentation.get(part, part) for part in split]
             question = {
                 "char": char,
                 "full": full_codes,
