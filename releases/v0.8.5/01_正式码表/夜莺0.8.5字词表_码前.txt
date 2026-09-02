@@ -75948,7 +75948,7 @@ ioha	嚽
 iohc	绰号
 iohq	啜
 ioir	戳穿
-iojo	䋘
+iojn	䋘
 iojp	绰
 iojp	綽
 iojv	磭
@@ -94251,7 +94251,7 @@ ldri	落得如此下场
 ldrk	流动人口
 ldrk	来得容易去得快
 ldrm	劳动人民
-ldro	筙
+ldrn	筙
 ldru	来入
 ldru	狼多肉少
 ldrw	领导人物
@@ -100321,7 +100321,7 @@ lwbj	㶟
 lwbl	临危不乱
 lwbn	淚
 lwbn	涙
-lwbo	洡
+lwbn	洡
 lwbp	类别
 lwbp	㵢
 lwbp	㵽
@@ -100347,8 +100347,8 @@ lwdi	泪滴
 lwdm	雷电
 lwdm	泪点
 lwdn	类
-lwdo	诔
-lwdo	誄
+lwdn	诔
+lwdn	誄
 lwdo	䛶
 lwdp	讄
 lwds	雷动
@@ -100368,14 +100368,14 @@ lwfj	来我房间
 lwfj	儽
 lwfj	㒍
 lwfj	傫
-lwfo	㑍
+lwfn	㑍
 lwfp	儡
 lwft	㒦
 lwgj	螺纹钢筋
 lwgl	泪光
 lwgl	龙王归来
 lwgn	錑
-lwgo	銇
+lwgn	銇
 lwgo	累过
 lwgp	鐳
 lwgp	鑘
@@ -100458,8 +100458,8 @@ lwnl	蓝纹奶酪
 lwnm	累年
 lwnm	㼍
 lwnn	雷鸟
+lwnn	耒
 lwno	雷诺
-lwno	耒
 lwnp	轠
 lwnp	䣂
 lwny	令我难以
@@ -100546,7 +100546,7 @@ lwxk	类型
 lwxl	雷响
 lwxl	聊慰心灵
 lwxm	泪腺
-lwxo	䒹
+lwxn	䒹
 lwxo	蘽
 lwxp	藟
 lwxp	蕾
@@ -157632,10 +157632,10 @@ wuav	卼
 wubb	五十步笑百步
 wubc	误报
 wubc	五保
-wubd	伍佰
+wubd	五百
 wubd	为数不多
 wubd	无事不登三宝殿
-wubd	五百
+wubd	伍佰
 wubg	𣲘
 wubg	玩世不恭
 wubg	无事不起卦

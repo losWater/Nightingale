@@ -12886,7 +12886,7 @@
 齪	iogz
 嚽	ioha
 啜	iohq
-䋘	iojn
+䋘	iojo
 绰	iojp
 綽	iojp
 磭	iojv
@@ -16236,7 +16236,7 @@
 㸊	ldra
 籟	ldra
 箂	ldra
-筙	ldrn
+筙	ldro
 籁	ldrz
 癩	ldsa
 庲	ldsa
@@ -17843,7 +17843,7 @@
 㶟	lwbj
 淚	lwbn
 涙	lwbn
-洡	lwbn
+洡	lwbo
 㵢	lwbp
 㵽	lwbp
 泪	lwbq
@@ -17857,8 +17857,8 @@
 頪	lwda
 類	lwda
 类	lwdn
-诔	lwdn
-誄	lwdn
+诔	lwdo
+誄	lwdo
 䛶	lwdo
 讄	lwdp
 颣	lwdz
@@ -17867,11 +17867,11 @@
 儽	lwfj
 㒍	lwfj
 傫	lwfj
-㑍	lwfn
+㑍	lwfo
 儡	lwfp
 㒦	lwft
 錑	lwgn
-銇	lwgn
+銇	lwgo
 鐳	lwgp
 鑘	lwgp
 瓃	lwgp
@@ -17892,7 +17892,7 @@
 蠝	lwmp
 頛	lwna
 㼍	lwnm
-耒	lwnn
+耒	lwno
 轠	lwnp
 䣂	lwnp
 䮑	lwny
@@ -17929,7 +17929,7 @@
 蘱	lwxa
 蔂	lwxj
 虆	lwxj
-䒹	lwxn
+䒹	lwxo
 蘽	lwxo
 藟	lwxp
 蕾	lwxp

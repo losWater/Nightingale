@@ -91752,7 +91752,7 @@ lwdi	泪滴
 lwdm	雷电
 lwdm	泪点
 lwdn	类
-lwdo	诔
+lwdn	诔
 lwds	雷动
 lwdw	六味地黄丸
 lweq	离我而去
@@ -91838,8 +91838,8 @@ lwnl	领悟能力
 lwnl	蓝纹奶酪
 lwnm	累年
 lwnn	雷鸟
+lwnn	耒
 lwno	雷诺
-lwno	耒
 lwny	令我难以
 lwop	檑
 lwpi	雷劈
@@ -142739,10 +142739,10 @@ wuan	武安
 wubb	五十步笑百步
 wubc	误报
 wubc	五保
-wubd	伍佰
+wubd	五百
 wubd	为数不多
 wubd	无事不登三宝殿
-wubd	五百
+wubd	伍佰
 wubg	𣲘
 wubg	玩世不恭
 wubg	无事不起卦

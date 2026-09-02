@@ -75948,7 +75948,7 @@ id劝退	idqt
 绰号	iohc
 啜	iohq
 戳穿	ioir
-䋘	iojn
+䋘	iojo
 绰	iojp
 綽	iojp
 磭	iojv
@@ -94251,7 +94251,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 流动人口	ldrk
 来得容易去得快	ldrk
 劳动人民	ldrm
-筙	ldrn
+筙	ldro
 来入	ldru
 狼多肉少	ldru
 领导人物	ldrw
@@ -100321,7 +100321,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 临危不乱	lwbl
 淚	lwbn
 涙	lwbn
-洡	lwbn
+洡	lwbo
 类别	lwbp
 㵢	lwbp
 㵽	lwbp
@@ -100347,8 +100347,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 雷电	lwdm
 泪点	lwdm
 类	lwdn
-诔	lwdn
-誄	lwdn
+诔	lwdo
+誄	lwdo
 䛶	lwdo
 讄	lwdp
 雷动	lwds
@@ -100368,14 +100368,14 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 儽	lwfj
 㒍	lwfj
 傫	lwfj
-㑍	lwfn
+㑍	lwfo
 儡	lwfp
 㒦	lwft
 螺纹钢筋	lwgj
 泪光	lwgl
 龙王归来	lwgl
 錑	lwgn
-銇	lwgn
+銇	lwgo
 累过	lwgo
 鐳	lwgp
 鑘	lwgp
@@ -100458,8 +100458,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 累年	lwnm
 㼍	lwnm
 雷鸟	lwnn
-耒	lwnn
 雷诺	lwno
+耒	lwno
 轠	lwnp
 䣂	lwnp
 令我难以	lwny
@@ -100546,7 +100546,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 雷响	lwxl
 聊慰心灵	lwxl
 泪腺	lwxm
-䒹	lwxn
+䒹	lwxo
 蘽	lwxo
 藟	lwxp
 蕾	lwxp

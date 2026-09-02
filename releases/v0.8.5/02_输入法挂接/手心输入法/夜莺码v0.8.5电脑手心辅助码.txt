@@ -3831,7 +3831,7 @@
 泪=bq
 雷=cp
 类=dn
-诔=do
+诔=dn
 酹=ey
 儡=fp
 嘞=hp
@@ -3840,7 +3840,7 @@
 礌=jp
 镭=kp
 擂=lp
-耒=no
+耒=nn
 檑=op
 累=pj
 罍=pz
