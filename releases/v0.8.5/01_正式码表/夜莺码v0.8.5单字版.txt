@@ -391,7 +391,7 @@
 想	xl
 先	xm
 校	xn
-写	xp
+些	xp
 修	xq
 选	xr
 熊	xs
@@ -4559,9 +4559,9 @@
 懈	xpc
 谢	xpd
 卸	xpf
-些	xpg
+斜	xpg
 叶	xph
-屑	xpi
+写	xpi
 缬	xpj
 携	xpl
 鞋	xpm

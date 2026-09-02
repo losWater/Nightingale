@@ -1550,7 +1550,7 @@ xn	校
 xn	想念
 xo	下去
 xo	想起
-xp	写
+xp	些
 xp	小时候
 xq	修
 xq	心情
@@ -24993,14 +24993,14 @@ xpd	谢
 xpd	吓破胆
 xpd	相匹敌
 xpf	卸
-xpg	些
+xpg	斜
 xpg	小苹果
 xpg	橡皮管
 xph	叶
 xph	小屁孩
 xph	相配合
 xph	相平衡
-xpi	屑
+xpi	写
 xpi	修配厂
 xpj	缬
 xpj	橡皮筋
