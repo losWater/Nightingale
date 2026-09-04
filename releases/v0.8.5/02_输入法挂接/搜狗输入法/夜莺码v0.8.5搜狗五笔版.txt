@@ -31620,10 +31620,10 @@ bdyw	不得延误
 bdyx	百度一下
 bdyx	不断涌现
 bdyy	白云
-bdyy	白
 bdyy	棒打鸳鸯
 bdyy	膀大腰圆
 bdyy	波多野结衣
+bdyy	白
 bdyz	柏油
 bdzc	霸道总裁
 bdzd	摆在
@@ -35237,8 +35237,8 @@ boxt	剥削
 boxt	博学
 boxy	薄
 boya	伯牙
-boya	帛
 boya	博雅
+boya	帛
 boyb	播音
 boyb	波音
 boyi	博弈
@@ -41548,8 +41548,8 @@ dclu	道路
 dclu	盗录
 dclx	断层领先
 dcly	导论
-dcly	捣
 dcly	导轮
+dcly	捣
 dcmb	岛民
 dcmd	倒卖
 dcmd	盗卖
@@ -41727,8 +41727,8 @@ dcys	到
 dcyu	岛屿
 dcyu	导语
 dcyy	道韵
-dcyy	岛
 dcyy	倒运
+dcyy	岛
 dcyy	到此一游
 dcyz	导游
 dcyz	道友
@@ -52151,8 +52151,8 @@ fudx	放声大笑
 fuel	负手而立
 fuep	辐
 fueq	覆
-fueq	辅
 fueq	飞逝而去
+fueq	辅
 fufa	复发
 fufa	伏法
 fuff	福分
@@ -74697,6 +74697,7 @@ jiel	疾驰而来
 jieq	绝尘而去
 jier	继而
 jier	鸡儿
+jiet	墼
 jifa	激发
 jifa	技法
 jifa	几发
@@ -75098,7 +75099,6 @@ jinn	几
 jinq	耤
 jinq	基纽
 jins	剞
-jint	墼
 jinu	激怒
 jinv	妓女
 jinv	继女
@@ -75174,8 +75174,8 @@ jiqu	几区
 jiqu	几曲
 jiqu	记取
 jiqy	集群
-jiqy	鸡
 jiqy	机群
+jiqy	鸡
 jiqy	几群
 jira	箕
 jirc	经常如此
@@ -90043,8 +90043,8 @@ lqcd	留财
 lqch	留仓
 lqch	留藏
 lqch	料峭春寒
-lqcp	骝
 lqcp	篮球裁判
+lqcp	骝
 lqcq	理屈词穷
 lqcr	流窜
 lqcu	了却残生
@@ -110254,8 +110254,8 @@ quww	去尾
 quww	区位
 quww	区委
 quwx	欺上罔下
-quwy	鸲
 quwy	气煞我也
+quwy	鸲
 quwz	秋收万颗子
 quxb	取信
 quxb	取芯
@@ -125517,8 +125517,8 @@ ugjn	生胶
 ugjn	时光胶囊
 ugjn	生角
 ugjp	圣洁
-ugjp	绳
 ugjp	绳结
+ugjp	绳
 ugjq	时过境迁
 ugjq	时光机器
 ugjq	事过境迁
@@ -137972,9 +137972,9 @@ vuyw	只是因为
 vuyx	真实有效
 vuyx	直上云霄
 vuyy	贮运
-vuyy	朱
 vuyy	助孕
 vuyy	正式营业
+vuyy	朱
 vuyy	中式英语
 vuyz	著有
 vuyz	猪油
@@ -155844,8 +155844,8 @@ yiem	一场恶梦
 yien	舣
 yien	伊恩
 yieq	扬长而去
-yier	轶
 yier	一二
+yier	轶
 yifa	依法
 yifa	一发
 yifa	已发
@@ -161317,10 +161317,10 @@ yuyx	舁
 yuyx	有说有笑
 yuyx	一上一下
 yuyy	余韵
-yuyy	鱼
 yuyy	也是一样
 yuyy	亦师亦友
 yuyy	莺声燕语
+yuyy	鱼
 yuyz	鱼油
 yuyz	狱友
 yuyz	育有
