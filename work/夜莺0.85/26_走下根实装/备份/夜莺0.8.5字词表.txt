@@ -36833,6 +36833,7 @@ BOSS直聘	bsvp
 不菲	bufw
 不费	bufw
 饱受非议	bufy
+歨	buga
 鈽	buga
 鈈	buga
 饱受诟病	bugb
@@ -36856,7 +36857,6 @@ BOSS直聘	bsvp
 不胜感激	bugj
 不怪	bugk
 不乖	bugk
-歨	bugk
 不光	bugl
 补光	bugl
 不是哥们	bugm
@@ -40908,6 +40908,7 @@ ChatGPT	chat
 囪	csaa
 忩	csac
 悤	csac
+漎	csba
 潨	csba
 漗	csbc
 葱爆	csbc
@@ -40941,16 +40942,16 @@ ChatGPT	chat
 聰	csec
 从而	cser
 从犯	csfj
+鏦	csga
+瑽	csga
 璁	csgc
 鍯	csgc
 从	csgg
-鏦	csgk
-瑽	csgk
 丛	csgn
 从古	csgu
 琮	csgy
+㗰	csha
 从何	cshe
-㗰	cshk
 葱黄	cshl
 聪慧	cshv
 葱花	cshx
@@ -40999,22 +41000,22 @@ ChatGPT	chat
 騘	csnc
 驄	csnc
 孮	csny
+樅	csoa
 棇	csoc
 樬	csoc
 枞	csog
-樅	csok
 樷	csoq
 欉	csoq
 纯属骗局	cspj
+瞛	csqa
+暰	csqa
 从轻	csqk
-瞛	csqk
-暰	csqk
 从前	csqm
 賩	csqy
+篵	csra
 熜	csrc
 焧	csrc
 䈡	csrc
-篵	csrk
 爜	csrq
 从容	csrs
 从戎	csrs
@@ -41024,21 +41025,21 @@ ChatGPT	chat
 从俗	cssu
 从头	cstz
 葱头	cstz
+従	csua
+從	csua
 丛生	csug
 从商	csuh
 从上	csuh
 从事	csui
-従	csuk
-從	csuk
 㼻	csul
 䢨	csup
 䳷	csur
 从属	csuu
 丛书	csuu
 徖	csuy
+䐫	csva
 䐋	csvc
 从政	csvg
-䐫	csvk
 彩色照片	csvp
 从中	csvs
 从众	csvs
@@ -41047,6 +41048,7 @@ ChatGPT	chat
 从无	cswu
 从未	csww
 茐	csxa
+蓯	csxa
 藂	csxa
 从心	csxb
 从新	csxb
@@ -41054,7 +41056,6 @@ ChatGPT	chat
 䓗	csxc
 蔥	csxc
 苁	csxg
-蓯	csxk
 从小	csxn
 䕺	csxq
 参赛选手	csxu
@@ -41070,9 +41071,9 @@ ChatGPT	chat
 从优	csyz
 葱油	csyz
 丛杂	csza
+㜡	csza
 初生之犊	cszd
 参赛资格	cszg
-㜡	cszk
 婃	cszy
 寸土不让	ctbr
 寸土必争	ctbv
@@ -47444,7 +47445,7 @@ C位出道	cwid
 蝶类	dplw
 箪瓢陋巷	dplx
 爹妈	dpma
-蜨	dpmk
+蜨	dpma
 蝶	dpmo
 瓞	dpmr
 大牌明星	dpmx
@@ -72062,7 +72063,7 @@ Google	goog
 猴嘴	hzzv
 合作组织	hzzv
 悔罪自新	hzzx
-疀	iaak
+疀	iaaa
 㪯	iaal
 馇	iaan
 查案	iaan
@@ -75651,6 +75652,7 @@ id劝退	idqt
 乘龙快婿	ilkx
 窗口	ilkz
 创口	ilkz
+摐	illa
 刱	illa
 创立	illi
 创利	illi
@@ -75658,7 +75660,6 @@ id劝退	idqt
 创烂	illj
 处理逻辑	illj
 窗棂	illk
-摐	illk
 窗帘	illm
 床帘	illm
 出来了吗	illm
@@ -75933,8 +75934,8 @@ id劝退	idqt
 辍笔	iobi
 涰	iobq
 惙	iocq
+辵	ioea
 酫	ioeg
-辵	ioek
 辍	ioeq
 鑡	iogw
 龊	iogz
@@ -84461,6 +84462,7 @@ ip正确	ipvq
 结存	jpcy
 解答	jpda
 捷达	jpda
+誱	jpda
 䛺	jpda
 街道	jpdc
 接到	jpdc
@@ -84479,7 +84481,6 @@ ip正确	ipvq
 接单	jpdj
 结丹	jpdj
 界定	jpdk
-誱	jpdk
 节点	jpdm
 结点	jpdm
 节电	jpdm
@@ -84510,6 +84511,8 @@ ip正确	ipvq
 价	jpfa
 解法	jpfa
 解乏	jpfa
+倢	jpfa
+偼	jpfa
 解封	jpfg
 接风	jpfg
 捷风	jpfg
@@ -84517,8 +84520,6 @@ ip正确	ipvq
 解放	jpfh
 街坊	jpfh
 极品飞车	jpfi
-倢	jpfk
-偼	jpfk
 傑	jpfo
 借	jpfq
 姐夫	jpfu
@@ -84683,6 +84684,8 @@ ip正确	ipvq
 借口	jpkz
 接口	jpkz
 街口	jpkz
+捷	jpla
+㨗	jpla
 擑	jpla
 解辣	jpla
 借来	jpld
@@ -84700,8 +84703,6 @@ ip正确	ipvq
 筋疲力竭	jplj
 节令	jplk
 戒灵	jplk
-捷	jplk
-㨗	jplk
 接连	jplm
 结连	jplm
 桀	jplo
@@ -84761,6 +84762,7 @@ ip正确	ipvq
 蝔	jpmy
 蛶	jpmy
 接纳	jpna
+疌	jpna
 䯰	jpna
 挤破脑袋	jpnd
 䦈	jpne
@@ -84772,7 +84774,6 @@ ip正确	ipvq
 杰尼	jpni
 劫难	jpnj
 解难	jpnj
-疌	jpnk
 㼪	jpnl
 孑	jpnn
 接尿	jpnn
@@ -84812,6 +84813,8 @@ ip正确	ipvq
 卩	jppp
 階	jppy
 解剖	jppz
+睫	jpqa
+㫸	jpqa
 结亲	jpqb
 接亲	jpqb
 䀹	jpqg
@@ -84819,8 +84822,6 @@ ip正确	ipvq
 节气	jpqi
 结清	jpqk
 节庆	jpqk
-睫	jpqk
-㫸	jpqk
 借枪	jpql
 接腔	jpql
 借钱	jpqm
@@ -84940,6 +84941,7 @@ ip正确	ipvq
 接手	jpuz
 解手	jpuz
 结扎	jpva
+脻	jpva
 接招	jpvc
 借债	jpvd
 劫寨	jpvd
@@ -84959,7 +84961,6 @@ ip正确	ipvq
 解职	jpvi
 旧瓶装新酒	jpvj
 接站	jpvj
-脻	jpvk
 界桩	jpvl
 接装	jpvl
 结转	jpvr
@@ -84999,6 +85000,7 @@ ip正确	ipvq
 稭	jpwy
 㛃	jpwz
 芥	jpxa
+蓵	jpxa
 戒心	jpxb
 街心	jpxb
 䕙	jpxg
@@ -85006,7 +85008,6 @@ ip正确	ipvq
 解析	jpxi
 结息	jpxi
 旧瓶新酒	jpxj
-蓵	jpxk
 街巷	jpxl
 结项	jpxl
 借坡下驴	jpxl
@@ -85027,6 +85028,7 @@ ip正确	ipvq
 解下	jpxx
 菨	jpxz
 解压	jpya
+崨	jpya
 岕	jpya
 魪	jpya
 解押	jpya
@@ -85048,7 +85050,6 @@ ip正确	ipvq
 接应	jpyk
 劫营	jpyk
 结婴	jpyk
-崨	jpyk
 䱄	jpym
 嵥	jpyo
 䲙	jpyp
@@ -85074,6 +85075,9 @@ ip正确	ipvq
 借由	jpyz
 戒游	jpyz
 节油	jpyz
+婕	jpza
+媫	jpza
+踕	jpza
 诘责	jpze
 嫅	jpze
 芥子	jpzi
@@ -85082,9 +85086,6 @@ ip正确	ipvq
 介子	jpzi
 结子	jpzi
 就怕贼惦记	jpzj
-婕	jpzk
-媫	jpzk
-踕	jpzk
 杰作	jpzo
 媎	jpzq
 姐	jpzt
@@ -119622,6 +119623,7 @@ py交易	pyjy
 切除	qpiu
 切出	qpiu
 前排出售	qpiu
+緁	qpja
 切近	qpjb
 切记	qpji
 切忌	qpji
@@ -125970,10 +125972,10 @@ QQ音乐	qqyy
 斯德哥尔摩综合征	sdgv
 塞给	sdgw
 㘔	sdha
+嘥	sdha
 塞好	sdhc
 死得很惨	sdhc
 嗮	sdhe
-嘥	sdhk
 腮红	sdhs
 噻	sdht
 塞黑	sdhw
@@ -128064,6 +128066,7 @@ Shift	shif
 三思而后行	ssex
 三思而行	ssex
 四三二一	ssey
+傱	ssfa
 瑟瑟发抖	ssfd
 送分	ssff
 送份	ssff
@@ -128071,7 +128074,6 @@ Shift	shif
 送风	ssfg
 随俗浮沉	ssfi
 送饭	ssfj
-傱	ssfk
 诵佛	ssfo
 倯	ssft
 三四分钟	ssfv
@@ -128099,11 +128101,11 @@ Shift	shif
 送回	sshv
 送花	sshx
 松花	sshx
+㞞	ssia
 宋朝	ssic
 色素沉淀	ssid
 送车	ssie
 松弛	ssii
-㞞	ssik
 宋	ssio
 梥	ssio
 送出	ssiu
@@ -128250,6 +128252,7 @@ Shift	shif
 松蕈	ssxy
 丝丝小雨	ssxy
 顺水行舟	ssxz
+嵷	ssya
 送药	ssyc
 洒扫应对	ssyd
 三四月份	ssyf
@@ -128261,7 +128264,6 @@ Shift	shif
 松阳	ssyh
 送医	ssyi
 松烟	ssyj
-嵷	ssyk
 搜索引擎	ssyq
 宋元	ssyr
 松原	ssyr
@@ -131265,12 +131267,12 @@ san值狂掉	svkd
 突出贡献	tigx
 啼	tiha
 㗣	tiha
+嚔	tiha
 㖒	tiha
 题号	tihc
 题海	tihd
 嚏	tihk
 踢坏	tihk
-嚔	tihk
 嗁	tihn
 提货	tiho
 替换	tihr
@@ -131549,6 +131551,7 @@ san值狂掉	svkd
 调查小组	tixz
 剔牙	tiya
 䱱	tiya
+䶑	tiya
 崹	tiya
 鮧	tiya
 鮷	tiya
@@ -131564,7 +131567,6 @@ san值狂掉	svkd
 啼莺	tiyk
 鯷	tiyk
 推出一款	tiyk
-䶑	tiyk
 同床异梦	tiym
 汤臣一品	tiyp
 提出要求	tiyq
@@ -136503,9 +136505,9 @@ san值狂掉	svkd
 傻吊	uadn
 杀毒	uadu
 沙堆	uadv
+䝊	uaea
 沙俄	uaee
 㰱	uaeg
-䝊	uaek
 沙发	uafa
 杀伐	uafa
 倽	uafh
@@ -136524,12 +136526,12 @@ san值狂掉	svkd
 傻瓜	uagx
 傻狗	uagz
 杀狗	uagz
+啑	uaha
 杀害	uahd
 沙盒	uahe
 唦	uahe
 沙河	uahe
 啥	uahh
-啑	uahk
 沙皇	uahl
 嗄	uahq
 傻话	uahx
@@ -136627,10 +136629,10 @@ san值狂掉	svkd
 沙丘	uaqq
 杀球	uaqq
 纱裙	uaqy
+箑	uara
 杀人	uarf
 傻人	uarf
 沙瓤	uarh
-箑	uark
 杀入	uaru
 深谙人心	uarx
 䈉	uarz
@@ -136689,10 +136691,10 @@ san值狂掉	svkd
 煞尾	uaww
 稍安勿躁	uawz
 少安毋躁	uawz
+萐	uaxa
 杀心	uaxb
 莎	uaxe
 煞星	uaxk
-萐	uaxk
 杀向	uaxl
 沙箱	uaxl
 沙县	uaxm
@@ -137418,11 +137420,11 @@ san值狂掉	svkd
 霜打茄子	udqz
 筛	udra
 篩	udra
+簁	udra
 事到如此	udrc
 事到如今	udrj
 杀毒软件	udrj
 十动然拒	udrj
-簁	udrk
 嗜赌如命	udrm
 深得人心	udrx
 世道人心	udrx
@@ -140334,6 +140336,7 @@ san值狂掉	svkd
 势头	uitz
 湿透	uitz
 是啥	uiua
+褷	uiua
 視	uiua
 嗜杀	uiua
 生产设备	uiub
@@ -140378,7 +140381,6 @@ san值狂掉	svkd
 徥	uiuk
 襹	uiuk
 师帅	uiuk
-褷	uiuk
 十双	uiul
 伸出手来	uiul
 山重水复疑无路	uiul
@@ -145559,8 +145561,8 @@ san值狂掉	svkd
 铡	vaks
 榨空	vaks
 闸口	vakz
+㱜	vala
 栅栏	valj
-㱜	valk
 揸	valn
 拃	valn
 搾	valn
@@ -161345,6 +161347,7 @@ Word	word
 䒊	xiav
 浠	xiba
 洗	xiba
+漇	xiba
 西八	xiba
 席八	xiba
 夏虫不可语冰	xibb
@@ -161365,7 +161368,6 @@ Word	word
 戏班	xibj
 息兵	xibk
 喜饼	xibk
-漇	xibk
 汐	xibl
 㲸	xibl
 西边	xibm
@@ -161578,6 +161580,7 @@ Word	word
 唽	xihy
 吸魂	xihy
 锡婚	xihy
+屣	xiia
 细查	xiia
 喜茶	xiia
 屭	xiia
@@ -161591,7 +161594,6 @@ Word	word
 西城	xiig
 细长	xiih
 西昌	xiih
-屣	xiik
 穸	xiil
 铣床	xiil
 西窗	xiil
@@ -161604,6 +161606,7 @@ Word	word
 洗出	xiiu
 析出	xiiu
 屃	xiiz
+縰	xija
 吸进	xijb
 西晋	xijb
 吸金	xijb
@@ -161624,7 +161627,6 @@ Word	word
 戏精	xijk
 吸睛	xijk
 西经	xijk
-縰	xijk
 细讲	xijl
 行车记录	xijl
 西江	xijl
@@ -161940,6 +161942,7 @@ Word	word
 辛丑条约	xity
 洗头	xitz
 西头	xitz
+徙	xiua
 西沙	xiua
 细纱	xiua
 细沙	xiua
@@ -161964,7 +161967,6 @@ Word	word
 西山	xiuj
 裼	xiuj
 蟋蟀	xiuk
-徙	xiuk
 献出生命	xium
 禊	xiun
 徯	xiun
@@ -162048,6 +162050,7 @@ Word	word
 匸	xiww
 觹	xiww
 觽	xiww
+蓰	xixa
 莃	xixa
 蓆	xixa
 细心	xixb
@@ -162061,7 +162064,6 @@ Word	word
 洗洗	xixi
 西行	xixk
 习性	xixk
-蓰	xixk
 细想	xixl
 西乡	xixl
 细线	xixm
@@ -162146,6 +162148,7 @@ Word	word
 西柚	xiyz
 吸油	xiyz
 㛓	xiza
+蹝	xiza
 趇	xiza
 洗澡	xizc
 媳	xizc
@@ -162156,7 +162159,6 @@ Word	word
 喜字	xizi
 㛫	xizj
 躧	xizk
-蹝	xizk
 心诚则灵	xizl
 嬆	xizm
 趘	xizm
@@ -164002,6 +164004,7 @@ Word	word
 鲜润	xmry
 鲜肉	xmrz
 纤柔	xmrz
+㿅	xmsa
 㡾	xmsc
 显色	xmse
 先森	xmsf
@@ -164010,7 +164013,6 @@ Word	word
 㾾	xmsh
 闲散	xmsj
 廯	xmsk
-㿅	xmsk
 羡慕死了	xmsl
 㲔	xmsm
 线索	xmso
@@ -165361,6 +165363,7 @@ Word	word
 颉	xptz
 䙊	xpua
 襭	xpua
+徢	xpua
 祄	xpua
 㣰	xpuc
 斜射	xpue
@@ -165372,7 +165375,6 @@ Word	word
 写实	xpui
 写诗	xpui
 斜视	xpui
-徢	xpuk
 香飘十里	xpul
 䙎	xpun
 褉	xpun
@@ -183836,11 +183838,11 @@ Word	word
 在家好种田	zjht
 座机画质	zjhv
 咱	zjhy
+寁	zjia
 䬤	zjic
 赞成	zjig
 再基础不过	zjig
 走家串户	zjih
-寁	zjik
 䍼	zjiq
 走街串巷	zjix
 自己决定	zjjd
@@ -184775,8 +184777,8 @@ Word	word
 总队	zsdv
 总得	zsdw
 粽	zsdy
+豵	zsea
 总额	zsee
-豵	zsek
 䑸	zsey
 䝋	zsey
 总阀	zsfa
@@ -184827,6 +184829,10 @@ Word	word
 总厨	zsiu
 最速传说	zsiu
 宗	zsiy
+縱	zsja
+緃	zsja
+縦	zsja
+磫	zsja
 総	zsjc
 總	zsjc
 縂	zsjc
@@ -184863,18 +184869,18 @@ Word	word
 棕榈	zslv
 总论	zsly
 纵马	zsma
+䗥	zsma
 鬃毛	zsmc
 宗门	zsmf
-䗥	zsmk
 宗庙	zsmn
 蝬	zsmq
 翪	zsmq
 子孙满堂	zsmt
 纵目	zsmu
 总目	zsmu
+䰌	zsna
 总拿	zsna
 总能	zsng
-䰌	zsnk
 在所难免	zsnm
 鬷	zsnq
 騣	zsnq
@@ -184907,15 +184913,16 @@ Word	word
 纵然	zsrj
 䈦	zsrq
 纵容	zsrs
+瘲	zssa
+㢔	zssa
 祖孙三代	zssd
 子孙三代	zssd
 棕色	zsse
 疭	zssg
 再三思考	zssk
-瘲	zssk
-㢔	zssk
 总算	zssr
 再三思索	zsss
+㙡	zsta
 总台	zstd
 总体	zsti
 总坛	zstj
@@ -184923,6 +184930,7 @@ Word	word
 堫	zstq
 总统	zsts
 总图	zstu
+䙕	zsua
 总社	zsue
 纵身	zsuf
 纵深	zsuf
@@ -184931,7 +184939,6 @@ Word	word
 总是	zsui
 宗师	zsui
 纵使	zsui
-䙕	zsuk
 再三说明	zsum
 总说	zsuo
 㣭	zsuq
@@ -184972,6 +184979,7 @@ Word	word
 总序	zsxu
 在思想上	zsxu
 蓗	zsxz
+嵸	zsya
 总压	zsya
 总要	zsyc
 总也	zsye
@@ -184980,7 +184988,6 @@ Word	word
 综艺	zsyi
 总以	zsyi
 踪影	zsyk
-嵸	zsyk
 再三要求	zsyq
 嵏	zsyq
 嵕	zsyq
@@ -184991,10 +184998,10 @@ Word	word
 鯮	zsyy
 总有	zsyz
 纵有	zsyz
+踨	zsza
+蹤	zsza
 总则	zsze
 粽子	zszi
-踨	zszk
-蹤	zszk
 自私自利	zszl
 再三再四	zszs
 宗族	zszu
@@ -188387,7 +188394,6 @@ Word	word
 窜网	crwh
 窜下	crxx
 葱饼	csbk
-漎	csbk
 从北	csbw
 从都	csdz
 从父	csfu
@@ -201847,7 +201853,6 @@ Word	word
 切货	qpho
 且呼	qphu
 且经	qpjk
-緁	qpjk
 切剑	qpjm
 切谏	qpjm
 切角	qpjn
@@ -210827,10 +210832,6 @@ Word	word
 总创	zsil
 棕床	zsil
 总经	zsjk
-縱	zsjk
-緃	zsjk
-縦	zsjk
-磫	zsjk
 总觉	zsjt
 总决	zsjt
 总开	zskd
@@ -210862,7 +210863,6 @@ Word	word
 总司	zssi
 总速	zssu
 总听	zstk
-㙡	zstk
 总跳	zstn
 总挑	zstn
 综拓	zsto

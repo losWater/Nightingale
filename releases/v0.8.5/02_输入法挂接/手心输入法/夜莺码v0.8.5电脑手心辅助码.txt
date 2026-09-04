@@ -2836,8 +2836,8 @@
 结=jh
 碣=jw
 街=kt
-捷=la
 拮=lh
+捷=lk
 桀=lo
 揭=lw
 接=lz
@@ -2851,7 +2851,7 @@
 阶=pa
 界=pa
 截=pg
-睫=qa
+睫=qk
 戒=rx
 疥=sa
 疖=sp
@@ -2868,7 +2868,7 @@
 㛃=wz
 节=xp
 鲒=yh
-婕=za
+婕=zk
 姐=zt
 旧=aq
 氿=bd
@@ -6753,9 +6753,9 @@
 嘻=hh
 吸=hq
 咥=hy
-屣=ia
 窸=ic
 犀=ic
+屣=ik
 穸=il
 羲=io
 屃=iz
@@ -6799,8 +6799,8 @@
 喜=th
 枲=to
 熹=tr
-徙=ua
 禧=uh
+徙=uk
 禊=un
 膝=vb
 𠅤=vc
@@ -6808,8 +6808,8 @@
 阋=wa
 稀=wa
 觿=wh
-蓰=xa
 葸=xc
+蓰=xk
 菥=xy
 息=yc
 𬶮=yh
@@ -8028,7 +8028,7 @@
 暂=eq
 瓒=gz
 咱=hy
-寁=ia
+寁=ik
 昝=qq
 簪=rq
 趱=zz

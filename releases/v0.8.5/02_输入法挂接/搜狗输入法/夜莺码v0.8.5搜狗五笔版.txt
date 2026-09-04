@@ -78450,7 +78450,6 @@ jpky	解困
 jpkz	借口
 jpkz	接口
 jpkz	街口
-jpla	捷
 jpla	解辣
 jpld	借来
 jple	接了
@@ -78465,6 +78464,7 @@ jplj	精疲力尽
 jplj	筋疲力竭
 jplk	节令
 jplk	戒灵
+jplk	捷
 jplm	接连
 jplm	结连
 jplo	桀
@@ -78546,13 +78546,13 @@ jppj	解盘
 jppk	截屏
 jppo	揭破
 jppz	解剖
-jpqa	睫
 jpqb	结亲
 jpqb	接亲
 jpqi	解气
 jpqi	节气
 jpqk	结清
 jpqk	节庆
+jpqk	睫
 jpql	借枪
 jpql	接腔
 jpqm	借钱
@@ -78762,7 +78762,6 @@ jpyz	解忧
 jpyz	借由
 jpyz	戒游
 jpyz	节油
-jpza	婕
 jpze	诘责
 jpzi	芥子
 jpzi	疖子
@@ -78770,6 +78769,7 @@ jpzi	桔子
 jpzi	介子
 jpzi	结子
 jpzj	就怕贼惦记
+jpzk	婕
 jpzo	杰作
 jpzt	姐
 jpzz	节奏
@@ -146279,7 +146279,6 @@ xihx	西华
 xihy	咥
 xihy	吸魂
 xihy	锡婚
-xiia	屣
 xiia	细查
 xiia	喜茶
 xiic	窸
@@ -146292,6 +146291,7 @@ xiig	戏称
 xiig	西城
 xiih	细长
 xiih	西昌
+xiik	屣
 xiil	穸
 xiil	铣床
 xiil	西窗
@@ -146552,7 +146552,6 @@ xity	西屯
 xity	辛丑条约
 xitz	洗头
 xitz	西头
-xiua	徙
 xiua	西沙
 xiua	细纱
 xiua	细沙
@@ -146575,6 +146574,7 @@ xiui	稀世
 xiuj	西山
 xiuj	裼
 xiuk	蟋蟀
+xiuk	徙
 xium	献出生命
 xiun	禊
 xiuo	细说
@@ -146642,7 +146642,6 @@ xiww	席位
 xiww	喜出望外
 xiww	洗胃
 xiww	熹微
-xixa	蓰
 xixb	细心
 xixb	悉心
 xixc	葸
@@ -146653,6 +146652,7 @@ xixi	嘻嘻
 xixi	洗洗
 xixk	西行
 xixk	习性
+xixk	蓰
 xixl	细想
 xixl	西乡
 xixm	细线
@@ -165339,10 +165339,10 @@ zjhs	枝节横生
 zjht	在家好种田
 zjhv	座机画质
 zjhy	咱
-zjia	寁
 zjig	赞成
 zjig	再基础不过
 zjih	走家串户
+zjik	寁
 zjix	走街串巷
 zjjd	自己决定
 zjji	攒积
