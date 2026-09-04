@@ -36114,8 +36114,9 @@ bujl	不守纪律
 bujl	逼上绝路
 bujm	部件
 bujm	不见
-bujn	不叫
 bujn	补交
+bujn	补觉
+bujn	不叫
 bujp	不解
 bujp	不洁
 bujq	不久
@@ -36124,7 +36125,6 @@ bujr	不捐
 bujr	不倦
 bujt	不觉
 bujt	不绝
-bujt	补觉
 buju	布局
 buju	不惧
 buju	本身就是
@@ -40727,10 +40727,11 @@ dajl	大酱
 dajm	搭建
 dajm	大件
 dajm	打尖
-dajn	大叫
 dajn	打搅
-dajn	打胶
+dajn	大叫
 dajn	大脚
+dajn	打胶
+dajn	大觉
 dajp	大街
 dajp	鿎
 dajp	大姐
@@ -85570,7 +85571,6 @@ kyjl	开源节流
 kyjr	困倦
 kyjr	开云见日
 kyjs	困窘
-kyjt	困觉
 kyju	困局
 kyju	昆剧
 kykd	可以看到
@@ -88093,11 +88093,11 @@ ljji	拦击
 ljjk	蓝鲸
 ljjk	历尽艰苦
 ljjm	揽件
+ljjn	懒觉
 ljjn	滥交
 ljjp	拦截
 ljjp	拦劫
 ljjr	立即进入
-ljjt	懒觉
 ljjv	两军交战
 ljjx	滥加
 ljjx	历尽艰辛
@@ -109681,11 +109681,11 @@ qtiy	全体船员
 qtjd	前台接待
 qtjm	却见
 qtjm	情同姐妹
+qtjn	缺觉
 qtjn	缺角
 qtjn	其他技能
 qtjq	碏
 qtjq	缺酒
-qtjt	缺觉
 qtjw	确
 qtjx	缺钾
 qtjy	全体禁言
@@ -116734,12 +116734,12 @@ svjk	虽经
 svjl	遂将
 svjl	绥江
 svjl	三贞九烈
+svjn	碎觉
 svjn	碎叫
 svjp	碎
 svjp	遂借
 svjq	岁就
 svjq	四肢健全
-svjt	碎觉
 svjx	碎甲
 svjx	随驾
 svjy	随军
@@ -124060,6 +124060,7 @@ ucjm	稍减
 ucjm	烧碱
 ucjn	烧焦
 ucjn	捎脚
+ucjn	少觉
 ucjp	烧结
 ucjp	绍介
 ucjq	烧酒
@@ -126057,11 +126058,11 @@ uhjm	伤害减免
 uhjm	商检
 uhjn	上交
 uhjn	上缴
+uhjn	晌觉
 uhjp	上街
 uhjp	商界
 uhjp	上届
 uhjr	上卷
-uhjt	晌觉
 uhjt	社会集团
 uhju	上句
 uhju	上局
@@ -130235,13 +130236,13 @@ uvjk	水景
 uvjm	水煎
 uvjm	睡奸
 uvjm	设置界面
+uvjn	睡觉
 uvjn	水饺
 uvjp	水解
 uvjq	水酒
 uvjr	税捐
 uvjr	时至今日
 uvjt	水蕨
-uvjt	睡觉
 uvju	税局
 uvju	水具
 uvjx	水价
@@ -136906,8 +136907,9 @@ vsjm	中间
 vsjm	中箭
 vsjm	重见
 vsjm	中坚
-vsjn	中交
 vsjn	重教
+vsjn	中交
+vsjn	中觉
 vsjp	终结
 vsjp	中介
 vsjq	终究
@@ -156045,6 +156047,7 @@ yijm	已建
 yijn	移交
 yijn	一角
 yijn	一脚
+yijn	一觉
 yijn	衣角
 yijn	异教
 yijp	异界
@@ -156058,7 +156061,6 @@ yijq	已久
 yijr	义捐
 yijr	语出惊人
 yijt	已决
-yijt	一觉
 yijt	一绝
 yijt	义绝
 yijt	壹决
@@ -169892,7 +169894,6 @@ dahf	大很
 daio	打戳
 dajs	大囧
 dajt	大嚼
-dajt	大觉
 dakj	大砍
 dakj	大刊
 dakl	大框
@@ -186857,7 +186858,6 @@ ucjb	少进
 ucjb	烧尽
 ucjs	少囧
 ucjt	稍觉
-ucjt	少觉
 ucjy	少君
 uckd	烧开
 ucke	少刻
@@ -188765,7 +188765,6 @@ vsis	中冲
 vsiu	中出
 vsiv	重锤
 vsiv	中吹
-vsjt	中觉
 vslk	钟灵
 vsmi	中秘
 vsmm	中缅
@@ -192455,4 +192454,5 @@ zzvu	走珠
 zzwd	走歪
 zzwo	揍我
 zzya	走呀
+kyjn	困觉
 xing	彳亍

@@ -36965,8 +36965,9 @@ BOSS直聘	bsvp
 逼上绝路	bujl
 部件	bujm
 不见	bujm
-不叫	bujn
 补交	bujn
+补觉	bujn
+不叫	bujn
 不解	bujp
 不洁	bujp
 不久	bujq
@@ -36976,7 +36977,6 @@ BOSS直聘	bsvp
 不倦	bujr
 不觉	bujt
 不绝	bujt
-补觉	bujt
 布局	buju
 不惧	buju
 本身就是	buju
@@ -42083,10 +42083,11 @@ C位出道	cwid
 搭建	dajm
 大件	dajm
 打尖	dajm
-大叫	dajn
 打搅	dajn
-打胶	dajn
+大叫	dajn
 大脚	dajn
+打胶	dajn
+大觉	dajn
 大街	dajp
 鿎	dajp
 大姐	dajp
@@ -92783,7 +92784,6 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 困倦	kyjr
 开云见日	kyjr
 困窘	kyjs
-困觉	kyjt
 困局	kyju
 昆剧	kyju
 可以看到	kykd
@@ -95885,12 +95885,12 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 蓝鲸	ljjk
 历尽艰苦	ljjk
 揽件	ljjm
+懒觉	ljjn
 滥交	ljjn
 拦截	ljjp
 拦劫	ljjp
 䃹	ljjp
 立即进入	ljjr
-懒觉	ljjt
 两军交战	ljjv
 滥加	ljjx
 历尽艰辛	ljjx
@@ -120908,11 +120908,11 @@ QQ音乐	qqyy
 碻	qtjh
 却见	qtjm
 情同姐妹	qtjm
+缺觉	qtjn
 缺角	qtjn
 其他技能	qtjn
 碏	qtjq
 缺酒	qtjq
-缺觉	qtjt
 确	qtjw
 缺钾	qtjx
 全体禁言	qtjy
@@ -123682,6 +123682,7 @@ QQ音乐	qqyy
 䔳	rjxr
 䖄	rjxr
 苒	rjxt
+染血	rjxt
 儒家学说	rjxu
 软件学院	rjxy
 软件下载	rjxz
@@ -128790,6 +128791,7 @@ san值归零	svgl
 遂将	svjl
 绥江	svjl
 三贞九烈	svjl
+碎觉	svjn
 碎叫	svjn
 碎	svjp
 䍁	svjp
@@ -128798,7 +128800,6 @@ san值归零	svgl
 遂借	svjp
 岁就	svjq
 四肢健全	svjq
-碎觉	svjt
 碎甲	svjx
 随驾	svjx
 随军	svjy
@@ -137057,6 +137058,7 @@ san值狂掉	svkd
 烧碱	ucjm
 烧焦	ucjn
 捎脚	ucjn
+少觉	ucjn
 烧结	ucjp
 绍介	ucjp
 烧酒	ucjq
@@ -139257,11 +139259,11 @@ san值狂掉	svkd
 商检	uhjm
 上交	uhjn
 上缴	uhjn
+晌觉	uhjn
 上街	uhjp
 商界	uhjp
 上届	uhjp
 上卷	uhjr
-晌觉	uhjt
 社会集团	uhjt
 上句	uhju
 上局	uhju
@@ -143803,13 +143805,13 @@ san值狂掉	svkd
 水煎	uvjm
 睡奸	uvjm
 设置界面	uvjm
+睡觉	uvjn
 水饺	uvjn
 水解	uvjp
 水酒	uvjq
 税捐	uvjr
 时至今日	uvjr
 水蕨	uvjt
-睡觉	uvjt
 税局	uvju
 水具	uvju
 水价	uvjx
@@ -151279,8 +151281,9 @@ san值狂掉	svkd
 中箭	vsjm
 重见	vsjm
 中坚	vsjm
-中交	vsjn
 重教	vsjn
+中交	vsjn
+中觉	vsjn
 终结	vsjp
 中介	vsjp
 终究	vsjq
@@ -173085,6 +173088,7 @@ Word	word
 移交	yijn
 一角	yijn
 一脚	yijn
+一觉	yijn
 衣角	yijn
 异教	yijn
 异界	yijp
@@ -173100,7 +173104,6 @@ Word	word
 礒	yijr
 语出惊人	yijr
 已决	yijt
-一觉	yijt
 一绝	yijt
 义绝	yijt
 壹决	yijt
@@ -188612,7 +188615,6 @@ Word	word
 打戳	daio
 大囧	dajs
 大嚼	dajt
-大觉	dajt
 大砍	dakj
 大刊	dakj
 大框	dakl
@@ -202729,7 +202731,6 @@ Word	word
 染着	rjve
 燃文	rjwf
 然我	rjwo
-染血	rjxt
 然也	rjye
 染液	rjye
 然已	rjyi
@@ -205581,7 +205582,6 @@ Word	word
 烧尽	ucjb
 少囧	ucjs
 稍觉	ucjt
-少觉	ucjt
 少君	ucjy
 烧开	uckd
 少刻	ucke
@@ -207489,7 +207489,6 @@ Word	word
 中出	vsiu
 重锤	vsiv
 中吹	vsiv
-中觉	vsjt
 钟灵	vslk
 中秘	vsmi
 中缅	vsmm
@@ -211186,3 +211185,4 @@ Word	word
 走歪	zzwd
 揍我	zzwo
 走呀	zzya
+困觉	kyjn
