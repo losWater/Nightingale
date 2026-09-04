@@ -5124,7 +5124,7 @@ dqq	荡秋千
 dqr	地球人
 dqr	代签人
 dqs	淡青色
-dqt	丢
+dqw	丢
 dqt	大晴天
 dqt	第七天
 dqt	大前天
@@ -47638,7 +47638,7 @@ dqry	地勤人员
 dqsz	得其所哉
 dqth	盗窃团伙
 dqtr	对其他人
-dqtt	丢
+dqwt	丢
 dqtx	的前提下
 dqtx	地球同步卫星
 dqub	电气设备

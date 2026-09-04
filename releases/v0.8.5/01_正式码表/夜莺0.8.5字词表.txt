@@ -5124,7 +5124,7 @@ Ctrl	ctr
 地球人	dqr
 代签人	dqr
 淡青色	dqs
-丢	dqt
+丢	dqw
 大晴天	dqt
 第七天	dqt
 大前天	dqt
@@ -47638,7 +47638,7 @@ C位出道	cwid
 得其所哉	dqsz
 盗窃团伙	dqth
 对其他人	dqtr
-丢	dqtt
+丢	dqwt
 的前提下	dqtx
 地球同步卫星	dqtx
 电气设备	dqub

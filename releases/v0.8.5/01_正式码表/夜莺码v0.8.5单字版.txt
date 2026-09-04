@@ -1026,7 +1026,7 @@
 鲽	dpy
 蹀	dpz
 铥	dqk
-丢	dqt
+丢	dqw
 端	dra
 断	drd
 段	dre
@@ -8223,7 +8223,7 @@
 銩	dqgt
 丟	dqgt
 铥	dqkt
-丢	dqtt
+丢	dqwt
 端	drac
 断	drdy
 段	dret
