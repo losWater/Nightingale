@@ -6463,11 +6463,11 @@
 钵	bokn
 铂	boky
 镈	boky
+拨	bola
 癶	boll
 㩭	boln
 挬	boln
 播	bolp
-拨	bolq
 㩧	bols
 撥	bolt
 癷	bolw
@@ -6514,8 +6514,8 @@
 艴	botv
 䯋	boua
 袚	boua
+袯	boua
 髉	boug
-袯	bouq
 襮	bous
 亳	bout
 襏	bout
@@ -8817,7 +8817,7 @@
 發	falt
 髮	fana
 髪	fanq
-发	faoq
+发	faoa
 栰	faor
 橃	faot
 筏	farr
@@ -9528,11 +9528,11 @@
 篚	fwrn
 䉬	fwrt
 䈈	fwrv
+废	fwsa
 痱	fwsn
 䨾	fwsn
 厞	fwsn
 廃	fwso
-废	fwsq
 癈	fwst
 疿	fwst
 廢	fwst
@@ -20386,9 +20386,9 @@
 薸	pnxy
 皫	pnyr
 嫖	pnzy
+泼	poba
 㨇	pobl
 溌	pobo
-泼	pobq
 潑	pobt
 泊	poby
 洦	poby
@@ -20398,8 +20398,8 @@
 頗	poea
 䣪	poea
 䣮	poea
+酦	poea
 醗	poeo
-酦	poeq
 颇	poez
 繁	pofj
 釙	poga
@@ -20412,8 +20412,8 @@
 破	poje
 砶	pojy
 钋	poka
+䥽	poka
 钷	pokh
-䥽	pokq
 㧊	pola
 㩯	polj
 鄱	pomp

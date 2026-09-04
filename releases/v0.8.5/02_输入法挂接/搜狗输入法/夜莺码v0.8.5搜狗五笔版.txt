@@ -35146,6 +35146,7 @@ bokr	拨款
 boku	博库
 boky	铂
 boky	镈
+bola	拨
 bola	拨拉
 bold	舶来
 bole	伯乐
@@ -35162,7 +35163,6 @@ bolo	菠萝
 bolo	剥落
 bolo	博罗
 bolp	播
-bolq	拨
 bolq	波流
 boly	搏
 boly	驳论
@@ -35208,10 +35208,10 @@ botv	跛腿
 botv	波推
 botz	泊头
 boua	搏杀
+boua	袯
 bouh	北欧神话
 boui	博士
 boui	博识
-bouq	袯
 bout	亳
 bouu	帛书
 bouu	波束
@@ -49126,7 +49126,7 @@ famw	罚没
 fanj	发难
 fanm	发蔫
 fanu	发怒
-faoq	发
+faoa	发
 fapc	发泡
 fapc	发炮
 faph	发胖
@@ -53172,6 +53172,7 @@ fwrv	防伪认证
 fwrx	服务热线
 fwry	服务人员
 fwrz	肥肉
+fwsa	废
 fwsa	飞洒
 fwsa	飞撒
 fwse	绯色
@@ -53179,7 +53180,6 @@ fwse	妃色
 fwsj	飞散
 fwsn	痱
 fwso	飞梭
-fwsq	废
 fwsr	废酸
 fwsu	飞速
 fwtd	服务态度
@@ -104168,13 +104168,13 @@ pnzi	嫖资
 pnzy	嫖
 pnzz	飘走
 poan	破案
+poba	泼
 pobd	破败
 pobd	破百
 pobi	破壁
 pobi	破比
 pobk	破冰
 pobo	坡博
-pobq	泼
 pobu	破布
 poby	泊
 pobz	婆
@@ -104196,7 +104196,7 @@ podu	坡度
 podu	破肚
 pody	粕
 pody	破盾
-poeq	酦
+poea	酦
 poez	颇
 pofa	破发
 pofg	颇丰
@@ -104249,10 +104249,10 @@ pojx	破甲
 pojy	破军
 poka	钋
 poka	破卡
+poka	䥽
 pokd	破开
 poke	破壳
 pokh	钷
-pokq	䥽
 poks	破空
 pokz	破口
 pola	泼辣

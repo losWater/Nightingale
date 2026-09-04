@@ -35887,6 +35887,7 @@ AV男优	avny
 博库	boku
 铂	boky
 镈	boky
+拨	bola
 拨拉	bola
 舶来	bold
 伯乐	bole
@@ -35906,7 +35907,6 @@ AV男优	avny
 剥落	bolo
 博罗	bolo
 播	bolp
-拨	bolq
 波流	bolq
 㩧	bols
 撥	bolt
@@ -35986,11 +35986,11 @@ AV男优	avny
 搏杀	boua
 䯋	boua
 袚	boua
+袯	boua
 髉	boug
 北欧神话	bouh
 博士	boui
 博识	boui
-袯	bouq
 襮	bous
 亳	bout
 襏	bout
@@ -51511,7 +51511,7 @@ ez收徒	ezut
 发蔫	fanm
 髪	fanq
 发怒	fanu
-发	faoq
+发	faoa
 栰	faor
 橃	faot
 发泡	fapc
@@ -56050,6 +56050,7 @@ ez收徒	ezut
 服务热线	fwrx
 服务人员	fwry
 肥肉	fwrz
+废	fwsa
 飞洒	fwsa
 飞撒	fwsa
 绯色	fwse
@@ -56060,7 +56061,6 @@ ez收徒	ezut
 厞	fwsn
 飞梭	fwso
 廃	fwso
-废	fwsq
 废酸	fwsr
 癈	fwst
 疿	fwst
@@ -114497,6 +114497,7 @@ MVP结算页面	mvpm
 嫖	pnzy
 飘走	pnzz
 破案	poan
+泼	poba
 破败	pobd
 破百	pobd
 破壁	pobi
@@ -114505,7 +114506,6 @@ MVP结算页面	mvpm
 㨇	pobl
 溌	pobo
 坡博	pobo
-泼	pobq
 潑	pobt
 破布	pobu
 泊	poby
@@ -114533,8 +114533,8 @@ MVP结算页面	mvpm
 頗	poea
 䣪	poea
 䣮	poea
+酦	poea
 醗	poeo
-酦	poeq
 颇	poez
 破发	pofa
 颇丰	pofg
@@ -114594,10 +114594,10 @@ MVP结算页面	mvpm
 砶	pojy
 钋	poka
 破卡	poka
+䥽	poka
 破开	pokd
 破壳	poke
 钷	pokh
-䥽	pokq
 破空	poks
 破口	pokz
 泼辣	pola

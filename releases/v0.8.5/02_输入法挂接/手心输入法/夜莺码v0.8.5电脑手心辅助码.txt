@@ -389,8 +389,8 @@
 钵=kn
 铂=ky
 镈=ky
+拨=la
 播=lp
-拨=lq
 搏=ly
 桲=on
 欂=oy
@@ -401,7 +401,7 @@
 簸=re
 箔=ry
 艴=tv
-袯=uq
+袯=ua
 亳=ut
 脖=vn
 膊=vy
@@ -1082,7 +1082,7 @@
 垡=ft
 珐=gt
 砝=jt
-发=oq
+发=oa
 筏=rr
 阀=wr
 忿=ac
@@ -1298,8 +1298,8 @@
 榧=on
 飞=oo
 篚=rn
+废=sa
 痱=sn
-废=sq
 费=tz
 肺=va
 腓=vn
@@ -4580,16 +4580,16 @@
 蔈=xy
 薸=xy
 嫖=zy
-泼=bq
+泼=ba
 婆=bz
 粕=dy
-酦=eq
+酦=ea
 颇=ez
 珀=gy
 破=je
 钋=ka
+䥽=ka
 钷=kh
-䥽=kq
 鄱=mp
 笸=rh
 坡=te
