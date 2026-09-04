@@ -1653,9 +1653,9 @@
 佝=fh
 缑=jr
 钩=kt
+遘=mp
 鞲=mt
-遘=np
-觏=nz
+觏=mz
 枸=oh
 构=ot
 耇=ph
@@ -2790,9 +2790,9 @@
 铰=kn
 搅=lz
 蛟=mn
+斠=mp
 交=nn
 郊=np
-斠=np
 䴔=ny
 校=on
 椒=oq

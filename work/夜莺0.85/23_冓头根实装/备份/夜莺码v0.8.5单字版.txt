@@ -1486,6 +1486,7 @@
 缑	gzj
 钩	gzk
 鞲	gzm
+遘	gzn
 构	gzo
 耇	gzp
 篝	gzr
@@ -10571,12 +10572,12 @@
 钩	gzkt
 夠	gzlh
 搆	gzlt
-覯	gzma
 蚼	gzmh
-遘	gzmp
-冓	gzmt
 鞲	gzmt
-觏	gzmz
+覯	gzna
+遘	gznp
+冓	gznt
+觏	gznz
 枸	gzoh
 韝	gzot
 構	gzot
@@ -13931,11 +13932,11 @@
 摾	jllm
 殭	jlln
 摪	jlly
-顜	jlma
 虹	jlme
 翞	jlmg
 䗵	jlmn
 韁	jlmn
+顜	jlna
 浆	jlnb
 漿	jlnb
 酱	jlne
@@ -14318,7 +14319,6 @@
 搅	jnlz
 蟜	jnmh
 蛟	jnmn
-斠	jnmp
 蟭	jnmr
 轇	jnne
 轎	jnnh
@@ -14327,6 +14327,7 @@
 虠	jnnn
 較	jnnn
 郊	jnnp
+斠	jnnp
 䢒	jnnp
 敎	jnnq
 鵁	jnnr

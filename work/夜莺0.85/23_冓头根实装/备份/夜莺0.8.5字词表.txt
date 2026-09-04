@@ -8430,6 +8430,7 @@ Github	git
 果子狸	gzl
 鞲	gzm
 该怎么	gzm
+遘	gzn
 构	gzo
 耇	gzp
 工作区	gzq
@@ -63720,7 +63721,6 @@ Google	goog
 给足了面子	gzlz
 够吗	gzma
 诟骂	gzma
-覯	gzma
 狗民	gzmb
 该怎么办	gzmb
 狗毛	gzmc
@@ -63729,12 +63729,10 @@ Google	goog
 蚼	gzmh
 狗命	gzmk
 勾描	gzmn
-遘	gzmp
-冓	gzmt
 鞲	gzmt
 该怎么样	gzmy
 给足面子	gzmz
-觏	gzmz
+覯	gzna
 够哪	gzna
 狗奶	gznd
 工作难度	gznd
@@ -63742,9 +63740,12 @@ Google	goog
 工作能力	gznl
 狗年	gznm
 狗尿	gznn
+遘	gznp
 工作内容	gznr
+冓	gznt
 狗奴	gznu
 工作年限	gznx
+觏	gznz
 枸	gzoh
 韝	gzot
 構	gzot
@@ -82605,6 +82606,7 @@ ip正确	ipvq
 浆膜	jlmo
 降魔	jlmo
 建立模型	jlmx
+顜	jlna
 浆	jlnb
 漿	jlnb
 酱	jlne
@@ -84061,7 +84063,6 @@ ip正确	ipvq
 脚模	jnmo
 剿灭	jnmp
 浇灭	jnmp
-斠	jnmp
 蟭	jnmr
 机能磨损	jnms
 酵母	jnmu
@@ -84089,6 +84090,7 @@ ip正确	ipvq
 虠	jnnn
 較	jnnn
 郊	jnnp
+斠	jnnp
 䢒	jnnp
 敎	jnnq
 椒牛	jnnq
@@ -194693,7 +194695,6 @@ Word	word
 疆良	jlll
 将略	jllt
 匠码	jlma
-顜	jlma
 江民	jlmb
 江曼	jlmj
 僵木	jlmu

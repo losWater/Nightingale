@@ -8430,7 +8430,6 @@ gzl	瓜子脸
 gzl	果子狸
 gzm	鞲
 gzm	该怎么
-gzn	遘
 gzo	构
 gzp	耇
 gzq	工作区
@@ -63721,6 +63720,7 @@ gzlz	岣嵝
 gzlz	给足了面子
 gzma	够吗
 gzma	诟骂
+gzma	覯
 gzmb	狗民
 gzmb	该怎么办
 gzmc	狗毛
@@ -63729,10 +63729,12 @@ gzmh	够忙
 gzmh	蚼
 gzmk	狗命
 gzmn	勾描
+gzmp	遘
+gzmt	冓
 gzmt	鞲
 gzmy	该怎么样
 gzmz	给足面子
-gzna	覯
+gzmz	觏
 gzna	够哪
 gznd	狗奶
 gznd	工作难度
@@ -63740,12 +63742,9 @@ gznl	狗娘
 gznl	工作能力
 gznm	狗年
 gznn	狗尿
-gznp	遘
 gznr	工作内容
-gznt	冓
 gznu	狗奴
 gznx	工作年限
-gznz	觏
 gzoh	枸
 gzot	韝
 gzot	構
@@ -82606,7 +82605,6 @@ jlmo	姜末
 jlmo	浆膜
 jlmo	降魔
 jlmx	建立模型
-jlna	顜
 jlnb	浆
 jlnb	漿
 jlne	酱
@@ -84063,6 +84061,7 @@ jnmo	角膜
 jnmo	脚模
 jnmp	剿灭
 jnmp	浇灭
+jnmp	斠
 jnmr	蟭
 jnms	机能磨损
 jnmu	酵母
@@ -84090,7 +84089,6 @@ jnnn	交
 jnnn	虠
 jnnn	較
 jnnp	郊
-jnnp	斠
 jnnp	䢒
 jnnq	敎
 jnnq	椒牛
@@ -194695,6 +194693,7 @@ jlks	将空
 jlll	疆良
 jllt	将略
 jlma	匠码
+jlma	顜
 jlmb	江民
 jlmj	江曼
 jlmu	僵木

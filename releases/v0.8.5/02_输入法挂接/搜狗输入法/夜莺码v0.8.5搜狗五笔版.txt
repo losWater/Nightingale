@@ -8469,7 +8469,6 @@ gzl	瓜子脸
 gzl	果子狸
 gzm	鞲
 gzm	该怎么
-gzn	遘
 gzo	构
 gzp	耇
 gzq	工作区
@@ -60162,9 +60161,11 @@ gzmd	购买
 gzmh	够忙
 gzmk	狗命
 gzmn	勾描
+gzmp	遘
 gzmt	鞲
 gzmy	该怎么样
 gzmz	给足面子
+gzmz	觏
 gzna	够哪
 gznd	狗奶
 gznd	工作难度
@@ -60172,11 +60173,9 @@ gznl	狗娘
 gznl	工作能力
 gznm	狗年
 gznn	狗尿
-gznp	遘
 gznr	工作内容
 gznu	狗奴
 gznx	工作年限
-gznz	觏
 gzoh	枸
 gzot	构
 gzph	耇
@@ -77920,6 +77919,7 @@ jnmo	角膜
 jnmo	脚模
 jnmp	剿灭
 jnmp	浇灭
+jnmp	斠
 jnms	机能磨损
 jnmu	酵母
 jnmu	教母
@@ -77941,7 +77941,6 @@ jnnj	胶南
 jnnl	娇娘
 jnnn	交
 jnnp	郊
-jnnp	斠
 jnnq	椒牛
 jnns	蕉农
 jnnv	娇女
