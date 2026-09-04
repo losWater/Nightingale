@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "version": "0.8.5",
+  "status": "pass",
+  "inputs": {
+    "D:\\nightingale\\work\\夜莺0.85\\05_正式码表\\夜莺0.85_G8C12正式单字接口C_v7_20260829_2330\\夜莺0.85_G8C12正式单字码表_v7.txt": "76e49c73f0a1a849f26963eef518caa9c5e4e8060a542c70e6b9bdd0c615bf74",
+    "D:\\nightingale\\work\\夜莺0.85\\05_正式码表\\夜莺0.85_G8C12正式单字接口C_v7_20260829_2330\\夜莺0.85_G8C12正式单字码表_v7_搜狗.txt": "c33a9112ccd3c53bafb9ed8e6d5111307f16f2fb3b7dc7dae520b1687b826c78",
+    "D:\\nightingale\\work\\夜莺0.85\\05_正式码表\\夜莺0.85_G8C12正式单字接口C_v7_20260829_2330\\夜莺0.85_G8C12正式单字码表_v7_搜狗_含快符.txt": "7319c195a6ac966ecc6e5e329d5f6d96de3f887ae14f1f2c52ee0df4f95a7d11",
+    "D:\\nightingale\\work\\夜莺0.85\\08_最终码表G\\G8C12_挂接版前20000裁决_v3_20260829_2330\\夜莺0.85_G8C12挂接版_无简词_v3.txt": "cb51075bc5948dbfaeb5b00beed66be1d2f47d4159209e787a7ed8395dd11b2f",
+    "D:\\nightingale\\work\\夜莺0.85\\08_最终码表G\\G8C12_挂接版前20000裁决_v3_20260829_2330\\夜莺0.85_G8C12挂接版_无简词_v3_搜狗词库版.txt": "2e4d4f18edba2662a606608a856efa96dfbe4854a78a3df626699bc2d5f0952f",
+    "D:\\nightingale\\work\\夜莺0.85\\08_最终码表G\\G8C12_挂接版前20000裁决_v3_20260829_2330\\夜莺0.85_G8C12挂接版_无简词_v3_搜狗词库版_含快符.txt": "457ad846d93df4f471d0d799b45e00453895247588aa4c81b5c6f0c528fd0f0e",
+    "D:\\nightingale\\work\\夜莺0.85\\03_第二届32强\\tournament\\group_08\\card_12_seed_868011\\output-08-29+14_05_39\\config.yaml": "243ee4378f7fd39a1d31f7eb094ff19f4b4980278329d9bc7c526b1b8990ce34",
+    "D:\\nightingale\\work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "f96e0646d6cd25bfaeafba4acdb0cbf0b9b9ed9f6e93a04b32c7bf1d47b33ef4",
+    "D:\\nightingale\\work\\重开工程\\02_规范拆分\\结构等价例外_待验收.yaml": "fe8ba7c9362401d10067fa285b9ffb7ddee0f7a1875a4ddcf44009459d8ff5f7",
+    "D:\\nightingale\\work\\夜莺0.85\\07_词频裁决F\\字词候选裁决.tsv": "0509b5f116df8ebe1d56b3864b94b3b851b630ee76ca7535bbf8717d8ed4bf52",
+    "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\单字码位裁决.tsv": "504d16cd15a855427000d5f53c784b9fce7cf50d1e1742a23e2ee0adedc8b7be",
+    "D:\\nightingale\\work\\夜莺0.85\\04_G8C12人工裁决\\无理码表.tsv": "0f25a1800cf381e25b7488fc8a7118488bd47df975b6aab378aae00ea7d85fcd"
+  },
+  "counts": {
+    "practice_roots": 172,
+    "lookup_chars": 8105,
+    "lookup_chars_with_split": 8105,
+    "reverse_lookup_codes": 68292,
+    "reverse_lookup_entries": 91428
+  },
+  "outputs": {
+    "README.md": "edc4343eabf8ffdc94c6910b08f3e8616e9dfa6e98cb6424377c524c1323ec98",
+    "夜莺码v0.8.5单字版.txt": "76e49c73f0a1a849f26963eef518caa9c5e4e8060a542c70e6b9bdd0c615bf74",
+    "夜莺码v0.8.5单字版_搜狗.txt": "c33a9112ccd3c53bafb9ed8e6d5111307f16f2fb3b7dc7dae520b1687b826c78",
+    "夜莺码v0.8.5单字版_搜狗_含快符.txt": "7319c195a6ac966ecc6e5e329d5f6d96de3f887ae14f1f2c52ee0df4f95a7d11",
+    "夜莺码v0.8.5单字裁决.tsv": "504d16cd15a855427000d5f53c784b9fce7cf50d1e1742a23e2ee0adedc8b7be",
+    "夜莺码v0.8.5字根练习.txt": "a5babee20f789b1eb4362b39c56014715ac6ed5dc2e19077176339a50bc67b03",
+    "夜莺码v0.8.5字根练习器.html": "3ff07ac1124cbb1b6614aa91ae33e8318251202ae8b1632410204f118795debf",
+    "夜莺码v0.8.5字词裁决.tsv": "0509b5f116df8ebe1d56b3864b94b3b851b630ee76ca7535bbf8717d8ed4bf52",
+    "夜莺码v0.8.5拆分查询.html": "afa4bd863d4dcb99999ae24bd8f101fd76fbfb5b0939b5e830683c4992b27b46",
+    "夜莺码v0.8.5挂接字词版_搜狗词库.txt": "2e4d4f18edba2662a606608a856efa96dfbe4854a78a3df626699bc2d5f0952f",
+    "夜莺码v0.8.5挂接字词版_搜狗词库_含快符.txt": "457ad846d93df4f471d0d799b45e00453895247588aa4c81b5c6f0c528fd0f0e",
+    "夜莺码v0.8.5挂接字词版_无简词.txt": "cb51075bc5948dbfaeb5b00beed66be1d2f47d4159209e787a7ed8395dd11b2f",
+    "夜莺码v0.8.5无理码表.tsv": "0f25a1800cf381e25b7488fc8a7118488bd47df975b6aab378aae00ea7d85fcd",
+    "夜莺码v0.8.5编码反查.html": "8cf144016943ed0108a41a2ed2ac283be8dc035bc60744c8516ac305354c269c",
+    "夜莺码v0.8.5键位布局.yaml": "10252aad7282adfdab274fe8d73cf56729a3d91ce7fe1a400b0a141c1a218741"
+  }
+}
