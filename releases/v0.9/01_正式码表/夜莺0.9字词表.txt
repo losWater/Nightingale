@@ -429,7 +429,7 @@
 哈哈	hh
 好吃	hi
 好处	hi
-含	hj
+汉	hj
 回家	hj
 环境	hj
 坏	hk
@@ -8939,7 +8939,7 @@ Github	git
 黑长直	hiv
 还处于	hiy
 很诧异	hiy
-汉	hjb
+汗	hjb
 核聚变	hjb
 好几遍	hjb
 罕见病	hjb
@@ -9027,7 +9027,7 @@ Github	git
 还将有	hjy
 混经验	hjy
 好记忆	hjy
-颔	hjz
+含	hjz
 花架子	hjz
 还健在	hjz
 后劲足	hjz
@@ -66357,8 +66357,8 @@ Google	goog
 缓解病情	hjbq
 海景别墅	hjbu
 挥军北上	hjbu
-汗	hjbw
 涵	hjbw
+汗	hjbw
 浫	hjbw
 涆	hjbw
 汉北	hjbw

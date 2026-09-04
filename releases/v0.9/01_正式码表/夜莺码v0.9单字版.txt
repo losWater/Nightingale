@@ -123,7 +123,7 @@
 很	hf
 恒	hg
 航	hh
-含	hj
+汉	hj
 坏	hk
 黄	hl
 或	ho
@@ -1561,7 +1561,7 @@
 夯	hhn
 杭	hho
 颃	hhv
-汉	hjb
+汗	hjb
 憾	hjc
 酣	hje
 琀	hjg
@@ -1578,7 +1578,7 @@
 邗	hjw
 菡	hjx
 鼾	hjy
-颔	hjz
+含	hjz
 淮	hkb
 怀	hkc
 槐	hko
@@ -10940,8 +10940,8 @@
 漢	hjbn
 㵄	hjbn
 汉	hjbq
-汗	hjbw
 涵	hjbw
+汗	hjbw
 浫	hjbw
 涆	hjbw
 澏	hjby

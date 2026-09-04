@@ -1779,8 +1779,8 @@
 浛=bh
 瀚=bm
 汉=bq
-汗=bw
 涵=bw ow
+汗=bw
 憾=cc
 悍=cw
 酣=em
