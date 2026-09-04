@@ -47638,6 +47638,7 @@ C位出道	cwid
 得其所哉	dqsz
 盗窃团伙	dqth
 对其他人	dqtr
+丢	dqet
 丢	dqwt
 的前提下	dqtx
 地球同步卫星	dqtx

@@ -45676,6 +45676,7 @@ dqry	地勤人员
 dqsz	得其所哉
 dqth	盗窃团伙
 dqtr	对其他人
+dqet	丢
 dqwt	丢
 dqtx	的前提下
 dqtx	地球同步卫星

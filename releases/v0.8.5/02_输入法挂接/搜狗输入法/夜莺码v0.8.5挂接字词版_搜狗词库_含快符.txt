@@ -6260,6 +6260,7 @@ dpyo,1=鲽
 dpzo,2=蹀
 dpzr,1=跌
 dqkt,1=铥
+dqet,1=丢
 dqwt,1=丢
 drac,1=端
 drdy,2=断

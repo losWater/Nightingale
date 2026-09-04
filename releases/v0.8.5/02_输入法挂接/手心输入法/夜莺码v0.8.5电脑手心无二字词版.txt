@@ -34519,6 +34519,7 @@ dqrw=1,当前任务
 dqry=1,地勤人员
 dqth=1,盗窃团伙
 dqtr=1,对其他人
+dqet=1,丢
 dqwt=1,丢
 dqtx=1,的前提下
 dqtx=2,地球同步卫星
