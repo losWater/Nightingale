@@ -28,7 +28,7 @@
     "01_正式码表/夜莺0.9字词表_码前.txt": "0dec020be29685e7dbb50e7d891824ee4215237f46688aa6b11d4a4c7b16aabd",
     "01_正式码表/夜莺码v0.9单字版.txt": "c5c4a453c048062f6fc3151c4b5e8b4eadfd3217873f56fbba29c14aa28ff224",
     "01_正式码表/夜莺码v0.9扩展字表.tsv": "f1a143c35f77f1e3a9f1feb01e0653851da0feac19a3114d44ac3d255c4fe457",
-    "01_正式码表/夜莺码v0.9无理码表.tsv": "0f481232fab9d24a42945b832135dec9a93c7fe900f1bc1072d697abcd0a314e",
+    "01_正式码表/夜莺码v0.9无理码表.tsv": "6c53ca51f4c93d2e4230300d2d92cc26ffacd314e318293fb4052cdeb6359940",
     "01_正式码表/夜莺码v0.9简词表.tsv": "2d0e7aeba9d8eb2aa3a6eca430f513d69355ada94042469c83e7d1366a4ff94e",
     "01_正式码表/夜莺码v0.9键位布局.yaml": "0207f76cb21e82edfb2fc324a1cae90b0696a9d28c432d3818572f117a830b19",
     "02_输入法挂接/冰凌输入法/README.md": "587c87bf350128cc7ded5ae193e1a327ba5b28d37036361a348ad18ef37cdb6a",
@@ -93,7 +93,7 @@
     "05_维护与裁决/普通词序采用简单鹤_变更摘要.json": "ae9d6da8a2e2fcdda9b6f3aac68959233db3db3965a5e70199af5d1a67c314bf",
     "05_维护与裁决/普通词序采用简单鹤_变更明细.tsv": "a8b261cc81ae93b7db80c62a0b65fce41950e7697aded3e077ed350fb15c578d",
     "README.md": "27b41379f2124b2886881ebdab112dde13b4000021462744203fc2d8b67690d5",
-    "夜莺码v0.9更新日志.txt": "f595587122906a9bb3a901812a778cdfb5ee5079b7543b7fd6a8eccef86998bc"
+    "夜莺码v0.9更新日志.txt": "943e24193dd58ea36281797f7150e96190b69effd2dbe8e10e412b28614cb5d5"
   },
   "derived_from_masters": {
     "releases/v0.9/01_正式码表/夜莺码v0.9单字版.txt": "c5c4a453c048062f6fc3151c4b5e8b4eadfd3217873f56fbba29c14aa28ff224",
