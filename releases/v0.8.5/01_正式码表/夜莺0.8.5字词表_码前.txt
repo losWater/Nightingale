@@ -493,7 +493,7 @@ if	充分
 ig	成
 ig	成功
 ig	超过
-ih	场
+ih	常
 ih	窗户
 ii	持
 ii	常常
@@ -10222,14 +10222,13 @@ ihe	长
 ihf	偿
 ihf	充话费
 ihf	炒河粉
-ihg	尝
 ihg	茶壶盖
 ihg	长恨歌
 ihg	冲皇冠
 ihh	唱
 ihh	臭烘烘
 ihh	茶话会
-ihi	常
+ihi	尝
 ihi	乘火车
 ihj	传呼机
 ihk	𬬮
@@ -73673,7 +73672,6 @@ iggu	城固
 iggv	城规
 iggv	成规
 iggz	承购
-iggz	䟫
 ighc	称号
 ighc	称好
 ighd	澄海
@@ -73711,6 +73709,7 @@ igiv	秤锤
 igiy	䆑
 igiy	城春
 igiz	成仇
+igiz	䟫
 igja	緽
 igjd	成果鉴定
 igjg	超管警告
@@ -74168,7 +74167,6 @@ ihgr	肠管
 ihgs	唱功
 ihgs	长弓
 ihgs	长工
-ihgt	尝
 ihgv	常规
 ihgv	伥鬼
 ihgx	长褂
@@ -74208,6 +74206,7 @@ ihiq	嘗
 ihir	长串
 ihir	超乎常人
 ihis	长虫
+ihit	尝
 ihiu	长处
 ihiu	长出
 ihiy	长春
@@ -130903,7 +130902,6 @@ thgr	糖罐
 thgr	汤罐
 thgr	钂
 thgs	㓥
-thgt	坣
 thgt	鏜
 thgt	饄
 thgu	塘沽
@@ -130938,6 +130936,7 @@ thio	棠
 thip	䣘
 thir	羰
 this	劏
+thit	坣
 thit	堂
 thit	同行衬托
 thiu	唐初

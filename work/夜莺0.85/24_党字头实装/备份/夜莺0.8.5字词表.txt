@@ -493,7 +493,7 @@
 成	ig
 成功	ig
 超过	ig
-常	ih
+场	ih
 窗户	ih
 持	ii
 常常	ii
@@ -10222,13 +10222,14 @@ Github	git
 偿	ihf
 充话费	ihf
 炒河粉	ihf
+尝	ihg
 茶壶盖	ihg
 长恨歌	ihg
 冲皇冠	ihg
 唱	ihh
 臭烘烘	ihh
 茶话会	ihh
-尝	ihi
+常	ihi
 乘火车	ihi
 传呼机	ihj
 𬬮	ihk
@@ -73672,6 +73673,7 @@ id劝退	idqt
 城规	iggv
 成规	iggv
 承购	iggz
+䟫	iggz
 称号	ighc
 称好	ighc
 澄海	ighd
@@ -73709,7 +73711,6 @@ id劝退	idqt
 䆑	igiy
 城春	igiy
 成仇	igiz
-䟫	igiz
 緽	igja
 成果鉴定	igjd
 超管警告	igjg
@@ -74167,6 +74168,7 @@ id劝退	idqt
 唱功	ihgs
 长弓	ihgs
 长工	ihgs
+尝	ihgt
 常规	ihgv
 伥鬼	ihgv
 长褂	ihgx
@@ -74206,7 +74208,6 @@ id劝退	idqt
 长串	ihir
 超乎常人	ihir
 长虫	ihis
-尝	ihit
 长处	ihiu
 长出	ihiu
 长春	ihiy
@@ -130902,6 +130903,7 @@ san值狂掉	svkd
 汤罐	thgr
 钂	thgr
 㓥	thgs
+坣	thgt
 鏜	thgt
 饄	thgt
 塘沽	thgu
@@ -130936,7 +130938,6 @@ san值狂掉	svkd
 䣘	thip
 羰	thir
 劏	this
-坣	thit
 堂	thit
 同行衬托	thit
 唐初	thiu

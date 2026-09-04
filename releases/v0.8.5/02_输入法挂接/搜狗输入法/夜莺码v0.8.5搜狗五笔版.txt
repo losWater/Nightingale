@@ -531,7 +531,7 @@ if	充分
 ig	成
 ig	成功
 ig	超过
-ih	场
+ih	常
 ih	窗户
 ii	持
 ii	常常
@@ -10261,14 +10261,13 @@ ihe	长
 ihf	偿
 ihf	充话费
 ihf	炒河粉
-ihg	尝
 ihg	茶壶盖
 ihg	长恨歌
 ihg	冲皇冠
 ihh	唱
 ihh	臭烘烘
 ihh	茶话会
-ihi	常
+ihi	尝
 ihi	乘火车
 ihj	传呼机
 ihk	𬬮
@@ -69286,7 +69285,6 @@ ihgr	肠管
 ihgs	唱功
 ihgs	长弓
 ihgs	长工
-ihgt	尝
 ihgv	常规
 ihgv	伥鬼
 ihgx	长褂
@@ -69322,6 +69320,7 @@ ihik	诚惶诚恐
 ihir	长串
 ihir	超乎常人
 ihis	长虫
+ihit	尝
 ihiu	长处
 ihiu	长出
 ihiy	长春

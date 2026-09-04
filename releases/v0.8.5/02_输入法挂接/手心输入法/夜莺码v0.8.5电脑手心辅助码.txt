@@ -2216,9 +2216,9 @@
 偿=ft
 氅=gm
 敞=gq
-尝=gt
 唱=hq
 常=ia
+尝=it
 𬬮=ke
 鬯=nt
 畅=pj

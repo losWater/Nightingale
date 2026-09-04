@@ -141,7 +141,7 @@
 车	ie
 陈	if
 成	ig
-常	ih
+场	ih
 持	ii
 产	ij
 踹	ik
@@ -1825,8 +1825,9 @@
 怅	ihc
 长	ihe
 偿	ihf
+尝	ihg
 唱	ihh
-尝	ihi
+常	ihi
 𬬮	ihk
 鬯	ihn
 畅	ihp
@@ -12360,6 +12361,7 @@
 琤	iggq
 鏳	iggq
 㲂	iggt
+䟫	iggz
 呈	ighg
 逞	ighp
 竀	igia
@@ -12368,7 +12370,6 @@
 䆵	igiq
 牚	igiu
 䆑	igiy
-䟫	igiz
 緽	igja
 絾	igjo
 碀	igjq
@@ -12470,13 +12471,13 @@
 敞	ihgq
 錩	ihgq
 琩	ihgq
+尝	ihgt
 唱	ihhq
 嚐	ihhq
 常	ihia
 㦂	ihic
 甞	ihim
 嘗	ihiq
-尝	ihit
 𬬮	ihke
 锠	ihkq
 蟐	ihma
@@ -23275,6 +23276,7 @@
 餳	thgj
 钂	thgr
 㓥	thgs
+坣	thgt
 鏜	thgt
 饄	thgt
 啺	thhj
@@ -23283,7 +23285,6 @@
 䣘	thip
 羰	thir
 劏	this
-坣	thit
 堂	thit
 䌅	thjh
 磄	thjh
