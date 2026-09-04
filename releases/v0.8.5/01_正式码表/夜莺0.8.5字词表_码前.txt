@@ -39520,8 +39520,8 @@ cepq	畟
 cepq	敇
 ceqp	侧切
 ceqt	侧耳倾听
-cera	筴
 cerb	从恶如崩
+cerg	筴
 cerj	恻然
 cern	笧
 cern	䇲
@@ -40038,6 +40038,7 @@ cing	䯸
 cinm	次年
 cinn	雌鸟
 cins	刾
+cins	㓨
 cinv	次女
 ciod	䛐
 ciog	栨
@@ -40056,7 +40057,6 @@ cipm	此片
 cipm	蛓
 cipp	朿
 cips	刺
-cips	㓨
 cipu	词谱
 cipw	刺配
 ciqb	刺秦
@@ -84774,6 +84774,7 @@ jpni	解腻
 jpni	杰尼
 jpnj	劫难
 jpnj	解难
+jpnl	㼪
 jpnn	孑
 jpnn	接尿
 jpnp	䣠
@@ -84808,16 +84809,15 @@ jppi	揭批
 jppj	接盘
 jppj	解盘
 jppk	截屏
-jppl	㼪
 jppo	揭破
 jppp	卩
 jppy	階
 jppz	解剖
 jpqa	睫
-jpqa	䀹
 jpqa	㫸
 jpqb	结亲
 jpqb	接亲
+jpqg	䀹
 jpqi	解气
 jpqi	节气
 jpqk	结清
@@ -87726,7 +87726,6 @@ jxan	假案
 jxao	夹袄
 jxap	精心安排
 jxau	敬贤爱士
-jxba	浹
 jxbb	嘉宾
 jxbc	家暴
 jxbc	价保
@@ -87739,6 +87738,7 @@ jxbd	惊喜不断
 jxbf	甲苯
 jxbg	驾崩
 jxbg	夹心饼干
+jxbg	浹
 jxbh	泇
 jxbh	记性不好
 jxbi	假币
@@ -87780,7 +87780,6 @@ jxcu	加粗
 jxcu	加醋
 jxcy	家村
 jxda	加大
-jxda	䛟
 jxdb	今昔对比
 jxdc	加到
 jxdc	驾到
@@ -87790,6 +87789,7 @@ jxdd	夹带
 jxdd	进行到底
 jxde	糘
 jxdg	甲等
+jxdg	䛟
 jxdh	家当
 jxdh	加挡
 jxdi	家底
@@ -87851,7 +87851,6 @@ jxfw	加菲
 jxfx	进行分析
 jxfy	继续发扬
 jxfz	急性发作
-jxga	鋏
 jxgc	加高
 jxgc	价高
 jxgd	加盖
@@ -87878,7 +87877,6 @@ jxgw	嫁给
 jxgw	加给
 jxgy	夹棍
 jxgz	架构
-jxha	唊
 jxhc	加号
 jxhc	加好
 jxhc	嘉豪
@@ -87886,6 +87884,7 @@ jxhd	加害
 jxhe	驾鹤
 jxhe	嘉禾
 jxhf	吉凶祸福
+jxhg	唊
 jxho	家伙
 jxho	嫁祸
 jxho	假货
@@ -88033,13 +88032,13 @@ jxlz	结下梁子
 jxma	加码
 jxma	伽马
 jxma	价码
-jxma	䩡
-jxma	蛺
 jxmc	假冒
 jxmc	家猫
 jxmf	家门
 jxmf	嘉门
 jxmg	加盟
+jxmg	䩡
+jxmg	蛺
 jxmi	加密
 jxmi	甲醚
 jxmj	加满
@@ -88056,12 +88055,14 @@ jxmy	巨细靡遗
 jxna	加纳
 jxna	戛纳
 jxna	頬
+jxna	頰
 jxnd	加奶
 jxnd	加奈
 jxnd	觉醒年代
 jxnd	教学难点
 jxng	佳能
 jxng	积习难改
+jxng	夾
 jxnh	锦绣年华
 jxnh	耞
 jxnl	佳酿
@@ -88070,16 +88071,18 @@ jxnl	继续努力
 jxnn	夹
 jxnp	郏
 jxnp	㪴
+jxnp	郟
 jxnr	戛
 jxnr	戞
+jxnr	鵊
 jxns	加农
 jxnu	家奴
 jxnv	嫁女
 jxny	鲸吸牛饮
 jxnz	颊
 jxoa	檟
-jxoa	梜
 jxoe	榢
+jxog	梜
 jxoh	枷
 jxom	㮖
 jxon	𬂩
@@ -88087,8 +88090,6 @@ jxoq	榎
 jxoq	椵
 jxou	佳偶
 jxoz	槚
-jxpa	夾
-jxpa	頰
 jxpb	家贫
 jxpb	佳品
 jxpc	驾
@@ -88113,9 +88114,7 @@ jxpo	家婆
 jxpo	家破
 jxpp	甲
 jxpp	迦
-jxpp	郟
 jxpr	駕
-jxpr	鵊
 jxpt	尽显疲态
 jxpu	家谱
 jxpu	家仆
@@ -88185,8 +88184,8 @@ jxsr	甲酸
 jxsu	加速
 jxsz	㿓
 jxta	圿
-jxta	埉
 jxtf	觉醒天赋
+jxtg	埉
 jxth	加糖
 jxth	嘉
 jxti	假体
@@ -88217,7 +88216,6 @@ jxtv	进行调整
 jxty	津血同源
 jxua	袈裟
 jxua	加沙
-jxua	裌
 jxub	机械设备
 jxub	机械手表
 jxue	假设
@@ -88227,6 +88225,7 @@ jxuf	加身
 jxuf	降下神罚
 jxug	假声
 jxug	夹生
+jxug	裌
 jxuh	加上
 jxuh	架上
 jxui	驾驶
@@ -88311,12 +88310,12 @@ jxww	加为
 jxwy	寄希望于
 jxwy	巨细无遗
 jxwz	寄希望在
-jxxa	䕛
-jxxa	莢
 jxxb	加薪
 jxxb	夹心
 jxxb	家信
 jxxe	居心险恶
+jxxg	䕛
+jxxg	莢
 jxxh	茄
 jxxh	䕒
 jxxi	家系
@@ -98038,7 +98037,7 @@ lpdr	老婆大人
 lpdu	烈度
 lpdu	裂度
 lpdv	列队
-lpea	聗
+lpeg	聗
 lpeo	䝓
 lpff	礼品发放
 lpff	乱披风锤法
@@ -119085,7 +119084,6 @@ qmuz	牵手
 qmuz	签收
 qmuz	签售
 qmuz	歉收
-qmva	脥
 qmvc	前兆
 qmvc	千兆
 qmvc	牽
@@ -119096,6 +119094,7 @@ qmvf	前阵
 qmvf	铅针
 qmvg	签证
 qmvg	肷
+qmvg	脥
 qmvh	欠账
 qmvh	千丈
 qmvh	膁
@@ -119573,9 +119572,9 @@ qpbu	且不
 qpbu	怯步
 qpbw	七平八稳
 qpbz	淁
-qpca	悏
-qpca	愜
 qpcd	切菜
+qpcg	愜
+qpcg	悏
 qpch	慊
 qpcn	惬
 qpco	切磋
@@ -119648,13 +119647,13 @@ qpml	强迫命令
 qpmm	切面
 qpmo	切莫
 qpmo	且莫
+qpnc	㤲
 qpng	且能
 qpni	切你
 qpni	切尼
 qpno	怯懦
 qpnp	郄
 qpnt	㚗
-qppc	㤲
 qppj	切盼
 qppm	切片
 qppv	请批评指正
@@ -119663,14 +119662,14 @@ qpqp	切切
 qpqu	窃取
 qpqu	切去
 qpqx	轻颦浅笑
-qpra	篋
 qprg	籡
+qprg	篋
 qprn	箧
 qpro	怯弱
 qprt	笡
 qpru	切入
 qprz	切肉
-qpsa	㾜
+qpsg	㾜
 qpsi	切丝
 qpst	㾀
 qpsv	切碎
@@ -119700,9 +119699,9 @@ qpvm	青萍之末
 qpvs	切中
 qpvt	㹤
 qpwa	䦧
-qpwa	匧
 qpwb	洯
 qpwc	㥦
+qpwg	匧
 qpwl	挈
 qpwl	㼤
 qpwm	蛪
@@ -119736,7 +119735,7 @@ qpyl	千篇一律
 qpyz	且有
 qpyz	鯜
 qpyz	且又
-qpza	㛍
+qpzg	㛍
 qpzi	茄子
 qpzs	䟙
 qpzt	趄
@@ -121964,7 +121963,7 @@ qxfp	权限分配
 qxfu	抢先发售
 qxfv	祛邪扶正
 qxga	情绪高昂
-qxga	䶝
+qxgg	䶝
 qxgj	群雄割据
 qxgs	㓣
 qxgt	全线贯通
@@ -122004,8 +122003,8 @@ qxkv	其心可诛
 qxkv	权限控制
 qxkv	情绪控制
 qxla	拤
-qxla	殎
 qxlf	气血两燔
+qxlg	殎
 qxln	全新理念
 qxlr	七旬老人
 qxly	掐
@@ -126140,7 +126139,7 @@ seke	啬刻
 sekk	色块
 sekv	铯
 sela	色拉
-sela	擌
+selg	擌
 selh	色狼
 seln	色料
 semh	色盲
@@ -136458,7 +136457,6 @@ tzzz	偷走
 uaae	㠺
 uaaz	帹
 uaba	沙坝
-uaba	㵤
 uabc	沙包
 uabc	㸺
 uabc	傻宝
@@ -136466,6 +136464,7 @@ uabd	煞白
 uabd	傻白
 uabe	沙
 uabg	砂泵
+uabg	㵤
 uabi	傻逼
 uabi	煞笔
 uabi	沙比
@@ -136594,10 +136593,10 @@ ualu	杀戮
 ualy	莎伦
 ualy	砂轮
 ualz	沙漏
-uama	翜
 uamc	傻帽
 uamf	厦门
 uamf	沙门
+uamg	翜
 uami	沙弥
 uami	啥米
 uamo	沙漠
@@ -136606,8 +136605,8 @@ uamu	纱幕
 uamw	傻妹
 uamz	翣
 uana	霎那
-uana	䬊
 uang	杀
+uang	䬊
 uann	傻鸟
 uanq	傻妞
 uanq	杀牛
@@ -141067,6 +141066,7 @@ ujmy	世界贸易
 ujmy	数据漫游
 ujmy	十级美颜
 ujmz	世界民族
+ujng	㚒
 ujnh	十几年后
 ujni	扇你
 ujni	山泥
@@ -141085,6 +141085,7 @@ ujnm	騸
 ujnn	山鸟
 ujnn	石矶娘娘
 ujnq	十几年前
+ujnq	㪎
 ujnr	删减内容
 ujnr	设计内容
 ujns	山农
@@ -141101,11 +141102,10 @@ ujon	栅
 ujon	柵
 ujoo	㰑
 ujop	樿
-ujpa	㚒
-ujpa	陝
 ujpb	善品
 ujpb	生机蓬勃
 ujpc	山炮
+ujpg	陝
 ujpj	闪盘
 ujpj	手机配件
 ujpk	删评
@@ -141115,14 +141115,13 @@ ujpm	世界排名
 ujpm	手机屏幕
 ujpn	陕
 ujpo	山坡
-ujpq	㪎
 ujpt	社交平台
 ujpt	手机平台
 ujpx	时间排序
 ujpy	䴮
-ujqa	鿃
 ujqd	贍
 ujqe	䀐
+ujqg	鿃
 ujqi	疝气
 ujqi	膻气
 ujqk	煽情
@@ -141205,7 +141204,6 @@ ujty	圸
 ujtz	山头
 ujtz	汕头
 ujua	禅
-ujua	㣣
 ujub	数据上报
 ujuc	设计手册
 ujud	失节事大
@@ -141214,6 +141212,7 @@ ujuf	闪身
 ujuf	山神
 ujuf	世界首富
 ujug	舌尖上的中国
+ujug	㣣
 ujuh	山上
 ujuh	说句实话
 ujuh	书接上回
@@ -158874,6 +158873,7 @@ wwhy	味
 wwhz	喴
 wwhz	尾喉
 wwhz	尾后
+wwib	㞑
 wwic	慰
 wwic	伪钞
 wwic	犚
@@ -158891,7 +158891,6 @@ wwil	微创
 wwim	螱
 wwim	尾
 wwin	褽
-wwio	㞑
 wwiq	叞
 wwir	寪
 wwiw	䍷
@@ -163845,7 +163844,6 @@ xmly	弦论
 xmly	喜马拉雅
 xmly	撏
 xmly	醒目留言
-xmma	䵌
 xmma	蜆
 xmma	毨
 xmma	线吗
@@ -165167,11 +165165,11 @@ xpiv	㞕
 xpiy	㞒
 xpiz	血仇
 xpja	纈
-xpja	綊
 xpjb	写进
 xpjb	泄劲
 xpjc	繲
 xpje	絏
+xpjg	綊
 xpjh	絬
 xpji	新葡京娱乐城
 xpjk	写景
@@ -165200,7 +165198,6 @@ xpkz	卸扣
 xpkz	血口
 xpla	谢啦
 xpla	斜拉
-xpla	挾
 xpla	㩪
 xpla	擷
 xplc	偕老
@@ -167829,7 +167826,6 @@ xxeq	夓
 xxer	遐迩
 xxex	相向而行
 xxfa	下发
-xxfa	俠
 xxfb	信息发布
 xxff	下份
 xxff	虾粉
@@ -167837,6 +167833,7 @@ xxff	下分
 xxff	学习方法
 xxfg	下风
 xxfg	狭缝
+xxfg	俠
 xxfh	下方
 xxfh	下放
 xxfi	线性方程
@@ -167956,11 +167953,11 @@ xxiv	瞎吹
 xxix	信息查询
 xxiy	下唇
 xxiy	信息产业
-xxja	硤
 xxjb	学习进步
 xxjd	详细交代
 xxjf	信息茧房
 xxjf	学校机房
+xxjg	硤
 xxjh	细心教诲
 xxjh	磍
 xxjh	縖
@@ -168092,6 +168089,7 @@ xxna	丅
 xxnc	瞎闹
 xxnd	下奶
 xxne	血性男儿
+xxng	㰰
 xxnh	轄
 xxnj	小小年纪
 xxnl	学习能力
@@ -168118,9 +168116,6 @@ xxop	遐
 xxoq	叚
 xxoq	䪗
 xxow	舝
-xxpa	㽠
-xxpa	陜
-xxpa	陿
 xxpa	吓怕
 xxpa	虾爬
 xxpb	下品
@@ -168129,8 +168124,10 @@ xxpc	吓跑
 xxpc	瞎跑
 xxpd	下排
 xxpd	下派
-xxpg	㰰
 xxpg	瞎碰
+xxpg	陜
+xxpg	陿
+xxpg	㽠
 xxpi	虾皮
 xxpi	下劈
 xxpi	细细品尝
@@ -168261,7 +168258,6 @@ xxuy	学习使用
 xxuz	下手
 xxuz	信心十足
 xxuz	夏收
-xxva	狹
 xxva	下闸
 xxvb	宵小之辈
 xxvc	下诏
@@ -168270,6 +168266,7 @@ xxvc	下下之策
 xxvd	狭窄
 xxvd	现行制度
 xxvg	瞎整
+xxvg	狹
 xxvh	下账
 xxvh	星星之火
 xxvi	下肢
@@ -168362,7 +168359,6 @@ xxxy	新鲜血液
 xxxy	心心相印
 xxxy	现学现用
 xxya	下压
-xxya	峽
 xxyb	下阴
 xxyb	先行一步
 xxyc	下药
@@ -168371,6 +168367,7 @@ xxyd	虚席以待
 xxyd	小心一点
 xxye	下页
 xxye	夏夜
+xxyg	峽
 xxyi	侠义
 xxyi	狭义
 xxyi	先下一城
@@ -171345,7 +171342,6 @@ yeny	㸣
 yeop	椰
 yeot	埜
 yeot	壄
-yepa	亪
 yepa	也怕
 yepa	夜爬
 yepc	夜跑
@@ -171353,6 +171349,7 @@ yepc	野炮
 yepm	叶片
 yepo	枽
 yepo	夜魄
+yepo	亪
 yept	㙒
 yepy	䧨
 yeqa	曵
@@ -195139,6 +195136,7 @@ jxfo	假佛
 jxgf	加根
 jxgf	假根
 jxgg	加更
+jxgg	鋏
 jxhh	加行
 jxhj	假焊
 jxhj	假寒
@@ -208565,6 +208563,7 @@ xmmd	现卖
 xmmf	仙门
 xmmg	仙盟
 xmmg	宪盟
+xmmg	䵌
 xmmn	先秒
 xmmo	仙魔
 xmmo	鲜蘑
@@ -208700,6 +208699,7 @@ xpku	亵裤
 xpkx	斜跨
 xpkx	斜挎
 xplg	斜楞
+xplg	挾
 xplm	鞋脸
 xplq	蟹柳
 xpls	邪龙
