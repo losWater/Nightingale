@@ -33574,8 +33574,6 @@ bjan	办案
 bjap	㪵
 bjaq	攽
 bjar	鳻
-bjas	辦
-bjas	辬
 bjax	斒
 bjay	保洁阿姨
 bjaz	颁
@@ -33957,6 +33955,7 @@ bjry	不尽人意
 bjry	不解人意
 bjrz	半肉
 bjsa	癍
+bjsa	辬
 bjsc	班嫂
 bjsc	悲剧色彩
 bjsi	半死
@@ -33964,6 +33963,7 @@ bjsk	不加思考
 bjsk	不经思考
 bjsm	瓣
 bjsn	苯甲酸钠
+bjsp	辦
 bjsq	半决赛权
 bjsr	拌蒜
 bjsr	拔剑四顾心茫然
@@ -34909,7 +34909,6 @@ blzh	暴戾恣睢
 blzy	不论怎样
 bman	变暗
 bman	边岸
-bmas	辯
 bmas	㦚
 bmas	㵷
 bmas	辧
@@ -35209,6 +35208,7 @@ bmqx	半毛钱关系
 bmqx	貶
 bmqy	不明其意
 bmra	炞
+bmrd	䉸
 bmre	变热
 bmrf	辨认
 bmrf	膘满肉肥
@@ -35219,12 +35219,12 @@ bmrp	笾
 bmrp	籩
 bmrq	报名日期
 bmrr	变软
-bmrs	䉸
 bmrs	变容
 bmru	便如
 bmru	编入
 bmrx	煸
 bmsd	边塞
+bmsd	辯
 bmsd	辩
 bmsd	表面搜点
 bmse	变色
@@ -66136,6 +66136,7 @@ hhkd	好好款待
 hhkk	行
 hhkk	行块
 hhkk	好好看看
+hhkn	䘕
 hhks	航空
 hhkw	换换口味
 hhlb	挥毫落笔
@@ -66214,7 +66215,6 @@ hhuv	护花使者
 hhuw	虎虎生威
 hhux	呵呵傻笑
 hhux	虎鹤双形
-hhuy	䘕
 hhva	頏
 hhvg	赫赫之功
 hhvg	㰠
@@ -85772,6 +85772,7 @@ jrkd	计日可待
 jrke	镌刻
 jrkf	即溶咖啡
 jrkl	节日快乐
+jrkp	䡓
 jrkq	计日可期
 jrkr	捐款
 jrkr	卷款
@@ -85878,7 +85879,6 @@ jruu	捐书
 jruv	捐税
 jruv	裐
 jruy	尖锐湿疣
-jruy	䡓
 jrvf	节日祝福
 jrvh	即日执行
 jrvi	卷纸
@@ -97846,10 +97846,10 @@ loji	裸机
 loji	洛基
 lojk	罗静
 lojk	罗经
+lojk	䌴
 lojl	罗江
 lojn	落脚
 lojn	䌱
-lojn	䌴
 lojp	罗杰
 lojq	络
 lojq	絡
@@ -97870,8 +97870,8 @@ loli	萝莉
 lolj	罗兰
 lolj	摞
 lolj	㩡
+lolk	㱻
 loln	裸聊
-loln	㱻
 lolo	落落
 lolp	罗列
 lolw	落泪
@@ -97895,7 +97895,7 @@ loni	罗尼
 lonj	落难
 lonj	裸男
 lonj	騾
-lonn	䯁
+lonk	䯁
 lonq	駱
 lonv	裸女
 loog	欏
@@ -97974,7 +97974,6 @@ lovl	猡
 lovl	裸妆
 lovn	䊨
 lovn	䇔
-lovn	臝
 lovn	驘
 lovn	鸁
 lovu	螺柱
@@ -97983,6 +97982,7 @@ lowf	罗纹
 lowh	落网
 lowh	罗网
 lowm	蠃
+lowo	臝
 lowu	落伍
 lowu	裸舞
 loxc	荦
@@ -98136,10 +98136,10 @@ lppm	裂片
 lppy	㽟
 lppz	良品铺子
 lpqi	猎奇
+lpqk	㬯
 lpql	猎枪
 lpql	列强
 lpqn	睙
-lpqn	㬯
 lpqo	䁽
 lpqp	趔趄
 lpqr	猎犬
@@ -178851,6 +178851,8 @@ yunh	远水难救近火
 yunh	一山难容二虎
 yunh	驈
 yunh	輍
+yunh	袬
+yunh	䘱
 yuni	与你
 yuni	淤泥
 yuni	芋泥
@@ -179166,8 +179168,6 @@ yuvn	狱
 yuvn	有生之年
 yuvn	有事找你
 yuvn	獄
-yuvn	䘱
-yuvn	袬
 yuvo	玉镯
 yuvp	逳
 yuvq	一身正气

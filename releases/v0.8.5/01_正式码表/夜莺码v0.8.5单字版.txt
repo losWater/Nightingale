@@ -6146,8 +6146,6 @@
 㪵	bjap
 攽	bjaq
 鳻	bjar
-辦	bjas
-辬	bjas
 斒	bjax
 颁	bjaz
 湴	bjbw
@@ -6185,7 +6183,9 @@
 昄	bjqq
 䈲	bjrt
 癍	bjsa
+辬	bjsa
 瓣	bjsm
+辦	bjsp
 瘢	bjst
 坢	bjtl
 坂	bjtq
@@ -6250,7 +6250,6 @@
 苪	bkxg
 䔊	bkxx
 鮩	bkyx
-辯	bmas
 㦚	bmas
 㵷	bmas
 辧	bmas
@@ -6298,11 +6297,12 @@
 昪	bmqx
 貶	bmqx
 炞	bmra
+䉸	bmrd
 箯	bmrn
 笾	bmrp
 籩	bmrp
-䉸	bmrs
 煸	bmrx
+辯	bmsd
 辩	bmsd
 辫	bmsj
 辺	bmsp
@@ -10908,6 +10908,7 @@
 絎	hhjk
 䂫	hhjw
 行	hhkk
+䘕	hhkn
 蚢	hhmn
 巷	hhmv
 夯	hhnp
@@ -10918,7 +10919,6 @@
 笐	hhrn
 斻	hhsn
 垳	hhtk
-䘕	hhuy
 頏	hhva
 㰠	hhvg
 迒	hhvp
@@ -14697,6 +14697,7 @@
 絹	jrjv
 䌸	jrjx
 縳	jrjy
+䡓	jrkp
 锩	jrkv
 镌	jrkv
 捐	jrlv
@@ -14712,7 +14713,6 @@
 焆	jrrv
 埍	jrtv
 裐	jruv
-䡓	jruy
 獧	jrvn
 狷	jrvv
 臇	jrvw
@@ -17201,8 +17201,8 @@
 啰	lohl
 咯	lohq
 纙	lojg
+䌴	lojk
 䌱	lojn
-䌴	lojn
 络	lojq
 絡	lojq
 硦	lojx
@@ -17211,14 +17211,14 @@
 攞	lolg
 摞	lolj
 㩡	lolj
-㱻	loln
+㱻	lolk
 捋	loly
 頱	loma
 覶	loma
 螺	lomj
 覼	lona
 騾	lonj
-䯁	lonn
+䯁	lonk
 駱	lonq
 欏	loog
 㰁	looj
@@ -17250,10 +17250,10 @@
 猡	lovl
 䊨	lovn
 䇔	lovn
-臝	lovn
 驘	lovn
 鸁	lovn
 蠃	lowm
+臝	lowo
 荦	loxc
 蘿	loxg
 萝	loxl
@@ -17305,8 +17305,8 @@
 栵	lpos
 㭩	lpoy
 㽟	lppy
+㬯	lpqk
 睙	lpqn
-㬯	lpqn
 䁽	lpqo
 䉭	lpro
 埒	lpty
@@ -31394,6 +31394,8 @@
 欤	yung
 驈	yunh
 輍	yunh
+袬	yunh
+䘱	yunh
 䬔	yunl
 䜽	yunl
 騟	yunl
@@ -31504,8 +31506,6 @@
 㺄	yuvl
 狱	yuvn
 獄	yuvn
-䘱	yuvn
-袬	yuvn
 逳	yuvp
 䐳	yuvr
 育	yuvv

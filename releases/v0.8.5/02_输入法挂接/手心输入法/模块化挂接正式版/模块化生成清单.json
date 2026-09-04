@@ -1,19 +1,19 @@
 {
   "source": "releases\\v0.8.5\\02_输入法挂接\\手心输入法\\夜莺码v0.8.5电脑手心挂接.txt",
   "source_rows": 211228,
-  "source_sha256": "6d5ad0b8a7160a452e56f9bc1dd3503f4a8a526840c5046a0e5e12663ec1784d",
+  "source_sha256": "1e25eb8c2e73edd0dda4d42900d0869f3bc1ce57fef8dc59d5e79de5dbf84518",
   "outputs": {
     "01_夜莺0.8.5_核心单字.txt": {
       "rows": 13751,
-      "sha256": "deaff2d518df3ac72b02f386dafacad0f10f841e5ae30022493424e6e799bd3d"
+      "sha256": "b73df89d63a82f8f1e268e4d060fc8590b2a7d32c746dd1c747a2e0cb0322a30"
     },
     "02_夜莺0.8.5_普通词.txt": {
       "rows": 116199,
-      "sha256": "fc61caf43c97b85414c9ea8160965e5e032a1c55f06e848e216af1688505d697"
+      "sha256": "05dc486c6028c7d8090c65cfd74843a01cf7addfa1675a37c6e1056dcdf5ef2d"
     },
     "03_夜莺0.8.5_简词.txt": {
       "rows": 62468,
-      "sha256": "d7a67fc8c341de696926271c3dc3b4a379990338795e95ed54fe363a386e3fe8"
+      "sha256": "a4c4ff3a0edf9a558960b67992068c943592517e1fc4b782eaa0563f44471864"
     },
     "04_夜莺0.8.5_快符.txt": {
       "rows": 40,
@@ -21,7 +21,7 @@
     },
     "05_夜莺0.8.5_扩展字.txt": {
       "rows": 18770,
-      "sha256": "9da2cd3c472b2c369c56a8989f48468dfc982a6db3eaf767b2694a6d691d887a"
+      "sha256": "130033666c69ab3b40d20724c7f3e90af232f39cd56a8249e468af7fd2cfb031"
     }
   },
   "reconstruction": "pass"

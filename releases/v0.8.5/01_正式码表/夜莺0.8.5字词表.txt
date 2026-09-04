@@ -33574,8 +33574,6 @@ AV男优	avny
 㪵	bjap
 攽	bjaq
 鳻	bjar
-辦	bjas
-辬	bjas
 斒	bjax
 保洁阿姨	bjay
 颁	bjaz
@@ -33957,6 +33955,7 @@ AV男优	avny
 不解人意	bjry
 半肉	bjrz
 癍	bjsa
+辬	bjsa
 班嫂	bjsc
 悲剧色彩	bjsc
 半死	bjsi
@@ -33964,6 +33963,7 @@ AV男优	avny
 不经思考	bjsk
 瓣	bjsm
 苯甲酸钠	bjsn
+辦	bjsp
 半决赛权	bjsq
 拌蒜	bjsr
 拔剑四顾心茫然	bjsr
@@ -34909,7 +34909,6 @@ AV男优	avny
 不论怎样	blzy
 变暗	bman
 边岸	bman
-辯	bmas
 㦚	bmas
 㵷	bmas
 辧	bmas
@@ -35209,6 +35208,7 @@ AV男优	avny
 貶	bmqx
 不明其意	bmqy
 炞	bmra
+䉸	bmrd
 变热	bmre
 辨认	bmrf
 膘满肉肥	bmrf
@@ -35219,12 +35219,12 @@ AV男优	avny
 籩	bmrp
 报名日期	bmrq
 变软	bmrr
-䉸	bmrs
 变容	bmrs
 便如	bmru
 编入	bmru
 煸	bmrx
 边塞	bmsd
+辯	bmsd
 辩	bmsd
 表面搜点	bmsd
 变色	bmse
@@ -66136,6 +66136,7 @@ Google	goog
 行	hhkk
 行块	hhkk
 好好看看	hhkk
+䘕	hhkn
 航空	hhks
 换换口味	hhkw
 挥毫落笔	hhlb
@@ -66214,7 +66215,6 @@ Google	goog
 虎虎生威	hhuw
 呵呵傻笑	hhux
 虎鹤双形	hhux
-䘕	hhuy
 頏	hhva
 赫赫之功	hhvg
 㰠	hhvg
@@ -85772,6 +85772,7 @@ ip正确	ipvq
 镌刻	jrke
 即溶咖啡	jrkf
 节日快乐	jrkl
+䡓	jrkp
 计日可期	jrkq
 捐款	jrkr
 卷款	jrkr
@@ -85878,7 +85879,6 @@ ip正确	ipvq
 捐税	jruv
 裐	jruv
 尖锐湿疣	jruy
-䡓	jruy
 节日祝福	jrvf
 即日执行	jrvh
 卷纸	jrvi
@@ -97846,10 +97846,10 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 洛基	loji
 罗静	lojk
 罗经	lojk
+䌴	lojk
 罗江	lojl
 落脚	lojn
 䌱	lojn
-䌴	lojn
 罗杰	lojp
 络	lojq
 絡	lojq
@@ -97870,8 +97870,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 罗兰	lolj
 摞	lolj
 㩡	lolj
+㱻	lolk
 裸聊	loln
-㱻	loln
 落落	lolo
 罗列	lolp
 落泪	lolw
@@ -97895,7 +97895,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 落难	lonj
 裸男	lonj
 騾	lonj
-䯁	lonn
+䯁	lonk
 駱	lonq
 裸女	lonv
 欏	loog
@@ -97974,7 +97974,6 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 裸妆	lovl
 䊨	lovn
 䇔	lovn
-臝	lovn
 驘	lovn
 鸁	lovn
 螺柱	lovu
@@ -97983,6 +97982,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 落网	lowh
 罗网	lowh
 蠃	lowm
+臝	lowo
 落伍	lowu
 裸舞	lowu
 荦	loxc
@@ -98136,10 +98136,10 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 㽟	lppy
 良品铺子	lppz
 猎奇	lpqi
+㬯	lpqk
 猎枪	lpql
 列强	lpql
 睙	lpqn
-㬯	lpqn
 䁽	lpqo
 趔趄	lpqp
 猎犬	lpqr
@@ -178851,6 +178851,8 @@ Word	word
 一山难容二虎	yunh
 驈	yunh
 輍	yunh
+袬	yunh
+䘱	yunh
 与你	yuni
 淤泥	yuni
 芋泥	yuni
@@ -179166,8 +179168,6 @@ Word	word
 有生之年	yuvn
 有事找你	yuvn
 獄	yuvn
-䘱	yuvn
-袬	yuvn
 玉镯	yuvo
 逳	yuvp
 一身正气	yuvq
