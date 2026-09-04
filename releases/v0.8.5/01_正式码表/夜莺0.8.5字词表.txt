@@ -83,7 +83,7 @@
 本来	bl
 暴露	bl
 变了	bl
-变	bm
+边	bm
 表面	bm
 帮忙	bm
 表	bn
@@ -869,7 +869,7 @@
 暖	nr
 女人	nr
 男人	nr
-农	ns
+弄	ns
 虐	nt
 那天	nt
 念头	nt
@@ -1423,7 +1423,7 @@ $ddcmd(<date.yyyy>-<date.mm>-<date.dd> <time.h>:<time.mm>:<time.ss> <date.Z>, <d
 我国	wg
 外国	wg
 无关	wg
-王	wh
+望	wh
 为何	wh
 文化	wh
 完成	wi
@@ -1630,7 +1630,7 @@ $ddcmd(<date.yyyy>-<date.mm>-<date.dd> <time.h>:<time.mm>:<time.ss> <date.Z>, <d
 有些	yx
 一下	yx
 一些	yx
-云	yy
+运	yy
 一样	yy
 一眼	yy
 原因	yy
@@ -2802,7 +2802,7 @@ Alt	alt
 白面馍	bmm
 本命年	bmn
 白毛女	bmn
-边	bmp
+变	bmp
 昪	bmq
 不明确	bmq
 编码器	bmq
@@ -16227,7 +16227,6 @@ m³	lfm
 浓	nsb
 𬪩	nse
 侬	nsf
-弄	nsg
 哝	nsh
 农	nsi
 女司机	nsj
@@ -23470,7 +23469,6 @@ up主	upv
 往	whu
 我还是	whu
 文化衫	whu
-望	whv
 维护者	whv
 玩花招	whv
 网	whw
@@ -27606,7 +27604,7 @@ Windows	win
 有一类	yyl
 有用吗	yym
 有一名	yym
-运	yyn
+云	yyn
 有一年	yyn
 痒痒挠	yyn
 陨	yyp

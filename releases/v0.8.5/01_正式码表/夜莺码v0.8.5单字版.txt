@@ -39,7 +39,7 @@
 比	bi
 版	bj
 并	bk
-变	bm
+边	bm
 表	bn
 波	bo
 别	bp
@@ -249,7 +249,7 @@
 涅	npb
 牛	nq
 暖	nr
-农	ns
+弄	ns
 虐	nt
 努	nu
 女	nv
@@ -380,7 +380,7 @@
 外	wd
 问	wf
 翁	wg
-王	wh
+望	wh
 万	wj
 沃	wo
 无	wu
@@ -412,7 +412,7 @@
 用	ys
 月	yt
 与	yu
-云	yy
+运	yy
 又	yz
 杂	za
 早	zc
@@ -641,7 +641,7 @@
 编	bmj
 抃	bml
 鞭	bmm
-边	bmp
+变	bmp
 昪	bmq
 煸	bmr
 辩	bms
@@ -3122,7 +3122,6 @@
 浓	nsb
 𬪩	nse
 侬	nsf
-弄	nsg
 哝	nsh
 农	nsi
 脓	nsv
@@ -4523,7 +4522,6 @@
 魍	whp
 旺	whq
 往	whu
-望	whv
 网	whw
 湾	wjb
 惋	wjc
@@ -5111,7 +5109,7 @@
 熨	yyi
 纭	yyj
 殒	yyl
-运	yyn
+云	yyn
 陨	yyp
 晕	yyq
 筠	yyr

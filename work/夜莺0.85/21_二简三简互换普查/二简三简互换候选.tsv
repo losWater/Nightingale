@@ -1,0 +1,115 @@
+类型	二简字	二简码	二简字频	挑战者	挑战者码	挑战者频	二简字落点	落点现占	频率比
+A直接互换	变	bm	30203	边	bmp	30962	bmp	边	1.0
+A直接互换	且	qp	24767	切	qpt	27957	qpt	切	1.1
+A直接互换	强	ql	15260	枪	qlo	21673	qlo	枪	1.4
+A直接互换	云	yy	1556	运	yyn	18860	yyn	运	12.1
+A直接互换	连	lm	11476	联	lme	14066	lme	联	1.2
+A直接互换	修	xq	7656	休	xqf	8380	xqf	休	1.1
+A直接互换	春	iy	2034	蠢	iyi	6273	iyi	蠢	3.1
+B落点空	挺	tk	8003	听	tkh	81564	tkl		10.2
+B落点空	名	mk	41327	明	mkq	69570	mkl		1.7
+B落点空	请	qk	39586	情	qkc	69192	qkd		1.7
+B落点空	场	ih	34472	常	ihi	46352	iht		1.3
+B落点空	黑	hw	13185	嘿	hwh	41659	hwr		3.2
+B落点空	二	er	16413	儿	era	37201	ern		2.3
+B落点空	王	wh	9629	望	whv	36771	whg		3.8
+B落点空	版	bj	2661	办	bjp	28673	bjn		10.8
+B落点空	农	ns	2167	弄	nsg	15119	nsi		7.0
+B落点空	贵	gv	3673	鬼	gvp	14628	gvm		4.0
+B落点空	均	jy	755	军	jyi	14559	jyt		19.3
+B落点空	熊	xs	2274	兄	xsh	14368	xst		6.3
+B落点空	嗯	en	0	恩	ene	12132	enh		9999.0
+B落点空	则	ze	8302	责	zew	10098	zez		1.2
+B落点空	创	il	4667	床	ils	8693	ilg		1.9
+B落点空	摸	mo	2738	模	moo	7963	mol		2.9
+B落点空	库	ku	4395	苦	kux	7563	kus		1.7
+B落点空	猫	mc	4131	毛	mcm	6470	mcv		1.6
+B落点空	航	hh	3989	行	hhk	6421	hhe		1.6
+B落点空	草	cc	3787	操	ccl	5996	ccx		1.6
+B落点空	绕	rc	1753	扰	rcl	5673	rcj		3.2
+B落点空	秒	mn	3905	妙	mnz	3967	mnw		1.0
+B落点空	陈	if	1455	沉	ifb	3343	ifp		2.3
+B落点空	孙	sy	1210	损	syl	2774	syn		2.3
+B落点空	刷	ux	1394	耍	uxc	2390	uxi		1.7
+B落点空	促	cu	665	粗	cud	1706	cuf		2.6
+B落点空	恒	hg	626	哼	hgh	1463	hgc		2.3
+B落点空	涮	ur	75	栓	uro	266	urb		3.5
+B落点空	梗	gg	101	耿	gge	251	ggo		2.5
+B落点空	炯	js	83	窘	jsi	101	jsr		1.2
+C落点被占	深	uf	8207	什	uff	304307	ufb	沈	37.1
+C落点被占	之	vi	64368	知	vir	211538	vix	芝	3.3
+C落点被占	把	ba	126643	吧	bah	197110	bal	拔	1.6
+C落点被占	自	zi	98632	子	zin	176962	ziy	鲻	1.8
+C落点被占	时	ui	162578	事	uin	175060	uiq	匙	1.1
+C落点被占	先	xm	71225	现	xmg	137777	xmc	霰	1.9
+C落点被占	其	qi	36152	起	qiz	127556	qim	期	3.5
+C落点被占	些	xp	113078	谢	xpd	120500	xpg	斜	1.1
+C落点被占	加	jx	37259	家	jxi	108398	jxp	架	2.9
+C落点被占	化	hx	11217	话	hxd	99732	hxf	华	8.9
+C落点被占	新	xb	35476	心	xbc	83307	xba	衅	2.3
+C落点被占	高	gc	39658	告	gcc	76531	gcu	膏	1.9
+C落点被占	斯	si	47769	死	sil	71154	sim	蛳	1.5
+C落点被占	苏	su	4070	诉	sud	65752	sux	蔌	16.2
+C落点被占	及	ji	9971	己	jiv	58674	jiq	鸡	5.9
+C落点被占	此	ci	28041	次	cib	58105	cig	雌	2.1
+C落点被占	换	hr	9982	欢	hrq	57796	hrl	擐	5.8
+C落点被占	金	jb	18500	进	jbl	55656	jbk	锦	3.0
+C落点被占	任	rf	34308	认	rfd	54322	rff	仁	1.6
+C落点被占	万	wj	15235	晚	wjq	50512	wjn	顽	3.3
+C落点被占	沙	ua	5430	杀	uan	47118	uab	鲨	8.7
+C落点被占	与	yu	17257	于	yuw	45398	yun	欤	2.6
+C落点被占	公	gs	39263	工	gse	44529	gsa	躬	1.1
+C落点被占	报	bc	21778	保	bcf	39579	bcl	抱	1.8
+C落点被占	主	vu	28445	住	vuf	38386	vuv	猪	1.3
+C落点被占	或	ho	30931	活	hob	38216	hor	火	1.2
+C落点被占	合	he	27085	何	hef	37946	heg	盒	1.4
+C落点被占	提	ti	22454	题	tiq	37512	til	擿	1.7
+C落点被占	却	qt	13707	确	qtj	34029	qtt	悫	2.5
+C落点被占	南	nj	5062	难	njq	31432	njp	男	6.2
+C落点被占	元	yr	8684	员	yrh	29256	yrn	远	3.4
+C落点被占	差	ia	9941	查	iao	26326	iai	察	2.6
+C落点被占	副	fu	3750	服	fuv	24252	fun	夫	6.5
+C落点被占	张	vh	18712	长	vhe	23418	vho	杖	1.3
+C落点被占	购	gz	2008	够	gzw	23232	gzz	媾	11.6
+C落点被占	眼	yj	19245	演	yjb	23221	yjq	晏	1.2
+C落点被占	校	xn	12996	笑	xnr	22274	xno	枵	1.7
+C落点被占	刘	lq	399	留	lql	21847	lqa	馏	54.8
+C落点被占	月	yt	16637	约	ytj	21388	ytv	刖	1.3
+C落点被占	久	jq	15062	酒	jqb	21118	jqq	灸	1.4
+C落点被占	混	hy	14018	婚	hyz	19491	hyb	浑	1.4
+C落点被占	饭	fj	10030	犯	fjv	17545	fja	帆	1.7
+C落点被占	户	hu	5829	护	hul	17342	hui	扈	3.0
+C落点被占	额	ee	2058	哦	eeh	16876	eei	屙	8.2
+C落点被占	米	mi	9587	密	mii	14949	mid	迷	1.6
+C落点被占	风	fg	13252	疯	fgs	14752	fgn	凤	1.1
+C落点被占	书	uu	13238	数	uud	14599	uuo	术	1.1
+C落点被占	区	qu	11510	取	que	12409	quw	鸲	1.1
+C落点被占	拍	pd	11544	派	pdb	12189	pdl	排	1.1
+C落点被占	瓦	wa	2715	哇	wah	10283	wal	挖	3.8
+C落点被占	套	tc	7408	讨	tcd	10146	tcn	焘	1.4
+C落点被占	菜	cd	4052	猜	cdv	9937	cdx	蔡	2.5
+C落点被占	冲	is	7517	重	isw	9115	isb	漴	1.2
+C落点被占	波	bo	6615	博	bop	8631	bob	泊	1.3
+C落点被占	股	gu	5721	顾	gus	8290	guv	臌	1.4
+C落点被占	黄	hl	3640	谎	hld	8144	hlm	蝗	2.2
+C落点被占	桥	qn	1885	瞧	qnq	7797	qno	樵	4.1
+C落点被占	赞	zj	3061	咱	zjh	7352	zjc	酂	2.4
+C落点被占	配	pw	5469	陪	pwp	7005	pwe	醅	1.3
+C落点被占	萨	sa	6385	撒	sal	6944	sax	卅	1.1
+C落点被占	朗	lh	2418	浪	lhb	6910	lha	郎	2.9
+C落点被占	沃	wo	3000	喔	woh	6700	wob	涡	2.2
+C落点被占	盘	pj	4294	判	pja	5959	pje	磐	1.4
+C落点被占	讯	xy	2547	寻	xyq	5807	xyd	训	2.3
+C落点被占	汤	th	2958	堂	thi	5748	thb	烫	1.9
+C落点被占	欧	ou	3373	偶	ouf	4480	ouw	鸥	1.3
+C落点被占	含	hj	1726	汉	hjb	4161	hjz	颔	2.4
+C落点被占	胖	ph	1037	旁	phi	3900	phv	膀	3.8
+C落点被占	若	ro	2242	弱	roo	3499	rox	蒻	1.6
+C落点被占	率	uk	677	帅	uka	2850	ukv	甩	4.2
+C落点被占	斌	bb	26	宾	bbi	2384	bba	邠	91.7
+C落点被占	桑	sh	1920	丧	shp	2034	shq	颡	1.1
+C落点被占	跨	kx	642	夸	kxn	1406	kxz	姱	2.2
+C落点被占	跌	dp	634	谍	dpd	1335	dpz	蹀	2.1
+C落点被占	噶	ga	3	尬	gap	1256	gah	嘎	418.7
+C落点被占	泵	bg	165	崩	bgy	1246	bgj	绷	7.6
+C落点被占	亏	kv	897	溃	kvb	1036	kvn	奎	1.2

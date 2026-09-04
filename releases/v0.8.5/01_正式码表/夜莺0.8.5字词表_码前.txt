@@ -83,7 +83,7 @@ bk	不可
 bl	本来
 bl	暴露
 bl	变了
-bm	变
+bm	边
 bm	表面
 bm	帮忙
 bn	表
@@ -869,7 +869,7 @@ nq	拿起
 nr	暖
 nr	女人
 nr	男人
-ns	农
+ns	弄
 nt	虐
 nt	那天
 nt	念头
@@ -1423,7 +1423,7 @@ wg	翁
 wg	我国
 wg	外国
 wg	无关
-wh	王
+wh	望
 wh	为何
 wh	文化
 wi	完成
@@ -1630,7 +1630,7 @@ yw	意外
 yx	有些
 yx	一下
 yx	一些
-yy	云
+yy	运
 yy	一样
 yy	一眼
 yy	原因
@@ -2802,7 +2802,7 @@ bmm	白蒙蒙
 bmm	白面馍
 bmn	本命年
 bmn	白毛女
-bmp	边
+bmp	变
 bmq	昪
 bmq	不明确
 bmq	编码器
@@ -16227,7 +16227,6 @@ nry	女人缘
 nsb	浓
 nse	𬪩
 nsf	侬
-nsg	弄
 nsh	哝
 nsi	农
 nsj	女司机
@@ -23470,7 +23469,6 @@ wht	万花筒
 whu	往
 whu	我还是
 whu	文化衫
-whv	望
 whv	维护者
 whv	玩花招
 whw	网
@@ -27606,7 +27604,7 @@ yyl	有眼力
 yyl	有一类
 yym	有用吗
 yym	有一名
-yyn	运
+yyn	云
 yyn	有一年
 yyn	痒痒挠
 yyp	陨
