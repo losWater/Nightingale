@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""生成夜莺码 0.8.5 必拆字练习（离线单文件）。"""
+"""生成夜莺码 0.9 必拆字练习（离线单文件）。"""
 
 from __future__ import annotations
 
@@ -15,16 +15,16 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.8.5"
+RELEASE = ROOT / "releases" / "v0.9"
 ROOTS_DIR = ROOT / "夜莺B" / "work"
 SPLITS_PATH = ROOT / "work" / "重开工程" / "02_规范拆分" / "最终规范拆分表_待核验.tsv"
-SINGLE_PATH = RELEASE / "01_正式码表" / "夜莺码v0.8.5单字版.txt"
-LAYOUT_PATH = RELEASE / "01_正式码表" / "夜莺码v0.8.5键位布局.yaml"
+SINGLE_PATH = RELEASE / "01_正式码表" / "夜莺码v0.9单字版.txt"
+LAYOUT_PATH = RELEASE / "01_正式码表" / "夜莺码v0.9键位布局.yaml"
 FONT_PATH = ROOT / "data" / "jdhe" / "ChaiPUA.ttf"
 REPERTOIRE_PATH = ROOT / "repos" / "webchai" / "packages" / "hanzi-chai" / "src" / "data" / "repertoire.json.deflate"
 DICTIONARY_PATH = ROOT / "repos" / "webchai" / "packages" / "hanzi-chai" / "src" / "data" / "dictionary.txt"
 OUTPUT_DIR = RELEASE / "04_查询与练习" / "必拆字"
-OUTPUT_HTML = OUTPUT_DIR / "夜莺码v0.8.5必拆字练习.html"
+OUTPUT_HTML = OUTPUT_DIR / "夜莺码v0.9必拆字练习.html"
 OUTPUT_AUDIT = OUTPUT_DIR / "必拆字练习集.tsv"
 PRESENTATION_NAMES = {"卧人": "每字头", "印字旁": "印左边"}
 KEY_ORDER = {key: index for index, key in enumerate("qwertyuiopasdfghjklzxcvbnm")}
@@ -229,7 +229,7 @@ def build_questions() -> tuple[list[dict], list[dict]]:
         if not groups or (groups[-1][0][1]["key"], groups[-1][0][1]["name"]) != identity:
             groups.append([])
         groups[-1].append(pair)
-    random.Random("nightingale-v0.8.5-must-split-root-groups-v2").shuffle(groups)
+    random.Random("nightingale-v0.9-must-split-root-groups-v2").shuffle(groups)
     paired = [pair for group in groups for pair in group]
     questions = [question for question, _row in paired]
     audit = [{"sequence": index, **row} for index, (_question, row) in enumerate(paired, 1)]

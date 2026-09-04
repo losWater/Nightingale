@@ -27,8 +27,8 @@ SKIP = "忽略"
 FORMATS = {"纯表", "搜狗", "手心"}
 OPERATIONS = {"查询", "新增", "删除", "改码", "改词", "调序"}
 ALLOWED_TARGETS = {
-    Path("releases/v0.8.5/01_正式码表/夜莺码v0.8.5单字版.txt"),
-    Path("releases/v0.8.5/01_正式码表/夜莺0.8.5字词表.txt"),
+    Path("releases/v0.9/01_正式码表/夜莺码v0.9单字版.txt"),
+    Path("releases/v0.9/01_正式码表/夜莺0.9字词表.txt"),
 }
 
 

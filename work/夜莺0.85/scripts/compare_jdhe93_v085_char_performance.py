@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""同口径比较简单鹤 9.3 与夜莺 0.8.5 的单字性能。"""
+"""同口径比较简单鹤 9.3 与夜莺 0.9 的单字性能。"""
 
 from __future__ import annotations
 
@@ -169,7 +169,7 @@ def render(data: dict) -> str:
     a, b = data["schemes"]
     names = (a["name"], b["name"])
     aa, bb = a["tiers"]["all"], b["tiers"]["all"]
-    lines = ["# 简单鹤 9.3 × 夜莺 0.8.5 单字性能对比", "",
+    lines = ["# 简单鹤 9.3 × 夜莺 0.9 单字性能对比", "",
              f"共同字集：{data['common_characters']} 字；统一字频：`work/readings.json`；B 按右手食指。", "",
              "## 核心指标", "", f"| 指标 | {names[0]} | {names[1]} |", "|---|---:|---:|",
              f"| 首选三码率（无翻选） | {pct(aa['first_three_rate'])} | {pct(bb['first_three_rate'])} |",
@@ -205,7 +205,7 @@ def main() -> None:
     p.add_argument("--output-md", type=Path, required=True)
     args = p.parse_args()
     freq = load_frequency(args.frequency)
-    tables = (("简单鹤 9.3", load_table(args.jdhe)), ("夜莺 0.8.5", load_table(args.nightingale)))
+    tables = (("简单鹤 9.3", load_table(args.jdhe)), ("夜莺 0.9", load_table(args.nightingale)))
     common = [c for c in freq if all(c in table for _, table in tables) and freq[c] > 0]
     common.sort(key=lambda c: (-freq[c], c))
     if len(common) < 6000:

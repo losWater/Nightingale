@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""生成夜莺 0.8.5 离线“按字根查字”工具。"""
+"""生成夜莺 0.9 离线“按字根查字”工具。"""
 
 from __future__ import annotations
 

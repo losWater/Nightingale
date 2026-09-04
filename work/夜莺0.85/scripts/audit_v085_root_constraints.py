@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""直接以正式根集审计0.8.5布局中的主根、附属与锚定约束。"""
+"""直接以正式根集审计0.9布局中的主根、附属与锚定约束。"""
 
 from __future__ import annotations
 
@@ -109,7 +109,7 @@ def main() -> None:
     args.output_json.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     lines = [
-        "# 夜莺0.8.5根约束审计", "",
+        "# 夜莺0.9根约束审计", "",
         f"- 主根：{len(mains)}",
         f"- 附属关系：{report['counts']['attachment_relations']}",
         f"- 锚定关系：{report['counts']['anchor_relations']}",

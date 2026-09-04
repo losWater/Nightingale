@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the audited Nightingale 0.8.5 release and offline learning tools."""
+"""Build the audited Nightingale 0.9 release and offline learning tools."""
 
 from __future__ import annotations
 
@@ -107,16 +107,16 @@ def build_layout(config_path: Path, release: Path) -> tuple[dict, Path]:
     release_form = dict(source["form"])
     release_form.pop("mapping_space", None)
     layout = {
-        "version": "0.8.5",
-        "source": "夜莺0.8.5 G8C12正式布局",
+        "version": "0.9",
+        "source": "夜莺0.9 G8C12正式布局",
         "info": {
-            "name": "夜莺码0.8.5",
+            "name": "夜莺码0.9",
             "author": "nightingale",
             "description": "小鹤双拼音码＋首末字根形码；G8C12手感与三码率优化布局",
         },
         "form": release_form,
     }
-    target = release / "夜莺码v0.8.5键位布局.yaml"
+    target = release / "夜莺码v0.9键位布局.yaml"
     target.write_text(yaml.safe_dump(layout, allow_unicode=True, sort_keys=False, width=10000), encoding="utf-8")
     return layout, target
 
@@ -169,11 +169,11 @@ def build_practice(layout: dict, release: Path, roots_path: Path, resolve, alias
                 if root == "囗":
                     name = "囗-[（框）]-"
                 lines.append(f"{name}\t{key}\t{'；'.join(hints)}")
-    data_path = release / "夜莺码v0.8.5字根练习.txt"
+    data_path = release / "夜莺码v0.9字根练习.txt"
     data_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     page_template = TEMPLATE_DIR / "root_practice.html"
-    page_path = release / "夜莺码v0.8.5字根练习器.html"
+    page_path = release / "夜莺码v0.9字根练习器.html"
     # 练习器模板中保留了历史发布页的原始换行；按字节复制可避免无意义的整页变更。
     page_path.write_bytes(page_template.read_bytes())
     if not any(line.startswith("子\t") and "孑" in line for line in lines):
@@ -228,7 +228,7 @@ def build_lookup(single_path: Path, split_path: Path, release: Path, template: P
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     font = embedded_font(template, fallback_font)
     html = (TEMPLATE_DIR / "split_lookup.html").read_text(encoding="utf-8")
-    target = release / "夜莺码v0.8.5拆分查询.html"
+    target = release / "夜莺码v0.9拆分查询.html"
     target.write_text(html.replace("__FONT__", font).replace("__DATA__", blob), encoding="utf-8")
     return target, len(data), sum(1 for char in data if char in splits)
 
@@ -297,16 +297,16 @@ def main() -> None:
               args.combined, args.combined_sogou, args.combined_sogou_quick,
               args.config, args.splits, args.presentation, args.decisions, args.single_decisions, args.irrational]
     input_hashes = {str(path.resolve()): sha256(path) for path in inputs}
-    copy_exact(args.single, tables / "夜莺码v0.8.5单字版.txt")
+    copy_exact(args.single, tables / "夜莺码v0.9单字版.txt")
     copies = [
-        (args.single_sogou, "夜莺码v0.8.5无二字词版_搜狗.txt"),
-        (args.single_sogou_quick, "夜莺码v0.8.5无二字词版_搜狗_含快符.txt"),
-        (args.combined, "夜莺0.8.5字词表.txt"),
-        (args.combined_sogou, "夜莺码v0.8.5挂接字词版_搜狗词库.txt"),
-        (args.combined_sogou_quick, "夜莺码v0.8.5挂接字词版_搜狗词库_含快符.txt"),
-        (args.decisions, "夜莺码v0.8.5字词裁决.tsv"),
-        (args.single_decisions, "夜莺码v0.8.5单字裁决.tsv"),
-        (args.irrational, "夜莺码v0.8.5无理码表.tsv"),
+        (args.single_sogou, "夜莺码v0.9无二字词版_搜狗.txt"),
+        (args.single_sogou_quick, "夜莺码v0.9无二字词版_搜狗_含快符.txt"),
+        (args.combined, "夜莺0.9字词表.txt"),
+        (args.combined_sogou, "夜莺码v0.9挂接字词版_搜狗词库.txt"),
+        (args.combined_sogou_quick, "夜莺码v0.9挂接字词版_搜狗词库_含快符.txt"),
+        (args.decisions, "夜莺码v0.9字词裁决.tsv"),
+        (args.single_decisions, "夜莺码v0.9单字裁决.tsv"),
+        (args.irrational, "夜莺码v0.9无理码表.tsv"),
     ]
     for source, name in copies:
         if "搜狗" in name:
@@ -329,12 +329,12 @@ def main() -> None:
         args.single, args.splits, tools, TEMPLATE_DIR / "root_practice.html", args.repo / "data/jdhe/ChaiPUA.ttf"
     )
     reverse_code_count, reverse_entry_count = build_reverse_lookup(
-        args.combined, tools / "夜莺码v0.8.5编码反查.html"
+        args.combined, tools / "夜莺码v0.9编码反查.html"
     )
 
     notes = args.release / "README.md"
     notes.write_text(
-        "# 夜莺码 0.8.5\n\n"
+        "# 夜莺码 0.9\n\n"
         "本版采用G8C12布局，默认发布挂接字词版；当前综合版不含简词。\n\n"
         "- 搜狗词库版只写单字，并保留词让出的候选序号空位；\n"
         "- 单字搜狗版与挂接搜狗词库版均提供`含快符`变体，额外加入39条既有快符；\n"
@@ -348,7 +348,7 @@ def main() -> None:
     outputs = sorted(path for path in args.release.rglob("*") if path.is_file())
     manifest = {
         "schema_version": 1,
-        "version": "0.8.5",
+        "version": "0.9",
         "status": "pass",
         "inputs": input_hashes,
         "counts": {"practice_roots": root_count, "lookup_chars": char_count, "lookup_chars_with_split": split_count,

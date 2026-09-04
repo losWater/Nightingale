@@ -15,7 +15,7 @@ def run(*args: str) -> None:
 
 
 def main() -> None:
-    run(str(REPO / "pipelines" / "v085" / "rebuild.py"), "--check-only")
+    run(str(REPO / "pipelines" / "v09" / "rebuild.py"), "--check-only")
     run("-m", "unittest", "discover", "-s", "tests", "-q")
     print("仓库快速门禁通过")
 

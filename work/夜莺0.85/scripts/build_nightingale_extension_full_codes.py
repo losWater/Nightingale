@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""由现行拆分、Chai读音和0.8.5布局生成扩展字理性全码候选。"""
+"""由现行拆分、Chai读音和0.9布局生成扩展字理性全码候选。"""
 
 from __future__ import annotations
 
@@ -49,7 +49,7 @@ def resolve_mapping(mapping: dict[str, object], element: str, resolved_names: di
         if isinstance(value, dict) and value.get("element") is not None:
             element = str(value["element"])
             continue
-        raise ValueError(f"元素没有0.8.5键位：{ascii(element)}")
+        raise ValueError(f"元素没有0.9键位：{ascii(element)}")
 
 
 def sound_elements(toned: str) -> tuple[str, str, str]:
