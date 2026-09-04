@@ -169496,6 +169496,7 @@ Word	word
 因	yben
 胤	ybeo
 㐆	ybeo
+囙	ybeo
 因而	yber
 银耳	yber
 鷣	yber
@@ -169837,7 +169838,6 @@ Word	word
 银翘	ybqn
 养不起你	ybqn
 引桥	ybqn
-囙	ybqo
 殷切	ybqp
 饮泉	ybqr
 养兵千日	ybqr

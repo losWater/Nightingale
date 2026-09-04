@@ -29421,6 +29421,7 @@
 因	yben
 胤	ybeo
 㐆	ybeo
+囙	ybeo
 鷣	yber
 殷	ybet
 垔	ybet
@@ -29503,7 +29504,6 @@
 㙬	ybpt
 阴	ybpv
 尹	ybqe
-囙	ybqo
 䇙	ybra
 氤	ybrn
 筃	ybrn

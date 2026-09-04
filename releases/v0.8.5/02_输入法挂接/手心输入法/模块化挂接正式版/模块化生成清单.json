@@ -1,7 +1,7 @@
 {
   "source": "releases\\v0.8.5\\02_输入法挂接\\手心输入法\\夜莺码v0.8.5电脑手心挂接.txt",
   "source_rows": 211228,
-  "source_sha256": "8ad8d1f06254a5ef014f7966f0f1ccb12a017bdf77c1cce9495d3143db8869fb",
+  "source_sha256": "d0678986116c7ab02c67bbfe6c2a395f8cd38e1a283e0c9eb8838545b8042851",
   "outputs": {
     "01_夜莺0.8.5_核心单字.txt": {
       "rows": 13751,
@@ -21,7 +21,7 @@
     },
     "05_夜莺0.8.5_扩展字.txt": {
       "rows": 18770,
-      "sha256": "ca1dac766a93de51b0c48dab015a5cefb8d1e2fb643cccae056c75c6ad5d213f"
+      "sha256": "a6cb5cf6f7b33a1c29e90d03650cfe4e78f16be8d5d8e8de575344e53733d402"
     }
   },
   "reconstruction": "pass"
