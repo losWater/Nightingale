@@ -69472,7 +69472,6 @@ hutk	忽听
 hutm	螜
 hutm	互舔
 hutn	互调
-hutn	壶
 hutn	壷
 hutn	壺
 hutn	虎跳
@@ -69488,6 +69487,7 @@ hutu	糊涂
 hutu	胡涂
 hutv	护腿
 hutv	互推
+hutw	壶
 hutx	函数图像
 hutx	函数图象
 hutz	虎头
@@ -121154,8 +121154,8 @@ qucd	取材
 qucd	屈才
 quce	驱策
 qucn	驱
-qucn	憈
 qucs	屈从
+qucw	憈
 quda	粬
 quda	取大
 qudc	渠道
@@ -121649,8 +121649,6 @@ quym	求生欲拉满
 quym	清水衙门
 quyn	岖
 quyn	情深意浓
-quyn	㠊
-quyn	鱋
 quyp	翘首以盼
 quyp	岴
 quyq	情深缘浅
@@ -121667,6 +121665,8 @@ quyu	趋于
 quyv	情深义重
 quyv	情深意重
 quyw	求生欲望
+quyw	㠊
+quyw	鱋
 quyx	切实有效
 quyx	欺上压下
 quyy	曲云
@@ -139664,7 +139664,6 @@ uibk	㵓
 uibm	事变
 uibm	尸变
 uibn	师表
-uibn	湿
 uibn	㳏
 uibn	市标
 uibo	师伯
@@ -139680,6 +139679,7 @@ uibu	是不
 uibu	师部
 uibw	十倍
 uibw	石碑
+uibw	湿
 uiby	溡
 uibz	生辰八字
 uica	拭擦
@@ -139880,7 +139880,6 @@ uihk	㖷
 uihl	始皇
 uihl	拾荒
 uihl	山川河流
-uihn	嘘
 uihn	史
 uiho	失火
 uiho	识货
@@ -139893,6 +139892,7 @@ uihu	石斛
 uihv	实惠
 uihv	驶回
 uihv	石灰
+uihw	嘘
 uihx	实话
 uihx	石化
 uihx	市花
@@ -163759,7 +163759,6 @@ xmjm	鲜见
 xmjn	现浇
 xmjn	䃸
 xmjn	纖
-xmjn	繊
 xmjn	纎
 xmjn	䃱
 xmjn	先叫
@@ -163774,6 +163773,7 @@ xmju	现居
 xmju	项目介绍
 xmju	仙居
 xmjw	纤
+xmjw	繊
 xmjx	现价
 xmjx	限价
 xmjx	仙家
@@ -163963,7 +163963,6 @@ xmqm	现钱
 xmqm	闲钱
 xmqm	䂅
 xmqn	仙桥
-xmqn	显
 xmqn	纤巧
 xmqp	暹
 xmqp	现切
@@ -163980,6 +163979,7 @@ xmqu	县区
 xmqu	兄妹情深
 xmqv	瞯
 xmqw	㫫
+xmqw	显
 xmqz	𬀪
 xmqz	𪾢
 xmra	筅
@@ -166868,13 +166868,13 @@ xtzz	小兔崽子
 xuaa	幁
 xuag	歔
 xuag	欰
-xuan	虚
 xuan	虛
 xuan	须按
 xuan	需按
 xuap	卹
 xuap	虗
 xuap	䘏
+xuaw	虚
 xuba	洫
 xuba	㳚
 xuba	心神不安
@@ -166945,7 +166945,6 @@ xudm	诩
 xudm	詡
 xudm	蓄电
 xudn	续貂
-xudn	譃
 xudo	许多
 xudo	䛙
 xudp	许
@@ -166965,6 +166964,7 @@ xudw	𬣙
 xudw	须得
 xudw	訏
 xudw	下属单位
+xudw	譃
 xudy	形式多样
 xudy	先生大义
 xuea	須
@@ -167046,7 +167046,6 @@ xuhj	虚焊
 xuhl	虚晃
 xuhl	徐晃
 xuhl	小事化了
-xuhn	嘘
 xuhn	噓
 xuho	虚火
 xuho	续火
@@ -167058,6 +167057,7 @@ xuhu	斜升函数
 xuhv	学生会长
 xuhw	吁
 xuhw	相识恨晚
+xuhw	嘘
 xuhx	虚化
 xuhx	叙话
 xuhx	学生会主席
@@ -167180,13 +167180,13 @@ xunj	销声匿迹
 xunk	絮凝
 xunl	徐娘
 xunl	信手拈来
-xunn	驉
 xuno	许诺
 xunr	煦暖
 xunr	息事宁人
 xuns	㜿
 xunv	小说女主
 xunv	小说男主
+xunw	驉
 xuny	信守诺言
 xuom	栩
 xuop	槒
@@ -167199,12 +167199,12 @@ xuph	销售排行
 xuph	䧁
 xupk	小睡片刻
 xupm	续篇
-xupn	魖
 xupr	魆
 xupr	羡煞旁人
 xups	䦽
 xupt	销售平台
 xupw	许配
+xupw	魖
 xupx	学生培训
 xuqa	賉
 xuqa	暊
@@ -167269,7 +167269,6 @@ xuth	悉数退回
 xutj	叙谈
 xutj	许坦
 xutl	学术讨论
-xutn	墟
 xuto	虚脱
 xuts	垿
 xuts	㘧
@@ -167279,6 +167278,7 @@ xutu	虚土
 xutv	壻
 xutw	圩
 xutw	相识太晚
+xutw	墟
 xuua	徐
 xuua	裇
 xuud	学生时代
@@ -171458,7 +171458,6 @@ yewh	野王
 yewh	野望
 yewj	夜晚
 yewm	勇而无谋
-yewn	业
 yewo	腋窝
 yewp	邺
 yewp	鄴
@@ -171467,6 +171466,7 @@ yewu	业务
 yewu	野物
 yeww	也为
 yeww	野味
+yeww	业
 yewx	言而无信
 yewy	業
 yexb	野心

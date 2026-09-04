@@ -65184,7 +65184,6 @@ huti	护体
 hutk	忽听
 hutm	互舔
 hutn	互调
-hutn	壶
 hutn	虎跳
 huts	胡同
 huts	互通
@@ -65195,6 +65194,7 @@ hutu	糊涂
 hutu	胡涂
 hutv	护腿
 hutv	互推
+hutw	壶
 hutx	函数图像
 hutx	函数图象
 hutz	虎头
@@ -126444,7 +126444,6 @@ uibk	柿饼
 uibm	事变
 uibm	尸变
 uibn	师表
-uibn	湿
 uibn	市标
 uibo	师伯
 uibo	试播
@@ -126457,6 +126456,7 @@ uibu	是不
 uibu	师部
 uibw	十倍
 uibw	石碑
+uibw	湿
 uibz	生辰八字
 uica	拭擦
 uicc	实操
@@ -126621,7 +126621,6 @@ uihk	使坏
 uihl	始皇
 uihl	拾荒
 uihl	山川河流
-uihn	嘘
 uihn	史
 uiho	失火
 uiho	识货
@@ -126633,6 +126632,7 @@ uihu	石斛
 uihv	实惠
 uihv	驶回
 uihv	石灰
+uihw	嘘
 uihx	实话
 uihx	石化
 uihx	市花
@@ -148277,7 +148277,6 @@ xmqm	先遣
 xmqm	现钱
 xmqm	闲钱
 xmqn	仙桥
-xmqn	显
 xmqn	纤巧
 xmqp	暹
 xmqp	现切
@@ -148291,6 +148290,7 @@ xmqr	项目确认
 xmqu	先驱
 xmqu	县区
 xmqu	兄妹情深
+xmqw	显
 xmqz	𬀪
 xmqz	𪾢
 xmra	筅
@@ -150674,9 +150674,9 @@ xtzx	孝悌忠信
 xtzy	协同作用
 xtzy	系统资源
 xtzz	小兔崽子
-xuan	虚
 xuan	须按
 xuan	需按
+xuaw	虚
 xuba	洫
 xuba	㳚
 xuba	心神不安
@@ -150808,7 +150808,6 @@ xuhj	虚焊
 xuhl	虚晃
 xuhl	徐晃
 xuhl	小事化了
-xuhn	嘘
 xuho	虚火
 xuho	续火
 xuhr	虚幻
@@ -150818,6 +150817,7 @@ xuhu	斜升函数
 xuhv	学生会长
 xuhw	吁
 xuhw	相识恨晚
+xuhw	嘘
 xuhx	虚化
 xuhx	叙话
 xuhx	学生会主席
@@ -150988,7 +150988,6 @@ xuth	悉数退回
 xutj	叙谈
 xutj	许坦
 xutl	学术讨论
-xutn	墟
 xuto	虚脱
 xuts	垿
 xutt	学术团体
@@ -150996,6 +150995,7 @@ xutu	徐图
 xutu	虚土
 xutw	圩
 xutw	相识太晚
+xutw	墟
 xuua	徐
 xuud	学生时代
 xuud	小声说道
@@ -154629,13 +154629,13 @@ yewh	野王
 yewh	野望
 yewj	夜晚
 yewm	勇而无谋
-yewn	业
 yewo	腋窝
 yewp	邺
 yewu	业务
 yewu	野物
 yeww	也为
 yeww	野味
+yeww	业
 yewx	言而无信
 yexb	野心
 yexb	爷新

@@ -69472,6 +69472,7 @@ Google	goog
 螜	hutm
 互舔	hutm
 互调	hutn
+壶	hutn
 壷	hutn
 壺	hutn
 虎跳	hutn
@@ -69487,7 +69488,6 @@ Google	goog
 胡涂	hutu
 护腿	hutv
 互推	hutv
-壶	hutw
 函数图像	hutx
 函数图象	hutx
 虎头	hutz
@@ -121154,8 +121154,8 @@ QQ音乐	qqyy
 屈才	qucd
 驱策	quce
 驱	qucn
+憈	qucn
 屈从	qucs
-憈	qucw
 粬	quda
 取大	quda
 渠道	qudc
@@ -121649,6 +121649,8 @@ QQ音乐	qqyy
 清水衙门	quym
 岖	quyn
 情深意浓	quyn
+㠊	quyn
+鱋	quyn
 翘首以盼	quyp
 岴	quyp
 情深缘浅	quyq
@@ -121665,8 +121667,6 @@ QQ音乐	qqyy
 情深义重	quyv
 情深意重	quyv
 求生欲望	quyw
-㠊	quyw
-鱋	quyw
 切实有效	quyx
 欺上压下	quyx
 曲云	quyy
@@ -139664,6 +139664,7 @@ san值狂掉	svkd
 事变	uibm
 尸变	uibm
 师表	uibn
+湿	uibn
 㳏	uibn
 市标	uibn
 师伯	uibo
@@ -139679,7 +139680,6 @@ san值狂掉	svkd
 师部	uibu
 十倍	uibw
 石碑	uibw
-湿	uibw
 溡	uiby
 生辰八字	uibz
 拭擦	uica
@@ -139880,6 +139880,7 @@ san值狂掉	svkd
 始皇	uihl
 拾荒	uihl
 山川河流	uihl
+嘘	uihn
 史	uihn
 失火	uiho
 识货	uiho
@@ -139892,7 +139893,6 @@ san值狂掉	svkd
 实惠	uihv
 驶回	uihv
 石灰	uihv
-嘘	uihw
 实话	uihx
 石化	uihx
 市花	uihx
@@ -163759,6 +163759,7 @@ Word	word
 现浇	xmjn
 䃸	xmjn
 纖	xmjn
+繊	xmjn
 纎	xmjn
 䃱	xmjn
 先叫	xmjn
@@ -163773,7 +163774,6 @@ Word	word
 项目介绍	xmju
 仙居	xmju
 纤	xmjw
-繊	xmjw
 现价	xmjx
 限价	xmjx
 仙家	xmjx
@@ -163963,6 +163963,7 @@ Word	word
 闲钱	xmqm
 䂅	xmqm
 仙桥	xmqn
+显	xmqn
 纤巧	xmqn
 暹	xmqp
 现切	xmqp
@@ -163979,7 +163980,6 @@ Word	word
 兄妹情深	xmqu
 瞯	xmqv
 㫫	xmqw
-显	xmqw
 𬀪	xmqz
 𪾢	xmqz
 筅	xmra
@@ -166868,13 +166868,13 @@ Word	word
 幁	xuaa
 歔	xuag
 欰	xuag
+虚	xuan
 虛	xuan
 须按	xuan
 需按	xuan
 卹	xuap
 虗	xuap
 䘏	xuap
-虚	xuaw
 洫	xuba
 㳚	xuba
 心神不安	xuba
@@ -166945,6 +166945,7 @@ Word	word
 詡	xudm
 蓄电	xudm
 续貂	xudn
+譃	xudn
 许多	xudo
 䛙	xudo
 许	xudp
@@ -166964,7 +166965,6 @@ Word	word
 须得	xudw
 訏	xudw
 下属单位	xudw
-譃	xudw
 形式多样	xudy
 先生大义	xudy
 須	xuea
@@ -167046,6 +167046,7 @@ Word	word
 虚晃	xuhl
 徐晃	xuhl
 小事化了	xuhl
+嘘	xuhn
 噓	xuhn
 虚火	xuho
 续火	xuho
@@ -167057,7 +167058,6 @@ Word	word
 学生会长	xuhv
 吁	xuhw
 相识恨晚	xuhw
-嘘	xuhw
 虚化	xuhx
 叙话	xuhx
 学生会主席	xuhx
@@ -167180,13 +167180,13 @@ Word	word
 絮凝	xunk
 徐娘	xunl
 信手拈来	xunl
+驉	xunn
 许诺	xuno
 煦暖	xunr
 息事宁人	xunr
 㜿	xuns
 小说女主	xunv
 小说男主	xunv
-驉	xunw
 信守诺言	xuny
 栩	xuom
 槒	xuop
@@ -167199,12 +167199,12 @@ Word	word
 䧁	xuph
 小睡片刻	xupk
 续篇	xupm
+魖	xupn
 魆	xupr
 羡煞旁人	xupr
 䦽	xups
 销售平台	xupt
 许配	xupw
-魖	xupw
 学生培训	xupx
 賉	xuqa
 暊	xuqa
@@ -167269,6 +167269,7 @@ Word	word
 叙谈	xutj
 许坦	xutj
 学术讨论	xutl
+墟	xutn
 虚脱	xuto
 垿	xuts
 㘧	xuts
@@ -167278,7 +167279,6 @@ Word	word
 壻	xutv
 圩	xutw
 相识太晚	xutw
-墟	xutw
 徐	xuua
 裇	xuua
 学生时代	xuud
@@ -171458,6 +171458,7 @@ Word	word
 野望	yewh
 夜晚	yewj
 勇而无谋	yewm
+业	yewn
 腋窝	yewo
 邺	yewp
 鄴	yewp
@@ -171466,7 +171467,6 @@ Word	word
 野物	yewu
 也为	yeww
 野味	yeww
-业	yeww
 言而无信	yewx
 業	yewy
 野心	yexb

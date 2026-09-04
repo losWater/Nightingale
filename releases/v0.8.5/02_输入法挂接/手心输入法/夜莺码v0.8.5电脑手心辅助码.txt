@@ -1978,9 +1978,9 @@
 烀=ra
 笏=rj
 煳=rv
-壶=tn
 縠=tt
 觳=tt
+壶=tw
 祜=up
 狐=vm
 猢=vv
@@ -5802,7 +5802,7 @@
 蚀=am
 浉=ba
 湜=bk
-湿=bn
+湿=bw
 驶=cn
 恃=cy
 识=da
@@ -5818,9 +5818,9 @@
 侍=fy
 食=gc
 噬=hg
-嘘=hn
 史=hn
 嗜=hq
+嘘=hw
 屎=id
 尸=ii
 实=in
@@ -6911,9 +6911,9 @@
 献=pn
 险=pt
 陷=py
-显=qn
 暹=qp
 㬎=qr
+显=qw
 𬀪=qz
 𪾢=qz
 筅=ra
@@ -7108,7 +7108,7 @@
 茓=xa
 薛=xs
 鳕=yq
-虚=an
+虚=aw
 洫=ba
 㳚=ba
 溆=bq
@@ -7141,8 +7141,8 @@
 旴=qw
 欻=rg
 序=ss
-墟=tn
 垿=ts
+墟=tw
 徐=ua
 勖=wp
 冔=ww
@@ -7346,8 +7346,8 @@
 靥=sc
 腋=vl
 夜=vl
-业=wn
 邺=wp
+业=ww
 页=zz
 洋=bk
 泱=bn
