@@ -160,7 +160,9 @@ def build_practice(layout: dict, release: Path, roots_path: Path, resolve, alias
             for root in mains.get(key, []):
                 hints = []
                 if subsidiaries.get(root):
-                    hints.append("附属: " + " ".join(dict.fromkeys(present_name(item) for item in subsidiaries[root])))
+                    shown = [n for n in dict.fromkeys(present_name(item) for item in subsidiaries[root]) if n != present_name(root)]
+                    if shown:
+                        hints.append("附属: " + " ".join(shown))
                 if anchors.get(root):
                     hints.append("锚定同键: " + " ".join(dict.fromkeys(present_name(item) for item in anchors[root])))
                 name = f"{root}(笔画)" if root in STROKE_NAMES else present_name(root)
