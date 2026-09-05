@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""仅以正式单字主表和综合字词主表生成 0.9 搜狗派生表。"""
+"""仅以正式单字主表和综合字词主表生成 0.9.1 搜狗派生表。"""
 
 from __future__ import annotations
 
@@ -190,7 +190,7 @@ def main() -> None:
     short_pairs = {(text, code) for code, _rank, text in short_words}
     combined_slots = slots([row for row in combined_rows if row[0] not in extension_set])
     single_headers = [
-        "; 夜莺码v0.9综合字词主表派生搜狗无二字词挂接版",
+        "; 夜莺码v0.9.1综合字词主表派生搜狗无二字词挂接版",
         "; 写入单字与夜莺简词；省略普通全码词并保留其候选序号空位，供搜狗自带词库联想",
     ]
     # 搜狗挂接文件本身只写单字，但候选位必须继承综合字词主表：
@@ -203,16 +203,16 @@ def main() -> None:
     single_quick = add_quick(single_sogou, quick, True)
     combined_quick = add_quick(combined_sogou, quick, False)
     outputs = {
-        "夜莺码v0.9无二字词版_搜狗.txt": single_sogou,
-        "夜莺码v0.9无二字词版_搜狗_含快符.txt": single_quick,
-        "夜莺码v0.9挂接字词版_搜狗词库.txt": combined_sogou,
-        "夜莺码v0.9挂接字词版_搜狗词库_含快符.txt": combined_quick,
+        "夜莺码v0.9.1无二字词版_搜狗.txt": single_sogou,
+        "夜莺码v0.9.1无二字词版_搜狗_含快符.txt": single_quick,
+        "夜莺码v0.9.1挂接字词版_搜狗词库.txt": combined_sogou,
+        "夜莺码v0.9.1挂接字词版_搜狗词库_含快符.txt": combined_quick,
     }
     for name, lines in outputs.items():
         write(output_dir / name, lines)
     manifest_path = args.release_dir / "发布清单.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    for legacy_name in ("夜莺码v0.9单字版_搜狗.txt", "夜莺码v0.9单字版_搜狗_含快符.txt"):
+    for legacy_name in ("夜莺码v0.9.1单字版_搜狗.txt", "夜莺码v0.9.1单字版_搜狗_含快符.txt"):
         manifest["outputs"].pop(legacy_name, None)
     repository = args.release_dir.resolve().parents[1]
     manifest["derived_from_masters"] = {
@@ -244,7 +244,7 @@ def main() -> None:
     if extension_name:
         manifest["outputs"][extension_name] = sha256(args.extension_characters)
     else:
-        manifest["outputs"].pop("夜莺码v0.9扩展字表.tsv", None)
+        manifest["outputs"].pop("夜莺码v0.9.1扩展字表.tsv", None)
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

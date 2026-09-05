@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""评估把“争字底”从 q 移到 e（秉与其同键）对 0.9 发布主表的重码影响。"""
+"""评估把“争字底”从 q 移到 e（秉与其同键）对 0.9.1 发布主表的重码影响。"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.9"
+RELEASE = ROOT / "releases" / "v0.9.1"
 OUT = ROOT / "work" / "夜莺0.85" / "13_争字底移e影响评估"
 BASE_SPLITS = ROOT / "work" / "重开工程" / "02_规范拆分" / "最终规范拆分表_待核验.tsv"
 EXT_SPLITS = ROOT / "work" / "夜莺0.85" / "10_扩展字Chai实验" / "20260830_034806+1000" / "扩展字全码_结构候选.tsv"
@@ -55,10 +55,10 @@ def metric(items: list[tuple[str, str]]) -> dict[str, int]:
 def main() -> None:
     splits, core_chars = load_splits()
     tables = RELEASE / "01_正式码表"
-    irrational = {(r["字"], r["新增码"]) for r in read_tsv(tables / "夜莺码v0.9无理码表.tsv")}
-    singles = entries(tables / "夜莺码v0.9单字版.txt")
-    combined = entries(tables / "夜莺0.9字词表.txt")
-    short_words = [(r["词"], r["简码"]) for r in read_tsv(tables / "夜莺码v0.9简词表.tsv")]
+    irrational = {(r["字"], r["新增码"]) for r in read_tsv(tables / "夜莺码v0.9.1无理码表.tsv")}
+    singles = entries(tables / "夜莺码v0.9.1单字版.txt")
+    combined = entries(tables / "夜莺0.9.1字词表.txt")
+    short_words = [(r["词"], r["简码"]) for r in read_tsv(tables / "夜莺码v0.9.1简词表.tsv")]
     words = [(t, c) for t, c in combined if len(t) > 1]
 
     changed = []

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""把夜莺 0.9 正式码表转换为手心输入法挂接表与辅助码表。"""
+"""把夜莺 0.9.1 正式码表转换为手心输入法挂接表与辅助码表。"""
 
 from __future__ import annotations
 
@@ -214,10 +214,10 @@ def main() -> None:
     auxiliary, four_code_rows, auxiliary_pairs = build_auxiliary(auxiliary_source)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    attachment_path = args.output_dir / "夜莺码v0.9电脑手心挂接.txt"
-    no_two_character_words_path = args.output_dir / "夜莺码v0.9电脑手心无二字词版.txt"
-    auxiliary_path = args.output_dir / "夜莺码v0.9电脑手心辅助码.txt"
-    auxiliary_unicode_path = args.output_dir / "夜莺码v0.9电脑手心辅助码_Unicode.txt"
+    attachment_path = args.output_dir / "夜莺码v0.9.1电脑手心挂接.txt"
+    no_two_character_words_path = args.output_dir / "夜莺码v0.9.1电脑手心无二字词版.txt"
+    auxiliary_path = args.output_dir / "夜莺码v0.9.1电脑手心辅助码.txt"
+    auxiliary_unicode_path = args.output_dir / "夜莺码v0.9.1电脑手心辅助码_Unicode.txt"
     # 挂接表沿用参考文件的 LF；辅助码按手心导入提示使用“字=码1 码2”，并用 CRLF。
     attachment_path.write_bytes(("\n".join(attachment) + "\n").encode("utf-8"))
     no_two_character_words_path.write_bytes(("\n".join(no_two_character_words) + "\n").encode("utf-8"))

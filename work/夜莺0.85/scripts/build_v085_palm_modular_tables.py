@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.9"
+RELEASE = ROOT / "releases" / "v0.9.1"
 TABLES = RELEASE / "01_正式码表"
 PALM = RELEASE / "02_输入法挂接" / "手心输入法"
 OUTPUT = PALM / "模块化挂接正式版"
@@ -44,12 +44,12 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    source_path = PALM / "夜莺码v0.9电脑手心挂接.txt"
+    source_path = PALM / "夜莺码v0.9.1电脑手心挂接.txt"
     source = read_palm(source_path)
-    extension_chars = {r["字"] for r in read_tsv(TABLES / "夜莺码v0.9扩展字表.tsv")}
-    single_pairs = set(read_plain(TABLES / "夜莺码v0.9单字版.txt"))
+    extension_chars = {r["字"] for r in read_tsv(TABLES / "夜莺码v0.9.1扩展字表.tsv")}
+    single_pairs = set(read_plain(TABLES / "夜莺码v0.9.1单字版.txt"))
     core_single_pairs = {(char, code) for char, code in single_pairs if char not in extension_chars}
-    short_pairs = {(r["词"], r["简码"]) for r in read_tsv(TABLES / "夜莺码v0.9简词表.tsv")}
+    short_pairs = {(r["词"], r["简码"]) for r in read_tsv(TABLES / "夜莺码v0.9.1简词表.tsv")}
 
     def is_short_word(text: str, code: str) -> bool:
         return len(text) > 1 and ((text, code) in short_pairs or len(code) < 4)
@@ -58,29 +58,29 @@ def main() -> None:
         left, text = raw.split("=", 1); code, rank = left.rsplit(",", 1)
         quick.add((text, code, int(rank)))
     ordinary_pairs = {
-        (text, code) for text, code in read_plain(TABLES / "夜莺0.9字词表.txt")
+        (text, code) for text, code in read_plain(TABLES / "夜莺0.9.1字词表.txt")
         if len(text) > 1 and not is_short_word(text, code)
     }
 
     modules: dict[str, list[tuple[str, int, str]]] = {
-        "01_夜莺0.9_核心单字.txt": [],
-        "02_夜莺0.9_普通词.txt": [],
-        "03_夜莺0.9_简词.txt": [],
-        "04_夜莺0.9_快符.txt": [],
-        "05_夜莺0.9_扩展字.txt": [],
+        "01_夜莺0.9.1_核心单字.txt": [],
+        "02_夜莺0.9.1_普通词.txt": [],
+        "03_夜莺0.9.1_简词.txt": [],
+        "04_夜莺0.9.1_快符.txt": [],
+        "05_夜莺0.9.1_扩展字.txt": [],
     }
     unmatched = []
     for code, rank, text in source:
         if (text, code, rank) in quick:
-            name = "04_夜莺0.9_快符.txt"
+            name = "04_夜莺0.9.1_快符.txt"
         elif text in extension_chars and len(text) == 1:
-            name = "05_夜莺0.9_扩展字.txt"
+            name = "05_夜莺0.9.1_扩展字.txt"
         elif is_short_word(text, code):
-            name = "03_夜莺0.9_简词.txt"
+            name = "03_夜莺0.9.1_简词.txt"
         elif len(text) == 1:
-            name = "01_夜莺0.9_核心单字.txt"
+            name = "01_夜莺0.9.1_核心单字.txt"
         elif (text, code) in ordinary_pairs:
-            name = "02_夜莺0.9_普通词.txt"
+            name = "02_夜莺0.9.1_普通词.txt"
         else:
             unmatched.append((code, rank, text)); continue
         modules[name].append((code, rank, text))
@@ -98,7 +98,7 @@ def main() -> None:
     if Counter(reconstructed) != Counter(source):
         raise ValueError("模块重组后与总挂接表不一致")
 
-    readme = """# 夜莺码0.9 手心模块化挂接
+    readme = """# 夜莺码0.9.1 手心模块化挂接
 
 五个模块可同时勾选，候选位与原“电脑手心挂接”完全相同。
 

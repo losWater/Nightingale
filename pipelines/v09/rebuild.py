@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""夜莺0.9派生发布物的稳定顶层入口。
+"""夜莺0.9.1派生发布物的稳定顶层入口。
 
 当前委托给已经验证的兼容实现；以后迁移内部脚本时，用户命令无需变化。
 """
@@ -14,16 +14,16 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 IMPLEMENTATION = REPO / "work" / "夜莺0.85" / "scripts" / "rebuild_v085_attachments.py"
 REQUIRED = (
-    REPO / "schema" / "v0.9" / "manifest.yaml",
-    REPO / "releases" / "v0.9" / "01_正式码表" / "夜莺码v0.9单字版.txt",
-    REPO / "releases" / "v0.9" / "01_正式码表" / "夜莺0.9字词表.txt",
+    REPO / "schema" / "v0.9.1" / "manifest.yaml",
+    REPO / "releases" / "v0.9.1" / "01_正式码表" / "夜莺码v0.9.1单字版.txt",
+    REPO / "releases" / "v0.9.1" / "01_正式码表" / "夜莺0.9.1字词表.txt",
     REPO / "symbo.txt",
     IMPLEMENTATION,
 )
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="从两张0.9主表重建输入法挂接表")
+    parser = argparse.ArgumentParser(description="从两张0.9.1主表重建输入法挂接表")
     parser.add_argument("--skip-palm", action="store_true", help="不重建手心文件")
     parser.add_argument("--check-only", action="store_true", help="只检查入口与必需真源是否齐全")
     args = parser.parse_args()
@@ -31,7 +31,7 @@ def main() -> None:
     if missing:
         raise FileNotFoundError("缺少必需文件：\n" + "\n".join(str(path) for path in missing))
     if args.check_only:
-        print(f"0.9构建入口检查通过：{len(REQUIRED)}项必需文件齐全")
+        print(f"0.9.1构建入口检查通过：{len(REQUIRED)}项必需文件齐全")
         return
     command = [sys.executable, str(IMPLEMENTATION)]
     if args.skip_palm:

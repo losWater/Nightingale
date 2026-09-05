@@ -12,7 +12,7 @@ from compare_mao_pi_anchor_directions import read_tsv, entries, metric, move, fa
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.9"
+RELEASE = ROOT / "releases" / "v0.9.1"
 BASE_SPLITS = ROOT / "work" / "重开工程" / "02_规范拆分" / "最终规范拆分表_待核验.tsv"
 EXT_SPLITS = ROOT / "work" / "夜莺0.85" / "10_扩展字Chai实验" / "20260830_034806+1000" / "扩展字全码_结构候选.tsv"
 OUT = ROOT / "work" / "夜莺0.85" / "15_卵卩合并方向评估"
@@ -43,10 +43,10 @@ def main() -> None:
         splits[row["汉字"]] = (row["编码首根"], row["编码末根"])
     extension = set(splits) - core
     tables = RELEASE / "01_正式码表"
-    irrational = {(r["字"], r["新增码"]) for r in read_tsv(tables / "夜莺码v0.9无理码表.tsv")}
-    singles = entries(tables / "夜莺码v0.9单字版.txt")
-    combined = entries(tables / "夜莺0.9字词表.txt")
-    short_pairs = {(r["词"], r["简码"]) for r in read_tsv(tables / "夜莺码v0.9简词表.tsv")}
+    irrational = {(r["字"], r["新增码"]) for r in read_tsv(tables / "夜莺码v0.9.1无理码表.tsv")}
+    singles = entries(tables / "夜莺码v0.9.1单字版.txt")
+    combined = entries(tables / "夜莺0.9.1字词表.txt")
+    short_pairs = {(r["词"], r["简码"]) for r in read_tsv(tables / "夜莺码v0.9.1简词表.tsv")}
     all_words = [(t, c) for t, c in combined if len(t) > 1]
 
     layers = {

@@ -10,12 +10,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.9"
+RELEASE = ROOT / "releases" / "v0.9.1"
 TABLES = RELEASE / "01_正式码表"
 CORE_SPLITS = ROOT / "work" / "重开工程" / "02_规范拆分" / "最终规范拆分表_待核验.tsv"
 EXT_SPLITS = ROOT / "work" / "夜莺0.85" / "10_扩展字Chai实验" / "20260830_034806+1000" / "扩展字规范拆分_候选.tsv"
-SINGLE = TABLES / "夜莺码v0.9单字版.txt"
-COMBINED = TABLES / "夜莺0.9字词表.txt"
+SINGLE = TABLES / "夜莺码v0.9.1单字版.txt"
+COMBINED = TABLES / "夜莺0.9.1字词表.txt"
 OUT = ROOT / "work" / "夜莺0.85" / "16_黄末根八影响评估"
 
 

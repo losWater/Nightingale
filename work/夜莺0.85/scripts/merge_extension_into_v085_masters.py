@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""把已审计扩展字写入0.9两张主表；运行前隔离备份原表。"""
+"""把已审计扩展字写入0.9.1两张主表；运行前隔离备份原表。"""
 
 from __future__ import annotations
 

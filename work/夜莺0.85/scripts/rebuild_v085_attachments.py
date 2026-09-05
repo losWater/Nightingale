@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""从0.9两张主表一键重建搜狗与手心派生表。"""
+"""从0.9.1两张主表一键重建搜狗与手心派生表。"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE = ROOT / "releases" / "v0.9"
+RELEASE = ROOT / "releases" / "v0.9.1"
 SCRIPTS = ROOT / "work" / "夜莺0.85" / "scripts"
 TABLES = RELEASE / "01_正式码表"
 ATTACHMENTS = RELEASE / "02_输入法挂接"
@@ -29,15 +29,15 @@ def main() -> None:
     args = parser.parse_args()
     run([
         str(SCRIPTS / "build_v085_code_first_mirror.py"),
-        "--source", str(TABLES / "夜莺0.9字词表.txt"),
-        "--output", str(TABLES / "夜莺0.9字词表_码前.txt"),
+        "--source", str(TABLES / "夜莺0.9.1字词表.txt"),
+        "--output", str(TABLES / "夜莺0.9.1字词表_码前.txt"),
     ])
     common = [
-        "--single", str(TABLES / "夜莺码v0.9单字版.txt"),
-        "--combined", str(TABLES / "夜莺0.9字词表.txt"),
+        "--single", str(TABLES / "夜莺码v0.9.1单字版.txt"),
+        "--combined", str(TABLES / "夜莺0.9.1字词表.txt"),
         "--quick", str(ROOT / "symbo.txt"),
-        "--short-words", str(TABLES / "夜莺码v0.9简词表.tsv"),
-        "--extension-characters", str(TABLES / "夜莺码v0.9扩展字表.tsv"),
+        "--short-words", str(TABLES / "夜莺码v0.9.1简词表.tsv"),
+        "--extension-characters", str(TABLES / "夜莺码v0.9.1扩展字表.tsv"),
     ]
     run([
         str(SCRIPTS / "build_v085_derived_tables_from_masters.py"),
@@ -46,17 +46,17 @@ def main() -> None:
     ])
     run([
         str(SCRIPTS / "build_v085_sogou_wubi_table.py"),
-        "--combined", str(TABLES / "夜莺0.9字词表.txt"),
-        "--extension-characters", str(TABLES / "夜莺码v0.9扩展字表.tsv"),
+        "--combined", str(TABLES / "夜莺0.9.1字词表.txt"),
+        "--extension-characters", str(TABLES / "夜莺码v0.9.1扩展字表.tsv"),
         "--quick", str(ROOT / "symbo.txt"),
-        "--output", str(ATTACHMENTS / "搜狗输入法" / "夜莺码v0.9搜狗五笔版.txt"),
+        "--output", str(ATTACHMENTS / "搜狗输入法" / "夜莺码v0.9.1搜狗五笔版.txt"),
     ])
     run([
         str(SCRIPTS / "build_v085_bingling_table.py"),
-        "--combined", str(TABLES / "夜莺0.9字词表.txt"),
-        "--extension-characters", str(TABLES / "夜莺码v0.9扩展字表.tsv"),
+        "--combined", str(TABLES / "夜莺0.9.1字词表.txt"),
+        "--extension-characters", str(TABLES / "夜莺码v0.9.1扩展字表.tsv"),
         "--quick", str(ROOT / "symbo.txt"),
-        "--output", str(ATTACHMENTS / "冰凌输入法" / "夜莺码v0.9冰凌词库.txt"),
+        "--output", str(ATTACHMENTS / "冰凌输入法" / "夜莺码v0.9.1冰凌词库.txt"),
     ])
     if not args.skip_palm:
         run([
@@ -64,7 +64,7 @@ def main() -> None:
             *common, "--output-dir", str(ATTACHMENTS / "手心输入法"),
         ])
         run([str(SCRIPTS / "build_v085_palm_modular_tables.py")])
-    print("0.9挂接表已由两张主表重建完成")
+    print("0.9.1挂接表已由两张主表重建完成")
 
 
 if __name__ == "__main__":

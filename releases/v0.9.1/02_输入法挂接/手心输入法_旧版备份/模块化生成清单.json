@@ -1,0 +1,28 @@
+{
+  "source": "releases\\v0.9.1\\手心输入法\\夜莺码v0.9.1电脑手心挂接.txt",
+  "source_rows": 172709,
+  "source_sha256": "a0b15e82827eba400f809393646c3e4c75faf8cd75d56b1e57f323d2cdc56bd3",
+  "outputs": {
+    "01_夜莺0.9.1_核心单字.txt": {
+      "rows": 13569,
+      "sha256": "5b839a113f29babd6e929d57c0d8eea09753882e524549b2845f45b7a6570ea2"
+    },
+    "02_夜莺0.9.1_普通词.txt": {
+      "rows": 77861,
+      "sha256": "ff396447b83f1e1e729ea922273fb2cefb4183bae5d29492e94a38f10e3055ca"
+    },
+    "03_夜莺0.9.1_简词.txt": {
+      "rows": 62469,
+      "sha256": "43d1460f830e7476e6753cf416c0f4f817e5b90932ef6eeb9326ca0c41d042f6"
+    },
+    "04_夜莺0.9.1_快符.txt": {
+      "rows": 40,
+      "sha256": "92a1b645f9a362e545cb11ac5054e6fe868f9ab2ce3a46dd4a7c0929b68e52cc"
+    },
+    "05_夜莺0.9.1_扩展字.txt": {
+      "rows": 18770,
+      "sha256": "925fcba8881e9a93b2a7ba5e47dda290311cd5ac1a95e6fe867e4656e2c7c9fe"
+    }
+  },
+  "reconstruction": "pass"
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""把普通字词底表与简词裁决表合并为完整的夜莺 0.9 字词主表。"""
+"""把普通字词底表与简词裁决表合并为完整的夜莺 0.9.1 字词主表。"""
 
 from __future__ import annotations
 
