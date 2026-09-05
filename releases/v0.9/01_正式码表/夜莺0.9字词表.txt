@@ -282,7 +282,7 @@
 丰富	ff
 风	fg
 覆盖	fg
-方	fh
+放	fh
 返回	fh
 发挥	fh
 非常	fi
@@ -6327,7 +6327,7 @@ Enter	ent
 防火墙	fhq
 孵化器	fhq
 发货人	fhr
-放	fhs
+方	fhs
 粉红色	fhs
 坊	fht
 烽火台	fht
@@ -75072,6 +75072,7 @@ id劝退	idqt
 䜛	ijdr
 铲断	ijdr
 颤动	ijds
+誗	ijds
 潺动	ijds
 成就大我	ijdw
 长街短巷	ijdx
@@ -75114,6 +75115,7 @@ id劝退	idqt
 鑱	ijgr
 饞	ijgr
 蟾宫	ijgs
+鋓	ijgs
 城际高铁	ijgt
 馋鬼	ijgv
 鏟	ijgw
@@ -86781,6 +86783,7 @@ ip正确	ipvq
 锯齿	juii
 及时处理	juil
 凥	juin
+居	juip
 介绍产品	juip
 冣	juiq
 据传	juir
@@ -86792,6 +86795,7 @@ ip正确	ipvq
 建设成为	juiw
 技术创新	juix
 积水成渊	juiy
+鶋	juiy
 窭	juiz
 屦	juiz
 寠	juiz
@@ -86928,6 +86932,7 @@ ip正确	ipvq
 巨魔	jumo
 锯末	jumo
 俱灭	jump
+蜛	jump
 举目	jumu
 巨幕	jumu
 驾驶模式	jumu
@@ -87013,6 +87018,7 @@ ip正确	ipvq
 居前	juqm
 狊	juqn
 郹	juqp
+䝻	juqp
 锯切	juqp
 具且	juqp
 䀠	juqq
@@ -87131,6 +87137,7 @@ ip正确	ipvq
 解释说明	juum
 据说	juuo
 技术水平	juup
+裾	juup
 极少数人	juur
 剪水双瞳	juut
 袓	juut
@@ -87211,6 +87218,8 @@ ip正确	ipvq
 巪	juwo
 据我	juwo
 邭	juwp
+䅕	juwp
+䵕	juwp
 䢹	juwp
 䅓	juwq
 精神污染	juwr
@@ -87293,6 +87302,8 @@ ip正确	ipvq
 见上一面	juym
 鼳	juyn
 计生用品	juyp
+崌	juyp
+䱟	juyp
 精神药品	juyp
 剧院	juyr
 假手于人	juyr
@@ -95033,6 +95044,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 雳	licp
 悧	licr
 㤡	lics
+悧	lics
 䮋	lics
 力促	licu
 骊	licy
@@ -95096,6 +95108,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 礼佛	lifo
 俐	lifr
 例	lifs
+俐	lifs
 礼服	lifu
 梨脯	lifu
 俪	lify
@@ -95128,6 +95141,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 琍	ligr
 礼官	ligr
 立功	ligs
+琍	ligs
 理工	ligs
 厉鬼	ligv
 㕸	liha
@@ -95321,6 +95335,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 䬆	linr
 鬁	linr
 里弄	lins
+䬆	lins
+鬁	lins
 鸝	liny
 婯	linz
 盠	lioa
@@ -95347,6 +95363,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 栛	liop
 梸	lior
 劙	lios
+梸	lios
 㯤	lipa
 犁耙	lipa
 礼品	lipb
@@ -95447,6 +95464,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 痢	lisr
 理算	lisr
 历算	lisr
+痢	liss
 刕	liss
 㾐	liss
 礼俗	lisu
@@ -95538,8 +95556,11 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 利爪	livx
 临床治愈	livy
 黎	liwb
+㴝	liwb
 䅻	liwb
+犁	liwc
 䵓	liwc
+悡	liwc
 犂	liwc
 例外	liwd
 里外	liwd
@@ -95551,8 +95572,11 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 理完	liwj
 流程文件	liwj
 錅	liwk
+鋫	liwk
 穲	liwk
 䖿	liwm
+䖽	liwm
+梨	liwo
 离我	liwo
 棃	liwo
 觻	liwo
@@ -95562,6 +95586,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 䴻	liwq
 睝	liwq
 黧	liwr
+䵩	liwr
+利	liws
 剓	liws
 立场问题	liwt
 䴡	liwt
@@ -95571,6 +95597,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 秝	liww
 立委	liww
 鯬	liwy
+䱘	liwy
 鵹	liwy
 莅	lixa
 苙	lixa
@@ -95612,6 +95639,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 沥血	lixp
 离休	lixq
 莉	lixr
+莉	lixs
 茘	lixs
 力学	lixt
 理学	lixt
@@ -95661,6 +95689,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 峲	liyr
 鯏	liyr
 利用	liys
+峲	liys
+鯏	liys
 峢	liys
 剺	liys
 立约	liyt
@@ -95703,6 +95733,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 赲	lizp
 娳	lizr
 理综	lizs
+娳	lizs
 李总	lizs
 立足	lizu
 黎族	lizu
@@ -121270,6 +121301,7 @@ QQ音乐	qqyy
 取件	qujm
 磲	qujo
 曲解	qujp
+䋧	qujp
 去接	qujp
 去救	qujq
 亲上加亲	qujq
@@ -195013,6 +195045,7 @@ Word	word
 聚德	jude
 巨鼎	judk
 剧跌	judp
+䛯	judp
 菊豆	judz
 焗豆	judz
 遽尔	juer
@@ -195024,6 +195057,7 @@ Word	word
 拒婚	juhy
 巨吼	juhz
 巨潮	juic
+剧	juis
 巨虫	juis
 巨锤	juiv
 巨卡	juka
@@ -196847,6 +196881,7 @@ Word	word
 力破	lipo
 里热	lire
 理容	lirs
+筣	lirs
 离殇	liuh
 立刷	liux
 离着	live
@@ -211187,3 +211222,21 @@ Word	word
 揍我	zzwo
 走呀	zzya
 困觉	kyjn
+浰	libs
+浰	lmbs
+猁	livs
+脷	livs
+蜊	lims
+䂰	lajs
+唎	lihs
+涺	jubp
+艍	juep
+倨	jufp
+琚	jugp
+鋸	jugp
+啹	juhp
+锯	jukp
+椐	juop
+腒	juvp
+踞	juzp
+婮	juzp

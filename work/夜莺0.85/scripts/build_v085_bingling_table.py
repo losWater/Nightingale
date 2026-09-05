@@ -16,7 +16,7 @@ RARE_FREQUENCY = 11
 HEADER_LINES = (
     "[CODETABLEHEADER]",
     "Name=夜莺码词库",
-    "Version=0.9|{stamp}",
+    "Version=0.9.1|{stamp}",
     "Author=nightingale",
     "CodeScheme=夜莺码0.9[夜莺]",
     "CodeLength=4",

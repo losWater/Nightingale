@@ -282,7 +282,7 @@ ff	方法
 ff	丰富
 fg	风
 fg	覆盖
-fh	方
+fh	放
 fh	返回
 fh	发挥
 fi	非常
@@ -6327,7 +6327,7 @@ fhq	昉
 fhq	防火墙
 fhq	孵化器
 fhr	发货人
-fhs	放
+fhs	方
 fhs	粉红色
 fht	坊
 fht	烽火台
@@ -75072,6 +75072,7 @@ ijdr	讒
 ijdr	䜛
 ijdr	铲断
 ijds	颤动
+ijds	誗
 ijds	潺动
 ijdw	成就大我
 ijdx	长街短巷
@@ -75114,6 +75115,7 @@ ijgr	鋓
 ijgr	鑱
 ijgr	饞
 ijgs	蟾宫
+ijgs	鋓
 ijgt	城际高铁
 ijgv	馋鬼
 ijgw	鏟
@@ -86781,6 +86783,7 @@ juih	净身出户
 juii	锯齿
 juil	及时处理
 juin	凥
+juip	居
 juip	介绍产品
 juiq	冣
 juir	据传
@@ -86792,6 +86795,7 @@ juiu	居处
 juiw	建设成为
 juix	技术创新
 juiy	积水成渊
+juiy	鶋
 juiz	窭
 juiz	屦
 juiz	寠
@@ -86928,6 +86932,7 @@ jumo	句末
 jumo	巨魔
 jumo	锯末
 jump	俱灭
+jump	蜛
 jumu	举目
 jumu	巨幕
 jumu	驾驶模式
@@ -87013,6 +87018,7 @@ juqm	拒签
 juqm	居前
 juqn	狊
 juqp	郹
+juqp	䝻
 juqp	锯切
 juqp	具且
 juqq	䀠
@@ -87131,6 +87137,7 @@ juul	襷
 juum	解释说明
 juuo	据说
 juup	技术水平
+juup	裾
 juur	极少数人
 juut	剪水双瞳
 juut	袓
@@ -87211,6 +87218,8 @@ juwm	精神文明
 juwo	巪
 juwo	据我
 juwp	邭
+juwp	䅕
+juwp	䵕
 juwp	䢹
 juwq	䅓
 juwr	精神污染
@@ -87293,6 +87302,8 @@ juym	技术移民
 juym	见上一面
 juyn	鼳
 juyp	计生用品
+juyp	崌
+juyp	䱟
 juyp	精神药品
 juyr	剧院
 juyr	假手于人
@@ -95033,6 +95044,7 @@ lico	慄
 licp	雳
 licr	悧
 lics	㤡
+lics	悧
 lics	䮋
 licu	力促
 licy	骊
@@ -95096,6 +95108,7 @@ lifo	傈
 lifo	礼佛
 lifr	俐
 lifs	例
+lifs	俐
 lifu	礼服
 lifu	梨脯
 lify	俪
@@ -95128,6 +95141,7 @@ ligr	立管
 ligr	琍
 ligr	礼官
 ligs	立功
+ligs	琍
 ligs	理工
 ligv	厉鬼
 liha	㕸
@@ -95321,6 +95335,8 @@ linp	邐
 linr	䬆
 linr	鬁
 lins	里弄
+lins	䬆
+lins	鬁
 liny	鸝
 linz	婯
 lioa	盠
@@ -95347,6 +95363,7 @@ liop	朸
 liop	栛
 lior	梸
 lios	劙
+lios	梸
 lipa	㯤
 lipa	犁耙
 lipb	礼品
@@ -95447,6 +95464,7 @@ lisq	曆
 lisr	痢
 lisr	理算
 lisr	历算
+liss	痢
 liss	刕
 liss	㾐
 lisu	礼俗
@@ -95538,8 +95556,11 @@ livv	临床症状
 livx	利爪
 livy	临床治愈
 liwb	黎
+liwb	㴝
 liwb	䅻
+liwc	犁
 liwc	䵓
+liwc	悡
 liwc	犂
 liwd	例外
 liwd	里外
@@ -95551,8 +95572,11 @@ liwj	力挽
 liwj	理完
 liwj	流程文件
 liwk	錅
+liwk	鋫
 liwk	穲
 liwm	䖿
+liwm	䖽
+liwo	梨
 liwo	离我
 liwo	棃
 liwo	觻
@@ -95562,6 +95586,8 @@ liwp	䅄
 liwq	䴻
 liwq	睝
 liwr	黧
+liwr	䵩
+liws	利
 liws	剓
 liwt	立场问题
 liwt	䴡
@@ -95571,6 +95597,7 @@ liww	立威
 liww	秝
 liww	立委
 liwy	鯬
+liwy	䱘
 liwy	鵹
 lixa	莅
 lixa	苙
@@ -95612,6 +95639,7 @@ lixp	里写
 lixp	沥血
 lixq	离休
 lixr	莉
+lixs	莉
 lixs	茘
 lixt	力学
 lixt	理学
@@ -95661,6 +95689,8 @@ liyr	梨园
 liyr	峲
 liyr	鯏
 liys	利用
+liys	峲
+liys	鯏
 liys	峢
 liys	剺
 liyt	立约
@@ -95703,6 +95733,7 @@ lizp	励
 lizp	赲
 lizr	娳
 lizs	理综
+lizs	娳
 lizs	李总
 lizu	立足
 lizu	黎族
@@ -121270,6 +121301,7 @@ qujm	区间
 qujm	取件
 qujo	磲
 qujp	曲解
+qujp	䋧
 qujp	去接
 qujq	去救
 qujq	亲上加亲
@@ -195013,6 +195045,7 @@ judc	举刀
 jude	聚德
 judk	巨鼎
 judp	剧跌
+judp	䛯
 judz	菊豆
 judz	焗豆
 juer	遽尔
@@ -195024,6 +195057,7 @@ juhu	巨虎
 juhy	拒婚
 juhz	巨吼
 juic	巨潮
+juis	剧
 juis	巨虫
 juiv	巨锤
 juka	巨卡
@@ -196847,6 +196881,7 @@ lipo	力魄
 lipo	力破
 lire	里热
 lirs	理容
+lirs	筣
 liuh	离殇
 liux	立刷
 live	离着
@@ -211187,3 +211222,21 @@ zzwd	走歪
 zzwo	揍我
 zzya	走呀
 kyjn	困觉
+libs	浰
+lmbs	浰
+livs	猁
+livs	脷
+lims	蜊
+lajs	䂰
+lihs	唎
+jubp	涺
+juep	艍
+jufp	倨
+jugp	琚
+jugp	鋸
+juhp	啹
+jukp	锯
+juop	椐
+juvp	腒
+juzp	踞
+juzp	婮

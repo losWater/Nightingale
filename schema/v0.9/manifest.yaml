@@ -1,5 +1,5 @@
 schema_version: 1
-version: 0.9
+version: 0.9.1
 status: frozen
 layout: G8C12
 
@@ -16,7 +16,7 @@ sources:
   quick_symbols: symbo.txt
   ordinary_word_order: "releases/v0.9/99_参考资料/参考/简单鹤V9.3.0纯词库 (1).txt"   # ADR-0003：四码普通词内容与词序来源（只取顺序，词码按夜莺规则重编）
   word_code_fixes: releases/v0.9/05_维护与裁决/多音词纠错建议_第一批.tsv
-  practice_issues: releases/v0.9/05_维护与裁决/实战时发现的问题.txt
+  practice_issues: releases/v0.9/05_维护与裁决/实战发现的问题.txt
   practice_parameters: releases/v0.9/05_维护与裁决/实战问题机器参数.tsv
 
 derived:

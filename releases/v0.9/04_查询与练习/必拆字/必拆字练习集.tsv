@@ -258,8 +258,8 @@
 257	n	⺆	周字框	附属根	几	首	周	zhōu	⺆ ＋ 土 ＋ 口	vznh	vz	7
 258	m	龷	龷	附属根	廿	首	共	gòng	龷 ＋ 八	gsma	gsm	9
 259	o	𠂤	追字心	主根	追字心	首	追	zhuī	𠂤 ＋ 辶	vvop	vv	2
-260	r	利	利	主根	利	首	犁	lí	利 ＋ 牛	lirc	lirc	3
-261	r	利	利	主根	利	末	利	lì	利	lirr	lir	7
+260	r	利	利	主根	利	首	犁	lí	利 ＋ 牛	lirc liwc	lirc liwc	3
+261	r	利	利	主根	利	末	利	lì	利	lirr liws	lir	7
 262	i	戶	戶	附属根	尸	首	所	suǒ	戶 ＋ 斤	soiy	s	1
 263	a	乔	乔	附属根	竖	首	乔	qiáo	乔	qnaa	qna	1
 264	a	乔	乔	附属根	竖	末	桥	qiáo	木 ＋ 乔	qnoa	qn	11
@@ -349,7 +349,7 @@
 348	n	非	非	附属根	片	末	非	fēi	非	fwnn	fw	24
 349	t	弗	弗	主根	弗	首	艴	bó	弗 ＋ ⺈ ＋ 巴	botv	bot	3
 350	t	弗	弗	主根	弗	末	佛	fó	亻 ＋ 弗	foft fuft	fo	9
-351	d	居	居	主根	居	首	剧	jù	居 ＋ 刂	juds	jud	2
+351	d	居	居	主根	居	首	剧	jù	居 ＋ 刂	juds juis	jud	2
 352	d	居	居	主根	居	末	据	jù	扌 ＋ 居	juld	ju	10
 353	t	龴	龴	附属根	厶	首	通	tōng / tòng	龴 ＋ 冂 ＋ 举字底 ＋ 辶	tstp	tst	4
 354	t	匕	匕	主根	匕	首	鸨	bǎo	匕 ＋ 十 ＋ 鸟	bcty	bct	6
@@ -359,7 +359,7 @@
 358	e	舟	舟	锚定根	车	首	航	háng	舟 ＋ 亠 ＋ 几	hhen	hh	37
 359	e	舟	舟	锚定根	车	末	舟	zhōu	舟	vzee	vzee	2
 360	c	⺧	告字头	附属根	牛	首	先	xiān	⺧ ＋ 儿	xmca	xm	9
-361	q	攵	攵	附属根	又	末	嫩	nèn	女 ＋ 束 ＋ 攵	nfzq	nf	87
+361	q	攵	攵	附属根	又	末	放	fàng	方 ＋ 攵	fhsq	fh	87
 362	p	卩	卩	主根	卩	末	却	què	土 ＋ 厶 ＋ 卩	qttp	qt	10
 363	r	戈	戈	主根	戈	首	或	huò	戈 ＋ 口 ＋ 一	horn	ho	7
 364	r	戈	戈	主根	戈	末	哦	ó / ò	口 ＋ 撇 ＋ 横 ＋ 折 ＋ 横 ＋ 戈	eehr oohr	o	32
@@ -563,8 +563,8 @@
 562	k	臣	臣	主根	臣	首	臣	chén	臣	ifkk	ifk	2
 563	k	臣	臣	主根	臣	末	藏	cáng / zàng	艹 ＋ 臧字框 ＋ 臣	chxk zhxk	ch	4
 564	p	变字头	变字头	主根	变字头	首	变	biàn	变字头 ＋ 又	bmpq	bmp	12
-565	s	方	方	主根	方	首	放	fàng	方 ＋ 攵	fhsq	fhs	21
-566	s	方	方	主根	方	末	方	fāng	方	fhss	fh	38
+565	s	方	方	主根	方	首	方	fāng	方	fhss	fhs	21
+566	s	方	方	主根	方	末	谤	bàng	讠 ＋ 帝字头 ＋ 方	bhds	bhd	38
 567	s	暴	暴	主根	暴	首	暴	bào	暴	bcss	bcs	1
 568	s	暴	暴	主根	暴	末	瀑	pù	氵 ＋ 暴	bcbs pubs	bcb	4
 569	e	車	車	附属根	车	首	墼	jī	車 ＋ 凵 ＋ 殳 ＋ 土	jiet	jiet	1

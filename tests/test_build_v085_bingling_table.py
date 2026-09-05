@@ -39,7 +39,7 @@ class BinglingTableTests(unittest.TestCase):
     def test_render_is_crlf_with_header_and_rules(self):
         mod = load_module()
         text = mod.render([("aa", "首", 9999)], "260902")
-        self.assertIn("Version=0.9|260902\r\n", text)
+        self.assertIn("Version=0.9.1|260902\r\n", text)
         self.assertIn("PhraseRule=3\r\npa2=w11w12w21w22\r\npa3=w11w21w31\r\npe4=w11w21w31r11\r\n[CODETABLE]\r\n", text)
         self.assertTrue(text.endswith("aa\t首\t9999\r\n"))
         self.assertNotIn("\n", text.replace("\r\n", ""))

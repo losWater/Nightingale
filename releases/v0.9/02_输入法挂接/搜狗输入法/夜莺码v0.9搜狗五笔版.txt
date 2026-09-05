@@ -320,7 +320,7 @@ ff	方法
 ff	丰富
 fg	风
 fg	覆盖
-fh	方
+fh	放
 fh	返回
 fh	发挥
 fi	非常
@@ -6366,7 +6366,7 @@ fhq	昉
 fhq	防火墙
 fhq	孵化器
 fhr	发货人
-fhs	放
+fhs	方
 fhs	粉红色
 fht	坊
 fht	烽火台
@@ -80203,6 +80203,7 @@ juih	巨长
 juih	净身出户
 juii	锯齿
 juil	及时处理
+juip	居
 juip	介绍产品
 juir	据传
 juir	拘传
@@ -80492,6 +80493,7 @@ juul	精神胜利
 juum	解释说明
 juuo	据说
 juup	技术水平
+juup	裾
 juur	极少数人
 juut	剪水双瞳
 juuu	拘束
@@ -80633,6 +80635,7 @@ juyl	既生瑜何生亮
 juym	技术移民
 juym	见上一面
 juyp	计生用品
+juyp	崌
 juyp	精神药品
 juyr	剧院
 juyr	假手于人
@@ -87554,6 +87557,7 @@ lifo	傈
 lifo	礼佛
 lifr	俐
 lifs	例
+lifs	俐
 lifu	礼服
 lifu	梨脯
 lify	俪
@@ -87789,6 +87793,7 @@ lisp	历
 lisr	痢
 lisr	理算
 lisr	历算
+liss	痢
 lisu	礼俗
 lisw	临床死亡
 lita	利他
@@ -87862,6 +87867,7 @@ livv	临床症状
 livx	利爪
 livy	临床治愈
 liwb	黎
+liwc	犁
 liwd	例外
 liwd	里外
 liwd	龙场悟道
@@ -87869,9 +87875,11 @@ liwf	李玟
 liwj	力挽
 liwj	理完
 liwj	流程文件
+liwo	梨
 liwo	离我
 liwo	梨涡
 liwr	黧
+liws	利
 liwt	立场问题
 liwu	礼物
 liwu	里屋
@@ -87903,6 +87911,7 @@ lixp	里写
 lixp	沥血
 lixq	离休
 lixr	莉
+lixs	莉
 lixt	力学
 lixt	理学
 lixw	六畜兴旺
@@ -176357,6 +176366,7 @@ juhu	巨虎
 juhy	拒婚
 juhz	巨吼
 juic	巨潮
+juis	剧
 juis	巨虫
 juiv	巨锤
 juka	巨卡
@@ -192456,4 +192466,14 @@ zzwd	走歪
 zzwo	揍我
 zzya	走呀
 kyjn	困觉
+libs	浰
+lmbs	浰
+livs	猁
+lims	蜊
+jufp	倨
+jugp	琚
+jukp	锯
+juop	椐
+juvp	腒
+juzp	踞
 xing	彳亍
