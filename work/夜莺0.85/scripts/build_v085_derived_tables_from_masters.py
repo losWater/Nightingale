@@ -152,6 +152,18 @@ def write(path: Path, lines: list[str]) -> None:
     path.write_bytes(("\n".join(lines) + "\n").encode("utf-8"))
 
 
+def explicit_word_order(lines: list[str], source: OrderedDict[str, list[str]], codes: list[str]) -> list[str]:
+    """显式导出选定四码位，完整继承主表顺序，避免普通词被过滤。"""
+    for code in codes:
+        if len(code) != 4 or not code.isascii() or not code.isalpha() or not code.islower() or code not in source:
+            raise ValueError(f"非法搜狗词序覆盖码位：{code}")
+    selected = set(codes)
+    result = [line for line in lines if not line or line.startswith(';') or line.split(',', 1)[0] not in selected]
+    for code in dict.fromkeys(codes):
+        result.extend(f"{code},{rank}={text}" for rank, text in enumerate(source[code], 1))
+    return result
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -200,6 +212,12 @@ def main() -> None:
     # 搜狗完整词库版受十万条上限约束，仍不写简词；简词只进入无二字词版。
     # 先按完整主表确定候选序号，再省略词；不可预先过滤简词，否则单字会错误前移。
     combined_sogou = render_sogou(combined_slots, [], True)
+    order_path = args.release_dir / "05_维护与裁决" / "搜狗显式词序码位.txt"
+    order_codes = [line.strip() for line in order_path.read_text(encoding="utf-8-sig").splitlines()
+                   if line.strip() and not line.lstrip().startswith('#')] if order_path.is_file() else []
+    complete_slots = slots(combined_rows)
+    single_sogou = explicit_word_order(single_sogou, complete_slots, order_codes)
+    combined_sogou = explicit_word_order(combined_sogou, complete_slots, order_codes)
     single_quick = add_quick(single_sogou, quick, True)
     combined_quick = add_quick(combined_sogou, quick, False)
     outputs = {
@@ -207,6 +225,7 @@ def main() -> None:
         "夜莺码v0.9.1无二字词版_搜狗_含快符.txt": single_quick,
         "夜莺码v0.9.1挂接字词版_搜狗词库.txt": combined_sogou,
         "夜莺码v0.9.1挂接字词版_搜狗词库_含快符.txt": combined_quick,
+        "夜莺码v0.9.1搜狗词序补丁.txt": explicit_word_order([], complete_slots, order_codes),
     }
     for name, lines in outputs.items():
         write(output_dir / name, lines)
@@ -221,6 +240,8 @@ def main() -> None:
         source_key(args.quick, repository): sha256(args.quick),
         source_key(args.short_words, repository): sha256(args.short_words),
     }
+    if order_path.is_file():
+        manifest["derived_from_masters"][source_key(order_path, repository)] = sha256(order_path)
     for name in list(manifest["outputs"]):
         output_path = args.release_dir / name
         if output_path.exists():

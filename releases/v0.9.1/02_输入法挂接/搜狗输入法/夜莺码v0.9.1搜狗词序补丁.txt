@@ -1,0 +1,4 @@
+yige,1=一个
+yige,2=一哥
+yige,3=亿个
+yige,4=已隔

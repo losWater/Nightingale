@@ -1671,8 +1671,8 @@
 苟=xh
 岣=yh
 姤=zh
-购=zt
 媾=zt
+购=zt
 哈=hh
 铪=kh
 濠=be
@@ -2450,9 +2450,9 @@
 巾=aa
 馑=aw
 浕=ba
-浸=bq
-溍=bq
 津=bq
+溍=bq
+浸=bq
 谨=dw
 劲=ep
 仅=fq
@@ -5744,8 +5744,8 @@
 谂=dc
 甡=ew
 侁=fa
-伸=fp
 什=fp
+伸=fp
 珅=gp
 哂=he
 呻=hp
@@ -6094,8 +6094,8 @@
 赭=tq
 褶=uy
 蔗=xr
-帧=az
 贞=az
+帧=az
 浈=bz
 震=ck
 诊=de
@@ -6269,8 +6269,8 @@
 踯=zp
 跱=zy
 踬=zz
-站=ah
 占=ah
+站=ah
 𫗴=an
 战=ar
 沾=bh
