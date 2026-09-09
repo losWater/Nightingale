@@ -14,7 +14,8 @@ from pathlib import Path
 import yaml
 
 
-STROKE_NAMES = {"横", "竖", "撇", "点", "折"}
+STROKE_CODES = {"横": "1", "竖": "2", "撇": "3", "点": "4", "折": "5"}
+STROKE_NAMES = set(STROKE_CODES)
 DEFAULT_PRESENTATION_NAMES = {"卧人": "每字头", "印字旁": "印左边"}
 
 
@@ -110,7 +111,7 @@ def main() -> None:
     roots_by_key: dict[str, list[str]] = defaultdict(list)
     for host, attached in root_yaml["roots"].items():
         host = str(host)
-        key = trace_key(mapping, resolve(host))
+        key = trace_key(mapping, STROKE_CODES.get(host, resolve(host)))
         if not key:
             continue
         rows = [(host, "主根", host)] + [(str(x), "附属根", host) for x in (attached or [])]
@@ -123,7 +124,7 @@ def main() -> None:
             root_items.append({"name": present(name), "formal_name": name, "key": key, "role": role, "host": present(owner), "glyph": resolve(name)})
     for host, children in (root_yaml.get("anchors") or {}).items():
         host = str(host)
-        key = trace_key(mapping, resolve(host))
+        key = trace_key(mapping, STROKE_CODES.get(host, resolve(host)))
         if not key:
             continue
         for child in children or []:
