@@ -6,7 +6,7 @@ function setRootView(compact) {
   compactButton.setAttribute('aria-pressed', String(compact));
   fullButton.setAttribute('aria-pressed', String(!compact));
   document.querySelector('#merge-list').hidden = !compact;
-  document.querySelector('.root-guide p').textContent = compact ? '主根键盘 · 金色为横、竖、撇、折、点 · 归并部件见下方小字表' : '大字为主根 · 小字为附属根 · 金色为五个笔画 · 锚定同键单独标注';
+  document.querySelector('.root-guide p').textContent = compact ? '主根键盘 · 金色为横、竖、撇、折、点 · 归并根见下方归并字根表' : '主根与归并根使用同一键位 · 金色为五个笔画 · 锚定同键单独标注';
 }
 compactButton.addEventListener('click', () => setRootView(true));
 fullButton.addEventListener('click', () => setRootView(false));
