@@ -33,3 +33,5 @@
 .author-section h2{margin-top:0}
 .author-entry{display:block;padding:28px 30px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}.author-entry:hover{border-color:var(--accent)}.author-entry>span{font-size:14px;color:var(--muted)}.author-entry h3{font-size:25px;font-weight:500;margin:12px 0}.author-entry h3 b{float:right;font-weight:400;color:var(--accent)}.author-entry strong{display:block;margin-top:20px;color:var(--accent);font-size:15px;font-weight:500}
 @media(max-width:640px){.author-section{grid-template-columns:1fr;gap:18px}.author-empty{padding:22px}.header nav{gap:10px;flex-wrap:wrap}}
+
+footer .community{font-size:16px;color:var(--text);line-height:1.8}footer .community strong{color:var(--accent);white-space:nowrap}
