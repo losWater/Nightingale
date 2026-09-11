@@ -4,11 +4,11 @@ import zipfile, shutil, hashlib, json
 
 ROOT = Path(__file__).resolve().parents[3]
 B = ROOT / 'work/rime_v1'
-OUT = ROOT / '.tmp/lookup-release'
+OUT = ROOT / '.tmp/f2-release'
 OUT.mkdir(parents=True, exist_ok=True)
 for kind, label in [('main', '主力V5版'), ('light', '轻量版')]:
-    target = OUT / f'Nightingale-Rime-1.0-{kind}-lookup-20260911.zip'
-    overrides = [f'yeying_{kind}.schema.yaml', 'lua/yeying_mix.lua', 'lua/yeying_lookup.lua', 'lua/yeying_lookup_data.lua']
+    target = OUT / f'Nightingale-Rime-1.0-{kind}-f2-20260911.zip'
+    overrides = [f'yeying_{kind}.schema.yaml', 'lua/yeying_mix.lua', 'lua/yeying_lookup.lua', 'lua/yeying_lookup_data.lua', 'lua/yeying_lookup_key.lua']
     with zipfile.ZipFile(B / 'dist' / f'夜莺Rime1.0_{label}_test1.zip') as old, zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as new:
         for entry in old.infolist():
             if entry.filename in ['user.yaml', 'default.custom.yaml.example', '使用说明.md']: continue
@@ -25,6 +25,8 @@ for kind, label in [('main', '主力V5版'), ('light', '轻量版')]:
         notes += '\n\n本次网站发布包同时提供形码模式（固定码表、四码定长、五码顶屏）；主力包包含主力、轻量和形码三个方案，轻量包包含轻量和形码两个方案。形码模式不使用整句模型。\n'
         notes += '全新安装可按示例配置方案列表；已有配置请合并 schema_list，避免覆盖个人设置。本包不包含个人学习数据。\n'
         notes += '\n拆分反查：输入 ~ 或反引号，再输入全拼或小鹤双拼，如 ~han、~hj。候选旁显示规范拆分与四码。空格或数字选字，Esc取消；三个方案均支持，查询不调用整句模型。\n'
+        notes += '\nF2 核心字查询：输入两位双拼或三码（如 yc、ycb）后按 F2，仅显示该读音的核心字、拆分与编码；支持翻页，再按 F2 返回普通候选，Esc 取消。三个方案均支持。\n'
+        notes += '\n开启后继续输入或退格会按当前编码持续筛选（例如 yc → F2 → b，筛选 ycb）；选字上屏后退出，再按 F2 保留当前编码恢复普通模式。\n'
         new.writestr('使用说明.md', notes)
     with zipfile.ZipFile(target) as z: assert z.testzip() is None and 'user.yaml' not in z.namelist()
     print(target.name, target.stat().st_size, flush=True)
@@ -35,5 +37,5 @@ with zipfile.ZipFile(palm, 'w', zipfile.ZIP_DEFLATED) as z:
         if path.is_file(): z.write(path, '手心输入法/' + path.relative_to(source).as_posix())
 with zipfile.ZipFile(palm) as z: assert z.testzip() is None
 lines = [hashlib.sha256(p.read_bytes()).hexdigest() + '  ' + p.name for p in sorted(OUT.glob('*.zip'))]
-(OUT / 'SHA256SUMS-lookup-20260911.txt').write_text('\n'.join(lines)+'\n', encoding='utf-8')
+(OUT / 'SHA256SUMS-f2-20260911.txt').write_text('\n'.join(lines)+'\n', encoding='utf-8')
 print('Packages verified.', flush=True)

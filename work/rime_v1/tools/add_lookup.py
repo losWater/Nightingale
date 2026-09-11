@@ -6,6 +6,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[3]
 BASE = ROOT / 'work/rime_v1'
 splits = {}
+core = {row['汉字'] for row in csv.DictReader((ROOT/'releases/v1.0/03_字根与拆分/夜莺鹤1.0拆分表.txt').open(encoding='utf-8-sig'), delimiter='\t')}
 for path in [ROOT/'work/夜莺0.85/10_扩展字Chai实验/20260830_034806+1000/扩展字规范拆分_候选.tsv', ROOT/'releases/v1.0/03_字根与拆分/夜莺鹤1.0拆分表.txt']:
     for row in csv.DictReader(path.open(encoding='utf-8-sig'), delimiter='\t'):
         splits[row['汉字']] = row['最终规范拆分']
@@ -42,7 +43,7 @@ for kind in ('main','light'):
         char,code,weight=fields[:3]
         if len(char)!=1 or len(code)!=4 or char not in splits: continue
         key=(code[:2],char)
-        if key not in items: items[key]=[char,splits[char],[],int(weight)]
+        if key not in items: items[key]=[char,splits[char],[],int(weight),1 if char in core else 0]
         items[key][2].append(code)
         items[key][3]=max(items[key][3],int(weight))
     data={}
@@ -56,13 +57,16 @@ for kind in ('main','light'):
     (pkg/'lua').mkdir(exist_ok=True)
     (pkg/'lua/yeying_lookup_data.lua').write_text('return '+lua({'sounds':data,'pinyin':syllables})+'\n',encoding='utf-8')
     (pkg/'lua/yeying_lookup.lua').write_text((BASE/'tools/yeying_lookup.lua').read_text(encoding='utf-8'),encoding='utf-8')
+    (pkg/'lua/yeying_lookup_key.lua').write_text((BASE/'tools/yeying_lookup_key.lua').read_text(encoding='utf-8'),encoding='utf-8')
     for schema in pkg.glob('yeying_*.schema.yaml'):
         config=yaml.safe_load(schema.read_text(encoding='utf-8'))
         if 'engine' not in config: continue
         translators=config['engine']['translators']
         entry='lua_translator@*yeying_lookup'
         if entry not in translators: translators.insert(0,entry)
-        config.setdefault('recognizer',{}).setdefault('patterns',{})['yeying_lookup']='^[`~][a-z]*$'
+        processors=config['engine']['processors']
+        if 'lua_processor@*yeying_lookup_key' not in processors: processors.insert(0,'lua_processor@*yeying_lookup_key')
+        config.setdefault('recognizer',{}).setdefault('patterns',{})['yeying_lookup']='^([`~][a-z]*|~~[a-z]*)$'
         schema.write_text(yaml.safe_dump(config,allow_unicode=True,sort_keys=False),encoding='utf-8')
     # Even if a segment has the abc tag, lookup must bypass sentence decoding.
     p=pkg/'lua/yeying_mix.lua';s=p.read_text(encoding='utf-8')
