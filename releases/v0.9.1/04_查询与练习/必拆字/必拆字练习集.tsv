@@ -105,7 +105,7 @@
 104	z	缶	缶	附属根	击	首	缸	gāng	缶 ＋ 工	ghze	ghz	5
 105	z	缶	缶	附属根	击	末	缶	fǒu	缶	fzzz	fzz	20
 106	a	囱字框	囱字框	附属根	向	首	粤	yuè	囱字框 ＋ 米 ＋ 一 ＋ 折	ytao	yta	1
-107	w	见二	见二	附属根	匚	首	典	diǎn	见二 ＋ 龷 ＋ 八	dmwa	dmw	8
+107	w	贝字框	贝字框	附属根	匚	首	典	diǎn	贝字框 ＋ 龷 ＋ 八	dmwa	dmw	8
 108	u	民	民	主根	民	首	愍	mǐn	民 ＋ 攵 ＋ 心	mbuc	mbu	2
 109	u	民	民	主根	民	末	民	mín	民	mbuu	mb	8
 110	v	韦	韦	主根	韦	首	韧	rèn	韦 ＋ 刀 ＋ 丶	rfva	rfv	6
@@ -465,7 +465,7 @@
 464	s	刀	刀	主根	刀	首	刀	dāo	刀	dcss	dcs	7
 465	s	刀	刀	主根	刀	末	分	fēn / fèn	八 ＋ 刀	ffas	ff	32
 466	a	皿	皿	主根	皿	首	皿	mǐn	皿	mbaa	mba	1
-467	a	皿	皿	主根	皿	末	盎	àng	见二 ＋ 大 ＋ 皿	ahwa	ahw	68
+467	a	皿	皿	主根	皿	末	盎	àng	贝字框 ＋ 大 ＋ 皿	ahwa	ahw	68
 468	k	龰	走下	附属根	定字底	末	捷	jié	扌 ＋ 一 ＋ 肀 ＋ 龰	jplk	jpl	7
 469	e	𠂆	反字框	附属根	撇	首	后	hòu	𠂆 ＋ 一 ＋ 口	hzeh	hz	13
 470	y	才	才	附属根	寸	首	鼒	zī	才 ＋ 目 ＋ 折 ＋ 一 ＋ 丿 ＋ 丨 ＋ 一 ＋ 丨 ＋ 折	ziyo	ziyo	2
@@ -649,7 +649,7 @@
 648	n	大	大	主根	大	末	大	dà	大	dann ddnn	da	121
 649	y	出	出	附属根	山	首	粜	tiào	出 ＋ 米	tnyd	tny	4
 650	y	出	出	附属根	山	末	出	chū	出	iuyy	iu	16
-651	a	丨	丨	附属根	竖	首	凹	āo	丨 ＋ 折 ＋ 见二 ＋ 一	aoan	aoa	5
+651	a	丨	丨	附属根	竖	首	凹	āo	丨 ＋ 折 ＋ 贝字框 ＋ 一	aoan	aoa	5
 652	a	丨	丨	附属根	竖	末	窜	cuàn	宀 ＋ 八 ＋ 口 ＋ 口 ＋ 丨	cria	cr	21
 653	c	⺧	告字头	附属根	牛	首	靠	kào	⺧ ＋ 口 ＋ 非	kccn	kc	9
 654	n	犬	犬	附属根	大	首	飙	biāo	犬 ＋ 犬 ＋ 犬 ＋ ⺇ ＋ 㐅	bnnn	bnn	2

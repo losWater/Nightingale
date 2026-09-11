@@ -1,0 +1,225 @@
+{
+  "date": "2026-09-10",
+  "reason": "尧根首r末a全码容错，无核心字占位则首选，有核心字则排在其后；不加固定三简。",
+  "entries": [
+    {
+      "text": "侥",
+      "code": "jnfa",
+      "original": "jnfb",
+      "scope": "核心"
+    },
+    {
+      "text": "侥",
+      "code": "ycfa",
+      "original": "ycfb",
+      "scope": "核心"
+    },
+    {
+      "text": "哓",
+      "code": "xnha",
+      "original": "xnhb",
+      "scope": "核心"
+    },
+    {
+      "text": "娆",
+      "code": "rcza",
+      "original": "rczb",
+      "scope": "核心"
+    },
+    {
+      "text": "尧",
+      "code": "ycra",
+      "original": "ycbb",
+      "scope": "核心"
+    },
+    {
+      "text": "峣",
+      "code": "ycya",
+      "original": "ycyb",
+      "scope": "核心"
+    },
+    {
+      "text": "挠",
+      "code": "ncla",
+      "original": "nclb",
+      "scope": "核心"
+    },
+    {
+      "text": "晓",
+      "code": "xnqa",
+      "original": "xnqb",
+      "scope": "核心"
+    },
+    {
+      "text": "桡",
+      "code": "rcoa",
+      "original": "rcob",
+      "scope": "核心"
+    },
+    {
+      "text": "浇",
+      "code": "jnba",
+      "original": "jnbb",
+      "scope": "核心"
+    },
+    {
+      "text": "烧",
+      "code": "ucra",
+      "original": "ucrb",
+      "scope": "核心"
+    },
+    {
+      "text": "硗",
+      "code": "qnja",
+      "original": "qnjb",
+      "scope": "核心"
+    },
+    {
+      "text": "绕",
+      "code": "rcja",
+      "original": "rcjb",
+      "scope": "核心"
+    },
+    {
+      "text": "翘",
+      "code": "qnrm",
+      "original": "qnbm",
+      "scope": "核心"
+    },
+    {
+      "text": "荛",
+      "code": "rcxa",
+      "original": "rcxb",
+      "scope": "核心"
+    },
+    {
+      "text": "蛲",
+      "code": "ncma",
+      "original": "ncmb",
+      "scope": "核心"
+    },
+    {
+      "text": "跷",
+      "code": "qnza",
+      "original": "qnzb",
+      "scope": "核心"
+    },
+    {
+      "text": "铙",
+      "code": "ncka",
+      "original": "nckb",
+      "scope": "核心"
+    },
+    {
+      "text": "饶",
+      "code": "rcaa",
+      "original": "rcab",
+      "scope": "核心"
+    },
+    {
+      "text": "骁",
+      "code": "xnca",
+      "original": "xncb",
+      "scope": "核心"
+    }
+  ],
+  "candidate_orders": {
+    "jnfa": [
+      "侥",
+      "叫法",
+      "教法",
+      "脚法",
+      "僥"
+    ],
+    "ycfa": [
+      "侥",
+      "妖法"
+    ],
+    "xnha": [
+      "啸",
+      "哓",
+      "嘯",
+      "嘨",
+      "嘵"
+    ],
+    "rcza": [
+      "娆",
+      "嬈"
+    ],
+    "ycra": [
+      "尧",
+      "烑",
+      "筄"
+    ],
+    "ycya": [
+      "峣",
+      "咬牙",
+      "鼼",
+      "嶢",
+      "嶤"
+    ],
+    "ncla": [
+      "挠",
+      "撓"
+    ],
+    "xnqa": [
+      "晓",
+      "暁",
+      "曉"
+    ],
+    "rcoa": [
+      "桡",
+      "橈"
+    ],
+    "jnba": [
+      "浇",
+      "澆",
+      "㳅",
+      "灚",
+      "䀊"
+    ],
+    "ucra": [
+      "烧",
+      "焼",
+      "燒"
+    ],
+    "qnja": [
+      "硚",
+      "硗",
+      "磽",
+      "䂪"
+    ],
+    "rcja": [
+      "绕",
+      "繞"
+    ],
+    "qnrm": [
+      "翘"
+    ],
+    "rcxa": [
+      "荛",
+      "蕘"
+    ],
+    "ncma": [
+      "蛲",
+      "蟯",
+      "闹麻"
+    ],
+    "qnza": [
+      "跷",
+      "蹺",
+      "趬"
+    ],
+    "ncka": [
+      "铙"
+    ],
+    "rcaa": [
+      "饶"
+    ],
+    "xnca": [
+      "骁",
+      "憢",
+      "驍"
+    ]
+  }
+}

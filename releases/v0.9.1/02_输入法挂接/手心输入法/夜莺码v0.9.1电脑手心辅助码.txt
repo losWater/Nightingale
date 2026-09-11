@@ -4974,7 +4974,7 @@
 渠=bo
 驱=cn
 诎=dy
-曲=ea en ex pa
+曲=ea en ex
 取=eq
 娶=ez
 龋=gb

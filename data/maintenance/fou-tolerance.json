@@ -1,0 +1,860 @@
+{
+  "date": "2026-09-10",
+  "reason": "缶保留原根，按卧人＋十＋凵增加容错；三简空单字位增加三简，其他仅全码。",
+  "entries": [
+    {
+      "text": "䓨",
+      "code": "ykxw",
+      "original": "ykxz",
+      "scope": "核心"
+    },
+    {
+      "text": "啕",
+      "code": "tchw",
+      "original": "tchz",
+      "scope": "核心"
+    },
+    {
+      "text": "媱",
+      "code": "yczw",
+      "original": "yczz",
+      "scope": "核心"
+    },
+    {
+      "text": "徭",
+      "code": "ycuw",
+      "original": "ycuz",
+      "scope": "核心"
+    },
+    {
+      "text": "掏",
+      "code": "tclw",
+      "original": "tclz",
+      "scope": "核心"
+    },
+    {
+      "text": "摇",
+      "code": "yclw",
+      "original": "yclz",
+      "scope": "核心"
+    },
+    {
+      "text": "淘",
+      "code": "tcbw",
+      "original": "tcbz",
+      "scope": "核心"
+    },
+    {
+      "text": "猺",
+      "code": "ycvw",
+      "original": "ycvz",
+      "scope": "核心"
+    },
+    {
+      "text": "瑶",
+      "code": "ycgw",
+      "original": "ycgz",
+      "scope": "核心"
+    },
+    {
+      "text": "窑",
+      "code": "yciw",
+      "original": "yciz",
+      "scope": "核心"
+    },
+    {
+      "text": "绹",
+      "code": "tcjw",
+      "original": "tcjz",
+      "scope": "核心"
+    },
+    {
+      "text": "缶",
+      "code": "fzfw",
+      "original": "fzzz",
+      "scope": "核心"
+    },
+    {
+      "text": "缸",
+      "code": "ghfe",
+      "original": "ghze",
+      "scope": "核心"
+    },
+    {
+      "text": "缺",
+      "code": "qtfn",
+      "original": "qtzn",
+      "scope": "核心"
+    },
+    {
+      "text": "罂",
+      "code": "ykzw",
+      "original": "ykzz",
+      "scope": "核心"
+    },
+    {
+      "text": "罄",
+      "code": "qktw",
+      "original": "qktz",
+      "scope": "核心"
+    },
+    {
+      "text": "罅",
+      "code": "xxfa",
+      "original": "xxza",
+      "scope": "核心"
+    },
+    {
+      "text": "罍",
+      "code": "lwpw",
+      "original": "lwpz",
+      "scope": "核心"
+    },
+    {
+      "text": "罐",
+      "code": "grfg",
+      "original": "grzg",
+      "scope": "核心"
+    },
+    {
+      "text": "萄",
+      "code": "tcxw",
+      "original": "tcxz",
+      "scope": "核心"
+    },
+    {
+      "text": "谣",
+      "code": "ycdw",
+      "original": "ycdz",
+      "scope": "核心"
+    },
+    {
+      "text": "陶",
+      "code": "tcpw",
+      "original": "tcpz",
+      "scope": "核心"
+    },
+    {
+      "text": "鳐",
+      "code": "ycyw",
+      "original": "ycyz",
+      "scope": "核心"
+    },
+    {
+      "text": "𫘦",
+      "code": "tccw",
+      "original": "tccz",
+      "scope": "核心"
+    },
+    {
+      "text": "寚",
+      "code": "bciw",
+      "original": "bciz",
+      "scope": "扩展"
+    },
+    {
+      "text": "珤",
+      "code": "bcgw",
+      "original": "bcgz",
+      "scope": "扩展"
+    },
+    {
+      "text": "缽",
+      "code": "bofn",
+      "original": "bozn",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍌",
+      "code": "bufh",
+      "original": "buzh",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍎",
+      "code": "cyfr",
+      "original": "cyzr",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍄",
+      "code": "dmfh",
+      "original": "dmzh",
+      "scope": "扩展"
+    },
+    {
+      "text": "㓡",
+      "code": "fufs",
+      "original": "fuzs",
+      "scope": "扩展"
+    },
+    {
+      "text": "缻",
+      "code": "fzfl",
+      "original": "fzzl",
+      "scope": "扩展"
+    },
+    {
+      "text": "缹",
+      "code": "fzfr",
+      "original": "fzzr",
+      "scope": "扩展"
+    },
+    {
+      "text": "罁",
+      "code": "ghfy",
+      "original": "ghzy",
+      "scope": "扩展"
+    },
+    {
+      "text": "罆",
+      "code": "grfa",
+      "original": "grza",
+      "scope": "扩展"
+    },
+    {
+      "text": "罉",
+      "code": "igfl",
+      "original": "igzl",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍋",
+      "code": "ivfn",
+      "original": "ivzn",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍊",
+      "code": "jnfn",
+      "original": "jnzn",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍅",
+      "code": "lkfz",
+      "original": "lkzz",
+      "scope": "扩展"
+    },
+    {
+      "text": "罏",
+      "code": "lufa",
+      "original": "luza",
+      "scope": "扩展"
+    },
+    {
+      "text": "缾",
+      "code": "pkfx",
+      "original": "pkzx",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍈",
+      "code": "pkfp",
+      "original": "pkzp",
+      "scope": "扩展"
+    },
+    {
+      "text": "缼",
+      "code": "qifg",
+      "original": "qizg",
+      "scope": "扩展"
+    },
+    {
+      "text": "罊",
+      "code": "qiew",
+      "original": "qiez",
+      "scope": "扩展"
+    },
+    {
+      "text": "厒",
+      "code": "qpsw",
+      "original": "qpsz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍇",
+      "code": "tafx",
+      "original": "tazx",
+      "scope": "扩展"
+    },
+    {
+      "text": "䛬",
+      "code": "tcdw",
+      "original": "tcdz",
+      "scope": "扩展"
+    },
+    {
+      "text": "裪",
+      "code": "tcuw",
+      "original": "tcuz",
+      "scope": "扩展"
+    },
+    {
+      "text": "蜪",
+      "code": "tcmw",
+      "original": "tcmz",
+      "scope": "扩展"
+    },
+    {
+      "text": "鋾",
+      "code": "tcgw",
+      "original": "tcgz",
+      "scope": "扩展"
+    },
+    {
+      "text": "騊",
+      "code": "tccw",
+      "original": "tccz",
+      "scope": "扩展"
+    },
+    {
+      "text": "綯",
+      "code": "tcjw",
+      "original": "tcjz",
+      "scope": "扩展"
+    },
+    {
+      "text": "醄",
+      "code": "tcew",
+      "original": "tcez",
+      "scope": "扩展"
+    },
+    {
+      "text": "祹",
+      "code": "tcuw",
+      "original": "tcuz",
+      "scope": "扩展"
+    },
+    {
+      "text": "匋",
+      "code": "tcww",
+      "original": "tcwz",
+      "scope": "扩展"
+    },
+    {
+      "text": "罎",
+      "code": "tjft",
+      "original": "tjzt",
+      "scope": "扩展"
+    },
+    {
+      "text": "罈",
+      "code": "tjfp",
+      "original": "tjzp",
+      "scope": "扩展"
+    },
+    {
+      "text": "罀",
+      "code": "vcfa",
+      "original": "vcza",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍉",
+      "code": "vdfa",
+      "original": "vdza",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍆",
+      "code": "vufy",
+      "original": "vuzy",
+      "scope": "扩展"
+    },
+    {
+      "text": "罋",
+      "code": "wgvw",
+      "original": "wgvz",
+      "scope": "扩展"
+    },
+    {
+      "text": "缿",
+      "code": "xlfh",
+      "original": "xlzh",
+      "scope": "扩展"
+    },
+    {
+      "text": "缷",
+      "code": "xpfp",
+      "original": "xpzp",
+      "scope": "扩展"
+    },
+    {
+      "text": "滛",
+      "code": "ybbw",
+      "original": "ybbz",
+      "scope": "扩展"
+    },
+    {
+      "text": "嗂",
+      "code": "ychw",
+      "original": "ychz",
+      "scope": "扩展"
+    },
+    {
+      "text": "謠",
+      "code": "ycdw",
+      "original": "ycdz",
+      "scope": "扩展"
+    },
+    {
+      "text": "謡",
+      "code": "ycdw",
+      "original": "ycdz",
+      "scope": "扩展"
+    },
+    {
+      "text": "熎",
+      "code": "ycrw",
+      "original": "ycrz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䔄",
+      "code": "ycxw",
+      "original": "ycxz",
+      "scope": "扩展"
+    },
+    {
+      "text": "窰",
+      "code": "yciw",
+      "original": "yciz",
+      "scope": "扩展"
+    },
+    {
+      "text": "鎐",
+      "code": "ycgw",
+      "original": "ycgz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䁘",
+      "code": "ycqw",
+      "original": "ycqz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䬙",
+      "code": "ycnw",
+      "original": "ycnz",
+      "scope": "扩展"
+    },
+    {
+      "text": "搖",
+      "code": "yclw",
+      "original": "yclz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䌊",
+      "code": "ycjw",
+      "original": "ycjz",
+      "scope": "扩展"
+    },
+    {
+      "text": "暚",
+      "code": "ycqw",
+      "original": "ycqz",
+      "scope": "扩展"
+    },
+    {
+      "text": "愮",
+      "code": "yccw",
+      "original": "yccz",
+      "scope": "扩展"
+    },
+    {
+      "text": "磘",
+      "code": "ycjw",
+      "original": "ycjz",
+      "scope": "扩展"
+    },
+    {
+      "text": "傜",
+      "code": "ycfw",
+      "original": "ycfz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䠛",
+      "code": "yczw",
+      "original": "yczz",
+      "scope": "扩展"
+    },
+    {
+      "text": "鰩",
+      "code": "ycyw",
+      "original": "ycyz",
+      "scope": "扩展"
+    },
+    {
+      "text": "榣",
+      "code": "ycow",
+      "original": "ycoz",
+      "scope": "扩展"
+    },
+    {
+      "text": "瑤",
+      "code": "ycgw",
+      "original": "ycgz",
+      "scope": "扩展"
+    },
+    {
+      "text": "罃",
+      "code": "ykrw",
+      "original": "ykrz",
+      "scope": "扩展"
+    },
+    {
+      "text": "罌",
+      "code": "ykqw",
+      "original": "ykqz",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍂",
+      "code": "yufw",
+      "original": "yuzw",
+      "scope": "扩展"
+    },
+    {
+      "text": "䍃",
+      "code": "yzmw",
+      "original": "yzmz",
+      "scope": "扩展"
+    },
+    {
+      "text": "罇",
+      "code": "zyfy",
+      "original": "zyzy",
+      "scope": "扩展"
+    },
+    {
+      "text": "缶",
+      "code": "fzf",
+      "original": "fzz",
+      "scope": "核心"
+    },
+    {
+      "text": "缸",
+      "code": "ghf",
+      "original": "ghz",
+      "scope": "核心"
+    },
+    {
+      "text": "缺",
+      "code": "qtf",
+      "original": "qtz",
+      "scope": "核心"
+    }
+  ],
+  "candidate_orders": {
+    "ykxw": [
+      "䓨"
+    ],
+    "tchw": [
+      "啕"
+    ],
+    "yczw": [
+      "媱",
+      "䠛"
+    ],
+    "ycuw": [
+      "要谁",
+      "徭"
+    ],
+    "tclw": [
+      "掏"
+    ],
+    "yclw": [
+      "药类",
+      "摇",
+      "搖",
+      "揺"
+    ],
+    "tcbw": [
+      "套杯",
+      "淘"
+    ],
+    "ycvw": [
+      "猺"
+    ],
+    "ycgw": [
+      "要给",
+      "瑶",
+      "鎐",
+      "瑤"
+    ],
+    "yciw": [
+      "窑",
+      "窰"
+    ],
+    "tcjw": [
+      "绹",
+      "綯"
+    ],
+    "fzfw": [
+      "缶"
+    ],
+    "ghfe": [
+      "缸"
+    ],
+    "qtfn": [
+      "缺"
+    ],
+    "ykzw": [
+      "罂"
+    ],
+    "qktw": [
+      "罄"
+    ],
+    "xxfa": [
+      "下发",
+      "罅"
+    ],
+    "lwpw": [
+      "罍"
+    ],
+    "grfg": [
+      "罐"
+    ],
+    "tcxw": [
+      "萄"
+    ],
+    "ycdw": [
+      "一次到位",
+      "谣",
+      "謠",
+      "謡"
+    ],
+    "tcpw": [
+      "陶"
+    ],
+    "ycyw": [
+      "又菜又爱玩",
+      "鳐",
+      "鰩"
+    ],
+    "tccw": [
+      "𫘦",
+      "騊"
+    ],
+    "bciw": [
+      "寚"
+    ],
+    "bcgw": [
+      "报给",
+      "珤",
+      "包给"
+    ],
+    "bofn": [
+      "侼",
+      "缽"
+    ],
+    "bufh": [
+      "不妨",
+      "䍌",
+      "不放",
+      "别说废话",
+      "布防"
+    ],
+    "cyfr": [
+      "䍎"
+    ],
+    "dmfh": [
+      "电放",
+      "䍄",
+      "店方"
+    ],
+    "fufs": [
+      "㓡"
+    ],
+    "fzfl": [
+      "缻"
+    ],
+    "fzfr": [
+      "缹"
+    ],
+    "ghfy": [
+      "罁"
+    ],
+    "grfa": [
+      "観",
+      "罆",
+      "管阀"
+    ],
+    "igfl": [
+      "罉"
+    ],
+    "ivfn": [
+      "倕",
+      "䍋"
+    ],
+    "jnfn": [
+      "佼",
+      "䍊"
+    ],
+    "lkfz": [
+      "伶",
+      "䍅"
+    ],
+    "lufa": [
+      "罏"
+    ],
+    "pkfx": [
+      "缾"
+    ],
+    "pkfp": [
+      "䍈"
+    ],
+    "qifg": [
+      "起风",
+      "缼",
+      "启封",
+      "奇峰",
+      "欫",
+      "僛"
+    ],
+    "qiew": [
+      "罊"
+    ],
+    "qpsw": [
+      "厒"
+    ],
+    "tafx": [
+      "䍇"
+    ],
+    "tcdw": [
+      "䛬"
+    ],
+    "tcuw": [
+      "裪",
+      "祹"
+    ],
+    "tcmw": [
+      "蜪"
+    ],
+    "tcgw": [
+      "掏给",
+      "鋾"
+    ],
+    "tcew": [
+      "醄"
+    ],
+    "tcww": [
+      "匋"
+    ],
+    "tjft": [
+      "罎"
+    ],
+    "tjfp": [
+      "罈"
+    ],
+    "vcfa": [
+      "照发",
+      "罀",
+      "招法"
+    ],
+    "vdfa": [
+      "摘发",
+      "䍉",
+      "債"
+    ],
+    "vufy": [
+      "侏",
+      "䍆",
+      "众说纷纭",
+      "佇",
+      "㑏"
+    ],
+    "wgvw": [
+      "罋"
+    ],
+    "xlfh": [
+      "相仿",
+      "缿",
+      "厢房",
+      "降龙伏虎"
+    ],
+    "xpfp": [
+      "卸",
+      "缷"
+    ],
+    "ybbw": [
+      "银杯",
+      "滛",
+      "银背"
+    ],
+    "ychw": [
+      "嗂"
+    ],
+    "ycrw": [
+      "隐藏人物",
+      "熎",
+      "隐藏任务"
+    ],
+    "ycxw": [
+      "䔄"
+    ],
+    "ycqw": [
+      "䁘",
+      "暚"
+    ],
+    "ycnw": [
+      "䬙"
+    ],
+    "ycjw": [
+      "䌊",
+      "磘"
+    ],
+    "yccw": [
+      "愮"
+    ],
+    "ycfw": [
+      "药费",
+      "傜"
+    ],
+    "ycow": [
+      "榣"
+    ],
+    "ykrw": [
+      "罃"
+    ],
+    "ykqw": [
+      "罌"
+    ],
+    "yufw": [
+      "与非",
+      "䍂",
+      "育肥"
+    ],
+    "yzmw": [
+      "优美",
+      "䍃",
+      "有没"
+    ],
+    "zyfy": [
+      "左右逢源",
+      "罇",
+      "僔",
+      "啧有烦言"
+    ],
+    "fzf": [
+      "缶",
+      "房租费",
+      "痱子粉",
+      "肥皂粉"
+    ],
+    "ghf": [
+      "缸",
+      "鬼画符",
+      "挂号费",
+      "过户费"
+    ],
+    "qtf": [
+      "缺",
+      "强台风"
+    ]
+  }
+}

@@ -167,6 +167,10 @@ def build_auxiliary(rows: list[tuple[str, str]]) -> tuple[list[str], int, int]:
             continue
         four_code_rows += 1
         pair = (text, code[2:])
+        # 手心实测曲四组辅助码会卡死；仅在辅助码导出中舍弃旧拆法 pa。
+        # 全码和自定义短语中的 qup/qupa 兼容入口仍保留。
+        if pair == ("曲", "pa"):
+            continue
         if pair in seen:
             continue
         seen.add(pair)

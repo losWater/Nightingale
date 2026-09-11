@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-10",
+  "reason": "用户指定手感容错：lpr烈、lpn裂，原码保留；lpn原鬣及懒婆娘顺延。",
+  "entries": [
+    {
+      "text": "烈",
+      "code": "lpr",
+      "original": "lpl / lplr",
+      "scope": "核心"
+    },
+    {
+      "text": "裂",
+      "code": "lpn",
+      "original": "lpln",
+      "scope": "核心"
+    }
+  ],
+  "candidate_orders": {
+    "lpr": [
+      "烈"
+    ],
+    "lpn": [
+      "裂",
+      "鬣",
+      "懒婆娘"
+    ]
+  }
+}
