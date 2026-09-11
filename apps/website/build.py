@@ -73,7 +73,7 @@ def main():
     (OUT / 'author.html').write_text(template.replace('<!-- ARTICLE -->', body).replace('<!-- CONTENTS -->', article.toc), encoding='utf-8')
     shutil.copy2(SOURCE / 'author.css', OUT / 'author.css')
     shutil.copytree(SOURCE / 'assets', OUT / 'assets', dirs_exist_ok=True)
-    for name in ('index.html', 'style.css', 'site.js', 'bird.svg', 'performance.html', 'performance.css', 'performance.js', 'performance-data.json', 'performance-source.png', 'roots.css', 'roots.js'):
+    for name in ('index.html', 'style.css', 'site.js', 'bird.svg', 'performance.html', 'performance.css', 'performance.js', 'performance-data.json', 'word-conflict-data.json', 'word-conflict-method.md', 'performance-source.png', 'roots.css', 'roots.js'):
         shutil.copy2(SOURCE / name, OUT / name)
     mappings = {
         'roots.html': '03_字根与拆分/夜莺码v1.0字根表.html',
