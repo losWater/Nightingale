@@ -9,6 +9,8 @@
 
 支持夜莺固定字词、简词和双拼整句输入，简词也可以参与整句。
 
+**新增拆分反查**：输入 `~` 或反引号，再输入全拼或小鹤双拼，例如 `~han`、`~hj`，候选旁显示规范拆分与夜莺编码。主力、轻量、形码均支持；空格或数字选字，Esc 取消。反查不调用整句模型。
+
 - **主力版（测试）**：使用魔虎 V5 整句模型。不超过36键时使用模型，超过后转为原生整句。模型较大，首次加载需要一定时间；长时间使用的稳定性仍在实测。
 - **轻量版（测试）**：不带外部整句模型，保留原生整句和用户词典，适合更在意响应速度与资源占用的用户。
 - **形码模式**：按四码定长方式输入，适合习惯形码打法的用户。
@@ -34,7 +36,9 @@
 
 ### 本次下载
 
-- [Rime 主力包（含轻量、形码模式）](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-Rime-1.0-main-test-20260911.zip)
-- [Rime 轻量包（含形码模式）](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-Rime-1.0-light-test-20260911.zip)
+- [夜莺1.0完整包（含反查更新）](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-1.0-lookup-20260911.zip)
+
+- [Rime 主力包（含轻量、形码模式）](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-Rime-1.0-main-lookup-20260911.zip)
+- [Rime 轻量包（含形码模式）](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-Rime-1.0-light-lookup-20260911.zip)
 - [手心修正版](https://github.com/losWater/Nightingale/releases/download/v1.0/Nightingale-Palm-1.0-20260911.zip)
-- [SHA256 校验文件](https://github.com/losWater/Nightingale/releases/download/v1.0/SHA256SUMS-20260911.txt)
+- [SHA256 校验文件](https://github.com/losWater/Nightingale/releases/download/v1.0/SHA256SUMS-lookup-20260911.txt)
