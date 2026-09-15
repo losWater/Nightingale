@@ -9298,9 +9298,9 @@ bxzj	表现自己
 bxzs	不肖子孙
 bxzs	不孝子孙
 bxzy	不幸遭遇
+by	莺
 by	表演
 by	不要
-by	必要
 bya	鼻咽癌
 bya	不要啊
 byb	不一般
@@ -134355,6 +134355,7 @@ yebo	夜泊
 yebp	也别
 yebs	艳而不俗
 yebu	也不
+yeby	夜莺
 yebz	余额不足
 yec	靥
 yecc	野草
@@ -134602,8 +134603,8 @@ yeyh	液氧
 yeyi	业已
 yeyj	夜宴
 yeyj	页岩
-yeyk	夜莺
 yeyk	野营
+yeyk	夜莺
 yeyn	养儿育女
 yeys	夜用
 yeys	也用
@@ -137307,8 +137308,8 @@ yklz	影楼
 ykm	英
 ykm	一口闷
 ykmc	应卯
-ykmg	莺
 ykmg	萤
+ykmg	莺
 ykmi	萦
 ykmi	影迷
 ykmj	盈满

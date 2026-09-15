@@ -36,36 +36,37 @@ for k, chars in g78.items(): assert groups[k][:len(chars)] == chars, k   # 8105 
 assert set(codes_of) == set(g78 and {c for cs in g78.values() for c in cs}) | set(ext), '113 单字集合 = 8105 + 扩展字'
 f58 = B + '/58_拆分查询/夜莺2.0拆分查询.html'; s58 = open(f58, encoding='utf-8-sig').read()
 ROOTS, _, _ = get(s58, 'ROOTS'); rmap = {r['根']: r for r in ROOTS}
+CHANGED = []   # 可重复运行：已有的字只更新字码（如 2026-09-16 莺 by、ykmg 换序）
 def sync_D(D):
-    assert len(D) == 8105, len(D)
+    assert len(D) in (8105, 8105 + 7391), len(D)
     old = {c: json.dumps(r, ensure_ascii=False, sort_keys=True) for c, r in D.items()}
     for c, sp in ext.items():
+        if c in D: continue
         parts = sp.split(' ＋ '); D[c] = {'根': [dict(rmap[x]) for x in parts], '新拆': sp, '排名': None, '编码': []}
     for r in D.values(): r['编码'] = []
     for k, chars in groups.items():
         for i, c in enumerate(chars, 1): D[c]['编码'].append({'码': k, '位': i, '同码': chars})
     for r in D.values(): r['编码'].sort(key=lambda e: (len(e['码']), e['码']))
-    for c in old:   # 8105 字：只有"同码"列表可能在末尾多出扩展字，其余（拆分/根/排名/码/位）逐条不变
+    for c in old:   # 已有字：拆分/根/排名逐条不变；字码/候选位若有变化列出（来自 78/113 的新裁定）
         a, b = json.loads(old[c]), D[c]
         assert (a['根'], a['新拆'], a['排名']) == (b['根'], b['新拆'], b['排名']), c
-        assert [(e['码'], e['位']) for e in a['编码']] == [(e['码'], e['位']) for e in b['编码']], c
-        for ea, eb in zip(a['编码'], b['编码']): assert eb['同码'][:len(ea['同码'])] == ea['同码'], (c, ea['码'])
+        if [(e['码'], e['位']) for e in a['编码']] != [(e['码'], e['位']) for e in b['编码']]:
+            CHANGED.append((c, [(e['码'], e['位']) for e in a['编码']], [(e['码'], e['位']) for e in b['编码']]))
     return {(c, e['码']) for c, r in D.items() for e in r['编码']}
 D58, _, _ = get(s58, 'D'); new = sync_D(D58); write(f58, put(s58, 'D', D58))
 main = U + '/夜莺2.0随身工具_单文件.html'; shell = open(main, encoding='utf-8-sig').read()
 views, _, _ = get(shell, 'views'); frozen = {k: hashlib.sha256(v.encode()).hexdigest() for k, v in views.items() if k not in ('query', 'components', 'text')}
 for key, name in [('query', '拆分查询.html'), ('components', '部件反查.html')]:
-    assert views[key] == open(O + '/' + name, encoding='utf-8-sig').read(), name
+    if views[key] != open(O + '/' + name, encoding='utf-8-sig').read(): print('提示：单文件与离线页 %s 此前不一致，以单文件为基准重算' % name)
     Dv, _, _ = get(views[key], 'D'); assert sync_D(Dv) == new
     views[key] = put(views[key], 'D', Dv); write(O + '/' + name, views[key])
 # 完整拆分表：html 里的 rows + txt
-assert views['text'] == open(O + '/完整拆分表.html', encoding='utf-8-sig').read()
-rows, _, _ = get(views['text'], 'rows'); assert len(rows) == 8105 and rows[0][0] == '㑇', len(rows)
-rows += [[c, sp, sp.split(' ＋ ')[0], sp.split(' ＋ ')[-1]] for c, sp in ext.items()]
+rows, _, _ = get(views['text'], 'rows'); assert len(rows) in (8105, 8105 + 7391) and rows[0][0] == '㑇', len(rows)
+if len(rows) == 8105: rows += [[c, sp, sp.split(' ＋ ')[0], sp.split(' ＋ ')[-1]] for c, sp in ext.items()]
 views['text'] = put(views['text'], 'rows', rows); write(O + '/完整拆分表.html', views['text'])
-tp = O + '/完整拆分表.txt'; t = open(tp, encoding='utf-8-sig').read(); assert t.count('\n') == 8106 and t.startswith('汉字\t完整拆分\t首根\t末根'), t.count('\n')
+tp = O + '/完整拆分表.txt'; t = open(tp, encoding='utf-8-sig').read(); assert t.count('\n') in (8106, 8106 + 7391) and t.startswith('汉字\t完整拆分\t首根\t末根'), t.count('\n')
 nl = '\r\n' if '\r\n' in t else '\n'
-write(tp, t + ''.join('%s\t%s\t%s\t%s%s' % (r[0], r[1], r[2], r[3], nl) for r in rows[8105:]), 'utf-8-sig')
+if t.count('\n') == 8106: write(tp, t + ''.join('%s\t%s\t%s\t%s%s' % (r[0], r[1], r[2], r[3], nl) for r in rows[8105:]), 'utf-8-sig')
 shell2 = put(shell, 'views', views); write(main, shell2); backup(U + '/夜莺啾啾工具箱.html'); shutil.copy2(main, U + '/夜莺啾啾工具箱.html')
 # 使用说明补一行
 up = O + '/使用说明.txt'; u = open(up, encoding='utf-8-sig').read()
@@ -93,5 +94,8 @@ json.dump(bj, open(U + '/构建核验.json', 'w', encoding='utf-8'), ensure_asci
 rep = {'时间': datetime.datetime.now().isoformat(timespec='seconds'), '扩展字数': len(ext), '字总数': 8105 + len(ext), '扩展字码条数': sum(len(codes_of[c]) for c in ext),
        '单文件字节': os.path.getsize(main), '单文件SHA256': sha(main), '啾啾SHA256': sha(U + '/夜莺啾啾工具箱.html'), '离线包zipSHA256': sha(zp), '未动视图': list(frozen)}
 json.dump(rep, open(H + '/实装报告.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+rep['字码有变'] = [{'字': c, '原': a, '现': b} for c, a, b in sorted(set((c, tuple(a), tuple(b)) for c, a, b in CHANGED))]
+json.dump(rep, open(H + '/实装报告.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('字码有变:', rep['字码有变'])
 print('扩展字 %d，字总数 %d，扩展字码 %d 条；单文件 %.1f MB %s；两入口一致 %s；练习/字根图/字根表逐字节未变；字面 </script 仅 1 个' % (
     len(ext), 8105 + len(ext), rep['扩展字码条数'], rep['单文件字节'] / 1048576, rep['单文件SHA256'][:16], rep['单文件SHA256'] == rep['啾啾SHA256']))

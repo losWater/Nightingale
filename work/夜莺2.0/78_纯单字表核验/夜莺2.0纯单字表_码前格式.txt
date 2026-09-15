@@ -782,6 +782,7 @@ bwxc	碑
 bwxt	碚
 bwz	糒
 bwzz	糒
+by	莺
 c	才
 ca	擦
 cao	擦
@@ -12806,8 +12807,8 @@ ykjg	鹦
 ykjs	婴
 ykjv	罂
 ykm	英
-ykmg	莺
 ykmg	萤
+ykmg	莺
 ykmi	萦
 ykmp	荧
 ykmp	荥

@@ -56,7 +56,6 @@
 不幸	bx
 表演	by
 不要	by
-必要	by
 辈子	bz
 鼻子	bz
 脖子	bz
