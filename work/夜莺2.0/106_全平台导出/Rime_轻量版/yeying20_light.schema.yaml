@@ -21,6 +21,7 @@ switches:
 engine:
   processors:
   - lua_processor@*yeying20_lookup_key
+  - lua_processor@*yeying20_pin_key
   - ascii_composer
   - recognizer
   - key_binder
@@ -59,10 +60,24 @@ translator:
   max_sentences: 2
 fixed:
   dictionary: yeying20_rime_fixed
-  enable_user_dict: false
+  enable_user_dict: true
+  user_dict: yeying20_fixed_user
   enable_sentence: false
   enable_completion: false
   initial_quality: 100
+  enable_encoder: true
+  encode_commit_history: true
+  max_phrase_length: 6
+  encoder:
+    exclude_patterns:
+      - '^[a-z]$'
+    rules:
+      - length_equal: 2
+        formula: AaAbBaBb
+      - length_equal: 3
+        formula: AaBaCa
+      - length_in_range: [4, 6]
+        formula: AaBaCaZa
 menu:
   page_size: 9
 punctuator:

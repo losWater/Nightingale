@@ -148,6 +148,17 @@ for kind,label in [('light','轻量版'),('main','主力版')]:
    if name=='lua/yeying_mix.lua':s=s.replace('if #input <= 4 then','if #input > 0 then')
    data=s.encode('utf-8')
   q=dest/newname;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(data)
+ # 2026-09-16 群友需求：Ctrl+N 钉选 + 自动造词。覆盖层 rime_overlay/：新 lua（pin、pin_key、改过的 mix）与 fixed 配置块；主力/轻量两方案生效，形码模式不动。
+ ov=P/'rime_overlay'
+ for f in sorted((ov/'lua').glob('*.lua')):shutil.copy2(f,dest/'lua'/f.name)
+ for sch in ['yeying20_main.schema.yaml','yeying20_light.schema.yaml']:
+  sp=dest/sch
+  if not sp.exists():continue
+  s=sp.read_text(encoding='utf-8')
+  proc='  - lua_processor@*yeying20_lookup_key\n';old_fixed='fixed:\n  dictionary: yeying20_rime_fixed\n  enable_user_dict: false\n  enable_sentence: false\n  enable_completion: false\n  initial_quality: 100\n'
+  assert s.count(proc)==1 and s.count(old_fixed)==1,sch
+  s=s.replace(proc,proc+'  - lua_processor@*yeying20_pin_key\n').replace(old_fixed,(ov/'fixed_block.yaml').read_text(encoding='utf-8'))
+  sp.write_text(s,encoding='utf-8')
  write(dest/'yeying20_rime_fixed.dict.yaml',dicttext('yeying20_rime_fixed',[(t,c,100000-n) for t,c,n in allrows]),'utf-8')
  write(dest/'yeying20_rime.dict.yaml',dicttext('yeying20_rime',[(t,c,f) for (t,c),f in sorted(fallback.items())]),'utf-8')
  write(dest/'lua/yeying20_lookup_data.lua','return '+lua({'sounds':dict(sounds),'pinyin':pinyin})+'\n','utf-8')
@@ -155,6 +166,7 @@ for kind,label in [('light','轻量版'),('main','主力版')]:
  order=['yeying20_main','yeying20_light'] if kind=='main' else ['yeying20_light','yeying20_main']   # 2026-09-15 用户要求解压即用：直接提供 default.custom.yaml，缺失方案 Rime 仅记日志不影响部署（已实测）
  write(dest/'default.custom.yaml','patch:'+chr(10)+'  schema_list:'+chr(10)+''.join('    - schema: '+x+chr(10) for x in order+['yeying20_xm']),'utf-8');(dest/'default.custom.yaml.example').unlink(missing_ok=True)
  write(dest/'使用说明.md',f'# 夜莺2.0 Rime · {label}\n\n把本包全部文件解压到 Rime 用户目录（小狼毫：右键托盘图标 → 用户文件夹），然后右键托盘图标 → 重新部署，即可直接使用，不需要手动改任何配置。包内 default.custom.yaml 已把 `yeying20_{kind}` 设为首选方案；如果你原来有自己的 default.custom.yaml，解压时会被覆盖，请先备份并把 schema_list 合并。两个包可共存（后解压的为首选，F4 可切换）；文件和用户词典使用 2.0 独立名称。\n\n包含当前定稿单字、简词、全码词和40条快符；空格首选、分号次选、单引号三选。支持F2持续拆分提示以及反引号双拼、波浪号全拼反查。拆分和辅助码已更新2.0（含正根）。\n\n轻量版使用Rime原生整句；主力版沿用V5模型及Windows x64原生引擎，最多36键进入V5，超过后原生整句接续。主力运行库沿用原包，未验证其他操作系统。\n\n固定码表逐项继承当前字词表顺序。整句词典重新生成；只有能与当前字音、全码对应的词生成逐字辅助拼写，其余保留固定入口，没有猜测多音字读音。旧版准确率报告不适用于2.0；本次验证记录见包内核验结果。\n','utf-8')
+ write(dest/'使用说明.md',(dest/'使用说明.md').read_text(encoding='utf-8').rstrip('\n')+'\n\n## 钉选与造词（2026-09-16 新增，主力版/轻量版）\n\n- **Ctrl+数字 钉选**：候选里第 N 个是你想要的，按 Ctrl+N 上屏，同时把它钉为这个编码的首选，原来的候选依次后退；再钉别的会排到它前面。钉选记在用户目录 `yeying20_pin.txt` 里（一行一个编码，制表符分隔），重启不丢，想撤销就删掉那一行再重新部署。整句拼出来、不在码表里的候选按 Ctrl+N 只上屏不记。\n- **自动造词**：逐字（或字+词）打出一个码表里没有的词，Rime 按夜莺词规则自动编码存进用户词典 `yeying20_fixed_user`：二字词取两字双拼四码，三字词取三字首码（三码），四字及以上取前三字首码加末字首码。下次打这个码它出现在候选末尾，可以再用 Ctrl+N 钉到前面；不想要的词，选中后按 Shift+Delete 删除。\n- 码表候选的顺序不会随使用频率自动变化：钉过的在前，其余按码表原序，自动造的词排最后。\n','utf-8')
  report['Rime固定条数']=len(allrows);report['Rime整句词典条数']=len(fallback);report['Rime逐字拼写词数']=len(word_sound);report['Rime原生词边数']=len(lex)
  print('generated',label,flush=True)
 js(OUT/'说明与核验/生成清单.json',report)
