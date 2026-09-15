@@ -1,10 +1,16 @@
 fixed:
   dictionary: yeying20_rime_fixed
+  enable_user_dict: false
+  enable_sentence: false
+  enable_completion: false
+  initial_quality: 100
+fixed_user:
+  dictionary: yeying20_rime_fixed
   enable_user_dict: true
   user_dict: yeying20_fixed_user
   enable_sentence: false
   enable_completion: false
-  initial_quality: 100
+  initial_quality: 50
   enable_encoder: true
   encode_commit_history: true
   max_phrase_length: 2
