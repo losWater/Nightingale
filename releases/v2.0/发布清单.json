@@ -1,0 +1,347 @@
+{
+ "version": "2.0",
+ "date": "20260916",
+ "status": "release",
+ "files": {
+  "01_正式码表/夜莺2.0字词表.txt": {
+   "source": "work/夜莺2.0/113_扩展字入表/夜莺2.0最终表_普通格式.txt",
+   "sha256": "2b0633e48dce03d42ab820f8d816c2f669f1411fbb2ef83bfacc658c0011502d",
+   "bytes": 2345871
+  },
+  "01_正式码表/夜莺2.0字词表_码前.txt": {
+   "source": "work/夜莺2.0/113_扩展字入表/夜莺2.0最终表_码前格式.txt",
+   "sha256": "f7e0727417a44c715fc65a0900002a5042a35ec686840ca893635f0fc535e757",
+   "bytes": 2345871
+  },
+  "01_正式码表/夜莺2.0扩展字表.txt": {
+   "source": "work/夜莺2.0/112_扩展字继承/夜莺2.0扩展字表_普通格式.txt",
+   "sha256": "ea545096fdd9e3413e177d22a3b38a96017b1cf226ac3315f0ec531086e25ad9",
+   "bytes": 75236
+  },
+  "01_正式码表/夜莺2.0无理码表.json": {
+   "source": "work/夜莺2.0/83_单字表重放/无理码表.json",
+   "sha256": "26b7fd502dfce10abc79b510160729c365aed9e14aea3b621b41e14f68470d04",
+   "bytes": 637
+  },
+  "01_正式码表/夜莺2.0码位人工指定.json": {
+   "source": "work/夜莺2.0/64_加入鲸凉鹤简词/码位人工指定.json",
+   "sha256": "d0b447fe3eda6a62d62cdb40197906444d11a5f9c2bf03ea34eda71232af595f",
+   "bytes": 3192
+  },
+  "01_正式码表/夜莺2.0纯单字表.txt": {
+   "source": "work/夜莺2.0/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt",
+   "sha256": "40b39e9308c288676cff01ebd2f959e300c8088d832bfaa1d49769311cfcc169",
+   "bytes": 131101
+  },
+  "01_正式码表/夜莺2.0词无理码表.json": {
+   "source": "work/夜莺2.0/83_单字表重放/词无理码表.json",
+   "sha256": "33b8a31f566542d1986385349829957c27c600535e4c6950219434d2e293077d",
+   "bytes": 503
+  },
+  "02_输入法挂接/Bime/mb/夜莺2.0/夜莺.拆分": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/Bime/mb/夜莺2.0/夜莺.拆分",
+   "sha256": "c1c0e6a1e2a2d8cdf26fed1c3c0f73be57a46c3016b5fffd072fb3a78163c981",
+   "bytes": 225887
+  },
+  "02_输入法挂接/Bime/mb/夜莺2.0/夜莺字词.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/Bime/mb/夜莺2.0/夜莺字词.txt",
+   "sha256": "331dd46adcd332e87d5b30e732cac274a1bf0bfe6ba6b539d69761d98cdb1350",
+   "bytes": 3271138
+  },
+  "02_输入法挂接/Bime/使用说明.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/Bime/使用说明.txt",
+   "sha256": "cc6094d7ef1a723f0d9d2b582e8cf80969d7cbecce138faf3f8de4375a16c0e3",
+   "bytes": 245
+  },
+  "02_输入法挂接/rime/Rime_轻量版/default.custom.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/default.custom.yaml",
+   "sha256": "213b5963a9399f7534bd16c32bbc6c9e9296c12ae7b2857638d72c9ebe4db33d",
+   "bytes": 105
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_lookup.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_lookup.lua",
+   "sha256": "193e67577c38de0c10d7242cb860fae4c85dc42f29e08d3170aa0169e5a656ff",
+   "bytes": 1313
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_lookup_data.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_lookup_data.lua",
+   "sha256": "4be04103bd001a9cd6982509c1c70fa83caefd8ad39df8e1438e007d8eb428a3",
+   "bytes": 637227
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_lookup_key.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_lookup_key.lua",
+   "sha256": "476b250e0d8b4b9bd3106ffff3adc474fbd4bf50334646fddc8761a4d72850f7",
+   "bytes": 556
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_mix.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_mix.lua",
+   "sha256": "1e2b74b327c54cb2860c6be07dffc35a28c78e0804c91e600917b4d66b982275",
+   "bytes": 2355
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_pin.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_pin.lua",
+   "sha256": "c303d91c4c4c29c27a218685e1974d6a849ff0155a8250a5ceff345263ce4284",
+   "bytes": 8107
+  },
+  "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_pin_key.lua": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_pin_key.lua",
+   "sha256": "69d5ac107db48273c5f39bb87ae52cd9606d50b30abdd11236b1d0448348edc5",
+   "bytes": 173
+  },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_light.schema.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_light.schema.yaml",
+   "sha256": "b283c3d85621ba5e3635085f3fdbe9d80b653c5d9038e3d4e7a09c90a1d01da3",
+   "bytes": 2141
+  },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_rime.dict.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_rime.dict.yaml",
+   "sha256": "30ddc71de9ad994f9863f2c515caa22b9e979d57159f703028d7faf7e277b99b",
+   "bytes": 5899272
+  },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_rime_fixed.dict.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_rime_fixed.dict.yaml",
+   "sha256": "b7e2723d1beae6a1c0c52199eeef3959d7d2096b12b7d3fa54a051c5d802b341",
+   "bytes": 3122029
+  },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_rime_fixed.schema.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_rime_fixed.schema.yaml",
+   "sha256": "04ddff4fde92b0436ed7fac9c50cdb031b654fd41116d0cd69974b2a63494bb0",
+   "bytes": 149
+  },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_xm.schema.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_xm.schema.yaml",
+   "sha256": "9de7d89c0131f4e12788f6bce24beb2a2beb8657e40aeea455845812896e458a",
+   "bytes": 1332
+  },
+  "02_输入法挂接/rime/Rime_轻量版/使用说明.md": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/使用说明.md",
+   "sha256": "2d8258bd451bb88047c332c78f04219343f4002a9eb44e6c045999e1270559ae",
+   "bytes": 2607
+  },
+  "02_输入法挂接/rime/Rime_轻量版/引擎核验.json": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/引擎核验.json",
+   "sha256": "24520180a29848f27f86a3349a1f6b8b4af9b92ef60c6822ca555c72b509f845",
+   "bytes": 1474
+  },
+  "02_输入法挂接/rime/Rime_轻量版/核验结果.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/核验结果.txt",
+   "sha256": "637c2090e9c4ca2cd086e09a3a9a5d4d8b33a7a6c72ce7f609b086e85f85d59a",
+   "bytes": 1457
+  },
+  "02_输入法挂接/使用说明.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/使用说明.txt",
+   "sha256": "2942f656f2b6ceb0e42d13e8e66f5a803d7c58285289e91249102f1a387f416c",
+   "bytes": 977
+  },
+  "02_输入法挂接/冰凌五笔/夜莺2.0_词库_含快符.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/冰凌五笔/夜莺2.0_词库_含快符.txt",
+   "sha256": "34972633c34fa46ced05a03b3e9343925dabf32a12dbb4e0eeaa9d8cc33f6f8d",
+   "bytes": 4525270
+  },
+  "02_输入法挂接/手心/使用说明.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/使用说明.txt",
+   "sha256": "ffe3d0072f6603c8489493b983aa2a81b44fc88cdfef593dcb9ac51fa060f376",
+   "bytes": 581
+  },
+  "02_输入法挂接/手心/夜莺2.0_辅助码.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/夜莺2.0_辅助码.txt",
+   "sha256": "9348441c3228d5112cdcb485c4dad092202fa3cfd7ad47e57fe2b47e3c18be8b",
+   "bytes": 124164
+  },
+  "02_输入法挂接/手心/夜莺2.0_辅助码_Unicode.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/夜莺2.0_辅助码_Unicode.txt",
+   "sha256": "593f044c7c4dac06c0171c09c92ee5499093ee6674ad353827da996cd86ad7e5",
+   "bytes": 186346
+  },
+  "02_输入法挂接/手心/模块化挂接/01_核心单字.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/模块化挂接/01_核心单字.txt",
+   "sha256": "231ec2f215c3cc4c6e3b80d2659e582b2e30124450135c7ca35361e1c298dc07",
+   "bytes": 227513
+  },
+  "02_输入法挂接/手心/模块化挂接/02_普通全码词.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/模块化挂接/02_普通全码词.txt",
+   "sha256": "a9e869236fcc6042b00318ff50bd1e1677fd0faa0cc31796c39636a14b64b211",
+   "bytes": 1985811
+  },
+  "02_输入法挂接/手心/模块化挂接/03_简词.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/模块化挂接/03_简词.txt",
+   "sha256": "b44e5edad4c4a0a6655a7ca605ae28439aa0eac05f9b843a9194b67cc40c2a52",
+   "bytes": 287552
+  },
+  "02_输入法挂接/手心/模块化挂接/04_快符.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/手心/模块化挂接/04_快符.txt",
+   "sha256": "485baae54a8ce62975abbbbb2276c3d11b9781cb7bc616145da0a414b0e8a2ec",
+   "bytes": 323
+  },
+  "02_输入法挂接/搜狗五笔/夜莺2.0_五笔_含快符.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/搜狗五笔/夜莺2.0_五笔_含快符.txt",
+   "sha256": "2a0247eb200615030465d350691a38c405cf62224f13384e070ba8afd148f473",
+   "bytes": 2341411
+  },
+  "02_输入法挂接/搜狗挂接/夜莺2.0_挂接_含快符.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/搜狗挂接/夜莺2.0_挂接_含快符.txt",
+   "sha256": "9ab626d42aacf2e04a56b59263ae16ea50ee4afac68926f431ebc1ef96332066",
+   "bytes": 2256734
+  },
+  "02_输入法挂接/普通字词表/夜莺2.0_快符_码前.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/普通字词表/夜莺2.0_快符_码前.txt",
+   "sha256": "581c2999fff42ffb77ed897ee1d92b8c3743733ee12d3944deb822847901ba50",
+   "bytes": 286
+  },
+  "02_输入法挂接/普通字词表/夜莺2.0_无简词_普通.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/普通字词表/夜莺2.0_无简词_普通.txt",
+   "sha256": "8927e6f52afb038f57a7ce61ae28cf8be6894aa34eee49588c3b3b3209954a12",
+   "bytes": 2076529
+  },
+  "02_输入法挂接/普通字词表/夜莺2.0_无简词_码前.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/普通字词表/夜莺2.0_无简词_码前.txt",
+   "sha256": "6b007e238d924ae690fea32bfe77862a995068b2a2fa3d67a1af890643962fc8",
+   "bytes": 2076529
+  },
+  "02_输入法挂接/普通字词表/夜莺2.0_有简词_普通.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/普通字词表/夜莺2.0_有简词_普通.txt",
+   "sha256": "2b0633e48dce03d42ab820f8d816c2f669f1411fbb2ef83bfacc658c0011502d",
+   "bytes": 2345871
+  },
+  "02_输入法挂接/普通字词表/夜莺2.0_有简词_码前.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/普通字词表/夜莺2.0_有简词_码前.txt",
+   "sha256": "f7e0727417a44c715fc65a0900002a5042a35ec686840ca893635f0fc535e757",
+   "bytes": 2345871
+  },
+  "02_输入法挂接/说明与核验/Rime引擎核验.json": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/Rime引擎核验.json",
+   "sha256": "24520180a29848f27f86a3349a1f6b8b4af9b92ef60c6822ca555c72b509f845",
+   "bytes": 1474
+  },
+  "02_输入法挂接/说明与核验/搜狗五笔_容量裁剪明细.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/搜狗五笔_容量裁剪明细.txt",
+   "sha256": "c7dcd63fb277c797d9f81964fe2db7dcd9584a5e65d78d8b72fc7ac97bec009b",
+   "bytes": 31
+  },
+  "02_输入法挂接/说明与核验/数据核验.json": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/数据核验.json",
+   "sha256": "14731d068585771d3b5f0a0539245a591f7d59c5b0739ea2285c0fc6a92f341e",
+   "bytes": 234
+  },
+  "02_输入法挂接/说明与核验/最终核验.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/最终核验.txt",
+   "sha256": "637c2090e9c4ca2cd086e09a3a9a5d4d8b33a7a6c72ce7f609b086e85f85d59a",
+   "bytes": 1457
+  },
+  "02_输入法挂接/说明与核验/未移植的源输入法专用宏.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/未移植的源输入法专用宏.txt",
+   "sha256": "4133773b43e49f3a1593df53ce90b15264807c2ec9488ce9bdbe2ff36cf6bc98",
+   "bytes": 150
+  },
+  "02_输入法挂接/说明与核验/生成清单.json": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/生成清单.json",
+   "sha256": "650ae1a1d2420ce74ce77f19d72b988a95ffcf4e0ebc35c611697de48aee0bee",
+   "bytes": 1435
+  },
+  "02_输入法挂接/说明与核验/超过四码_原表保留.txt": {
+   "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/超过四码_原表保留.txt",
+   "sha256": "770a9801892d9da194360619801b418db1edd37c4664c5cc8cfbe7266fc541b2",
+   "bytes": 5031
+  },
+  "03_字根与拆分/夜莺2.0字根图.html": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/字根图.html",
+   "sha256": "23a59fd4340b5840cd281be17fc42666fe45190ba21bd10dad21aa9b516fc674",
+   "bytes": 40686
+  },
+  "03_字根与拆分/夜莺2.0字根图.png": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/夜莺2.0字根图.png",
+   "sha256": "437a63b7b6bfa64db776f417796fc544e4c24ea8eb27b5644248425c9b6e2a6a",
+   "bytes": 185363
+  },
+  "03_字根与拆分/夜莺2.0字根总表.html": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/字根总表.html",
+   "sha256": "9d64f3aa45e7949083bfbdda45870fa41c5203fdf06ba1fecd81961fb3325f86",
+   "bytes": 32635
+  },
+  "03_字根与拆分/夜莺2.0字根键位表.txt": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/字根键位表.txt",
+   "sha256": "5c10ae09a7ca7638ac48f2d871dd077a2272cc4e7a15eee862520fe8c032c51b",
+   "bytes": 16525
+  },
+  "03_字根与拆分/夜莺2.0完整拆分表.html": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/完整拆分表.html",
+   "sha256": "124e4c05246577144346f4d9417a4bedc8545344535d100dd3060beb562fe886",
+   "bytes": 818140
+  },
+  "03_字根与拆分/夜莺2.0完整拆分表.txt": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/完整拆分表.txt",
+   "sha256": "0b0c15e072d136969525b4696a2564e9546b16621b6b5e64a6de1d0f5a054bfa",
+   "bytes": 599368
+  },
+  "03_字根与拆分/夜莺2.0当前完整根表.json": {
+   "source": "work/夜莺2.0/07_当前完整根表/夜莺2.0当前完整根表.json",
+   "sha256": "55890a876eac41547ebef1051ccb6db6b65f446b93cba949e49780910800da73",
+   "bytes": 32516
+  },
+  "03_字根与拆分/夜莺2.0当前完整根表.md": {
+   "source": "work/夜莺2.0/07_当前完整根表/夜莺2.0当前完整根表.md",
+   "sha256": "3cdfc602df592d7bdf6cfa8338749408a6a8c88b26fbec3d2e8ef8134c60d39f",
+   "bytes": 4519
+  },
+  "03_字根与拆分/夜莺2.0扩展字拆分表.txt": {
+   "source": "work/夜莺2.0/112_扩展字继承/夜莺2.0扩展字拆分表.txt",
+   "sha256": "963ef5b5bfa6dd8a5b5d0917b15ea44a23320aaefb54a4b68924ed334be89703",
+   "bytes": 321365
+  },
+  "04_查询与练习/夜莺2.0离线工具包.zip": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包.zip",
+   "sha256": "647a050ccff1b328659317247128bab365126f709cd2e7259cac5ce2356e826f",
+   "bytes": 1743748
+  },
+  "04_查询与练习/夜莺啾啾工具箱.html": {
+   "source": "work/夜莺2.0/65_群友离线工具包/夜莺啾啾工具箱.html",
+   "sha256": "665b03296fbd114f325929d46395b26fcd42cc8e51f4dda4109cc70e349e6593",
+   "bytes": 17686955
+  },
+  "05_规则与裁决/会话概要_2026-09-14至16.md": {
+   "source": "work/夜莺2.0/会话概要_2026-09-14至16.md",
+   "sha256": "14bfbd58a9a45443907888ae1ed63b7f62fc27edad14542627cabf7f8bd98793",
+   "bytes": 13326
+  },
+  "05_规则与裁决/当前任务树.md": {
+   "source": "work/夜莺2.0/当前任务树.md",
+   "sha256": "2a9d6cea1488be3ff908907c03d9516873dd0d25cb47a4524cde687b48677bec",
+   "bytes": 25753
+  },
+  "05_规则与裁决/码表概念与规则.md": {
+   "source": "work/夜莺2.0/码表概念与规则.md",
+   "sha256": "f83f022451dba9e716f88798bf2dbfd882041f80a170e9ac71431535ac86caaf",
+   "bytes": 20437
+  },
+  "05_规则与裁决/评估规则.md": {
+   "source": "work/夜莺2.0/评估规则.md",
+   "sha256": "b918d3e7adee3204cf617381c9fe41173b04b938b41aa7fe7ee3b4902889b2c2",
+   "bytes": 3236
+  }
+ },
+ "release_assets": {
+  "Nightingale-2.0-tables-20260916.zip": {
+   "sha256": "f3c326be5351b7b0ca44bac8eaf0b88295918f5a6b2ad92f40070a04e23cd192",
+   "bytes": 10113955
+  },
+  "Nightingale-Rime-2.0-light-20260916.zip": {
+   "sha256": "3147ad00d3706ae975dc7ffd6eaf164d17ad89283eb6591d383e2e2925eb2f57",
+   "bytes": 3743302
+  },
+  "Nightingale-Rime-2.0-main-20260916.zip": {
+   "sha256": "5b4a5d5b5f76acbd56d582db856600a72e4c868d897f886dd6e3f221d1081719",
+   "bytes": 398904942
+  },
+  "Nightingale-Toolbox-2.0-20260916.html": {
+   "sha256": "665b03296fbd114f325929d46395b26fcd42cc8e51f4dda4109cc70e349e6593",
+   "bytes": 17686955
+  },
+  "Nightingale-Toolbox-offline-2.0-20260916.zip": {
+   "sha256": "647a050ccff1b328659317247128bab365126f709cd2e7259cac5ce2356e826f",
+   "bytes": 1743748
+  }
+ },
+ "final_table_entries": 155139,
+ "chars": 15496,
+ "note": "大包不入 git，见 GitHub Release v2.0 附件与本地 02_输入法挂接/rime/发布包/"
+}

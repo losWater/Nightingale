@@ -1,0 +1,69 @@
+schema:
+  schema_id: yeying20_xm
+  name: 夜莺2.0·形码模式
+  version: 2.0-20260915
+  dependencies:
+  - yeying20_rime_fixed
+ascii_composer:
+  switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_code
+switches:
+- name: ascii_mode
+  reset: 0
+  states:
+  - 中文
+  - 西文
+- name: ascii_punct
+  states:
+  - 。，
+  - ．，
+engine:
+  processors:
+  - lua_processor@*yeying20_lookup_key
+  - ascii_composer
+  - recognizer
+  - key_binder
+  - speller
+  - punctuator
+  - selector
+  - navigator
+  - express_editor
+  segmentors:
+  - ascii_segmentor
+  - matcher
+  - abc_segmentor
+  - punct_segmentor
+  - fallback_segmentor
+  translators:
+  - lua_translator@*yeying20_lookup
+  - punct_translator
+  - table_translator
+  filters:
+  - uniquifier
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  max_code_length: 4
+  auto_select: true
+translator:
+  dictionary: yeying20_rime_fixed
+  enable_user_dict: false
+  enable_sentence: false
+  enable_completion: false
+menu:
+  page_size: 9
+punctuator:
+  import_preset: default
+key_binder:
+  import_preset: default
+  bindings:
+  - when: has_menu
+    accept: semicolon
+    send: 2
+  - when: has_menu
+    accept: apostrophe
+    send: 3
+recognizer:
+  import_preset: default
+  patterns:
+    yeying20_lookup: ^([`~][a-z]*|~~[a-z]*)$

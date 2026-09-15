@@ -88,3 +88,6 @@ work/重开工程/99_历史参考/
 夜莺B/documents/
 夜莺B/result_reference/
 夜莺B/work/*/
+
+# 发布大包（Rime 主力版等）只留本地与 GitHub Release 附件，不入库
+releases/*/02_输入法挂接/rime/发布包/
