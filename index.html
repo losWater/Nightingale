@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="夜莺，基于小鹤双拼的音形方案。乱序字根，拆分直观，常用字无重，常用字词避重。">
+  <meta name="description" content="夜莺 2.0，基于小鹤双拼的音形方案。乱序字根，拆分直观，常用字无重，常用字词避重。">
   <meta name="theme-color" content="#101c29">
   <title>夜莺 · 基于小鹤双拼的音形方案</title>
   <link rel="icon" href="bird.svg" type="image/svg+xml">
@@ -13,16 +13,16 @@
 <body>
   <a class="skip" href="#main">跳到正文</a>
   <header class="header"><a class="brand" href="#"><img src="bird.svg" alt="" width="34" height="34">夜莺<span>NIGHTINGALE</span></a>
-    <nav aria-label="主导航"><a href="#learn">开始学习</a><a href="#tools">查询与练习</a><a href="performance.html">性能</a><a href="#download">上线公告</a><a href="#updates">更新日志</a><a href="#author">作者的话</a></nav>
+    <nav aria-label="主导航"><a href="#learn">开始学习</a><a href="#tools">查询与练习</a><a href="performance.html">性能</a><a href="#download">下载</a><a href="#updates">更新日志</a><a href="#author">作者的话</a></nav>
     <div class="header-end"><a href="https://github.com/losWater/Nightingale" class="github">GitHub ↗</a><button id="theme" type="button" aria-label="切换至浅色模式" title="切换明暗模式">☼</button></div>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> 夜莺 2.0 · 即将上线</div>
+      <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> 夜莺 2.0 · 正式发布</div>
         <h1 id="hero-title">夜莺<span>让文字，<br>自然落在指尖。</span></h1>
-        <p class="intro">基于小鹤双拼的音形方案</p><p class="launch-notice" style="padding:14px 18px;border:1px solid var(--accent);border-radius:8px;background:var(--panel);color:var(--accent)">夜莺2.0即将上线，故暂停1.0的下载，敬请期待</p>
+        <p class="intro">基于小鹤双拼的音形方案</p>
         <p class="principles">乱序字根 <i>·</i> 拆分直观 <i>·</i> 常用字无重 <i>·</i> 常用字词避重</p>
-        <div class="actions"><a class="button primary" href="#learn">开始学习 <span>→</span></a></div>
+        <div class="actions"><a class="button primary" href="#learn">开始学习 <span>→</span></a><a class="button secondary" href="#download">下载码表 <span>↓</span></a></div>
         <a class="quiet-link" href="tools/split.html">已经在用了？查一个字的拆分 ↗</a>
       </div>
       <figure class="hero-art character-art">
@@ -31,22 +31,24 @@
       </figure>
     </section>
     <section class="features" aria-label="方案特点">
-      <article><span class="feature-number">01 / 布局</span><h2>乱序字根</h2><p>为夜莺安排的字根布局。<br>从字根表开始，逐步建立指尖记忆。</p></article>
+      <article><span class="feature-number">01 / 布局</span><h2>乱序字根</h2><p>130 组字根，由退火与人工裁定共同定下键位。<br>从字根表开始，逐步建立指尖记忆。</p></article>
       <article><span class="feature-number">02 / 拆分</span><h2>拆分直观</h2><p>双拼取音，首末根取形。<br>看得清一个字，也记得住它的码。</p></article>
-      <article><span class="feature-number">03 / 单字</span><h2>常用字无重</h2><p>用简码分流常用单字。<br>让熟悉的字，少一次候选选择。</p></article>
-      <article><span class="feature-number">04 / 字词</span><h2>常用字词避重</h2><p>结合简码与候选次序，<br>让常用的字和词各得其位。</p></article>
+      <article><span class="feature-number">03 / 单字</span><h2>常用字无重</h2><p>用简码分流常用单字。<br>前 1500 字选重为 0，前 6000 字加权选重率 0.017%。</p></article>
+      <article><span class="feature-number">04 / 字词</span><h2>常用字词避重</h2><p>有简码的字在全码位让给词。<br>高频字词全码冲突 55 对降到 0。</p></article>
     </section>
     <section class="section learn" id="learn">
       <div class="section-heading"><div><span class="eyebrow">GET STARTED</span><h2>从读音出发，用字形落笔。</h2></div><p>会小鹤双拼，就有了熟悉的起点。<br>接下来，认识字根，练习拆分。</p></div>
-      <div class="learn-layout"><div class="formula"><span class="tiny-label">单字全码 · 四键成字</span><div class="keys"><kbd>a</kbd><kbd>b</kbd><span>＋</span><kbd>x</kbd><kbd>y</kbd></div><div class="key-labels"><span>小鹤双拼音码</span><span>首根</span><span>末根</span></div><p>先取读音，再取规范拆分的首、末字根。<br>常用字还可以使用一至三简。</p><a href="https://github.com/losWater/Nightingale/blob/main/docs/principles/首末根原理.md">阅读完整编码原理 ↗</a></div>
-        <div class="steps"><div class="practice-companion"><img src="assets/nightingale-chibi.png" alt="Q版夜莺捧着莺字键帽" width="1254" height="1254" loading="lazy"><p>从一个字根开始，<br>慢慢熟悉每一个键位。</p></div><a href="tools/roots.html"><span>01</span><div><h3>认识字根</h3><p>查看键位分布，找到每个字根的位置。</p></div><b>↗</b></a><a href="tools/root-practice.html"><span>02</span><div><h3>练熟键位</h3><p>在字根练习里，慢慢形成肌肉记忆。</p></div><b>↗</b></a><a href="tools/split-practice.html"><span>03</span><div><h3>开始拆字</h3><p>用必拆字练习理解规则，遇到疑问随时查询。</p></div><b>↗</b></a></div></div>
-      <details class="scope"><summary>“常用字无重”的统计口径</summary><p>按提供的单字评测表，纳入简码后前1500字选重为0，前3000字合计9，前6000字加权选重率为0.03%。统计范围与加权方式会影响结果。</p><a href="performance.html">查看性能介绍与完整数据 ↗</a></details>
+      <div class="learn-layout"><div class="formula"><span class="tiny-label">单字全码 · 四键成字</span><div class="keys"><kbd>a</kbd><kbd>b</kbd><span>＋</span><kbd>x</kbd><kbd>y</kbd></div><div class="key-labels"><span>小鹤双拼音码</span><span>首根</span><span>末根</span></div><p>先取读音，再取规范拆分的首、末字根。<br>常用字还可以使用一至三简；二字词取两字双拼，三字词取三字首码。</p><a href="https://github.com/losWater/Nightingale/blob/main/releases/v2.0/05_规则与裁决/码表概念与规则.md">阅读完整编码规则 ↗</a></div>
+        <div class="steps"><div class="practice-companion"><img src="assets/nightingale-chibi.png" alt="Q版夜莺捧着莺字键帽" width="1254" height="1254" loading="lazy"><p>从一个字根开始，<br>慢慢熟悉每一个键位。</p></div><a href="tools/roots.html"><span>01</span><div><h3>认识字根</h3><p>查看键位分布，找到每个字根的位置。</p></div><b>↗</b></a><a href="tools/root-practice.html"><span>02</span><div><h3>练熟键位</h3><p>字根练习按题数间隔复习，进度保存在本地。</p></div><b>↗</b></a><a href="tools/split.html"><span>03</span><div><h3>开始拆字</h3><p>遇到不会拆的字随时查询，看拆分与可用编码。</p></div><b>↗</b></a></div></div>
+      <details class="scope"><summary>“常用字无重”的统计口径</summary><p>按 2.0 最终表与多来源字频重算：每字取主读音最短入口，前 1500 字选重为 0，前 3000 字合计 7，前 6000 字合计 171、按字频加权选重率 0.017%。字词冲突取字频前 1500 的字与词频前 10000 的四码词，全码同码 55 对，剔除有简码的字后为 0。</p><a href="performance.html">查看性能介绍与完整数据 ↗</a></details>
     </section>
-    <section class="section" id="tools"><div class="section-heading"><div><span class="eyebrow">YOUR TOOLBOX</span><h2>遇到一个字，就来这里。</h2></div><p>查询与练习，随时打开。</p></div>
-      <div class="tool-grid"><a class="tool-card" href="tools/split.html"><span class="tool-glyph">拆</span><h3>拆分查询 <b>↗</b></h3><p>查汉字的规范拆分与可用编码。</p></a><a class="tool-card" href="tools/reverse.html"><span class="tool-glyph">码</span><h3>编码反查 <b>↗</b></h3><p>输入编码，查看完整候选次序。</p></a><a class="tool-card" href="tools/components.html"><span class="tool-glyph">根</span><h3>部件查字 <b>↗</b></h3><p>从熟悉的部件出发，找到目标字。</p></a></div>
+    <section class="section" id="tools"><div class="section-heading"><div><span class="eyebrow">YOUR TOOLBOX</span><h2>遇到一个字，就来这里。</h2></div><p>查询与练习，随时打开。<br>都在浏览器本地运行，不需要联网。</p></div>
+      <div class="tool-grid"><a class="tool-card" href="tools/split.html"><span class="tool-glyph">拆</span><h3>拆分查询 <b>↗</b></h3><p>查汉字的规范拆分与全部编码，也可以输入编码查候选。</p></a><a class="tool-card" href="tools/components.html"><span class="tool-glyph">根</span><h3>部件反查 <b>↗</b></h3><p>从熟悉的部件出发，按首根、末根找到目标字。</p></a><a class="tool-card" href="tools/root-practice.html"><span class="tool-glyph">练</span><h3>字根练习 <b>↗</b></h3><p>归并组与全部根形两种模式，答错原题重学。</p></a><a class="tool-card" href="tools/toolbox.html"><span class="tool-glyph">箱</span><h3>啾啾工具箱 <b>↗</b></h3><p>以上全部合在一个页面里，含 15496 字的完整拆分表，可下载离线用。</p></a></div>
     </section>
-    <section class="section" id="download"><span class="eyebrow">COMING SOON</span><h2>夜莺2.0即将上线</h2><p>夜莺2.0即将上线，故暂停1.0的下载，敬请期待</p></section>
-    <section class="section updates" id="updates"><div><img class="update-portrait" src="assets/nightingale-portrait.png" alt="夜莺头像：羽毛笔、肩上的小鸟与月色" width="1254" height="1254" loading="lazy"><span class="eyebrow">GROWING WITH EVERY KEYSTROKE</span><h2>每一次实打，都让夜莺更好一点。</h2><p>从字根拆分到简码位置，把日常使用中的反馈，一条条写进维护记录。</p></div><div class="update-links"><a href="https://github.com/losWater/Nightingale/blob/main/releases/v1.0/夜莺1.0升级日志.txt">版本更新日志 <span>↗</span></a><a href="https://github.com/losWater/Nightingale/blob/main/releases/v1.0/05_维护与裁决/实战发现的问题.txt">实战维护记录 <span>↗</span></a><a href="https://github.com/losWater/Nightingale/issues">反馈一个问题 <span>↗</span></a></div></section>
+    <section class="section download" id="download"><div><span class="eyebrow">MAKE IT YOURS</span><h2>把夜莺带到你的键盘。</h2><p>选择你使用的输入法，下载码表与导入说明。</p><div class="version"><span class="status-dot"></span> 夜莺 2.0 <span class="divider">/</span> 2026-09-16 发布</div><a class="quiet-link" href="https://github.com/losWater/Nightingale/releases/tag/v2.0">查看发布页与全部附件 ↗</a><a class="quiet-link" href="https://github.com/losWater/Nightingale/releases/tag/v1.0">历史版本：1.0 发布页 ↗</a></div>
+      <div class="download-list"><a href="https://github.com/losWater/Nightingale/releases/download/v2.0/Nightingale-Rime-2.0-main-20260916.zip"><span>Rime 主力版（推荐）<small>V5 整句模型 + 原生引擎 · 约 380MB · 解压即用</small></span><b>↓</b></a><a href="https://github.com/losWater/Nightingale/releases/download/v2.0/Nightingale-Rime-2.0-light-20260916.zip"><span>Rime 轻量版<small>Rime 原生整句 · 3.6MB · 解压即用</small></span><b>↓</b></a><a href="https://github.com/losWater/Nightingale/releases/download/v2.0/Nightingale-2.0-tables-20260916.zip"><span>手心 · 搜狗 · 冰凌 · Bime<small>各平台挂接码表与辅助码 · 含说明</small></span><b>↓</b></a><a href="https://github.com/losWater/Nightingale/releases/download/v2.0/Nightingale-Toolbox-2.0-20260916.html"><span>啾啾工具箱 · 单文件<small>手机也能打开 · 拆分查询、练习、字根表</small></span><b>↓</b></a></div>
+    </section>
+    <section class="section updates" id="updates"><div><img class="update-portrait" src="assets/nightingale-portrait.png" alt="夜莺头像：羽毛笔、肩上的小鸟与月色" width="1254" height="1254" loading="lazy"><span class="eyebrow">GROWING WITH EVERY KEYSTROKE</span><h2>每一次实打，都让夜莺更好一点。</h2><p>Rime 里按 Ctrl+数字 就能把候选钉成首选，Ctrl+Enter 造词；<br>从字根拆分到简码位置，反馈一条条写进裁定记录。</p></div><div class="update-links"><a href="https://github.com/losWater/Nightingale/blob/main/releases/v2.0/夜莺2.0升级日志.md">2.0 升级日志 <span>↗</span></a><a href="https://github.com/losWater/Nightingale/blob/main/releases/v2.0/05_规则与裁决/当前任务树.md">裁定与维护记录 <span>↗</span></a><a href="https://github.com/losWater/Nightingale/issues">反馈一个问题 <span>↗</span></a></div></section>
     <section class="section author-section" id="author" aria-labelledby="author-title">
       <div><h2 id="author-title">作者的话</h2><p>关于夜莺的设计、使用与思考。</p></div>
       <div class="author-articles"><a class="author-entry" href="author.html"><span>江畔 · 作者随笔</span><h3>作者的话 <b aria-hidden="true">↗</b></h3><p>夜莺的起步、设计思路，以及一路走来的思考。</p><strong>阅读全文 →</strong></a></div>
