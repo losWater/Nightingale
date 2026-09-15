@@ -67,17 +67,13 @@ fixed:
   initial_quality: 100
   enable_encoder: true
   encode_commit_history: true
-  max_phrase_length: 6
+  max_phrase_length: 2
   encoder:
     exclude_patterns:
       - '^[a-z]$'
     rules:
       - length_equal: 2
         formula: AaAbBaBb
-      - length_equal: 3
-        formula: AaBaCa
-      - length_in_range: [4, 6]
-        formula: AaBaCaZa
 menu:
   page_size: 9
 punctuator:

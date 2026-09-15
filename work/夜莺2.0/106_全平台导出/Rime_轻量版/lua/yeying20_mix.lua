@@ -1,6 +1,7 @@
 -- Nightingale: fixed short-code lookup + lazy sentence translator.
 -- Inspired by WhaleCold's table/script split; no candidate-stream exhaustion.
--- 2026-09-16：固定表候选经 yeying20_pin.order 重排（钉选在前 → 码表原序 → 自动造词），不按使用频率乱序。
+-- 2026-09-16：固定表候选 + 主动造词（yeying20_words.txt）经 yeying20_pin.order 重排
+--   （钉选在前 → 码表原序 → 自动造词/主动造词），不按使用频率乱序。
 local pin = require('yeying20_pin')
 local M = {}
 function M.init(env)
@@ -20,12 +21,13 @@ function M.func(input, seg, env)
   if input:match('^[`~]') then return end
   if not seg:has_tag('abc') then return end
   if #input > 0 then
+    local list = {}
     local fixed = env.fixed:query(input, seg)
-    if fixed then
-      local list = {}
-      for cand in fixed:iter() do list[#list + 1] = cand end
-      for _, cand in ipairs(pin.order(input, list)) do yield(cand) end
+    if fixed then for cand in fixed:iter() do list[#list + 1] = cand end end
+    for _, text in ipairs(pin.words(input)) do
+      list[#list + 1] = Candidate('user_table', seg.start, seg._end, text, pin.MADE)
     end
+    for _, cand in ipairs(pin.order(input, list)) do yield(cand) end
   end
   if env.impl and #env.engine.context.input <= env.model_max_input then
     env.impl.func(input, seg, env)
