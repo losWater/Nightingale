@@ -1,19 +1,19 @@
 {
- "时间": "2026-09-15T23:21:06",
+ "时间": "2026-09-15T23:35:55",
  "目录": "D:/nightingale/releases/v2.0",
- "文件数": 75,
+ "文件数": 76,
  "附件": {
   "Nightingale-2.0-tables-20260916.zip": {
-   "sha256": "2bcca702627238ef18ca75d017590dca9aba6bca8f61f644445b73a718b069a5",
-   "bytes": 10179626
+   "sha256": "362b2f5b4c7045d69a1b5138add3857ccc0e389c7c11ba237d4904a4f1c0d85d",
+   "bytes": 10179646
   },
   "Nightingale-Rime-2.0-light-20260916.zip": {
-   "sha256": "95c770d2a3fcfd036354c2f43499db61be9a56a917e95e63b01b154ef03b2d06",
-   "bytes": 3781913
+   "sha256": "8ec5db2300490b4bf34a284826bcd55c0ad02e2875e649c1f2f1b106d71be22d",
+   "bytes": 5977888
   },
   "Nightingale-Rime-2.0-main-20260916.zip": {
-   "sha256": "e6faf67382ef3c99ac5c36edd4c83dad7849351d789d6e25b4a457141257d26f",
-   "bytes": 398943552
+   "sha256": "61147c66e2fc5f94ddb41cde6098f78c1daf32218f7cafc864edf878202dd3a6",
+   "bytes": 403107224
   },
   "Nightingale-Toolbox-2.0-20260916.html": {
    "sha256": "665b03296fbd114f325929d46395b26fcd42cc8e51f4dda4109cc70e349e6593",

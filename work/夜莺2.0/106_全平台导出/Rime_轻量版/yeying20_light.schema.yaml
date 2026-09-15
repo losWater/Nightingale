@@ -18,6 +18,11 @@ switches:
   states:
   - 。，
   - ．，
+- name: yeying_short_words
+  reset: 0
+  states:
+  - 简词不进整句
+  - 简词进整句
 engine:
   processors:
   - lua_processor@*yeying20_lookup_key
@@ -52,6 +57,15 @@ speller:
 translator:
   dictionary: yeying20_rime
   user_dict: yeying20_light
+  enable_user_dict: true
+  enable_completion: false
+  contextual_suggestions: false
+  max_homophones: 7
+  max_homographs: 7
+  max_sentences: 2
+translator_short:
+  dictionary: yeying20_rime_short
+  user_dict: yeying20_light_short
   enable_user_dict: true
   enable_completion: false
   contextual_suggestions: false
