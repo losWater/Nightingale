@@ -54,7 +54,7 @@ for t,c in single:
 auxtext=''.join(t+'='+' '.join(cs)+'\r\n' for t,cs in sorted(aux.items()))
 write(OUT/'手心/夜莺2.0_辅助码.txt',auxtext,'utf-8')
 write(OUT/'手心/夜莺2.0_辅助码_Unicode.txt',auxtext,'utf-16')
-write(OUT/'手心/使用说明.txt','四个挂接模块可同时启用；不需要简词或快符可分别停用03或04。不要与旧整合挂接表重复导入。\r\n各模块继承完整字词表的候选序号，不因关闭模块重新编号。02包含普通二、三字全码词，以及四字及以上词；关闭02会一起停用这些词。\r\n辅助码与挂接独立导入辅助码设置；两个辅助码文件内容相同，按导入支持选UTF-8或Unicode版之一。辅助码取当前单字全码最后两位，同字多码空格分隔。\r\n本次字集8105字，没有添加尚未定稿的扩展字。\r\n')
+write(OUT/'手心/使用说明.txt','四个挂接模块可同时启用；不需要简词或快符可分别停用03或04。不要与旧整合挂接表重复导入。\r\n各模块继承完整字词表的候选序号，不因关闭模块重新编号。02包含普通二、三字全码词，以及四字及以上词；关闭02会一起停用这些词。\r\n辅助码与挂接独立导入辅助码设置；两个辅助码文件内容相同，按导入支持选UTF-8或Unicode版之一。辅助码取当前单字全码最后两位，同字多码空格分隔。\r\n本次字集15496字：8105通用规范汉字加7391个扩展字（新华字典多出的字，含繁体旧字形）；扩展字全码排在同码位现有字词之后，01模块与辅助码文件均已包含。\r\n')
 sogou=[r for r in allrows if not(len(r[0])==2 and len(r[1])==4 and (r[0],r[1]) not in quickset)]
 assert len(sogou)<=100000
 write(OUT/'搜狗挂接/夜莺2.0_挂接_含快符.txt',''.join(f'{c},{n}={t}\r\n' for t,c,n in sogou),'utf-16')
@@ -80,13 +80,14 @@ write(OUT/'冰凌五笔/夜莺2.0_词库_含快符.txt',header+''.join(f'{c}\t{t
 write(OUT/'Bime/mb/夜莺2.0/夜莺字词.txt',''.join(f'{t}\t{c}\t{100000-n}\r\n' for t,c,n in valid))
 splitrows=list(csv.DictReader((W/'55_拆分继承核验/当前完整拆分表.txt').open(encoding='utf-8-sig'),delimiter='\t'))
 splits={r['汉字']:r['完整拆分'] for r in splitrows}
+for r in csv.DictReader((W/'112_扩展字继承/夜莺2.0扩展字拆分表.txt').open(encoding='utf-8-sig'),delimiter='	'):splits.setdefault(r['汉字'],r['完整拆分'])   # 2026-09-16 扩展字拆分一并进 Bime 拆分文件与 Rime 反查
 write(OUT/'Bime/mb/夜莺2.0/夜莺.拆分',''.join(f'{t}\t{s}\r\n' for t,s in splits.items()))
-write(OUT/'Bime/使用说明.txt','将mb内的夜莺2.0文件夹复制到Bime的mb目录，再重载码表、选择夜莺2.0。最大码长设4。包含快符及当前8105字拆分。没有覆盖个人config.txt或用户调整.txt。旧个人调频可能改变候选顺序。\r\n')
+write(OUT/'Bime/使用说明.txt','将mb内的夜莺2.0文件夹复制到Bime的mb目录，再重载码表、选择夜莺2.0。最大码长设4。包含快符及全部15496字（8105通用规范汉字+7391扩展字）的拆分。没有覆盖个人config.txt或用户调整.txt。旧个人调频可能改变候选顺序。\r\n')
 report={'基线':pointer,'来源SHA256':hashlib.sha256(SRC.read_bytes()).hexdigest(),'原表条数':len(rows),'无简词条数':len(no_short),'无简词口径':'删除二、三字且不足四码的简词；保留全部单字、四码及以上词、四字及以上词。快符单列。','快符':len(quick),'四码内含快符':len(valid),'超过四码条目':len(excluded),'手心模块':{k:len(v) for k,v in modules.items()},'辅助码字数':len(aux),'搜狗挂接条数':len(sogou),'搜狗挂接保留次选起步单字数':len(gaps),'搜狗五笔条数':len(wubi),'搜狗五笔裁剪条数':len(cut),'裁剪口径':'只裁全码非首选词；候选位越后越先裁，同位按现有综合排序指数由低到高；保留所有单字、简词、快符及人工指定项。未回写源表。','冰凌及Bime条数':len(valid)}
 report['未移植专用宏']=len(unsupported)
 report['无简词口径']='不足四码的词条，仅保留含四个及以上汉字的词；标点不计字数，因此说道：“属于简词。不足四码的外文短语、符号串及源输入法专用宏一并从无简词版移除；快符独立提供。单字和全部四码及以上条目保留。'
 js(OUT/'说明与核验/生成清单.json',report)
-write(OUT/'使用说明.txt','夜莺2.0 最终表导出，2026-09-15：单字表（78，8105 字 13 项核验）+ 普通词（91）+ 二字简词（102）+ 三字词三码（103）合并为 104 最终表；简码位字在前、简词在后。\r\n普通字词表：普通=字词在前；码前=编码在前；无简词仍保留四字及以上词。普通表不混入快符，快符单列；各平台码表已包含快符，手心为独立模块。\r\n搜狗挂接为自定义短语格式，UTF-16LE BOM；不包含四码二字词，删词后保留原序号，让位字从2开始。\r\n搜狗五笔为编码TAB字词，UTF-8；按20万条上限裁剪，清单见说明与核验。冰凌为UTF-16LE BOM专用文本词库。\r\n手心挂接使用UTF-8；Bime使用UTF-8 BOM、CRLF。\r\n定长四码平台不导入超过四码的条目，完整内容仍在普通表，并附单独清单。Rime独立打包。\r\n除Rime引擎核验外，其他平台本次为格式及数据核验，未在输入法界面实测导入。\r\n')
+write(OUT/'使用说明.txt','夜莺2.0 最终表导出，2026-09-16：单字表（78，8105 字 13 项核验）+ 普通词（109 四家共识筛选）+ 二字简词（102）+ 三字词三码（103）合并，词序三家投票（110），再加 7391 个扩展字（112/113，新华字典多出的字，含繁体旧字形；全码排同码位现有字词之后）为最终表 155139 条；简码位字在前、简词在后。\r\n普通字词表：普通=字词在前；码前=编码在前；无简词仍保留四字及以上词。普通表不混入快符，快符单列；各平台码表已包含快符，手心为独立模块。\r\n搜狗挂接为自定义短语格式，UTF-16LE BOM；不包含四码二字词，删词后保留原序号，让位字从2开始。\r\n搜狗五笔为编码TAB字词，UTF-8；按20万条上限裁剪，清单见说明与核验。冰凌为UTF-16LE BOM专用文本词库。\r\n手心挂接使用UTF-8；Bime使用UTF-8 BOM、CRLF。\r\n定长四码平台不导入超过四码的条目，完整内容仍在普通表，并附单独清单。Rime独立打包。\r\n除Rime引擎核验外，其他平台本次为格式及数据核验，未在输入法界面实测导入。\r\n')
 
 # Reuse the published adapters and model only. All character/word tables and split data
 # are rebuilt from this E: workspace; do not carry over 1.0 dictionaries or user data.
