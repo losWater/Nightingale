@@ -1,0 +1,27 @@
+{
+  "ranked": [
+    "g02_large_01",
+    "g02_large_04",
+    "g02_large_02",
+    "g02_small_02",
+    "g02_small_04",
+    "g02_random_04",
+    "g02_small_03",
+    "g02_projection_01",
+    "g02_projection_03",
+    "g02_random_02",
+    "g02_random_03",
+    "g02_projection_04",
+    "g02_small_01",
+    "g02_large_03",
+    "g02_projection_02",
+    "g02_random_01"
+  ],
+  "selected": [
+    "g02_large_01",
+    "g02_large_04",
+    "g02_large_02",
+    "g02_small_02"
+  ],
+  "rule": "前300有效重码为0，综合分降序、全赛去重；不足4名停止，不放宽门槛"
+}

@@ -1,0 +1,83 @@
+{
+ "时间": "2026-09-15T03:05:49",
+ "输入": {
+  "单字表": "78/夜莺2.0纯单字表_普通格式.txt",
+  "普通词表": "91/夜莺2.0普通词表_普通格式.txt"
+ },
+ "单字条目": 13644,
+ "词条目": 115747,
+ "码位": 98332,
+ "规则调整码位": 1029,
+ "人工指定生效": 8,
+ "与62不一致码位": 49267,
+ "不一致样例": [
+  "aabi",
+  "aabk",
+  "aagj",
+  "aagu",
+  "aagz",
+  "aahl",
+  "aahw",
+  "aaig",
+  "aajj",
+  "aajq",
+  "aake",
+  "aakx",
+  "aalh",
+  "aalp",
+  "aals",
+  "aalw",
+  "aamj",
+  "aank",
+  "aanl",
+  "aapn",
+  "aapw",
+  "aaqk",
+  "aaqq",
+  "aash",
+  "aath",
+  "aati",
+  "aauu",
+  "aavf",
+  "aawu",
+  "aaxs",
+  "aayb",
+  "aaye",
+  "aazi",
+  "aazu",
+  "aazz",
+  "abhz",
+  "ablk",
+  "abvb",
+  "abvl",
+  "addd",
+  "adlj",
+  "adlu",
+  "afaf",
+  "aguy",
+  "ahgl",
+  "ahre",
+  "ahri",
+  "ahsa",
+  "ahui",
+  "ahvi"
+ ],
+ "输出": {
+  "夜莺2.0字词表_普通格式.txt": {
+   "行数": 129391,
+   "sha256": "3c5cc977e7fd04dd62787a8d1bef364ddca96ebdc67d834dc9854135a6ae9864"
+  },
+  "夜莺2.0字词表_码前格式.txt": {
+   "行数": 129391,
+   "sha256": "5d3c328c39f30649f56dda1490386525d22aa0a202b85ba51792d1405000b8a8"
+  },
+  "夜莺2.0字词表_手心格式.txt": {
+   "行数": 129391,
+   "sha256": "f724da3412a97d764c48ddeccda42fa015447632bf2b63bf4dfe113f64f5a0a2"
+  },
+  "夜莺2.0字词表_搜狗.txt": {
+   "行数": 129391,
+   "sha256": "9da4887045ab7cffedc026d3149bc16f88001609600b3221b66404e464e29fbc"
+  }
+ }
+}

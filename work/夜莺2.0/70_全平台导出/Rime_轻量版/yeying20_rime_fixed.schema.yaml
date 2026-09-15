@@ -1,0 +1,6 @@
+schema:
+  schema_id: yeying20_rime_fixed
+  name: 夜莺固定码表（辅助）
+  version: "1.0"
+translator:
+  dictionary: yeying20_rime_fixed

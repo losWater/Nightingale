@@ -1,0 +1,42 @@
+{
+  "core_chars": 8105,
+  "extension_chars": 18770,
+  "main_definitions": 175,
+  "attached_definitions": 237,
+  "anchor_definitions": 11,
+  "distinct_root_names": 421,
+  "frequency_positive_chars": 5291,
+  "low_group_10": 14,
+  "low_group_20": 38,
+  "published_differences": [
+    {
+      "char": "墼",
+      "current": [
+        "車",
+        "凵",
+        "殳",
+        "土"
+      ],
+      "published": [
+        "一",
+        "日",
+        "十",
+        "凵",
+        "殳",
+        "土"
+      ]
+    }
+  ],
+  "undefined_extension_tokens": {
+    "乁": [
+      "亪"
+    ]
+  },
+  "sources": {
+    "work\\重开工程\\01_根集\\根集_待完整性复核.yaml": "c33f9bdff7721cadb31f86c30196c5b4e8425bda18c4dda53961e286daf38baf",
+    "work\\重开工程\\02_规范拆分\\最终规范拆分表_待核验.tsv": "5e16d17e8e36c41373dd67169b65758d8256c7785f950d925111005d7923a778",
+    "work\\夜莺0.85\\10_扩展字Chai实验\\20260830_034806+1000\\扩展字规范拆分_候选.tsv": "146667ef056c556461bbdf558a4fbc05ba769f7f4ee2c2178b75e51d331edf39",
+    "work\\夜莺2.0\\03_字音频率审计\\整字频次守恒.tsv": "ec1906029f4a4583635e82a05a1e3a8d27435352126095cd556ab8bfbdc14f42",
+    "releases\\v1.0\\01_正式码表\\夜莺码v1.0键位布局.yaml": "c74e2ceeb16d97e17fc36c2fda2ee5e8e84a804a4a36539452ed02c015dab58e"
+  }
+}

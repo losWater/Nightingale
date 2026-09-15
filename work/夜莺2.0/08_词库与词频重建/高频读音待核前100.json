@@ -1,0 +1,5267 @@
+[
+  {
+    "词": "那个",
+    "词长": 2,
+    "排序指数": 0.58398045,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 222335.0,
+      "bcc_dialogue": 153073.0,
+      "bcc_news": 55820.0,
+      "bcc_literature": 92962.0,
+      "subtlex": 41417.0,
+      "cld_weibo": 4345.0
+    },
+    "各源排名": {
+      "bcc_balanced": 62,
+      "bcc_dialogue": 34,
+      "bcc_news": 1737,
+      "bcc_literature": 26,
+      "subtlex": 31,
+      "cld_weibo": 1361
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "na ge"
+      ],
+      "鲸凉鹤": [
+        "na ge"
+      ],
+      "Chai整词": [
+        "na ge"
+      ],
+      "墨奇双拼": [
+        "nage"
+      ],
+      "SUBTLEX整词": [
+        "nei ge"
+      ]
+    },
+    "1.0四码": [
+      "nage"
+    ],
+    "论文训练码": "nage",
+    "综合排名": 100,
+    "二字词排名": 99
+  },
+  {
+    "词": "得到",
+    "词长": 2,
+    "排序指数": 0.5685891,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 129737.0,
+      "bcc_dialogue": 13315.0,
+      "bcc_news": 400614.0,
+      "bcc_literature": 28242.0,
+      "subtlex": 11188.0,
+      "cld_weibo": 33950.0
+    },
+    "各源排名": {
+      "bcc_balanced": 168,
+      "bcc_dialogue": 581,
+      "bcc_news": 189,
+      "bcc_literature": 172,
+      "subtlex": 142,
+      "cld_weibo": 155
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "de dao"
+      ],
+      "鲸凉鹤": [
+        "de dao"
+      ],
+      "Chai整词": [
+        "dei dao"
+      ],
+      "墨奇双拼": [
+        "dedc",
+        "dwdc"
+      ],
+      "CLD整词": [
+        "de dao"
+      ],
+      "SUBTLEX整词": [
+        "de dao"
+      ]
+    },
+    "1.0四码": [
+      "dedc"
+    ],
+    "论文训练码": null,
+    "综合排名": 119,
+    "二字词排名": 118
+  },
+  {
+    "词": "睡觉",
+    "词长": 2,
+    "排序指数": 0.56638418,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 77444.0,
+      "bcc_dialogue": 82460.0,
+      "bcc_news": 9260.0,
+      "bcc_literature": 10426.0,
+      "subtlex": 3999.0,
+      "cld_weibo": 58169.0
+    },
+    "各源排名": {
+      "bcc_balanced": 381,
+      "bcc_dialogue": 83,
+      "bcc_news": 7022,
+      "bcc_literature": 563,
+      "subtlex": 427,
+      "cld_weibo": 67
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "shui jiao",
+        "shui jue"
+      ],
+      "鲸凉鹤": [
+        "shui jiao",
+        "shui jue"
+      ],
+      "Chai整词": [
+        "shui jiao"
+      ],
+      "墨奇双拼": [
+        "uvjn"
+      ],
+      "CLD整词": [
+        "shui jiao"
+      ],
+      "SUBTLEX整词": [
+        "shui jiao"
+      ]
+    },
+    "1.0四码": [
+      "uvjn"
+    ],
+    "论文训练码": "uvjn",
+    "综合排名": 122,
+    "二字词排名": 121
+  },
+  {
+    "词": "苹果",
+    "词长": 2,
+    "排序指数": 0.41343686,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 17984.0,
+      "bcc_dialogue": 15871.0,
+      "bcc_news": 21968.0,
+      "bcc_literature": 2466.0,
+      "subtlex": 766.0,
+      "cld_weibo": 13758.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1756,
+      "bcc_dialogue": 497,
+      "bcc_news": 3713,
+      "bcc_literature": 2657,
+      "subtlex": 1972,
+      "cld_weibo": 424
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ping guo"
+      ],
+      "鲸凉鹤": [
+        "ping guo"
+      ],
+      "Chai整词": [
+        "ping guo"
+      ],
+      "墨奇双拼": [
+        "pkgo"
+      ],
+      "CLD整词": [
+        "pin guo"
+      ],
+      "SUBTLEX整词": [
+        "ping guo"
+      ]
+    },
+    "1.0四码": [
+      "pkgo"
+    ],
+    "论文训练码": "pkgo",
+    "综合排名": 852,
+    "二字词排名": 840
+  },
+  {
+    "词": "成熟",
+    "词长": 2,
+    "排序指数": 0.40333865,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 27589.0,
+      "bcc_dialogue": 9194.0,
+      "bcc_news": 54131.0,
+      "bcc_literature": 3244.0,
+      "subtlex": 1055.0,
+      "cld_weibo": 9592.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1228,
+      "bcc_dialogue": 840,
+      "bcc_news": 1774,
+      "bcc_literature": 2012,
+      "subtlex": 1484,
+      "cld_weibo": 614
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "cheng shu"
+      ],
+      "鲸凉鹤": [
+        "cheng shou",
+        "cheng shu"
+      ],
+      "Chai整词": [
+        "cheng shu"
+      ],
+      "墨奇双拼": [
+        "iguu",
+        "iguz"
+      ],
+      "CLD整词": [
+        "cheng shu"
+      ],
+      "SUBTLEX整词": [
+        "cheng shu"
+      ]
+    },
+    "1.0四码": [
+      "iguu"
+    ],
+    "论文训练码": "iguu",
+    "综合排名": 944,
+    "二字词排名": 929
+  },
+  {
+    "词": "增长",
+    "词长": 2,
+    "排序指数": 0.40136731,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 89358.0,
+      "bcc_dialogue": 745.0,
+      "bcc_news": 586803.0,
+      "bcc_literature": 1192.0,
+      "subtlex": 238.0,
+      "cld_weibo": 3282.0
+    },
+    "各源排名": {
+      "bcc_balanced": 309,
+      "bcc_dialogue": 6432,
+      "bcc_news": 109,
+      "bcc_literature": 5317,
+      "subtlex": 5128,
+      "cld_weibo": 1751
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "zeng chang",
+        "zeng zhang"
+      ],
+      "鲸凉鹤": [
+        "zeng chang",
+        "zeng zhang"
+      ],
+      "Chai整词": [
+        "zeng zhang"
+      ],
+      "墨奇双拼": [
+        "zgvh"
+      ],
+      "CLD整词": [
+        "zeng zhang"
+      ],
+      "SUBTLEX整词": [
+        "zeng zhang"
+      ]
+    },
+    "1.0四码": [
+      "zgih"
+    ],
+    "论文训练码": "zgih",
+    "综合排名": 971,
+    "二字词排名": 955
+  },
+  {
+    "词": "似的",
+    "词长": 2,
+    "排序指数": 0.39819181,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 48801.0,
+      "bcc_dialogue": 8058.0,
+      "bcc_news": 15648.0,
+      "bcc_literature": 39974.0,
+      "subtlex": 1827.0,
+      "cld_weibo": 684.0
+    },
+    "各源排名": {
+      "bcc_balanced": 668,
+      "bcc_dialogue": 944,
+      "bcc_news": 4796,
+      "bcc_literature": 113,
+      "subtlex": 914,
+      "cld_weibo": 5889
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "shi de",
+        "si de"
+      ],
+      "鲸凉鹤": [
+        "shi de",
+        "si de"
+      ],
+      "Chai整词": [
+        "shi de"
+      ],
+      "墨奇双拼": [
+        "uide"
+      ],
+      "CLD整词": [
+        "shi de"
+      ],
+      "SUBTLEX整词": [
+        "si de"
+      ]
+    },
+    "1.0四码": [
+      "side"
+    ],
+    "论文训练码": "side",
+    "综合排名": 1011,
+    "二字词排名": 994
+  },
+  {
+    "词": "熟悉",
+    "词长": 2,
+    "排序指数": 0.39421352,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 23160.0,
+      "bcc_dialogue": 7698.0,
+      "bcc_news": 44875.0,
+      "bcc_literature": 8607.0,
+      "subtlex": 1221.0,
+      "cld_weibo": 6388.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1403,
+      "bcc_dialogue": 982,
+      "bcc_news": 2113,
+      "bcc_literature": 706,
+      "subtlex": 1296,
+      "cld_weibo": 937
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "shu xi"
+      ],
+      "鲸凉鹤": [
+        "shou xi",
+        "shu xi"
+      ],
+      "Chai整词": [
+        "shu xi"
+      ],
+      "墨奇双拼": [
+        "uuxi"
+      ],
+      "CLD整词": [
+        "shu xi"
+      ],
+      "SUBTLEX整词": [
+        "shu xi"
+      ]
+    },
+    "1.0四码": [
+      "uuxi"
+    ],
+    "论文训练码": "uuxi",
+    "综合排名": 1069,
+    "二字词排名": 1052
+  },
+  {
+    "词": "角色",
+    "词长": 2,
+    "排序指数": 0.39219375,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 16420.0,
+      "bcc_dialogue": 5840.0,
+      "bcc_news": 27324.0,
+      "bcc_literature": 4720.0,
+      "subtlex": 2403.0,
+      "cld_weibo": 4879.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1887,
+      "bcc_dialogue": 1267,
+      "bcc_news": 3152,
+      "bcc_literature": 1371,
+      "subtlex": 719,
+      "cld_weibo": 1221
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "jue se"
+      ],
+      "鲸凉鹤": [
+        "jiao se",
+        "jue se"
+      ],
+      "Chai整词": [
+        "jue se"
+      ],
+      "墨奇双拼": [
+        "jnse",
+        "jtse"
+      ],
+      "CLD整词": [
+        "jue se"
+      ],
+      "SUBTLEX整词": [
+        "jue se"
+      ]
+    },
+    "1.0四码": [
+      "jtse"
+    ],
+    "论文训练码": "jnse",
+    "综合排名": 1093,
+    "二字词排名": 1075
+  },
+  {
+    "词": "钥匙",
+    "词长": 2,
+    "排序指数": 0.38526921,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 9961.0,
+      "bcc_dialogue": 3915.0,
+      "bcc_news": 11379.0,
+      "bcc_literature": 5075.0,
+      "subtlex": 3751.0,
+      "cld_weibo": 2880.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2921,
+      "bcc_dialogue": 1757,
+      "bcc_news": 6058,
+      "bcc_literature": 1263,
+      "subtlex": 461,
+      "cld_weibo": 1969
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "yao shi"
+      ],
+      "鲸凉鹤": [
+        "yao chi",
+        "yao shi"
+      ],
+      "Chai整词": [
+        "yao shi"
+      ],
+      "墨奇双拼": [
+        "ycui"
+      ],
+      "CLD整词": [
+        "yao shi"
+      ],
+      "SUBTLEX整词": [
+        "yao shi"
+      ]
+    },
+    "1.0四码": [
+      "ycui"
+    ],
+    "论文训练码": "ycii",
+    "综合排名": 1190,
+    "二字词排名": 1171
+  },
+  {
+    "词": "给予",
+    "词长": 2,
+    "排序指数": 0.37116557,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 33726.0,
+      "bcc_dialogue": 778.0,
+      "bcc_news": 150577.0,
+      "bcc_literature": 2833.0,
+      "subtlex": 534.0,
+      "cld_weibo": 2779.0
+    },
+    "各源排名": {
+      "bcc_balanced": 975,
+      "bcc_dialogue": 6230,
+      "bcc_news": 664,
+      "bcc_literature": 2320,
+      "subtlex": 2707,
+      "cld_weibo": 2024
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "gei yu",
+        "ji yu"
+      ],
+      "鲸凉鹤": [
+        "gei yu",
+        "ji yu"
+      ],
+      "Chai整词": [
+        "ji yu"
+      ],
+      "墨奇双拼": [
+        "gwyu",
+        "jiyu"
+      ],
+      "CLD整词": [
+        "ji yu"
+      ],
+      "SUBTLEX整词": [
+        "ji yu"
+      ]
+    },
+    "1.0四码": [
+      "gwyu"
+    ],
+    "论文训练码": null,
+    "综合排名": 1422,
+    "二字词排名": 1398
+  },
+  {
+    "词": "睡着",
+    "词长": 2,
+    "排序指数": 0.36709076,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 10981.0,
+      "bcc_dialogue": 7956.0,
+      "bcc_news": 1625.0,
+      "bcc_literature": 5299.0,
+      "subtlex": 782.0,
+      "cld_weibo": 5632.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2690,
+      "bcc_dialogue": 955,
+      "bcc_news": 22657,
+      "bcc_literature": 1200,
+      "subtlex": 1943,
+      "cld_weibo": 1053
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "shui zhao"
+      ],
+      "鲸凉鹤": [
+        "shui zhao",
+        "shui zhe"
+      ],
+      "Chai整词": [
+        "shui zhe"
+      ],
+      "墨奇双拼": [
+        "uvvc",
+        "uvve"
+      ],
+      "CLD整词": [
+        "shui zhe"
+      ],
+      "SUBTLEX整词": [
+        "shui zhao"
+      ]
+    },
+    "1.0四码": [
+      "uvvc"
+    ],
+    "论文训练码": null,
+    "综合排名": 1486,
+    "二字词排名": 1461
+  },
+  {
+    "词": "低调",
+    "词长": 2,
+    "排序指数": 0.35653907,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 9454.0,
+      "bcc_dialogue": 14205.0,
+      "bcc_news": 2088.0,
+      "bcc_literature": 222.0,
+      "subtlex": 335.0,
+      "cld_weibo": 4738.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3053,
+      "bcc_dialogue": 552,
+      "bcc_news": 19367,
+      "bcc_literature": 20487,
+      "subtlex": 3921,
+      "cld_weibo": 1254
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "di diao",
+        "di tiao"
+      ],
+      "鲸凉鹤": [
+        "di diao",
+        "di tiao"
+      ],
+      "Chai整词": [
+        "di diao"
+      ],
+      "墨奇双拼": [
+        "didn"
+      ],
+      "CLD整词": [
+        "di diao"
+      ],
+      "SUBTLEX整词": [
+        "di diao"
+      ]
+    },
+    "1.0四码": [
+      "ditn"
+    ],
+    "论文训练码": "didn",
+    "综合排名": 1697,
+    "二字词排名": 1664
+  },
+  {
+    "词": "血液",
+    "词长": 2,
+    "排序指数": 0.35482397,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 16168.0,
+      "bcc_news": 13379.0,
+      "bcc_literature": 2006.0,
+      "subtlex": 1182.0,
+      "cld_weibo": 2507.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1917,
+      "bcc_news": 5386,
+      "bcc_literature": 3291,
+      "subtlex": 1343,
+      "cld_weibo": 2221
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xue ye"
+      ],
+      "鲸凉鹤": [
+        "xie ye",
+        "xue ye"
+      ],
+      "Chai整词": [
+        "xue ye"
+      ],
+      "墨奇双拼": [
+        "xpye",
+        "xtye"
+      ],
+      "CLD整词": [
+        "xue ye"
+      ],
+      "SUBTLEX整词": [
+        "xue ye"
+      ]
+    },
+    "1.0四码": [
+      "xtye"
+    ],
+    "论文训练码": null,
+    "综合排名": 1735,
+    "二字词排名": 1701
+  },
+  {
+    "词": "角落",
+    "词长": 2,
+    "排序指数": 0.3516423,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 8868.0,
+      "bcc_dialogue": 1992.0,
+      "bcc_news": 11558.0,
+      "bcc_literature": 5557.0,
+      "subtlex": 641.0,
+      "cld_weibo": 4136.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3236,
+      "bcc_dialogue": 3056,
+      "bcc_news": 5987,
+      "bcc_literature": 1130,
+      "subtlex": 2281,
+      "cld_weibo": 1418
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "jiao luo"
+      ],
+      "鲸凉鹤": [
+        "jiao la",
+        "jiao luo"
+      ],
+      "Chai整词": [
+        "jiao luo"
+      ],
+      "墨奇双拼": [
+        "jnlo"
+      ],
+      "CLD整词": [
+        "jiao luo"
+      ],
+      "SUBTLEX整词": [
+        "jiao luo"
+      ]
+    },
+    "1.0四码": [
+      "jnlo"
+    ],
+    "论文训练码": "jnla",
+    "综合排名": 1793,
+    "二字词排名": 1759
+  },
+  {
+    "词": "罢了",
+    "词长": 2,
+    "排序指数": 0.34351072,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 11894.0,
+      "bcc_dialogue": 4004.0,
+      "bcc_news": 4460.0,
+      "bcc_literature": 7564.0,
+      "subtlex": 1373.0,
+      "cld_weibo": 984.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2522,
+      "bcc_dialogue": 1719,
+      "bcc_news": 11706,
+      "bcc_literature": 821,
+      "subtlex": 1176,
+      "cld_weibo": 4575
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ba le"
+      ],
+      "鲸凉鹤": [
+        "ba le"
+      ],
+      "Chai整词": [
+        "ba liao"
+      ],
+      "墨奇双拼": [
+        "bale",
+        "baln"
+      ],
+      "CLD整词": [
+        "ba le"
+      ],
+      "SUBTLEX整词": [
+        "ba liao"
+      ]
+    },
+    "1.0四码": [
+      "bale"
+    ],
+    "论文训练码": "bale",
+    "综合排名": 1952,
+    "二字词排名": 1915
+  },
+  {
+    "词": "大夫",
+    "词长": 2,
+    "排序指数": 0.3356157,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 11588.0,
+      "bcc_dialogue": 1193.0,
+      "bcc_news": 11875.0,
+      "bcc_literature": 8302.0,
+      "subtlex": 654.0,
+      "cld_weibo": 1409.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2566,
+      "bcc_dialogue": 4554,
+      "bcc_news": 5871,
+      "bcc_literature": 741,
+      "subtlex": 2246,
+      "cld_weibo": 3510
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "dai fu"
+      ],
+      "鲸凉鹤": [
+        "da fu",
+        "dai fu"
+      ],
+      "Chai整词": [
+        "dai fu"
+      ],
+      "墨奇双拼": [
+        "dafu",
+        "ddfu"
+      ],
+      "CLD整词": [
+        "dai fu"
+      ],
+      "SUBTLEX整词": [
+        "dai fu"
+      ]
+    },
+    "1.0四码": [
+      "ddfu"
+    ],
+    "论文训练码": "dafu",
+    "综合排名": 2142,
+    "二字词排名": 2097
+  },
+  {
+    "词": "露出",
+    "词长": 2,
+    "排序指数": 0.32628627,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 16523.0,
+      "bcc_dialogue": 1159.0,
+      "bcc_news": 10030.0,
+      "bcc_literature": 14008.0,
+      "subtlex": 338.0,
+      "cld_weibo": 869.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1875,
+      "bcc_dialogue": 4651,
+      "bcc_news": 6615,
+      "bcc_literature": 393,
+      "subtlex": 3895,
+      "cld_weibo": 4966
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "lu chu"
+      ],
+      "鲸凉鹤": [
+        "lou chu",
+        "lu chu"
+      ],
+      "Chai整词": [
+        "lu chu"
+      ],
+      "墨奇双拼": [
+        "luiu",
+        "lziu"
+      ],
+      "CLD整词": [
+        "lu chu"
+      ],
+      "SUBTLEX整词": [
+        "lu chu"
+      ]
+    },
+    "1.0四码": [
+      "luiu"
+    ],
+    "论文训练码": "luiu",
+    "综合排名": 2387,
+    "二字词排名": 2327
+  },
+  {
+    "词": "标识",
+    "词长": 2,
+    "排序指数": 0.32382866,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2876.0,
+      "bcc_dialogue": 153.0,
+      "bcc_news": 13004.0,
+      "bcc_literature": 94.0,
+      "subtlex": 97.0,
+      "cld_weibo": 11052.0
+    },
+    "各源排名": {
+      "bcc_balanced": 8119,
+      "bcc_dialogue": 18483,
+      "bcc_news": 5495,
+      "bcc_literature": 35855,
+      "subtlex": 9492,
+      "cld_weibo": 534
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "biao shi"
+      ],
+      "鲸凉鹤": [
+        "biao shi"
+      ],
+      "Chai整词": [
+        "biao shi"
+      ],
+      "墨奇双拼": [
+        "bnui"
+      ],
+      "CLD整词": [
+        "biao shi"
+      ],
+      "SUBTLEX整词": [
+        "biao zhi"
+      ]
+    },
+    "1.0四码": [
+      "bnui"
+    ],
+    "论文训练码": "bnui",
+    "综合排名": 2475,
+    "二字词排名": 2412
+  },
+  {
+    "词": "模样",
+    "词长": 2,
+    "排序指数": 0.3233094,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 11312.0,
+      "bcc_dialogue": 2017.0,
+      "bcc_news": 6424.0,
+      "bcc_literature": 8128.0,
+      "subtlex": 324.0,
+      "cld_weibo": 1775.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2618,
+      "bcc_dialogue": 3032,
+      "bcc_news": 9151,
+      "bcc_literature": 756,
+      "subtlex": 4034,
+      "cld_weibo": 2947
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "mo yang",
+        "mu yang"
+      ],
+      "鲸凉鹤": [
+        "mo yang",
+        "mu yang"
+      ],
+      "Chai整词": [
+        "mu yang"
+      ],
+      "墨奇双拼": [
+        "moyh",
+        "muyh"
+      ],
+      "CLD整词": [
+        "mo yang"
+      ],
+      "SUBTLEX整词": [
+        "mu yang"
+      ]
+    },
+    "1.0四码": [
+      "moyh"
+    ],
+    "论文训练码": "moyh",
+    "综合排名": 2487,
+    "二字词排名": 2424
+  },
+  {
+    "词": "说服",
+    "词长": 2,
+    "排序指数": 0.32222554,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5698.0,
+      "bcc_dialogue": 1047.0,
+      "bcc_news": 14768.0,
+      "bcc_literature": 2867.0,
+      "subtlex": 1552.0,
+      "cld_weibo": 920.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4761,
+      "bcc_dialogue": 4980,
+      "bcc_news": 5012,
+      "bcc_literature": 2299,
+      "subtlex": 1060,
+      "cld_weibo": 4779
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "shui fu",
+        "shuo fu"
+      ],
+      "鲸凉鹤": [
+        "shui fu",
+        "shuo fu"
+      ],
+      "Chai整词": [
+        "shuo fu"
+      ],
+      "墨奇双拼": [
+        "uofu",
+        "uvfu"
+      ],
+      "CLD整词": [
+        "shuo fu"
+      ],
+      "SUBTLEX整词": [
+        "shuo fu"
+      ]
+    },
+    "1.0四码": [
+      "uofu"
+    ],
+    "论文训练码": "uofu",
+    "综合排名": 2520,
+    "二字词排名": 2454
+  },
+  {
+    "词": "暴露",
+    "词长": 2,
+    "排序指数": 0.32159089,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 15162.0,
+      "bcc_dialogue": 5782.0,
+      "bcc_news": 38784.0,
+      "bcc_literature": 2587.0,
+      "subtlex": 722.0,
+      "cld_weibo": 952.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2045,
+      "bcc_dialogue": 1284,
+      "bcc_news": 2393,
+      "bcc_literature": 2539,
+      "subtlex": 2059,
+      "cld_weibo": 4677
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bao lou",
+        "bao lu"
+      ],
+      "鲸凉鹤": [
+        "bao lou",
+        "bao lu"
+      ],
+      "Chai整词": [
+        "bao lu"
+      ],
+      "墨奇双拼": [
+        "bclu"
+      ],
+      "CLD整词": [
+        "bao lu"
+      ],
+      "SUBTLEX整词": [
+        "bao lu"
+      ]
+    },
+    "1.0四码": [
+      "bclz"
+    ],
+    "论文训练码": "bclu",
+    "综合排名": 2541,
+    "二字词排名": 2474
+  },
+  {
+    "词": "萝卜",
+    "词长": 2,
+    "排序指数": 0.30711578,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5048.0,
+      "bcc_dialogue": 3290.0,
+      "bcc_news": 5313.0,
+      "bcc_literature": 1368.0,
+      "subtlex": 134.0,
+      "cld_weibo": 6019.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5268,
+      "bcc_dialogue": 2034,
+      "bcc_news": 10428,
+      "bcc_literature": 4675,
+      "subtlex": 7660,
+      "cld_weibo": 998
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "luo bo"
+      ],
+      "鲸凉鹤": [
+        "luo bo",
+        "luo bu"
+      ],
+      "Chai整词": [
+        "luo bo"
+      ],
+      "墨奇双拼": [
+        "lobo"
+      ],
+      "CLD整词": [
+        "luo bo"
+      ],
+      "SUBTLEX整词": [
+        "luo bo"
+      ]
+    },
+    "1.0四码": [
+      "lobo"
+    ],
+    "论文训练码": "lobo",
+    "综合排名": 2942,
+    "二字词排名": 2859
+  },
+  {
+    "词": "暖和",
+    "词长": 2,
+    "排序指数": 0.30479336,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7416.0,
+      "bcc_dialogue": 6755.0,
+      "bcc_news": 2321.0,
+      "bcc_literature": 1857.0,
+      "subtlex": 260.0,
+      "cld_weibo": 1804.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3826,
+      "bcc_dialogue": 1108,
+      "bcc_news": 18035,
+      "bcc_literature": 3530,
+      "subtlex": 4802,
+      "cld_weibo": 2900
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "nuan he",
+        "nuan huo"
+      ],
+      "鲸凉鹤": [
+        "nuan he",
+        "nuan huo"
+      ],
+      "Chai整词": [
+        "nuan huo"
+      ],
+      "墨奇双拼": [
+        "nrhe",
+        "nrho"
+      ],
+      "CLD整词": [
+        "nuan huo"
+      ],
+      "SUBTLEX整词": [
+        "nuan huo"
+      ]
+    },
+    "1.0四码": [
+      "nrhe"
+    ],
+    "论文训练码": "nrhe",
+    "综合排名": 3010,
+    "二字词排名": 2925
+  },
+  {
+    "词": "本色",
+    "词长": 2,
+    "排序指数": 0.30456403,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2855.0,
+      "bcc_dialogue": 732.0,
+      "bcc_news": 13901.0,
+      "bcc_literature": 475.0,
+      "subtlex": 126.0,
+      "cld_weibo": 4915.0
+    },
+    "各源排名": {
+      "bcc_balanced": 8164,
+      "bcc_dialogue": 6520,
+      "bcc_news": 5246,
+      "bcc_literature": 11636,
+      "subtlex": 7983,
+      "cld_weibo": 1211
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ben se"
+      ],
+      "鲸凉鹤": [
+        "ben se"
+      ],
+      "Chai整词": [
+        "ben se"
+      ],
+      "墨奇双拼": [
+        "bfse"
+      ],
+      "CLD整词": [
+        "ben se"
+      ],
+      "SUBTLEX整词": [
+        "ben shai"
+      ]
+    },
+    "1.0四码": [
+      "bfse"
+    ],
+    "论文训练码": "bfse",
+    "综合排名": 3020,
+    "二字词排名": 2934
+  },
+  {
+    "词": "尾巴",
+    "词长": 2,
+    "排序指数": 0.3038467,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7607.0,
+      "bcc_dialogue": 3429.0,
+      "bcc_news": 5666.0,
+      "bcc_literature": 3932.0,
+      "subtlex": 390.0,
+      "cld_weibo": 1640.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3723,
+      "bcc_dialogue": 1966,
+      "bcc_news": 9978,
+      "bcc_literature": 1659,
+      "subtlex": 3492,
+      "cld_weibo": 3127
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "wei ba"
+      ],
+      "鲸凉鹤": [
+        "wei ba",
+        "yi ba"
+      ],
+      "Chai整词": [
+        "wei ba"
+      ],
+      "墨奇双拼": [
+        "wwba"
+      ],
+      "CLD整词": [
+        "wei ba"
+      ],
+      "SUBTLEX整词": [
+        "wei ba"
+      ]
+    },
+    "1.0四码": [
+      "wwba"
+    ],
+    "论文训练码": null,
+    "综合排名": 3039,
+    "二字词排名": 2953
+  },
+  {
+    "词": "厌恶",
+    "词长": 2,
+    "排序指数": 0.30194157,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5629.0,
+      "bcc_dialogue": 681.0,
+      "bcc_news": 2291.0,
+      "bcc_literature": 4638.0,
+      "subtlex": 409.0,
+      "cld_weibo": 1173.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4824,
+      "bcc_dialogue": 6855,
+      "bcc_news": 18190,
+      "bcc_literature": 1395,
+      "subtlex": 3365,
+      "cld_weibo": 4019
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "yan e",
+        "yan wu"
+      ],
+      "鲸凉鹤": [
+        "yan e",
+        "yan wu"
+      ],
+      "Chai整词": [
+        "yan wu"
+      ],
+      "墨奇双拼": [
+        "yjwu"
+      ],
+      "CLD整词": [
+        "yan wu"
+      ],
+      "SUBTLEX整词": [
+        "yan wu"
+      ]
+    },
+    "1.0四码": [
+      "yjee"
+    ],
+    "论文训练码": "yjee",
+    "综合排名": 3111,
+    "二字词排名": 3020
+  },
+  {
+    "词": "流血",
+    "词长": 2,
+    "排序指数": 0.29778087,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 4608.0,
+      "bcc_dialogue": 757.0,
+      "bcc_news": 12706.0,
+      "bcc_literature": 2147.0,
+      "subtlex": 849.0,
+      "cld_weibo": 694.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5655,
+      "bcc_dialogue": 6354,
+      "bcc_news": 5585,
+      "bcc_literature": 3075,
+      "subtlex": 1806,
+      "cld_weibo": 5821
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "liu xue"
+      ],
+      "鲸凉鹤": [
+        "liu xie",
+        "liu xue"
+      ],
+      "Chai整词": [
+        "liu xue"
+      ],
+      "墨奇双拼": [
+        "lqxp",
+        "lqxt"
+      ],
+      "CLD整词": [
+        "liu xue"
+      ],
+      "SUBTLEX整词": [
+        "liu xue"
+      ]
+    },
+    "1.0四码": [
+      "lqxt"
+    ],
+    "论文训练码": "lqxp",
+    "综合排名": 3261,
+    "二字词排名": 3159
+  },
+  {
+    "词": "同行",
+    "词长": 2,
+    "排序指数": 0.29756806,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 8120.0,
+      "bcc_dialogue": 2116.0,
+      "bcc_news": 24982.0,
+      "bcc_literature": 1887.0,
+      "subtlex": 187.0,
+      "cld_weibo": 1894.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3512,
+      "bcc_dialogue": 2930,
+      "bcc_news": 3369,
+      "bcc_literature": 3471,
+      "subtlex": 6067,
+      "cld_weibo": 2787
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "tong hang",
+        "tong xing"
+      ],
+      "鲸凉鹤": [
+        "tong hang",
+        "tong xing"
+      ],
+      "Chai整词": [
+        "tong hang"
+      ],
+      "墨奇双拼": [
+        "tshh",
+        "tsxk"
+      ],
+      "CLD整词": [
+        "tong xing"
+      ],
+      "SUBTLEX整词": [
+        "tong xing"
+      ]
+    },
+    "1.0四码": [
+      "tsxk"
+    ],
+    "论文训练码": "tshg",
+    "综合排名": 3272,
+    "二字词排名": 3170
+  },
+  {
+    "词": "出血",
+    "词长": 2,
+    "排序指数": 0.29293709,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 16981.0,
+      "bcc_news": 3120.0,
+      "bcc_literature": 421.0,
+      "subtlex": 266.0,
+      "cld_weibo": 823.0
+    },
+    "各源排名": {
+      "bcc_balanced": 1838,
+      "bcc_news": 14878,
+      "bcc_literature": 12790,
+      "subtlex": 4706,
+      "cld_weibo": 5146
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chu xue"
+      ],
+      "鲸凉鹤": [
+        "chu xie",
+        "chu xue"
+      ],
+      "Chai整词": [
+        "chu xue"
+      ],
+      "墨奇双拼": [
+        "iuxp",
+        "iuxt"
+      ],
+      "CLD整词": [
+        "chu xue"
+      ],
+      "SUBTLEX整词": [
+        "chu xue"
+      ]
+    },
+    "1.0四码": [
+      "iuxt"
+    ],
+    "论文训练码": "iuxp",
+    "综合排名": 3465,
+    "二字词排名": 3350
+  },
+  {
+    "词": "洗洗",
+    "词长": 2,
+    "排序指数": 0.2906933,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3915.0,
+      "bcc_dialogue": 4619.0,
+      "bcc_news": 441.0,
+      "bcc_literature": 437.0,
+      "subtlex": 182.0,
+      "cld_weibo": 2027.0
+    },
+    "各源排名": {
+      "bcc_balanced": 6389,
+      "bcc_dialogue": 1547,
+      "bcc_news": 47870,
+      "bcc_literature": 12435,
+      "subtlex": 6196,
+      "cld_weibo": 2649
+    },
+    "来源缺失": [],
+    "读音状态": "与墨奇双拼分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "墨奇双拼": [
+        "xixi"
+      ],
+      "CLD整词": [
+        "xian xian"
+      ]
+    },
+    "1.0四码": [
+      "xixi"
+    ],
+    "论文训练码": "xixi",
+    "综合排名": 3572,
+    "二字词排名": 3453
+  },
+  {
+    "词": "血压",
+    "词长": 2,
+    "排序指数": 0.28955154,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 8414.0,
+      "bcc_news": 4189.0,
+      "bcc_literature": 368.0,
+      "subtlex": 389.0,
+      "cld_weibo": 989.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3404,
+      "bcc_news": 12209,
+      "bcc_literature": 14221,
+      "subtlex": 3504,
+      "cld_weibo": 4560
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xue ya"
+      ],
+      "鲸凉鹤": [
+        "xie ya",
+        "xue ya"
+      ],
+      "Chai整词": [
+        "xue ya"
+      ],
+      "墨奇双拼": [
+        "xpya",
+        "xtya"
+      ],
+      "CLD整词": [
+        "xue ya"
+      ],
+      "SUBTLEX整词": [
+        "xue ya"
+      ]
+    },
+    "1.0四码": [
+      "xtya"
+    ],
+    "论文训练码": "xpya",
+    "综合排名": 3623,
+    "二字词排名": 3502
+  },
+  {
+    "词": "得以",
+    "词长": 2,
+    "排序指数": 0.2867289,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 13620.0,
+      "bcc_dialogue": 262.0,
+      "bcc_news": 37746.0,
+      "bcc_literature": 2244.0,
+      "subtlex": 219.0,
+      "cld_weibo": 727.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2250,
+      "bcc_dialogue": 13160,
+      "bcc_news": 2442,
+      "bcc_literature": 2949,
+      "subtlex": 5457,
+      "cld_weibo": 5626
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "de yi",
+        "dei yi"
+      ],
+      "鲸凉鹤": [
+        "de yi",
+        "dei yi"
+      ],
+      "Chai整词": [
+        "de yi"
+      ],
+      "墨奇双拼": [
+        "deyi"
+      ],
+      "CLD整词": [
+        "de yi"
+      ],
+      "SUBTLEX整词": [
+        "de yi"
+      ]
+    },
+    "1.0四码": [
+      "deyi"
+    ],
+    "论文训练码": "deyi",
+    "综合排名": 3742,
+    "二字词排名": 3617
+  },
+  {
+    "词": "专属",
+    "词长": 2,
+    "排序指数": 0.28084158,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1268.0,
+      "bcc_dialogue": 877.0,
+      "bcc_news": 4180.0,
+      "bcc_literature": 42.0,
+      "subtlex": 47.0,
+      "cld_weibo": 8017.0
+    },
+    "各源排名": {
+      "bcc_balanced": 15012,
+      "bcc_dialogue": 5698,
+      "bcc_news": 12223,
+      "bcc_literature": 55984,
+      "subtlex": 14864,
+      "cld_weibo": 740
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "zhuan shu"
+      ],
+      "鲸凉鹤": [
+        "zhuan shu"
+      ],
+      "Chai整词": [
+        "zhuan shu"
+      ],
+      "墨奇双拼": [
+        "vruu"
+      ],
+      "CLD整词": [
+        "zhuan zhu"
+      ]
+    },
+    "1.0四码": [
+      "vruu"
+    ],
+    "论文训练码": null,
+    "综合排名": 4024,
+    "二字词排名": 3878
+  },
+  {
+    "词": "揭露",
+    "词长": 2,
+    "排序指数": 0.28003429,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7263.0,
+      "bcc_dialogue": 207.0,
+      "bcc_news": 50691.0,
+      "bcc_literature": 997.0,
+      "subtlex": 255.0,
+      "cld_weibo": 318.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3899,
+      "bcc_dialogue": 15292,
+      "bcc_news": 1888,
+      "bcc_literature": 6253,
+      "subtlex": 4868,
+      "cld_weibo": 9521
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "jie lou",
+        "jie lu"
+      ],
+      "鲸凉鹤": [
+        "jie lou",
+        "jie lu"
+      ],
+      "Chai整词": [
+        "jie lu"
+      ],
+      "墨奇双拼": [
+        "jplu"
+      ],
+      "CLD整词": [
+        "jie lu"
+      ],
+      "SUBTLEX整词": [
+        "jie lu"
+      ]
+    },
+    "1.0四码": [
+      "jplz"
+    ],
+    "论文训练码": "jplu",
+    "综合排名": 4065,
+    "二字词排名": 3918
+  },
+  {
+    "词": "穿着",
+    "词长": 2,
+    "排序指数": 0.27468587,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5876.0,
+      "bcc_dialogue": 2149.0,
+      "bcc_news": 3692.0,
+      "bcc_literature": 1847.0,
+      "subtlex": 737.0,
+      "cld_weibo": 317.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4634,
+      "bcc_dialogue": 2887,
+      "bcc_news": 13276,
+      "bcc_literature": 3552,
+      "subtlex": 2028,
+      "cld_weibo": 9549
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chuan zhe",
+        "chuan zhuo"
+      ],
+      "鲸凉鹤": [
+        "chuan zhe",
+        "chuan zhuo"
+      ],
+      "Chai整词": [
+        "chuan zhuo"
+      ],
+      "墨奇双拼": [
+        "irve",
+        "irvo"
+      ],
+      "CLD整词": [
+        "chuan zhuo"
+      ],
+      "SUBTLEX整词": [
+        "chuan zhuo"
+      ]
+    },
+    "1.0四码": [
+      "irve"
+    ],
+    "论文训练码": "irvc",
+    "综合排名": 4363,
+    "二字词排名": 4198
+  },
+  {
+    "词": "供给",
+    "词长": 2,
+    "排序指数": 0.27268232,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 12325.0,
+      "bcc_news": 79142.0,
+      "bcc_literature": 912.0,
+      "subtlex": 182.0,
+      "cld_weibo": 174.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2463,
+      "bcc_news": 1259,
+      "bcc_literature": 6739,
+      "subtlex": 6180,
+      "cld_weibo": 13261
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "gong gei"
+      ],
+      "鲸凉鹤": [
+        "gong gei",
+        "gong ji"
+      ],
+      "Chai整词": [
+        "gong ji"
+      ],
+      "墨奇双拼": [
+        "gsgw",
+        "gsji"
+      ],
+      "CLD整词": [
+        "gong ji"
+      ],
+      "SUBTLEX整词": [
+        "gong ji"
+      ]
+    },
+    "1.0四码": [
+      "gsgw"
+    ],
+    "论文训练码": null,
+    "综合排名": 4474,
+    "二字词排名": 4297
+  },
+  {
+    "词": "劲儿",
+    "词长": 2,
+    "排序指数": 0.26886119,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5140.0,
+      "bcc_dialogue": 2220.0,
+      "bcc_news": 4237.0,
+      "bcc_literature": 2518.0,
+      "subtlex": 225.0,
+      "cld_weibo": 1072.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5172,
+      "bcc_dialogue": 2792,
+      "bcc_news": 12102,
+      "bcc_literature": 2613,
+      "subtlex": 5345,
+      "cld_weibo": 4292
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "鲸凉鹤": [
+        "jin er"
+      ],
+      "Chai整词": [
+        "jin er"
+      ],
+      "墨奇双拼": [
+        "jber"
+      ],
+      "CLD整词": [
+        "jing er"
+      ]
+    },
+    "1.0四码": [
+      "jber"
+    ],
+    "论文训练码": null,
+    "综合排名": 4681,
+    "二字词排名": 4493
+  },
+  {
+    "词": "重重",
+    "词长": 2,
+    "排序指数": 0.26739118,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5465.0,
+      "bcc_dialogue": 238.0,
+      "bcc_news": 16006.0,
+      "bcc_literature": 2597.0,
+      "subtlex": 178.0,
+      "cld_weibo": 766.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4923,
+      "bcc_dialogue": 14001,
+      "bcc_news": 4717,
+      "bcc_literature": 2527,
+      "subtlex": 6309,
+      "cld_weibo": 5428
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chong chong",
+        "zhong zhong"
+      ],
+      "鲸凉鹤": [
+        "chong chong",
+        "zhong zhong"
+      ],
+      "Chai整词": [
+        "zhong zhong"
+      ],
+      "墨奇双拼": [
+        "isis",
+        "vsvs"
+      ],
+      "CLD整词": [
+        "chong chong"
+      ],
+      "SUBTLEX整词": [
+        "chong chong"
+      ]
+    },
+    "1.0四码": [
+      "vsvs"
+    ],
+    "论文训练码": "isis",
+    "综合排名": 4776,
+    "二字词排名": 4583
+  },
+  {
+    "词": "不得",
+    "词长": 2,
+    "排序指数": 0.26327426,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 38609.0,
+      "bcc_dialogue": 12458.0,
+      "bcc_news": 77073.0,
+      "bcc_literature": 4368.0,
+      "subtlex": 360.0,
+      "cld_weibo": 17.0
+    },
+    "各源排名": {
+      "bcc_balanced": 850,
+      "bcc_dialogue": 623,
+      "bcc_news": 1295,
+      "bcc_literature": 1497,
+      "subtlex": 3709,
+      "cld_weibo": 31536
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bu de",
+        "bu dei"
+      ],
+      "鲸凉鹤": [
+        "bu de",
+        "bu dei"
+      ],
+      "Chai整词": [
+        "bu dei"
+      ],
+      "墨奇双拼": [
+        "bude",
+        "budw"
+      ],
+      "CLD整词": [
+        "bu de"
+      ],
+      "SUBTLEX整词": [
+        "bu de"
+      ]
+    },
+    "1.0四码": [
+      "bude"
+    ],
+    "论文训练码": "bude",
+    "综合排名": 5010,
+    "二字词排名": 4806
+  },
+  {
+    "词": "庞大",
+    "词长": 2,
+    "排序指数": 0.26076519,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 6789.0,
+      "bcc_dialogue": 385.0,
+      "bcc_news": 22307.0,
+      "bcc_literature": 2377.0,
+      "subtlex": 160.0,
+      "cld_weibo": 454.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4117,
+      "bcc_dialogue": 10226,
+      "bcc_news": 3681,
+      "bcc_literature": 2772,
+      "subtlex": 6766,
+      "cld_weibo": 7648
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "pang da"
+      ],
+      "鲸凉鹤": [
+        "pang da"
+      ],
+      "Chai整词": [
+        "pang da"
+      ],
+      "墨奇双拼": [
+        "phda"
+      ],
+      "CLD整词": [
+        "peng da"
+      ],
+      "SUBTLEX整词": [
+        "pang da"
+      ]
+    },
+    "1.0四码": [
+      "phda"
+    ],
+    "论文训练码": "phda",
+    "综合排名": 5179,
+    "二字词排名": 4955
+  },
+  {
+    "词": "眼熟",
+    "词长": 2,
+    "排序指数": 0.2605486,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 4014.0,
+      "bcc_dialogue": 5298.0,
+      "bcc_news": 100.0,
+      "bcc_literature": 210.0,
+      "subtlex": 220.0,
+      "cld_weibo": 366.0
+    },
+    "各源排名": {
+      "bcc_balanced": 6268,
+      "bcc_dialogue": 1378,
+      "bcc_news": 109394,
+      "bcc_literature": 21391,
+      "subtlex": 5445,
+      "cld_weibo": 8754
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "yan shu"
+      ],
+      "鲸凉鹤": [
+        "yan shou",
+        "yan shu"
+      ],
+      "Chai整词": [
+        "yan shu"
+      ],
+      "墨奇双拼": [
+        "yjuu",
+        "yjuz"
+      ],
+      "CLD整词": [
+        "yan shu"
+      ],
+      "SUBTLEX整词": [
+        "yan shu"
+      ]
+    },
+    "1.0四码": [
+      "yjuu"
+    ],
+    "论文训练码": "yjuu",
+    "综合排名": 5188,
+    "二字词排名": 4964
+  },
+  {
+    "词": "调动",
+    "词长": 2,
+    "排序指数": 0.2604719,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 12617.0,
+      "bcc_dialogue": 188.0,
+      "bcc_news": 66063.0,
+      "bcc_literature": 739.0,
+      "subtlex": 118.0,
+      "cld_weibo": 186.0
+    },
+    "各源排名": {
+      "bcc_balanced": 2412,
+      "bcc_dialogue": 16216,
+      "bcc_news": 1507,
+      "bcc_literature": 8111,
+      "subtlex": 8351,
+      "cld_weibo": 12821
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "diao dong",
+        "tiao dong"
+      ],
+      "鲸凉鹤": [
+        "diao dong",
+        "tiao dong"
+      ],
+      "Chai整词": [
+        "diao dong"
+      ],
+      "墨奇双拼": [
+        "dnds"
+      ],
+      "CLD整词": [
+        "diao dong"
+      ],
+      "SUBTLEX整词": [
+        "diao dong"
+      ]
+    },
+    "1.0四码": [
+      "tnds"
+    ],
+    "论文训练码": "dnds",
+    "综合排名": 5195,
+    "二字词排名": 4971
+  },
+  {
+    "词": "泄露",
+    "词长": 2,
+    "排序指数": 0.25954918,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2513.0,
+      "bcc_dialogue": 480.0,
+      "bcc_news": 6594.0,
+      "bcc_literature": 1130.0,
+      "subtlex": 445.0,
+      "cld_weibo": 413.0
+    },
+    "各源排名": {
+      "bcc_balanced": 9024,
+      "bcc_dialogue": 8808,
+      "bcc_news": 9002,
+      "bcc_literature": 5601,
+      "subtlex": 3137,
+      "cld_weibo": 8099
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xie lou",
+        "xie lu"
+      ],
+      "鲸凉鹤": [
+        "xie lou",
+        "xie lu"
+      ],
+      "Chai整词": [
+        "xie lou"
+      ],
+      "墨奇双拼": [
+        "xplz"
+      ],
+      "CLD整词": [
+        "xie lou"
+      ],
+      "SUBTLEX整词": [
+        "xie lou"
+      ]
+    },
+    "1.0四码": [
+      "xplz"
+    ],
+    "论文训练码": "xplu",
+    "综合排名": 5259,
+    "二字词排名": 5033
+  },
+  {
+    "词": "琢磨",
+    "词长": 2,
+    "排序指数": 0.25753241,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 4760.0,
+      "bcc_dialogue": 1611.0,
+      "bcc_news": 8553.0,
+      "bcc_literature": 2329.0,
+      "subtlex": 202.0,
+      "cld_weibo": 726.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5500,
+      "bcc_dialogue": 3669,
+      "bcc_news": 7460,
+      "bcc_literature": 2832,
+      "subtlex": 5779,
+      "cld_weibo": 5634
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "zhuo mo"
+      ],
+      "鲸凉鹤": [
+        "zhuo mo",
+        "zuo mo"
+      ],
+      "Chai整词": [
+        "zuo mo"
+      ],
+      "墨奇双拼": [
+        "vomo",
+        "zomo"
+      ],
+      "CLD整词": [
+        "zuo mo"
+      ],
+      "SUBTLEX整词": [
+        "zhuo mo"
+      ]
+    },
+    "1.0四码": [
+      "vomo"
+    ],
+    "论文训练码": "vomo",
+    "综合排名": 5385,
+    "二字词排名": 5148
+  },
+  {
+    "词": "模板",
+    "词长": 2,
+    "排序指数": 0.25288715,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2310.0,
+      "bcc_dialogue": 343.0,
+      "bcc_news": 1692.0,
+      "bcc_literature": 21.0,
+      "subtlex": 37.0,
+      "cld_weibo": 4172.0
+    },
+    "各源排名": {
+      "bcc_balanced": 9634,
+      "bcc_dialogue": 11056,
+      "bcc_news": 22091,
+      "bcc_literature": 80536,
+      "subtlex": 17141,
+      "cld_weibo": 1406
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "mo ban",
+        "mu ban"
+      ],
+      "鲸凉鹤": [
+        "mo ban",
+        "mu ban"
+      ],
+      "Chai整词": [
+        "mu ban"
+      ],
+      "墨奇双拼": [
+        "mobj",
+        "mubj"
+      ],
+      "CLD整词": [
+        "mu ban"
+      ],
+      "SUBTLEX整词": [
+        "mu ban"
+      ]
+    },
+    "1.0四码": [
+      "mobj"
+    ],
+    "论文训练码": null,
+    "综合排名": 5698,
+    "二字词排名": 5438
+  },
+  {
+    "词": "强劲",
+    "词长": 2,
+    "排序指数": 0.25136518,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3986.0,
+      "bcc_dialogue": 114.0,
+      "bcc_news": 24133.0,
+      "bcc_literature": 562.0,
+      "subtlex": 110.0,
+      "cld_weibo": 380.0
+    },
+    "各源排名": {
+      "bcc_balanced": 6313,
+      "bcc_dialogue": 22004,
+      "bcc_news": 3462,
+      "bcc_literature": 10147,
+      "subtlex": 8728,
+      "cld_weibo": 8540
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "qiang jing"
+      ],
+      "鲸凉鹤": [
+        "qiang jin",
+        "qiang jing"
+      ],
+      "Chai整词": [
+        "qiang jing"
+      ],
+      "墨奇双拼": [
+        "qljb",
+        "qljk"
+      ],
+      "CLD整词": [
+        "qiang jin"
+      ],
+      "SUBTLEX整词": [
+        "qiang jing"
+      ]
+    },
+    "1.0四码": [
+      "qljk"
+    ],
+    "论文训练码": null,
+    "综合排名": 5813,
+    "二字词排名": 5545
+  },
+  {
+    "词": "爪子",
+    "词长": 2,
+    "排序指数": 0.25103623,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3066.0,
+      "bcc_dialogue": 2286.0,
+      "bcc_news": 317.0,
+      "bcc_literature": 1218.0,
+      "subtlex": 216.0,
+      "cld_weibo": 608.0
+    },
+    "各源排名": {
+      "bcc_balanced": 7722,
+      "bcc_dialogue": 2709,
+      "bcc_news": 57329,
+      "bcc_literature": 5225,
+      "subtlex": 5507,
+      "cld_weibo": 6363
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "zhao zi",
+        "zhua zi"
+      ],
+      "鲸凉鹤": [
+        "zhao zi",
+        "zhua zi"
+      ],
+      "Chai整词": [
+        "zhua zi"
+      ],
+      "墨奇双拼": [
+        "vxzi"
+      ],
+      "CLD整词": [
+        "zhua zi"
+      ],
+      "SUBTLEX整词": [
+        "zhua zi"
+      ]
+    },
+    "1.0四码": [
+      "vxzi"
+    ],
+    "论文训练码": "vczi",
+    "综合排名": 5833,
+    "二字词排名": 5564
+  },
+  {
+    "词": "埋怨",
+    "词长": 2,
+    "排序指数": 0.24977176,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2911.0,
+      "bcc_dialogue": 394.0,
+      "bcc_news": 5105.0,
+      "bcc_literature": 1967.0,
+      "subtlex": 118.0,
+      "cld_weibo": 1108.0
+    },
+    "各源排名": {
+      "bcc_balanced": 8032,
+      "bcc_dialogue": 10066,
+      "bcc_news": 10732,
+      "bcc_literature": 3348,
+      "subtlex": 8316,
+      "cld_weibo": 4186
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "man yuan"
+      ],
+      "鲸凉鹤": [
+        "mai yuan",
+        "man yuan"
+      ],
+      "Chai整词": [
+        "man yuan"
+      ],
+      "墨奇双拼": [
+        "mdyr",
+        "mjyr"
+      ],
+      "CLD整词": [
+        "man yuan"
+      ],
+      "SUBTLEX整词": [
+        "man yuan"
+      ]
+    },
+    "1.0四码": [
+      "mjyr"
+    ],
+    "论文训练码": "mdyr",
+    "综合排名": 5894,
+    "二字词排名": 5619
+  },
+  {
+    "词": "一行",
+    "词长": 2,
+    "排序指数": 0.24945412,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 9286.0,
+      "bcc_dialogue": 476.0,
+      "bcc_news": 49557.0,
+      "bcc_literature": 2414.0,
+      "subtlex": 30.0,
+      "cld_weibo": 535.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3111,
+      "bcc_dialogue": 8853,
+      "bcc_news": 1928,
+      "bcc_literature": 2724,
+      "subtlex": 19078,
+      "cld_weibo": 6898
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "yi hang",
+        "yi xing"
+      ],
+      "鲸凉鹤": [
+        "yi hang",
+        "yi xing"
+      ],
+      "墨奇双拼": [
+        "yihh",
+        "yixk"
+      ],
+      "CLD整词": [
+        "yi xing"
+      ],
+      "SUBTLEX整词": [
+        "yi xing"
+      ]
+    },
+    "1.0四码": [
+      "yixk"
+    ],
+    "论文训练码": "yihg",
+    "综合排名": 5919,
+    "二字词排名": 5643
+  },
+  {
+    "词": "非得",
+    "词长": 2,
+    "排序指数": 0.2473361,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3501.0,
+      "bcc_dialogue": 2155.0,
+      "bcc_news": 1505.0,
+      "bcc_literature": 1669.0,
+      "subtlex": 544.0,
+      "cld_weibo": 169.0
+    },
+    "各源排名": {
+      "bcc_balanced": 6968,
+      "bcc_dialogue": 2874,
+      "bcc_news": 23739,
+      "bcc_literature": 3921,
+      "subtlex": 2656,
+      "cld_weibo": 13509
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "fei de",
+        "fei dei"
+      ],
+      "鲸凉鹤": [
+        "fei de",
+        "fei dei"
+      ],
+      "Chai整词": [
+        "fei dei"
+      ],
+      "墨奇双拼": [
+        "fwdw"
+      ],
+      "CLD整词": [
+        "fei dei"
+      ]
+    },
+    "1.0四码": [
+      "fwde"
+    ],
+    "论文训练码": "fwde",
+    "综合排名": 6065,
+    "二字词排名": 5773
+  },
+  {
+    "词": "橙子",
+    "词长": 2,
+    "排序指数": 0.2473288,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2196.0,
+      "bcc_dialogue": 2378.0,
+      "bcc_news": 510.0,
+      "bcc_literature": 230.0,
+      "subtlex": 85.0,
+      "cld_weibo": 1160.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10007,
+      "bcc_dialogue": 2632,
+      "bcc_news": 44143,
+      "bcc_literature": 20024,
+      "subtlex": 10356,
+      "cld_weibo": 4056
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "cheng zi"
+      ],
+      "鲸凉鹤": [
+        "cheng zi"
+      ],
+      "Chai整词": [
+        "cheng zi"
+      ],
+      "墨奇双拼": [
+        "igzi"
+      ],
+      "CLD整词": [
+        "chen zi"
+      ],
+      "SUBTLEX整词": [
+        "cheng zi"
+      ]
+    },
+    "1.0四码": [
+      "igzi"
+    ],
+    "论文训练码": "igzi",
+    "综合排名": 6066,
+    "二字词排名": 5774
+  },
+  {
+    "词": "大都",
+    "词长": 2,
+    "排序指数": 0.24711452,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7718.0,
+      "bcc_dialogue": 1108.0,
+      "bcc_news": 23822.0,
+      "bcc_literature": 1750.0,
+      "subtlex": 46.0,
+      "cld_weibo": 697.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3675,
+      "bcc_dialogue": 4794,
+      "bcc_news": 3496,
+      "bcc_literature": 3741,
+      "subtlex": 15086,
+      "cld_weibo": 5798
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "鲸凉鹤": [
+        "da dou"
+      ],
+      "Chai整词": [
+        "da dou"
+      ],
+      "墨奇双拼": [
+        "dadz"
+      ],
+      "CLD整词": [
+        "da dou"
+      ],
+      "SUBTLEX整词": [
+        "da du"
+      ]
+    },
+    "1.0四码": [
+      "dadz"
+    ],
+    "论文训练码": null,
+    "综合排名": 6080,
+    "二字词排名": 5786
+  },
+  {
+    "词": "大王",
+    "词长": 2,
+    "排序指数": 0.24707982,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 4684.0,
+      "bcc_dialogue": 2847.0,
+      "bcc_news": 3640.0,
+      "bcc_literature": 1560.0,
+      "subtlex": 124.0,
+      "cld_weibo": 688.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5587,
+      "bcc_dialogue": 2299,
+      "bcc_news": 13390,
+      "bcc_literature": 4162,
+      "subtlex": 8051,
+      "cld_weibo": 5862
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "da wang",
+        "dai wang"
+      ],
+      "鲸凉鹤": [
+        "da wang",
+        "dai wang"
+      ],
+      "Chai整词": [
+        "dai wang"
+      ],
+      "墨奇双拼": [
+        "dawh",
+        "ddwh"
+      ],
+      "CLD整词": [
+        "da wang"
+      ]
+    },
+    "1.0四码": [
+      "dawh"
+    ],
+    "论文训练码": "dawh",
+    "综合排名": 6084,
+    "二字词排名": 5789
+  },
+  {
+    "词": "刹车",
+    "词长": 2,
+    "排序指数": 0.24561266,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1899.0,
+      "bcc_dialogue": 1241.0,
+      "bcc_news": 2429.0,
+      "bcc_literature": 261.0,
+      "subtlex": 397.0,
+      "cld_weibo": 463.0
+    },
+    "各源排名": {
+      "bcc_balanced": 11155,
+      "bcc_dialogue": 4422,
+      "bcc_news": 17530,
+      "bcc_literature": 18279,
+      "subtlex": 3445,
+      "cld_weibo": 7554
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "cha che",
+        "sha che"
+      ],
+      "鲸凉鹤": [
+        "cha che",
+        "sha che"
+      ],
+      "Chai整词": [
+        "sha che"
+      ],
+      "墨奇双拼": [
+        "uaie"
+      ],
+      "CLD整词": [
+        "sha che"
+      ],
+      "SUBTLEX整词": [
+        "sha che"
+      ]
+    },
+    "1.0四码": [
+      "uaie"
+    ],
+    "论文训练码": "iaie",
+    "综合排名": 6191,
+    "二字词排名": 5888
+  },
+  {
+    "词": "懒觉",
+    "词长": 2,
+    "排序指数": 0.24188272,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1457.0,
+      "bcc_dialogue": 1880.0,
+      "bcc_news": 72.0,
+      "subtlex": 22.0,
+      "cld_weibo": 2925.0
+    },
+    "各源排名": {
+      "bcc_balanced": 13579,
+      "bcc_dialogue": 3219,
+      "bcc_news": 132466,
+      "subtlex": 22473,
+      "cld_weibo": 1938
+    },
+    "来源缺失": [
+      "bcc_literature"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "lan jiao"
+      ],
+      "鲸凉鹤": [
+        "lan jiao"
+      ],
+      "墨奇双拼": [
+        "ljjn"
+      ],
+      "CLD整词": [
+        "lan jue"
+      ]
+    },
+    "1.0四码": [
+      "ljjn"
+    ],
+    "论文训练码": "ljjn",
+    "综合排名": 6475,
+    "二字词排名": 6139
+  },
+  {
+    "词": "反弹",
+    "词长": 2,
+    "排序指数": 0.24147755,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3338.0,
+      "bcc_dialogue": 2083.0,
+      "bcc_news": 8855.0,
+      "bcc_literature": 247.0,
+      "subtlex": 46.0,
+      "cld_weibo": 1222.0
+    },
+    "各源排名": {
+      "bcc_balanced": 7217,
+      "bcc_dialogue": 2963,
+      "bcc_news": 7253,
+      "bcc_literature": 19033,
+      "subtlex": 15060,
+      "cld_weibo": 3910
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "fan tan"
+      ],
+      "鲸凉鹤": [
+        "fan tan"
+      ],
+      "Chai整词": [
+        "fan tan"
+      ],
+      "墨奇双拼": [
+        "fjtj"
+      ],
+      "CLD整词": [
+        "fan tan"
+      ],
+      "SUBTLEX整词": [
+        "fan dan"
+      ]
+    },
+    "1.0四码": [
+      "fjtj"
+    ],
+    "论文训练码": "fjdj",
+    "综合排名": 6510,
+    "二字词排名": 6169
+  },
+  {
+    "词": "澄清",
+    "词长": 2,
+    "排序指数": 0.24078109,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3100.0,
+      "bcc_dialogue": 1147.0,
+      "bcc_news": 8329.0,
+      "bcc_literature": 502.0,
+      "subtlex": 229.0,
+      "cld_weibo": 276.0
+    },
+    "各源排名": {
+      "bcc_balanced": 7652,
+      "bcc_dialogue": 4686,
+      "bcc_news": 7587,
+      "bcc_literature": 11116,
+      "subtlex": 5289,
+      "cld_weibo": 10352
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "cheng qing",
+        "deng qing"
+      ],
+      "鲸凉鹤": [
+        "cheng qing",
+        "deng qing"
+      ],
+      "Chai整词": [
+        "deng qing"
+      ],
+      "墨奇双拼": [
+        "dgqk",
+        "igqk"
+      ],
+      "CLD整词": [
+        "cheng qing"
+      ],
+      "SUBTLEX整词": [
+        "deng qing"
+      ]
+    },
+    "1.0四码": [
+      "igqk"
+    ],
+    "论文训练码": "dgqk",
+    "综合排名": 6560,
+    "二字词排名": 6217
+  },
+  {
+    "词": "薄弱",
+    "词长": 2,
+    "排序指数": 0.24059137,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7752.0,
+      "bcc_dialogue": 88.0,
+      "bcc_news": 36236.0,
+      "bcc_literature": 395.0,
+      "subtlex": 81.0,
+      "cld_weibo": 186.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3661,
+      "bcc_dialogue": 25838,
+      "bcc_news": 2522,
+      "bcc_literature": 13471,
+      "subtlex": 10681,
+      "cld_weibo": 12817
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bao ruo",
+        "bo ruo"
+      ],
+      "鲸凉鹤": [
+        "bao ruo",
+        "bo ruo"
+      ],
+      "Chai整词": [
+        "bo ruo"
+      ],
+      "墨奇双拼": [
+        "boro"
+      ],
+      "CLD整词": [
+        "bo ruo"
+      ],
+      "SUBTLEX整词": [
+        "bo ruo"
+      ]
+    },
+    "1.0四码": [
+      "bcro"
+    ],
+    "论文训练码": null,
+    "综合排名": 6577,
+    "二字词排名": 6233
+  },
+  {
+    "词": "咖喱",
+    "词长": 2,
+    "排序指数": 0.23596559,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1286.0,
+      "bcc_dialogue": 1515.0,
+      "bcc_news": 139.0,
+      "bcc_literature": 104.0,
+      "subtlex": 119.0,
+      "cld_weibo": 829.0
+    },
+    "各源排名": {
+      "bcc_balanced": 14865,
+      "bcc_dialogue": 3845,
+      "bcc_news": 90431,
+      "bcc_literature": 33625,
+      "subtlex": 8280,
+      "cld_weibo": 5114
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ga li",
+        "ka li"
+      ],
+      "鲸凉鹤": [
+        "ga li",
+        "ka li"
+      ],
+      "Chai整词": [
+        "ga li"
+      ],
+      "墨奇双拼": [
+        "gali"
+      ],
+      "CLD整词": [
+        "ga li"
+      ],
+      "SUBTLEX整词": [
+        "ga li"
+      ]
+    },
+    "1.0四码": [
+      "kali"
+    ],
+    "论文训练码": null,
+    "综合排名": 6954,
+    "二字词排名": 6580
+  },
+  {
+    "词": "雪茄",
+    "词长": 2,
+    "排序指数": 0.23561552,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2113.0,
+      "bcc_dialogue": 90.0,
+      "bcc_news": 319.0,
+      "bcc_literature": 1806.0,
+      "subtlex": 373.0,
+      "cld_weibo": 171.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10296,
+      "bcc_dialogue": 25545,
+      "bcc_news": 57164,
+      "bcc_literature": 3635,
+      "subtlex": 3624,
+      "cld_weibo": 13415
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xue jia",
+        "xue qie"
+      ],
+      "鲸凉鹤": [
+        "xue jia",
+        "xue qie"
+      ],
+      "Chai整词": [
+        "xue jia"
+      ],
+      "墨奇双拼": [
+        "xtjx"
+      ],
+      "CLD整词": [
+        "xue jia"
+      ],
+      "SUBTLEX整词": [
+        "xue jia"
+      ]
+    },
+    "1.0四码": [
+      "xtqp"
+    ],
+    "论文训练码": "xtjx",
+    "综合排名": 6975,
+    "二字词排名": 6601
+  },
+  {
+    "词": "得了",
+    "词长": 2,
+    "排序指数": 0.2347763,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7178.0,
+      "bcc_dialogue": 2992.0,
+      "bcc_news": 6227.0,
+      "bcc_literature": 4617.0,
+      "subtlex": 522.0,
+      "cld_weibo": 2.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3941,
+      "bcc_dialogue": 2197,
+      "bcc_news": 9348,
+      "bcc_literature": 1401,
+      "subtlex": 2748,
+      "cld_weibo": 41927
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "de le",
+        "de liao"
+      ],
+      "鲸凉鹤": [
+        "de le",
+        "de liao"
+      ],
+      "Chai整词": [
+        "de le"
+      ],
+      "墨奇双拼": [
+        "dele"
+      ],
+      "CLD整词": [
+        "de liao"
+      ],
+      "SUBTLEX整词": [
+        "de le"
+      ]
+    },
+    "1.0四码": [
+      "dele"
+    ],
+    "论文训练码": null,
+    "综合排名": 7039,
+    "二字词排名": 6663
+  },
+  {
+    "词": "便秘",
+    "词长": 2,
+    "排序指数": 0.23476908,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1913.0,
+      "bcc_dialogue": 1080.0,
+      "bcc_news": 326.0,
+      "bcc_literature": 130.0,
+      "subtlex": 64.0,
+      "cld_weibo": 1697.0
+    },
+    "各源排名": {
+      "bcc_balanced": 11096,
+      "bcc_dialogue": 4877,
+      "bcc_news": 56415,
+      "bcc_literature": 29307,
+      "subtlex": 12338,
+      "cld_weibo": 3054
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bian mi"
+      ],
+      "鲸凉鹤": [
+        "bian mi"
+      ],
+      "Chai整词": [
+        "bian mi"
+      ],
+      "墨奇双拼": [
+        "bmmi"
+      ],
+      "CLD整词": [
+        "bian bi"
+      ],
+      "SUBTLEX整词": [
+        "bian mi"
+      ]
+    },
+    "1.0四码": [
+      "bmmi"
+    ],
+    "论文训练码": "bmbi",
+    "综合排名": 7040,
+    "二字词排名": 6664
+  },
+  {
+    "词": "露天",
+    "词长": 2,
+    "排序指数": 0.23165763,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2673.0,
+      "bcc_dialogue": 459.0,
+      "bcc_news": 10007.0,
+      "bcc_literature": 847.0,
+      "subtlex": 118.0,
+      "cld_weibo": 292.0
+    },
+    "各源排名": {
+      "bcc_balanced": 8616,
+      "bcc_dialogue": 9061,
+      "bcc_news": 6621,
+      "bcc_literature": 7200,
+      "subtlex": 8356,
+      "cld_weibo": 10040
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "lou tian",
+        "lu tian"
+      ],
+      "鲸凉鹤": [
+        "lou tian",
+        "lu tian"
+      ],
+      "Chai整词": [
+        "lu tian"
+      ],
+      "墨奇双拼": [
+        "lutm"
+      ],
+      "CLD整词": [
+        "lu tian"
+      ],
+      "SUBTLEX整词": [
+        "lu tian"
+      ]
+    },
+    "1.0四码": [
+      "lztm"
+    ],
+    "论文训练码": "lutm",
+    "综合排名": 7329,
+    "二字词排名": 6931
+  },
+  {
+    "词": "削减",
+    "词长": 2,
+    "排序指数": 0.23074294,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2935.0,
+      "bcc_dialogue": 17.0,
+      "bcc_news": 21941.0,
+      "bcc_literature": 177.0,
+      "subtlex": 104.0,
+      "cld_weibo": 136.0
+    },
+    "各源排名": {
+      "bcc_balanced": 7986,
+      "bcc_dialogue": 64663,
+      "bcc_news": 3720,
+      "bcc_literature": 24013,
+      "subtlex": 9033,
+      "cld_weibo": 15151
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xiao jian",
+        "xue jian"
+      ],
+      "鲸凉鹤": [
+        "xiao jian",
+        "xue jian"
+      ],
+      "Chai整词": [
+        "xue jian"
+      ],
+      "墨奇双拼": [
+        "xtjm"
+      ],
+      "CLD整词": [
+        "xue jian"
+      ],
+      "SUBTLEX整词": [
+        "xue jian"
+      ]
+    },
+    "1.0四码": [
+      "xnjm"
+    ],
+    "论文训练码": "xnjm",
+    "综合排名": 7420,
+    "二字词排名": 7013
+  },
+  {
+    "词": "所长",
+    "词长": 2,
+    "排序指数": 0.22894641,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 6652.0,
+      "bcc_dialogue": 166.0,
+      "bcc_news": 30015.0,
+      "bcc_literature": 2553.0,
+      "subtlex": 34.0,
+      "cld_weibo": 284.0
+    },
+    "各源排名": {
+      "bcc_balanced": 4219,
+      "bcc_dialogue": 17564,
+      "bcc_news": 2925,
+      "bcc_literature": 2579,
+      "subtlex": 17905,
+      "cld_weibo": 10181
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "鲸凉鹤": [
+        "suo chang",
+        "suo zhang"
+      ],
+      "Chai整词": [
+        "suo zhang"
+      ],
+      "墨奇双拼": [
+        "soih",
+        "sovh"
+      ],
+      "CLD整词": [
+        "suo zhang"
+      ],
+      "SUBTLEX整词": [
+        "suo zhang"
+      ]
+    },
+    "1.0四码": [
+      "soih"
+    ],
+    "论文训练码": null,
+    "综合排名": 7592,
+    "二字词排名": 7173
+  },
+  {
+    "词": "长袖",
+    "词长": 2,
+    "排序指数": 0.22622759,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2091.0,
+      "bcc_dialogue": 2237.0,
+      "bcc_news": 417.0,
+      "bcc_literature": 264.0,
+      "subtlex": 35.0,
+      "cld_weibo": 979.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10387,
+      "bcc_dialogue": 2763,
+      "bcc_news": 49345,
+      "bcc_literature": 18160,
+      "subtlex": 17766,
+      "cld_weibo": 4595
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chang xiu"
+      ],
+      "鲸凉鹤": [
+        "chang xiu"
+      ],
+      "Chai整词": [
+        "chang xiu"
+      ],
+      "墨奇双拼": [
+        "ihxq"
+      ],
+      "CLD整词": [
+        "zhang xiu"
+      ]
+    },
+    "1.0四码": [
+      "ihxq"
+    ],
+    "论文训练码": null,
+    "综合排名": 7857,
+    "二字词排名": 7411
+  },
+  {
+    "词": "塞车",
+    "词长": 2,
+    "排序指数": 0.22556058,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 705.0,
+      "bcc_dialogue": 777.0,
+      "bcc_news": 275.0,
+      "bcc_literature": 42.0,
+      "subtlex": 57.0,
+      "cld_weibo": 1774.0
+    },
+    "各源排名": {
+      "bcc_balanced": 22272,
+      "bcc_dialogue": 6234,
+      "bcc_news": 61960,
+      "bcc_literature": 56151,
+      "subtlex": 13285,
+      "cld_weibo": 2949
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "sai che",
+        "se che"
+      ],
+      "鲸凉鹤": [
+        "sai che",
+        "se che"
+      ],
+      "Chai整词": [
+        "sai che"
+      ],
+      "墨奇双拼": [
+        "sdie"
+      ],
+      "CLD整词": [
+        "sai che"
+      ],
+      "SUBTLEX整词": [
+        "sai che"
+      ]
+    },
+    "1.0四码": [
+      "sdie"
+    ],
+    "论文训练码": "sdie",
+    "综合排名": 7927,
+    "二字词排名": 7477
+  },
+  {
+    "词": "还给",
+    "词长": 2,
+    "排序指数": 0.22540523,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2140.0,
+      "bcc_dialogue": 1087.0,
+      "bcc_news": 3060.0,
+      "bcc_literature": 2198.0,
+      "subtlex": 63.0,
+      "cld_weibo": 545.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10209,
+      "bcc_dialogue": 4858,
+      "bcc_news": 15084,
+      "bcc_literature": 3009,
+      "subtlex": 12556,
+      "cld_weibo": 6830
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "hai gei",
+        "huan gei"
+      ],
+      "鲸凉鹤": [
+        "hai gei",
+        "huan gei"
+      ],
+      "Chai整词": [
+        "huan gei"
+      ],
+      "墨奇双拼": [
+        "hdgw",
+        "hrgw"
+      ],
+      "CLD整词": [
+        "huan gei"
+      ],
+      "SUBTLEX整词": [
+        "huan gei"
+      ]
+    },
+    "1.0四码": [
+      "hdgw"
+    ],
+    "论文训练码": "hdgw",
+    "综合排名": 7948,
+    "二字词排名": 7495
+  },
+  {
+    "词": "堪称",
+    "词长": 2,
+    "排序指数": 0.22436813,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2378.0,
+      "bcc_dialogue": 252.0,
+      "bcc_news": 10333.0,
+      "bcc_literature": 471.0,
+      "subtlex": 44.0,
+      "cld_weibo": 499.0
+    },
+    "各源排名": {
+      "bcc_balanced": 9432,
+      "bcc_dialogue": 13488,
+      "bcc_news": 6487,
+      "bcc_literature": 11715,
+      "subtlex": 15475,
+      "cld_weibo": 7212
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "kan cheng"
+      ],
+      "鲸凉鹤": [
+        "kan cheng"
+      ],
+      "Chai整词": [
+        "kan cheng"
+      ],
+      "墨奇双拼": [
+        "kjig"
+      ],
+      "CLD整词": [
+        "kan chen"
+      ]
+    },
+    "1.0四码": [
+      "kjig"
+    ],
+    "论文训练码": "kjif",
+    "综合排名": 8043,
+    "二字词排名": 7583
+  },
+  {
+    "词": "露面",
+    "词长": 2,
+    "排序指数": 0.22281363,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2158.0,
+      "bcc_dialogue": 357.0,
+      "bcc_news": 1938.0,
+      "bcc_literature": 1658.0,
+      "subtlex": 261.0,
+      "cld_weibo": 150.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10152,
+      "bcc_dialogue": 10783,
+      "bcc_news": 20276,
+      "bcc_literature": 3944,
+      "subtlex": 4794,
+      "cld_weibo": 14453
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "lou mian",
+        "lu mian"
+      ],
+      "鲸凉鹤": [
+        "lou mian",
+        "lu mian"
+      ],
+      "Chai整词": [
+        "lou mian"
+      ],
+      "墨奇双拼": [
+        "lzmm"
+      ],
+      "CLD整词": [
+        "lou mian"
+      ],
+      "SUBTLEX整词": [
+        "lou mian"
+      ]
+    },
+    "1.0四码": [
+      "lzmm"
+    ],
+    "论文训练码": null,
+    "综合排名": 8208,
+    "二字词排名": 7728
+  },
+  {
+    "词": "午觉",
+    "词长": 2,
+    "排序指数": 0.22249633,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1711.0,
+      "bcc_dialogue": 1974.0,
+      "bcc_news": 208.0,
+      "bcc_literature": 319.0,
+      "subtlex": 29.0,
+      "cld_weibo": 1069.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12074,
+      "bcc_dialogue": 3080,
+      "bcc_news": 72209,
+      "bcc_literature": 15797,
+      "subtlex": 19490,
+      "cld_weibo": 4301
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "wu jiao"
+      ],
+      "鲸凉鹤": [
+        "wu jiao"
+      ],
+      "Chai整词": [
+        "wu jiao"
+      ],
+      "墨奇双拼": [
+        "wujn"
+      ],
+      "CLD整词": [
+        "wu jue"
+      ],
+      "SUBTLEX整词": [
+        "wu jiao"
+      ]
+    },
+    "1.0四码": [
+      "wujn"
+    ],
+    "论文训练码": "wujn",
+    "综合排名": 8243,
+    "二字词排名": 7760
+  },
+  {
+    "词": "称职",
+    "词长": 2,
+    "排序指数": 0.2211528,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1536.0,
+      "bcc_dialogue": 643.0,
+      "bcc_news": 4071.0,
+      "bcc_literature": 216.0,
+      "subtlex": 204.0,
+      "cld_weibo": 203.0
+    },
+    "各源排名": {
+      "bcc_balanced": 13059,
+      "bcc_dialogue": 7170,
+      "bcc_news": 12438,
+      "bcc_literature": 20951,
+      "subtlex": 5732,
+      "cld_weibo": 12198
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chen zhi"
+      ],
+      "鲸凉鹤": [
+        "chen zhi",
+        "cheng zhi"
+      ],
+      "Chai整词": [
+        "chen zhi"
+      ],
+      "墨奇双拼": [
+        "ifvi",
+        "igvi"
+      ],
+      "CLD整词": [
+        "chen zhi"
+      ]
+    },
+    "1.0四码": [
+      "igvi"
+    ],
+    "论文训练码": "ifvi",
+    "综合排名": 8383,
+    "二字词排名": 7885
+  },
+  {
+    "词": "卡住",
+    "词长": 2,
+    "排序指数": 0.22078174,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1091.0,
+      "bcc_dialogue": 630.0,
+      "bcc_news": 1337.0,
+      "bcc_literature": 337.0,
+      "subtlex": 389.0,
+      "cld_weibo": 235.0
+    },
+    "各源排名": {
+      "bcc_balanced": 16658,
+      "bcc_dialogue": 7261,
+      "bcc_news": 25510,
+      "bcc_literature": 15191,
+      "subtlex": 3498,
+      "cld_weibo": 11243
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ka zhu"
+      ],
+      "鲸凉鹤": [
+        "ka zhu",
+        "qia zhu"
+      ],
+      "Chai整词": [
+        "qia zhu"
+      ],
+      "墨奇双拼": [
+        "kavu",
+        "qxvu"
+      ],
+      "CLD整词": [
+        "qia zhu"
+      ],
+      "SUBTLEX整词": [
+        "ka zhu"
+      ]
+    },
+    "1.0四码": [
+      "kavu"
+    ],
+    "论文训练码": "kavu",
+    "综合排名": 8419,
+    "二字词排名": 7917
+  },
+  {
+    "词": "包扎",
+    "词长": 2,
+    "排序指数": 0.22013253,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1674.0,
+      "bcc_news": 2061.0,
+      "bcc_literature": 806.0,
+      "subtlex": 101.0,
+      "cld_weibo": 680.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12274,
+      "bcc_news": 19499,
+      "bcc_literature": 7519,
+      "subtlex": 9229,
+      "cld_weibo": 5914
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bao za",
+        "bao zha"
+      ],
+      "鲸凉鹤": [
+        "bao za",
+        "bao zha"
+      ],
+      "Chai整词": [
+        "bao za"
+      ],
+      "墨奇双拼": [
+        "bcza"
+      ],
+      "CLD整词": [
+        "bao za"
+      ],
+      "SUBTLEX整词": [
+        "bao za"
+      ]
+    },
+    "1.0四码": [
+      "bcva"
+    ],
+    "论文训练码": "bcva",
+    "综合排名": 8487,
+    "二字词排名": 7976
+  },
+  {
+    "词": "嗯嗯",
+    "词长": 2,
+    "排序指数": 0.22003899,
+    "语料家族覆盖": 1,
+    "各源原始词频": {
+      "bcc_balanced": 9222.0,
+      "bcc_dialogue": 116031.0,
+      "bcc_news": 36.0,
+      "bcc_literature": 116.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3135,
+      "bcc_dialogue": 55,
+      "bcc_news": 203292,
+      "bcc_literature": 31455
+    },
+    "来源缺失": [
+      "subtlex",
+      "cld_weibo"
+    ],
+    "读音状态": "缺少整词读音",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "墨奇双拼": [
+        "enen"
+      ]
+    },
+    "1.0四码": [
+      "ngng"
+    ],
+    "论文训练码": null,
+    "综合排名": 8496,
+    "二字词排名": 7984
+  },
+  {
+    "词": "雪地",
+    "词长": 2,
+    "排序指数": 0.21962147,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2218.0,
+      "bcc_dialogue": 450.0,
+      "bcc_news": 2548.0,
+      "bcc_literature": 1463.0,
+      "subtlex": 34.0,
+      "cld_weibo": 1121.0
+    },
+    "各源排名": {
+      "bcc_balanced": 9935,
+      "bcc_dialogue": 9183,
+      "bcc_news": 17012,
+      "bcc_literature": 4418,
+      "subtlex": 18052,
+      "cld_weibo": 4144
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xue di"
+      ],
+      "鲸凉鹤": [
+        "xue di"
+      ],
+      "Chai整词": [
+        "xue di"
+      ],
+      "墨奇双拼": [
+        "xtdi"
+      ],
+      "CLD整词": [
+        "xue de"
+      ]
+    },
+    "1.0四码": [
+      "xtdi"
+    ],
+    "论文训练码": "xtde",
+    "综合排名": 8543,
+    "二字词排名": 8023
+  },
+  {
+    "词": "长长",
+    "词长": 2,
+    "排序指数": 0.21829586,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1496.0,
+      "bcc_dialogue": 1621.0,
+      "bcc_news": 435.0,
+      "bcc_literature": 1290.0,
+      "subtlex": 35.0,
+      "cld_weibo": 975.0
+    },
+    "各源排名": {
+      "bcc_balanced": 13310,
+      "bcc_dialogue": 3648,
+      "bcc_news": 48237,
+      "bcc_literature": 4944,
+      "subtlex": 17767,
+      "cld_weibo": 4606
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chang chang",
+        "zhang chang"
+      ],
+      "鲸凉鹤": [
+        "chang chang",
+        "zhang chang"
+      ],
+      "Chai整词": [
+        "zhang chang"
+      ],
+      "墨奇双拼": [
+        "ihih",
+        "vhih"
+      ],
+      "CLD整词": [
+        "zhang zhang"
+      ]
+    },
+    "1.0四码": [
+      "ihih"
+    ],
+    "论文训练码": "ihih",
+    "综合排名": 8688,
+    "二字词排名": 8151
+  },
+  {
+    "词": "巷子",
+    "词长": 2,
+    "排序指数": 0.21829281,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2043.0,
+      "bcc_dialogue": 839.0,
+      "bcc_news": 1420.0,
+      "bcc_literature": 1191.0,
+      "subtlex": 145.0,
+      "cld_weibo": 354.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10567,
+      "bcc_dialogue": 5892,
+      "bcc_news": 24582,
+      "bcc_literature": 5323,
+      "subtlex": 7239,
+      "cld_weibo": 8925
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xiang zi"
+      ],
+      "鲸凉鹤": [
+        "hang zi",
+        "xiang zi"
+      ],
+      "Chai整词": [
+        "xiang zi"
+      ],
+      "墨奇双拼": [
+        "xlzi"
+      ],
+      "CLD整词": [
+        "xiang zi"
+      ]
+    },
+    "1.0四码": [
+      "xlzi"
+    ],
+    "论文训练码": "hhzi",
+    "综合排名": 8689,
+    "二字词排名": 8152
+  },
+  {
+    "词": "小巷",
+    "词长": 2,
+    "排序指数": 0.21730674,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1671.0,
+      "bcc_dialogue": 157.0,
+      "bcc_news": 3400.0,
+      "bcc_literature": 1127.0,
+      "subtlex": 174.0,
+      "cld_weibo": 232.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12288,
+      "bcc_dialogue": 18168,
+      "bcc_news": 14003,
+      "bcc_literature": 5613,
+      "subtlex": 6396,
+      "cld_weibo": 11334
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xiao xiang"
+      ],
+      "鲸凉鹤": [
+        "xiao hang",
+        "xiao xiang"
+      ],
+      "Chai整词": [
+        "xiao xiang"
+      ],
+      "墨奇双拼": [
+        "xnxl"
+      ],
+      "CLD整词": [
+        "xiao xiang"
+      ],
+      "SUBTLEX整词": [
+        "xiao xiang"
+      ]
+    },
+    "1.0四码": [
+      "xnxl"
+    ],
+    "论文训练码": "xnhh",
+    "综合排名": 8810,
+    "二字词排名": 8261
+  },
+  {
+    "词": "扎根",
+    "词长": 2,
+    "排序指数": 0.21665395,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 3270.0,
+      "bcc_dialogue": 245.0,
+      "bcc_news": 26028.0,
+      "bcc_literature": 220.0,
+      "subtlex": 29.0,
+      "cld_weibo": 188.0
+    },
+    "各源排名": {
+      "bcc_balanced": 7346,
+      "bcc_dialogue": 13728,
+      "bcc_news": 3267,
+      "bcc_literature": 20631,
+      "subtlex": 19591,
+      "cld_weibo": 12720
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "za gen",
+        "zha gen"
+      ],
+      "鲸凉鹤": [
+        "za gen",
+        "zha gen"
+      ],
+      "Chai整词": [
+        "zha gen"
+      ],
+      "墨奇双拼": [
+        "vagf"
+      ],
+      "CLD整词": [
+        "zha gen"
+      ],
+      "SUBTLEX整词": [
+        "zha gen"
+      ]
+    },
+    "1.0四码": [
+      "vagf"
+    ],
+    "论文训练码": "vagf",
+    "综合排名": 8881,
+    "二字词排名": 8322
+  },
+  {
+    "词": "人参",
+    "词长": 2,
+    "排序指数": 0.21648603,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2048.0,
+      "bcc_news": 3389.0,
+      "bcc_literature": 461.0,
+      "subtlex": 30.0,
+      "cld_weibo": 1122.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10542,
+      "bcc_news": 14040,
+      "bcc_literature": 11911,
+      "subtlex": 19093,
+      "cld_weibo": 4140
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ren can",
+        "ren shen"
+      ],
+      "鲸凉鹤": [
+        "ren can",
+        "ren shen"
+      ],
+      "Chai整词": [
+        "ren shen"
+      ],
+      "墨奇双拼": [
+        "rfuf"
+      ],
+      "CLD整词": [
+        "ren shen"
+      ],
+      "SUBTLEX整词": [
+        "ren shen"
+      ]
+    },
+    "1.0四码": [
+      "rfcj"
+    ],
+    "论文训练码": "rfcf",
+    "综合排名": 8904,
+    "二字词排名": 8339
+  },
+  {
+    "词": "完了",
+    "词长": 2,
+    "排序指数": 0.21631008,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1209.0,
+      "bcc_dialogue": 1153.0,
+      "bcc_news": 997.0,
+      "bcc_literature": 1957.0,
+      "subtlex": 291.0,
+      "cld_weibo": 56.0
+    },
+    "各源排名": {
+      "bcc_balanced": 15533,
+      "bcc_dialogue": 4663,
+      "bcc_news": 30286,
+      "bcc_literature": 3361,
+      "subtlex": 4376,
+      "cld_weibo": 22393
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "wan le"
+      ],
+      "鲸凉鹤": [
+        "wan le"
+      ],
+      "Chai整词": [
+        "wan le"
+      ],
+      "墨奇双拼": [
+        "wjle"
+      ],
+      "CLD整词": [
+        "wan liao"
+      ]
+    },
+    "1.0四码": [
+      "wjle"
+    ],
+    "论文训练码": "wjle",
+    "综合排名": 8924,
+    "二字词排名": 8355
+  },
+  {
+    "词": "都会",
+    "词长": 2,
+    "排序指数": 0.21533694,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 806.0,
+      "bcc_dialogue": 688.0,
+      "bcc_news": 246.0,
+      "bcc_literature": 90.0,
+      "subtlex": 213.0,
+      "cld_weibo": 379.0
+    },
+    "各源排名": {
+      "bcc_balanced": 20447,
+      "bcc_dialogue": 6813,
+      "bcc_news": 65963,
+      "bcc_literature": 36902,
+      "subtlex": 5575,
+      "cld_weibo": 8569
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "dou hui",
+        "du hui"
+      ],
+      "鲸凉鹤": [
+        "dou hui",
+        "du hui"
+      ],
+      "Chai整词": [
+        "du hui"
+      ],
+      "墨奇双拼": [
+        "duhv",
+        "dzhv"
+      ],
+      "CLD整词": [
+        "du hui"
+      ],
+      "SUBTLEX整词": [
+        "du hui"
+      ]
+    },
+    "1.0四码": [
+      "dzhv"
+    ],
+    "论文训练码": "duhv",
+    "综合排名": 9041,
+    "二字词排名": 8459
+  },
+  {
+    "词": "我行",
+    "词长": 2,
+    "排序指数": 0.21357112,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 927.0,
+      "bcc_dialogue": 344.0,
+      "bcc_news": 490.0,
+      "bcc_literature": 28.0,
+      "subtlex": 46.0,
+      "cld_weibo": 1567.0
+    },
+    "各源排名": {
+      "bcc_balanced": 18584,
+      "bcc_dialogue": 11038,
+      "bcc_news": 45169,
+      "bcc_literature": 69410,
+      "subtlex": 15114,
+      "cld_weibo": 3258
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "鲸凉鹤": [
+        "wo hang",
+        "wo xing"
+      ],
+      "墨奇双拼": [
+        "woxk"
+      ],
+      "CLD整词": [
+        "wo xing"
+      ]
+    },
+    "1.0四码": [],
+    "论文训练码": null,
+    "综合排名": 9240,
+    "二字词排名": 8638
+  },
+  {
+    "词": "削弱",
+    "词长": 2,
+    "排序指数": 0.21353,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 4548.0,
+      "bcc_dialogue": 159.0,
+      "bcc_news": 20605.0,
+      "bcc_literature": 427.0,
+      "subtlex": 80.0,
+      "cld_weibo": 61.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5716,
+      "bcc_dialogue": 18008,
+      "bcc_news": 3897,
+      "bcc_literature": 12645,
+      "subtlex": 10711,
+      "cld_weibo": 21620
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xue ruo"
+      ],
+      "鲸凉鹤": [
+        "xiao ruo",
+        "xue ruo"
+      ],
+      "Chai整词": [
+        "xue ruo"
+      ],
+      "墨奇双拼": [
+        "xtro"
+      ],
+      "CLD整词": [
+        "xue ruo"
+      ],
+      "SUBTLEX整词": [
+        "xue ruo"
+      ]
+    },
+    "1.0四码": [
+      "xtro"
+    ],
+    "论文训练码": "xnro",
+    "综合排名": 9245,
+    "二字词排名": 8643
+  },
+  {
+    "词": "多重",
+    "词长": 2,
+    "排序指数": 0.21268978,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1858.0,
+      "bcc_dialogue": 451.0,
+      "bcc_news": 5876.0,
+      "bcc_literature": 100.0,
+      "subtlex": 63.0,
+      "cld_weibo": 329.0
+    },
+    "各源排名": {
+      "bcc_balanced": 11350,
+      "bcc_dialogue": 9160,
+      "bcc_news": 9734,
+      "bcc_literature": 34475,
+      "subtlex": 12478,
+      "cld_weibo": 9330
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "duo chong",
+        "duo zhong"
+      ],
+      "鲸凉鹤": [
+        "duo chong",
+        "duo zhong"
+      ],
+      "Chai整词": [
+        "duo zhong"
+      ],
+      "墨奇双拼": [
+        "dois",
+        "dovs"
+      ],
+      "CLD整词": [
+        "duo zhong"
+      ]
+    },
+    "1.0四码": [
+      "dovs"
+    ],
+    "论文训练码": "dois",
+    "综合排名": 9349,
+    "二字词排名": 8733
+  },
+  {
+    "词": "补给",
+    "词长": 2,
+    "排序指数": 0.21136019,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1559.0,
+      "bcc_dialogue": 290.0,
+      "bcc_news": 4490.0,
+      "bcc_literature": 104.0,
+      "subtlex": 197.0,
+      "cld_weibo": 105.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12916,
+      "bcc_dialogue": 12340,
+      "bcc_news": 11653,
+      "bcc_literature": 33746,
+      "subtlex": 5892,
+      "cld_weibo": 17140
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "bu gei",
+        "bu ji"
+      ],
+      "鲸凉鹤": [
+        "bu gei",
+        "bu ji"
+      ],
+      "Chai整词": [
+        "bu ji"
+      ],
+      "墨奇双拼": [
+        "buji"
+      ],
+      "CLD整词": [
+        "bu ji"
+      ],
+      "SUBTLEX整词": [
+        "bu ji"
+      ]
+    },
+    "1.0四码": [
+      "bugw"
+    ],
+    "论文训练码": "bugw",
+    "综合排名": 9514,
+    "二字词排名": 8877
+  },
+  {
+    "词": "长成",
+    "词长": 2,
+    "排序指数": 0.21111908,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2068.0,
+      "bcc_dialogue": 1048.0,
+      "bcc_news": 3032.0,
+      "bcc_literature": 789.0,
+      "subtlex": 76.0,
+      "cld_weibo": 451.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10459,
+      "bcc_dialogue": 4979,
+      "bcc_news": 15178,
+      "bcc_literature": 7666,
+      "subtlex": 11132,
+      "cld_weibo": 7693
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "chang cheng",
+        "zhang cheng"
+      ],
+      "鲸凉鹤": [
+        "chang cheng",
+        "zhang cheng"
+      ],
+      "Chai整词": [
+        "zhang cheng"
+      ],
+      "墨奇双拼": [
+        "vhig"
+      ],
+      "CLD整词": [
+        "zhang cheng"
+      ],
+      "SUBTLEX整词": [
+        "zhang cheng"
+      ]
+    },
+    "1.0四码": [
+      "ihig"
+    ],
+    "论文训练码": "ihig",
+    "综合排名": 9544,
+    "二字词排名": 8904
+  },
+  {
+    "词": "模块",
+    "词长": 2,
+    "排序指数": 0.21019459,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 7769.0,
+      "bcc_dialogue": 134.0,
+      "bcc_news": 3316.0,
+      "bcc_literature": 14.0,
+      "subtlex": 43.0,
+      "cld_weibo": 172.0
+    },
+    "各源排名": {
+      "bcc_balanced": 3652,
+      "bcc_dialogue": 20033,
+      "bcc_news": 14263,
+      "bcc_literature": 99243,
+      "subtlex": 15730,
+      "cld_weibo": 13364
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "mo kuai"
+      ],
+      "鲸凉鹤": [
+        "mo kuai",
+        "mu kuai"
+      ],
+      "Chai整词": [
+        "mo kuai"
+      ],
+      "墨奇双拼": [
+        "mokk"
+      ],
+      "CLD整词": [
+        "mo kuai"
+      ],
+      "SUBTLEX整词": [
+        "mo kuai"
+      ]
+    },
+    "1.0四码": [
+      "mokk"
+    ],
+    "论文训练码": "mokk",
+    "综合排名": 9651,
+    "二字词排名": 8998
+  },
+  {
+    "词": "配角",
+    "词长": 2,
+    "排序指数": 0.20940497,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1083.0,
+      "bcc_dialogue": 761.0,
+      "bcc_news": 2137.0,
+      "bcc_literature": 178.0,
+      "subtlex": 63.0,
+      "cld_weibo": 656.0
+    },
+    "各源排名": {
+      "bcc_balanced": 16758,
+      "bcc_dialogue": 6334,
+      "bcc_news": 19073,
+      "bcc_literature": 23985,
+      "subtlex": 12560,
+      "cld_weibo": 6056
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "pei jue"
+      ],
+      "鲸凉鹤": [
+        "pei jiao",
+        "pei jue"
+      ],
+      "Chai整词": [
+        "pei jue"
+      ],
+      "墨奇双拼": [
+        "pwjt"
+      ],
+      "CLD整词": [
+        "pei jue"
+      ],
+      "SUBTLEX整词": [
+        "pei jue"
+      ]
+    },
+    "1.0四码": [
+      "pwjt"
+    ],
+    "论文训练码": "pwjn",
+    "综合排名": 9731,
+    "二字词排名": 9065
+  },
+  {
+    "词": "年长",
+    "词长": 2,
+    "排序指数": 0.20893867,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1611.0,
+      "bcc_dialogue": 214.0,
+      "bcc_news": 1676.0,
+      "bcc_literature": 1081.0,
+      "subtlex": 153.0,
+      "cld_weibo": 238.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12637,
+      "bcc_dialogue": 14937,
+      "bcc_news": 22221,
+      "bcc_literature": 5838,
+      "subtlex": 6973,
+      "cld_weibo": 11167
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "nian chang",
+        "nian zhang"
+      ],
+      "鲸凉鹤": [
+        "nian chang",
+        "nian zhang"
+      ],
+      "Chai整词": [
+        "nian zhang"
+      ],
+      "墨奇双拼": [
+        "nmvh"
+      ],
+      "CLD整词": [
+        "nian zhang"
+      ],
+      "SUBTLEX整词": [
+        "nian zhang"
+      ]
+    },
+    "1.0四码": [
+      "nmih"
+    ],
+    "论文训练码": null,
+    "综合排名": 9778,
+    "二字词排名": 9108
+  },
+  {
+    "词": "明了",
+    "词长": 2,
+    "排序指数": 0.20826952,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2141.0,
+      "bcc_dialogue": 391.0,
+      "bcc_news": 2566.0,
+      "bcc_literature": 728.0,
+      "subtlex": 149.0,
+      "cld_weibo": 184.0
+    },
+    "各源排名": {
+      "bcc_balanced": 10203,
+      "bcc_dialogue": 10117,
+      "bcc_news": 16935,
+      "bcc_literature": 8197,
+      "subtlex": 7123,
+      "cld_weibo": 12871
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "ming le",
+        "ming liao"
+      ],
+      "鲸凉鹤": [
+        "ming le",
+        "ming liao"
+      ],
+      "Chai整词": [
+        "ming le"
+      ],
+      "墨奇双拼": [
+        "mkln"
+      ],
+      "CLD整词": [
+        "ming liao"
+      ],
+      "SUBTLEX整词": [
+        "ming liao"
+      ]
+    },
+    "1.0四码": [
+      "mkle"
+    ],
+    "论文训练码": "mkle",
+    "综合排名": 9860,
+    "二字词排名": 9179
+  },
+  {
+    "词": "动弹",
+    "词长": 2,
+    "排序指数": 0.207168,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 2455.0,
+      "bcc_dialogue": 343.0,
+      "bcc_news": 1465.0,
+      "bcc_literature": 2081.0,
+      "subtlex": 68.0,
+      "cld_weibo": 198.0
+    },
+    "各源排名": {
+      "bcc_balanced": 9188,
+      "bcc_dialogue": 11053,
+      "bcc_news": 24114,
+      "bcc_literature": 3168,
+      "subtlex": 11889,
+      "cld_weibo": 12338
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "dong tan"
+      ],
+      "鲸凉鹤": [
+        "dong tan"
+      ],
+      "Chai整词": [
+        "dong tan"
+      ],
+      "墨奇双拼": [
+        "dstj"
+      ],
+      "CLD整词": [
+        "dong tan"
+      ],
+      "SUBTLEX整词": [
+        "dong dan"
+      ]
+    },
+    "1.0四码": [
+      "dstj"
+    ],
+    "论文训练码": "dsdj",
+    "综合排名": 10012,
+    "二字词排名": 9303
+  },
+  {
+    "词": "高调",
+    "词长": 2,
+    "排序指数": 0.20637187,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1531.0,
+      "bcc_dialogue": 1461.0,
+      "bcc_news": 1646.0,
+      "bcc_literature": 134.0,
+      "subtlex": 21.0,
+      "cld_weibo": 893.0
+    },
+    "各源排名": {
+      "bcc_balanced": 13091,
+      "bcc_dialogue": 3943,
+      "bcc_news": 22466,
+      "bcc_literature": 28876,
+      "subtlex": 23305,
+      "cld_weibo": 4874
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "gao diao",
+        "gao tiao"
+      ],
+      "鲸凉鹤": [
+        "gao diao",
+        "gao tiao"
+      ],
+      "Chai整词": [
+        "gao diao"
+      ],
+      "墨奇双拼": [
+        "gcdn"
+      ],
+      "CLD整词": [
+        "gao diao"
+      ],
+      "SUBTLEX整词": [
+        "gao diao"
+      ]
+    },
+    "1.0四码": [
+      "gctn"
+    ],
+    "论文训练码": "gcdn",
+    "综合排名": 10127,
+    "二字词排名": 9400
+  },
+  {
+    "词": "对称",
+    "词长": 2,
+    "排序指数": 0.20606376,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 5183.0,
+      "bcc_dialogue": 744.0,
+      "bcc_news": 4614.0,
+      "bcc_literature": 333.0,
+      "subtlex": 66.0,
+      "cld_weibo": 144.0
+    },
+    "各源排名": {
+      "bcc_balanced": 5136,
+      "bcc_dialogue": 6442,
+      "bcc_news": 11453,
+      "bcc_literature": 15326,
+      "subtlex": 12134,
+      "cld_weibo": 14718
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "dui chen",
+        "dui cheng"
+      ],
+      "鲸凉鹤": [
+        "dui chen",
+        "dui cheng"
+      ],
+      "Chai整词": [
+        "dui chen"
+      ],
+      "墨奇双拼": [
+        "dvif"
+      ],
+      "CLD整词": [
+        "dui chen"
+      ],
+      "SUBTLEX整词": [
+        "dui chen"
+      ]
+    },
+    "1.0四码": [
+      "dvig"
+    ],
+    "论文训练码": "dvif",
+    "综合排名": 10172,
+    "二字词排名": 9436
+  },
+  {
+    "词": "外传",
+    "词长": 2,
+    "排序指数": 0.20503784,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 682.0,
+      "bcc_dialogue": 525.0,
+      "bcc_news": 438.0,
+      "bcc_literature": 140.0,
+      "subtlex": 42.0,
+      "cld_weibo": 1290.0
+    },
+    "各源排名": {
+      "bcc_balanced": 22747,
+      "bcc_dialogue": 8233,
+      "bcc_news": 48036,
+      "bcc_literature": 27978,
+      "subtlex": 15880,
+      "cld_weibo": 3743
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "wai chuan",
+        "wai zhuan"
+      ],
+      "鲸凉鹤": [
+        "wai chuan",
+        "wai zhuan"
+      ],
+      "Chai整词": [
+        "wai zhuan"
+      ],
+      "墨奇双拼": [
+        "wdir",
+        "wdvr"
+      ],
+      "CLD整词": [
+        "wai chuan"
+      ]
+    },
+    "1.0四码": [
+      "wdir"
+    ],
+    "论文训练码": null,
+    "综合排名": 10291,
+    "二字词排名": 9536
+  },
+  {
+    "词": "献血",
+    "词长": 2,
+    "排序指数": 0.20479388,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 945.0,
+      "bcc_news": 6214.0,
+      "bcc_literature": 26.0,
+      "subtlex": 52.0,
+      "cld_weibo": 242.0
+    },
+    "各源排名": {
+      "bcc_balanced": 18356,
+      "bcc_news": 9362,
+      "bcc_literature": 72338,
+      "subtlex": 14069,
+      "cld_weibo": 11073
+    },
+    "来源缺失": [
+      "bcc_dialogue"
+    ],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "xian xue"
+      ],
+      "鲸凉鹤": [
+        "xian xie",
+        "xian xue"
+      ],
+      "Chai整词": [
+        "xian xue"
+      ],
+      "墨奇双拼": [
+        "xmxp",
+        "xmxt"
+      ],
+      "CLD整词": [
+        "xian xue"
+      ],
+      "SUBTLEX整词": [
+        "xian xue"
+      ]
+    },
+    "1.0四码": [
+      "xmxt"
+    ],
+    "论文训练码": "xmxp",
+    "综合排名": 10319,
+    "二字词排名": 9562
+  },
+  {
+    "词": "提防",
+    "词长": 2,
+    "排序指数": 0.20437132,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 1630.0,
+      "bcc_dialogue": 121.0,
+      "bcc_news": 1338.0,
+      "bcc_literature": 1357.0,
+      "subtlex": 96.0,
+      "cld_weibo": 220.0
+    },
+    "各源排名": {
+      "bcc_balanced": 12533,
+      "bcc_dialogue": 21271,
+      "bcc_news": 25502,
+      "bcc_literature": 4703,
+      "subtlex": 9560,
+      "cld_weibo": 11649
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "di fang",
+        "ti fang"
+      ],
+      "鲸凉鹤": [
+        "di fang",
+        "ti fang"
+      ],
+      "Chai整词": [
+        "di fang"
+      ],
+      "墨奇双拼": [
+        "difh"
+      ],
+      "CLD整词": [
+        "di fang"
+      ],
+      "SUBTLEX整词": [
+        "di fang"
+      ]
+    },
+    "1.0四码": [
+      "tifh"
+    ],
+    "论文训练码": "difh",
+    "综合排名": 10380,
+    "二字词排名": 9615
+  },
+  {
+    "词": "露营",
+    "词长": 2,
+    "排序指数": 0.20393515,
+    "语料家族覆盖": 3,
+    "各源原始词频": {
+      "bcc_balanced": 727.0,
+      "bcc_dialogue": 492.0,
+      "bcc_news": 2001.0,
+      "bcc_literature": 137.0,
+      "subtlex": 295.0,
+      "cld_weibo": 84.0
+    },
+    "各源排名": {
+      "bcc_balanced": 21822,
+      "bcc_dialogue": 8658,
+      "bcc_news": 19871,
+      "bcc_literature": 28488,
+      "subtlex": 4346,
+      "cld_weibo": 19015
+    },
+    "来源缺失": [],
+    "读音状态": "多读音或来源分歧",
+    "采用拼音": null,
+    "双拼全码": null,
+    "读音证据": {
+      "简单鹤": [
+        "lou ying",
+        "lu ying"
+      ],
+      "鲸凉鹤": [
+        "lou ying",
+        "lu ying"
+      ],
+      "Chai整词": [
+        "lu ying"
+      ],
+      "墨奇双拼": [
+        "luyk"
+      ],
+      "CLD整词": [
+        "lu ying"
+      ],
+      "SUBTLEX整词": [
+        "lu ying"
+      ]
+    },
+    "1.0四码": [
+      "lzyk"
+    ],
+    "论文训练码": "luyk",
+    "综合排名": 10441,
+    "二字词排名": 9661
+  }
+]

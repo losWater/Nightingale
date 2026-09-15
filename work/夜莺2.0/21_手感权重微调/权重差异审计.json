@@ -1,0 +1,166 @@
+[
+  {
+    "id": "A_hand1.25",
+    "changes": [
+      {
+        "path": "characters_full/tiers/5/phonetic_shape_transition_equivalence",
+        "old": 0.25,
+        "new": 0.3125
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      }
+    ],
+    "source_sha256": "70ee21700620504d5507e78a73b1d6178c02e9f898a57b12d4e594ceeec83528"
+  },
+  {
+    "id": "A_hand1.5",
+    "changes": [
+      {
+        "path": "characters_full/tiers/5/phonetic_shape_transition_equivalence",
+        "old": 0.25,
+        "new": 0.375
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      }
+    ],
+    "source_sha256": "70ee21700620504d5507e78a73b1d6178c02e9f898a57b12d4e594ceeec83528"
+  },
+  {
+    "id": "D_hand1.25",
+    "changes": [
+      {
+        "path": "characters_full/tiers/5/phonetic_shape_transition_equivalence",
+        "old": 0.25,
+        "new": 0.3125
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/1",
+        "old": 110.0,
+        "new": 137.5
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/2",
+        "old": 20.0,
+        "new": 25.0
+      }
+    ],
+    "source_sha256": "f2197d132e4b62e52686ac256bfb110fe25bd4f4afb0480f361c2dfe42ff9bc7"
+  },
+  {
+    "id": "D_hand1.5",
+    "changes": [
+      {
+        "path": "characters_full/tiers/5/phonetic_shape_transition_equivalence",
+        "old": 0.25,
+        "new": 0.375
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/0/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/1/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/1",
+        "old": 110.0,
+        "new": 165.0
+      },
+      {
+        "path": "characters_short/tiers/3/weighted_fingering/2",
+        "old": 20.0,
+        "new": 30.0
+      }
+    ],
+    "source_sha256": "f2197d132e4b62e52686ac256bfb110fe25bd4f4afb0480f361c2dfe42ff9bc7"
+  }
+]

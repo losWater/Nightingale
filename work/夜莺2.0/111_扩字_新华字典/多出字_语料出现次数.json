@@ -1,0 +1,3167 @@
+{
+"口径": "BCC 四语料（含该字的 token 计数之和）+ SUBTLEX WCount；只统计新华字典多出的 7391 字",
+"按字": {
+"诶": {
+"总": 61164,
+"繁体旧字形": false,
+"bcc_balanced": 27204,
+"bcc_dialogue": 33929,
+"bcc_news": 11,
+"bcc_literature": 20
+},
+"馀": {
+"总": 20595,
+"繁体旧字形": false,
+"bcc_balanced": 9189,
+"bcc_dialogue": 11303,
+"bcc_news": 71,
+"bcc_literature": 32
+},
+"囧": {
+"总": 6629,
+"繁体旧字形": false,
+"bcc_balanced": 2789,
+"bcc_dialogue": 3326,
+"bcc_news": 514
+},
+"拚": {
+"总": 22748,
+"繁体旧字形": false,
+"bcc_balanced": 2849,
+"bcc_dialogue": 23,
+"bcc_news": 18881,
+"bcc_literature": 995
+},
+"犤": {
+"总": 1407,
+"繁体旧字形": false,
+"bcc_balanced": 1407
+},
+"犦": {
+"总": 1345,
+"繁体旧字形": false,
+"bcc_balanced": 1345
+},
+"嚒": {
+"总": 2161,
+"繁体旧字形": false,
+"bcc_balanced": 992,
+"bcc_dialogue": 1169
+},
+"後": {
+"总": 3025,
+"繁体旧字形": false,
+"bcc_balanced": 1441,
+"bcc_news": 21,
+"bcc_literature": 1563
+},
+"磺": {
+"总": 5168,
+"繁体旧字形": false,
+"bcc_balanced": 2165,
+"bcc_dialogue": 103,
+"bcc_news": 2558,
+"bcc_literature": 342
+},
+"瓩": {
+"总": 5971,
+"繁体旧字形": false,
+"bcc_balanced": 505,
+"bcc_news": 5466
+},
+"飚": {
+"总": 7993,
+"繁体旧字形": false,
+"bcc_balanced": 838,
+"bcc_dialogue": 192,
+"bcc_news": 6929,
+"bcc_literature": 34
+},
+"塽": {
+"总": 929,
+"繁体旧字形": false,
+"bcc_balanced": 448,
+"bcc_literature": 481
+},
+"硷": {
+"总": 661,
+"繁体旧字形": false,
+"bcc_balanced": 421,
+"bcc_news": 222,
+"bcc_literature": 18
+},
+"捱": {
+"总": 897,
+"繁体旧字形": false,
+"bcc_balanced": 372,
+"bcc_dialogue": 167,
+"bcc_news": 134,
+"bcc_literature": 224
+},
+"珮": {
+"总": 4449,
+"繁体旧字形": true,
+"bcc_balanced": 588,
+"bcc_dialogue": 31,
+"bcc_news": 3562,
+"bcc_literature": 268
+},
+"矽": {
+"总": 2721,
+"繁体旧字形": false,
+"bcc_balanced": 487,
+"bcc_news": 2218,
+"bcc_literature": 16
+},
+"伱": {
+"总": 641,
+"繁体旧字形": false,
+"bcc_balanced": 298,
+"bcc_dialogue": 343
+},
+"樫": {
+"总": 691,
+"繁体旧字形": false,
+"bcc_balanced": 324,
+"bcc_news": 48,
+"bcc_literature": 319
+},
+"丶": {
+"总": 590,
+"繁体旧字形": false,
+"bcc_balanced": 261,
+"bcc_dialogue": 316,
+"bcc_news": 6,
+"bcc_literature": 7
+},
+"袊": {
+"总": 484,
+"繁体旧字形": false,
+"bcc_balanced": 244,
+"bcc_literature": 240
+},
+"羨": {
+"总": 967,
+"繁体旧字形": false,
+"bcc_balanced": 430,
+"bcc_dialogue": 537
+},
+"晩": {
+"总": 511,
+"繁体旧字形": false,
+"bcc_balanced": 223,
+"bcc_dialogue": 274,
+"bcc_news": 14
+},
+"鲶": {
+"总": 851,
+"繁体旧字形": false,
+"bcc_balanced": 247,
+"bcc_dialogue": 136,
+"bcc_news": 424,
+"bcc_literature": 44
+},
+"枌": {
+"总": 294,
+"繁体旧字形": false,
+"bcc_balanced": 147,
+"bcc_literature": 147
+},
+"囉": {
+"总": 354,
+"繁体旧字形": false,
+"bcc_balanced": 137,
+"bcc_dialogue": 169,
+"bcc_news": 48
+},
+"糸": {
+"总": 252,
+"繁体旧字形": false,
+"bcc_balanced": 135,
+"bcc_dialogue": 106,
+"bcc_literature": 11
+},
+"樋": {
+"总": 342,
+"繁体旧字形": false,
+"bcc_balanced": 168,
+"bcc_news": 20,
+"bcc_literature": 154
+},
+"甙": {
+"总": 1383,
+"繁体旧字形": false,
+"bcc_balanced": 1232,
+"bcc_news": 151
+},
+"髙": {
+"总": 409,
+"繁体旧字形": false,
+"bcc_balanced": 206,
+"bcc_dialogue": 10,
+"bcc_literature": 193
+},
+"堺": {
+"总": 514,
+"繁体旧字形": false,
+"bcc_balanced": 216,
+"bcc_news": 78,
+"bcc_literature": 220
+},
+"伹": {
+"总": 214,
+"繁体旧字形": false,
+"bcc_balanced": 101,
+"bcc_literature": 113
+},
+"劵": {
+"总": 244,
+"繁体旧字形": false,
+"bcc_balanced": 100,
+"bcc_dialogue": 129,
+"bcc_news": 15
+},
+"閒": {
+"总": 307,
+"繁体旧字形": true,
+"bcc_balanced": 140,
+"bcc_dialogue": 167
+},
+"舨": {
+"总": 411,
+"繁体旧字形": false,
+"bcc_balanced": 93,
+"bcc_news": 257,
+"bcc_literature": 61
+},
+"蠛": {
+"总": 416,
+"繁体旧字形": false,
+"bcc_balanced": 188,
+"bcc_dialogue": 228
+},
+"矇": {
+"总": 244,
+"繁体旧字形": false,
+"bcc_balanced": 84,
+"bcc_news": 81,
+"bcc_literature": 79
+},
+"岀": {
+"总": 229,
+"繁体旧字形": false,
+"bcc_balanced": 89,
+"bcc_dialogue": 116,
+"bcc_news": 24
+},
+"嬢": {
+"总": 336,
+"繁体旧字形": false,
+"bcc_balanced": 176,
+"bcc_dialogue": 138,
+"bcc_literature": 22
+},
+"牠": {
+"总": 183,
+"繁体旧字形": false,
+"bcc_balanced": 85,
+"bcc_dialogue": 82,
+"bcc_literature": 16
+},
+"嬅": {
+"总": 218,
+"繁体旧字形": false,
+"bcc_balanced": 97,
+"bcc_dialogue": 106,
+"bcc_news": 6,
+"bcc_literature": 9
+},
+"堀": {
+"总": 745,
+"繁体旧字形": false,
+"bcc_balanced": 183,
+"bcc_news": 373,
+"bcc_literature": 189
+},
+"罒": {
+"总": 175,
+"繁体旧字形": false,
+"bcc_balanced": 74,
+"bcc_dialogue": 101
+},
+"椥": {
+"总": 725,
+"繁体旧字形": false,
+"bcc_balanced": 67,
+"bcc_news": 658
+},
+"黒": {
+"总": 137,
+"繁体旧字形": false,
+"bcc_balanced": 67,
+"bcc_dialogue": 63,
+"bcc_literature": 7
+},
+"厶": {
+"总": 102,
+"繁体旧字形": false,
+"bcc_balanced": 70,
+"bcc_dialogue": 6,
+"bcc_news": 14,
+"bcc_literature": 12
+},
+"囍": {
+"总": 240,
+"繁体旧字形": false,
+"bcc_balanced": 71,
+"bcc_dialogue": 68,
+"bcc_news": 101
+},
+"眫": {
+"总": 251,
+"繁体旧字形": false,
+"bcc_balanced": 124,
+"bcc_literature": 127
+},
+"痩": {
+"总": 120,
+"繁体旧字形": false,
+"bcc_balanced": 61,
+"bcc_dialogue": 48,
+"bcc_literature": 11
+},
+"吔": {
+"总": 190,
+"繁体旧字形": false,
+"bcc_balanced": 60,
+"bcc_dialogue": 62,
+"bcc_news": 54,
+"bcc_literature": 14
+},
+"衖": {
+"总": 163,
+"繁体旧字形": false,
+"bcc_balanced": 84,
+"bcc_literature": 79
+},
+"尅": {
+"总": 122,
+"繁体旧字形": false,
+"bcc_balanced": 54,
+"bcc_dialogue": 47,
+"bcc_news": 21
+},
+"槻": {
+"总": 130,
+"繁体旧字形": false,
+"bcc_balanced": 59,
+"bcc_news": 10,
+"bcc_literature": 61
+},
+"嬲": {
+"总": 110,
+"繁体旧字形": false,
+"bcc_balanced": 59,
+"bcc_literature": 51
+},
+"囗": {
+"总": 169,
+"繁体旧字形": false,
+"bcc_balanced": 83,
+"bcc_dialogue": 23,
+"bcc_news": 9,
+"bcc_literature": 54
+},
+"祂": {
+"总": 110,
+"繁体旧字形": true,
+"bcc_balanced": 50,
+"bcc_dialogue": 47,
+"bcc_literature": 13
+},
+"丨": {
+"总": 211,
+"繁体旧字形": false,
+"bcc_balanced": 50,
+"bcc_dialogue": 38,
+"bcc_news": 113,
+"bcc_literature": 10
+},
+"咭": {
+"总": 186,
+"繁体旧字形": false,
+"bcc_balanced": 91,
+"bcc_news": 6,
+"bcc_literature": 89
+},
+"屌": {
+"总": 199,
+"繁体旧字形": false,
+"bcc_balanced": 74,
+"bcc_news": 42,
+"bcc_literature": 83
+},
+"箝": {
+"总": 346,
+"繁体旧字形": false,
+"bcc_balanced": 111,
+"bcc_news": 174,
+"bcc_literature": 61
+},
+"獕": {
+"总": 96,
+"繁体旧字形": false,
+"bcc_balanced": 48,
+"bcc_literature": 48
+},
+"谘": {
+"总": 535,
+"繁体旧字形": false,
+"bcc_balanced": 71,
+"bcc_dialogue": 12,
+"bcc_news": 452
+},
+"鎯": {
+"总": 404,
+"繁体旧字形": false,
+"bcc_balanced": 48,
+"bcc_news": 344,
+"bcc_literature": 12
+},
+"亻": {
+"总": 218,
+"繁体旧字形": false,
+"bcc_balanced": 107,
+"bcc_dialogue": 10,
+"bcc_news": 29,
+"bcc_literature": 72
+},
+"囝": {
+"总": 71,
+"繁体旧字形": false,
+"bcc_balanced": 54,
+"bcc_literature": 17
+},
+"唻": {
+"总": 106,
+"繁体旧字形": false,
+"bcc_balanced": 43,
+"bcc_dialogue": 29,
+"bcc_news": 24,
+"bcc_literature": 10
+},
+"镟": {
+"总": 531,
+"繁体旧字形": false,
+"bcc_balanced": 77,
+"bcc_news": 397,
+"bcc_literature": 57
+},
+"灬": {
+"总": 79,
+"繁体旧字形": false,
+"bcc_balanced": 41,
+"bcc_dialogue": 38
+},
+"嚐": {
+"总": 163,
+"繁体旧字形": false,
+"bcc_balanced": 53,
+"bcc_dialogue": 110
+},
+"幵": {
+"总": 134,
+"繁体旧字形": false,
+"bcc_balanced": 55,
+"bcc_literature": 79
+},
+"菸": {
+"总": 122,
+"繁体旧字形": false,
+"bcc_balanced": 46,
+"bcc_dialogue": 6,
+"bcc_news": 43,
+"bcc_literature": 27
+},
+"幹": {
+"总": 84,
+"繁体旧字形": false,
+"bcc_balanced": 39,
+"bcc_news": 6,
+"bcc_literature": 39
+},
+"喰": {
+"总": 119,
+"繁体旧字形": false,
+"bcc_balanced": 52,
+"bcc_dialogue": 67
+},
+"砦": {
+"总": 455,
+"繁体旧字形": false,
+"bcc_balanced": 63,
+"bcc_news": 365,
+"bcc_literature": 27
+},
+"氵": {
+"总": 200,
+"繁体旧字形": false,
+"bcc_balanced": 77,
+"bcc_dialogue": 9,
+"bcc_news": 67,
+"bcc_literature": 47
+},
+"艹": {
+"总": 71,
+"繁体旧字形": false,
+"bcc_balanced": 44,
+"bcc_news": 17,
+"bcc_literature": 10
+},
+"扌": {
+"总": 86,
+"繁体旧字形": false,
+"bcc_balanced": 52,
+"bcc_news": 7,
+"bcc_literature": 27
+},
+"呯": {
+"总": 177,
+"繁体旧字形": false,
+"bcc_balanced": 47,
+"bcc_news": 102,
+"bcc_literature": 28
+},
+"輖": {
+"总": 427,
+"繁体旧字形": false,
+"bcc_balanced": 34,
+"bcc_news": 393
+},
+"唸": {
+"总": 72,
+"繁体旧字形": false,
+"bcc_balanced": 34,
+"bcc_dialogue": 38
+},
+"钅": {
+"总": 79,
+"繁体旧字形": false,
+"bcc_balanced": 67,
+"bcc_news": 12
+},
+"屄": {
+"总": 65,
+"繁体旧字形": false,
+"bcc_balanced": 31,
+"bcc_literature": 34
+},
+"歩": {
+"总": 82,
+"繁体旧字形": false,
+"bcc_balanced": 43,
+"bcc_dialogue": 14,
+"bcc_literature": 25
+},
+"佧": {
+"总": 736,
+"繁体旧字形": false,
+"bcc_balanced": 58,
+"bcc_news": 678
+},
+"俬": {
+"总": 80,
+"繁体旧字形": false,
+"bcc_balanced": 30,
+"bcc_dialogue": 42,
+"bcc_news": 8
+},
+"搿": {
+"总": 69,
+"繁体旧字形": false,
+"bcc_balanced": 29,
+"bcc_news": 25,
+"bcc_literature": 15
+},
+"屮": {
+"总": 67,
+"繁体旧字形": false,
+"bcc_balanced": 29,
+"bcc_dialogue": 31,
+"bcc_literature": 7
+},
+"讬": {
+"总": 108,
+"繁体旧字形": false,
+"bcc_balanced": 39,
+"bcc_dialogue": 58,
+"bcc_news": 11
+},
+"淸": {
+"总": 63,
+"繁体旧字形": false,
+"bcc_balanced": 35,
+"bcc_dialogue": 12,
+"bcc_literature": 16
+},
+"毎": {
+"总": 81,
+"繁体旧字形": false,
+"bcc_balanced": 34,
+"bcc_dialogue": 25,
+"bcc_news": 8,
+"bcc_literature": 14
+},
+"毜": {
+"总": 55,
+"繁体旧字形": false,
+"bcc_balanced": 27,
+"bcc_literature": 28
+},
+"桖": {
+"总": 58,
+"繁体旧字形": false,
+"bcc_balanced": 27,
+"bcc_dialogue": 31
+},
+"鉾": {
+"总": 126,
+"繁体旧字形": false,
+"bcc_balanced": 64,
+"bcc_literature": 62
+},
+"揲": {
+"总": 75,
+"繁体旧字形": false,
+"bcc_balanced": 46,
+"bcc_news": 29
+},
+"阝": {
+"总": 43,
+"繁体旧字形": false,
+"bcc_balanced": 26,
+"bcc_news": 17
+},
+"餵": {
+"总": 62,
+"繁体旧字形": false,
+"bcc_balanced": 26,
+"bcc_dialogue": 36
+},
+"亊": {
+"总": 74,
+"繁体旧字形": false,
+"bcc_balanced": 34,
+"bcc_literature": 40
+},
+"肜": {
+"总": 45,
+"繁体旧字形": false,
+"bcc_balanced": 25,
+"bcc_literature": 20
+},
+"毬": {
+"总": 84,
+"繁体旧字形": false,
+"bcc_balanced": 35,
+"bcc_news": 11,
+"bcc_literature": 38
+},
+"榀": {
+"总": 121,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_news": 97
+},
+"觍": {
+"总": 52,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_news": 9,
+"bcc_literature": 19
+},
+"眞": {
+"总": 45,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_dialogue": 21
+},
+"別": {
+"总": 65,
+"繁体旧字形": false,
+"bcc_balanced": 32,
+"bcc_literature": 33
+},
+"剎": {
+"总": 47,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_literature": 24
+},
+"闇": {
+"总": 336,
+"繁体旧字形": false,
+"bcc_balanced": 70,
+"bcc_dialogue": 8,
+"bcc_news": 203,
+"bcc_literature": 55
+},
+"阢": {
+"总": 46,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_literature": 23
+},
+"疒": {
+"总": 29,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_literature": 6
+},
+"坶": {
+"总": 67,
+"繁体旧字形": false,
+"bcc_balanced": 37,
+"bcc_literature": 30
+},
+"嫲": {
+"总": 169,
+"繁体旧字形": false,
+"bcc_balanced": 54,
+"bcc_dialogue": 67,
+"bcc_news": 48
+},
+"尓": {
+"总": 60,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_dialogue": 37
+},
+"吥": {
+"总": 481,
+"繁体旧字形": false,
+"bcc_balanced": 54,
+"bcc_dialogue": 18,
+"bcc_news": 409
+},
+"藂": {
+"总": 47,
+"繁体旧字形": false,
+"bcc_balanced": 22,
+"bcc_literature": 25
+},
+"氽": {
+"总": 69,
+"繁体旧字形": false,
+"bcc_balanced": 29,
+"bcc_news": 34,
+"bcc_literature": 6
+},
+"朊": {
+"总": 104,
+"繁体旧字形": false,
+"bcc_balanced": 52,
+"bcc_news": 52
+},
+"鴫": {
+"总": 56,
+"繁体旧字形": false,
+"bcc_balanced": 28,
+"bcc_literature": 28
+},
+"糬": {
+"总": 47,
+"繁体旧字形": false,
+"bcc_balanced": 22,
+"bcc_dialogue": 25
+},
+"丿": {
+"总": 54,
+"繁体旧字形": false,
+"bcc_balanced": 22,
+"bcc_dialogue": 22,
+"bcc_news": 10
+},
+"刂": {
+"总": 22,
+"繁体旧字形": false,
+"bcc_balanced": 22
+},
+"暐": {
+"总": 281,
+"繁体旧字形": false,
+"bcc_balanced": 21,
+"bcc_news": 260
+},
+"侞": {
+"总": 49,
+"繁体旧字形": false,
+"bcc_balanced": 27,
+"bcc_literature": 22
+},
+"賦": {
+"总": 74,
+"繁体旧字形": true,
+"bcc_balanced": 36,
+"bcc_literature": 38
+},
+"佔": {
+"总": 62,
+"繁体旧字形": false,
+"bcc_balanced": 30,
+"bcc_dialogue": 32
+},
+"丌": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_balanced": 21
+},
+"彿": {
+"总": 47,
+"繁体旧字形": false,
+"bcc_balanced": 20,
+"bcc_dialogue": 14,
+"bcc_literature": 13
+},
+"伕": {
+"总": 410,
+"繁体旧字形": false,
+"bcc_balanced": 120,
+"bcc_news": 187,
+"bcc_literature": 103
+},
+"睒": {
+"总": 50,
+"繁体旧字形": false,
+"bcc_balanced": 20,
+"bcc_news": 7,
+"bcc_literature": 23
+},
+"礽": {
+"总": 200,
+"繁体旧字形": false,
+"bcc_balanced": 20,
+"bcc_news": 180
+},
+"韇": {
+"总": 42,
+"繁体旧字形": false,
+"bcc_balanced": 19,
+"bcc_literature": 23
+},
+"暍": {
+"总": 39,
+"繁体旧字形": false,
+"bcc_balanced": 19,
+"bcc_literature": 20
+},
+"醣": {
+"总": 276,
+"繁体旧字形": false,
+"bcc_balanced": 43,
+"bcc_news": 233
+},
+"沵": {
+"总": 34,
+"繁体旧字形": false,
+"bcc_balanced": 19,
+"bcc_dialogue": 15
+},
+"娭": {
+"总": 92,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_dialogue": 24,
+"bcc_news": 44
+},
+"毑": {
+"总": 109,
+"繁体旧字形": false,
+"bcc_balanced": 25,
+"bcc_dialogue": 18,
+"bcc_news": 66
+},
+"畑": {
+"总": 515,
+"繁体旧字形": false,
+"bcc_balanced": 45,
+"bcc_news": 458,
+"bcc_literature": 12
+},
+"嫰": {
+"总": 37,
+"繁体旧字形": false,
+"bcc_balanced": 18,
+"bcc_dialogue": 19
+},
+"熳": {
+"总": 158,
+"繁体旧字形": false,
+"bcc_balanced": 40,
+"bcc_news": 108,
+"bcc_literature": 10
+},
+"噹": {
+"总": 189,
+"繁体旧字形": false,
+"bcc_balanced": 69,
+"bcc_news": 83,
+"bcc_literature": 37
+},
+"杬": {
+"总": 34,
+"繁体旧字形": false,
+"bcc_balanced": 17,
+"bcc_literature": 17
+},
+"揎": {
+"总": 73,
+"繁体旧字形": false,
+"bcc_balanced": 32,
+"bcc_news": 12,
+"bcc_literature": 29
+},
+"杮": {
+"总": 31,
+"繁体旧字形": false,
+"bcc_balanced": 17,
+"bcc_dialogue": 8,
+"bcc_literature": 6
+},
+"欷": {
+"总": 66,
+"繁体旧字形": false,
+"bcc_balanced": 27,
+"bcc_news": 13,
+"bcc_literature": 26
+},
+"歔": {
+"总": 54,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_news": 13,
+"bcc_literature": 18
+},
+"蟳": {
+"总": 251,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_news": 227
+},
+"臁": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_balanced": 17
+},
+"傢": {
+"总": 36,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_literature": 20
+},
+"挢": {
+"总": 56,
+"繁体旧字形": false,
+"bcc_balanced": 29,
+"bcc_literature": 27
+},
+"凖": {
+"总": 74,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_news": 45,
+"bcc_literature": 13
+},
+"躭": {
+"总": 43,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_literature": 27
+},
+"碁": {
+"总": 88,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_dialogue": 15,
+"bcc_news": 57
+},
+"巿": {
+"总": 109,
+"繁体旧字形": false,
+"bcc_balanced": 26,
+"bcc_dialogue": 18,
+"bcc_news": 58,
+"bcc_literature": 7
+},
+"饣": {
+"总": 24,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_literature": 8
+},
+"狚": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 16
+},
+"覅": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_dialogue": 11
+},
+"吜": {
+"总": 52,
+"繁体旧字形": false,
+"bcc_balanced": 24,
+"bcc_news": 14,
+"bcc_literature": 14
+},
+"緖": {
+"总": 28,
+"繁体旧字形": false,
+"bcc_balanced": 15,
+"bcc_literature": 13
+},
+"筸": {
+"总": 41,
+"繁体旧字形": false,
+"bcc_balanced": 27,
+"bcc_literature": 14
+},
+"髈": {
+"总": 53,
+"繁体旧字形": true,
+"bcc_balanced": 21,
+"bcc_dialogue": 24,
+"bcc_news": 8
+},
+"気": {
+"总": 87,
+"繁体旧字形": false,
+"bcc_balanced": 38,
+"bcc_dialogue": 49
+},
+"趎": {
+"总": 54,
+"繁体旧字形": true,
+"bcc_balanced": 25,
+"bcc_literature": 29
+},
+"徳": {
+"总": 99,
+"繁体旧字形": false,
+"bcc_balanced": 47,
+"bcc_dialogue": 12,
+"bcc_news": 9,
+"bcc_literature": 31
+},
+"砳": {
+"总": 110,
+"繁体旧字形": false,
+"bcc_balanced": 14,
+"bcc_news": 96
+},
+"峯": {
+"总": 77,
+"繁体旧字形": true,
+"bcc_balanced": 41,
+"bcc_dialogue": 12,
+"bcc_literature": 24
+},
+"唦": {
+"总": 89,
+"繁体旧字形": false,
+"bcc_balanced": 22,
+"bcc_news": 46,
+"bcc_literature": 21
+},
+"踫": {
+"总": 29,
+"繁体旧字形": false,
+"bcc_balanced": 14,
+"bcc_dialogue": 6,
+"bcc_literature": 9
+},
+"捲": {
+"总": 39,
+"繁体旧字形": false,
+"bcc_balanced": 14,
+"bcc_dialogue": 16,
+"bcc_literature": 9
+},
+"疋": {
+"总": 137,
+"繁体旧字形": false,
+"bcc_balanced": 25,
+"bcc_news": 105,
+"bcc_literature": 7
+},
+"冖": {
+"总": 128,
+"繁体旧字形": false,
+"bcc_balanced": 14,
+"bcc_news": 114
+},
+"釆": {
+"总": 56,
+"繁体旧字形": false,
+"bcc_balanced": 14,
+"bcc_dialogue": 21,
+"bcc_news": 21
+},
+"簦": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 14
+},
+"卐": {
+"总": 166,
+"繁体旧字形": false,
+"bcc_balanced": 23,
+"bcc_news": 131,
+"bcc_literature": 12
+},
+"瑴": {
+"总": 26,
+"繁体旧字形": false,
+"bcc_balanced": 13,
+"bcc_literature": 13
+},
+"犭": {
+"总": 64,
+"繁体旧字形": false,
+"bcc_balanced": 33,
+"bcc_news": 7,
+"bcc_literature": 24
+},
+"紮": {
+"总": 28,
+"繁体旧字形": false,
+"bcc_balanced": 13,
+"bcc_dialogue": 15
+},
+"钁": {
+"总": 145,
+"繁体旧字形": false,
+"bcc_balanced": 13,
+"bcc_news": 132
+},
+"昰": {
+"总": 25,
+"繁体旧字形": false,
+"bcc_balanced": 13,
+"bcc_dialogue": 12
+},
+"讠": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 13,
+"bcc_news": 7
+},
+"枒": {
+"总": 28,
+"繁体旧字形": false,
+"bcc_balanced": 12,
+"bcc_news": 8,
+"bcc_literature": 8
+},
+"痠": {
+"总": 101,
+"繁体旧字形": true,
+"bcc_balanced": 12,
+"bcc_news": 83,
+"bcc_literature": 6
+},
+"跫": {
+"总": 107,
+"繁体旧字形": false,
+"bcc_balanced": 29,
+"bcc_news": 66,
+"bcc_literature": 12
+},
+"挼": {
+"总": 19,
+"繁体旧字形": false,
+"bcc_balanced": 12,
+"bcc_literature": 7
+},
+"乇": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_balanced": 12
+},
+"円": {
+"总": 25,
+"繁体旧字形": false,
+"bcc_balanced": 12,
+"bcc_dialogue": 13
+},
+"焮": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 12,
+"bcc_news": 8
+},
+"洩": {
+"总": 45,
+"繁体旧字形": true,
+"bcc_balanced": 23,
+"bcc_dialogue": 22
+},
+"澙": {
+"总": 170,
+"繁体旧字形": false,
+"bcc_balanced": 11,
+"bcc_news": 159
+},
+"斲": {
+"总": 36,
+"繁体旧字形": false,
+"bcc_balanced": 11,
+"bcc_news": 6,
+"bcc_literature": 19
+},
+"沖": {
+"总": 24,
+"繁体旧字形": false,
+"bcc_balanced": 11,
+"bcc_literature": 13
+},
+"燿": {
+"总": 34,
+"繁体旧字形": true,
+"bcc_balanced": 17,
+"bcc_literature": 17
+},
+"郷": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_balanced": 11,
+"bcc_literature": 10
+},
+"辻": {
+"总": 94,
+"繁体旧字形": false,
+"bcc_balanced": 11,
+"bcc_news": 83
+},
+"込": {
+"总": 21,
+"繁体旧字形": true,
+"bcc_balanced": 10,
+"bcc_literature": 11
+},
+"傫": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_literature": 10
+},
+"凃": {
+"总": 70,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_dialogue": 6,
+"bcc_news": 54
+},
+"噚": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_literature": 7
+},
+"夂": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"鑨": {
+"总": 22,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_literature": 12
+},
+"忄": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"挻": {
+"总": 24,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_dialogue": 14
+},
+"梱": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_news": 6,
+"bcc_literature": 7
+},
+"梶": {
+"总": 269,
+"繁体旧字形": false,
+"bcc_balanced": 17,
+"bcc_news": 252
+},
+"玸": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"茇": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"踧": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_literature": 11
+},
+"鷟": {
+"总": 35,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_news": 18,
+"bcc_literature": 7
+},
+"鹓": {
+"总": 39,
+"繁体旧字形": false,
+"bcc_balanced": 18,
+"bcc_literature": 21
+},
+"缋": {
+"总": 22,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_news": 12
+},
+"睌": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_dialogue": 10
+},
+"衤": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"辶": {
+"总": 18,
+"繁体旧字形": false,
+"bcc_balanced": 10,
+"bcc_news": 8
+},
+"狖": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_balanced": 10
+},
+"乣": {
+"总": 24,
+"繁体旧字形": false,
+"bcc_balanced": 16,
+"bcc_literature": 8
+},
+"廸": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_balanced": 9
+},
+"睏": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_news": 9,
+"bcc_literature": 9
+},
+"睖": {
+"总": 18,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_literature": 9
+},
+"粍": {
+"总": 142,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_news": 133
+},
+"螓": {
+"总": 24,
+"繁体旧字形": false,
+"bcc_balanced": 17,
+"bcc_literature": 7
+},
+"餬": {
+"总": 25,
+"繁体旧字形": true,
+"bcc_balanced": 9,
+"bcc_news": 16
+},
+"骻": {
+"总": 18,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_literature": 9
+},
+"彡": {
+"总": 18,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_dialogue": 9
+},
+"礻": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 16
+},
+"缷": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_balanced": 9
+},
+"崑": {
+"总": 582,
+"繁体旧字形": false,
+"bcc_balanced": 28,
+"bcc_dialogue": 7,
+"bcc_news": 547
+},
+"揹": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 9,
+"bcc_dialogue": 7
+},
+"呟": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 7
+},
+"埈": {
+"总": 87,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_news": 79
+},
+"彊": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 9
+},
+"揾": {
+"总": 38,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_news": 20,
+"bcc_literature": 10
+},
+"娳": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 8
+},
+"槙": {
+"总": 89,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_news": 81
+},
+"渋": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_balanced": 8
+},
+"漥": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 8
+},
+"耲": {
+"总": 86,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_news": 78
+},
+"葇": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_balanced": 8
+},
+"鞗": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 7
+},
+"廾": {
+"总": 34,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_news": 26
+},
+"拫": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 12
+},
+"舺": {
+"总": 57,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_dialogue": 12,
+"bcc_news": 37
+},
+"唞": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_dialogue": 6
+},
+"恏": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_dialogue": 7
+},
+"歳": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_dialogue": 6
+},
+"髟": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_balanced": 8
+},
+"痲": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_dialogue": 7
+},
+"弌": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 8,
+"bcc_literature": 8
+},
+"冇": {
+"总": 43,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 25,
+"bcc_literature": 11
+},
+"菓": {
+"总": 26,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_dialogue": 11,
+"bcc_news": 8
+},
+"剰": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_literature": 7
+},
+"搕": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 12,
+"bcc_literature": 8
+},
+"柮": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_literature": 7
+},
+"栿": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_literature": 7
+},
+"沬": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_literature": 6
+},
+"砩": {
+"总": 25,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 18
+},
+"菑": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 6,
+"bcc_literature": 7
+},
+"閤": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 8
+},
+"靑": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_balanced": 7
+},
+"痺": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_dialogue": 7
+},
+"枬": {
+"总": 77,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 70
+},
+"舖": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_dialogue": 6
+},
+"麴": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 6
+},
+"呿": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_dialogue": 8
+},
+"冫": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_dialogue": 6
+},
+"斴": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_literature": 7
+},
+"痳": {
+"总": 19,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 12
+},
+"桜": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_balanced": 7
+},
+"舡": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 7,
+"bcc_news": 9
+},
+"鐄": {
+"总": 20,
+"繁体旧字形": true,
+"bcc_balanced": 6,
+"bcc_news": 8,
+"bcc_literature": 6
+},
+"筰": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 6
+},
+"唎": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 10,
+"bcc_literature": 7
+},
+"佉": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 10
+},
+"崋": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"憝": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 15
+},
+"齡": {
+"总": 12,
+"繁体旧字形": true,
+"bcc_balanced": 6,
+"bcc_literature": 6
+},
+"湼": {
+"总": 85,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 79
+},
+"琹": {
+"总": 97,
+"繁体旧字形": true,
+"bcc_balanced": 6,
+"bcc_news": 91
+},
+"揺": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_dialogue": 7
+},
+"搢": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"曽": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"遝": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"準": {
+"总": 123,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 117
+},
+"眛": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"礃": {
+"总": 53,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 47
+},
+"繐": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"絛": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 7
+},
+"蝍": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 6
+},
+"蹧": {
+"总": 99,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 93
+},
+"軎": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"鎚": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 8
+},
+"冋": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"祌": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 9
+},
+"覚": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_dialogue": 7
+},
+"喚": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_literature": 6
+},
+"褔": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_dialogue": 7
+},
+"钶": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_news": 11
+},
+"尒": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_dialogue": 8
+},
+"焼": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_balanced": 6,
+"bcc_dialogue": 7
+},
+"眀": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"泶": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_balanced": 6
+},
+"蓭": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_dialogue": 8
+},
+"呡": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_dialogue": 7
+},
+"霑": {
+"总": 69,
+"繁体旧字形": false,
+"bcc_dialogue": 6,
+"bcc_news": 63
+},
+"餸": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_dialogue": 6
+},
+"亇": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_dialogue": 6
+},
+"厔": {
+"总": 149,
+"繁体旧字形": false,
+"bcc_news": 149
+},
+"馼": {
+"总": 81,
+"繁体旧字形": false,
+"bcc_news": 81
+},
+"劏": {
+"总": 79,
+"繁体旧字形": false,
+"bcc_news": 79
+},
+"鈜": {
+"总": 70,
+"繁体旧字形": false,
+"bcc_news": 70
+},
+"堦": {
+"总": 66,
+"繁体旧字形": false,
+"bcc_news": 66
+},
+"嵒": {
+"总": 81,
+"繁体旧字形": false,
+"bcc_news": 81
+},
+"與": {
+"总": 48,
+"繁体旧字形": true,
+"bcc_news": 48
+},
+"铓": {
+"总": 75,
+"繁体旧字形": false,
+"bcc_news": 75
+},
+"烋": {
+"总": 53,
+"繁体旧字形": false,
+"bcc_news": 53
+},
+"僾": {
+"总": 87,
+"繁体旧字形": false,
+"bcc_news": 87
+},
+"銤": {
+"总": 40,
+"繁体旧字形": false,
+"bcc_news": 40
+},
+"俤": {
+"总": 69,
+"繁体旧字形": false,
+"bcc_news": 69
+},
+"磆": {
+"总": 37,
+"繁体旧字形": false,
+"bcc_news": 37
+},
+"勣": {
+"总": 57,
+"繁体旧字形": false,
+"bcc_news": 57
+},
+"铔": {
+"总": 51,
+"繁体旧字形": false,
+"bcc_news": 51
+},
+"丂": {
+"总": 34,
+"繁体旧字形": false,
+"bcc_news": 34
+},
+"噁": {
+"总": 71,
+"繁体旧字形": true,
+"bcc_news": 71
+},
+"攵": {
+"总": 32,
+"繁体旧字形": false,
+"bcc_news": 32
+},
+"渒": {
+"总": 53,
+"繁体旧字形": false,
+"bcc_news": 53
+},
+"崙": {
+"总": 31,
+"繁体旧字形": false,
+"bcc_news": 31
+},
+"霙": {
+"总": 37,
+"繁体旧字形": false,
+"bcc_news": 37
+},
+"穇": {
+"总": 29,
+"繁体旧字形": false,
+"bcc_news": 29
+},
+"壋": {
+"总": 47,
+"繁体旧字形": false,
+"bcc_news": 47
+},
+"憣": {
+"总": 45,
+"繁体旧字形": false,
+"bcc_news": 45
+},
+"鮻": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_news": 27
+},
+"鋕": {
+"总": 36,
+"繁体旧字形": false,
+"bcc_news": 36
+},
+"劻": {
+"总": 33,
+"繁体旧字形": false,
+"bcc_news": 33
+},
+"纐": {
+"总": 60,
+"繁体旧字形": true,
+"bcc_news": 60
+},
+"鎝": {
+"总": 25,
+"繁体旧字形": false,
+"bcc_news": 25
+},
+"龑": {
+"总": 31,
+"繁体旧字形": false,
+"bcc_news": 31
+},
+"砲": {
+"总": 31,
+"繁体旧字形": false,
+"bcc_news": 31
+},
+"箑": {
+"总": 31,
+"繁体旧字形": false,
+"bcc_news": 31
+},
+"籾": {
+"总": 30,
+"繁体旧字形": false,
+"bcc_news": 30
+},
+"勹": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"幾": {
+"总": 41,
+"繁体旧字形": false,
+"bcc_news": 41
+},
+"岕": {
+"总": 60,
+"繁体旧字形": false,
+"bcc_news": 60
+},
+"媬": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"榥": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"鏱": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"粔": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"牳": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"旉": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"悞": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_news": 20
+},
+"栱": {
+"总": 32,
+"繁体旧字形": false,
+"bcc_news": 32
+},
+"壃": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_news": 20
+},
+"苳": {
+"总": 46,
+"繁体旧字形": false,
+"bcc_news": 46
+},
+"煐": {
+"总": 38,
+"繁体旧字形": false,
+"bcc_news": 38
+},
+"卍": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_news": 27
+},
+"嗹": {
+"总": 18,
+"繁体旧字形": false,
+"bcc_news": 18
+},
+"啢": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_news": 17
+},
+"鍙": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_news": 17
+},
+"堮": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_news": 17
+},
+"粄": {
+"总": 26,
+"繁体旧字形": false,
+"bcc_news": 26
+},
+"珶": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_news": 17
+},
+"僴": {
+"总": 17,
+"繁体旧字形": false,
+"bcc_news": 17
+},
+"曚": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_news": 27
+},
+"鵟": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_news": 27
+},
+"苢": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"謦": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"欬": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"爕": {
+"总": 24,
+"繁体旧字形": true,
+"bcc_news": 24
+},
+"蓴": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_news": 15
+},
+"櫔": {
+"总": 28,
+"繁体旧字形": false,
+"bcc_news": 28
+},
+"牴": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"猸": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"锠": {
+"总": 32,
+"繁体旧字形": false,
+"bcc_news": 32
+},
+"纈": {
+"总": 28,
+"繁体旧字形": true,
+"bcc_news": 28
+},
+"騤": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_news": 15
+},
+"鱲": {
+"总": 24,
+"繁体旧字形": true,
+"bcc_news": 24
+},
+"粦": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"佫": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"兗": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"廼": {
+"总": 28,
+"繁体旧字形": true,
+"bcc_news": 28
+},
+"縯": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"寀": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"梖": {
+"总": 32,
+"繁体旧字形": false,
+"bcc_news": 32
+},
+"欉": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"皝": {
+"总": 26,
+"繁体旧字形": false,
+"bcc_news": 26
+},
+"寉": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"鋬": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"屲": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"訏": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"栬": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"甽": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"澫": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"矟": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"曣": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"饾": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_news": 20
+},
+"卩": {
+"总": 19,
+"繁体旧字形": false,
+"bcc_news": 13,
+"bcc_literature": 6
+},
+"崐": {
+"总": 35,
+"繁体旧字形": false,
+"bcc_news": 35
+},
+"栢": {
+"总": 12,
+"繁体旧字形": true,
+"bcc_news": 12
+},
+"昞": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"棆": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"禇": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"竜": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"義": {
+"总": 12,
+"繁体旧字形": true,
+"bcc_news": 12
+},
+"喦": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"駹": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"耞": {
+"总": 21,
+"繁体旧字形": false,
+"bcc_news": 21
+},
+"伬": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"喨": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"宀": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"庒": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"憓": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"抐": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"摚": {
+"总": 19,
+"繁体旧字形": false,
+"bcc_news": 19
+},
+"鋡": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"焴": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_news": 20
+},
+"秈": {
+"总": 30,
+"繁体旧字形": true,
+"bcc_news": 30
+},
+"籯": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"莊": {
+"总": 11,
+"繁体旧字形": true,
+"bcc_news": 11
+},
+"仚": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"暻": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"鐥": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"塭": {
+"总": 11,
+"繁体旧字形": false,
+"bcc_news": 11
+},
+"倗": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"倷": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"刲": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"桇": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"坵": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"埨": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"渕": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"寔": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"吿": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"璹": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"牸": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"熖": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"茤": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"稊": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"蛯": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"鮠": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"埧": {
+"总": 23,
+"繁体旧字形": false,
+"bcc_news": 23
+},
+"鴥": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"鷃": {
+"总": 10,
+"繁体旧字形": false,
+"bcc_news": 10
+},
+"櫶": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"汖": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"枿": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"棡": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"柉": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"栃": {
+"总": 16,
+"繁体旧字形": false,
+"bcc_news": 16
+},
+"梹": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_news": 15
+},
+"滈": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"痾": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"巣": {
+"总": 9,
+"繁体旧字形": true,
+"bcc_news": 9
+},
+"遊": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"冂": {
+"总": 9,
+"繁体旧字形": false,
+"bcc_news": 9
+},
+"靦": {
+"总": 9,
+"繁体旧字形": true,
+"bcc_news": 9
+},
+"湢": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"厓": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"糰": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"夅": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"抲": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"拑": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"啟": {
+"总": 27,
+"繁体旧字形": false,
+"bcc_news": 27
+},
+"榎": {
+"总": 15,
+"繁体旧字形": false,
+"bcc_news": 15
+},
+"槖": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"漙": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"礤": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"祅": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"篸": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"粃": {
+"总": 8,
+"繁体旧字形": true,
+"bcc_news": 8
+},
+"緵": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"畇": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"蓳": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"晬": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"蝜": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"迻": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"佈": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"醜": {
+"总": 15,
+"繁体旧字形": true,
+"bcc_news": 15
+},
+"鉧": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"颺": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"伡": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"壪": {
+"总": 20,
+"繁体旧字形": false,
+"bcc_news": 20
+},
+"凵": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"衕": {
+"总": 8,
+"繁体旧字形": false,
+"bcc_news": 8
+},
+"椗": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"仐": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"錱": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"儎": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"坺": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"瑮": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"尟": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"穣": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"鋐": {
+"总": 14,
+"繁体旧字形": false,
+"bcc_news": 14
+},
+"徯": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"憇": {
+"总": 7,
+"繁体旧字形": true,
+"bcc_news": 7
+},
+"搯": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"暸": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"皊": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"檇": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"渉": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"塮": {
+"总": 13,
+"繁体旧字形": false,
+"bcc_news": 13
+},
+"獞": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"妚": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"蚡": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"咢": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"粎": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"絪": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"羢": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"羮": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"苲": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"狑": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"鄐": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"铇": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"閦": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"媺": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"靉": {
+"总": 7,
+"繁体旧字形": true,
+"bcc_news": 7
+},
+"鰤": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"塨": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"飖": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"虀": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"豜": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_news": 7
+},
+"嵕": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"佊": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"蕸": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"禵": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"喴": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"旡": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"枡": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"囯": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"坆": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"墎": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"卨": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"嫑": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"冧": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"旂": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"叒": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"洤": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"揻": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"擗": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"椇": {
+"总": 12,
+"繁体旧字形": false,
+"bcc_news": 12
+},
+"柫": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"歛": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"發": {
+"总": 6,
+"繁体旧字形": true,
+"bcc_news": 6
+},
+"砯": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"硲": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"箥": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"籲": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"嫈": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"芶": {
+"总": 6,
+"繁体旧字形": true,
+"bcc_news": 6
+},
+"葠": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"虖": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"踰": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"魤": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"鮣": {
+"总": 6,
+"繁体旧字形": true,
+"bcc_news": 6
+},
+"麛": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"譀": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"踘": {
+"总": 6,
+"繁体旧字形": true,
+"bcc_news": 6
+},
+"龘": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"豵": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_news": 6
+},
+"嘷": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_literature": 7
+},
+"栘": {
+"总": 7,
+"繁体旧字形": false,
+"bcc_literature": 7
+},
+"脤": {
+"总": 6,
+"繁体旧字形": false,
+"bcc_literature": 6
+}
+}
+}

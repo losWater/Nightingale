@@ -1,0 +1,122 @@
+[
+  {
+    "id": "three_champion",
+    "goal": "three",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\three_champion.json"
+  },
+  {
+    "id": "three_random",
+    "goal": "three",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\three_random.json"
+  },
+  {
+    "id": "cross_champion",
+    "goal": "cross",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\cross_champion.json"
+  },
+  {
+    "id": "cross_random",
+    "goal": "cross",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\cross_random.json"
+  },
+  {
+    "id": "char_dup_champion",
+    "goal": "char_dup",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\char_dup_champion.json"
+  },
+  {
+    "id": "char_dup_random",
+    "goal": "char_dup",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\char_dup_random.json"
+  },
+  {
+    "id": "pair_champion",
+    "goal": "pair",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\pair_champion.json"
+  },
+  {
+    "id": "pair_random",
+    "goal": "pair",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\pair_random.json"
+  },
+  {
+    "id": "large_cross_champion",
+    "goal": "large_cross",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\large_cross_champion.json"
+  },
+  {
+    "id": "large_cross_random",
+    "goal": "large_cross",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\large_cross_random.json"
+  },
+  {
+    "id": "small_cross_champion",
+    "goal": "small_cross",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\small_cross_champion.json"
+  },
+  {
+    "id": "small_cross_random",
+    "goal": "small_cross",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\small_cross_random.json"
+  },
+  {
+    "id": "balance_champion",
+    "goal": "balance",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\balance_champion.json"
+  },
+  {
+    "id": "balance_random",
+    "goal": "balance",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\balance_random.json"
+  },
+  {
+    "id": "separation_champion",
+    "goal": "separation",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\separation_champion.json"
+  },
+  {
+    "id": "separation_random",
+    "goal": "separation",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\separation_random.json"
+  },
+  {
+    "id": "length_champion",
+    "goal": "length",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\length_champion.json"
+  },
+  {
+    "id": "length_random",
+    "goal": "length",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\length_random.json"
+  },
+  {
+    "id": "pinky_champion",
+    "goal": "pinky",
+    "kind": "champion",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\pinky_champion.json"
+  },
+  {
+    "id": "pinky_random",
+    "goal": "pinky",
+    "kind": "random",
+    "config": "E:\\夜莺2.0\\work\\夜莺2.0\\19_根集性能边界\\configs\\pinky_random.json"
+  }
+]

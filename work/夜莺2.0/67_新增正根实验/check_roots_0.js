@@ -1,0 +1,1 @@
+document.querySelector('#q').oninput=e=>document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.textContent.includes(e.target.value.trim()));

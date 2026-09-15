@@ -1,0 +1,32 @@
+{
+  "groups": 32,
+  "per_group": 16,
+  "promote": 4,
+  "finalists": 5,
+  "steps": 50000,
+  "starts": {
+    "projection": 4,
+    "small": 4,
+    "large": 4,
+    "random": 4
+  },
+  "small_fraction": 0.15,
+  "large_fraction": 0.6,
+  "seed": 202609122000,
+  "max_parallel": 4,
+  "reserve_memory_gb": 2,
+  "launch_memory_gb": 5,
+  "min_disk_gb": 40,
+  "max_task_hours": 3,
+  "max_attempts": 3,
+  "second_seed": 202609122001,
+  "score": "沿用草案3：理论60%，纯单字实战20%，无简词字词实战20%；优化参数改为当前均衡参数，评分标尺不另改",
+  "elements": "二山；本批统一，不混入击另一拆法",
+  "engine_rng": "每候选固定独立种子；预处理修复与正式退火分阶段",
+  "word_library": "固定六万二字四码词，不含简词",
+  "small_groups": 8,
+  "large_groups": 60,
+  "baseline": "43号s2_w50可行布局；修复算法51号",
+  "repair_steps": 50000,
+  "repair_attempts": 3
+}

@@ -1,0 +1,21 @@
+﻿新增正根实验：正式表未修改
+S键方案：正与止同键。简码保持原样，仅模拟全码。
+字	字频排名	原全码	新全码	新同码字	新拆分
+正	149	vgps	vgss	正	正
+政	255	vgpq	vgsq	政	正 ＋ 攵
+整	439	vgys	vgys	整	束 ＋ 攵 ＋ 正
+证	447	vgfs	vgfs	证	讠 ＋ 正
+征	1244	vgks	vgks	征	彳 ＋ 正
+症	1494	vgcs	vgcs	症	疒 ＋ 正
+歪	2097	wdps	wdps	歪	不 ＋ 正
+惩	2100	igkv	igkv	惩	彳 ＋ 正 ＋ 心
+焉	2874	yjpp	yjsp	焉、嫣、嬿	正 ＋ 一 ＋ 折 ＋ 灬
+怔	2925	vgvs	vgvs	怔	忄 ＋ 正
+嫣	3407	yjsp	yjsp	焉、嫣、嬿	女 ＋ 正 ＋ 一 ＋ 折 ＋ 灬
+蔫	4237	nmmp	nmmp	蔫	艹 ＋ 正 ＋ 一 ＋ 折 ＋ 灬
+罡	5191	ghqs	ghqs	罡、堽	罒 ＋ 正
+鄢	5359	yjpy	yjsy	鄢	正 ＋ 一 ＋ 折 ＋ 灬 ＋ 阝
+钲	6282	vgus	vgus	钲	钅 ＋ 正
+堽	7208	ghqs	ghqs	罡、堽	土 ＋ 罒 ＋ 正
+墕	7211	yjqp	yjqp	罨、墕	土 ＋ 正 ＋ 一 ＋ 折 ＋ 灬
+漹	7434	yjap	yjap	淹、沇、漹	氵 ＋ 正 ＋ 一 ＋ 折 ＋ 灬

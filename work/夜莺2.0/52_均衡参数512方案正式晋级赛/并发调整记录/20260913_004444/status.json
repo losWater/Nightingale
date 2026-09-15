@@ -1,0 +1,16 @@
+{
+  "stage": "round1",
+  "updated": "2026-09-13 00:44:41",
+  "pid": 38088,
+  "completed_in_batch": 12,
+  "batch_size": 16,
+  "running": [
+    "g03_random_01",
+    "g03_random_02"
+  ],
+  "pending_in_batch": 2,
+  "free_memory_gb": 8.82,
+  "free_disk_gb": 248.4,
+  "first_round_completed": 44,
+  "second_round_completed": 0
+}

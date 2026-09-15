@@ -1,0 +1,63 @@
+--- 原引擎/src/lib.rs
++++ 试验引擎/src/lib.rs
+@@ -544,3 +544,5 @@
+     use chrono::Local;
+     Local::now().format("%m-%d+%H_%M_%S").to_string()
+ }
++
++pub mod trial_rng;
+--- 原引擎/src/operators/default.rs
++++ 试验引擎/src/operators/default.rs
+@@ -6,7 +6,7 @@
+ use crate::错误;
+ use crate::{元素, 元素图, 棱镜};
+ use rand::seq::{IndexedRandom, IteratorRandom};
+-use rand::{random_range, rng};
++use crate::trial_rng::{random_range, rng};
+ use serde::{Deserialize, Serialize};
+ use serde_with::skip_serializing_none;
+ use std::collections::VecDeque;
+@@ -40,7 +40,7 @@
+         let 总权重 = self.变异配置.random_move
+             + self.变异配置.random_swap
+             + self.变异配置.random_full_key_swap;
+-        let 抽样 = rand::random::<f64>() * 总权重;
++        let 抽样 = crate::trial_rng::random_f64() * 总权重;
+         let mut 变化 = if 抽样 < self.变异配置.random_move {
+             self.随机移动元素(决策)
+         } else if 抽样 < self.变异配置.random_move + self.变异配置.random_swap {
+--- 原引擎/src/optimizers/simulated_annealing.rs
++++ 试验引擎/src/optimizers/simulated_annealing.rs
+@@ -113,7 +113,7 @@
+             let 尝试指标 = 目标函数.计算(&尝试决策, &Some(变化));
+             // 如果满足退火条件，接受新决策
+             let 改进 = 尝试指标.1 - 当前指标.1;
+-            if 改进 < 0.0 || (rand::random::<f64>() < (-改进 / 温度).exp()) {
++            if 改进 < 0.0 || (crate::trial_rng::random_f64() < (-改进 / 温度).exp()) {
+                 accepted[phase] += 1;
+                 当前决策.clone_from(&尝试决策);
+                 当前指标 = 尝试指标;
+@@ -185,7 +185,7 @@
+             let moved_elements = 操作.变异(&mut next_candidate);
+             let (_, next_energy) = 目标函数.计算(&next_candidate, &Some(moved_elements));
+             let energy_delta = next_energy - energy;
+-            if energy_delta < 0.0 || (-energy_delta / temperature).exp() > rand::random::<f64>() {
++            if energy_delta < 0.0 || (-energy_delta / temperature).exp() > crate::trial_rng::random_f64() {
+                 accepts += 1;
+                 if energy_delta < 0.0 {
+                     improves += 1;
+
+新增src/trial_rng.rs：
+use rand::{Rng, RngCore, SeedableRng};
+use rand::rngs::StdRng;
+use std::cell::RefCell;
+thread_local! { static STATE: RefCell<StdRng> = RefCell::new(StdRng::seed_from_u64(std::env::var("NIGHTINGALE_TRIAL_SEED").expect("trial seed required").parse().expect("integer seed"))); }
+pub struct Handle;
+impl RngCore for Handle {
+ fn next_u32(&mut self)->u32 { STATE.with(|s|s.borrow_mut().next_u32()) }
+ fn next_u64(&mut self)->u64 { STATE.with(|s|s.borrow_mut().next_u64()) }
+ fn fill_bytes(&mut self,dst:&mut [u8]) { STATE.with(|s|s.borrow_mut().fill_bytes(dst)) }
+}
+pub fn rng()->Handle { Handle }
+pub fn random_f64()->f64 { rng().random::<f64>() }
+pub fn random_range(range:std::ops::Range<usize>)->usize { rng().random_range(range) }

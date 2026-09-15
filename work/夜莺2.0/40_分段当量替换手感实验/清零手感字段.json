@@ -1,0 +1,265 @@
+[
+  {
+    "字段": "/characters_full/pair_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/0/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/0/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/1/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/1/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/2/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/2/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/3/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/3/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/4/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/4/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/5/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/5/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_full/tiers/6/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_full/tiers/6/phonetic_shape_transition_equivalence",
+    "原值": 0.375
+  },
+  {
+    "字段": "/characters_short/pair_equivalence",
+    "原值": 0
+  },
+  {
+    "字段": "/characters_short/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/0/weighted_fingering",
+    "原值": [
+      0.0,
+      165.0,
+      30.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/0/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/tiers/1/weighted_fingering",
+    "原值": [
+      0.0,
+      165.0,
+      30.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/1/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/tiers/2/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/2/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/tiers/3/weighted_fingering",
+    "原值": [
+      0.0,
+      165.0,
+      30.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/3/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/tiers/4/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/4/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  },
+  {
+    "字段": "/characters_short/tiers/5/weighted_fingering",
+    "原值": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "字段": "/characters_short/tiers/5/phonetic_shape_transition_equivalence",
+    "原值": 0.0
+  }
+]

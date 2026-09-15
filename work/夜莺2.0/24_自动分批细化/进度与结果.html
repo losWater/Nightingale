@@ -1,0 +1,299 @@
+<!doctype html><meta charset="utf-8"><title>自动分批细化</title><style>body{font:16px system-ui;background:#f3f6fa;margin:30px;color:#213047}table{border-collapse:collapse}td,th{padding:8px;border:1px solid #cbd5e1}p{max-width:1100px;line-height:1.8}</style><h1>自动分批细化：92次已完成</h1><p><a href="参数集最终总结.html">查看参数集最终总结</a>：包括基础探索、轮换与参数验证，交付对象是参数集。</p><p>{&#x27;status&#x27;: &#x27;complete&#x27;, &#x27;completed&#x27;: 36, &#x27;stages&#x27;: 3, &#x27;pid&#x27;: 47276}</p><p>三阶段：重码范围与全域字频惩罚→围绕优胜配置微调手感/当量/热力/字词→前三种配置独立重复验证。每次5万步，所有字音、根集、简码、温度与最终评分不变。参数变化不会自动写入正式方案。只用同一第二轮一万句作开发评价，不能作为独立泛化证据。每次原始指标变化保存在“每次得失明细.json”，正负不等于统一好坏；左手负担应接近50%。前300有效选重非零者不参与自动晋级，但仍完整记录。</p><div style="overflow:auto"><table><tr><th>id</th><th>阶段</th><th>参数</th><th>综合分</th><th>相对原手感1.25</th><th>前6000三码</th><th>纯字选重次数</th><th>纯字字均当量</th></tr><tr><td>s3_r0_A_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate1_0_hand</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate1_0_three</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate1_0_heat</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate2_0_hand</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate2_0_word</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate2_0_three</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.37141304415077</td><td>0.84674918363892</td><td>4140</td><td>62</td><td>4.571651533310312</td></tr><tr><td>rotate1_0_word</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>68.26248743139604</td><td>0.7378235708841885</td><td>4132</td><td>70</td><td>4.571926439023069</td></tr><tr><td>s2_r4_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0.5, &#x27;word&#x27;: 1}</td><td>68.25977268422965</td><td>1.8549311144177238</td><td>4117</td><td>87</td><td>4.5683269346658815</td></tr><tr><td>s2_r3_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0.5, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.21664025557769</td><td>1.8117986857657655</td><td>4129</td><td>79</td><td>4.571094950808129</td></tr><tr><td>s3_r0_A_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.21305080851776</td><td>0.6883869480059133</td><td>4136</td><td>78</td><td>4.56461503043599</td></tr><tr><td>s1_r3_A_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 0, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.16496665144155</td><td>0.6403027909296952</td><td>4143</td><td>118</td><td>4.557420084367615</td></tr><tr><td>rotate1_1_hand</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>68.16496665144155</td><td>0.6403027909296952</td><td>4143</td><td>118</td><td>4.557420084367615</td></tr><tr><td>rotate1_1_three</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.16496665144155</td><td>0.6403027909296952</td><td>4143</td><td>118</td><td>4.557420084367615</td></tr><tr><td>rotate2_1_three</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.16496665144155</td><td>0.6403027909296952</td><td>4143</td><td>118</td><td>4.557420084367615</td></tr><tr><td>rotate2_1_heat</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>68.16496665144155</td><td>0.6403027909296952</td><td>4143</td><td>118</td><td>4.557420084367615</td></tr><tr><td>s2_r2_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.15726409542314</td><td>0.632600234911294</td><td>4142</td><td>53</td><td>4.558848781544753</td></tr><tr><td>s1_r2_D_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.10173922736597</td><td>1.6968976575540466</td><td>4141</td><td>116</td><td>4.57159736469696</td></tr><tr><td>s3_r2_A_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate1_2_hand</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate1_2_word</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate1_2_three</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate1_2_heat</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate2_2_hand</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate2_2_word</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate2_2_three</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;three&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>rotate2_2_heat</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r2_A_1&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>68.09042164988124</td><td>0.5657577893693855</td><td>4158</td><td>95</td><td>4.571295374677527</td></tr><tr><td>s3_r1_D_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.0632790368518</td><td>1.6584374670398745</td><td>4146</td><td>99</td><td>4.573527121547597</td></tr><tr><td>s3_r1_D_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.05561024528109</td><td>1.6507686754691662</td><td>4146</td><td>124</td><td>4.57906112250909</td></tr><tr><td>s1_r0_D_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 0, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.05557687650864</td><td>1.650735306696717</td><td>4145</td><td>70</td><td>4.564013081720124</td></tr><tr><td>rotate2_0_heat</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s3_r0_A_1&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>68.04083577883885</td><td>0.5161719183270037</td><td>4165</td><td>54</td><td>4.566785837616039</td></tr><tr><td>s1_r5_D_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.02386824613897</td><td>1.6190266763270529</td><td>4127</td><td>120</td><td>4.568217920331512</td></tr><tr><td>rotate2_1_word</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>68.01951136458565</td><td>0.4948475040738032</td><td>4121</td><td>117</td><td>4.592845680391639</td></tr><tr><td>s1_r4_D_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 100, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>68.00626027795097</td><td>1.6014187081390503</td><td>4113</td><td>111</td><td>4.575476514520574</td></tr><tr><td>s2_r2_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.99581285974891</td><td>1.5909712899369879</td><td>4136</td><td>113</td><td>4.563167374244179</td></tr><tr><td>rotate1_1_word</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;word&#x27;}</td><td>67.98376341094242</td><td>0.4590995504305653</td><td>4126</td><td>57</td><td>4.5716555959563125</td></tr><tr><td>s1_r2_A_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.97141426738128</td><td>0.4467504068694268</td><td>4139</td><td>52</td><td>4.573559622715608</td></tr><tr><td>s2_r5_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1.25}</td><td>67.96073047638173</td><td>1.5558889065698054</td><td>4134</td><td>68</td><td>4.576953286342062</td></tr><tr><td>rotate1_1_heat</td><td>轮换1</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;heat&#x27;}</td><td>67.95360115717047</td><td>0.42893729665861713</td><td>4135</td><td>66</td><td>4.572518908231598</td></tr><tr><td>s2_r0_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.89792527005422</td><td>1.4930837002422948</td><td>4157</td><td>89</td><td>4.575872622505705</td></tr><tr><td>s2_r1_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.87692852399964</td><td>0.3522646634877873</td><td>4148</td><td>96</td><td>4.573315186847861</td></tr><tr><td>s2_r1_D_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.85075890209788</td><td>1.4459173322859584</td><td>4128</td><td>76</td><td>4.579206023549804</td></tr><tr><td>s2_r5_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1.25}</td><td>67.78679502164404</td><td>0.2621311611321886</td><td>4112</td><td>84</td><td>4.569341241950883</td></tr><tr><td>s3_r0_D_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.77385264905172</td><td>1.3690110792397974</td><td>4143</td><td>104</td><td>4.580223039265474</td></tr><tr><td>s1_r1_A_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 100, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.76794163077159</td><td>0.24327777025973774</td><td>4135</td><td>69</td><td>4.570914163061068</td></tr><tr><td>s2_r0_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.70725427888212</td><td>0.18259041837026757</td><td>4136</td><td>80</td><td>4.559611881885338</td></tr><tr><td>s1_r5_A_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.70512103781982</td><td>0.1804571773079715</td><td>4140</td><td>80</td><td>4.562495683438624</td></tr><tr><td>s3_r0_D_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.5, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.6938455065683</td><td>1.289003936756373</td><td>4149</td><td>148</td><td>4.574452727728236</td></tr><tr><td>s1_r3_D_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 0, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.63722192129516</td><td>1.2323803514832434</td><td>4140</td><td>102</td><td>4.569480726130262</td></tr><tr><td>s3_r2_A_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.61317019262535</td><td>0.08850633211349646</td><td>4128</td><td>121</td><td>4.5655250631402895</td></tr><tr><td>s3_r1_A_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.60065312163695</td><td>0.07598926112510185</td><td>4150</td><td>87</td><td>4.572162749598814</td></tr><tr><td>s3_r2_D_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.54165335426458</td><td>1.1368117844526608</td><td>4153</td><td>111</td><td>4.55913045833418</td></tr><tr><td>s1_r1_D_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 100, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.47613617199451</td><td>1.07129460218259</td><td>4147</td><td>104</td><td>4.570102310968466</td></tr><tr><td>s2_r4_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0.5, &#x27;word&#x27;: 1}</td><td>67.43079578234665</td><td>-0.09386807816520104</td><td>4130</td><td>107</td><td>4.579893964939365</td></tr><tr><td>s2_r3_A_0</td><td>2</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0.5, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.33538916352038</td><td>-0.18927469699147537</td><td>4160</td><td>230</td><td>4.560767027565053</td></tr><tr><td>s3_r1_A_1</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.25106915763655</td><td>-0.2735947028753003</td><td>4141</td><td>116</td><td>4.567985672401768</td></tr><tr><td>s1_r4_A_0</td><td>1</td><td>{&#x27;top&#x27;: 6000, &#x27;global_dup&#x27;: 100, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.20940549542908</td><td>-0.3152583650827694</td><td>4147</td><td>126</td><td>4.577115792182115</td></tr><tr><td>s1_r0_A_0</td><td>1</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 0, &#x27;hand&#x27;: 1.25, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>67.15555139959284</td><td>-0.3691124609190126</td><td>4125</td><td>172</td><td>4.578008220087076</td></tr><tr><td>rotate2_1_hand</td><td>轮换2</td><td>{&#x27;parent&#x27;: &#x27;s1_r3_A_0&#x27;, &#x27;focus&#x27;: &#x27;hand&#x27;}</td><td>67.11337507379432</td><td>-0.41128878671753455</td><td>4144</td><td>103</td><td>4.577732637266652</td></tr><tr><td>s3_r2_D_0</td><td>3</td><td>{&#x27;top&#x27;: 3000, &#x27;global_dup&#x27;: 300, &#x27;hand&#x27;: 1.125, &#x27;pair&#x27;: 0, &#x27;balance&#x27;: 0, &#x27;word&#x27;: 1}</td><td>66.61260029319901</td><td>0.20775872338708723</td><td>4158</td><td>103</td><td>4.563412487219592</td></tr></table></div><h2>阶段决策记录</h2><pre>{
+  &quot;1&quot;: [
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.97141426738128,
+        68.10173922736597
+      ],
+      &quot;mean&quot;: 68.03657674737363,
+      &quot;min&quot;: 67.97141426738128,
+      &quot;sd&quot;: 0.06516247999234537,
+      &quot;selection&quot;: 68.02028612737554
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 6000,
+        &quot;global_dup&quot;: 0,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        68.16496665144155,
+        67.63722192129516
+      ],
+      &quot;mean&quot;: 67.90109428636836,
+      &quot;min&quot;: 67.63722192129516,
+      &quot;sd&quot;: 0.26387236507319045,
+      &quot;selection&quot;: 67.83512619510006
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 6000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.70512103781982,
+        68.02386824613897
+      ],
+      &quot;mean&quot;: 67.8644946419794,
+      &quot;min&quot;: 67.70512103781982,
+      &quot;sd&quot;: 0.15937360415957613,
+      &quot;selection&quot;: 67.82465124093952
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 100,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.76794163077159,
+        67.47613617199451
+      ],
+      &quot;mean&quot;: 67.62203890138305,
+      &quot;min&quot;: 67.47613617199451,
+      &quot;sd&quot;: 0.14590272938853843,
+      &quot;selection&quot;: 67.58556321903592
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 6000,
+        &quot;global_dup&quot;: 100,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.20940549542908,
+        68.00626027795097
+      ],
+      &quot;mean&quot;: 67.60783288669003,
+      &quot;min&quot;: 67.20940549542908,
+      &quot;sd&quot;: 0.3984273912609453,
+      &quot;selection&quot;: 67.5082260388748
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 0,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.15555139959284,
+        68.05557687650864
+      ],
+      &quot;mean&quot;: 67.60556413805074,
+      &quot;min&quot;: 67.15555139959284,
+      &quot;sd&quot;: 0.45001273845790024,
+      &quot;selection&quot;: 67.49306095343627
+    }
+  ],
+  &quot;2&quot;: [
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.5,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        68.15726409542314,
+        67.99581285974891
+      ],
+      &quot;mean&quot;: 68.07653847758603,
+      &quot;min&quot;: 67.99581285974891,
+      &quot;sd&quot;: 0.08072561783711762,
+      &quot;selection&quot;: 68.05635707312675
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.125,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.87692852399964,
+        67.85075890209788
+      ],
+      &quot;mean&quot;: 67.86384371304877,
+      &quot;min&quot;: 67.85075890209788,
+      &quot;sd&quot;: 0.013084810950878989,
+      &quot;selection&quot;: 67.86057251031104
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1.25
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.78679502164404,
+        67.96073047638173
+      ],
+      &quot;mean&quot;: 67.87376274901288,
+      &quot;min&quot;: 67.78679502164404,
+      &quot;sd&quot;: 0.08696772736884384,
+      &quot;selection&quot;: 67.85202081717067
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.70725427888212,
+        67.89792527005422
+      ],
+      &quot;mean&quot;: 67.80258977446817,
+      &quot;min&quot;: 67.70725427888212,
+      &quot;sd&quot;: 0.09533549558604903,
+      &quot;selection&quot;: 67.77875590057167
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0.5,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.43079578234665,
+        68.25977268422965
+      ],
+      &quot;mean&quot;: 67.84528423328814,
+      &quot;min&quot;: 67.43079578234665,
+      &quot;sd&quot;: 0.4144884509414979,
+      &quot;selection&quot;: 67.74166212055276
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0.5,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.33538916352038,
+        68.21664025557769
+      ],
+      &quot;mean&quot;: 67.77601470954903,
+      &quot;min&quot;: 67.33538916352038,
+      &quot;sd&quot;: 0.4406255460286559,
+      &quot;selection&quot;: 67.66585832304187
+    }
+  ],
+  &quot;3&quot;: [
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.5,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        68.21305080851776,
+        67.6938455065683,
+        68.37141304415077,
+        67.77385264905172
+      ],
+      &quot;mean&quot;: 68.01304050207213,
+      &quot;min&quot;: 67.6938455065683,
+      &quot;sd&quot;: 0.28615174112155545,
+      &quot;selection&quot;: 67.94150256679174
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.25,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.60065312163695,
+        68.0632790368518,
+        67.25106915763655,
+        68.05561024528109
+      ],
+      &quot;mean&quot;: 67.7426528903516,
+      &quot;min&quot;: 67.25106915763655,
+      &quot;sd&quot;: 0.3400595287626496,
+      &quot;selection&quot;: 67.65763800816093
+    },
+    {
+      &quot;recipe&quot;: {
+        &quot;top&quot;: 3000,
+        &quot;global_dup&quot;: 300,
+        &quot;hand&quot;: 1.125,
+        &quot;pair&quot;: 0,
+        &quot;balance&quot;: 0,
+        &quot;word&quot;: 1
+      },
+      &quot;eligible&quot;: true,
+      &quot;scores&quot;: [
+        67.61317019262535,
+        66.61260029319901,
+        68.09042164988124,
+        67.54165335426458
+      ],
+      &quot;mean&quot;: 67.46446137249254,
+      &quot;min&quot;: 66.61260029319901,
+      &quot;sd&quot;: 0.5351556975588647,
+      &quot;selection&quot;: 67.33067244810282
+    }
+  ]
+}</pre>

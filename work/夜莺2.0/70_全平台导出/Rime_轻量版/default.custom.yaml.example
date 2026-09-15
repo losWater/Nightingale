@@ -1,0 +1,4 @@
+patch:
+  schema_list:
+    - schema: yeying20_light
+    - schema: yeying20_xm

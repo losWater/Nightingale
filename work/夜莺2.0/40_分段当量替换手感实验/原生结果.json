@@ -1,0 +1,1668 @@
+{
+  "叠加": {
+    "输出目录": "E:\\夜莺2.0\\work\\夜莺2.0\\40_分段当量替换手感实验\\叠加\\五万步\\output-09-12+21_15_29",
+    "原生": {
+      "schema_version": 1,
+      "score": 169.2016289646178,
+      "metric": {
+        "characters_full": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 29,
+              "duplication_squared": 43,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5341800116661701,
+                0.010730913239657322,
+                0.0669755384185579,
+                0.11894157189032946,
+                0.015878245254241925,
+                0.0019404084769569319,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47813874183564764
+            },
+            {
+              "top": 500,
+              "duplication": 61,
+              "duplication_squared": 81,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5286478897336196,
+                0.010821766143739114,
+                0.06714781137906509,
+                0.11590455733447644,
+                0.01510463315391241,
+                0.002545287632345007,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47872078628538
+            },
+            {
+              "top": 1500,
+              "duplication": 151,
+              "duplication_squared": 187,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.526443751589404,
+                0.01132965940762179,
+                0.07317373045829208,
+                0.11010285516166297,
+                0.015495167348942506,
+                0.0023141906582929326,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47802498077159605
+            },
+            {
+              "top": 1674,
+              "duplication": 161,
+              "duplication_squared": 199,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5259841187531534,
+                0.011442338124622899,
+                0.07329926518530497,
+                0.10981009377912927,
+                0.015511533970707423,
+                0.0023087182004747106,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4789157283973267
+            },
+            {
+              "top": 3000,
+              "duplication": 241,
+              "duplication_squared": 303,
+              "effective_duplication": 4,
+              "effective_duplication_squared": 6,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5253783457720446,
+                0.011636019358550508,
+                0.07395243735597647,
+                0.10890083776859158,
+                0.01576410599688628,
+                0.0022511615225319025,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47918332404944247
+            },
+            {
+              "top": 3527,
+              "duplication": 273,
+              "duplication_squared": 347,
+              "effective_duplication": 12,
+              "effective_duplication_squared": 14,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5253216531185725,
+                0.011670173001893816,
+                0.07399232562604824,
+                0.10881210734950515,
+                0.015759393391865772,
+                0.0022503223994086267,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4791153801345254
+            },
+            {
+              "top": 6000,
+              "duplication": 418,
+              "duplication_squared": 502,
+              "effective_duplication": 77,
+              "effective_duplication_squared": 87,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5252473432440492,
+                0.01168708727711039,
+                0.07404609476824521,
+                0.10873354183261913,
+                0.015780192381189707,
+                0.002247130451582014,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47912686352687944
+            }
+          ],
+          "duplication": 0.08639614174509419,
+          "effective_duplication": 0.00030983804491891207,
+          "key_distribution": {
+            "v": 0.03747860188875453,
+            "c": 0.03380629179634256,
+            "n": 0.02472719564143835,
+            "y": 0.046920148819934046,
+            "f": 0.035115891651880345,
+            "q": 0.025891580457043668,
+            "i": 0.05133803145681945,
+            "t": 0.04816590121525396,
+            "a": 0.03678237538996077,
+            "l": 0.04351478529175501,
+            "w": 0.04115517306031989,
+            "d": 0.05241706252188925,
+            "o": 0.03348528873788691,
+            "z": 0.029280502352261078,
+            "g": 0.03830585921486466,
+            "r": 0.014694733249598722,
+            ";": 0.01877658803031886,
+            "j": 0.02602842136623298,
+            "u": 0.04715387376952682,
+            "_": 0.0023657923822171505,
+            "b": 0.03311835484111274,
+            "m": 0.025009605799373134,
+            "x": 0.042202621387347,
+            "e": 0.03390657518401108,
+            "p": 0.08303052665124998,
+            "h": 0.03746334976300073,
+            "s": 0.019409596186040216,
+            "k": 0.03845527189356611
+          },
+          "key_distribution_loss": 0.4613550253911945,
+          "pair_equivalence": 1.3607738268803191,
+          "phonetic_shape_transition_equivalence": 0.4791262549850451,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.5252465571371717,
+            0.011687235767642383,
+            0.07404648164226234,
+            0.10873305926530971,
+            0.01578028114350149,
+            0.0022470822893251685,
+            0.0,
+            0.0
+          ],
+          "levels": null
+        },
+        "characters_short": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 104
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4439855741828831,
+                0.0,
+                0.07583964137628522,
+                0.04763507162147716,
+                0.0028440242498023525,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.41655467365007903
+            },
+            {
+              "top": 500,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 234
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4445876089775232,
+                0.0019908293753984445,
+                0.07250444840045916,
+                0.04592086650735706,
+                0.0036445212762130454,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4367423525122312
+            },
+            {
+              "top": 1500,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45909456584077796,
+                0.004793440599838014,
+                0.08279793423825756,
+                0.04848506950804617,
+                0.006500647459829725,
+                0.00030949167940411517,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4506192518578681
+            },
+            {
+              "top": 1674,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 1125
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45942441314081717,
+                0.00520668377021406,
+                0.08306002091579939,
+                0.04886133474990221,
+                0.006734144558893683,
+                0.00035287189866012753,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4539675166019014
+            },
+            {
+              "top": 3527,
+              "duplication": 12,
+              "duplication_squared": 14,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 2432
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4616442497261616,
+                0.005921947063129752,
+                0.08391511893975816,
+                0.04940821977532055,
+                0.007628380618085871,
+                0.0003530876727840898,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.456762091409319
+            },
+            {
+              "top": 6000,
+              "duplication": 77,
+              "duplication_squared": 87,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 3730
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4618123861605844,
+                0.005984636396690424,
+                0.08398228282709547,
+                0.049489552127432154,
+                0.007705696767810521,
+                0.00035754435883739595,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.45694540404408257
+            }
+          ],
+          "duplication": 0.00030983804491891207,
+          "effective_duplication": null,
+          "key_distribution": {
+            "v": 0.0434304400330117,
+            "c": 0.0308159753423408,
+            "n": 0.03187641464744213,
+            "y": 0.046787784194885766,
+            "f": 0.02964743958019881,
+            "q": 0.021110863891328678,
+            "i": 0.073955830650416,
+            "t": 0.029855422388158026,
+            "a": 0.03702960167511306,
+            "l": 0.041997491714372684,
+            "w": 0.04125724654803338,
+            "d": 0.07188771866723973,
+            "o": 0.02325400603093183,
+            "z": 0.03272598385845997,
+            "g": 0.038556691234525375,
+            "r": 0.022195658535165436,
+            ";": 0.0001351426678783055,
+            "j": 0.04554229341890071,
+            "u": 0.06385990439901021,
+            "_": 5.7058273408397274e-06,
+            "b": 0.0365459812492961,
+            "m": 0.03813185752551094,
+            "x": 0.03525412694340381,
+            "e": 0.030919289117944303,
+            "p": 0.026501741347795375,
+            "h": 0.04555575760011291,
+            "s": 0.026147263141482795,
+            "k": 0.03501636776970032
+          },
+          "key_distribution_loss": 0.3744463950975689,
+          "pair_equivalence": 1.3327525502131121,
+          "phonetic_shape_transition_equivalence": 0.4569449909937128,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.46181323180346806,
+            0.005985106332217111,
+            0.08398278445775588,
+            0.04949110975966033,
+            0.0077062824305046945,
+            0.00035752725321530995,
+            0.0,
+            0.0
+          ],
+          "levels": [
+            {
+              "length": 1,
+              "frequency": 0.20655901346460395
+            },
+            {
+              "length": 2,
+              "frequency": 0.42117191498512413
+            },
+            {
+              "length": 3,
+              "frequency": 0.3384923391344397
+            }
+          ]
+        },
+        "words_full": null,
+        "words_short": null,
+        "character_word_collision": {
+          "hard": 0,
+          "soft": 47.95960086124403
+        },
+        "auxiliary_two_char": null,
+        "complexity": 0.0
+      }
+    },
+    "起点": {
+      "schema_version": 1,
+      "score": 187.99171171394144,
+      "metric": {
+        "characters_full": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 33,
+              "duplication_squared": 39,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5379801315348911,
+                0.017126977349499244,
+                0.09061652244520148,
+                0.06776972281013247,
+                0.006328255631907092,
+                0.0034557347103232263,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.48556280728626217
+            },
+            {
+              "top": 500,
+              "duplication": 58,
+              "duplication_squared": 84,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5333690599355634,
+                0.015988511764931386,
+                0.08948566399986084,
+                0.07182918747849744,
+                0.0068084323746846875,
+                0.0034448738607959664,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47889728116544306
+            },
+            {
+              "top": 1500,
+              "duplication": 146,
+              "duplication_squared": 216,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5304998299693303,
+                0.015573291140012747,
+                0.08949531134032143,
+                0.07444547724181644,
+                0.008314129373558207,
+                0.0034068829557411277,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4765735182509719
+            },
+            {
+              "top": 1674,
+              "duplication": 163,
+              "duplication_squared": 243,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5296391567419689,
+                0.01552362537605288,
+                0.08928630811937174,
+                0.07449840450879482,
+                0.008464145384310038,
+                0.0033709703047287015,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47600301445041454
+            },
+            {
+              "top": 3000,
+              "duplication": 261,
+              "duplication_squared": 369,
+              "effective_duplication": 17,
+              "effective_duplication_squared": 21,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.528913760356832,
+                0.015447371714336461,
+                0.08956456614426017,
+                0.07500473118201505,
+                0.008895367893343747,
+                0.0033509663736052825,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4753135469223456
+            },
+            {
+              "top": 3527,
+              "duplication": 299,
+              "duplication_squared": 419,
+              "effective_duplication": 27,
+              "effective_duplication_squared": 31,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5288536178689569,
+                0.01546400440671169,
+                0.0895713614634471,
+                0.07503352796338024,
+                0.008951531172461006,
+                0.0033410371855823406,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4752581542594492
+            },
+            {
+              "top": 6000,
+              "duplication": 483,
+              "duplication_squared": 631,
+              "effective_duplication": 121,
+              "effective_duplication_squared": 137,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5287590008668633,
+                0.015471384327773669,
+                0.08958778855094933,
+                0.07501899825118209,
+                0.008980183699517627,
+                0.0033352349367080495,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47524879233038597
+            }
+          ],
+          "duplication": 0.0878668894971535,
+          "effective_duplication": 0.00054890287584017,
+          "key_distribution": {
+            "v": 0.04052379416266731,
+            "c": 0.026488758920472477,
+            "n": 0.06382648659743866,
+            "y": 0.05982648744300611,
+            "f": 0.03555701545126561,
+            "q": 0.035198135481469287,
+            "i": 0.06251940313084037,
+            "t": 0.03415128068590741,
+            "a": 0.057919944209458896,
+            "l": 0.028394477725744844,
+            "w": 0.04189758761717187,
+            "d": 0.04488831744970089,
+            "o": 0.02729377613728295,
+            "z": 0.03251232256031063,
+            "g": 0.05526708728010754,
+            "r": 0.0264681904919744,
+            ";": 0.019210822375659832,
+            "j": 0.02863648970278515,
+            "u": 0.03953544735063632,
+            "_": 0.00228373502367906,
+            "b": 0.016699529293733435,
+            "m": 0.02295207260211337,
+            "x": 0.0219238097211086,
+            "e": 0.05124229714466666,
+            "p": 0.03452990994072361,
+            "h": 0.04457950564321154,
+            "s": 0.02010732470699502,
+            "k": 0.025565991149868166
+          },
+          "key_distribution_loss": 0.3974391653847512,
+          "pair_equivalence": 1.3585237778776882,
+          "phonetic_shape_transition_equivalence": 0.4752493043712462,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.5287583811533517,
+            0.015471470718647793,
+            0.08958808288123622,
+            0.07501912377462722,
+            0.008980395973532866,
+            0.0033352050449866697,
+            0.0,
+            0.0
+          ],
+          "levels": null
+        },
+        "characters_short": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 104
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45548230539539425,
+                0.0014216669366402224,
+                0.08221632228868973,
+                0.04058443788126498,
+                0.0028440242498023525,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44019031689808985
+            },
+            {
+              "top": 500,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 232
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45484397449475356,
+                0.003091577476519544,
+                0.07925457260250614,
+                0.04198624678418697,
+                0.0041309817997842386,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.43544939972320285
+            },
+            {
+              "top": 1500,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4688153274438456,
+                0.005663321955295559,
+                0.08546578701610456,
+                0.04677562729636422,
+                0.006900845562139498,
+                0.0010522500374686836,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4448404462366157
+            },
+            {
+              "top": 1674,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 1096
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4679452043494391,
+                0.005693147217059096,
+                0.08510862486574261,
+                0.04692971499783471,
+                0.007182262951333639,
+                0.0010312524459384128,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44444983030053203
+            },
+            {
+              "top": 3527,
+              "duplication": 27,
+              "duplication_squared": 31,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 2350
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.46959610738145224,
+                0.006130779069700811,
+                0.08640900900712589,
+                0.048667011896518834,
+                0.00812038563056242,
+                0.0010942529753009773,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44496666766000487
+            },
+            {
+              "top": 6000,
+              "duplication": 121,
+              "duplication_squared": 137,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 3562
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4696952477437015,
+                0.006190854388527784,
+                0.08645912964505435,
+                0.048714370840857495,
+                0.008171392890073643,
+                0.0010917466185593554,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4451499359724169
+            }
+          ],
+          "duplication": 0.00054890287584017,
+          "effective_duplication": null,
+          "key_distribution": {
+            "v": 0.04203793836466849,
+            "c": 0.030220304144513214,
+            "n": 0.03489653943188625,
+            "y": 0.0483031768926183,
+            "f": 0.03579061764811944,
+            "q": 0.022369569525511765,
+            "i": 0.07865766379424263,
+            "t": 0.02809950731504692,
+            "a": 0.042529360547990745,
+            "l": 0.042912619496935846,
+            "w": 0.04396761513802901,
+            "d": 0.06623032436460173,
+            "o": 0.022430983828229847,
+            "z": 0.0311605141124611,
+            "g": 0.04060300479052134,
+            "r": 0.023406167326358553,
+            ";": 0.00023042364240421606,
+            "j": 0.045910468213376424,
+            "u": 0.06100813953564694,
+            "_": 1.8486008809861642e-05,
+            "b": 0.030576514937483736,
+            "m": 0.039245973040463226,
+            "x": 0.034669564159964854,
+            "e": 0.034882696967419725,
+            "p": 0.020725519711801654,
+            "h": 0.047059510322182724,
+            "s": 0.024180659580990266,
+            "k": 0.027876137157721186
+          },
+          "key_distribution_loss": 0.3558489780367112,
+          "pair_equivalence": 1.3349755307993607,
+          "phonetic_shape_transition_equivalence": 0.4451531063029735,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.4696967296127338,
+            0.0061914014537046164,
+            0.08646002312304507,
+            0.04871570305708166,
+            0.008171809602337399,
+            0.0010917662242218378,
+            0.0,
+            0.0
+          ],
+          "levels": [
+            {
+              "length": 1,
+              "frequency": 0.20655901346460395
+            },
+            {
+              "length": 2,
+              "frequency": 0.42117191498512413
+            },
+            {
+              "length": 3,
+              "frequency": 0.3332986524421436
+            }
+          ]
+        },
+        "words_full": null,
+        "words_short": null,
+        "character_word_collision": {
+          "hard": 0,
+          "soft": 176.04661295851946
+        },
+        "auxiliary_two_char": null,
+        "complexity": 0.0
+      }
+    },
+    "复核": true,
+    "缓存差异": 3.410605131648481e-13
+  },
+  "替换": {
+    "输出目录": "E:\\夜莺2.0\\work\\夜莺2.0\\40_分段当量替换手感实验\\替换\\五万步\\output-09-12+21_15_29",
+    "原生": {
+      "schema_version": 1,
+      "score": 161.03549253119016,
+      "metric": {
+        "characters_full": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 39,
+              "duplication_squared": 57,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5056081785255448,
+                0.016112764926686115,
+                0.069528178253128,
+                0.10279229744546173,
+                0.023916988460800405,
+                0.0014606315915937616,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4250881480325709
+            },
+            {
+              "top": 500,
+              "duplication": 65,
+              "duplication_squared": 97,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5028754000714302,
+                0.016593901610389653,
+                0.0703994348202374,
+                0.09738337975345607,
+                0.021484408926912245,
+                0.001274251603098545,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4270174369827664
+            },
+            {
+              "top": 1500,
+              "duplication": 145,
+              "duplication_squared": 191,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5015807925869185,
+                0.01768742108235471,
+                0.07303674722046011,
+                0.09340977955539002,
+                0.02003604519992314,
+                0.0016579728973790168,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.43072014836336103
+            },
+            {
+              "top": 1674,
+              "duplication": 157,
+              "duplication_squared": 205,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5010298907538301,
+                0.01771792732642018,
+                0.07301242125419566,
+                0.09323938785376586,
+                0.020061352968029557,
+                0.001640719613397798,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4314436530386686
+            },
+            {
+              "top": 3000,
+              "duplication": 252,
+              "duplication_squared": 328,
+              "effective_duplication": 7,
+              "effective_duplication_squared": 7,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5008444900486215,
+                0.0178260314784598,
+                0.07350690730319508,
+                0.09273613379420731,
+                0.020183735622729446,
+                0.0016819072163628292,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.43227357802341626
+            },
+            {
+              "top": 3527,
+              "duplication": 290,
+              "duplication_squared": 372,
+              "effective_duplication": 15,
+              "effective_duplication_squared": 15,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5008541118262273,
+                0.01787280006065264,
+                0.07355798358739392,
+                0.09266767886391566,
+                0.020168996685519594,
+                0.0016823663859509188,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.43230426832816893
+            },
+            {
+              "top": 6000,
+              "duplication": 450,
+              "duplication_squared": 550,
+              "effective_duplication": 88,
+              "effective_duplication_squared": 92,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5008392610834571,
+                0.01787377533961134,
+                0.07359130706846614,
+                0.0925889472363513,
+                0.020176669957117598,
+                0.001679108360047806,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4324555242006943
+            }
+          ],
+          "duplication": 0.09579990571780814,
+          "effective_duplication": 0.00022307820749077438,
+          "key_distribution": {
+            "v": 0.04094916795624841,
+            "c": 0.026791023366520113,
+            "n": 0.03055793000161101,
+            "y": 0.04721629547675459,
+            "f": 0.021985745615775924,
+            "q": 0.03276658899577159,
+            "i": 0.06648887564294323,
+            "t": 0.05739873994648294,
+            "a": 0.029206629749348286,
+            "l": 0.03635845933436869,
+            "w": 0.024573049498181197,
+            "d": 0.053796499821569525,
+            "o": 0.05913358515387125,
+            "z": 0.03338187177480723,
+            "g": 0.02199538751271703,
+            "r": 0.021173331405516565,
+            ";": 0.019651842178034052,
+            "j": 0.04038658858762608,
+            "u": 0.04871955582249287,
+            "_": 0.0037379492969034337,
+            "b": 0.042555445746820804,
+            "m": 0.023494243600279255,
+            "x": 0.030068645928335313,
+            "e": 0.04552754992979586,
+            "p": 0.06180278186554766,
+            "h": 0.02554243990913219,
+            "s": 0.01856796742730913,
+            "k": 0.03617180845523577
+          },
+          "key_distribution_loss": 0.4699455007862813,
+          "pair_equivalence": 1.3503388647147558,
+          "phonetic_shape_transition_equivalence": 0.43245685086115726,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.5008391035484512,
+            0.017873943959042727,
+            0.07359172033882633,
+            0.09258843737864231,
+            0.020176684597512012,
+            0.001679135216159324,
+            0.0,
+            0.0
+          ],
+          "levels": null
+        },
+        "characters_short": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 103
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4536829102162714,
+                0.0,
+                0.08359876939842378,
+                0.04770225821968093,
+                0.0068170226714139364,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.5300025885457132
+            },
+            {
+              "top": 500,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 232
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.44995002125050754,
+                0.0031105178734466593,
+                0.08294726531607134,
+                0.045911008399307805,
+                0.006472555700955165,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.49382670687668584
+            },
+            {
+              "top": 1500,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [],
+              "fingering": null,
+              "weighted_fingering": [
+                0.46148074460583727,
+                0.007923797956837246,
+                0.08859424802485931,
+                0.04897088687031345,
+                0.007730020228417885,
+                0.00023150541134299722,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4728596420940967
+            },
+            {
+              "top": 1674,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 1122
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4610416808481138,
+                0.008182587204847486,
+                0.08804967240808868,
+                0.049345895350901094,
+                0.007996038834648568,
+                0.000226973940642521,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4732812536764361
+            },
+            {
+              "top": 3527,
+              "duplication": 15,
+              "duplication_squared": 15,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 2423
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.46282337130875273,
+                0.008824045974703045,
+                0.08858707927079201,
+                0.049979987849075085,
+                0.008716383439279784,
+                0.00036560816694497104,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4717132337774724
+            },
+            {
+              "top": 6000,
+              "duplication": 88,
+              "duplication_squared": 92,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 3700
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4629613878658014,
+                0.008857375149071364,
+                0.08861246852398662,
+                0.04999639791389605,
+                0.008771960412714228,
+                0.00036401920048499464,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47184890128783513
+            }
+          ],
+          "duplication": 0.00022307820749077438,
+          "effective_duplication": null,
+          "key_distribution": {
+            "v": 0.04343747500632029,
+            "c": 0.029872730515015593,
+            "n": 0.034729647560762064,
+            "y": 0.046741605125800965,
+            "f": 0.029332984765932792,
+            "q": 0.023877916720725617,
+            "i": 0.08057743553131726,
+            "t": 0.029341265302018624,
+            "a": 0.029929703350383387,
+            "l": 0.039547555825137366,
+            "w": 0.036300123831296514,
+            "d": 0.06465302277634052,
+            "o": 0.026373585921864232,
+            "z": 0.03400687645542195,
+            "g": 0.03404201967847816,
+            "r": 0.025990611127894567,
+            ";": 0.00010113242413831996,
+            "j": 0.047020043057217874,
+            "u": 0.06805343865547327,
+            "_": 1.7659911083525022e-07,
+            "b": 0.03982957479407955,
+            "m": 0.0398319392599524,
+            "x": 0.03449912685475178,
+            "e": 0.03372934114168264,
+            "p": 0.025965955929809624,
+            "h": 0.041773587617215696,
+            "s": 0.02508307810837393,
+            "k": 0.03535804606348416
+          },
+          "key_distribution_loss": 0.3837843958163749,
+          "pair_equivalence": 1.3322740922962655,
+          "phonetic_shape_transition_equivalence": 0.4718501221952302,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.4629622203858366,
+            0.008857979200881341,
+            0.0886126657750429,
+            0.049997026263191545,
+            0.008772460677250989,
+            0.0003641277364916545,
+            0.0,
+            0.0
+          ],
+          "levels": [
+            {
+              "length": 1,
+              "frequency": 0.20655901346460395
+            },
+            {
+              "length": 2,
+              "frequency": 0.42117191498512413
+            },
+            {
+              "length": 3,
+              "frequency": 0.33624427422339087
+            }
+          ]
+        },
+        "words_full": null,
+        "words_short": null,
+        "character_word_collision": {
+          "hard": 0,
+          "soft": 45.78543737154644
+        },
+        "auxiliary_two_char": null,
+        "complexity": 0.0
+      }
+    },
+    "起点": {
+      "schema_version": 1,
+      "score": 178.73205320512326,
+      "metric": {
+        "characters_full": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 33,
+              "duplication_squared": 39,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5379801315348911,
+                0.017126977349499244,
+                0.09061652244520148,
+                0.06776972281013247,
+                0.006328255631907092,
+                0.0034557347103232263,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.48556280728626217
+            },
+            {
+              "top": 500,
+              "duplication": 58,
+              "duplication_squared": 84,
+              "effective_duplication": 0,
+              "effective_duplication_squared": 0,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5333690599355634,
+                0.015988511764931386,
+                0.08948566399986084,
+                0.07182918747849744,
+                0.0068084323746846875,
+                0.0034448738607959664,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47889728116544306
+            },
+            {
+              "top": 1500,
+              "duplication": 146,
+              "duplication_squared": 216,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5304998299693303,
+                0.015573291140012747,
+                0.08949531134032143,
+                0.07444547724181644,
+                0.008314129373558207,
+                0.0034068829557411277,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4765735182509719
+            },
+            {
+              "top": 1674,
+              "duplication": 163,
+              "duplication_squared": 243,
+              "effective_duplication": 1,
+              "effective_duplication_squared": 1,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5296391567419689,
+                0.01552362537605288,
+                0.08928630811937174,
+                0.07449840450879482,
+                0.008464145384310038,
+                0.0033709703047287015,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47600301445041454
+            },
+            {
+              "top": 3000,
+              "duplication": 261,
+              "duplication_squared": 369,
+              "effective_duplication": 17,
+              "effective_duplication_squared": 21,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.528913760356832,
+                0.015447371714336461,
+                0.08956456614426017,
+                0.07500473118201505,
+                0.008895367893343747,
+                0.0033509663736052825,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4753135469223456
+            },
+            {
+              "top": 3527,
+              "duplication": 299,
+              "duplication_squared": 419,
+              "effective_duplication": 27,
+              "effective_duplication_squared": 31,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5288536178689569,
+                0.01546400440671169,
+                0.0895713614634471,
+                0.07503352796338024,
+                0.008951531172461006,
+                0.0033410371855823406,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4752581542594492
+            },
+            {
+              "top": 6000,
+              "duplication": 483,
+              "duplication_squared": 631,
+              "effective_duplication": 121,
+              "effective_duplication_squared": 137,
+              "levels": null,
+              "fingering": null,
+              "weighted_fingering": [
+                0.5287590008668633,
+                0.015471384327773669,
+                0.08958778855094933,
+                0.07501899825118209,
+                0.008980183699517627,
+                0.0033352349367080495,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.47524879233038597
+            }
+          ],
+          "duplication": 0.0878668894971535,
+          "effective_duplication": 0.00054890287584017,
+          "key_distribution": {
+            "v": 0.04052379416266731,
+            "c": 0.026488758920472477,
+            "n": 0.06382648659743866,
+            "y": 0.05982648744300611,
+            "f": 0.03555701545126561,
+            "q": 0.035198135481469287,
+            "i": 0.06251940313084037,
+            "t": 0.03415128068590741,
+            "a": 0.057919944209458896,
+            "l": 0.028394477725744844,
+            "w": 0.04189758761717187,
+            "d": 0.04488831744970089,
+            "o": 0.02729377613728295,
+            "z": 0.03251232256031063,
+            "g": 0.05526708728010754,
+            "r": 0.0264681904919744,
+            ";": 0.019210822375659832,
+            "j": 0.02863648970278515,
+            "u": 0.03953544735063632,
+            "_": 0.00228373502367906,
+            "b": 0.016699529293733435,
+            "m": 0.02295207260211337,
+            "x": 0.0219238097211086,
+            "e": 0.05124229714466666,
+            "p": 0.03452990994072361,
+            "h": 0.04457950564321154,
+            "s": 0.02010732470699502,
+            "k": 0.025565991149868166
+          },
+          "key_distribution_loss": 0.3974391653847512,
+          "pair_equivalence": 1.3585237778776882,
+          "phonetic_shape_transition_equivalence": 0.4752493043712462,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.5287583811533517,
+            0.015471470718647793,
+            0.08958808288123622,
+            0.07501912377462722,
+            0.008980395973532866,
+            0.0033352050449866697,
+            0.0,
+            0.0
+          ],
+          "levels": null
+        },
+        "characters_short": {
+          "tiers": [
+            {
+              "top": 300,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 104
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45548230539539425,
+                0.0014216669366402224,
+                0.08221632228868973,
+                0.04058443788126498,
+                0.0028440242498023525,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44019031689808985
+            },
+            {
+              "top": 500,
+              "duplication": 0,
+              "duplication_squared": 0,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 232
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.45484397449475356,
+                0.003091577476519544,
+                0.07925457260250614,
+                0.04198624678418697,
+                0.0041309817997842386,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.43544939972320285
+            },
+            {
+              "top": 1500,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4688153274438456,
+                0.005663321955295559,
+                0.08546578701610456,
+                0.04677562729636422,
+                0.006900845562139498,
+                0.0010522500374686836,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4448404462366157
+            },
+            {
+              "top": 1674,
+              "duplication": 1,
+              "duplication_squared": 1,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 1096
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4679452043494391,
+                0.005693147217059096,
+                0.08510862486574261,
+                0.04692971499783471,
+                0.007182262951333639,
+                0.0010312524459384128,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44444983030053203
+            },
+            {
+              "top": 3527,
+              "duplication": 27,
+              "duplication_squared": 31,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 2350
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.46959610738145224,
+                0.006130779069700811,
+                0.08640900900712589,
+                0.048667011896518834,
+                0.00812038563056242,
+                0.0010942529753009773,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.44496666766000487
+            },
+            {
+              "top": 6000,
+              "duplication": 121,
+              "duplication_squared": 137,
+              "effective_duplication": null,
+              "effective_duplication_squared": null,
+              "levels": [
+                {
+                  "length": 3,
+                  "frequency": 3562
+                }
+              ],
+              "fingering": null,
+              "weighted_fingering": [
+                0.4696952477437015,
+                0.006190854388527784,
+                0.08645912964505435,
+                0.048714370840857495,
+                0.008171392890073643,
+                0.0010917466185593554,
+                0.0,
+                0.0
+              ],
+              "phonetic_shape_transition_equivalence": 0.4451499359724169
+            }
+          ],
+          "duplication": 0.00054890287584017,
+          "effective_duplication": null,
+          "key_distribution": {
+            "v": 0.04203793836466849,
+            "c": 0.030220304144513214,
+            "n": 0.03489653943188625,
+            "y": 0.0483031768926183,
+            "f": 0.03579061764811944,
+            "q": 0.022369569525511765,
+            "i": 0.07865766379424263,
+            "t": 0.02809950731504692,
+            "a": 0.042529360547990745,
+            "l": 0.042912619496935846,
+            "w": 0.04396761513802901,
+            "d": 0.06623032436460173,
+            "o": 0.022430983828229847,
+            "z": 0.0311605141124611,
+            "g": 0.04060300479052134,
+            "r": 0.023406167326358553,
+            ";": 0.00023042364240421606,
+            "j": 0.045910468213376424,
+            "u": 0.06100813953564694,
+            "_": 1.8486008809861642e-05,
+            "b": 0.030576514937483736,
+            "m": 0.039245973040463226,
+            "x": 0.034669564159964854,
+            "e": 0.034882696967419725,
+            "p": 0.020725519711801654,
+            "h": 0.047059510322182724,
+            "s": 0.024180659580990266,
+            "k": 0.027876137157721186
+          },
+          "key_distribution_loss": 0.3558489780367112,
+          "pair_equivalence": 1.3349755307993607,
+          "phonetic_shape_transition_equivalence": 0.4451531063029735,
+          "extended_pair_equivalence": null,
+          "fingering": [
+            0.4696967296127338,
+            0.0061914014537046164,
+            0.08646002312304507,
+            0.04871570305708166,
+            0.008171809602337399,
+            0.0010917662242218378,
+            0.0,
+            0.0
+          ],
+          "levels": [
+            {
+              "length": 1,
+              "frequency": 0.20655901346460395
+            },
+            {
+              "length": 2,
+              "frequency": 0.42117191498512413
+            },
+            {
+              "length": 3,
+              "frequency": 0.3332986524421436
+            }
+          ]
+        },
+        "words_full": null,
+        "words_short": null,
+        "character_word_collision": {
+          "hard": 0,
+          "soft": 176.04661295851946
+        },
+        "auxiliary_two_char": null,
+        "complexity": 0.0
+      }
+    },
+    "复核": true,
+    "缓存差异": 8.526512829121202e-14
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "短跑步数": 1000,
+  "可行结果": true,
+  "缓存差异": 0.0,
+  "重编码逐字节一致": true,
+  "坏起点确实拒绝": true,
+  "日志": "PRIMARY_INFEASIBLE_REJECTED 84\nTRIAL_ACCEPT [148, 71, 40] / [334, 333, 333]\nTRIAL_CACHE_DELTA 0\n"
+}

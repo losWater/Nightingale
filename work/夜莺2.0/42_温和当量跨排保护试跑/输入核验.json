@@ -1,0 +1,28 @@
+[
+  {
+    "组": "保护25",
+    "仅跨排权重改变": true,
+    "差异字段": [
+      "/optimization/objective/characters_short/tiers/0/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/0/weighted_fingering/2",
+      "/optimization/objective/characters_short/tiers/1/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/1/weighted_fingering/2",
+      "/optimization/objective/characters_short/tiers/3/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/3/weighted_fingering/2"
+    ],
+    "当量目标和输入完全相同": true
+  },
+  {
+    "组": "保护50",
+    "仅跨排权重改变": true,
+    "差异字段": [
+      "/optimization/objective/characters_short/tiers/0/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/0/weighted_fingering/2",
+      "/optimization/objective/characters_short/tiers/1/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/1/weighted_fingering/2",
+      "/optimization/objective/characters_short/tiers/3/weighted_fingering/1",
+      "/optimization/objective/characters_short/tiers/3/weighted_fingering/2"
+    ],
+    "当量目标和输入完全相同": true
+  }
+]

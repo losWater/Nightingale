@@ -1,0 +1,28 @@
+{
+  "ranked": [
+    "g13_small_04",
+    "g13_random_03",
+    "g13_projection_01",
+    "g13_projection_02",
+    "g13_projection_03",
+    "g13_projection_04",
+    "g13_random_04",
+    "g13_small_01",
+    "g13_large_01",
+    "g13_large_04",
+    "g13_large_03",
+    "g13_large_02",
+    "g13_random_02",
+    "g13_random_01",
+    "g13_small_03",
+    "g13_small_02"
+  ],
+  "selected": [
+    "g13_small_04",
+    "g13_random_03",
+    "g13_random_04",
+    "g13_small_01"
+  ],
+  "supplementary_runs": 0,
+  "rule": "1643主音硬保护；每组4个全赛唯一布局；不足时记录额外补跑，不降低标准"
+}

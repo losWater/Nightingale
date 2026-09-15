@@ -1,0 +1,29 @@
+{
+  "commit": "01a13287cbd27819be1c34fa1ddc1b3643d5001b",
+  "files": {
+    "double_pinyin.schema.yaml": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/double_pinyin.schema.yaml",
+      "sha256": "763430a99d0cd693805766b49d60b9092bc2af0ca26eb107f1d044566ce765d3"
+    },
+    "double_pinyin_pyjj.schema.yaml": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/double_pinyin_pyjj.schema.yaml",
+      "sha256": "31903e5cfc2e9c7cd959685cff91ae0f4634238238494dcf6904ad7fba330811"
+    },
+    "double_pinyin_abc.schema.yaml": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/double_pinyin_abc.schema.yaml",
+      "sha256": "bb57bc3f3436aa1e9c98e7ad1a7f2b84810dbedc971f659d9bdfe2b5c81eac4f"
+    },
+    "double_pinyin_flypy.schema.yaml": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/double_pinyin_flypy.schema.yaml",
+      "sha256": "6b522a7e9cb743474287a14678597460bd124369f32573dd63e8f04e7c41d4b9"
+    },
+    "double_pinyin_mspy.schema.yaml": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/double_pinyin_mspy.schema.yaml",
+      "sha256": "c72dc607000b39795ab267f80ec8727c6551015579b735a839f198422a75d7a2"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/rime/rime-double-pinyin/01a13287cbd27819be1c34fa1ddc1b3643d5001b/LICENSE",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    }
+  }
+}

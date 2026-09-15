@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t1_projection",
+    "group": 1,
+    "kind": "projection",
+    "seed": 202609131000
+  },
+  {
+    "id": "t2_small",
+    "group": 1,
+    "kind": "small",
+    "seed": 202609131001
+  },
+  {
+    "id": "t3_large",
+    "group": 1,
+    "kind": "large",
+    "seed": 202609131002
+  },
+  {
+    "id": "t4_random",
+    "group": 1,
+    "kind": "random",
+    "seed": 202609131003
+  }
+]

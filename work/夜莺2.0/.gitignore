@@ -1,0 +1,47 @@
+# 由 116_仓库同步/rules.py 生成：与 E 盘同步脚本同一套排除规则，防止误加原始运行输出
+
+**/.candidate_check/
+**/Rime_主力版/
+**/__pycache__/
+**/calibration/
+**/configs/
+**/engine-check/
+**/engine-check-final/
+**/engine-check-light/
+**/jobs/
+**/node_modules/
+**/output/
+**/practice/
+**/raw/
+**/round1/
+**/round2/
+**/smoke/
+**/target/
+**/*备份*/
+**/[0-9][0-9]_projection/
+**/[0-9][0-9]_perturbed/
+**/[0-9][0-9]_random/
+**/output-*/
+*Rime主力版*.zip
+*.log
+*.pyc
+*.tmp
+~$*
+mohu-sentence-ngram*.bin
+*.exe
+checkpoint-*.yaml
+solution-*.yaml
+run.json
+initial.json
+final_config.json
+feasible_start.json
+repair.json
+optimized.json
+*逐句按键.json
+
+# 白名单（脚本仍要读）
+!/52_均衡参数512方案正式晋级赛/jobs/g06_large_01/round2.json
+!/54_补删鹿旁保留羊南心四起点试跑/jobs/t1_projection/final_config.json
+# frozen/finalists 下的解与配置保留
+!**/frozen/**
+!**/finalists/**

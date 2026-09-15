@@ -1,0 +1,25 @@
+const { chromium } = require('playwright');
+const fs = require('fs');
+const path = require('path');
+(async()=>{
+  const browser=await chromium.launch({headless:true,channel:'msedge'});
+  const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+  const root='E:/夜莺2.0/work/夜莺2.0/65_群友离线工具包';
+  const base='file:///'+root.replaceAll('\\','/')+'/夜莺2.0离线工具包/';
+  await page.goto(base+'字根总表.html');
+  await page.locator('#q').fill('正');
+  const rows=await page.locator('tbody tr:not([hidden])').allTextContents();
+  if(rows.length!==1||!rows[0].includes('正')||!rows[0].includes('走／止／足／定字底'))throw new Error('字根表正根未正确显示 '+JSON.stringify(rows));
+  await page.goto(base+'字根图.html');
+  const compact=await page.locator('section.root-key').filter({hasText:'S'}).filter({hasText:'走／止／正／足／定字底'}).count();
+  if(!compact)throw new Error('字根图紧凑视图未显示正');
+  await page.locator('#full-view').click();
+  if(!await page.getByText('走／止／正／足／定字底',{exact:true}).count())throw new Error('展开视图未显示正');
+  await page.locator('#root-search').fill('正');
+  if(!await page.getByText(/止、正、足/).count())throw new Error('正不在止根族成员中');
+  await page.locator('#root-search').fill('');
+  await page.locator('#full-view').click();
+  await page.locator('body').screenshot({path:path.join(root,'夜莺2.0离线工具包','夜莺2.0字根图.png'),fullPage:true});
+  console.log(JSON.stringify({字根表:rows[0],字根图紧凑:compact,状态:'PASS'}));
+  await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

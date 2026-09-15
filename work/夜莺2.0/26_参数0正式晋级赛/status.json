@@ -1,0 +1,19 @@
+{
+  "stage": "stopped_root_revision",
+  "updated": "2026-09-12 17:38:10",
+  "pid": 53288,
+  "completed_in_batch": 5,
+  "batch_size": 16,
+  "running": [
+    "g03_small_02",
+    "g03_small_03",
+    "g03_small_04",
+    "g03_large_01"
+  ],
+  "pending_in_batch": 7,
+  "free_memory_gb": 10.98,
+  "free_disk_gb": 281.2,
+  "first_round_completed": 37,
+  "second_round_completed": 0,
+  "reason": "用户裁定删利根；旧结果归档，新根集重新512方案"
+}

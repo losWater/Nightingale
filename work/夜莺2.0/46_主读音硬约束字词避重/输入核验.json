@@ -1,0 +1,22 @@
+{
+  "仅字词权重不同": true,
+  "文件指纹": {
+    "elements.yaml": {
+      "硬约束原权重": "7ca21e66ccc7df3fc38b02c0604ed99c366e5f14ed8102ba306c925c186c8ef2",
+      "硬约束2倍": "7ca21e66ccc7df3fc38b02c0604ed99c366e5f14ed8102ba306c925c186c8ef2",
+      "硬约束4倍": "7ca21e66ccc7df3fc38b02c0604ed99c366e5f14ed8102ba306c925c186c8ef2"
+    },
+    "targets.json": {
+      "硬约束原权重": "934a6bb9283186a6d68a2343c3be7fc5b28804128e33207e515ed56dff40a39a",
+      "硬约束2倍": "934a6bb9283186a6d68a2343c3be7fc5b28804128e33207e515ed56dff40a39a",
+      "硬约束4倍": "934a6bb9283186a6d68a2343c3be7fc5b28804128e33207e515ed56dff40a39a"
+    },
+    "matrix.json": {
+      "硬约束原权重": "6cf7fb6acc094b30d47224032e7ab84ac0e8db990e32b2b9941ddb4fccc7e82e",
+      "硬约束2倍": "6cf7fb6acc094b30d47224032e7ab84ac0e8db990e32b2b9941ddb4fccc7e82e",
+      "硬约束4倍": "6cf7fb6acc094b30d47224032e7ab84ac0e8db990e32b2b9941ddb4fccc7e82e"
+    }
+  },
+  "保护清单": "36464804cb0d004e2784f2b6b619e210d7b283bfa6a8edcf05f27567fbc0ea36",
+  "种子": 202609121702
+}

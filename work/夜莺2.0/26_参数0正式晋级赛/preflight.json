@@ -1,0 +1,7 @@
+{
+  "cards": 256,
+  "steps": 50000,
+  "round2_unique_sentences": 10000,
+  "overlap_old_rounds": 0,
+  "parameter0": true
+}

@@ -1,0 +1,11 @@
+{
+  "E:\\夜莺2.0\\work\\夜莺2.0\\11_多起点试跑\\elements.yaml": "3ea3ba961c31b60d01c16dc9e612571f48b6eeeb4a911e87df26f9ce86833e29",
+  "E:\\夜莺2.0\\work\\夜莺2.0\\11_多起点试跑\\elements_ji_ju.yaml": "69cd10f99aed538954c48606afc2a1de24c594a99528c2fa86d444973ffce03b",
+  "E:\\夜莺2.0\\work\\夜莺2.0\\11_多起点试跑\\build_trial.py": "de81156f440c00488194e1e6143fe4db501369c389c26e7025e0786ac0ea1f47",
+  "E:\\夜莺2.0\\work\\夜莺2.0\\11_多起点试跑\\run_trial.py": "e3cfc3b369d365b19ecf27c6abe21706b20bc901572d5451014ace2bebf50119",
+  "E:\\夜莺2.0\\work\\夜莺2.0\\11_多起点试跑\\temperature.json": "d972e9130ae1c14d9c9508af8f05e40b34b40bf568f70b41696e1ecc8c55d629",
+  "E:\\nightingale2-build\\release\\chai.exe": "d09f6ca584734be27c756e3bc7d39e2720921271dbef42698f0ff0774888e350",
+  "E:\\夜莺2.0\\repos\\libchai\\src\\encoders\\default.rs": "41ab3323d8ee736c1cbd953fd8e7a08efdf8d9f82e54cf51428cf2b1d5bf3e4d",
+  "E:\\夜莺2.0\\repos\\libchai\\src\\objectives\\default.rs": "185376fc329bf63fd24d3c96c9d5408a35151446488ba4878281a4120c94b4bb",
+  "E:\\夜莺2.0\\repos\\libchai\\src\\optimizers\\simulated_annealing.rs": "a9b2f35ad646b06bba1c20defd9516707c39ecdb131157044966bd0ac8075e3d"
+}

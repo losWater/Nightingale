@@ -1,0 +1,13 @@
+{
+ "来源": "https://raw.githubusercontent.com/pwxcoo/chinese-xinhua/master/data/word.json",
+ "许可": "MIT",
+ "抓取": "2026-09-15",
+ "条目": 16142,
+ "CJK单字": 14809,
+ "与8105交集": 7418,
+ "字典多出": 7391,
+ "8105多出": 687,
+ "多出按区块": {
+  "基本区": 7391
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "默认表条数": 6000,
+  "原站匹配频数": 6000,
+  "用户名单完全一致": false,
+  "全部结果": [
+    {
+      "range": "1–300",
+      "missing": 0,
+      "keyEq": 1.3136506308838585,
+      "ziEq": 2.6575182626413847,
+      "keyLength": 3.019365664991031
+    },
+    {
+      "range": "301–500",
+      "missing": 0,
+      "keyEq": 1.336076475145133,
+      "ziEq": 3.615616189634952,
+      "keyLength": 3.707843538794838
+    },
+    {
+      "range": "501–1500",
+      "missing": 0,
+      "keyEq": 1.3238870525615123,
+      "ziEq": 3.7536878636598043,
+      "keyLength": 3.834876989526686
+    },
+    {
+      "range": "1501–3000",
+      "missing": 0,
+      "keyEq": 1.3431320134126747,
+      "ziEq": 3.9771065356603486,
+      "keyLength": 3.960841270880837
+    },
+    {
+      "range": "3001–6000",
+      "missing": 0,
+      "keyEq": 1.357399707979422,
+      "ziEq": 4.088444915785014,
+      "keyLength": 4.0115546947965255
+    }
+  ],
+  "调用源码": "D:/nightingale/repos/schema-box/src/libs/evaluate/hanzi/hanzi.ts",
+  "原站": "https://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO",
+  "原站解码": "gb18030"
+}

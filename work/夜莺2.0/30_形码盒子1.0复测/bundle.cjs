@@ -1,0 +1,1 @@
+const esbuild=require('D:/nightingale/repos/schema-box/node_modules/esbuild');esbuild.buildSync({entryPoints:[__dirname+'/run.ts'],outfile:__dirname+'/run.mjs',bundle:true,platform:'node',format:'esm',alias:{'@':'D:/nightingale/repos/schema-box/src'},logLevel:'warning'});

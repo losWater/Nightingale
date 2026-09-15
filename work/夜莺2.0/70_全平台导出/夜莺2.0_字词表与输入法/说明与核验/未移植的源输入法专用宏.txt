@@ -1,0 +1,15 @@
+﻿$ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举头望明月，低头思故乡。\r,『静夜思·李白』)	jysi	4
+$ddcmd(config(/do anjianshezhi),[按键定义])	oaj	1
+$ddcmd(config(/do gaojishezhi),[高级设置])	ogj	1
+$ddcmd(config(/do 高级),[高级项])	ogj	2
+$ddcmd(config(/do about),[关于项])	ogy	1
+$ddcmd(set([-IME设置-],隐藏候选窗口=切换),[显隐候选窗])	oic	1
+$ddcmd(config(/do 在线加词),[加词])	ojc	1
+$ddcmd(convert(繁体输出,切换),[简繁切换])	ojf	1
+$ddcmd(config(/do 界面),[界面项])	ojm	1
+$ddcmd(config(/do 码表),[码表项])	omb	1
+$ddcmd(convert(全半角,切换),[全半角切换])	oqb	1
+$ddcmd(<date.yyyy>年<date.m>月<date.d>日, <date.yyyy>年<date.m>月<date.d>日)	orq	1
+$ddcmd(<date.yyyy>-<date.mm>-<date.dd>, <date.yyyy>-<date.mm>-<date.dd>)	orq	2
+$ddcmd(<time.h>:<time.mm> <date.Z>, <time.h>:<time.mm> <date.Z>)	ouj	1
+$ddcmd(set([-IME设置-],隐藏候选窗口=切换),[显隐候选窗])	oyc	1

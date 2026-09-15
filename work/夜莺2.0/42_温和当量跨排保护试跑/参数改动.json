@@ -1,0 +1,74 @@
+[
+  {
+    "字段": "/optimization/objective/characters_short/tiers/0/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 41.25,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/0/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 7.5,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/1/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 41.25,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/1/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 7.5,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/3/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 41.25,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/3/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 7.5,
+    "比例": 0.25
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/0/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 82.5,
+    "比例": 0.5
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/0/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 15.0,
+    "比例": 0.5
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/1/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 82.5,
+    "比例": 0.5
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/1/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 15.0,
+    "比例": 0.5
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/3/weighted_fingering/1",
+    "原值": 165.0,
+    "恢复": 82.5,
+    "比例": 0.5
+  },
+  {
+    "字段": "/optimization/objective/characters_short/tiers/3/weighted_fingering/2",
+    "原值": 30.0,
+    "恢复": 15.0,
+    "比例": 0.5
+  }
+]

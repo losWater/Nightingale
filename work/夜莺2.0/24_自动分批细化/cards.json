@@ -1,0 +1,1470 @@
+[
+  {
+    "id": "s1_r0_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 0,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r0_A_0.json",
+    "label": "s1_r0_A_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s1_r0_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 0,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r0_D_0.json",
+    "label": "s1_r0_D_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s1_r1_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 100,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r1_A_0.json",
+    "label": "s1_r1_A_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s1_r1_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 100,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r1_D_0.json",
+    "label": "s1_r1_D_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s1_r2_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r2_A_0.json",
+    "label": "s1_r2_A_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s1_r2_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r2_D_0.json",
+    "label": "s1_r2_D_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s1_r3_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 0,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r3_A_0.json",
+    "label": "s1_r3_A_0",
+    "recipe_index": 3
+  },
+  {
+    "id": "s1_r3_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 0,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r3_D_0.json",
+    "label": "s1_r3_D_0",
+    "recipe_index": 3
+  },
+  {
+    "id": "s1_r4_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 100,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r4_A_0.json",
+    "label": "s1_r4_A_0",
+    "recipe_index": 4
+  },
+  {
+    "id": "s1_r4_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 100,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r4_D_0.json",
+    "label": "s1_r4_D_0",
+    "recipe_index": 4
+  },
+  {
+    "id": "s1_r5_A_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r5_A_0.json",
+    "label": "s1_r5_A_0",
+    "recipe_index": 5
+  },
+  {
+    "id": "s1_r5_D_0",
+    "stage": 1,
+    "recipe": {
+      "top": 6000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s1_r5_D_0.json",
+    "label": "s1_r5_D_0",
+    "recipe_index": 5
+  },
+  {
+    "id": "s2_r0_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r0_A_0.json",
+    "label": "s2_r0_A_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s2_r0_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r0_D_0.json",
+    "label": "s2_r0_D_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s2_r1_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r1_A_0.json",
+    "label": "s2_r1_A_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s2_r1_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r1_D_0.json",
+    "label": "s2_r1_D_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s2_r2_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r2_A_0.json",
+    "label": "s2_r2_A_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s2_r2_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r2_D_0.json",
+    "label": "s2_r2_D_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s2_r3_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0.5,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r3_A_0.json",
+    "label": "s2_r3_A_0",
+    "recipe_index": 3
+  },
+  {
+    "id": "s2_r3_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0.5,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r3_D_0.json",
+    "label": "s2_r3_D_0",
+    "recipe_index": 3
+  },
+  {
+    "id": "s2_r4_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0.5,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r4_A_0.json",
+    "label": "s2_r4_A_0",
+    "recipe_index": 4
+  },
+  {
+    "id": "s2_r4_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0.5,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r4_D_0.json",
+    "label": "s2_r4_D_0",
+    "recipe_index": 4
+  },
+  {
+    "id": "s2_r5_A_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1.25
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r5_A_0.json",
+    "label": "s2_r5_A_0",
+    "recipe_index": 5
+  },
+  {
+    "id": "s2_r5_D_0",
+    "stage": 2,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1.25
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s2_r5_D_0.json",
+    "label": "s2_r5_D_0",
+    "recipe_index": 5
+  },
+  {
+    "id": "s3_r0_A_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r0_A_0.json",
+    "label": "s3_r0_A_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s3_r0_D_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r0_D_0.json",
+    "label": "s3_r0_D_0",
+    "recipe_index": 0
+  },
+  {
+    "id": "s3_r0_A_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r0_A_1.json",
+    "label": "s3_r0_A_1",
+    "recipe_index": 0
+  },
+  {
+    "id": "s3_r0_D_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.5,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r0_D_1.json",
+    "label": "s3_r0_D_1",
+    "recipe_index": 0
+  },
+  {
+    "id": "s3_r1_A_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r1_A_0.json",
+    "label": "s3_r1_A_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s3_r1_D_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r1_D_0.json",
+    "label": "s3_r1_D_0",
+    "recipe_index": 1
+  },
+  {
+    "id": "s3_r1_A_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r1_A_1.json",
+    "label": "s3_r1_A_1",
+    "recipe_index": 1
+  },
+  {
+    "id": "s3_r1_D_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.25,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r1_D_1.json",
+    "label": "s3_r1_D_1",
+    "recipe_index": 1
+  },
+  {
+    "id": "s3_r2_A_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r2_A_0.json",
+    "label": "s3_r2_A_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s3_r2_D_0",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r2_D_0.json",
+    "label": "s3_r2_D_0",
+    "recipe_index": 2
+  },
+  {
+    "id": "s3_r2_A_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r2_A_1.json",
+    "label": "s3_r2_A_1",
+    "recipe_index": 2
+  },
+  {
+    "id": "s3_r2_D_1",
+    "stage": 3,
+    "recipe": {
+      "top": 3000,
+      "global_dup": 300,
+      "hand": 1.125,
+      "pair": 0,
+      "balance": 0,
+      "word": 1
+    },
+    "tag": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\s3_r2_D_1.json",
+    "label": "s3_r2_D_1",
+    "recipe_index": 2
+  },
+  {
+    "id": "rotate1_0_hand",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_0_hand.json",
+    "label": "rotate1_0_hand",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate1_0_word",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_0_word.json",
+    "label": "rotate1_0_word",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate1_0_three",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_0_three.json",
+    "label": "rotate1_0_three",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate1_0_heat",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_0_heat.json",
+    "label": "rotate1_0_heat",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate1_1_hand",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_1_hand.json",
+    "label": "rotate1_1_hand",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate1_1_word",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_1_word.json",
+    "label": "rotate1_1_word",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate1_1_three",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_1_three.json",
+    "label": "rotate1_1_three",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate1_1_heat",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_1_heat.json",
+    "label": "rotate1_1_heat",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate1_2_hand",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_2_hand.json",
+    "label": "rotate1_2_hand",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate1_2_word",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_2_word.json",
+    "label": "rotate1_2_word",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate1_2_three",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_2_three.json",
+    "label": "rotate1_2_three",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate1_2_heat",
+    "stage": "轮换1",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate1_2_heat.json",
+    "label": "rotate1_2_heat",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate2_0_hand",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_0_hand.json",
+    "label": "rotate2_0_hand",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate2_0_word",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_0_word.json",
+    "label": "rotate2_0_word",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate2_0_three",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_0_three.json",
+    "label": "rotate2_0_three",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate2_0_heat",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r0_A_1",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_0_heat.json",
+    "label": "rotate2_0_heat",
+    "parent": "s3_r0_A_1"
+  },
+  {
+    "id": "rotate2_1_hand",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_1_hand.json",
+    "label": "rotate2_1_hand",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate2_1_word",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_1_word.json",
+    "label": "rotate2_1_word",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate2_1_three",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_1_three.json",
+    "label": "rotate2_1_three",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate2_1_heat",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s1_r3_A_0",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_1_heat.json",
+    "label": "rotate2_1_heat",
+    "parent": "s1_r3_A_0"
+  },
+  {
+    "id": "rotate2_2_hand",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "hand"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_2_hand.json",
+    "label": "rotate2_2_hand",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate2_2_word",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "word"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_2_word.json",
+    "label": "rotate2_2_word",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate2_2_three",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "three"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_2_three.json",
+    "label": "rotate2_2_three",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "rotate2_2_heat",
+    "stage": "轮换2",
+    "recipe": {
+      "parent": "s3_r2_A_1",
+      "focus": "heat"
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\rotate2_2_heat.json",
+    "label": "rotate2_2_heat",
+    "parent": "s3_r2_A_1"
+  },
+  {
+    "id": "parameter_0_projection_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "projection",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_projection_0.json",
+    "label": "parameter_0_projection_0",
+    "profile": 0,
+    "start_kind": "projection",
+    "seed": 202609130000
+  },
+  {
+    "id": "parameter_0_projection_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "projection",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_projection_1.json",
+    "label": "parameter_0_projection_1",
+    "profile": 0,
+    "start_kind": "projection",
+    "seed": 202609130001
+  },
+  {
+    "id": "parameter_0_small_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "small",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_small_0.json",
+    "label": "parameter_0_small_0",
+    "profile": 0,
+    "start_kind": "small",
+    "seed": 202609130100
+  },
+  {
+    "id": "parameter_0_small_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "small",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_small_1.json",
+    "label": "parameter_0_small_1",
+    "profile": 0,
+    "start_kind": "small",
+    "seed": 202609130101
+  },
+  {
+    "id": "parameter_0_large_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "large",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_large_0.json",
+    "label": "parameter_0_large_0",
+    "profile": 0,
+    "start_kind": "large",
+    "seed": 202609130200
+  },
+  {
+    "id": "parameter_0_large_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "large",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_large_1.json",
+    "label": "parameter_0_large_1",
+    "profile": 0,
+    "start_kind": "large",
+    "seed": 202609130201
+  },
+  {
+    "id": "parameter_0_random_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "random",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_random_0.json",
+    "label": "parameter_0_random_0",
+    "profile": 0,
+    "start_kind": "random",
+    "seed": 202609130300
+  },
+  {
+    "id": "parameter_0_random_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 0,
+      "source": "第三阶段重复验证",
+      "start": "random",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_0_random_1.json",
+    "label": "parameter_0_random_1",
+    "profile": 0,
+    "start_kind": "random",
+    "seed": 202609130301
+  },
+  {
+    "id": "parameter_1_projection_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "projection",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_projection_0.json",
+    "label": "parameter_1_projection_0",
+    "profile": 1,
+    "start_kind": "projection",
+    "seed": 202609130000
+  },
+  {
+    "id": "parameter_1_projection_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "projection",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_projection_1.json",
+    "label": "parameter_1_projection_1",
+    "profile": 1,
+    "start_kind": "projection",
+    "seed": 202609130001
+  },
+  {
+    "id": "parameter_1_small_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "small",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_small_0.json",
+    "label": "parameter_1_small_0",
+    "profile": 1,
+    "start_kind": "small",
+    "seed": 202609130100
+  },
+  {
+    "id": "parameter_1_small_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "small",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_small_1.json",
+    "label": "parameter_1_small_1",
+    "profile": 1,
+    "start_kind": "small",
+    "seed": 202609130101
+  },
+  {
+    "id": "parameter_1_large_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "large",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_large_0.json",
+    "label": "parameter_1_large_0",
+    "profile": 1,
+    "start_kind": "large",
+    "seed": 202609130200
+  },
+  {
+    "id": "parameter_1_large_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "large",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_large_1.json",
+    "label": "parameter_1_large_1",
+    "profile": 1,
+    "start_kind": "large",
+    "seed": 202609130201
+  },
+  {
+    "id": "parameter_1_random_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "random",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_random_0.json",
+    "label": "parameter_1_random_0",
+    "profile": 1,
+    "start_kind": "random",
+    "seed": 202609130300
+  },
+  {
+    "id": "parameter_1_random_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 1,
+      "source": "第三阶段重复验证",
+      "start": "random",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_1_random_1.json",
+    "label": "parameter_1_random_1",
+    "profile": 1,
+    "start_kind": "random",
+    "seed": 202609130301
+  },
+  {
+    "id": "parameter_2_projection_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "projection",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_projection_0.json",
+    "label": "parameter_2_projection_0",
+    "profile": 2,
+    "start_kind": "projection",
+    "seed": 202609130000
+  },
+  {
+    "id": "parameter_2_projection_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "projection",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_projection_1.json",
+    "label": "parameter_2_projection_1",
+    "profile": 2,
+    "start_kind": "projection",
+    "seed": 202609130001
+  },
+  {
+    "id": "parameter_2_small_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "small",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_small_0.json",
+    "label": "parameter_2_small_0",
+    "profile": 2,
+    "start_kind": "small",
+    "seed": 202609130100
+  },
+  {
+    "id": "parameter_2_small_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "small",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_small_1.json",
+    "label": "parameter_2_small_1",
+    "profile": 2,
+    "start_kind": "small",
+    "seed": 202609130101
+  },
+  {
+    "id": "parameter_2_large_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "large",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_large_0.json",
+    "label": "parameter_2_large_0",
+    "profile": 2,
+    "start_kind": "large",
+    "seed": 202609130200
+  },
+  {
+    "id": "parameter_2_large_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "large",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_large_1.json",
+    "label": "parameter_2_large_1",
+    "profile": 2,
+    "start_kind": "large",
+    "seed": 202609130201
+  },
+  {
+    "id": "parameter_2_random_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "random",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_random_0.json",
+    "label": "parameter_2_random_0",
+    "profile": 2,
+    "start_kind": "random",
+    "seed": 202609130300
+  },
+  {
+    "id": "parameter_2_random_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 2,
+      "source": "轮换探索 rotate1_0_hand",
+      "start": "random",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_2_random_1.json",
+    "label": "parameter_2_random_1",
+    "profile": 2,
+    "start_kind": "random",
+    "seed": 202609130301
+  },
+  {
+    "id": "parameter_3_projection_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "projection",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_projection_0.json",
+    "label": "parameter_3_projection_0",
+    "profile": 3,
+    "start_kind": "projection",
+    "seed": 202609130000
+  },
+  {
+    "id": "parameter_3_projection_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "projection",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_projection_1.json",
+    "label": "parameter_3_projection_1",
+    "profile": 3,
+    "start_kind": "projection",
+    "seed": 202609130001
+  },
+  {
+    "id": "parameter_3_small_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "small",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_small_0.json",
+    "label": "parameter_3_small_0",
+    "profile": 3,
+    "start_kind": "small",
+    "seed": 202609130100
+  },
+  {
+    "id": "parameter_3_small_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "small",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_small_1.json",
+    "label": "parameter_3_small_1",
+    "profile": 3,
+    "start_kind": "small",
+    "seed": 202609130101
+  },
+  {
+    "id": "parameter_3_large_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "large",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_large_0.json",
+    "label": "parameter_3_large_0",
+    "profile": 3,
+    "start_kind": "large",
+    "seed": 202609130200
+  },
+  {
+    "id": "parameter_3_large_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "large",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_large_1.json",
+    "label": "parameter_3_large_1",
+    "profile": 3,
+    "start_kind": "large",
+    "seed": 202609130201
+  },
+  {
+    "id": "parameter_3_random_0",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "random",
+      "repeat": 0
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_random_0.json",
+    "label": "parameter_3_random_0",
+    "profile": 3,
+    "start_kind": "random",
+    "seed": 202609130300
+  },
+  {
+    "id": "parameter_3_random_1",
+    "stage": "参数集独立起点验证",
+    "recipe": {
+      "profile": 3,
+      "source": "固定对照：手感1.25、前6000保护",
+      "start": "random",
+      "repeat": 1
+    },
+    "tag": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\24_自动分批细化\\configs\\parameter_3_random_1.json",
+    "label": "parameter_3_random_1",
+    "profile": 3,
+    "start_kind": "random",
+    "seed": 202609130301
+  }
+]

@@ -1,0 +1,6838 @@
+{
+  "删除根形": [
+    "古",
+    "商",
+    "啇",
+    "向",
+    "",
+    "",
+    "鹿",
+    "鬲"
+  ],
+  "保留": "身；鹿旁、羊、南字心；其他根保持原组关系",
+  "替换": {
+    "古": [
+      "十",
+      "口"
+    ],
+    "商": [
+      "亠",
+      "丷",
+      "冂",
+      "八",
+      "口"
+    ],
+    "啇": [
+      "亠",
+      "丷",
+      "冂",
+      "十",
+      "口"
+    ],
+    "向": [
+      "丿",
+      "冂",
+      "口"
+    ],
+    "": [
+      "丿",
+      "冂"
+    ],
+    "": [
+      "丿",
+      "囗"
+    ],
+    "鹿": [
+      "广",
+      "5",
+      "丨",
+      "丨",
+      "一",
+      "",
+      "匕"
+    ],
+    "鬲": [
+      "一",
+      "口",
+      "冂",
+      "丷",
+      "一",
+      "丨"
+    ]
+  },
+  "根组数": 130,
+  "移除空根组": [
+    "G076",
+    "G077",
+    "G116"
+  ],
+  "涉及字数": 128,
+  "涉及字音项": 130,
+  "首末元素变化项": 95,
+  "变化": [
+    {
+      "字": "做",
+      "拼音": "zuo",
+      "原拆": [
+        "亻",
+        "古",
+        "攵"
+      ],
+      "新拆": [
+        "亻",
+        "十",
+        "口",
+        "攵"
+      ],
+      "原元素": [
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "向",
+      "拼音": "xiang",
+      "原拆": [
+        "向"
+      ],
+      "新拆": [
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G003",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "克",
+      "拼音": "ke",
+      "原拆": [
+        "古",
+        "儿"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "儿"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "据",
+      "拼音": "ju",
+      "原拆": [
+        "扌",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "扌",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "苦",
+      "拼音": "ku",
+      "原拆": [
+        "艹",
+        "古"
+      ],
+      "新拆": [
+        "艹",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "商",
+      "拼音": "shang",
+      "原拆": [
+        "商"
+      ],
+      "新拆": [
+        "亠",
+        "丷",
+        "冂",
+        "八",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G103",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "居",
+      "拼音": "ju",
+      "原拆": [
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G025",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G025",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "故",
+      "拼音": "gu",
+      "原拆": [
+        "古",
+        "攵"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "攵"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "噢",
+      "拼音": "o",
+      "原拆": [
+        "口",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "口",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "响",
+      "拼音": "xiang",
+      "原拆": [
+        "口",
+        "向"
+      ],
+      "新拆": [
+        "口",
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "剧",
+      "拼音": "ju",
+      "原拆": [
+        "尸",
+        "古",
+        "刂"
+      ],
+      "新拆": [
+        "尸",
+        "十",
+        "口",
+        "刂"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G025",
+          "index": 0
+        },
+        {
+          "element": "G072",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G025",
+          "index": 0
+        },
+        {
+          "element": "G072",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "古",
+      "拼音": "gu",
+      "原拆": [
+        "古"
+      ],
+      "新拆": [
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "奥",
+      "拼音": "ao",
+      "原拆": [
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G003",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "胡",
+      "拼音": "hu",
+      "原拆": [
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "姑",
+      "拼音": "gu",
+      "原拆": [
+        "女",
+        "古"
+      ],
+      "新拆": [
+        "女",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "滴",
+      "拼音": "di",
+      "原拆": [
+        "氵",
+        "啇"
+      ],
+      "新拆": [
+        "氵",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "傻",
+      "拼音": "sha",
+      "原拆": [
+        "亻",
+        "",
+        "㐅",
+        "八",
+        "夂"
+      ],
+      "新拆": [
+        "亻",
+        "丿",
+        "囗",
+        "㐅",
+        "八",
+        "夂"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "湖",
+      "拼音": "hu",
+      "原拆": [
+        "氵",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "氵",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "窗",
+      "拼音": "chuang",
+      "原拆": [
+        "宀",
+        "八",
+        "",
+        "夂"
+      ],
+      "新拆": [
+        "宀",
+        "八",
+        "丿",
+        "囗",
+        "夂"
+      ],
+      "原元素": [
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G024",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G024",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "融",
+      "拼音": "rong",
+      "原拆": [
+        "鬲",
+        "虫"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "虫"
+      ],
+      "原元素": [
+        {
+          "element": "P_r",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_r",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "估",
+      "拼音": "gu",
+      "原拆": [
+        "亻",
+        "古"
+      ],
+      "新拆": [
+        "亻",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "固",
+      "拼音": "gu",
+      "原拆": [
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G023",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G023",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "隔",
+      "拼音": "ge",
+      "原拆": [
+        "阝",
+        "鬲"
+      ],
+      "新拆": [
+        "阝",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G054",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G054",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "糊",
+      "拼音": "hu",
+      "原拆": [
+        "米",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "米",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G074",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G074",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "澳",
+      "拼音": "ao",
+      "原拆": [
+        "氵",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "氵",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鹿",
+      "拼音": "lu",
+      "原拆": [
+        "鹿"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "摘",
+      "拼音": "zhai",
+      "原拆": [
+        "扌",
+        "啇"
+      ],
+      "新拆": [
+        "扌",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "辜",
+      "拼音": "gu",
+      "原拆": [
+        "古",
+        "辛"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "辛"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G055",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G055",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "粤",
+      "拼音": "yue",
+      "原拆": [
+        "",
+        "米",
+        "一",
+        "5"
+      ],
+      "新拆": [
+        "丿",
+        "囗",
+        "米",
+        "一",
+        "5"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_t",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        },
+        {
+          "element": "G005",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_t",
+          "index": 0
+        },
+        {
+          "element": "G003",
+          "index": 0
+        },
+        {
+          "element": "G005",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "枯",
+      "拼音": "ku",
+      "原拆": [
+        "木",
+        "古"
+      ],
+      "新拆": [
+        "木",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "咕",
+      "拼音": "gu",
+      "原拆": [
+        "口",
+        "古"
+      ],
+      "新拆": [
+        "口",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "菇",
+      "拼音": "gu",
+      "原拆": [
+        "艹",
+        "女",
+        "古"
+      ],
+      "新拆": [
+        "艹",
+        "女",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "蝴",
+      "拼音": "hu",
+      "原拆": [
+        "虫",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "虫",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "葫",
+      "拼音": "hu",
+      "原拆": [
+        "艹",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "艹",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "锯",
+      "拼音": "ju",
+      "原拆": [
+        "钅",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "钅",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "晌",
+      "拼音": "shang",
+      "原拆": [
+        "日",
+        "向"
+      ],
+      "新拆": [
+        "日",
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G058",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G058",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "嘀",
+      "拼音": "di",
+      "原拆": [
+        "口",
+        "啇"
+      ],
+      "新拆": [
+        "口",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "兢",
+      "拼音": "jing",
+      "原拆": [
+        "古",
+        "儿",
+        "古",
+        "儿"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "儿",
+        "十",
+        "口",
+        "儿"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "嗝",
+      "拼音": "ge",
+      "原拆": [
+        "口",
+        "鬲"
+      ],
+      "新拆": [
+        "口",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "懊",
+      "拼音": "ao",
+      "原拆": [
+        "忄",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "忄",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "漉",
+      "拼音": "lu",
+      "原拆": [
+        "氵",
+        "鹿"
+      ],
+      "新拆": [
+        "氵",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "囱",
+      "拼音": "cong",
+      "原拆": [
+        "",
+        "夂"
+      ],
+      "新拆": [
+        "丿",
+        "囗",
+        "夂"
+      ],
+      "原元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G003",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "骷",
+      "拼音": "ku",
+      "原拆": [
+        "骨",
+        "古"
+      ],
+      "新拆": [
+        "骨",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G117",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G117",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "瑚",
+      "拼音": "hu",
+      "原拆": [
+        "王",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "王",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "辘",
+      "拼音": "lu",
+      "原拆": [
+        "",
+        "鹿"
+      ],
+      "新拆": [
+        "",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G088",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G088",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "沽",
+      "拼音": "gu",
+      "原拆": [
+        "氵",
+        "古"
+      ],
+      "新拆": [
+        "氵",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "氪",
+      "拼音": "ke",
+      "原拆": [
+        "气",
+        "古",
+        "儿"
+      ],
+      "新拆": [
+        "气",
+        "十",
+        "口",
+        "儿"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G095",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G095",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "瑙",
+      "拼音": "nao",
+      "原拆": [
+        "王",
+        "巛",
+        "",
+        "㐅"
+      ],
+      "新拆": [
+        "王",
+        "巛",
+        "丿",
+        "囗",
+        "㐅"
+      ],
+      "原元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "踞",
+      "拼音": "ju",
+      "原拆": [
+        "",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G104",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G104",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麓",
+      "拼音": "lu",
+      "原拆": [
+        "木",
+        "木",
+        "鹿"
+      ],
+      "新拆": [
+        "木",
+        "木",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "涸",
+      "拼音": "he",
+      "原拆": [
+        "氵",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "氵",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "锢",
+      "拼音": "gu",
+      "原拆": [
+        "钅",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "钅",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "媲",
+      "拼音": "pi",
+      "原拆": [
+        "女",
+        "",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "新拆": [
+        "女",
+        "丿",
+        "囗",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_p",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_p",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "镳",
+      "拼音": "biao",
+      "原拆": [
+        "钅",
+        "鹿",
+        "灬"
+      ],
+      "新拆": [
+        "钅",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "灬"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "饷",
+      "拼音": "xiang",
+      "原拆": [
+        "饣",
+        "向"
+      ],
+      "新拆": [
+        "饣",
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G010",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G010",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麋",
+      "拼音": "mi",
+      "原拆": [
+        "鹿",
+        "米"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "米"
+      ],
+      "原元素": [
+        {
+          "element": "P_m",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G074",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_m",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G074",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "墒",
+      "拼音": "shang",
+      "原拆": [
+        "土",
+        "商"
+      ],
+      "新拆": [
+        "土",
+        "亠",
+        "丷",
+        "冂",
+        "八",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麝",
+      "拼音": "she",
+      "原拆": [
+        "鹿",
+        "身",
+        "寸"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "身",
+        "寸"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G069",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G069",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "轱",
+      "拼音": "gu",
+      "原拆": [
+        "",
+        "古"
+      ],
+      "新拆": [
+        "",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G088",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G088",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "嫡",
+      "拼音": "di",
+      "原拆": [
+        "女",
+        "啇"
+      ],
+      "新拆": [
+        "女",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G019",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "垧",
+      "拼音": "shang",
+      "原拆": [
+        "土",
+        "向"
+      ],
+      "新拆": [
+        "土",
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "膈",
+      "拼音": "ge",
+      "原拆": [
+        "月",
+        "鬲"
+      ],
+      "新拆": [
+        "月",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鏖",
+      "拼音": "ao",
+      "原拆": [
+        "鹿",
+        "金"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "金"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "牯",
+      "拼音": "gu",
+      "原拆": [
+        "牜",
+        "古"
+      ],
+      "新拆": [
+        "牜",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G038",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G038",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "蓖",
+      "拼音": "bi",
+      "原拆": [
+        "艹",
+        "",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "新拆": [
+        "艹",
+        "丿",
+        "囗",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "痼",
+      "拼音": "gu",
+      "原拆": [
+        "疒",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "疒",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "裾",
+      "拼音": "ju",
+      "原拆": [
+        "衤",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "衤",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G130",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G130",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "谪",
+      "拼音": "zhe",
+      "原拆": [
+        "讠",
+        "啇"
+      ],
+      "新拆": [
+        "讠",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G009",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G009",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "醐",
+      "拼音": "hu",
+      "原拆": [
+        "酉",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "酉",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G126",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G126",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "钴",
+      "拼音": "gu",
+      "原拆": [
+        "钅",
+        "古"
+      ],
+      "新拆": [
+        "钅",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鸪",
+      "拼音": "gu",
+      "原拆": [
+        "古",
+        "鸟"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "鸟"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麂",
+      "拼音": "ji",
+      "原拆": [
+        "鹿",
+        "几"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "几"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G028",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G028",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "镉",
+      "拼音": "ge",
+      "原拆": [
+        "钅",
+        "鬲"
+      ],
+      "新拆": [
+        "钅",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "倨",
+      "拼音": "ju",
+      "原拆": [
+        "亻",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "亻",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "祜",
+      "拼音": "hu",
+      "原拆": [
+        "礻",
+        "古"
+      ],
+      "新拆": [
+        "礻",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G130",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G130",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "篦",
+      "拼音": "bi",
+      "原拆": [
+        "",
+        "",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "新拆": [
+        "",
+        "丿",
+        "囗",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G086",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G086",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鹕",
+      "拼音": "hu",
+      "原拆": [
+        "古",
+        "月",
+        "鸟"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "月",
+        "鸟"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "璁",
+      "拼音": "cong",
+      "原拆": [
+        "王",
+        "",
+        "夂",
+        "心"
+      ],
+      "新拆": [
+        "王",
+        "丿",
+        "囗",
+        "夂",
+        "心"
+      ],
+      "原元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "貔",
+      "拼音": "pi",
+      "原拆": [
+        "豸",
+        "",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "新拆": [
+        "豸",
+        "丿",
+        "囗",
+        "㐅",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_p",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G030",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_p",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G030",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "骢",
+      "拼音": "cong",
+      "原拆": [
+        "马",
+        "",
+        "夂",
+        "心"
+      ],
+      "新拆": [
+        "马",
+        "丿",
+        "囗",
+        "夂",
+        "心"
+      ],
+      "原元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G038",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G038",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "猢",
+      "拼音": "hu",
+      "原拆": [
+        "犭",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "犭",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G030",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G030",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "崮",
+      "拼音": "gu",
+      "原拆": [
+        "山",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "山",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "煳",
+      "拼音": "hu",
+      "原拆": [
+        "火",
+        "古",
+        "月"
+      ],
+      "新拆": [
+        "火",
+        "十",
+        "口",
+        "月"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "熵",
+      "拼音": "shang",
+      "原拆": [
+        "火",
+        "商"
+      ],
+      "新拆": [
+        "火",
+        "亠",
+        "丷",
+        "冂",
+        "八",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "蛄",
+      "拼音": "gu",
+      "原拆": [
+        "虫",
+        "古"
+      ],
+      "新拆": [
+        "虫",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "诂",
+      "拼音": "gu",
+      "原拆": [
+        "讠",
+        "古"
+      ],
+      "新拆": [
+        "讠",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G009",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G009",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "怙",
+      "拼音": "hu",
+      "原拆": [
+        "忄",
+        "古"
+      ],
+      "新拆": [
+        "忄",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "燠",
+      "拼音": "yu",
+      "原拆": [
+        "火",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "火",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麇",
+      "拼音": "jun",
+      "原拆": [
+        "鹿",
+        "禾"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "禾"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G026",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G026",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麇",
+      "拼音": "qun",
+      "原拆": [
+        "鹿",
+        "禾"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "禾"
+      ],
+      "原元素": [
+        {
+          "element": "P_q",
+          "index": 0
+        },
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G026",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_q",
+          "index": 0
+        },
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G026",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "剋",
+      "拼音": "kei",
+      "原拆": [
+        "古",
+        "儿",
+        "刂"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "儿",
+        "刂"
+      ],
+      "原元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_w",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G072",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "P_w",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G072",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鬻",
+      "拼音": "yu",
+      "原拆": [
+        "弓",
+        "米",
+        "弓",
+        "鬲"
+      ],
+      "新拆": [
+        "弓",
+        "米",
+        "弓",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G005",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G005",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "囟",
+      "拼音": "xin",
+      "原拆": [
+        "",
+        "㐅"
+      ],
+      "新拆": [
+        "丿",
+        "囗",
+        "㐅"
+      ],
+      "原元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "G003",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "镝",
+      "拼音": "di",
+      "原拆": [
+        "钅",
+        "啇"
+      ],
+      "新拆": [
+        "钅",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G036",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "嘏",
+      "拼音": "gu",
+      "原拆": [
+        "古",
+        "5",
+        "一",
+        "",
+        "一",
+        "5",
+        "一",
+        "又"
+      ],
+      "新拆": [
+        "十",
+        "口",
+        "5",
+        "一",
+        "",
+        "一",
+        "5",
+        "一",
+        "又"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G041",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "琚",
+      "拼音": "ju",
+      "原拆": [
+        "王",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "王",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "硇",
+      "拼音": "nao",
+      "原拆": [
+        "石",
+        "",
+        "㐅"
+      ],
+      "新拆": [
+        "石",
+        "丿",
+        "囗",
+        "㐅"
+      ],
+      "原元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "G098",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "G098",
+          "index": 0
+        },
+        {
+          "element": "G107",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "罟",
+      "拼音": "gu",
+      "原拆": [
+        "罒",
+        "古"
+      ],
+      "新拆": [
+        "罒",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G124",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G124",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "翮",
+      "拼音": "he",
+      "原拆": [
+        "鬲",
+        "习",
+        "习"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "习",
+        "习"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G057",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G057",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鬲",
+      "拼音": "ge",
+      "原拆": [
+        "鬲"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鬲",
+      "拼音": "li",
+      "原拆": [
+        "鬲"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "儦",
+      "拼音": "biao",
+      "原拆": [
+        "亻",
+        "鹿",
+        "灬"
+      ],
+      "新拆": [
+        "亻",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "灬"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G006",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "堌",
+      "拼音": "gu",
+      "原拆": [
+        "土",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "土",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "塥",
+      "拼音": "ge",
+      "原拆": [
+        "土",
+        "鬲"
+      ],
+      "新拆": [
+        "土",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "岵",
+      "拼音": "hu",
+      "原拆": [
+        "山",
+        "古"
+      ],
+      "新拆": [
+        "山",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_h",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "崌",
+      "拼音": "ju",
+      "原拆": [
+        "山",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "山",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G100",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "擿",
+      "拼音": "ti",
+      "原拆": [
+        "扌",
+        "啇",
+        "辶"
+      ],
+      "新拆": [
+        "扌",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口",
+        "辶"
+      ],
+      "原元素": [
+        {
+          "element": "P_t",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G012",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_t",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G014",
+          "index": 0
+        },
+        {
+          "element": "G012",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "椐",
+      "拼音": "ju",
+      "原拆": [
+        "木",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "木",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G017",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "滆",
+      "拼音": "ge",
+      "原拆": [
+        "氵",
+        "鬲"
+      ],
+      "新拆": [
+        "氵",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_e",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "瀌",
+      "拼音": "biao",
+      "原拆": [
+        "氵",
+        "鹿",
+        "灬"
+      ],
+      "新拆": [
+        "氵",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "灬"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "熜",
+      "拼音": "cong",
+      "原拆": [
+        "火",
+        "",
+        "夂",
+        "心"
+      ],
+      "新拆": [
+        "火",
+        "丿",
+        "囗",
+        "夂",
+        "心"
+      ],
+      "原元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_c",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        },
+        {
+          "element": "G013",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "珦",
+      "拼音": "xiang",
+      "原拆": [
+        "王",
+        "向"
+      ],
+      "新拆": [
+        "王",
+        "丿",
+        "冂",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G078",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_x",
+          "index": 0
+        },
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "G015",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "甗",
+      "拼音": "yan",
+      "原拆": [
+        "卜",
+        "厂",
+        "七",
+        "鬲",
+        "一",
+        "5",
+        "乙",
+        "丶"
+      ],
+      "新拆": [
+        "卜",
+        "厂",
+        "七",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "一",
+        "5",
+        "乙",
+        "丶"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "G083",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "G083",
+          "index": 0
+        },
+        {
+          "element": "G004",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "簏",
+      "拼音": "lu",
+      "原拆": [
+        "",
+        "鹿"
+      ],
+      "新拆": [
+        "",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G086",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_l",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G086",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "腒",
+      "拼音": "ju",
+      "原拆": [
+        "月",
+        "尸",
+        "古"
+      ],
+      "新拆": [
+        "月",
+        "尸",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "薁",
+      "拼音": "ao",
+      "原拆": [
+        "艹",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "艹",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "藨",
+      "拼音": "biao",
+      "原拆": [
+        "艹",
+        "鹿",
+        "灬"
+      ],
+      "新拆": [
+        "艹",
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "灬"
+      ],
+      "原元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_b",
+          "index": 0
+        },
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G127",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "蹢",
+      "拼音": "di",
+      "原拆": [
+        "",
+        "啇"
+      ],
+      "新拆": [
+        "",
+        "亠",
+        "丷",
+        "冂",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G104",
+          "index": 0
+        },
+        {
+          "element": "G077",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_d",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G104",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "酤",
+      "拼音": "gu",
+      "原拆": [
+        "酉",
+        "古"
+      ],
+      "新拆": [
+        "酉",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G126",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G126",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "隩",
+      "拼音": "ao",
+      "原拆": [
+        "阝",
+        "",
+        "米",
+        "大"
+      ],
+      "新拆": [
+        "阝",
+        "丿",
+        "冂",
+        "米",
+        "大"
+      ],
+      "原元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G054",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_a",
+          "index": 0
+        },
+        {
+          "element": "P_o",
+          "index": 0
+        },
+        {
+          "element": "G054",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鬶",
+      "拼音": "gui",
+      "原拆": [
+        "夫",
+        "见",
+        "鬲"
+      ],
+      "新拆": [
+        "夫",
+        "见",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        },
+        {
+          "element": "G002",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鬷",
+      "拼音": "zong",
+      "原拆": [
+        "鬲",
+        "㐅",
+        "凵",
+        "八",
+        "夂"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "㐅",
+        "凵",
+        "八",
+        "夂"
+      ],
+      "原元素": [
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "P_s",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G064",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鲴",
+      "拼音": "gu",
+      "原拆": [
+        "鱼",
+        "囗",
+        "古"
+      ],
+      "新拆": [
+        "鱼",
+        "囗",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G032",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G032",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "鹝",
+      "拼音": "yi",
+      "原拆": [
+        "鬲",
+        "鸟"
+      ],
+      "新拆": [
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "鸟"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G116",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G001",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麀",
+      "拼音": "you",
+      "原拆": [
+        "鹿",
+        "匕"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "匕"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_z",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G056",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麈",
+      "拼音": "zhu",
+      "原拆": [
+        "鹿",
+        "亠",
+        "土"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "亠",
+        "土"
+      ],
+      "原元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_v",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G059",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麑",
+      "拼音": "ni",
+      "原拆": [
+        "鹿",
+        "臼",
+        "儿"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "臼",
+        "儿"
+      ],
+      "原元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_n",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G068",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "麖",
+      "拼音": "jing",
+      "原拆": [
+        "鹿",
+        "亠",
+        "口",
+        "小"
+      ],
+      "新拆": [
+        "广",
+        "5",
+        "丨",
+        "丨",
+        "一",
+        "",
+        "匕",
+        "亠",
+        "口",
+        "小"
+      ],
+      "原元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "G096",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_j",
+          "index": 0
+        },
+        {
+          "element": "P_k",
+          "index": 0
+        },
+        {
+          "element": "G040",
+          "index": 0
+        },
+        {
+          "element": "G065",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "𦙶",
+      "拼音": "gu",
+      "原拆": [
+        "月",
+        "古"
+      ],
+      "新拆": [
+        "月",
+        "十",
+        "口"
+      ],
+      "原元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G076",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_g",
+          "index": 0
+        },
+        {
+          "element": "P_u",
+          "index": 0
+        },
+        {
+          "element": "G021",
+          "index": 0
+        },
+        {
+          "element": "G022",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "字": "𬟁",
+      "拼音": "yi",
+      "原拆": [
+        "艹",
+        "鬲",
+        "鸟"
+      ],
+      "新拆": [
+        "艹",
+        "一",
+        "口",
+        "冂",
+        "丷",
+        "一",
+        "丨",
+        "鸟"
+      ],
+      "原元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ],
+      "新元素": [
+        {
+          "element": "P_y",
+          "index": 0
+        },
+        {
+          "element": "P_i",
+          "index": 0
+        },
+        {
+          "element": "G011",
+          "index": 0
+        },
+        {
+          "element": "G020",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "对照口径": "沿用52轮原始分音频率，不加入di人工微调，以隔离删根效应；四种开局以52冠军为投影基线。"
+}

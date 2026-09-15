@@ -1,0 +1,21 @@
+{
+  "stage": "paused_by_user",
+  "updated": "2026-09-12 18:42:13",
+  "pid": 42744,
+  "completed_in_batch": 4,
+  "batch_size": 16,
+  "running": [],
+  "pending_in_batch": 8,
+  "free_memory_gb": 9.49,
+  "free_disk_gb": 274.7,
+  "first_round_completed": 132,
+  "second_round_completed": 0,
+  "reason": "用户要求暂停以调整分页文件并重启；未经用户要求不得自动恢复",
+  "optimized_completed": 132,
+  "previous_running": [
+    "g09_small_01",
+    "g09_small_02",
+    "g09_small_03",
+    "g09_small_04"
+  ]
+}

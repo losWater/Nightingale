@@ -1,0 +1,152 @@
+[
+  {
+    "id": "g12_small_04_30000",
+    "group": 12,
+    "kind": "small",
+    "seed": 202609122131,
+    "baseline": "g12_small_04",
+    "label": "A",
+    "steps": 30000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_small_04\\search\\run.json"
+  },
+  {
+    "id": "g12_large_03_30000",
+    "group": 12,
+    "kind": "large",
+    "seed": 202609122140,
+    "baseline": "g12_large_03",
+    "label": "B",
+    "steps": 30000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_large_03\\search\\run.json"
+  },
+  {
+    "id": "g15_small_01_30000",
+    "group": 15,
+    "kind": "small",
+    "seed": 202609122428,
+    "baseline": "g15_small_01",
+    "label": "C",
+    "steps": 30000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g15_small_01\\search\\run.json"
+  },
+  {
+    "id": "g02_random_03_30000",
+    "group": 2,
+    "kind": "random",
+    "seed": 202609121150,
+    "baseline": "g02_random_03",
+    "label": "D",
+    "steps": 30000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g02_random_03\\search\\run.json"
+  },
+  {
+    "id": "g13_random_04_30000",
+    "group": 13,
+    "kind": "random",
+    "seed": 202609122251,
+    "baseline": "g13_random_04",
+    "label": "E",
+    "steps": 30000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g13_random_04\\search\\run.json"
+  },
+  {
+    "id": "g12_small_04_50000",
+    "group": 12,
+    "kind": "small",
+    "seed": 202609122131,
+    "baseline": "g12_small_04",
+    "label": "A",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_small_04\\search\\run.json"
+  },
+  {
+    "id": "g12_large_03_50000",
+    "group": 12,
+    "kind": "large",
+    "seed": 202609122140,
+    "baseline": "g12_large_03",
+    "label": "B",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_large_03\\search\\run.json"
+  },
+  {
+    "id": "g15_small_01_50000",
+    "group": 15,
+    "kind": "small",
+    "seed": 202609122428,
+    "baseline": "g15_small_01",
+    "label": "C",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g15_small_01\\search\\run.json"
+  },
+  {
+    "id": "g02_random_03_50000",
+    "group": 2,
+    "kind": "random",
+    "seed": 202609121150,
+    "baseline": "g02_random_03",
+    "label": "D",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g02_random_03\\search\\run.json"
+  },
+  {
+    "id": "g13_random_04_50000",
+    "group": 13,
+    "kind": "random",
+    "seed": 202609122251,
+    "baseline": "g13_random_04",
+    "label": "E",
+    "steps": 50000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g13_random_04\\search\\run.json"
+  },
+  {
+    "id": "g12_small_04_100000",
+    "group": 12,
+    "kind": "small",
+    "seed": 202609122131,
+    "baseline": "g12_small_04",
+    "label": "A",
+    "steps": 100000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_small_04\\search\\run.json"
+  },
+  {
+    "id": "g12_large_03_100000",
+    "group": 12,
+    "kind": "large",
+    "seed": 202609122140,
+    "baseline": "g12_large_03",
+    "label": "B",
+    "steps": 100000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g12_large_03\\search\\run.json"
+  },
+  {
+    "id": "g15_small_01_100000",
+    "group": 15,
+    "kind": "small",
+    "seed": 202609122428,
+    "baseline": "g15_small_01",
+    "label": "C",
+    "steps": 100000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g15_small_01\\search\\run.json"
+  },
+  {
+    "id": "g02_random_03_100000",
+    "group": 2,
+    "kind": "random",
+    "seed": 202609121150,
+    "baseline": "g02_random_03",
+    "label": "D",
+    "steps": 100000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g02_random_03\\search\\run.json"
+  },
+  {
+    "id": "g13_random_04_100000",
+    "group": 13,
+    "kind": "random",
+    "seed": 202609122251,
+    "baseline": "g13_random_04",
+    "label": "E",
+    "steps": 100000,
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\jobs\\g13_random_04\\search\\run.json"
+  }
+]

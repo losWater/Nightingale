@@ -1,0 +1,82 @@
+[
+  {
+    "id": "A_top500",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\A_top500.json",
+    "steps": 50000,
+    "baseline": "A",
+    "label": "A·保护前500",
+    "top": 500
+  },
+  {
+    "id": "A_top1000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\A_top1000.json",
+    "steps": 50000,
+    "baseline": "A",
+    "label": "A·保护前1000",
+    "top": 1000
+  },
+  {
+    "id": "A_top1500",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\A_top1500.json",
+    "steps": 50000,
+    "baseline": "A",
+    "label": "A·保护前1500",
+    "top": 1500
+  },
+  {
+    "id": "A_top3000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\A_top3000.json",
+    "steps": 50000,
+    "baseline": "A",
+    "label": "A·保护前3000",
+    "top": 3000
+  },
+  {
+    "id": "A_top6000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\A_top6000.json",
+    "steps": 50000,
+    "baseline": "A",
+    "label": "A·保护前6000",
+    "top": 6000
+  },
+  {
+    "id": "D_top500",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\D_top500.json",
+    "steps": 50000,
+    "baseline": "D",
+    "label": "D·保护前500",
+    "top": 500
+  },
+  {
+    "id": "D_top1000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\D_top1000.json",
+    "steps": 50000,
+    "baseline": "D",
+    "label": "D·保护前1000",
+    "top": 1000
+  },
+  {
+    "id": "D_top1500",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\D_top1500.json",
+    "steps": 50000,
+    "baseline": "D",
+    "label": "D·保护前1500",
+    "top": 1500
+  },
+  {
+    "id": "D_top3000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\D_top3000.json",
+    "steps": 50000,
+    "baseline": "D",
+    "label": "D·保护前3000",
+    "top": 3000
+  },
+  {
+    "id": "D_top6000",
+    "original_config": "E:\\夜莺2.0\\work\\夜莺2.0\\23_重码保护范围试跑\\configs\\D_top6000.json",
+    "steps": 50000,
+    "baseline": "D",
+    "label": "D·保护前6000",
+    "top": 6000
+  }
+]

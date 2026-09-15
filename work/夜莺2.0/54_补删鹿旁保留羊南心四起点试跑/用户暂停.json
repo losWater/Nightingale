@@ -1,0 +1,55 @@
+{
+  "time": "2026-09-13 16:04:45",
+  "processes": [
+    {
+      "pid": 43608,
+      "created": 1789279467.9893374,
+      "role": "controller"
+    },
+    {
+      "pid": 20024,
+      "created": 1789279467.996395,
+      "role": "conhost.exe"
+    },
+    {
+      "pid": 14176,
+      "created": 1789279468.2334335,
+      "role": "python.exe"
+    },
+    {
+      "pid": 33228,
+      "created": 1789279483.2501748,
+      "role": "python.exe"
+    },
+    {
+      "pid": 45240,
+      "created": 1789279483.2565432,
+      "role": "conhost.exe"
+    },
+    {
+      "pid": 47440,
+      "created": 1789279485.0383396,
+      "role": "chai.exe"
+    },
+    {
+      "pid": 42148,
+      "created": 1789279485.0695896,
+      "role": "conhost.exe"
+    },
+    {
+      "pid": 45912,
+      "created": 1789279468.2402332,
+      "role": "conhost.exe"
+    },
+    {
+      "pid": 17068,
+      "created": 1789279470.018588,
+      "role": "chai.exe"
+    },
+    {
+      "pid": 23952,
+      "created": 1789279470.0489867,
+      "role": "conhost.exe"
+    }
+  ]
+}

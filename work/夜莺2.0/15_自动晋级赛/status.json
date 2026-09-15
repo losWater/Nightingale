@@ -1,0 +1,15 @@
+{
+  "stage": "complete",
+  "updated": "2026-09-12 09:22:56",
+  "pid": 44352,
+  "first_round_completed": 256,
+  "second_round_completed": 64,
+  "finalists": [
+    "g12_small_04",
+    "g12_large_03",
+    "g15_small_01",
+    "g02_random_03",
+    "g13_random_04"
+  ],
+  "report": "E:\\夜莺2.0\\work\\夜莺2.0\\15_自动晋级赛\\最终候选报告.html"
+}
