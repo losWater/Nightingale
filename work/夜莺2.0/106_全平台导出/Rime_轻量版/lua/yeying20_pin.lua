@@ -1,6 +1,6 @@
 -- 夜莺2.0 · 候选钉选 + 主动造词（2026-09-16 群友需求）
--- Ctrl+N     ：把当前页第 N 个候选钉为该编码的首选，其余依次后退；写入用户目录 yeying20_pin.txt，重启不丢。
---              钉选按编码记文字；不在码表里的文字（整句等）记了也不影响顺序，等于直接上屏。
+-- Ctrl+N     ：第 N 个候选是码表候选 → 钉为该编码首选并上屏（其余依次后退，写入用户目录 yeying20_pin.txt）；
+--              是整句/联想出来的候选（不在码表里）→ 按夜莺词规则造词（写入 yeying20_words.txt）并上屏。
 -- Ctrl+Enter ：主动造词。把当前将要上屏的整段文字按夜莺词规则编码（二字 AaAbBaBb，三字 AaBaCa，四字以上 AaBaCaZa，
 --              多音字取全部读音组合，最多 8 个码），写入用户目录 yeying20_words.txt，同时上屏。不限长度。
 -- Shift+Delete：选中的是主动造的词（带〔造〕）时从 yeying20_words.txt 删除；其他候选交给 Rime 原生处理。
@@ -184,8 +184,13 @@ function M.key(key, env)
     local cand = menu:get_candidate_at(idx)
     if not cand then return 1 end
     local code = seg_code(ctx, seg)
-    -- 不看候选类型：只要该编码是纯字母就记钉选。不在码表里的文字记了也没有效果（order 只重排码表候选），等于直接上屏。
-    if code:match('^[a-z]+$') then M.pin(code, cand.text) end
+    if code:match('^[a-z]+$') then
+      if is_table(cand) or cand.comment == MADE then
+        M.pin(code, cand.text)                        -- 码表候选（含造过的词）：钉为该码首选
+      elseif utf8.len(cand.text) and utf8.len(cand.text) >= 2 and not cand.text:find('[%z\1-\127]') then
+        for _, c in ipairs(M.encode(cand.text, rev_codes(env))) do M.add_word(c, cand.text) end   -- 联想/整句候选：按夜莺词规则造词
+      end
+    end
     ctx:select(idx)
     -- select 只是选中；整段输入都已选定时要再提交一次（和按数字键上屏的效果一致）
     local done = false

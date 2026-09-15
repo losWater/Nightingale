@@ -80,8 +80,8 @@
   },
   "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_pin.lua": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_pin.lua",
-   "sha256": "c303d91c4c4c29c27a218685e1974d6a849ff0155a8250a5ceff345263ce4284",
-   "bytes": 8107
+   "sha256": "3dfa3d9acc0f435a4100fcbd6369aa42b3289368f5c8ea14c5455c6976e7a78a",
+   "bytes": 8359
   },
   "02_输入法挂接/rime/Rime_轻量版/lua/yeying20_pin_key.lua": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/lua/yeying20_pin_key.lua",
@@ -115,8 +115,8 @@
   },
   "02_输入法挂接/rime/Rime_轻量版/使用说明.md": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/使用说明.md",
-   "sha256": "2d8258bd451bb88047c332c78f04219343f4002a9eb44e6c045999e1270559ae",
-   "bytes": 2607
+   "sha256": "ab66a7dd722160090a4f19819b6ea28b46ad045429efd34a35e94b589cb662cb",
+   "bytes": 2724
   },
   "02_输入法挂接/rime/Rime_轻量版/引擎核验.json": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/引擎核验.json",
@@ -360,8 +360,8 @@
   },
   "05_规则与裁决/当前任务树.md": {
    "source": "work/夜莺2.0/当前任务树.md",
-   "sha256": "8612dba4681fb50cc3450ab3142c7e257d23c56f24fb59fc15cbb61673323a57",
-   "bytes": 27179
+   "sha256": "5d922bc351a4aeb32de87141f6515a860cd3ed0450215b70a613738783528744",
+   "bytes": 28695
   },
   "05_规则与裁决/码表概念与规则.md": {
    "source": "work/夜莺2.0/码表概念与规则.md",
@@ -381,16 +381,16 @@
  },
  "release_assets": {
   "Nightingale-2.0-tables-20260916.zip": {
-   "sha256": "86288961e9623b3a70e65482b636f16dd9ccf0dcbee75d8a426479eeb8d8ba1c",
+   "sha256": "2bcca702627238ef18ca75d017590dca9aba6bca8f61f644445b73a718b069a5",
    "bytes": 10179626
   },
   "Nightingale-Rime-2.0-light-20260916.zip": {
-   "sha256": "12ec816e4bd085f61051edeb361e301f7e82ef93ee3592f8ca4f059963c56377",
-   "bytes": 3781865
+   "sha256": "95c770d2a3fcfd036354c2f43499db61be9a56a917e95e63b01b154ef03b2d06",
+   "bytes": 3781913
   },
   "Nightingale-Rime-2.0-main-20260916.zip": {
-   "sha256": "ed08345ea9898e823b371e5493272dbfa75dddbea1cba55034bf16fe866c1cff",
-   "bytes": 398943505
+   "sha256": "e6faf67382ef3c99ac5c36edd4c83dad7849351d789d6e25b4a457141257d26f",
+   "bytes": 398943552
   },
   "Nightingale-Toolbox-2.0-20260916.html": {
    "sha256": "665b03296fbd114f325929d46395b26fcd42cc8e51f4dda4109cc70e349e6593",
