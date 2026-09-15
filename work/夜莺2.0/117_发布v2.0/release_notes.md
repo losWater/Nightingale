@@ -13,6 +13,7 @@
 | `Nightingale-2.0-tables-*.zip` | 普通字词表（有/无简词、码前）、手心模块化挂接、搜狗挂接/五笔、冰凌、Bime，含 40 条快符与核验 |
 | `Nightingale-Rime-2.0-light-*.zip` | Rime 轻量版：Rime 原生整句，解压到用户目录重新部署即用 |
 | `Nightingale-Rime-2.0-main-*.zip` | Rime 主力版：V5 整句模型 + Windows x64 原生引擎（约 380MB） |
+| `Nightingale-Rime-2.0-mobile-*.zip` | Rime 手机版：轻量版 + 万象 LTS 语法模型（约 360MB），供同文（Android）/仓输入法（iOS）等手机 Rime；魔虎引擎手机不可用 |
 | `Nightingale-Toolbox-2.0-*.html` | 啾啾工具箱单文件：拆分查询、部件反查、字根练习、字根图/表、完整拆分表（15496 字） |
 | `Nightingale-Toolbox-offline-2.0-*.zip` | 离线工具包（多页面版） |
 | `SHA256SUMS-*.txt` | 校验值 |

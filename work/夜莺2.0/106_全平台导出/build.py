@@ -1,6 +1,6 @@
 from pathlib import Path
 from collections import defaultdict,Counter
-import json,re,csv,zipfile,shutil,hashlib
+import json,re,csv,zipfile,shutil,hashlib,os
 
 P=Path(__file__).resolve().parent; W=P.parent
 OUT=P/'夜莺2.0_字词表与输入法'; OUT.mkdir(exist_ok=True)
@@ -165,9 +165,15 @@ for kind,label in [('light','轻量版'),('main','主力版')]:
   ts='translator_short:\n  dictionary: yeying20_rime_short\n  user_dict: yeying20_%s_short\n  enable_user_dict: true\n  enable_completion: false\n  contextual_suggestions: false\n  max_homophones: 7\n  max_homographs: 7\n  max_sentences: 2\n'%kind
   assert s.count('fixed:\n  dictionary: yeying20_rime_fixed\n')==1,sch;s=s.replace('fixed:\n  dictionary: yeying20_rime_fixed\n',ts+'fixed:\n  dictionary: yeying20_rime_fixed\n')
   if '  lexicon: mohu/data/yeying20.lexicon.txt\n' in s:s=s.replace('  lexicon: mohu/data/yeying20.lexicon.txt\n','  lexicon: mohu/data/yeying20.lexicon.txt\n  lexicon_short: mohu/data/yeying20_short.lexicon.txt\n')
+  dep='  dependencies:\n  - yeying20_rime_fixed\n';assert s.count(dep)==1,sch
+  s=s.replace(dep,dep+'  - yeying20_rime_short\n')   # 2026-09-16 含简词整句词典要靠存根方案才会被编译
+  if sch=='yeying20_light.schema.yaml':   # 2026-09-16 手机版：轻量方案接万象语法模型（gram 不在时 Rime 只记日志，PC 轻量版不受影响）
+   s=s.replace('contextual_suggestions: false','contextual_suggestions: true')
+   s=s.replace('fixed:\n  dictionary: yeying20_rime_fixed\n','grammar:\n  language: wanxiang-lts-zh-hans\n  collocation_max_length: 5\n  collocation_min_length: 2\nfixed:\n  dictionary: yeying20_rime_fixed\n',1)
   sp.write_text(s,encoding='utf-8')
  write(dest/'yeying20_rime_fixed.dict.yaml',dicttext('yeying20_rime_fixed',[(t,c,100000-n) for t,c,n in allrows]),'utf-8')
  write(dest/'yeying20_rime.dict.yaml',dicttext('yeying20_rime',[(t,c,f) for (t,c),f in sorted(fallback.items()) if (t,c) not in short_fb]),'utf-8')   # 默认：简词不进整句
+ write(dest/'yeying20_rime_short.schema.yaml','schema:\n  schema_id: yeying20_rime_short\n  name: 夜莺整句词典·含简词（辅助）\n  version: "2.0"\ntranslator:\n  dictionary: yeying20_rime_short\n','utf-8')
  write(dest/'yeying20_rime_short.dict.yaml',dicttext('yeying20_rime_short',[(t,c,f) for (t,c),f in sorted(fallback.items())]),'utf-8')   # 开关开启：含简词
  write(dest/'lua/yeying20_lookup_data.lua','return '+lua({'sounds':dict(sounds),'pinyin':pinyin})+'\n','utf-8')
  if kind=='main':
@@ -179,5 +185,15 @@ for kind,label in [('light','轻量版'),('main','主力版')]:
  write(dest/'使用说明.md',(dest/'使用说明.md').read_text(encoding='utf-8').rstrip('\n')+'\n\n## 钉选与造词（2026-09-16 新增，主力版/轻量版）\n\n- **Ctrl+数字 钉选 / 加词**：候选里第 N 个是你想要的，按 Ctrl+N 上屏。它若是码表候选，就同时钉为这个编码的首选，原来的候选依次后退，再钉别的会排到它前面（记在用户目录 `yeying20_pin.txt`，一行一个编码，制表符分隔，重启不丢，想撤销就删掉那一行再重新部署）；它若是整句或联想出来、码表里没有的词，就按夜莺词规则自动加进 `yeying20_words.txt`，下次打它的码就在候选里（带〔造〕）。\n- **自动造词（只限二字词）**：连续打出两个字，Rime 自动把这两个字按双拼四码存进用户词典 `yeying20_fixed_user`；下次打这个四码它出现在候选末尾。不想要的词选中后按 Shift+Delete 删除。\n- **Ctrl+Enter 主动造词（不限长度）**：把想要的词打出来（整句拼、逐字打都行），在上屏前按 Ctrl+Enter：当前将要上屏的整段文字按夜莺词规则编码（二字取两字双拼四码，三字取三字首码，四字及以上取前三字首码加末字首码；多音字取全部读音组合）写进用户目录 `yeying20_words.txt`，同时上屏。下次打那个码它就在候选里，带〔造〕标记；选中后 Shift+Delete 删除，Ctrl+N 可钉。\n- 码表候选的顺序不会随使用频率自动变化：钉过的在前，其余按码表原序，造的词排最后。\n- **简词进整句（开关，默认关）**：整句默认只用单字与四码词拼句，不混入简词（二简词、三字三码等），识别更稳；想让简词也参与整句，按 Ctrl+` 打开方案菜单，切到"简词进整句"即可，主力版切换时会重新加载整句引擎，约几秒。\n','utf-8')
  report['Rime固定条数']=len(allrows);report['Rime整句词典条数']=len(fallback)-len(short_fb);report['Rime整句词典条数_含简词']=len(fallback);report['简词条数_默认不进整句']=len(short_fb);report['Rime逐字拼写词数']=len(word_sound);report['Rime原生词边数']=len(lex)
  print('generated',label,flush=True)
+# 2026-09-16 群友反馈：魔虎 V5 引擎只有 Windows 版，手机（同文/仓）用不了 → 手机版 = 轻量版全部文件 + 万象 LTS 语法模型（.gram，420MB）
+mob=P/'Rime_手机版'
+if mob.exists():shutil.rmtree(mob)
+shutil.copytree(P/'Rime_轻量版',mob)
+gram=P/'models/wanxiang-lts-zh-hans.gram';assert gram.exists(),gram
+os.link(gram,mob/'wanxiang-lts-zh-hans.gram') if hasattr(os,'link') else shutil.copy2(gram,mob/'wanxiang-lts-zh-hans.gram')
+write(mob/'default.custom.yaml','patch:'+chr(10)+'  schema_list:'+chr(10)+'    - schema: yeying20_light'+chr(10)+'    - schema: yeying20_xm'+chr(10),'utf-8')
+write(mob/'使用说明.md','# 夜莺2.0 Rime · 手机版（万象语法模型）\n\n主力版的魔虎 V5 整句引擎只有 Windows x64 原生库，手机上装不了；本包用 Rime 原生整句 + 万象 LTS 语法模型（`wanxiang-lts-zh-hans.gram`，约 420MB，来自 amzxyz/RIME-LMDG）代替，方案与轻量版完全相同（`yeying20_light`，另附形码模式 `yeying20_xm`）。\n\n## 安装\n\n- **同文（Trime，Android）**：把本包全部文件解压到 Rime 用户目录（默认 `/sdcard/rime`），在同文里"部署"。\n- **仓输入法（Hamster，iOS）**：在"输入方案设置 → 导入方案"里选择本 zip，或把解压后的文件放进 Rime 目录，然后重新部署。\n- **电脑上的 Rime（小狼毫/鼠须管/fcitx5-rime）**：也能直接用，等于轻量版加语法模型。\n\n需要输入法自带 librime-lua 与 octagram（语法模型）插件；同文与仓的近期版本都带。首次部署会编译词典，手机上要等一会儿。\n\n## 功能\n\n空格首选、分号次选、单引号三选；反引号双拼、两个波浪号全拼反查；F2 拆分提示（手机键盘没有 F2 时用反查代替）；Ctrl+数字 钉选/加词、二字自动造词、Ctrl+Enter 主动造词（有实体键盘或键盘支持组合键时可用）；方案菜单里"简词进整句"开关默认关。\n\n## 说明\n\n- 本包在电脑 Rime 引擎上核验过词典与候选；**手机实机未验证**，遇到问题请到群里反馈。\n- 万象模型文件可自行替换为 RIME-LMDG 的其他版本，文件名保持 `wanxiang-lts-zh-hans.gram` 或同步修改方案里 `grammar/language`。\n','utf-8')
+report['Rime手机版']='轻量版 + wanxiang-lts-zh-hans.gram（%d 字节）'%gram.stat().st_size
+print('generated 手机版',flush=True)
 js(OUT/'说明与核验/生成清单.json',report)
 print(json.dumps(report,ensure_ascii=False),flush=True)

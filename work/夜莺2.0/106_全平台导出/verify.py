@@ -61,16 +61,16 @@ subprocess.run(['subst',drive,str(P)],check=True)
 cases=['bb','dr','hu','ji','pk','rv','so','ty','ud','uu','jv','jvb','jvn','jvo','xv','yv','yvl','yvz','yvc','yvo','vgss','yjs','yjsp','qtxb','a','q','no','xing']
 longcode=next(c for c in g if len(c)>4);cases.append(longcode)
 try:
- for kind,label in [('light','轻量版'),('main','主力版')]:
+ for kind,label,schema in [('light','轻量版','yeying20_light'),('main','主力版','yeying20_main'),('mobile','手机版','yeying20_light')]:
   dest=P/'engine-check-final'/kind
   def copy(src,dst):
-   if str(src).endswith('.bin'):os.link(src,dst)
+   if str(src).endswith(('.bin','.gram')):os.link(src,dst)
    else:shutil.copy2(src,dst)
   shutil.copytree(P/f'Rime_{label}',dest,copy_function=copy,dirs_exist_ok=False)
   assert (dest/'default.custom.yaml').exists() and not (dest/'default.custom.yaml.example').exists()   # 包内直接带生效配置
   codes=cases+['woxihrni','wobuvidc','~zheng','`vg']
   with (P/f'{kind}-engine.tsv').open('wb') as out,(P/f'{kind}-engine.log').open('wb') as err:
-   proc=subprocess.run(['D:/nightingale/.tmp/rime_bench.exe','D:/Rime/weasel-0.17.4','D:/Rime/weasel-0.17.4/data',drive+'/engine-check-final/'+kind,'yeying20_'+kind,'maintenance'],input=('\n'.join(codes)+'\n').encode(),stdout=out,stderr=err,timeout=240)
+   proc=subprocess.run(['D:/nightingale/.tmp/rime_bench.exe','D:/Rime/weasel-0.17.4','D:/Rime/weasel-0.17.4/data',drive+'/engine-check-final/'+kind,schema,'maintenance'],input=('\n'.join(codes)+'\n').encode(),stdout=out,stderr=err,timeout=240)
   assert proc.returncode==0,(kind,proc.returncode)
   actual=rows(P/f'{kind}-engine.tsv','utf-8');assert len(actual)==len(codes)
   for line in actual[:len(cases)]:

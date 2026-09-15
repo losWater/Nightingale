@@ -45,6 +45,7 @@ big = {   # 大包：本地 发布包/ + GitHub Release 附件
  f'Nightingale-2.0-tables-{DATE}.zip': X + '/夜莺2.0_字词表与输入法_含快符.zip',
  f'Nightingale-Rime-2.0-light-{DATE}.zip': X + '/夜莺2.0_Rime轻量版_含快符.zip',
  f'Nightingale-Rime-2.0-main-{DATE}.zip': X + '/夜莺2.0_Rime主力版_含快符.zip',
+ f'Nightingale-Rime-2.0-mobile-{DATE}.zip': X + '/夜莺2.0_Rime手机版_万象模型_含快符.zip',
  f'Nightingale-Toolbox-2.0-{DATE}.html': U + '/夜莺啾啾工具箱.html',
  f'Nightingale-Toolbox-offline-2.0-{DATE}.zip': U + '/夜莺2.0离线工具包.zip',
 }
@@ -73,6 +74,7 @@ open(R + '/02_输入法挂接/rime/README.md', 'w', encoding='utf-8').write(f"""
 
 - `Rime_轻量版/`：轻量版全部文件（Rime 原生整句），解压即用，详见其中 使用说明.md。
 - 主力版（含 V5 整句模型与 Windows 原生引擎，约 380MB）不入 git：见 GitHub Release v2.0 附件 `Nightingale-Rime-2.0-main-{DATE}.zip`；本地留存在 `发布包/`（已 gitignore）。
+- 手机版（轻量版 + 万象 LTS 语法模型 `wanxiang-lts-zh-hans.gram`，约 360MB，供同文/仓输入法等手机 Rime）：Release 附件 `Nightingale-Rime-2.0-mobile-{DATE}.zip`；魔虎 V5 引擎只有 Windows 版，手机用不了。
 - 两版共有：Ctrl+数字 钉选、二字自动造词、Ctrl+Enter 主动造词、反引号双拼/波浪号全拼反查、F2 拆分提示、40 条快符。
 - 校验：`发布包/SHA256SUMS-{DATE}.txt`。
 """)

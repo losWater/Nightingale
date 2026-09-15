@@ -1,0 +1,6 @@
+schema:
+  schema_id: yeying20_rime_short
+  name: 夜莺整句词典·含简词（辅助）
+  version: "2.0"
+translator:
+  dictionary: yeying20_rime_short

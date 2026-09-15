@@ -22,7 +22,7 @@ for label in ['轻量版','主力版']:
  p=P/f'Rime_{label}'
  (p/'核验结果.txt').write_text(note,encoding='utf-8-sig')
  shutil.copy2(P/'引擎核验.json',p/'引擎核验.json')
-targets=[(O,'夜莺2.0_字词表与输入法_含快符.zip'),(P/'Rime_轻量版','夜莺2.0_Rime轻量版_含快符.zip'),(P/'Rime_主力版','夜莺2.0_Rime主力版_含快符.zip')]
+targets=[(O,'夜莺2.0_字词表与输入法_含快符.zip'),(P/'Rime_轻量版','夜莺2.0_Rime轻量版_含快符.zip'),(P/'Rime_主力版','夜莺2.0_Rime主力版_含快符.zip'),(P/'Rime_手机版','夜莺2.0_Rime手机版_万象模型_含快符.zip')]
 manifest=[]
 for folder,name in targets:
  target=P/name

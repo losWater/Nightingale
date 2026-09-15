@@ -90,8 +90,8 @@
   },
   "02_输入法挂接/rime/Rime_轻量版/yeying20_light.schema.yaml": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_light.schema.yaml",
-   "sha256": "6fbbe9ef77b68df313ea820b8b07c039addc19e93c3605bd91f09d91879da42e",
-   "bytes": 2475
+   "sha256": "c6c400e1def8d96709ee187568f9b279491527fe39a187cc6fa12d31f1d1fe5c",
+   "bytes": 2600
   },
   "02_输入法挂接/rime/Rime_轻量版/yeying20_rime.dict.yaml": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_rime.dict.yaml",
@@ -113,6 +113,11 @@
    "sha256": "a93dbce9cbe812ca0c537c7e2dc89db51be1fa5f95bc9474d825920ef0a0c40e",
    "bytes": 5899280
   },
+  "02_输入法挂接/rime/Rime_轻量版/yeying20_rime_short.schema.yaml": {
+   "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_rime_short.schema.yaml",
+   "sha256": "9439732efa6122ce6c90600575fc22b9427383d2c48512a693d57599956a3cd9",
+   "bytes": 154
+  },
   "02_输入法挂接/rime/Rime_轻量版/yeying20_xm.schema.yaml": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/yeying20_xm.schema.yaml",
    "sha256": "9de7d89c0131f4e12788f6bce24beb2a2beb8657e40aeea455845812896e458a",
@@ -125,8 +130,8 @@
   },
   "02_输入法挂接/rime/Rime_轻量版/引擎核验.json": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/引擎核验.json",
-   "sha256": "d8892bf31885481f35250b496b99ca23d49637aa26ddbfe6f547bdd7942c6af8",
-   "bytes": 1462
+   "sha256": "3dd70f65646cd937c1541fb96b1b938c65f498cd3dc54d8f2cf42a902f21b775",
+   "bytes": 2007
   },
   "02_输入法挂接/rime/Rime_轻量版/核验结果.txt": {
    "source": "work/夜莺2.0/106_全平台导出/Rime_轻量版/核验结果.txt",
@@ -215,8 +220,8 @@
   },
   "02_输入法挂接/说明与核验/Rime引擎核验.json": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/Rime引擎核验.json",
-   "sha256": "d8892bf31885481f35250b496b99ca23d49637aa26ddbfe6f547bdd7942c6af8",
-   "bytes": 1462
+   "sha256": "3dd70f65646cd937c1541fb96b1b938c65f498cd3dc54d8f2cf42a902f21b775",
+   "bytes": 2007
   },
   "02_输入法挂接/说明与核验/搜狗五笔_容量裁剪明细.txt": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/搜狗五笔_容量裁剪明细.txt",
@@ -240,8 +245,8 @@
   },
   "02_输入法挂接/说明与核验/生成清单.json": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/生成清单.json",
-   "sha256": "11dbef1b645ae1ed70dc1be20f86aae6e64c58c19c7196112f13e1bebe302b8c",
-   "bytes": 1525
+   "sha256": "74d082d4f4ae56dde34e5dc4b8e3a9a1ca4d563e182b883fbd13801f22b115a7",
+   "bytes": 1607
   },
   "02_输入法挂接/说明与核验/超过四码_原表保留.txt": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/超过四码_原表保留.txt",
@@ -365,8 +370,8 @@
   },
   "05_规则与裁决/当前任务树.md": {
    "source": "work/夜莺2.0/当前任务树.md",
-   "sha256": "1965e30d7e18ab9eb812a7f59c083f5b9562e71c1913ccf87b0ebbe47505798a",
-   "bytes": 31731
+   "sha256": "a5b6ca3c23395d64e8971d6cefd252afd2bc815a421fe4f3b7ba168ddbd533d5",
+   "bytes": 33021
   },
   "05_规则与裁决/码表概念与规则.md": {
    "source": "work/夜莺2.0/码表概念与规则.md",
@@ -380,22 +385,26 @@
   },
   "夜莺2.0升级日志.md": {
    "source": "work/夜莺2.0/117_发布v2.0/夜莺2.0升级日志.md",
-   "sha256": "af03c33d422bb694a8664a02c95f032bfede1160a79cc942003ca1cc642beff0",
-   "bytes": 3183
+   "sha256": "58fd57415f02b7f670fb8587d733d5751ac027652a143e558e8931be6d8cd420",
+   "bytes": 3256
   }
  },
  "release_assets": {
   "Nightingale-2.0-tables-20260916.zip": {
-   "sha256": "5bc82f6feaf64df2a994e4e2e169885dffda1f55b2de4b4b0c29dbf890a3dff2",
-   "bytes": 10179724
+   "sha256": "deda334db9685b599ba089ad3a6be4046739c3e0543a5c391c568af8a9390d14",
+   "bytes": 10179811
   },
   "Nightingale-Rime-2.0-light-20260916.zip": {
-   "sha256": "3a3157ab9a274e8de52ff036e260be698882e9e33c1eda4e48c59164cf983d6a",
-   "bytes": 5977910
+   "sha256": "5fb8cd904d53e4c6a88c38c678ddd290978f45b13551dbc4076261def3b42e2e",
+   "bytes": 5978251
   },
   "Nightingale-Rime-2.0-main-20260916.zip": {
-   "sha256": "026b34e3081f1f669de555b75c21bdb9631525cd41bd81eec3e40a1c9ab7ec67",
-   "bytes": 403107255
+   "sha256": "0ec89694a1dd8765f1cfbd029588b7f344c8bb211da7f65a2ded78f179ac8600",
+   "bytes": 403107603
+  },
+  "Nightingale-Rime-2.0-mobile-20260916.zip": {
+   "sha256": "efd58012030a8fe02445d6773473771fce6af453b57c166eea7ee2851d3c4290",
+   "bytes": 378003914
   },
   "Nightingale-Toolbox-2.0-20260916.html": {
    "sha256": "d654b70605df7e56905bda8a46ccbd14ba87986b00f92ded9e78be3f2899912b",

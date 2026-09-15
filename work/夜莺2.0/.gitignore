@@ -2,6 +2,7 @@
 
 **/.candidate_check/
 **/Rime_主力版/
+**/Rime_手机版/
 **/__pycache__/
 **/calibration/
 **/configs/
@@ -9,6 +10,7 @@
 **/engine-check-final/
 **/engine-check-light/
 **/jobs/
+**/models/
 **/node_modules/
 **/output/
 **/practice/
@@ -23,6 +25,8 @@
 **/[0-9][0-9]_random/
 **/output-*/
 *Rime主力版*.zip
+*Rime手机版*.zip
+*.gram
 *.log
 *.pyc
 *.tmp

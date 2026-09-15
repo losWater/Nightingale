@@ -4,6 +4,7 @@ schema:
   version: 2.0-20260915
   dependencies:
   - yeying20_rime_fixed
+  - yeying20_rime_short
 ascii_composer:
   switch_key:
     Shift_L: commit_code
@@ -59,7 +60,7 @@ translator:
   user_dict: yeying20_light
   enable_user_dict: true
   enable_completion: false
-  contextual_suggestions: false
+  contextual_suggestions: true
   max_homophones: 7
   max_homographs: 7
   max_sentences: 2
@@ -68,10 +69,14 @@ translator_short:
   user_dict: yeying20_light_short
   enable_user_dict: true
   enable_completion: false
-  contextual_suggestions: false
+  contextual_suggestions: true
   max_homophones: 7
   max_homographs: 7
   max_sentences: 2
+grammar:
+  language: wanxiang-lts-zh-hans
+  collocation_max_length: 5
+  collocation_min_length: 2
 fixed:
   dictionary: yeying20_rime_fixed
   enable_user_dict: false
