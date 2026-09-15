@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """把 E:/夜莺2.0/work/夜莺2.0 按 rules.py 的规则镜像到 D:/nightingale/work/夜莺2.0（GitHub 仓库 losWater/Nightingale 的工作树）。
-- 镜像：源里入库的文件复制过去（大小+修改时间相同则跳过），目标里多出的文件删除（只动 work/夜莺2.0 这一棵）。
+- 同步：源里入库的文件复制过去（大小+修改时间相同则跳过）；只删上一次同步写过、这次不再入库的文件，目标里其他文件不动。
 - 附带：00_工作区/（E 盘根的 README/AGENTS/迁移校验清单）、排除清单.json（每个被排除的目录/文件及原因）、.gitignore（同一套规则）。
 - 不做 git 提交；提交由调用方决定。用法：python sync.py [--dry]"""
 import io, sys, os, json, shutil, datetime, collections
@@ -23,19 +23,21 @@ for rel, src in sorted(plan.items()):
     if not dry:
         os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copy2(src, dst)
     copied += 1; bytes_copied += st.st_size
-# 删除目标里多出的
-want = set(plan) | {'排除清单.json', '.gitignore'}
-if os.path.isdir(DST):
-    for dp, dn, fn in os.walk(DST, topdown=False):
-        for f in fn:
-            rel = os.path.relpath(os.path.join(dp, f), DST).replace('\\', '/')
-            if rel not in want:
-                if not dry: os.remove(os.path.join(dp, f))
-                removed += 1
-        if not dry:
-            for d in dn:
-                q = os.path.join(dp, d)
-                if os.path.isdir(q) and not os.listdir(q): os.rmdir(q)
+# 只删上一次同步写过、这次不再入库的文件（清单在目标目录 .同步清单.json）；目标里其他文件（如你手写的）一律不动。
+# 教训（2026-09-16）：镜像式"删多余文件"会把手写文件一起删掉，且不进回收站。
+want = set(plan) | {'排除清单.json', '.gitignore', '.同步清单.json'}
+prev = set()
+if os.path.exists(DST + '/.同步清单.json'):
+    try: prev = set(json.load(open(DST + '/.同步清单.json', encoding='utf-8')))
+    except Exception: prev = set()
+for rel in sorted(prev - want):
+    q = DST + '/' + rel
+    if os.path.isfile(q):
+        if not dry: os.remove(q)
+        removed += 1
+if not dry:
+    os.makedirs(DST, exist_ok=True)
+    json.dump(sorted(want), open(DST + '/.同步清单.json', 'w', encoding='utf-8'), ensure_ascii=False)
 why = collections.Counter(); whys = collections.Counter()
 for p, s, w in exc: why[w] += 1; whys[w] += s
 manifest = {'时间': datetime.datetime.now().isoformat(timespec='seconds'), '源': SRC, '规则': '116_仓库同步/rules.py',

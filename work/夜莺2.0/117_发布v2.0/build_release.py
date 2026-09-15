@@ -49,18 +49,15 @@ big = {   # 大包：本地 发布包/ + GitHub Release 附件
  f'Nightingale-Toolbox-2.0-{DATE}.html': U + '/夜莺啾啾工具箱.html',
  f'Nightingale-Toolbox-offline-2.0-{DATE}.zip': U + '/夜莺2.0离线工具包.zip',
 }
-# 清空重建（保留 发布包/）
-if os.path.isdir(R):
-    for n in os.listdir(R):
-        p = R + '/' + n
-        if n == '02_输入法挂接':
-            for m in os.listdir(p):
-                q = p + '/' + m
-                if m == 'rime':
-                    for k in os.listdir(q):
-                        if k != '发布包': (shutil.rmtree if os.path.isdir(q + '/' + k) else os.remove)(q + '/' + k)
-                else: (shutil.rmtree if os.path.isdir(q) else os.remove)(q)
-        else: (shutil.rmtree if os.path.isdir(p) else os.remove)(p)
+# 只清理上一次由本脚本写出的文件（记录在 发布清单.json 的 files 里）；目录里其他任何文件一律不动。
+# 教训（2026-09-16）：早先版本是整目录清空重建，把你手写的 实战用户反馈.txt 删掉了，且 os.remove 不进回收站。
+prev = set()
+if os.path.exists(R + '/发布清单.json'):
+    try: prev = set(json.load(open(R + '/发布清单.json', encoding='utf-8'))['files'].keys())
+    except Exception: prev = set()
+for rel in prev - set(plan):
+    q = R + '/' + rel
+    if os.path.isfile(q): os.remove(q); print('移除上次生成、本次不再有的文件：', rel)
 manifest = {}
 for rel, src in sorted(plan.items()):
     dst = R + '/' + rel; os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copy2(src, dst)
