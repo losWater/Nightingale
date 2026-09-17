@@ -42,12 +42,13 @@ add_tree('02_输入法挂接/rime/Rime_轻量版/', X + '/Rime_轻量版')
 add_tree('04_查询与练习/离线工具包/', O)   # 官网工具页从这里取
 plan['夜莺2.0升级日志.md'] = H + '/夜莺2.0升级日志.md'
 big = {   # 大包：本地 发布包/ + GitHub Release 附件
- f'Nightingale-2.0-tables-{DATE}.zip': X + '/夜莺2.0_字词表与输入法_含快符.zip',
- f'Nightingale-Rime-2.0-light-{DATE}.zip': X + '/夜莺2.0_Rime轻量版_含快符.zip',
- f'Nightingale-Rime-2.0-main-{DATE}.zip': X + '/夜莺2.0_Rime主力版_含快符.zip',
- f'Nightingale-Rime-2.0-mobile-{DATE}.zip': X + '/夜莺2.0_Rime手机版_万象模型_含快符.zip',
- f'Nightingale-Toolbox-2.0-{DATE}.html': U + '/夜莺啾啾工具箱.html',
- f'Nightingale-Toolbox-offline-2.0-{DATE}.zip': U + '/夜莺2.0离线工具包.zip',
+ # Release 上的英文文件名: (来源, 本地中文文件名, Release 上的中文显示名)
+ f'Nightingale-Rime-2.0-main-{DATE}.zip': (W + '/127_魔虎基座试验/夜莺2.0_Rime主力版.zip', '夜莺2.0_Rime主力版_整句含模型_电脑用.zip', '夜莺主力 · Rime 主力版（整句，含魔虎 V5 模型，电脑用）'),
+ f'Nightingale-Rime-2.0-light-{DATE}.zip': (X + '/夜莺2.0_Rime轻量版_含快符.zip', '夜莺2.0_Rime轻量版_无模型_小体积.zip', 'Rime 轻量版（Rime 原生整句，无模型，体积小）'),
+ f'Nightingale-Rime-2.0-mobile-{DATE}.zip': (X + '/夜莺2.0_Rime手机版_万象模型_含快符.zip', '夜莺2.0_Rime手机版_同文与仓_万象模型.zip', 'Rime 手机版（同文／仓输入法，万象语法模型）'),
+ f'Nightingale-2.0-tables-{DATE}.zip': (X + '/夜莺2.0_字词表与输入法_含快符.zip', '夜莺2.0_码表与挂接包_手心搜狗冰凌Bime.zip', '码表与挂接包（手心、搜狗、冰凌、Bime、纯码表）'),
+ f'Nightingale-Toolbox-2.0-{DATE}.html': (U + '/夜莺啾啾工具箱.html', '夜莺啾啾工具箱_拆分查询与字根练习.html', '啾啾工具箱（单个网页：拆分查询、部件反查、字根练习）'),
+ f'Nightingale-Toolbox-offline-2.0-{DATE}.zip': (U + '/夜莺2.0离线工具包.zip', '夜莺2.0_离线工具包.zip', '离线工具包（工具箱各页面的离线版）'),
 }
 # 只清理上一次由本脚本写出的文件（记录在 发布清单.json 的 files 里）；目录里其他任何文件一律不动。
 # 教训（2026-09-16）：早先版本是整目录清空重建，把你手写的 实战用户反馈.txt 删掉了，且 os.remove 不进回收站。
@@ -64,16 +65,24 @@ for rel, src in sorted(plan.items()):
     manifest[rel] = {'source': os.path.relpath(src, 'E:/夜莺2.0').replace('\\', '/'), 'sha256': sha(dst), 'bytes': os.path.getsize(dst)}
 pk = R + '/02_输入法挂接/rime/发布包'; os.makedirs(pk, exist_ok=True)
 assets = {}
-for name, src in big.items():
-    dst = pk + '/' + name; shutil.copy2(src, dst); assets[name] = {'sha256': sha(dst), 'bytes': os.path.getsize(dst)}
-open(pk + f'/SHA256SUMS-{DATE}.txt', 'w', encoding='utf-8', newline='\n').write(''.join('%s  %s\n' % (v['sha256'], k) for k, v in assets.items()))
+# 只清理上次由本脚本放进 发布包/ 的文件（记在 发布清单.json 的 release_assets 里，含旧的英文名文件）
+try: old_assets = json.load(open(R + '/发布清单.json', encoding='utf-8'))['release_assets']
+except Exception: old_assets = {}
+for k, v in old_assets.items():
+    for fn in (k, v.get('本地文件名', '')):
+        if fn and os.path.isfile(pk + '/' + fn): os.remove(pk + '/' + fn)
+for fn in os.listdir(pk):
+    if fn.startswith('SHA256SUMS-') and fn.endswith('.txt'): os.remove(pk + '/' + fn)      # 本脚本旧版生成的校验文件
+for name, (src, cn, label) in big.items():
+    dst = pk + '/' + cn; shutil.copy2(src, dst); assets[name] = {'本地文件名': cn, '显示名': label, 'sha256': sha(dst), 'bytes': os.path.getsize(dst)}
+open(pk + '/校验值SHA256.txt', 'w', encoding='utf-8', newline='\n').write(''.join('%s  %s  （Release 上叫 %s）\n' % (v['sha256'], v['本地文件名'], k) for k, v in assets.items()))
 open(R + '/02_输入法挂接/rime/README.md', 'w', encoding='utf-8').write(f"""# Rime 挂接（夜莺2.0）
 
 - `Rime_轻量版/`：轻量版全部文件（Rime 原生整句），解压即用，详见其中 使用说明.md。
-- 主力版（含 V5 整句模型与 Windows 原生引擎，约 380MB）不入 git：见 GitHub Release v2.0 附件 `Nightingale-Rime-2.0-main-{DATE}.zip`；本地留存在 `发布包/`（已 gitignore）。
+- 主力版「夜莺主力」（夜莺码表与词库 + 魔虎 rime-mohu 的功能层、原生整句引擎与 V5 模型，GPL v3，约 480MB）不入 git：见 GitHub Release v2.0 附件 `Nightingale-Rime-2.0-main-{DATE}.zip`；本地留存在 `发布包/`（已 gitignore，中文文件名）。
 - 手机版（轻量版 + 万象 LTS 语法模型 `wanxiang-lts-zh-hans.gram`，约 360MB，供同文/仓输入法等手机 Rime）：Release 附件 `Nightingale-Rime-2.0-mobile-{DATE}.zip`；魔虎 V5 引擎只有 Windows 版，手机用不了。
-- 两版共有：Ctrl+数字 钉选、二字自动造词、Ctrl+Enter 主动造词、反引号双拼/波浪号全拼反查、F2 拆分提示、40 条快符。
-- 校验：`发布包/SHA256SUMS-{DATE}.txt`。
+- 轻量版与手机版：Ctrl+数字 钉选、二字自动造词、Ctrl+Enter 主动造词；主力版用魔虎自带的置顶与加词。三版共有：反引号双拼/波浪号全拼反查、F2、40 条快符。
+- 校验：`发布包/校验值SHA256.txt`。
 """)
 open(R + '/README.md', 'w', encoding='utf-8').write(f"""# 夜莺 2.0 发布目录（{DATE}）
 

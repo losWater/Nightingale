@@ -300,7 +300,7 @@
   },
   "04_查询与练习/夜莺2.0离线工具包.zip": {
    "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包.zip",
-   "sha256": "9edde0440464f4803e63d537f63a20befbf740181d7dc0adcc6df707438a303a",
+   "sha256": "14c2f6dcab21be412c03e77fe77786f5853fe88f8591b272786b7ccac48b7fb2",
    "bytes": 1743538
   },
   "04_查询与练习/夜莺啾啾工具箱.html": {
@@ -370,8 +370,8 @@
   },
   "05_规则与裁决/当前任务树.md": {
    "source": "work/夜莺2.0/当前任务树.md",
-   "sha256": "9af776799d60d0dd57af378bb24a77b81cfa04180a2e9da826c1c0dad736bd24",
-   "bytes": 42649
+   "sha256": "51c9a0c895a94d5a2fe8076d01d63bbf3ca32a8442903ff6f7cb2eec04abb230",
+   "bytes": 44313
   },
   "05_规则与裁决/码表概念与规则.md": {
    "source": "work/夜莺2.0/码表概念与规则.md",
@@ -385,33 +385,45 @@
   },
   "夜莺2.0升级日志.md": {
    "source": "work/夜莺2.0/117_发布v2.0/夜莺2.0升级日志.md",
-   "sha256": "c3940a98c2fc1cfb8187b6460c336ee20e0f9a29e3fcb4e62f5cf79410a15a6f",
-   "bytes": 5016
+   "sha256": "83544aa4539607a6a21783cca240b260991c98028c54d547bc5bfe537a436476",
+   "bytes": 5829
   }
  },
  "release_assets": {
-  "Nightingale-2.0-tables-20260916.zip": {
-   "sha256": "fb0c200a5d202f9820c15c64c25755f07adf58e24bd92821f34c2e2ef5db0560",
-   "bytes": 10183469
+  "Nightingale-Rime-2.0-main-20260916.zip": {
+   "本地文件名": "夜莺2.0_Rime主力版_整句含模型_电脑用.zip",
+   "显示名": "夜莺主力 · Rime 主力版（整句，含魔虎 V5 模型，电脑用）",
+   "sha256": "bb7541e4d24e1794beb2e66e7cb26d4e544ebcb2eec7f58d58bf061a1c9dc88f",
+   "bytes": 473856889
   },
   "Nightingale-Rime-2.0-light-20260916.zip": {
-   "sha256": "becf1e639c29a56638fe70100bd0502eb3deea79fe05c3503e2a373b27a4da40",
+   "本地文件名": "夜莺2.0_Rime轻量版_无模型_小体积.zip",
+   "显示名": "Rime 轻量版（Rime 原生整句，无模型，体积小）",
+   "sha256": "4dcb2fb0911e24447c9c2d570e751bceb06c589c0956576c859ddf00d33ce3b6",
    "bytes": 5981266
   },
-  "Nightingale-Rime-2.0-main-20260916.zip": {
-   "sha256": "164e0fe34faa4f18c5d9c937cd8df54fa5861b1040d479116925389447314b0c",
-   "bytes": 403113959
-  },
   "Nightingale-Rime-2.0-mobile-20260916.zip": {
-   "sha256": "14ce00a7bda53e136ab8b907bafbc4348ace6eba0abd6b7572d42884a87c7cf0",
-   "bytes": 378006927
+   "本地文件名": "夜莺2.0_Rime手机版_同文与仓_万象模型.zip",
+   "显示名": "Rime 手机版（同文／仓输入法，万象语法模型）",
+   "sha256": "56900e89e3fe22f286faed7ed8335e39f4ba16f637fc88e34d2074e0275a6149",
+   "bytes": 378006929
+  },
+  "Nightingale-2.0-tables-20260916.zip": {
+   "本地文件名": "夜莺2.0_码表与挂接包_手心搜狗冰凌Bime.zip",
+   "显示名": "码表与挂接包（手心、搜狗、冰凌、Bime、纯码表）",
+   "sha256": "8f94ac6003178648c1648cb463acdb497dc72504b9534f23d05ae64738dedc33",
+   "bytes": 10183469
   },
   "Nightingale-Toolbox-2.0-20260916.html": {
+   "本地文件名": "夜莺啾啾工具箱_拆分查询与字根练习.html",
+   "显示名": "啾啾工具箱（单个网页：拆分查询、部件反查、字根练习）",
    "sha256": "1cc7d93c35e2377d0484e230c73ccb45f947f8eaa68c4a9143ada97f06e60286",
    "bytes": 17689147
   },
   "Nightingale-Toolbox-offline-2.0-20260916.zip": {
-   "sha256": "9edde0440464f4803e63d537f63a20befbf740181d7dc0adcc6df707438a303a",
+   "本地文件名": "夜莺2.0_离线工具包.zip",
+   "显示名": "离线工具包（工具箱各页面的离线版）",
+   "sha256": "14c2f6dcab21be412c03e77fe77786f5853fe88f8591b272786b7ccac48b7fb2",
    "bytes": 1743538
   }
  },
