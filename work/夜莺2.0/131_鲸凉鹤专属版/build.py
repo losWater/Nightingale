@@ -24,10 +24,17 @@ def rd(p):
 core = collections.defaultdict(dict); core_n = 0
 for c, i, t, _ in rd(CORE):
     assert i not in core[c], ('核心单字表序号重复', c, i); core[c][i] = t; core_n += 1
-# 2 他的词：码 → [(原序号, 词)]，按他的原序号排；单字条目丢弃（由夜莺单字替代）
-his = collections.defaultdict(list); dropped = []; his_n = 0
+# 2 他的条目：码 → [(原序号, 内容)]，按他的原序号排。丢弃规则一再收窄（2026-09-17 你与作者逐条指出）：
+#   ① 不能按字符长度一刀切——①②③ 占位符、α、の、！、×、emoji 都是单字符，是他自己设的特殊规则。
+#   ② 他的 o 是特设前缀键：of 繁体字、ox 部件检索、oy 圈号与宏、ot 希腊字母、od 生僻字…… 这些区里的字
+#      即使夜莺也收了，也不能替换（作者原话："保留 of 开头的就行"）。夜莺核心单字表根本不用 of/ob 等码位。
+# 所以只丢弃：单个汉字 + 夜莺单字表里有这个字 + 该码位不在他的 o 特设区。
+core_chars = {t for d in core.values() for t in d.values()}
+special = lambda c: c.startswith('o') and c not in core      # 鲸凉鹤的 o 特设前缀区里、夜莺没用到的码位
+his = collections.defaultdict(list); dropped = []; his_n = 0; kept_special = 0
 for c, i, t, lineno in rd(SRC):
-    if len(t) == 1: dropped.append({'码': c, '序': i, '字': t, '行': lineno}); continue
+    if len(t) == 1 and t in core_chars and not special(c): dropped.append({'码': c, '序': i, '字': t, '行': lineno}); continue
+    if len(t) == 1 and t in core_chars: kept_special += 1
     his[c].append((i, t)); his_n += 1
 for c in his: his[c].sort()
 # 3 合并：单字占住自己的序号，他的词按原顺序填剩下的位置
@@ -50,6 +57,7 @@ for c, ws in his.items():
     got = [merged[c][i] for i in sorted(merged[c]) if len(merged[c][i]) > 1 or (c in core and i not in core[c])]
     got = [merged[c][i] for i in sorted(merged[c]) if not (c in core and i in core[c])]
     assert got == [w for _, w in ws], ('词序变了', c, got[:5], [w for _, w in ws][:5])
+keep_single = sum(1 for c in his for _, t in his[c] if len(t) == 1)   # 保留下来的单字符条目（占位符、符号、夜莺没收的字）
 lines = ['%s=%d,%s' % (c, i, t) for c in sorted(merged) for i, t in sorted(merged[c].items())]
 open(OUT + '/夜莺2.0_鲸凉鹤专属_手心挂接.txt', 'wb').write(('\r\n'.join(lines) + '\r\n').encode('utf-8'))
 flat = [(t, c) for c in sorted(merged) for _, t in sorted(merged[c].items())]      # 顺序 = 手心格式的码位与候选序，即本表的定稿次序
@@ -70,7 +78,9 @@ readme = f"""# 夜莺 2.0 · 鲸凉鹤专属版（{datetime.date.today().strftim
 - **单字全部换成夜莺 2.0 的**，而且落在夜莺核心单字表指定的候选位上，和夜莺正式版逐条一致（{core_n} 条，{len(core)} 个码位）。
   夜莺的"出简让全""字词让位"都体现在这些序号里：让位的字从第 2 位起，空出来的第 1 位就是留给你的词的。
 - **你的词库一个字节都没动**：编码、词、先后顺序全部照抄（{his_n} 条，{len(his)} 个码位）。飞键没还原，无理码没改，特设短语和长码都在，简词也都在。
-- 你原来词库里的单字条目（{len(dropped)} 条）被夜莺单字替换掉了，清单见 `被替换掉的原单字条目.json`。
+- 你原来词库里的单字条目，只有**夜莺单字表里也有的那个字**才被替换（{len(dropped)} 条，清单见 `被替换掉的原单字条目.json`）。
+  你自己设的占位符和符号（①②③、α、の、！、×、emoji 等）、夜莺没收的生僻字，以及 **o 开头的全部特设区**（of 繁体字、ox 部件检索、oy 圈号与宏、ot 希腊字母、od 生僻字……）**一律原样保留**。
+  单字符条目共保留 {keep_single} 条，其中 {kept_special} 条是"夜莺也收了这个字、但因为在你的 o 特设区所以不动"的。
 
 ## 同一个码上字和词怎么排
 
@@ -92,7 +102,7 @@ readme = f"""# 夜莺 2.0 · 鲸凉鹤专属版（{datetime.date.today().strftim
 - 生成：`work/夜莺2.0/131_鲸凉鹤专属版/build.py`
 """
 open(OUT + '/README.md', 'w', encoding='utf-8', newline='\n').write(readme)
-json.dump({'时间': datetime.datetime.now().isoformat(timespec='seconds'), '夜莺单字条目': core_n, '他的词条目': his_n, '被替换的原单字条目': len(dropped),
+json.dump({'时间': datetime.datetime.now().isoformat(timespec='seconds'), '夜莺单字条目': core_n, '他的词条目': his_n, '被替换的原单字条目': len(dropped), '保留的单字符条目': keep_single, 'o特设区豁免': kept_special,
            '合并后条目': len(lines), '码位': len(merged), '字词同码码位': report['字词同码'], '留空序号': report['留空位'],
            '来源': {'词库': SRC, '词库sha256': sha(SRC), '核心单字表': CORE, '核心单字表sha256': sha(CORE)}}, open(H + '/生成报告.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-print('夜莺单字 %d 条 + 他的词 %d 条 = %d 条，%d 个码位；替换掉他的原单字 %d 条；字词同码 %d 个码位；留空序号 %d 个' % (core_n, his_n, len(lines), len(merged), len(dropped), report['字词同码'], report['留空位']))
+print('夜莺单字 %d 条 + 他的条目 %d 条 = %d 条，%d 个码位；替换掉他的原单字 %d 条；保留单字符条目 %d 条（其中 o 特设区豁免 %d）；字词同码 %d 个码位；留空序号 %d 个' % (core_n, his_n, len(lines), len(merged), len(dropped), keep_single, kept_special, report['字词同码'], report['留空位']))

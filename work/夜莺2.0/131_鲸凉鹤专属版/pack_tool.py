@@ -7,9 +7,9 @@ H = os.path.dirname(os.path.abspath(__file__)); W = os.path.dirname(H)
 EXE = H + '/工具/dist/夜莺单字合并工具.exe'
 CORE = W + '/106_全平台导出/夜莺2.0_字词表与输入法/手心/模块化挂接/01_核心单字.txt'
 SRC = 'E:/夜莺2.0/releases/v0.9.1/99_参考资料/参考/鲸凉鹤1.1手心挂接.txt'
-assert os.path.exists(EXE), 'exe 不在。先构建：pip install pyinstaller 后，在 131_鲸凉鹤专属版/工具 目录跑
-  python -m PyInstaller --onefile --console --name "夜莺单字合并工具" --distpath dist --workpath build --specpath build --clean 合并.py
-（仓库不收 exe，只收源码 工具/合并.py）'
+assert os.path.exists(EXE), ('exe 不在（仓库不收 exe，只收源码 工具/合并.py）。先构建：pip install pyinstaller，'
+                            '然后在 131_鲸凉鹤专属版/工具 目录跑：python -m PyInstaller --onefile --console '
+                            '--name "夜莺单字合并工具" --distpath dist --workpath build --specpath build --clean 合并.py')
 STAGE = H + '/工具包'; os.makedirs(STAGE, exist_ok=True)
 for f in os.listdir(STAGE):
     if os.path.isfile(STAGE + '/' + f): os.remove(f'{STAGE}/{f}')      # 只清本脚本上次放的文件

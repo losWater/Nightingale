@@ -129,13 +129,22 @@ def main():
         for d in dup[:5]:
             print('   ' + d)
         return 1
-    # 词库：码 → [(原序号, 词)]；单字条目丢弃（由夜莺单字替代）
+    # 词库：码 → [(原序号, 内容)]。只把"你用普通编码打的那个字"换成夜莺的同一个字，其余一律保留：
+    #   · 占位符与符号（①②③、α、の、！、× 等）是你自己的设置，不按字符长度一刀切；
+    #   · o 开头的特设区（of 繁体字、ox 部件检索、oy 圈号与宏、ot 希腊字母、od 生僻字……）里的字一律不动，
+    #     只要夜莺的单字表没用到那个码位。夜莺根本不用 of、ob 这些码位。
+    core_chars = set()
+    for d in core.values():
+        core_chars.update(d.values())
+    special = lambda c: c.startswith('o') and c not in core
     his = collections.defaultdict(list)
-    dropped = 0
+    dropped = kept_special = 0
     for c, i, t in words['行']:
-        if len(t) == 1:
-            dropped += 1
-            continue
+        if len(t) == 1 and t in core_chars:
+            if not special(c):
+                dropped += 1
+                continue
+            kept_special += 1
         his[c].append((i, t))
     for c in his:
         his[c].sort()
@@ -161,6 +170,7 @@ def main():
     for c, ws in his.items():
         got = [merged[c][i] for i in sorted(merged[c]) if not (c in core and i in core[c])]
         assert got == [w for _, w in ws], '词的先后变了：%s' % c
+    keep_single = sum(1 for c in his for _, t in his[c] if len(t) == 1)
     flat = [(t, c) for c in sorted(merged) for _, t in sorted(merged[c].items())]
     w = lambda name, body, bom: io.open(os.path.join(base, name), 'wb').write(body.encode('utf-8-sig' if bom else 'utf-8'))
     w(OUT_HAND, '\r\n'.join('%s=%d,%s' % (c, i, t) for c in sorted(merged) for i, t in sorted(merged[c].items())) + '\r\n', False)
@@ -170,7 +180,7 @@ def main():
            '时间：%s   工具版本：v%s' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), VER),
            '',
            '单字表：%s，%d 条' % (chars['名'], len(chars['行'])),
-           '词  库：%s，%d 条（其中 %d 条单字条目已由夜莺单字替代）' % (words['名'], len(words['行']), dropped),
+           '词  库：%s，%d 条（其中 %d 条单字已换成夜莺的同一个字；占位符、符号、夜莺没收的生僻字，以及 o 开头特设区里的 %d 条字，共 %d 条原样保留）' % (words['名'], len(words['行']), dropped, kept_special, keep_single),
            '',
            '合并后：%d 条，%d 个码位' % (len(flat), len(merged)),
            '字词同码的码位：%d 个' % same_code,
@@ -178,6 +188,7 @@ def main():
            '',
            '规则：夜莺单字落在核心单字表指定的序号上，位置一个都不变；你的词按原顺序填剩下的位置。',
            '      你的编码、词、先后顺序一个字节都没改，飞键、无理码、特设短语、简词、长码全部保留。',
+           '      占位符与符号（①②③、α、の、！ 等）照原样留着；o 开头的特设区（of 繁体、ox 部件、oy 圈号与宏、ot 希腊字母、od 生僻字……）整个不动。',
            '',
            '产物：',
            '  %s   手心格式（编码=序号,内容），UTF-8 无 BOM，CRLF' % OUT_HAND,
