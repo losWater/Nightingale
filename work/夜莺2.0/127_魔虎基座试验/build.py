@@ -122,7 +122,15 @@ rep('    - reverse_lookup_translator@reverse_tiger_backtick\n', '    - lua_trans
 rep('    reverse_tiger_backtick: "^`[a-z]+$"\n', '    yeying20_lookup: "^([`~][a-z]*|~~[a-z]*)$"   # [夜莺]\n')
 rep('    - lua_processor@*option_sync\n    - key_binder\n', '    - lua_processor@*option_sync\n    - lua_processor@*yeying20_lookup_key   # [夜莺] F2\n    - key_binder\n')
 for fn in ('yeying20_lookup.lua', 'yeying20_lookup_key.lua', 'yeying20_lookup_data.lua'): put('lua/' + fn, open(SRC + '/lua/' + fn, 'rb').read())
-rep('    基于小鹤双拼和虎码12字根做辅码的魔虎整句输入方案。\n', '    夜莺 2.0（小鹤双拼 + 首根键 + 末根键）码表与词库，运行在魔虎整句方案的功能层与 V5 模型之上。\n')
+rep('    基于小鹤双拼和虎码12字根做辅码的魔虎整句输入方案。\n', '    【声明】本方案是魔虎（rime-mohu，作者 晴，https://github.com/fcxxxz/rime-mohu ，GPL v3；魔虎基于 ksqsf 的魔然）的改编版。\n'
+    '    整句引擎、V5 模型、全部功能脚本与配置均为魔虎原作；夜莺只把码表、词库、辅码与拆分数据换成了夜莺 2.0 的，并做了三处小改动（见 使用说明.md）。\n    文件名保留 mohu_ 前缀即为此意。请勿与魔虎原版装在同一个用户目录（同名文件会互相覆盖）。\n')
+DECL = ('【声明】本 Rime 包的主体来自魔虎（rime-mohu）\n\n'
+        '- 魔虎：作者 晴，https://github.com/fcxxxz/rime-mohu ，GPL v3。魔虎又基于 ksqsf 的魔然（rime-moran）。\n'
+        '- 本包里的整句引擎（libtigerengine）、V5 整句模型、全部 lua 功能脚本、方案配置、皮肤编辑器、同步助手，都是魔虎的原作。包里的文件名保留 mohu_ 前缀，就是为了标明出处，也方便跟随魔虎更新。\n'
+        '- 夜莺做的事只有：把码表、词库、引擎词表、辅码、字频、拆分这些数据换成夜莺 2.0 的；给主翻译器加了一个"固定码表按码表原序输出"的选项；把反引号反查换成夜莺反查；改了方案显示名和两个默认开关。\n'
+        '- 想用原汁原味的魔虎（虎码辅码），请直接去魔虎仓库下载。喜欢这个包的功能，请去给魔虎点星。\n'
+        '- 本包整体按 GPL v3 分发，许可全文见 LICENSE。请勿与魔虎原版装在同一个 Rime 用户目录，同名文件会互相覆盖。\n')
+put('【声明】本包主体来自魔虎rime-mohu.txt', DECL)
 rep('    - 魔虎方案制作：晴\n', '    - 魔虎方案制作：晴\n    - 夜莺 2.0 码表与词库：losWater\n')
 rep('    states: [ 动词, 固词 ] # 「固词」表示「固顶词」\n', '    states: [ 动词, 固词 ] # 「固词」表示「固顶词」\n    reset: 1   # [夜莺] 默认固词：四码按夜莺码表出字词\n')
 rep('    states: [ 常用字, 全字集 ]\n', '    states: [ 常用字, 全字集 ]\n    reset: 1   # [夜莺] 默认全字集：扩展字本来就排在各码位末尾，不挡路；Ctrl+x 可切回常用字\n')
@@ -130,11 +138,21 @@ rep('  user_dict: mohu_flypy_tiger_prefix2\n', '  user_dict: yeying20_mohu\n')
 rep('  inject_prioritize: "any"', '  fixed_table_order: true     # [夜莺] 固定码表按码表原序输出\n  inject_prioritize: "any"')
 rep('  four_code_char_yield_exempt: 暮\n', '  four_code_char_yield_exempt: ""\n')
 put(p, s)
-put('default.custom.yaml', 'patch:\n  schema_list:\n    - schema: mohu_flypy\n  menu/page_size: 5\n')
+# 7b 魔虎总配置里标着 ZRM-SPECIFIC（自然码专用）的残留：三条飞键 qx→qo、xq→xo、wz→wk，以及屏蔽 pp 音节（小鹤里 pp=pie 是正常音节）。夜莺不用，清掉。
+p = 'mohu.yaml'; s = open(UP + '/' + p, encoding='utf-8').read()
+rep('    __append:\n      __patch:\n        - mohu_defs:/fly/qx_qo  # ZRM-SPECIFIC\n        - mohu_defs:/fly/xq_xo  # ZRM-SPECIFIC\n        - mohu_defs:/fly/wz_wk  # ZRM-SPECIFIC\n',
+    '    # [夜莺] 已去掉魔虎的三条自然码飞键（qx→qo、xq→xo、wz→wk）。要加模糊音，把下面的注释行放进 __append/__patch 列表：\n    # __append:\n    #   __patch:\n')
+rep('      - erase/^pp$/                     # ZRM-SPECIFIC\n', '')
+put(p, s)
+put('default.custom.yaml','patch:\n  schema_list:\n    - schema: mohu_flypy\n  menu/page_size: 5\n')
 if os.path.exists(OUT + '/说明.md'): os.remove(OUT + '/说明.md')      # 试验版时期本脚本生成的旧说明
 put('使用说明.md', '''# 夜莺 2.0 · Rime 主力版
 
-码表、词库、拆分是夜莺 2.0 的；整句引擎、V5 模型和全部功能来自魔虎（rime-mohu）。方案选单里叫「夜莺主力」。
+> **声明：本包的主体是魔虎（rime-mohu，作者 晴，https://github.com/fcxxxz/rime-mohu ，GPL v3；魔虎基于 ksqsf 的魔然）。**
+> 整句引擎、V5 模型、全部功能脚本与配置都是魔虎的原作，文件名保留 `mohu_` 前缀以标明出处。夜莺只换了数据（码表、词库、辅码、拆分）并做了三处小改动，详见文末。
+> 喜欢这些功能，请去给魔虎点星；想用虎码辅码的原版，请直接下载魔虎。请勿与魔虎原版装在同一个用户目录。
+
+方案选单里叫「夜莺主力」。
 
 ## 安装（Windows 小狼毫）
 
