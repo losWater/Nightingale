@@ -26,9 +26,11 @@ targets=[(O,'夜莺2.0_字词表与输入法_含快符.zip'),(P/'Rime_轻量版'
 manifest=[]
 for folder,name in targets:
  target=P/name
+ # 可复现：条目排序 + 固定时间戳与属性，内容没变则 zip 逐字节相同、SHA256 不变（2026-09-17 修；原先带文件 mtime，每次重跑校验值都变）
  with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
-  for f in sorted(folder.rglob('*')):
-   if f.is_file():z.write(f,f.relative_to(folder).as_posix())
+  for f in sorted(x for x in folder.rglob('*') if x.is_file()):
+   zi=zipfile.ZipInfo(f.relative_to(folder).as_posix(),(2026,1,1,0,0,0));zi.external_attr=0o644<<16;zi.create_system=0;zi.compress_type=zipfile.ZIP_DEFLATED
+   z.writestr(zi,f.read_bytes())
  with zipfile.ZipFile(target) as z:
   assert z.testzip() is None
   assert not any('.userdb' in x or x.startswith('build/') for x in z.namelist())
