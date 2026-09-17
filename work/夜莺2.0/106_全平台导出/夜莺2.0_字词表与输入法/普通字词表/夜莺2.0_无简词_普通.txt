@@ -5116,8 +5116,8 @@ B佬	bilc
 丙烷	bkwj
 槟	bkwl
 碧空万里	bkwl
-栟	bkwm
 饼	bkwm
+栟	bkwm
 本科文凭	bkwp
 棅	bkwp
 栤	bkwp
@@ -51062,9 +51062,9 @@ https://www.jsxiaoshi.com/	jisu
 精神污染	juwr
 枸	juwt
 椐	juwt
-桔	juwt
 橘	juwt
 技术问题	juwt
+桔	juwt
 梮	juwt
 剧务	juwu
 巨物	juwu
@@ -57584,8 +57584,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 叻	let
 乐町	letk
 乐天	letm
-嘞	letp
 叻	letp
+嘞	letp
 乐土	letu
 笼而统之	letv
 乐透	letz
@@ -77690,8 +77690,8 @@ py交易	pyjy
 奇谋	qimz
 芪	qimz
 耆	qin
-稽	qinb
 耆	qinb
+稽	qinb
 气恼	qinc
 气冲牛斗	qind
 七尺男儿	qine

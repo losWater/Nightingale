@@ -1,18 +1,18 @@
 {
- "时间": "2026-09-17T15:58:33",
+ "时间": "2026-09-17T15:59:19",
  "源": "E:/夜莺2.0/work/夜莺2.0",
  "规则": "116_仓库同步/rules.py",
  "入库": {
-  "文件数": 3970,
-  "字节": 1977417574
+  "文件数": 3746,
+  "字节": 1902796114
  },
  "排除": {
-  "条目数": 2015,
-  "字节": 102117052338,
+  "条目数": 2007,
+  "字节": 102191675930,
   "按原因": {
    "超过 20MB": {
-    "条目": 29,
-    "MB": 2312.5
+    "条目": 21,
+    "MB": 1694.1
    },
    "目录 目录名含 备份": {
     "条目": 89,
@@ -58,9 +58,13 @@
     "条目": 1,
     "MB": 92.0
    },
-   "文件名 mohu-sentence-ngram.*\\.bin$": {
-    "条目": 2,
-    "MB": 371.6
+   "目录 upstream": {
+    "条目": 1,
+    "MB": 959.0
+   },
+   "目录 夜莺魔虎试验版": {
+    "条目": 1,
+    "MB": 102.2
    },
    "目录 目录名含 ^output-": {
     "条目": 217,
@@ -432,54 +436,14 @@
    "原因": "文件名 \\.(log|pyc|tmp)$"
   },
   {
-   "路径": "127_魔虎基座试验/upstream/model/__MACOSX/._mohu-sentence-ngram-v5.bin",
-   "MB": 0.0,
-   "原因": "文件名 mohu-sentence-ngram.*\\.bin$"
+   "路径": "127_魔虎基座试验/upstream/",
+   "MB": 959.0,
+   "原因": "目录 upstream"
   },
   {
-   "路径": "127_魔虎基座试验/upstream/model/mohu-sentence-ngram-v5.bin",
-   "MB": 371.6,
-   "原因": "文件名 mohu-sentence-ngram.*\\.bin$"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/mohu-sentence-ngram-v5.bin.zip",
-   "MB": 206.5,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/pkg/mohu/runtime/libonnxruntime.1.dylib",
-   "MB": 31.8,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/pkg/mohu_flypy.base.dict.yaml",
-   "MB": 35.4,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/pkg/mohu_flypy.tencent.dict.yaml",
-   "MB": 24.1,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/pkg/mohu_flypy.wanxiang.dict.yaml",
-   "MB": 49.8,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/pkg/mohu_semantic/mohu_semantic.onnx",
-   "MB": 71.5,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/upstream/rime-mohu-flypy-latest.zip",
-   "MB": 127.9,
-   "原因": "超过 20MB"
-  },
-  {
-   "路径": "127_魔虎基座试验/夜莺魔虎试验版/mohu_semantic/mohu_semantic.onnx",
-   "MB": 71.5,
-   "原因": "超过 20MB"
+   "路径": "127_魔虎基座试验/夜莺魔虎试验版/",
+   "MB": 102.2,
+   "原因": "目录 夜莺魔虎试验版"
   },
   {
    "路径": "128_实战反馈第二批/实装前备份/",

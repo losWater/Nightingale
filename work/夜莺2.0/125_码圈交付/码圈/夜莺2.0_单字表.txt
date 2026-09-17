@@ -779,8 +779,8 @@
 鞆	bkrx
 饼	bkw
 槟	bkwl
-栟	bkwm
 饼	bkwm
+栟	bkwm
 棅	bkwp
 栤	bkwp
 柄	bkwx
@@ -7690,8 +7690,8 @@
 榉	juwr
 枸	juwt
 椐	juwt
-桔	juwt
 橘	juwt
+桔	juwt
 梮	juwt
 椈	juwz
 聚	jux
@@ -8708,8 +8708,8 @@
 勒	ler
 勒	lerp
 叻	let
-嘞	letp
 叻	letp
+嘞	letp
 忇	levp
 饹	lew
 饹	lewq
@@ -12315,8 +12315,8 @@
 葺	qimx
 芪	qimz
 耆	qin
-稽	qinb
 耆	qinb
+稽	qinb
 掑	qiol
 捿	qios
 摖	qiot

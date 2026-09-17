@@ -11,7 +11,8 @@ TOL={'jv':'剧','jvb':'居','jvn':'巨','jvo':'狙','xv':'绪',
 SPEC={'eh':'鹤','by':'莺'}                                            # 57盘点特殊简码
 IRR={'lqq':'六'}                                            # 尚存无理码
 KEEP={'bje':'般','gjb':'敢','hop':'火','isa':'冲','qtq':'却','zid':'自'}  # 用户裁定保留兼占
-YIELD_EXC = {'pubp': '暴', 'yeuy': '邪'}  # 第二十三批补读音：用户裁定新读音全码排最后（暴让曝、邪让铘）
+BUYIN = json.load(open(B+'/83_单字表重放/补音表.json',encoding='utf-8'))['条目']   # 补音字登记表：补音字排在普通字后，不参与出简让全·字对字（2026-09-17，取代逐码位手写豁免）
+YIELD_EXC = {}  # 第二十三批补读音：用户裁定新读音全码排最后（暴让曝、邪让铘）
 def load(drop_tol):
     seq=[];codes=collections.defaultdict(set);order=collections.defaultdict(list)
     for line in open(B+'/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt',encoding='utf-8-sig'):
@@ -48,10 +49,12 @@ def run(tag,drop_tol):
     bad=[]
     for F,c in order.items():
         if len(F)<4: continue
+        c=[w for w in c if w not in BUYIN.get(F,[])]
         free=[i for i,w in enumerate(c) if not y(w,F)]
         for i,w in enumerate(c):
             if y(w,F) and any(j>i for j in free) and YIELD_EXC.get(F)!=c[-1]: bad.append('%s[%s]'%(F,'、'.join(c))); break
     chk('出简让全·字对字',bad)
+    chk('补音字排在普通字后',[F for F,cs in BUYIN.items() if F in order and any(a in cs and b not in cs for a,b in zip(order[F],order[F][1:]))])
     pref=collections.defaultdict(set)
     for w,fs in full.items():
         for f in fs: pref[f[:3]].add(w)

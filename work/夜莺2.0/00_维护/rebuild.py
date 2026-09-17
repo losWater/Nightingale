@@ -32,6 +32,7 @@ for fn in sorted(os.listdir(W + '/83_单字表重放/裁定')):
             if o['op'] == '加' and len(o['码']) == 4 and o['字'] not in reg.get(o['码'], []): miss.append(o['字'] + o['码'])
 assert not miss, '补音批次里有未登记到 补音表.json 的：%s' % miss
 step('83 重放', W + '/83_单字表重放/replay.py', [r'结果：\s*通过'])
+step('补音字次序', H + '/order_buyin.py')
 step('78 核验', W + '/78_纯单字表核验/audit.py', [r'完整表[^\n]*未通过 0 项', r'去容错码版[^\n]*未通过 0 项'], show=3)
 step('109 普通词', W + '/109_普通词共识筛选/build.py', show=1)
 step('97 字词合并', W + '/97_字词合并/build.py', [r'补音字让位生效'])

@@ -524,8 +524,8 @@ bkpx	炳
 bkpy	邴
 bkw	饼
 bkwl	槟
-bkwm	栟
 bkwm	饼
+bkwm	栟
 bkwx	柄
 bm	边
 bma	辩
@@ -5004,8 +5004,8 @@ juwn	柜
 juwr	榉
 juwt	枸
 juwt	椐
-juwt	桔
 juwt	橘
+juwt	桔
 jux	聚
 juxa	聚
 juxq	砠
@@ -5699,8 +5699,8 @@ leqj	垃
 ler	勒
 lerp	勒
 let	叻
-letp	嘞
 letp	叻
+letp	嘞
 lew	饹
 lewq	饹
 ley	乐
@@ -8058,8 +8058,8 @@ qimv	芑
 qimx	葺
 qimz	芪
 qin	耆
-qinb	稽
 qinb	耆
+qinb	稽
 qip	妻
 qipp	亓
 qipp	亟

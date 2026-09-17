@@ -5116,8 +5116,8 @@ bkwh	不可挽回
 bkwj	丙烷
 bkwl	槟
 bkwl	碧空万里
-bkwm	栟
 bkwm	饼
+bkwm	栟
 bkwp	本科文凭
 bkwp	棅
 bkwp	栤
@@ -51062,9 +51062,9 @@ juwr	榉
 juwr	精神污染
 juwt	枸
 juwt	椐
-juwt	桔
 juwt	橘
 juwt	技术问题
+juwt	桔
 juwt	梮
 juwu	剧务
 juwu	巨物
@@ -57584,8 +57584,8 @@ leso	勒索
 let	叻
 letk	乐町
 letm	乐天
-letp	嘞
 letp	叻
+letp	嘞
 letu	乐土
 letv	笼而统之
 letz	乐透
@@ -77690,8 +77690,8 @@ qimx	葺
 qimz	奇谋
 qimz	芪
 qin	耆
-qinb	稽
 qinb	耆
+qinb	稽
 qinc	气恼
 qind	气冲牛斗
 qine	七尺男儿
