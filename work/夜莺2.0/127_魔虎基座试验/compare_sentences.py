@@ -10,7 +10,7 @@ def run(user, schema):
     p = subprocess.run(['D:/nightingale/.tmp/rime_bench.exe', 'D:/Rime/weasel-0.17.4', 'D:/Rime/weasel-0.17.4/data', user, schema], input=('\n'.join(c for _, c in S) + '\n').encode(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=900)
     assert p.returncode == 0, (user, p.returncode, p.stderr[-500:])
     return [l.split('\t') for l in p.stdout.decode('utf-8').splitlines()]
-new = run('E:/ymt', 'mohu_flypy')
+new = run('E:/ymt', 'yeying_flypy')
 subprocess.run(['subst', 'Y:', '/D'], capture_output=True); subprocess.run(['subst', 'Y:', (W + '/106_全平台导出/engine-check-final/main').replace('/', '\\')], check=True)
 try: old = run('Y:/', 'yeying20_main')
 finally: subprocess.run(['subst', 'Y:', '/D'])

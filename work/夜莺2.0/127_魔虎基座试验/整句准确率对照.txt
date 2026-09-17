@@ -1,8 +1,8 @@
 句数 300，总字数 2622
 整句首选全对：试验版 231（77.0%），现主力 228（76.0%）
 逐字正确率：试验版 94.62%，现主力 94.28%
-试验版 KEYS n=5244 p50=6.2283 p95=16.6840 max=44.3443 | METRICS load_ms=963.817 peak_working_set_mib=522.699
-现主力 KEYS n=5244 p50=1.1978 p95=4.0958 max=10.8290 | METRICS load_ms=839.295 peak_working_set_mib=507.133
+试验版 KEYS n=5244 p50=6.0573 p95=15.7740 max=77.3087 | METRICS load_ms=983.040 peak_working_set_mib=522.590
+现主力 KEYS n=5244 p50=2.2767 p95=9.3874 max=339.5635 | METRICS load_ms=885.800 peak_working_set_mib=498.758
 
 两边结果不同的句子：
 试验版胜  为什么你都上了衢州的话题
