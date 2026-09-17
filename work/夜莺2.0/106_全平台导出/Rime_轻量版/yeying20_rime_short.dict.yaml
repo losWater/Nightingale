@@ -32867,6 +32867,9 @@ columns: [text, code, weight]
 六天	lq tme	1
 六天	lq;el tm;yy	1
 六天	lqtm	1
+六安	lu ane	81314
+六安	lu;el an;js	81314
+六安	luan	81314
 六宫粉黛无颜色	lgfs	1
 六小龄童	lxlt	31431
 六岁	lq sve	1
@@ -60153,6 +60156,7 @@ columns: [text, code, weight]
 吐血	tu;tq xt;qq	202732
 吐血	tuxp	202732
 吐血	tuxt	202732
+吐谷浑	tyh	25000
 吐露	tu lzt	173860
 吐露	tu;tq lz;lq	173860
 吐露	tulu	173860
@@ -75595,6 +75599,9 @@ columns: [text, code, weight]
 大乔	da qny	81787
 大乔	da;yy qn;ll	81787
 大乔	daqn	81787
+大乘	da ugy	41763
+大乘	da;yy ug;nt	41763
+大乘	daug	41763
 大乘佛教	difj	1
 大乘佛法	diff	1
 大书特书	da;yy uu;ba te;vt uu;ba	91108
@@ -84412,6 +84419,9 @@ columns: [text, code, weight]
 嬶	bi;sp	1
 嬷	ma;sh	270
 嬷	mo;sh	270
+嬷嬷	mo mos	162921
+嬷嬷	mo;sh mo;sh	162921
+嬷嬷	momo	162921
 嬺	ni;sv	1
 嬻	du;sl	1
 嬼	lq;sg	1
@@ -102509,6 +102519,7 @@ columns: [text, code, weight]
 张嘴	vh;ba zv;tz	167818
 张嘴	vhzv	167818
 张嘴就来	vzjl	1
+张国焘	vgt	90585
 张大嘴	vdz	100000
 张大嘴巴	vdzb	43695
 张家长李家短	vjid	1
@@ -164375,6 +164386,8 @@ columns: [text, code, weight]
 海参	hd ufa	157331
 海参	hd;ai uf;hf	157331
 海参	hduf	157331
+海参崴	hd;ai uf;hf wd;hs	104386
+海参崴	huw	104386
 海口	hd kza	211275
 海口	hd;ai kz;tt	211275
 海口	hdkz	211275
@@ -175317,6 +175330,7 @@ columns: [text, code, weight]
 牛车	nq iev	134887
 牛车	nq;vv ie;ee	134887
 牛车	nqie	134887
+牛轧糖	ngt	33604
 牛逼	nq biv	23261
 牛逼	nq;vv bi;pq	23261
 牛逼	nqbi	23261
@@ -180383,6 +180397,7 @@ columns: [text, code, weight]
 甄嬛	vf hre	97285
 甄嬛	vf;ea hr;ss	97285
 甄嬛	vfhr	97285
+甄嬛传	vhi	25000
 甄选	vf xre	145128
 甄选	vf;ea xr;vq	145128
 甄选	vfxr	145128
@@ -196956,6 +196971,9 @@ columns: [text, code, weight]
 稽考	ji kcn	27124
 稽考	ji;nb kc;nb	27124
 稽考	jikc	27124
+稽首	qi uzn	47087
+稽首	qi;nb uz;ld	47087
+稽首	qiuz	47087
 稿	gc;nt	3630
 稿件	gc jmn	161675
 稿件	gc;nt jm;kv	161675
@@ -238266,6 +238284,7 @@ columns: [text, code, weight]
 贾	jx;ej	2693
 贾乃亮	gnl	100000
 贾宝玉	jby	78140
+贾平凹	jpw	71190
 贾斯丁比伯	jsdb	1
 贾玲	jx lke	58184
 贾玲	jx;ej lk;rq	58184

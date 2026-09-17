@@ -12044,6 +12044,7 @@ dauf	大神
 dauf	大婶
 daug	大声
 daug	大胜
+daug	大乘
 dauh	打赏
 dauh	打伤
 daui	大师
@@ -61663,6 +61664,7 @@ lua	漉
 luab	泸
 luab	澛
 luam	老鼠爱大米
+luan	六安
 luap	渌
 luaq	潞
 luaq	瀘
@@ -66668,6 +66670,7 @@ momm	魔免
 momo	默默
 momo	藦
 momo	摸摸
+momo	嬷嬷
 momp	磨灭
 momx	蘑
 mon	秣
@@ -77856,6 +77859,7 @@ qiux	漆刷
 qiuy	情场失意
 qiuz	棋手
 qiuz	骑手
+qiuz	稽首
 qiv	骑
 qiva	欺诈
 qiva	气炸

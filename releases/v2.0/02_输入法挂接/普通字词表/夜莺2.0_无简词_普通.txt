@@ -12044,6 +12044,7 @@ C位出道	cwid
 大婶	dauf
 大声	daug
 大胜	daug
+大乘	daug
 打赏	dauh
 打伤	dauh
 大师	daui
@@ -61663,6 +61664,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 泸	luab
 澛	luab
 老鼠爱大米	luam
+六安	luan
 渌	luap
 潞	luaq
 瀘	luaq
@@ -66668,6 +66670,7 @@ Mbps	mbps
 默默	momo
 藦	momo
 摸摸	momo
+嬷嬷	momo
 磨灭	momp
 蘑	momx
 秣	mon
@@ -77856,6 +77859,7 @@ py交易	pyjy
 情场失意	qiuy
 棋手	qiuz
 骑手	qiuz
+稽首	qiuz
 骑	qiv
 欺诈	qiva
 气炸	qiva

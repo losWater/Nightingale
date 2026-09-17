@@ -13669,6 +13669,7 @@ C位出道	cwid
 大婶	dauf
 大声	daug
 大胜	daug
+大乘	daug
 打赏	dauh
 打伤	dauh
 大师	daui
@@ -41521,6 +41522,7 @@ https://	http
 胡诌	huvz
 槲	huw
 何首乌	huw
+海参崴	huw
 虎娃	huwa
 华氏温标	huwb
 槲	huwc
@@ -55929,6 +55931,7 @@ https://www.jsxiaoshi.com/	jisu
 杰	jpw
 健脾胃	jpw
 精品屋	jpw
+贾平凹	jpw
 揭瓦	jpwa
 极品五笔	jpwb
 界外	jpwd
@@ -69967,6 +69970,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 泸	luab
 澛	luab
 老鼠爱大米	luam
+六安	luan
 渌	luap
 潞	luaq
 瀘	luaq
@@ -75566,6 +75570,7 @@ Mbps	mbps
 默默	momo
 藦	momo
 摸摸	momo
+嬷嬷	momo
 磨灭	momp
 蘑	momx
 秣	mon
@@ -79094,6 +79099,7 @@ https://typer.owenyang.top/	mxyi
 嗯	ngt
 扭过头	ngt
 你个头	ngt
+牛轧糖	ngt
 能够体会	ngth
 能够提出	ngti
 能够突破	ngtp
@@ -88413,6 +88419,7 @@ py交易	pyjy
 情场失意	qiuy
 棋手	qiuz
 骑手	qiuz
+稽首	qiuz
 骑	qiv
 欺诈	qiva
 气炸	qiva
@@ -107079,6 +107086,7 @@ txt文件	txtj
 头一回	tyh
 太阳花	tyh
 头一昏	tyh
+吐谷浑	tyh
 天涯何处无芳草	tyhc
 体育活动	tyhd
 童颜鹤发	tyhf
@@ -118724,6 +118732,7 @@ https://api.ihint.me/shuang/	ulpb
 追根溯源	vgsy
 转过头	vgt
 主观题	vgt
+张国焘	vgt
 周公吐哺	vgtb
 整套	vgtc
 征讨	vgtc
@@ -119018,6 +119027,7 @@ https://api.ihint.me/shuang/	ulpb
 转化成	vhi
 转换成	vhi
 真好吃	vhi
+甄嬛传	vhi
 涨潮	vhic
 这还差不多	vhid
 章程	vhig
