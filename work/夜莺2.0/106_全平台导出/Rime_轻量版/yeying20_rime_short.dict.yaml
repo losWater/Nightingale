@@ -2021,7 +2021,7 @@ columns: [text, code, weight]
 七八	qi bat	152273
 七八	qi;tt ba;ll	152273
 七八	qiba	152273
-七八个	qbg	50000
+七八个	qbg	100000
 七八个人	qbgr	1
 七八个月	qbgy	1
 七八分	qbf	100000
@@ -4301,7 +4301,7 @@ columns: [text, code, weight]
 上马	uhma	176903
 上高中	ugv	50000
 下	xx;pg	356093
-下一个	xyg	50000
+下一个	xyg	100000
 下一任	xyr	33333
 下一位	xyw	50000
 下一刻	xyk	50000
@@ -9258,7 +9258,7 @@ columns: [text, code, weight]
 两个人	lgr	100000
 两个人的	lgrd	1
 两个凡是	lgfu	74209
-两个半	lgb	81782
+两个半	lgb	100000
 两个半小时	lgbu	1
 两个多小时	lgdu	1
 两个多月	lgdy	1
@@ -13493,7 +13493,7 @@ columns: [text, code, weight]
 也怪	ye;ff gk;vq	25714
 也怪	yegk	25714
 也总比	yzb	33333
-也恐怕	ykp	50000
+也恐怕	ykp	100000
 也想	ye xlf	2956
 也想	ye;ff xl;wv	2956
 也想	yexl	2956
@@ -13622,7 +13622,7 @@ columns: [text, code, weight]
 也让	yerh	1
 也让人	yrr	50000
 也让他	yrt	50000
-也让你	yrn	50000
+也让你	yrn	100000
 也许	ye xuf	583598
 也许	ye;ff xu;fv	583598
 也许	yexu	583598
@@ -14270,6 +14270,7 @@ columns: [text, code, weight]
 乱了	lr;cb le;pp	1
 乱了	lrle	1
 乱了分寸	llfc	1
+乱了套	llt	33333
 乱了心神	llxu	1
 乱了方寸	llfc	1
 乱了阵脚	llvj	1
@@ -14724,7 +14725,7 @@ columns: [text, code, weight]
 了一下	lyx	50000
 了一个	lyg	100000
 了一些	lyx	33333
-了一会	lyh	50000
+了一会	lyh	100000
 了一会儿	lyhe	1
 了一声	lyu	50000
 了一次	lyc	100000
@@ -16450,7 +16451,7 @@ columns: [text, code, weight]
 亚伯	ya bon	122650
 亚伯	ya;nn bo;kd	122650
 亚伯	yabo	122650
-亚克力	ykl	50000
+亚克力	ykl	100000
 亚军	ya jyn	270009
 亚军	ya;nn jy;je	270009
 亚军	yajy	270009
@@ -16619,6 +16620,7 @@ columns: [text, code, weight]
 交个	jnge	66636
 交个朋友	jgpy	1
 交了实底	jlud	1
+交了钱	jlq	33333
 交互	jn hue	182030
 交互	jn;ep hu;pp	182030
 交互	jnhu	182030
@@ -19161,7 +19163,7 @@ columns: [text, code, weight]
 仍然不能	rrbn	1
 仍然会	rrh	100000
 仍然可以	rrky	1
-仍然在	rrz	50000
+仍然在	rrz	100000
 仍然是	rru	100000
 仍然没有	rrmy	1
 仍能	rg ngk	1
@@ -19655,7 +19657,7 @@ columns: [text, code, weight]
 他们之间	tmvj	1
 他们从	tmc	33333
 他们会	tmh	100000
-他们俩	tml	50000
+他们俩	tml	100000
 他们像	tmx	50000
 他们却	tmq	50000
 他们只	tmv	33333
@@ -19665,6 +19667,7 @@ columns: [text, code, weight]
 他们把	tmb	33333
 他们是	tmu	33333
 他们有	tmy	50000
+他们来	tml	33333
 他们没	tmm	50000
 他们没有	tmmy	1
 他们的	tmd	100000
@@ -19677,7 +19680,7 @@ columns: [text, code, weight]
 他们说	tmu	100000
 他们说过	tmug	1
 他们这	tmv	50000
-他们连	tml	33333
+他们连	tml	50000
 他俩	ta lxk	180621
 他俩	ta;kf lx;kl	180621
 他俩	talx	180621
@@ -23120,7 +23123,7 @@ columns: [text, code, weight]
 住所	vu sok	225665
 住所	vu;kq so;bh	225665
 住所	vuso	225665
-住所地	vsd	50000
+住所地	vsd	100000
 住手	vu uzk	237004
 住手	vu;kq uz;oo	237004
 住手	vuuz	237004
@@ -26204,7 +26207,7 @@ columns: [text, code, weight]
 信命	xb;kf mk;xy	42481
 信命	xbmk	42481
 信天翁	xb;kf tm;yy wg;lo	97048
-信天翁	xtw	97048
+信天翁	xtw	100000
 信奉	xb fgk	196643
 信奉	xb;kf fg;rr	196643
 信奉	xbfg	196643
@@ -29260,6 +29263,7 @@ columns: [text, code, weight]
 僇	lu;kf	1
 僎	vr;kl	1
 像	xl;kd	112954
+像一个	xyg	33333
 像个傻瓜	xgug	1
 像个孩子	xghz	1
 像他一样	xtyy	1
@@ -32414,6 +32418,7 @@ columns: [text, code, weight]
 公园	gs;lh yr;jp	406506
 公园	gsyr	406506
 公园	gy	406506
+公园里	gyl	33333
 公国	gs gol	83775
 公国	gs;lh go;jr	83775
 公国	gsgo	83775
@@ -35387,7 +35392,7 @@ columns: [text, code, weight]
 军体	jy tij	82599
 军体	jy;je ti;kp	82599
 军体	jyti	82599
-军体拳	jtq	37537
+军体拳	jtq	50000
 军内	jy nwj	52722
 军内	jy;je nw;nx	52722
 军内	jynw	52722
@@ -36970,7 +36975,7 @@ columns: [text, code, weight]
 冷藏室	lg;aq ch;me ui;jg	112479
 冷藏库	lck	105712
 冷藏库	lg;aq ch;me ku;ce	105712
-冷藏柜	lcg	50000
+冷藏柜	lcg	100000
 冷藏箱	lcx	100000
 冷藏箱	lg;aq ch;me xl;hb	73247
 冷藏车	lci	106883
@@ -38016,7 +38021,7 @@ columns: [text, code, weight]
 几天以后	jtyh	1
 几天内	jtn	100000
 几天几夜	jtjy	1
-几天前	jtq	50000
+几天前	jtq	100000
 几天后	jth	50000
 几天来	jtl	50000
 几头	ji tzn	1
@@ -40216,7 +40221,7 @@ columns: [text, code, weight]
 分组会	fzh	67017
 分组教学	fzjx	1
 分组数据	fzuj	1
-分组赛	fzs	68513
+分组赛	fzs	100000
 分给	ff gwl	64927
 分给	ff;lg gw;it	64927
 分给	ffgw	64927
@@ -41814,7 +41819,7 @@ columns: [text, code, weight]
 利用	ly	458488
 利用价值	lyjv	1
 利用外资	lywz	1
-利用好	lyh	33333
+利用好	lyh	50000
 利用率	li;ng ys;zz lv;ec	151146
 利用率	lyl	151146
 利用职务	lyvw	1
@@ -46254,7 +46259,7 @@ columns: [text, code, weight]
 包饭	bc fjn	123395
 包饭	bc;nv fj;wq	123395
 包饭	bcfj	123395
-包饺子	bjz	33333
+包饺子	bjz	50000
 匆	cs;xa	3514
 匆促	cs cux	58710
 匆促	cs;xa cu;ks	58710
@@ -47440,7 +47445,7 @@ columns: [text, code, weight]
 千百	qm;cc bd;pd	163989
 千百	qmbd	163989
 千百万	qbw	145203
-千百个	qbg	33333
+千百个	qbg	50000
 千百年	qbn	50000
 千百年来	qbnl	1
 千百次	qbc	100000
@@ -48963,7 +48968,7 @@ columns: [text, code, weight]
 卖身	mduf	153246
 卖身为奴	muwn	1
 卖身契	md;cy uf;pp qi;ry	79713
-卖身契	muq	79713
+卖身契	muq	100000
 卖身投靠	mutk	1
 卖车	md iec	37395
 卖车	md;cy ie;ee	37395
@@ -51000,7 +51005,7 @@ columns: [text, code, weight]
 厚礼	hz lic	130448
 厚礼	hz;cp li;db	130448
 厚礼	hzli	130448
-厚礼蟹	hlx	33333
+厚礼蟹	hlx	50000
 厚禄	hz luc	23933
 厚禄	hz;cp lu;dp	23933
 厚禄	hzlu	23933
@@ -52232,7 +52237,7 @@ columns: [text, code, weight]
 双关	ul grq	137961
 双关	ul;qq gr;ly	137961
 双关	ulgr	137961
-双冠王	ugw	50000
+双冠王	ugw	100000
 双击	ul jiq	77129
 双击	ul;qq ji;ph	77129
 双击	ulji	77129
@@ -55284,6 +55289,7 @@ columns: [text, code, weight]
 口袋	kzdd	353679
 口袋妖怪	kdyg	1
 口袋精灵	kdjl	1
+口袋里	kdl	33333
 口角	kz jnt	166011
 口角	kz;tt jn;gz	166011
 口角	kzjn	166011
@@ -55302,7 +55308,7 @@ columns: [text, code, weight]
 口语	kz;tt yu;ft	195325
 口语	kzyu	195325
 口语交际	kyjj	1
-口语化	kyh	60477
+口语化	kyh	100000
 口语表达	kybd	1
 口误	kz wut	127249
 口误	kz;tt wu;fy	127249
@@ -55652,7 +55658,7 @@ columns: [text, code, weight]
 另一个人	lygr	1
 另一个方面	lygm	1
 另一些人	lyxr	1
-另一位	lyw	50000
+另一位	lyw	100000
 另一侧	lyc	50000
 另一半	lyb	100000
 另一句话	lyjh	1
@@ -56294,7 +56300,7 @@ columns: [text, code, weight]
 可以不	kyb	50000
 可以不用	kyby	1
 可以不要	kyby	1
-可以为	kyw	50000
+可以为	kyw	100000
 可以么	kym	50000
 可以了	kyl	50000
 可以了吗	kylm	1
@@ -56363,7 +56369,7 @@ columns: [text, code, weight]
 可信	ke xbt	232693
 可信	ke;tt xb;kf	232693
 可信	kexb	232693
-可信任	kxr	50000
+可信任	kxr	100000
 可信度	ke;tt xb;kf du;cq	153280
 可信度	kxd	153280
 可信赖	kxl	33333
@@ -61638,7 +61644,7 @@ columns: [text, code, weight]
 告诉别人	gsbr	1
 告诉她	gst	33333
 告诉对方	gsdf	1
-告诉我	gsw	50000
+告诉我	gsw	100000
 告诉自己	gszj	1
 告诫	gc jpv	228025
 告诫	gc;vt jp;fm	228025
@@ -68739,7 +68745,7 @@ columns: [text, code, weight]
 圆心	yr xbj	97094
 圆心	yr;jj xb;vv	97094
 圆心	yrxb	97094
-圆括号	ykh	50000
+圆括号	ykh	100000
 圆括号	yr;jj ko;ot hc;tb	17719
 圆晕	yr yyj	1
 圆晕	yr;jj yy;be	1
@@ -71086,7 +71092,7 @@ columns: [text, code, weight]
 垂直向下	ivxx	1
 垂直握把	ivwb	1
 垂直线	iv;cp vi;cq xm;iv	60815
-垂直线	ivx	60815
+垂直线	ivx	100000
 垂直起降	ivqj	1
 垂线	iv xmc	67004
 垂线	iv;cp xm;iv	67004
@@ -74162,6 +74168,7 @@ columns: [text, code, weight]
 外汇	wd;rg hv;an	242470
 外汇	wdhv	242470
 外汇储备	whib	1
+外汇券	whq	66492
 外汇收入	whur	1
 外江	wd jlr	32186
 外江	wd;rg jl;at	32186
@@ -75504,7 +75511,7 @@ columns: [text, code, weight]
 够用	gz ysn	178494
 够用	gz;nr ys;zz	178494
 够用	gzys	178494
-够用了	gyl	33333
+够用了	gyl	50000
 够着	gz ven	1
 够着	gz;nr ve;rb	1
 够着	gzvc	1
@@ -75669,6 +75676,7 @@ columns: [text, code, weight]
 大会	da;yy hv;xh	390853
 大会	dahv	390853
 大会召开	dhvk	1
+大会堂	dht	82032
 大会开幕	dhkm	1
 大会报告	dhbg	1
 大伤元气	duyq	1
@@ -76389,7 +76397,7 @@ columns: [text, code, weight]
 大怒	da;yy nu;sv	63897
 大怒	danu	63897
 大总统	da;yy zs;lv ts;ip	78573
-大总统	dzt	78573
+大总统	dzt	100000
 大恨	da hfy	51300
 大恨	da;yy hf;vs	51300
 大恨	dahf	51300
@@ -77319,7 +77327,7 @@ columns: [text, code, weight]
 大高加索	dgjs	1
 大魔头	dmt	50000
 大魔导师	dmdu	1
-大魔王	dmw	50000
+大魔王	dmw	100000
 大鱼吃小鱼	dyiy	42228
 大鱼大肉	dydr	70637
 大鸟	da nny	29447
@@ -81261,6 +81269,7 @@ columns: [text, code, weight]
 好像	hcxl	557481
 好像	hx	557481
 好像在	hxz	100000
+好像很	hxh	33333
 好像是	hxu	50000
 好像是在	hxuz	1
 好像是有	hxuy	1
@@ -81697,7 +81706,7 @@ columns: [text, code, weight]
 好汉不吃眼前亏	hhbk	1
 好汉不提当年勇	hhby	1
 好活当赏	hhdu	1
-好消息	hxx	50000
+好消息	hxx	100000
 好深	hc ufs	24801
 好深	hc;sp uf;aw	24801
 好深	hcuf	24801
@@ -81903,7 +81912,7 @@ columns: [text, code, weight]
 好记	hc jis	1
 好记	hc;sp ji;fv	1
 好记	hcji	1
-好记性	hjx	39585
+好记性	hjx	50000
 好讲	hc jls	1
 好讲	hc;sp jl;fm	1
 好讲	hcjl	1
@@ -88300,7 +88309,7 @@ columns: [text, code, weight]
 害苦	hd kuj	15587
 害苦	hd;jt ku;mt	15587
 害苦	hdku	15587
-害苦了	hkl	50000
+害苦了	hkl	100000
 害虫	hd isj	177169
 害虫	hd;jt is;gg	177169
 害虫	hdis	177169
@@ -90042,7 +90051,7 @@ columns: [text, code, weight]
 对称	dvig	206063
 对称性	dix	112585
 对称性	dv;qt if;ny xk;vm	112585
-对称轴	div	50000
+对称轴	div	100000
 对立	dv liq	223550
 对立	dv;qt li;jj	223550
 对立	dvli	223550
@@ -90603,7 +90612,7 @@ columns: [text, code, weight]
 封神	fg;qt uf;dp	52511
 封神	fguf	52511
 封神之战	fuvv	1
-封神榜	fub	46319
+封神榜	fub	50000
 封神演义	fuyy	45669
 封禁	fg jbq	73524
 封禁	fg;qt jb;wt	73524
@@ -91899,7 +91908,7 @@ columns: [text, code, weight]
 小鬼	xngv	228310
 小鬼当家	xgdj	1987
 小鬼难缠	xgni	1
-小魔仙	xmx	50000
+小魔仙	xmx	100000
 小鱼吃虾米	xyim	1
 小鲜肉	xxr	33333
 小鸟	xn nny	290980
@@ -92645,7 +92654,7 @@ columns: [text, code, weight]
 就来	jq lde	28980
 就来	jq;en ld;ll	28980
 就来	jqld	28980
-就来气	jlq	33333
+就来气	jlq	50000
 就此	jq cie	230063
 就此	jq;en ci;st	230063
 就此	jqci	230063
@@ -93650,7 +93659,7 @@ columns: [text, code, weight]
 屏蔽	pk;bm bi;mq	245226
 屏蔽	pkbi	245226
 屏蔽器	pbq	50000
-屏蔽环	pbh	33333
+屏蔽环	pbh	50000
 屏蔽词	pbc	100000
 屏边	pk bmb	49564
 屏边	pk;bm bm;pq	49564
@@ -100896,7 +100905,7 @@ columns: [text, code, weight]
 建立在	jlz	50000
 建立模型	jlmx	1
 建立索引	jlsy	1
-建立起	jlq	50000
+建立起	jlq	100000
 建立连接	jllj	1
 建站	jm vjp	44400
 建站	jm;pq vj;jt	44400
@@ -101200,7 +101209,7 @@ columns: [text, code, weight]
 开始	ku	688356
 开始了	kul	100000
 开始使用	kuuy	1
-开始前	kuq	33333
+开始前	kuq	50000
 开始同步	kutb	1
 开始吟唱	kuyi	1
 开始吧	kub	100000
@@ -101477,6 +101486,7 @@ columns: [text, code, weight]
 开沟	kd gzp	15508
 开沟	kd;pm gz;ah	15508
 开沟	kdgz	15508
+开洋荤	kyh	33333
 开派祖师	kpzu	1
 开涮	kd urp	40295
 开涮	kd;pm ur;ag	40295
@@ -102904,7 +102914,7 @@ columns: [text, code, weight]
 弹幕	dj;bq mu;pe	101566
 弹幕	djmu	101566
 弹幕护体	dmht	1
-弹幕网	dmw	33333
+弹幕网	dmw	50000
 弹开	djkd	35071
 弹开	tj kdb	35071
 弹开	tj;bq kd;pm	35071
@@ -105016,7 +105026,7 @@ columns: [text, code, weight]
 很咸	hf xmk	1
 很咸	hf;ks xm;vt	1
 很咸	hfxm	1
-很喜欢	hxh	50000
+很喜欢	hxh	100000
 很困	hf kyk	39393
 很困	hf;ks ky;jw	39393
 很困	hfky	39393
@@ -107746,7 +107756,7 @@ columns: [text, code, weight]
 快到	kk dcv	1
 快到	kk;vy dc;gg	1
 快到	kkdc	1
-快到了	kdl	33333
+快到了	kdl	50000
 快到碗里来	kdwl	1
 快即是慢	kjum	1
 快去	kk quv	1
@@ -113170,7 +113180,7 @@ columns: [text, code, weight]
 慢慢吞吞	mj;vq mj;vq ty;yt ty;yt	79463
 慢慢吞吞	mmtt	79463
 慢慢地	mmd	50000
-慢慢就	mmj	33333
+慢慢就	mmj	50000
 慢慢悠悠	mmyy	29217
 慢慢来	mj;vq mj;vq ld;ll	253828
 慢慢来	mml	253828
@@ -113279,7 +113289,7 @@ columns: [text, code, weight]
 慰安	ww anb	46584
 慰安	ww;bv an;js	46584
 慰安	wwan	46584
-慰安妇	waf	95497
+慰安妇	waf	100000
 慰留	ww lqb	5639
 慰留	ww;bv lq;rp	5639
 慰留	wwlq	5639
@@ -115010,7 +115020,7 @@ columns: [text, code, weight]
 或许	ho;vp xu;fv	475813
 或许	hoxu	475813
 或许	hx	475813
-或许会	hxh	33333
+或许会	hxh	50000
 或许因为	hxyw	1
 或许就	hxj	100000
 或许就会	hxjh	1
@@ -117329,7 +117339,7 @@ columns: [text, code, weight]
 打转	da vro	183696
 打转	da;ot vr;ea	183696
 打转	davr	183696
-打转儿	dve	50000
+打转儿	dve	100000
 打转向灯	dvxd	1699
 打转转	dvv	100000
 打辅助	dfv	50000
@@ -119595,7 +119605,7 @@ columns: [text, code, weight]
 抗毒性	kdx	33333
 抗毒素	kds	100000
 抗毒素	kh;on du;ri su;ri	52585
-抗氧化	kyh	37130
+抗氧化	kyh	50000
 抗氧化剂	kyhj	64244
 抗污	kh wuo	21121
 抗污	kh;on wu;ab	21121
@@ -127371,7 +127381,7 @@ columns: [text, code, weight]
 描述	mn;op uu;wq	328865
 描述	mnuu	328865
 描述性	mn;op uu;wq xk;vm	77207
-描述性	mux	77207
+描述性	mux	100000
 描金	mn jbo	47394
 描金	mn;op jb;uu	47394
 描金	mnjb	47394
@@ -128802,6 +128812,8 @@ columns: [text, code, weight]
 摆明	bd;oh mk;bz	68215
 摆明	bdmk	68215
 摆明了	bml	50000
+摆架子	bd;oh jx;pw zi;pp	107755
+摆架子	bjz	107755
 摆桌	bd voo	25363
 摆桌	bd;oh vo;gw	25363
 摆桌	bdvo	25363
@@ -130328,7 +130340,7 @@ columns: [text, code, weight]
 攀登	pj dgw	213059
 攀登	pj;wo dg;rp	213059
 攀登	pjdg	213059
-攀登者	pdv	60401
+攀登者	pdv	100000
 攀登高峰	pdgf	1
 攀花折柳	phvl	1
 攀谈	pj tjw	123215
@@ -133006,6 +133018,7 @@ columns: [text, code, weight]
 数据模型	ujmx	1
 数据漫游	ujmy	1
 数据类型	ujlx	1
+数据线	ujx	72403
 数据结构	ujjg	1
 数据统计	ujtj	1
 数据通信	ujtx	1
@@ -135140,7 +135153,7 @@ columns: [text, code, weight]
 新鞋	xb xpj	36334
 新鞋	xb;jh xp;rq	36334
 新鞋	xbxp	36334
-新项目	xxm	50000
+新项目	xxm	100000
 新颖	xb ykj	207409
 新颖	xb;jh yk;tj	207409
 新颖	xbyk	207409
@@ -137136,7 +137149,7 @@ columns: [text, code, weight]
 日光	rigl	202782
 日光浴	rgy	146714
 日光浴	ri;bb gl;yp yu;at	146714
-日光灯	rgd	95115
+日光灯	rgd	100000
 日光灯	ri;bb gl;yp dg;pt	95115
 日入一万	rryw	1
 日入一千	rryq	1
@@ -138691,7 +138704,7 @@ columns: [text, code, weight]
 明明	mk;bz mk;bz	402073
 明明	mkmk	402073
 明明可以	mmky	1
-明明就	mmj	50000
+明明就	mmj	100000
 明明是	mmu	100000
 明明是个	mmug	1
 明明是你	mmun	1
@@ -140557,7 +140570,7 @@ columns: [text, code, weight]
 普适	pu uil	48644
 普适	pu;lb ui;cq	48644
 普适	puui	48644
-普适性	pux	60074
+普适性	pux	100000
 普选	pu xrl	135059
 普选	pu;lb xr;vq	135059
 普选	puxr	135059
@@ -140747,7 +140760,7 @@ columns: [text, code, weight]
 智慧	vi;gb hv;rv	390088
 智慧	vihv	390088
 智慧人生	vhru	1
-智慧型	vhx	65739
+智慧型	vhx	100000
 智慧的	vhd	50000
 智慧结晶	vhjj	1
 智斗	vi dzg	74160
@@ -147276,7 +147289,7 @@ columns: [text, code, weight]
 来次	ld cil	45008
 来次	ld;ll ci;ax	45008
 来次	ldci	45008
-来次够	lcg	33333
+来次够	lcg	50000
 来此	ld cil	1
 来此	ld;ll ci;st	1
 来此	ldci	1
@@ -148955,7 +148968,7 @@ columns: [text, code, weight]
 柔光	rzgl	42740
 柔光屏	rgp	100000
 柔光布	rgb	33333
-柔光灯	rgd	33333
+柔光灯	rgd	50000
 柔光箱	rgx	50000
 柔光罩	rgv	100000
 柔和	rz hez	233200
@@ -149790,7 +149803,7 @@ columns: [text, code, weight]
 校友	xn yzw	219820
 校友	xn;wp yz;cq	219820
 校友	xnyz	219820
-校团委	xtw	46601
+校团委	xtw	50000
 校园	xn yrw	325051
 校园	xn;wp yr;jp	325051
 校园	xnyr	325051
@@ -150750,7 +150763,7 @@ columns: [text, code, weight]
 档案	dh anw	353117
 档案	dh;wp an;jw	353117
 档案	dhan	353117
-档案夹	daj	50000
+档案夹	daj	100000
 档案室	dau	66372
 档案局	daj	69101
 档案局	dh;wp an;jw ju;bt	69101
@@ -153934,7 +153947,7 @@ columns: [text, code, weight]
 正方	vg fhs	104305
 正方	vg;ss fh;ll	104305
 正方	vgfh	104305
-正方体	vft	50682
+正方体	vft	100000
 正方体	vg;ss fh;ll ti;kp	50682
 正方形	vfx	137061
 正方形	vg;ss fh;ll xk;pf	137061
@@ -156991,7 +157004,7 @@ columns: [text, code, weight]
 民族工业	mzgy	1
 民族平等	mzpd	1
 民族性	mb;kk zu;lg xk;vm	98941
-民族性	mzx	98941
+民族性	mzx	100000
 民族感情	mzgq	1
 民族振兴	mzvx	1
 民族政策	mzvc	1
@@ -157141,6 +157154,7 @@ columns: [text, code, weight]
 气不忿儿	qbfe	1
 气不打一处来	qbdl	1
 气不摄血	qbux	1
+气不过	qbg	33333
 气个半死	qgbs	1
 气人	qi rfz	149953
 气人	qi;zz rf;xx	149953
@@ -157475,7 +157489,7 @@ columns: [text, code, weight]
 氢气	qk qiz	133703
 氢气	qk;zt qi;zz	133703
 氢气	qkqi	133703
-氢气球	qqq	41924
+氢气球	qqq	50000
 氢氧	qk yhz	46123
 氢氧	qk;zt yh;zu	46123
 氢氧	qkyh	46123
@@ -159852,7 +159866,7 @@ columns: [text, code, weight]
 没事可干	mukg	1
 没事就好	mujh	1
 没事干	mug	50000
-没事情	muq	33333
+没事情	muq	50000
 没事找事	muvu	1
 没事没事	msms	1
 没事的	mud	100000
@@ -160020,7 +160034,7 @@ columns: [text, code, weight]
 没头脑和不高兴	mtnx	1
 没头苍蝇	mtcy	35956
 没女朋友	mnpy	1
-没好事	mhu	33333
+没好事	mhu	50000
 没好意思	mhys	41886
 没好气	mhq	50000
 没好气地	mhqd	1
@@ -160103,7 +160117,7 @@ columns: [text, code, weight]
 没所谓	msw	100000
 没找到	mvd	50000
 没找着	mvv	50000
-没承想	mix	33333
+没承想	mix	50000
 没把握	mbw	100000
 没抢到	mqd	33333
 没指望	mvw	100000
@@ -160515,7 +160529,7 @@ columns: [text, code, weight]
 没词	mwci	15226
 没话可说	mhku	18899
 没话找话	mhvh	1
-没话说	mhu	50000
+没话说	mhu	100000
 没话说了	mhul	1
 没说	mw uoa	87354
 没说	mw;ah uo;fp	87354
@@ -169720,7 +169734,7 @@ columns: [text, code, weight]
 瀑布	pu bua	240359
 瀑布	pu;ap bu;ce	240359
 瀑布	pubu	240359
-瀑布汗	pbh	50000
+瀑布汗	pbh	100000
 瀓	ig;aq	1
 瀔	gu;ah	1
 瀕	bb;al	1
@@ -178838,7 +178852,7 @@ columns: [text, code, weight]
 环境	hr jkr	466746
 环境	hr;rp jk;qp	466746
 环境	hrjk	466746
-环境下	hjx	50000
+环境下	hjx	100000
 环境中	hjv	50000
 环境优美	hjym	1
 环境保护	hjbh	1
@@ -184844,6 +184858,8 @@ columns: [text, code, weight]
 登月	dg ytr	98643
 登月	dg;rp yt;zz	98643
 登月	dgyt	98643
+登机牌	dg;rp ji;wn pd;nc	146472
+登机牌	djp	146472
 登楼	dg lzr	42714
 登楼	dg;rp lz;ws	42714
 登楼	dglz	42714
@@ -186657,6 +186673,8 @@ columns: [text, code, weight]
 监听	jm tkl	183212
 监听	jm;lq tk;th	183212
 监听	jmtk	183212
+监听器	jm;lq tk;th qi;tt	54934
+监听器	jtq	54934
 监听耳机	jtej	1
 监外	jm wdl	92844
 监外	jm;lq wd;rg	92844
@@ -187584,7 +187602,7 @@ columns: [text, code, weight]
 直播间	vbj	100000
 直播鬼才	vbgc	1
 直教人生死相许	vjrx	1
-直方图	vft	33333
+直方图	vft	50000
 直来直去	vi;cq ld;ll vi;cq qu;qh	90377
 直来直去	vlvq	90377
 直来直往	vlvw	3841
@@ -188642,7 +188660,7 @@ columns: [text, code, weight]
 看到	kj;rb dc;gg	663525
 看到	kjdc	663525
 看到一个	kdyg	1
-看到了	kdl	50000
+看到了	kdl	100000
 看到了吧	kdlb	1
 看到最后	kdzh	1
 看到过	kdg	100000
@@ -189386,7 +189404,7 @@ columns: [text, code, weight]
 真没想到	vmxd	1
 真没意思	vmys	1
 真没看出来	vmkl	1
-真浪漫	vlm	50000
+真浪漫	vlm	100000
 真漂亮	vpl	100000
 真火	vf hoc	20872
 真火	vf;cl ho;pp	20872
@@ -206316,7 +206334,7 @@ columns: [text, code, weight]
 给予	ji yui	371165
 给予	ji;it yu;zz	371165
 给予	jiyu	371165
-给予了	gyl	50000
+给予了	gyl	100000
 给予警告	gyjg	1
 给些	gw xpi	1
 给些	gw;it xp;sp	1
@@ -207567,7 +207585,7 @@ columns: [text, code, weight]
 绿豆	lv dzi	198925
 绿豆	lv;ip dz;pp	198925
 绿豆	lvdz	198925
-绿豆汤	ldt	67767
+绿豆汤	ldt	100000
 绿豆沙	ldu	40117
 绿豆糕	ldg	58003
 绿软	lv rri	1
@@ -210272,7 +210290,7 @@ columns: [text, code, weight]
 翻新	fj xbh	188693
 翻新	fj;ho xb;jh	188693
 翻新	fjxb	188693
-翻旧账	fjv	50000
+翻旧账	fjv	100000
 翻晒	fj udh	33759
 翻晒	fj;ho ud;be	33759
 翻晒	fjud	33759
@@ -210548,6 +210566,7 @@ columns: [text, code, weight]
 老化	lc hxn	222141
 老化	lc;nt hx;kt	222141
 老化	lchx	222141
+老北京	lbj	33333
 老匹夫	lpf	100000
 老区	lc qun	131169
 老区	lc;nt qu;np	131169
@@ -210860,7 +210879,7 @@ columns: [text, code, weight]
 老怕	lc pan	34614
 老怕	lc;nt pa;vd	34614
 老怕	lcpa	34614
-老思想	lsx	50000
+老思想	lsx	100000
 老总	lc zsn	193007
 老总	lc;nt zs;lv	193007
 老总	lczs	193007
@@ -211062,6 +211081,7 @@ columns: [text, code, weight]
 老用	lc ysn	40850
 老用	lc;nt ys;zz	40850
 老用	lcys	40850
+老用户	lyh	33333
 老男孩	lnh	33333
 老白	lc bdn	61057
 老白	lc;nt bd;dd	61057
@@ -212362,7 +212382,7 @@ columns: [text, code, weight]
 聊聊	ln lnx	330701
 聊聊	ln;xl ln;xl	330701
 聊聊	lnln	330701
-聊聊天	llt	85886
+聊聊天	llt	100000
 聊胜于无	luyw	24672
 聊表	ln bnx	38209
 聊表	ln;xl bn;rs	38209
@@ -213282,7 +213302,8 @@ columns: [text, code, weight]
 肚子	du;zq zi;pp	425856
 肚子	duzi	425856
 肚子	dz	425856
-肚子疼	dzt	33333
+肚子疼	dzt	50000
+肚子痛	dzt	33333
 肚子里	dzl	100000
 肚子里有话	dzlh	1
 肚子饿	dze	100000
@@ -217034,7 +217055,7 @@ columns: [text, code, weight]
 自动铅笔	zdqb	2106
 自动锁定	zdsd	1
 自动锁敌	zdsd	1
-自动门	zdm	50000
+自动门	zdm	100000
 自动隐藏	zdyc	1
 自助	zi vud	253442
 自助	zi;dd vu;qp	253442
@@ -222333,6 +222354,7 @@ columns: [text, code, weight]
 莫测	mo cep	50499
 莫测	mo;pp ce;ag	50499
 莫测	moce	50499
+莫生气	muq	46667
 莫笑	mo xnp	610
 莫笑	mo;pp xn;hy	610
 莫笑	moxn	610
@@ -223437,6 +223459,7 @@ columns: [text, code, weight]
 葫芦	hu lum	218987
 葫芦	hu;mz lu;mb	218987
 葫芦	hulu	218987
+葫芦娃	hlw	86906
 葫芦里卖的什么药	hlly	1
 葬	zh;mm	2924
 葬于	zh yum	20484
@@ -225366,7 +225389,7 @@ columns: [text, code, weight]
 虽好	sv hct	1
 虽好	sv;tg hc;sp	1
 虽好	svhc	1
-虽如此	src	50000
+虽如此	src	100000
 虽小	sv xnt	1
 虽小	sv;tg xn;yy	1
 虽小	svxn	1
@@ -228514,7 +228537,7 @@ columns: [text, code, weight]
 被秒	bwmn	1
 被称为	biw	100000
 被称之为	bivw	1
-被称作	biz	50000
+被称作	biz	100000
 被窝	bw wod	253997
 被窝	bw;dg wo;jx	253997
 被窝	bwwo	253997
@@ -231557,7 +231580,7 @@ columns: [text, code, weight]
 订报	dk bcf	62947
 订报	dk;ft bc;oq	62947
 订报	dkbc	62947
-订机票	djp	33333
+订机票	djp	50000
 订正	dk vgf	86548
 订正	dk;ft vg;ss	86548
 订正	dkvg	86548
@@ -234906,7 +234929,7 @@ columns: [text, code, weight]
 读诵	du ssf	25951
 读诵	du;fy ss;fz	25951
 读诵	duss	25951
-读课文	dkw	50000
+读课文	dkw	100000
 读错	du cof	1
 读错	du;fy co;ub	1
 读错	duco	1
@@ -235748,7 +235771,7 @@ columns: [text, code, weight]
 谐音	xp ybf	182586
 谐音	xp;fd yb;dd	182586
 谐音	xpyb	182586
-谐音梗	xyg	33333
+谐音梗	xyg	50000
 谑	xt;fp	91
 谑而不虐	xebn	1
 谒	ye;fn	87
@@ -244075,6 +244098,7 @@ columns: [text, code, weight]
 轮滑	ly hxe	80209
 轮滑	ly;et hx;ar	80209
 轮滑	lyhx	80209
+轮滑鞋	lhx	33333
 轮牧	ly mue	72720
 轮牧	ly;et mu;vq	72720
 轮牧	lymu	72720
@@ -244562,7 +244586,7 @@ columns: [text, code, weight]
 轻忽	qk hue	42083
 轻忽	qk;et hu;xv	42083
 轻忽	qkhu	42083
-轻悄悄	qqq	50000
+轻悄悄	qqq	100000
 轻慢	qk mje	64612
 轻慢	qk;et mj;vq	64612
 轻慢	qkmj	64612
@@ -247964,7 +247988,7 @@ columns: [text, code, weight]
 这里是	vlu	100000
 这里的	vld	33333
 这里边	vlb	100000
-这里面	vlm	33333
+这里面	vlm	50000
 这里面的	vlmd	1
 这锅我不背	vgwb	1
 这锅我背	vgwb	1
@@ -251026,6 +251050,7 @@ columns: [text, code, weight]
 通用	ts ysh	260430
 通用	ts;hq ys;zz	260430
 通用	tsys	260430
+通用性	tyx	72289
 通用电气	tydq	34896
 通电	ts dmh	174704
 通电	ts;hq dm;pp	174704
@@ -257052,7 +257077,7 @@ columns: [text, code, weight]
 钢丝	gh;up si;ii	184241
 钢丝	ghsi	184241
 钢丝床	gsi	53153
-钢丝球	gsq	50000
+钢丝球	gsq	100000
 钢丝绳	gh;up si;ii ug;ip	96983
 钢丝绳	gsu	100000
 钢刀	gh dcu	101083
@@ -259266,7 +259291,7 @@ columns: [text, code, weight]
 键盘	jm;uq pj;eq	275860
 键盘	jmpj	275860
 键盘侠	jpx	50000
-键盘宏	jph	50000
+键盘宏	jph	100000
 键盘泥	jpn	50000
 键盘膜	jpm	33333
 键盘鼠标	jpub	1
@@ -263468,7 +263493,7 @@ columns: [text, code, weight]
 陪伴他	pbt	50000
 陪伴你	pbn	100000
 陪伴她	pbt	33333
-陪伴我	pbw	50000
+陪伴我	pbw	100000
 陪伴是最长情的告白	pbub	1
 陪住	pw vuy	32379
 陪住	pw;yt vu;kq	32379
@@ -265794,7 +265819,7 @@ columns: [text, code, weight]
 雷达	lw dal	232215
 雷达	lw;lp da;yq	232215
 雷达	lwda	232215
-雷达图	ldt	33333
+雷达图	ldt	50000
 雷锋	lw fgl	161809
 雷锋	lw;lp fg;ur	161809
 雷锋	lwfg	161809
@@ -266701,6 +266726,7 @@ columns: [text, code, weight]
 静一静	jk;rp yi;pp jk;rp	26963
 静一静	jyj	33333
 静下心来	jxxl	1
+静下来	jxl	33333
 静不下心	jbxx	1
 静修	jk xqr	66579
 静修	jk;rp xq;kf	66579
@@ -277187,6 +277213,8 @@ columns: [text, code, weight]
 黑狗	hw gzd	119222
 黑狗	hw;dd gz;ot	119222
 黑狗	hwgz	119222
+黑猩猩	hw;dd xk;om xk;om	145744
+黑猩猩	hxx	145744
 黑猪	hw vud	33240
 黑猪	hw;dd vu;ob	33240
 黑猪	hwvu	33240

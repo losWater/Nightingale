@@ -4720,7 +4720,6 @@ biyy	夶
 biyz	必有
 biyz	庇佑
 biyz	不成样子
-biz	粃
 biz	被称作
 bize	逼仄
 bizi	鼻子
@@ -5312,9 +5311,9 @@ bjyy	拌匀
 bjyy	背景音乐
 bjyz	伴有
 bjyz	伴游
-bjz	粄
 bjz	败家子
 bjz	包饺子
+bjz	摆架子
 bjzd	板载
 bjzg	颁赠
 bjzi	板子
@@ -13407,7 +13406,6 @@ daiu	大厨
 daiv	大锤
 daiy	打春
 daiz	大仇
-daj	龘
 daj	档案夹
 daj	档案局
 dajb	打进
@@ -15871,9 +15869,9 @@ dhs	淡黄色
 dhs	淡红色
 dhsu	带回宿舍
 dhsx	趤
-dht	噹
 dht	大后天
 dht	电话亭
+dht	大会堂
 dhth	当堂
 dhtk	当庭
 dhtm	当天
@@ -16383,7 +16381,6 @@ diuw	当场身亡
 diux	地刷
 diuz	低手
 diuz	敌手
-div	牴
 div	对称轴
 divd	抵债
 divd	第宅
@@ -16813,9 +16810,9 @@ djop	担
 djop	狚
 djop	抌
 djoq	掸
-djp	躭
 djp	挡箭牌
 djp	订机票
+djp	登机牌
 djpb	单品
 djpb	蛋品
 djpd	单排
@@ -17314,7 +17311,6 @@ dkvu	叮嘱
 dkvu	顶住
 dkvu	盯住
 dkvy	定准
-dkw	椗
 dkw	读课文
 dkwj	丁烷
 dkwj	打开文件
@@ -18016,7 +18012,6 @@ dmvv	点缀
 dmvv	点明主旨
 dmvv	蝶梦庄周
 dmvy	低眉折腰
-dmw	槙
 dmw	大魔王
 dmw	弹幕网
 dmwa	敌明我暗
@@ -20543,7 +20538,6 @@ dvdv	德之大者
 dvdx	地质大学
 dvdy	斗智斗勇
 dvdy	多种多样
-dve	憝
 dve	打转儿
 dver	对儿
 dvet	抵掌而谈
@@ -21851,9 +21845,9 @@ dzsd	打字速度
 dzsf	鼎足三分
 dzsi	逗死
 dzsz	抖擞
-dzt	唞
 dzt	大总统
 dzt	肚子疼
+dzt	肚子痛
 dztc	唞
 dzth	吺
 dztp	电子天平
@@ -25619,7 +25613,6 @@ fjuu	飞机失事
 fjuv	反水
 fjuz	反手
 fjuz	贩售
-fjv	憣
 fjv	翻旧账
 fjv	反击战
 fjva	反诈
@@ -26576,7 +26569,6 @@ fuaq	泭
 fuat	涪
 fuau	滏
 fuay	洑
-fub	賦
 fub	风湿病
 fub	封神榜
 fubc	福报
@@ -28402,7 +28394,6 @@ fzr	负责任
 fzrd	负责任的
 fzrf	否认
 fzrt	殕
-fzs	妚
 fzs	分组赛
 fzsl	副总司令
 fzsp	妚
@@ -33358,7 +33349,6 @@ gspl	髸
 gspo	公婆
 gspo	攻破
 gspu	公仆
-gsq	塨
 gsq	钢丝球
 gsqb	躬亲
 gsqg	光速切割
@@ -33465,7 +33455,6 @@ gsvs	宫中
 gsvu	公主
 gsvu	公猪
 gsvy	公司职员
-gsw	栱
 gsw	告诉我
 gswb	杛
 gswd	宫外
@@ -35278,9 +35267,9 @@ gykd	滚开
 gykd	狗眼看人低
 gykk	过于苛刻
 gykr	狗眼看人
-gyl	丨
 gyl	给予了
 gyl	够用了
+gyl	公园里
 gylb	各有利弊
 gylb	高音喇叭
 gylb	狗咬吕洞宾
@@ -38347,7 +38336,6 @@ hjeh	环境恶化
 hjel	环境恶劣
 hjer	酣
 hjev	划江而治
-hjf	譀
 hjf	胡椒粉
 hjf	海景房
 hjff	含愤
@@ -38660,7 +38648,6 @@ hjww	捍卫
 hjww	寒微
 hjwx	沪江网校
 hjwy	怀瑾握瑜
-hjx	鋡
 hjx	环境下
 hjx	好记性
 hjxb	韩信
@@ -38810,7 +38797,6 @@ hkk	徊
 hkk	很可靠
 hkk	划框框
 hkkt	徊
-hkl	耲
 hkl	害苦了
 hkld	花开两朵
 hkle	坏了
@@ -39273,9 +39259,9 @@ hlvx	虎狼之穴
 hlvx	虎狼之心
 hlvy	何陋之有
 hlvz	黄轴
-hlw	榥
 hlw	互联网
 hlw	好莱坞
+hlw	葫芦娃
 hlwb	狐狸尾巴
 hlwf	黄文
 hlwl	互联网络
@@ -39288,7 +39274,6 @@ hlwu	恍悟
 hlwv	化零为整
 hlww	皇位
 hlwy	互联网没有记忆
-hlx	磺
 hlx	合理性
 hlx	厚礼蟹
 hlxd	后来先到
@@ -42510,9 +42495,9 @@ hxgx	互相关心
 hxgy	化学工业
 hxgy	湖心公园
 hxgz	后续工作
-hxh	崋
 hxh	很喜欢
 hxh	或许会
+hxh	好像很
 hxhb	混淆黑白
 hxhc	画好
 hxhc	崋
@@ -42867,9 +42852,9 @@ hxww	化为
 hxww	华为
 hxwy	化险为夷
 hxwz	横行无阻
-hxx	磆
 hxx	好消息
 hxx	坏消息
+hxx	黑猩猩
 hxxb	花心
 hxxb	画心
 hxxc	鏵
@@ -49130,7 +49115,6 @@ ivwq	槌
 ivww	垂危
 ivww	成者为王
 ivwx	纯真无邪
-ivx	鎚
 ivx	垂直线
 ivxd	戳中笑点
 ivxg	查找下一个
@@ -53937,9 +53921,9 @@ jlpp	畕
 jlpp	疅
 jlpt	豇
 jlpt	交流平台
-jlq	壃
 jlq	建立起
 jlq	就来气
+jlq	交了钱
 jlqg	戒律清规
 jlqi	将其
 jlqi	讲起
@@ -55528,7 +55512,6 @@ jpgy	经皮给药
 jpgy	蝍
 jpgz	结构
 jpgz	解构
-jph	岕
 jph	键盘宏
 jphc	接好
 jphe	结合
@@ -57141,9 +57124,9 @@ jtpp	爑
 jtpt	爝
 jtpw	绝配
 jtpy	家庭朋友
-jtq	瑴
 jtq	几天前
 jtq	军体拳
+jtq	监听器
 jtqh	瑴
 jtqi	崛起
 jtqk	绝情
@@ -58734,9 +58717,9 @@ jxks	架空
 jxkt	伽
 jxku	假哭
 jxkz	家口
-jxl	耞
 jxl	接下来
 jxl	教学楼
+jxl	静下来
 jxlb	驾临
 jxld	接下来的
 jxle	加了
@@ -60205,9 +60188,9 @@ kdks	开孔
 kdkx	可大可小
 kdky	肯定可以
 kdkz	开口
-kdl	欬
 kdl	看到了
 kdl	快到了
+kdl	口袋里
 kdlb	看到了吧
 kdld	开来
 kdld	困顿潦倒
@@ -62984,7 +62967,6 @@ kupd	酷派
 kupt	瞌睡碰到枕头
 kupy	昆山片玉
 kupz	扣屎盆子
-kuq	堀
 kuq	看上去
 kuq	开始前
 kuqc	旷世奇才
@@ -63528,7 +63510,6 @@ kxq	看下去
 kxq	狂想曲
 kxqb	垮
 kxqu	跨区
-kxr	骻
 kxr	可信任
 kxrb	骻
 kxru	跨入
@@ -63669,9 +63650,9 @@ kyfz	可疑分子
 kygb	考验干部
 kygh	跨洋过海
 kygy	可以攻玉
-kyh	崑
 kyh	口语化
 kyh	抗氧化
+kyh	开洋荤
 kyhj	抗氧化剂
 kyhj	可以缓解
 kyho	困惑
@@ -63808,7 +63789,6 @@ kyvu	考验智商
 kyvw	悃
 kyvx	客运中心
 kyvy	可以这样
-kyw	梱
 kyw	可以为
 kyw	康有为
 kywi	可以完成
@@ -64366,9 +64346,9 @@ lbil	繗
 lbir	临川
 lbis	林冲
 lbiu	力保城门不失
-lbj	冧
 lbj	来不及
 lbj	零部件
+lbj	老北京
 lbjb	临近
 lbjb	邻近
 lbjh	拉帮结伙
@@ -64654,7 +64634,6 @@ lcfj	劳烦
 lcfj	牢饭
 lcfu	老夫
 lcfu	老妇
-lcg	蛯
 lcg	冷藏柜
 lcg	来次够
 lcgc	老高
@@ -65158,7 +65137,6 @@ ldsi	莱斯
 ldsm	来点什么
 ldsm	聊点什么
 ldsq	零打碎敲
-ldt	唻
 ldt	绿豆汤
 ldt	雷达图
 ldta	唻
@@ -65447,7 +65425,6 @@ lgab	立国安邦
 lgao	冷傲
 lgaq	冷
 lgay	楼管阿姨
-lgb	睖
 lgb	两个半
 lgb	老干部
 lgbd	流感病毒
@@ -65902,9 +65879,9 @@ lhws	桹
 lhwy	榔
 lhwy	落花无言
 lhwz	樃
-lhx	鎯
 lhx	灵活性
 lhx	流行性
+lhx	轮滑鞋
 lhxd	龙虎相斗
 lhxg	利害相关
 lhxk	狼性
@@ -67546,9 +67523,9 @@ llss	踉
 llss	零零碎碎
 llss	啰啰嗦嗦
 llsv	两岁
-llt	啢
 llt	聊聊天
 llt	洛丽塔
+llt	乱了套
 lltc	两套
 lltd	两台
 lltd	凉台
@@ -69621,7 +69598,6 @@ lswt	类似问题
 lswu	龙舞
 lsww	龙威
 lsww	龙尾
-lsx	鑨
 lsx	老思想
 lsxb	龙芯
 lsxf	绿色消费
@@ -71273,9 +71249,9 @@ lygr	另一个人
 lygs	论功
 lygu	轮毂
 lygx	利益关系
-lyh	崙
 lyh	了一会
 lyh	利用好
+lyh	老用户
 lyhe	了一会儿
 lyhg	论衡
 lyhh	老眼昏花
@@ -71481,7 +71457,6 @@ lyvv	流言止于智者
 lyvw	利用职务
 lyvz	轮轴
 lyvz	牢狱之灾
-lyw	棆
 lyw	另一位
 lywd	力有未逮
 lywd	路易威登
@@ -72861,7 +72836,6 @@ meq	门儿清
 mese	么……”
 mesm	摩尔斯电码
 mesy	买二送一
-met	嚒
 met	马耳他
 meti	嚒
 mevf	迷而知返
@@ -73514,7 +73488,6 @@ mht	猕猴桃
 mhts	盲童
 mhtu	幕后推手
 mhty	猛虎添翼
-mhu	铓
 mhu	没话说
 mhu	没好事
 mhua	忙啥
@@ -73855,7 +73828,6 @@ miwq	榓
 miwu	迷雾
 miwu	迷误
 miww	满朝文武
-mix	銤
 mix	没出息
 mix	没承想
 mixb	迷信
@@ -74812,7 +74784,6 @@ mmix	木马程序
 mmiy	漫漫长夜
 mmiy	满目疮痍
 mmiz	绵绸
-mmj	宀
 mmj	明明就
 mmj	慢慢就
 mmjb	面筋
@@ -76491,9 +76462,9 @@ mupq	墓
 mupv	慕
 mupw	炑
 mupx	美术培训
-muq	坶
 muq	卖身契
 muq	没事情
+muq	莫生气
 muqb	母亲
 muqb	木琴
 muqb	没啥区别
@@ -76595,7 +76566,6 @@ muwt	没啥问题
 muwu	木屋
 muwu	目无
 muww	木
-mux	鉧
 mux	描述性
 muxb	鉬
 muxd	马上行动
@@ -77940,7 +77910,6 @@ mzw	民族舞
 mzwh	民族文化
 mzwu	某物
 mzww	某位
-mzx	鉾
 mzx	民族性
 mzxd	埋在心底
 mzxf	帽子戏法
@@ -83077,7 +83046,6 @@ pbgr	品管
 pbgr	品冠
 pbgs	皮包公司
 pbgt	皮包骨头
-pbh	汖
 pbh	瀑布汗
 pbh	屏蔽环
 pbhc	品号
@@ -83227,7 +83195,6 @@ pbvq	蓬勃朝气
 pbvs	品种
 pbvt	牝
 pbvv	拼缀
-pbw	榀
 pbw	陪伴我
 pbwd	漂泊无定
 pbwf	聘问
@@ -83647,7 +83614,6 @@ pduv	排水
 pduv	皮蛋瘦肉粥
 pduw	判断失误
 pduz	拍手
-pdv	犤
 pdv	攀登者
 pdvc	拍照
 pdvc	牌照
@@ -85029,7 +84995,6 @@ pkwt	贫困问题
 pkwu	平武
 pkww	评委
 pkww	评为
-pkx	砯
 pkx	贫困县
 pkxi	平息
 pkxi	评析
@@ -86313,7 +86278,6 @@ puwh	朴实无华
 puwl	檏
 puww	铺位
 puwy	披上外衣
-pux	舖
 pux	普适性
 puxb	蹒跚学步
 puxf	萍水相逢
@@ -86908,9 +86872,9 @@ qbfh	全部返还
 qbfj	侵犯
 qbfu	亲夫
 qbfu	亲赴
-qbg	螓
 qbg	七八个
 qbg	千百个
+qbg	气不过
 qbge	亲哥
 qbgg	千不该万不该
 qbgh	岂不更好
@@ -90879,7 +90843,6 @@ qqpq	逑
 qqps	裘
 qqpy	亲戚朋友
 qqpy	QQ拼音
-qqq	坵
 qqq	轻悄悄
 qqq	氢气球
 qqqb	求亲
@@ -92223,7 +92186,6 @@ qusq	龋
 qusq	趣
 qusx	欺霜赛雪
 qusz	亲生孙子
-qut	呿
 qut	潜水艇
 qutg	切实提高
 quth	切身体会
@@ -93967,7 +93929,6 @@ rgbn	如果不能
 rgbu	如果不是
 rgby	如果不是这样
 rgcu	人格测试
-rgd	礽
 rgd	日光灯
 rgd	柔光灯
 rgdc	扔到
@@ -95277,7 +95238,6 @@ rryw	让人意外
 rryw	日入一万
 rryy	日日夜夜
 rryz	人人有责
-rrz	朊
 rrz	仍然在
 rrzg	任人宰割
 rrzo	软座
@@ -98882,7 +98842,6 @@ srbm	死人不偿命
 srbn	虽然不能
 srbu	虽然不是
 srby	虽然并没有什么卵用
-src	痠
 src	虽如此
 srcc	算草
 srcd	酸菜
@@ -103793,9 +103752,9 @@ tmkl	透明窟窿
 tmkl	倎
 tmks	天空
 tmks	填空
-tml	靦
 tml	他们俩
 tml	他们连
+tml	他们来
 tmla	甜辣
 tmlb	田林
 tmlc	天牢
@@ -107145,9 +107104,9 @@ tyww	臀围
 tywx	同一屋檐下
 tywy	体育委员
 tywy	投医问药
-tyx	氽
 tyx	太阳穴
 tyx	太阳系
+tyx	通用性
 tyxd	统一行动
 tyxg	痛痒相关
 tyxi	屯溪
@@ -109899,7 +109858,6 @@ ugvv	收官之战
 ugvv	书归正传
 ugvz	手工制作
 ugvz	收官之作
-ugw	枡
 ugw	双冠王
 ugwa	生娃
 ugwc	尸骨无存
@@ -111930,9 +111888,9 @@ ujwu	善舞
 ujwu	山坞
 ujww	膻味
 ujww	世间万物
-ujx	鐥
 ujx	山脚下
 ujx	上进心
+ujx	数据线
 ujxb	善心
 ujxb	神经细胞
 ujxd	实际行动
@@ -117326,7 +117284,6 @@ vdrq	煮豆燃豆萁
 vdrt	祭
 vdrw	重大任务
 vdrz	这段日子
-vds	砦
 vds	招待所
 vdsi	祭司
 vdsu	重大损失
@@ -118080,7 +118037,6 @@ vfso	诊所
 vfsv	震碎
 vfsv	真髓
 vfsz	靕
-vft	眞
 vft	正方体
 vft	直方图
 vftc	枕套
@@ -119054,7 +119010,6 @@ vhwo	掌握
 vhwp	杖
 vhwu	账务
 vhwy	正合我意
-vhx	礃
 vhx	智慧型
 vhxa	餦
 vhxb	掌心
@@ -120580,7 +120535,6 @@ vllm	妆奁
 vlln	装料
 vllp	壮烈
 vlly	战略利益
-vlm	莊
 vlm	真浪漫
 vlm	这里面
 vlmb	战略目标
@@ -121817,7 +121771,6 @@ vsco	重挫
 vscp	重
 vscp	尰
 vscp	瘇
-vsd	祌
 vsd	住所地
 vsda	重大
 vsda	肿大
@@ -124566,7 +124519,6 @@ wadl	袜
 wadn	挖掉
 wads	挖洞
 waer	娃儿
-waf	屲
 waf	慰安妇
 wafd	为爱发电
 waff	挖坟
@@ -126271,9 +126223,9 @@ whpk	网评
 whpo	王婆
 whpr	尫
 whpu	旺铺
-whq	罒
 whq	未婚妻
 whq	文化圈
+whq	外汇券
 whqi	亡妻
 whqi	往期
 whqk	忘情
@@ -134691,7 +134643,6 @@ xmww	纤维
 xmww	县委
 xmwx	杴
 xmwz	橌
-xmx	仚
 xmx	小魔仙
 xmxb	闲心
 xmxf	修满学分
@@ -136993,7 +136944,6 @@ xtvl	心态炸了
 xtvr	血赚
 xtvs	雪中
 xtvs	血肿
-xtw	桖
 xtw	信天翁
 xtw	校团委
 xtwf	学问
@@ -138268,7 +138218,6 @@ xxlv	侠侣
 xxly	下轮
 xxly	消息来源
 xxlz	下楼
-xxm	蕸
 xxm	新项目
 xxm	小熊猫
 xxma	下马
@@ -138695,9 +138644,9 @@ xyfw	逍遥法外
 xyfw	讯飞
 xyfy	虚意逢迎
 xyfz	嫌疑分子
-xyg	蟳
 xyg	下一个
 xyg	谐音梗
+xyg	像一个
 xygf	寻根
 xygg	硝烟滚滚
 xygg	萧炎哥哥
@@ -144158,7 +144107,6 @@ ykgs	硬弓
 ykgu	硬骨
 ykgw	应给
 ykgy	蝧
-ykh	籯
 ykh	圆括号
 ykhc	英豪
 ykhd	婴孩
@@ -144239,7 +144187,6 @@ ykkl	盈眶
 ykkv	盈亏
 ykky	偀
 ykkz	营口
-ykl	霙
 ykl	亚克力
 ykla	硬拉
 ykla	赢啦
@@ -144311,7 +144258,6 @@ yko	撄
 ykon	攍
 ykop	摬
 ykos	撄
-ykp	煐
 ykp	也恐怕
 ykpb	应聘
 ykpb	硬拼
@@ -145845,7 +145791,6 @@ yrmw	原煤
 yrmx	予人玫瑰，手留余香
 yrmz	远谋
 yrmz	元谋
-yrn	円
 yrn	也让你
 yrnd	有容乃大
 yrnm	元年
@@ -150813,7 +150758,6 @@ zdln	再聊
 zdlp	甾
 zdlu	总的来说
 zdly	再论
-zdm	菑
 zdm	自动门
 zdma	在吗
 zdmb	灾民
@@ -151996,7 +151940,6 @@ ziuu	字数
 ziuu	自述
 ziuv	渍水
 ziuz	自首
-ziv	牸
 ziv	总产值
 zivc	自找
 zivg	自证
