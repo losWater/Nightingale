@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """第二步：只读两张主表，生成全部输入法兼容格式与周边产物。纯固定脚本，不改主表。用 PowerShell 运行：
-    python export.py                 # 体检 → 码前镜像 → 106 导出/引擎核验/打包 → 114/115 工具箱 → 123 虎娘 → 125 码圈 → Rime 主力版（127，魔虎基座：生成/引擎核验/打包）
+    python export.py                 # 体检 → 码前镜像 → 106 导出/引擎核验/打包 → 114/115 工具箱 → 123 虎娘 → 125 码圈 → 131 鲸凉鹤专属版 → Rime 主力版（127，魔虎基座：生成/引擎核验/打包）
     python export.py --deploy        # 再更新本机小狼毫与虎娘
     python export.py --release       # 再组装 117 发布目录、118 官网数据（git 提交与 Release 上传属对外动作，仍手动）
 关卡：主表结构体检不过、任何一步失败即停。规则体检（78 的 14 项）只报告不拦——人工裁定可以高于规则，由你看报告决定。
@@ -45,7 +45,8 @@ P = W + '/106_全平台导出'
 if os.path.isdir(P + '/engine-check-final'): shutil.rmtree(P + '/engine-check-final')      # 106 自己生成的核验目录
 step('106 导出', [P + '/build.py']); step('106 引擎核验', [P + '/verify.py'], [r'main PASS', r'light PASS', r'mobile PASS'], show=4); step('106 打包', [P + '/package.py'], show=3)
 step('114 工具箱', [W + '/114_工具箱同步扩展字/sync.py']); step('115 练习例字', [W + '/115_练习例字补扩展字/sync.py'])
-step('123 虎娘', [W + '/123_虎娘导入/build.py']); step('125 码圈', [W + '/125_码圈交付/build.py']); 
+step('123 虎娘', [W + '/123_虎娘导入/build.py']); step('125 码圈', [W + '/125_码圈交付/build.py']); step('131 鲸凉鹤专属', [W + '/131_鲸凉鹤专属版/build.py']); step('131 打包', [W + '/131_鲸凉鹤专属版/package.py'])
+
 M7 = W + '/127_魔虎基座试验'   # Rime 主力版「夜莺主力」（魔虎基座；数据取自上面 106 的中间产物）
 step('主力版 生成', [M7 + '/build.py']); step('主力版 引擎核验', [M7 + '/verify.py'], [r'main PASS'], show=2); step('主力版 打包', [M7 + '/package.py'])
 if '--deploy' in A: step('本机部署', [H + '/deploy_local.py'], [r'0 failure', r'tigirl update exit: 0'], show=3)
