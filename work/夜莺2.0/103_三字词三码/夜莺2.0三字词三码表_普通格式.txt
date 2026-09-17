@@ -11086,6 +11086,7 @@
 孙女婿	snx
 桑拿浴	sny
 碎片化	sph
+食品厂	spi
 撕破脸	spl
 撒泡尿	spn
 死婆娘	spn
@@ -12512,7 +12513,6 @@
 受迫害	uph
 售票处	upi
 刷跑车	upi
-食品厂	upi
 受排挤	upj
 收盘价	upj
 售票口	upk

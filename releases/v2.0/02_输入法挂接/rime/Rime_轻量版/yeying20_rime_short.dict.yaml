@@ -13011,6 +13011,7 @@ columns: [text, code, weight]
 乖顺	gk;ct uy;lj	29123
 乖顺	gkuy	29123
 乘	ig;nt	6337
+乘	ug;nt	6337
 乘人不备	irbb	34446
 乘人之危	ig;nt rf;xx vi;bb ww;gv	73386
 乘人之危	irvw	73386
@@ -18933,6 +18934,8 @@ columns: [text, code, weight]
 仆从	pu csk	138714
 仆从	pu;kg cs;xx	138714
 仆从	pucs	138714
+仆射	pu yek	23215
+仆射	pu;kg ye;pt	23215
 仆射	puye	23215
 仆役	pu yik	109964
 仆役	pu;kg yi;kh	109964
@@ -23695,6 +23698,7 @@ columns: [text, code, weight]
 佚名	yi mkk	79376
 佚名	yi;kg mk;rt	79376
 佚名	yimk	79376
+佛	bi;kk	12596
 佛	fo;kk	12596
 佛	fu;kk	12596
 佛主	fo vuk	26841
@@ -32759,6 +32763,7 @@ columns: [text, code, weight]
 公鹿	gs;lh lu;ct	51089
 公鹿	gslu	51089
 六	lq;el	33096
+六	lu;el	33096
 六一	lq yie	133522
 六一	lq;el yi;pp	133522
 六一	lqyi	133522
@@ -32839,9 +32844,9 @@ columns: [text, code, weight]
 六号	lq hce	34800
 六号	lq;el hc;tb	34800
 六号	lqhc	34800
-六合	lq hee	108031
-六合	lq;el he;xt	108031
 六合	lqhe	108031
+六合	lu hee	108031
+六合	lu;el he;xt	108031
 六合	luhe	108031
 六合之内	lhvn	1
 六合彩	lhc	68667
@@ -33674,6 +33679,7 @@ columns: [text, code, weight]
 兵马俑	bk;dl ma;vv ys;kz	153633
 兵马俑	bmy	153633
 兵马未动	bmwd	1
+其	ji;rl	96328
 其	qi;rl	96328
 其三	qi sjr	124860
 其三	qi;rl sj;pp	124860
@@ -34201,6 +34207,7 @@ columns: [text, code, weight]
 冁	ij;qs	1
 冂	js;nn	1
 冃	mc;np	1
+内	na;nx	64700
 内	nw;nx	64700
 内中	nw vsn	25835
 内中	nw;nx vs;tl	25835
@@ -36157,6 +36164,7 @@ columns: [text, code, weight]
 冭	td;ya	1
 冮	gh;at	3
 冯	fg;av	2428
+冯	pk;av	2428
 冯唐	fg tha	30355
 冯唐	fg;av th;ct	30355
 冯唐	fgth	30355
@@ -38371,6 +38379,8 @@ columns: [text, code, weight]
 凤姐	fg;nq jp;sq	71698
 凤姐	fgjp	71698
 凤尾菇	fwg	50000
+凤栖	fg xin	33599
+凤栖	fg;nq xi;we	33599
 凤栖	fgxi	33599
 凤毛麟角	fg;nq mc;gg lb;cl jn;gz	102731
 凤毛麟角	fmlj	102731
@@ -38634,6 +38644,7 @@ columns: [text, code, weight]
 凸面	tu;lp mm;ll	50146
 凸面	tumm	50146
 凹	ao;lp	674
+凹	wa;lp	674
 凹下	ao xxl	30968
 凹下	ao;lp xx;pg	30968
 凹下	aoxx	30968
@@ -46696,6 +46707,7 @@ columns: [text, code, weight]
 匪首	fw uzn	115465
 匪首	fw;nn uz;ld	115465
 匪首	fwuz	115465
+匮	gv;nj	146
 匮	kv;nj	146
 匮乏	kv fan	187465
 匮乏	kv;nj fa;fb	187465
@@ -60349,6 +60361,9 @@ columns: [text, code, weight]
 吕蒙	lv;tt mg;mo	40334
 吕蒙	lvmg	40334
 吖	aa;tl	1944
+吖	ya;tl	1944
+吖吖	ya yat	47741
+吖吖	ya;tl ya;tl	47741
 吖吖	yaaa	47741
 吖吖	yaya	47741
 吗	ma;tv	286802
@@ -61699,6 +61714,8 @@ columns: [text, code, weight]
 呜咽	wu yet	156246
 呜咽	wu;tg ye;ty	156246
 呜咽	wuye	156246
+呜喔	wu oot	15721
+呜喔	wu;tg oo;tg	15721
 呜喔	wuoo	15721
 呞	ui;tt	1
 呟	jr;ti	1
@@ -62617,6 +62634,7 @@ columns: [text, code, weight]
 咣当	gl;tp dh;yp	104554
 咣当	gldh	104554
 咤	va;tt	106
+咥	dp;tg	4
 咥	xi;tg	4
 咦	yi;tx	1249
 咧	lp;tg	2112
@@ -62754,6 +62772,7 @@ columns: [text, code, weight]
 咯血	ka;tq xt;qq	58507
 咯血	kaxp	58507
 咯血	kaxt	58507
+咱	za;td	17744
 咱	zj;td	17744
 咱们	zj mft	474116
 咱们	zj;td mf;kn	474116
@@ -62774,9 +62793,9 @@ columns: [text, code, weight]
 咱家	zj jxt	46314
 咱家	zj;td jx;jo	46314
 咱家	zjjx	46314
-咱就	zj jqt	1
-咱就	zj;td jq;en	1
-咱就	zjjq	1
+咱就	za jqt	1
+咱就	za;td jq;en	1
+咱就	zajq	1
 咱就是说	zjuu	1
 咱爸	zj bat	43845
 咱爸	zj;td ba;lv	43845
@@ -63445,6 +63464,7 @@ columns: [text, code, weight]
 哝	ns;ts	416
 哞	mz;tv	93
 哟	yo;ta	10719
+哟	yz;ta	10719
 哟西	yo xit	83786
 哟西	yo;ta xi;ee	83786
 哟西	yoxi	83786
@@ -65051,6 +65071,7 @@ columns: [text, code, weight]
 喑哑	yb;td ya;tn	52645
 喑哑	ybya	52645
 喓	yc;ts	1
+喔	oo;tg	8677
 喔	wo;tg	8677
 喔喔	wo wot	109645
 喔喔	wo;tg wo;tg	109645
@@ -65710,6 +65731,7 @@ columns: [text, code, weight]
 嗬	he;tt	216
 嗭	vi;ct	1
 嗮	sd;te	1
+嗯	eg;tv	65954
 嗯	en;tv	65954
 嗯	ng;tv	65954
 嗯呐	en nat	136957
@@ -65863,6 +65885,7 @@ columns: [text, code, weight]
 嘚瑟	de;tt se;rv	104430
 嘚瑟	dese	104430
 嘛	ma;tw	46886
+嘞	le;tp	1830
 嘞	lw;tp	1830
 嘟	du;ty	1718
 嘟哝	du nst	111242
@@ -66079,6 +66102,7 @@ columns: [text, code, weight]
 噊	yu;tt	1
 噋	ty;tq	1
 噌	cg;tb	63
+噌	ig;tb	63
 噌吰	cg hst	1
 噌吰	cg;tb hs;th	1
 噌吰	cghs	1
@@ -71095,6 +71119,7 @@ columns: [text, code, weight]
 垂髫	iv;cp tn;pt	43057
 垂髫	ivtn	43057
 垃	la;qj	5455
+垃	le;qj	5455
 垃圾	la jiq	410546
 垃圾	la;qj ji;qs	410546
 垃圾	laji	410546
@@ -84030,6 +84055,7 @@ columns: [text, code, weight]
 媛	yr;sq	533
 媜	vg;sl	1
 媝	qq;ns	1
+媞	ti;ss	10
 媞	ui;ss	10
 媟	xp;sw	1
 媠	to;sz	1
@@ -84358,6 +84384,7 @@ columns: [text, code, weight]
 嬘	sv;sq	1
 嬙	ql;st	1
 嬚	lm;sp	1
+嬛	hr;ss	175
 嬛	xr;ss	175
 嬜	xb;ds	1
 嬝	nn;ss	1
@@ -84383,6 +84410,7 @@ columns: [text, code, weight]
 嬴政	ykvg	58934
 嬵	mm;se	1
 嬶	bi;sp	1
+嬷	ma;sh	270
 嬷	mo;sh	270
 嬺	ni;sv	1
 嬻	du;sl	1
@@ -84987,6 +85015,7 @@ columns: [text, code, weight]
 孙辈	sy;py bw;ne	65712
 孙辈	sybw	65712
 孚	fu;hp	125
+孛	bo;cp	46
 孛	bw;cp	46
 孛儿只斤	bevj	1
 孜	zi;pq	495
@@ -87215,6 +87244,7 @@ columns: [text, code, weight]
 定额	dkee	177679
 定食定量	dudl	1
 宛	wj;jv	892
+宛	yr;jv	892
 宛似	wj sij	46781
 宛似	wj;jv si;kr	46781
 宛似	wjsi	46781
@@ -90614,6 +90644,7 @@ columns: [text, code, weight]
 専	vr;pt	1
 尃	fu;wt	1
 射	ue;pt	12251
+射	ye;pt	12251
 射中	ue vsp	7451
 射中	ue;pt vs;tl	7451
 射中	uevs	7451
@@ -93920,6 +93951,7 @@ columns: [text, code, weight]
 屮	ie;nl	1
 屮艸芔茻	ichm	1
 屯	ty;pb	653
+屯	vy;pb	653
 屯兵	ty bkp	76107
 屯兵	ty;pb bk;dl	76107
 屯兵	tybk	76107
@@ -94925,6 +94957,7 @@ columns: [text, code, weight]
 崲	hl;hr	1
 崳	yu;hg	1
 崴	wd;hs	147
+崴	ww;hs	147
 崴脚	wd jnh	62100
 崴脚	wd;hs jn;zy	62100
 崴脚	wdjn	62100
@@ -100616,6 +100649,7 @@ columns: [text, code, weight]
 廂	xl;cb	1
 廃	fw;cb	1
 廅	ee;cq	1
+廆	gv;cp	1
 廆	ww;cp	1
 廉	lm;cp	3402
 廉价	lm jxc	258879
@@ -107291,7 +107325,9 @@ columns: [text, code, weight]
 忐忑不安	tj;gv te;pv bu;pp an;js	150003
 忐忑不安	ttba	150003
 忑	te;pv	347
+忒	te;vv	701
 忒	tv;vv	701
+忒	tw;vv	701
 忒修斯之船	txsi	1
 忒坏	tv hkv	1
 忒坏	tv;vv hk;qp	1
@@ -109234,6 +109270,9 @@ columns: [text, code, weight]
 怨气	yr;rv qi;zz	171373
 怨气	yrqi	171373
 怨气冲天	yqit	1
+怨灵	yr lkr	1812
+怨灵	yr;rv lk;pp	1812
+怨灵	yrlk	1812
 怨言	yr yjr	193655
 怨言	yr;rv yj;ff	193655
 怨言	yryj	193655
@@ -124543,6 +124582,7 @@ columns: [text, code, weight]
 挰	ig;or	1
 挲	sa;ao	66
 挲	so;ao	66
+挲	ua;ao	66
 挴	mw;oi	1
 挵	ns;om	1
 挶	ju;ot	1
@@ -125441,6 +125481,8 @@ columns: [text, code, weight]
 换走	hr zzo	1
 换走	hr;oy zz;ss	1
 换走	hrzz	1
+换趵	hr boo	1
+换趵	hr;oy bo;sa	1
 换趵	hrbo	1
 换车	hr ieo	141014
 换车	hr;oy ie;ee	141014
@@ -125864,6 +125906,8 @@ columns: [text, code, weight]
 掌控	vh ksj	87757
 掌控	vh;jo ks;ot	87757
 掌控	vhks	87757
+掌掴	vh goj	25251
+掌掴	vh;jo go;or	25251
 掌掴	vhgo	25251
 掌握	vh woj	382403
 掌握	vh;jo wo;og	382403
@@ -127191,6 +127235,7 @@ columns: [text, code, weight]
 掳走	lu;op zz;ss	56682
 掳走	luzz	56682
 掴	gk;or	56
+掴	go;or	56
 掵	mk;oy	1
 掶	jp;ox	1
 掷	vi;oy	872
@@ -140315,6 +140360,9 @@ columns: [text, code, weight]
 晜	ky;bd	1
 晞	xi;be	79
 晟	ig;bb	91
+晟	ug;bb	91
+晟敏	ug mbb	1
+晟敏	ug;bb mb;kq	1
 晟敏	ugmb	1
 晠	ug;bb	1
 晡	bu;bw	2
@@ -148821,6 +148869,8 @@ columns: [text, code, weight]
 某项	mz;rw xl;tj	10649
 某项	mzxl	10649
 柑	gj;wr	249
+柑桔	gj juw	156282
+柑桔	gj;wr ju;wt	156282
 柑桔	gjju	156282
 柑橘	gj juw	183083
 柑橘	gj;wr ju;wt	183083
@@ -149676,6 +149726,7 @@ columns: [text, code, weight]
 栔	qi;rw	1
 栕	vf;we	1
 栖	qi;we	576
+栖	xi;we	576
 栖居	qi juw	74933
 栖居	qi;we ju;bt	74933
 栖居	qiju	74933
@@ -149700,6 +149751,9 @@ columns: [text, code, weight]
 栝	gx;wt	1
 栞	kj;pw	1
 栟	bf;wm	1
+栟	bk;wm	1
+栟榈	bk lvw	1
+栟榈	bk;wm lv;wt	1
 栟榈	bklv	1
 栠	rf;kw	1
 校	jn;wp	35740
@@ -150637,16 +150691,23 @@ columns: [text, code, weight]
 桒	sh;cw	1
 桓	hr;wp	197
 桔	jp;wt	558
+桔	ju;wt	558
+桔子	ju ziw	210567
+桔子	ju;wt zi;pp	210567
 桔子	juzi	210567
-桔梗	jp ggw	110308
-桔梗	jp;wt gg;wp	110308
 桔梗	jpgg	110308
+桔梗	ju ggw	110308
+桔梗	ju;wt gg;wp	110308
 桔梗	jugg	110308
+桔皮	ju piw	41001
+桔皮	ju;wt pi;gg	41001
 桔皮	jupi	41001
+桔红	ju hsw	52168
+桔红	ju;wt hs;it	52168
 桔红	juhs	52168
-桔黄	jp hlw	45455
-桔黄	jp;wt hl;ml	45455
 桔黄	jphl	45455
+桔黄	ju hlw	45455
+桔黄	ju;wt hl;ml	45455
 桔黄	juhl	45455
 桕	jq;wd	12
 桖	xt;wq	1
@@ -150657,6 +150718,7 @@ columns: [text, code, weight]
 桜	yk;ws	1
 桜井宁宁	yjnn	1
 桠	ya;wn	58
+桡	nc;wp	19
 桡	rc;wp	19
 桡骨	rc guw	106035
 桡骨	rc;wp gu;rr	106035
@@ -151573,6 +151635,7 @@ columns: [text, code, weight]
 椎骨	vvgu	111557
 椐	ju;wt	1
 椑	bw;wc	1
+椑	pi;wc	1
 椒	jn;wq	2235
 椒盐蘑菇	jymg	1
 椓	vo;wo	1
@@ -153559,6 +153622,7 @@ columns: [text, code, weight]
 歖	xi;qx	1
 歘	ix;px	1
 歙	ue;xx	19
+歙	xi;xx	19
 歚	uj;ux	1
 歛	hj;xx	1
 歜	iu;qx	1
@@ -163500,6 +163564,7 @@ columns: [text, code, weight]
 浂	yi;ay	1
 浃	jx;ay	80
 浄	jk;ap	1
+浅	jm;av	3316
 浅	qm;av	3316
 浅吟低唱	qm;av yb;tq di;kz ih;tb	56346
 浅吟低唱	qydi	56346
@@ -163747,6 +163812,7 @@ columns: [text, code, weight]
 测高	ce;ag gc;et	19961
 测高	cegc	19961
 浍	hv;ah	2
+浍	kk;ah	2
 济	ji;al	36137
 济世之才	juvc	1
 济世安民	juam	1
@@ -165390,6 +165456,7 @@ columns: [text, code, weight]
 液面	ye;ar mm;ll	76992
 液面	yemm	76992
 涳	ks;at	1
+涴	wo;av	1
 涴	yr;av	1
 涵	hj;an	2304
 涵养	hj yha	178053
@@ -166088,6 +166155,7 @@ columns: [text, code, weight]
 淳朴	iy;ap pu;wg	170192
 淳朴	iypu	170192
 淴	hu;av	1
+混	gy;at	15928
 混	hy;at	15928
 混上	hy uha	6606
 混上	hy;at uh;gp	6606
@@ -170934,6 +171002,7 @@ columns: [text, code, weight]
 炒鸡	ic;pf ji;qg	102005
 炒鸡	icji	102005
 炓	ln;pc	1
+炔	gv;py	17
 炔	qt;py	17
 炔烃	qt tkp	4107
 炔烃	qt;py tk;pt	4107
@@ -172896,6 +172965,7 @@ columns: [text, code, weight]
 焗饭	ju fjp	43293
 焗饭	ju;pt fj;wq	43293
 焗饭	jufj	43293
+焘	dc;pp	36
 焘	tc;pp	36
 焙	bw;pt	145
 焙烧	bw ucp	79003
@@ -172995,6 +173065,7 @@ columns: [text, code, weight]
 焭	qs;pn	1
 焮	xb;px	1
 焯	ic;pc	36
+焯	vo;pc	36
 焰	yj;pd	1544
 焰火	yj hop	206189
 焰火	yj;pd ho;pp	206189
@@ -179353,6 +179424,7 @@ columns: [text, code, weight]
 珯	lc;rt	1
 珰	dh;rp	65
 珱	yk;rs	1
+珲	hv;re	21
 珲	hy;re	21
 珳	wf;rf	1
 珴	ee;rv	1
@@ -179508,6 +179580,8 @@ columns: [text, code, weight]
 球馆	qqgr	131530
 琄	xr;rz	1
 琅	lh;rs	391
+琅嬛	lh hrr	8466
+琅嬛	lh;rs hr;ss	8466
 琅嬛	lhhr	8466
 琅琊	lh yar	46747
 琅琊	lh;rs ya;ry	46747
@@ -180306,6 +180380,8 @@ columns: [text, code, weight]
 甄别	vf bpe	128560
 甄别	vf;ea bp;tg	128560
 甄别	vfbp	128560
+甄嬛	vf hre	97285
+甄嬛	vf;ea hr;ss	97285
 甄嬛	vfhr	97285
 甄选	vf xre	145128
 甄选	vf;ea xr;vq	145128
@@ -180314,6 +180390,7 @@ columns: [text, code, weight]
 甏	bg;qa	1
 甏肉干饭	brgf	1
 甏肉米饭	brmf	1
+甑	jk;la	9
 甑	zg;la	9
 甓	pi;ba	1
 甗	yj;ga	1
@@ -196872,6 +196949,7 @@ columns: [text, code, weight]
 稼穑	jx;no se;nt	56131
 稼穑	jxse	56131
 稽	ji;nb	1105
+稽	qi;nb	1105
 稽查	ji ian	143601
 稽查	ji;nb ia;wp	143601
 稽查	jiia	143601
@@ -201777,6 +201855,7 @@ columns: [text, code, weight]
 粟裕	suyu	92697
 粠	hs;zl	1
 粡	ts;zt	1
+粢	ci;az	6
 粢	zi;az	6
 粤	yt;fb	1910
 粤曲	yt quf	57433
@@ -203189,6 +203268,8 @@ columns: [text, code, weight]
 絮絮叨叨	xu;si xu;si dc;tg dc;tg	111875
 絮絮叨叨	xxdd	111875
 絮絮叨叨	xxtt	111875
+絮聒	xu gxs	22315
+絮聒	xu;si gx;xt	22315
 絮聒	xugx	22315
 絮语	xu yus	83095
 絮语	xu;si yu;ft	83095
@@ -209982,6 +210063,8 @@ columns: [text, code, weight]
 翞	jl;oy	1
 翟	di;ob	188
 翟	vd;ob	188
+翟隽	vd jyo	68441
+翟隽	vd;ob jy;bs	68441
 翟隽	vdjy	68441
 翠	cv;oc	2023
 翠园	cv yro	30195
@@ -212369,6 +212452,7 @@ columns: [text, code, weight]
 聐	ya;xt	1
 聑	tp;xx	1
 聒	go;xt	65
+聒	gx;xt	65
 聒噪	go zcx	113395
 聒噪	go;xt zc;tw	113395
 聒噪	gozc	113395
@@ -219133,6 +219217,7 @@ columns: [text, code, weight]
 艳阳	yjyh	142794
 艳阳高照	yygv	60444
 艴	bo;kv	1
+艴	fu;kv	1
 艹	cc;mm	1
 艹他妈的	ctmd	1
 艹你妈的	cnmd	1
@@ -220228,6 +220313,7 @@ columns: [text, code, weight]
 苔藓	td xmm	129204
 苔藓	td;mt xm;mu	129204
 苔藓	tdxm	129204
+苕	tn;mt	61
 苕	uc;mt	61
 苖	di;mp	1
 苗	mn;mp	3909
@@ -220350,6 +220436,7 @@ columns: [text, code, weight]
 苤蓝	pp ljm	27076
 苤蓝	pp;mp lj;mq	27076
 苤蓝	pplj	27076
+若	re;mt	14083
 若	ro;mt	14083
 若不及时	rbju	1
 若不是	rbu	100000
@@ -221330,6 +221417,8 @@ columns: [text, code, weight]
 荀彧	xy yum	13516
 荀彧	xy;mb yu;vf	13516
 荀彧	xyyu	13516
+荀谌	xy ufm	1
+荀谌	xy;mb uf;fb	1
 荀谌	xyuf	1
 荁	hr;mp	1
 荃	qr;mr	83
@@ -224182,6 +224271,7 @@ columns: [text, code, weight]
 蕀	ji;my	1
 蕂	ug;mp	1
 蕃	bo;mp	146
+蕃	fj;mp	146
 蕄	mg;mv	1
 蕅	ou;mq	1
 蕆	ij;ml	1
@@ -225523,6 +225613,7 @@ columns: [text, code, weight]
 蛆虫	qu;gq is;gg	122965
 蛆虫	quis	122965
 蛇	ue;gt	3502
+蛇	yi;gt	3502
 蛇口	ue kzg	86568
 蛇口	ue;gt kz;tt	86568
 蛇口	uekz	86568
@@ -225814,6 +225905,7 @@ columns: [text, code, weight]
 蛲虫	nc;gp is;gg	58107
 蛲虫	ncis	58107
 蛳	si;ge	44
+蛳	ui;ge	44
 蛴	qi;gl	7
 蛵	xk;gt	1
 蛶	jp;gt	1
@@ -225997,6 +226089,8 @@ columns: [text, code, weight]
 蜜桃	mi tcj	162701
 蜜桃	mi;jg tc;wp	162701
 蜜桃	mitc	162701
+蜜桔	mi juj	81875
+蜜桔	mi;jg ju;wt	81875
 蜜桔	miju	81875
 蜜水	mi uvj	39217
 蜜水	mi;jg uv;pp	39217
@@ -228976,10 +229070,13 @@ columns: [text, code, weight]
 裦	fz;es	1
 裧	ij;dp	1
 裨	bi;dc	61
+裨	pi;dc	61
+裨将	pi jld	10882
+裨将	pi;dc jl;nt	10882
 裨将	pijl	10882
-裨益	bi yid	106025
-裨益	bi;dc yi;lq	106025
 裨益	biyi	106025
+裨益	pi yid	106025
+裨益	pi;dc yi;lq	106025
 裨益	piyi	106025
 裩	ky;dt	1
 裪	tc;dv	1
@@ -228997,6 +229094,7 @@ columns: [text, code, weight]
 裱褙	bn;ds bw;dz	23443
 裱褙	bnbw	23443
 裲	ll;dx	1
+裳	ih;js	694
 裳	uh;js	694
 裴	pw;ns	457
 裵	pw;es	1
@@ -230489,6 +230587,7 @@ columns: [text, code, weight]
 觠	qr;rz	1
 觡	ge;gq	1
 觢	ui;rz	1
+解	hd;gv	81751
 解	jp;gv	81751
 解	xp;gv	81751
 解下	jp xxg	38189
@@ -233342,6 +233441,7 @@ columns: [text, code, weight]
 诗选	ui xrf	108352
 诗选	ui;ft xr;vq	108352
 诗选	uixr	108352
+诘	ji;ft	57
 诘	jp;ft	57
 诘屈聱牙	jqay	17477
 诘责	jp zef	17477
@@ -235582,6 +235682,7 @@ columns: [text, code, weight]
 谋面	mz;fw mm;ll	68187
 谋面	mzmm	68187
 谌	if;fb	27
+谌	uf;fb	27
 谍	dp;fw	1696
 谍影	dp ykf	32426
 谍影	dp;fw yk;bf	32426
@@ -235916,6 +236017,7 @@ columns: [text, code, weight]
 谵	vj;ff	13
 谶	if;fp	16
 谷	gu;lt	6442
+谷	yu;lt	6442
 谷丙转氨酶	gbvm	11923
 谷仓	gu chl	161117
 谷仓	gu;lt ch;xv	161117
@@ -236112,6 +236214,7 @@ columns: [text, code, weight]
 豆饼	dz bkp	132216
 豆饼	dz;pp bk;wm	132216
 豆饼	dzbk	132216
+豇	gh;pt	23
 豇	jl;pt	23
 豇豆	jl dzp	66792
 豇豆	jl;pt dz;pp	66792
@@ -237629,9 +237732,10 @@ columns: [text, code, weight]
 贱骨头	jgt	51409
 贱骨头	jm;jv gu;rr tz;ay	51409
 贲	bf;cj	26
-贲门	bf mfc	92690
-贲门	bf;cj mf;nn	92690
+贲	bi;cj	26
 贲门	bfmf	92690
+贲门	bi mfc	92690
+贲门	bi;cj mf;nn	92690
 贲门	bimf	92690
 贳	ui;rj	1
 贴	tp;jt	9897
@@ -240847,6 +240951,7 @@ columns: [text, code, weight]
 趴窝	pa;sl wo;jx	55656
 趴窝	pawo	55656
 趵	bc;sa	17
+趵	bo;sa	17
 趵突泉	btq	100000
 趷	ke;sb	1
 趸	dy;cs	31
@@ -243386,6 +243491,7 @@ columns: [text, code, weight]
 车龄	ie lke	47764
 车龄	ie;ee lk;sq	47764
 车龄	ielk	47764
+轧	ga;eb	525
 轧	va;eb	525
 轧	ya;eb	525
 轧制	va vie	87055
@@ -243405,6 +243511,8 @@ columns: [text, code, weight]
 轧空	ya kse	1
 轧空	ya;eb ks;jt	1
 轧空	yaks	1
+轧账	ga vhe	398
+轧账	ga;eb vh;ja	398
 轧账	gavh	398
 轧辊	vagy	81751
 轧辊	ya gye	81751
@@ -254244,6 +254352,7 @@ columns: [text, code, weight]
 酡红	to hse	31076
 酡红	to;et hs;it	31076
 酡红	tohs	31076
+酢	cu;ek	9
 酢	zo;ek	9
 酣	hj;er	272
 酣梦	hj mge	39573
@@ -256062,6 +256171,8 @@ columns: [text, code, weight]
 金标	jb bnu	46389
 金标	jb;uu bn;wt	46389
 金标	jbbn	46389
+金桔	jb juu	116905
+金桔	jb;uu ju;wt	116905
 金桔	jbju	116905
 金桥	jb qnu	85052
 金桥	jb;uu qn;wl	85052
@@ -259361,6 +259472,7 @@ columns: [text, code, weight]
 镎	na;uo	1
 镏	lq;up	9
 镐	gc;ut	357
+镐	hc;ut	357
 镐头	gc tzu	73405
 镐头	gc;ut tz;ay	73405
 镐头	gctz	73405
@@ -259432,6 +259544,7 @@ columns: [text, code, weight]
 镠	lq;uf	2
 镡	ij;uc	1
 镡	tj;uc	1
+镡	xb;uc	1
 镢	jt;ux	49
 镣	ln;uy	161
 镣铐	ln kcu	118193
@@ -262526,7 +262639,11 @@ columns: [text, code, weight]
 陀螺	to;yt lo;gi	172700
 陀螺	tolo	172700
 陀螺仪	tly	100000
+陂	bw;yg	41
 陂	pi;yg	41
+陂	po;yg	41
+陂陀	po toy	1
+陂陀	po;yg to;yt	1
 陂陀	poto	1
 陃	bk;yx	1
 附	fu;yq	9848
@@ -264145,10 +264262,15 @@ columns: [text, code, weight]
 隺	he;jb	1
 隼	sy;bc	56
 隽	jr;bs	145
+隽	jy;bs	145
+隽星	jy xkb	1
+隽星	jy;bs xk;bm	1
 隽星	jyxk	1
 隽永	jr ysb	82564
 隽永	jr;bs ys;pp	82564
 隽永	jrys	82564
+隽秀	jy xqb	45038
+隽秀	jy;bs xq;ns	45038
 隽秀	jyxq	45038
 难	nj;qb	81601
 难上加难	nj;qb uh;gp jx;pt nj;qb	128603
@@ -265927,6 +266049,8 @@ columns: [text, code, weight]
 霓虹	nihs	132137
 霓虹灯	nhd	135973
 霓虹灯	ni;lp hs;gt dg;pt	135973
+霓裳	ni ihl	127320
+霓裳	ni;lp ih;js	127320
 霓裳	niih	127320
 霓裳羽衣	niyy	9935
 霓裳羽衣舞	niyw	1
@@ -266329,6 +266453,8 @@ columns: [text, code, weight]
 青果	qk;rz go;pp	56564
 青果	qkgo	56564
 青枝绿叶	qvly	1
+青桔	qk jur	30968
+青桔	qk;rz ju;wt	30968
 青桔	qkju	30968
 青梅	qk mwr	127503
 青梅	qk;rz mw;wi	127503
@@ -270836,6 +270962,7 @@ columns: [text, code, weight]
 飞龙	fw;bb ls;nn	197615
 飞龙	fwls	197615
 飞龙在天	flzt	116
+食	si;ww	28814
 食	ui;ww	28814
 食不下咽	ubxy	95
 食不果腹	ubgf	92856
@@ -270857,7 +270984,7 @@ columns: [text, code, weight]
 食品公司	upgs	1
 食品化工	uphg	1
 食品卫生	upwu	1
-食品厂	upi	77686
+食品厂	spi	100000
 食品安全	upaq	1
 食品工业	upgy	1
 食品店	ui;ww pb;tt dm;ct	116332
@@ -271088,6 +271215,7 @@ columns: [text, code, weight]
 饥鹰饿虎	jyeh	1
 饦	to;wt	1
 饧	xk;wx	2
+饨	dy;wb	301
 饨	ty;wb	301
 饩	xi;wz	1
 饪	rf;wq	292
@@ -271384,8 +271512,10 @@ columns: [text, code, weight]
 饶阳	rcyh	61497
 饷	xl;wt	103
 饸	he;wt	8
+饸	ho;wt	8
 饹	ge;wq	8
 饹	le;wq	8
+饹	lo;wq	8
 饺	jn;wp	2597
 饺子	jn ziw	327334
 饺子	jn;wp zi;pp	327334

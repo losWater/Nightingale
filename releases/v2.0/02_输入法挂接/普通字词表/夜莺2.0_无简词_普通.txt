@@ -3745,6 +3745,7 @@ www.baidu.com	baidu
 庳	bicc
 痺	bicc
 彼此	bici
+贲	bicj
 痹	bicp
 庇	bict
 彼长此消	bicx
@@ -3888,6 +3889,7 @@ B超	biic
 佊	bikg
 必看	bikj
 壁龛	bikj
+佛	bikk
 偪	bikp
 鼻孔	biks
 碧空	biks
@@ -5114,6 +5116,7 @@ B佬	bilc
 丙烷	bkwj
 槟	bkwl
 碧空万里	bkwl
+栟	bkwm
 饼	bkwm
 本科文凭	bkwp
 棅	bkwp
@@ -6184,6 +6187,7 @@ B佬	bilc
 薄层	bocg
 鹁	bocg
 勃	bocp
+孛	bocp
 博	boct
 薄脆	bocv
 帛	bod
@@ -6327,6 +6331,7 @@ B佬	bilc
 跛	bos
 播撒	bosa
 播洒	bosa
+趵	bosa
 跛	bosg
 蹳	bosh
 波斯	bosi
@@ -8289,6 +8294,7 @@ ban位买房	bwmf
 悲咽	bwye
 贝爷	bwye
 霸王硬上弓	bwyg
+陂	bwyg
 北洋	bwyh
 不无遗憾	bwyh
 被淹	bwyj
@@ -9798,6 +9804,7 @@ Ciallo～(∠・ω＜)⌒☆	cial
 垐	ciaq
 泚	ciat
 次	ciax
+粢	ciaz
 糍粑	ciba
 词霸	ciba
 此仇不报	cibb
@@ -10951,6 +10958,7 @@ Ctrl	ctrl
 蹙额	cuee
 擦身而过	cueg
 苍山洱海	cueh
+酢	cuek
 从上而下	cuex
 猝发	cufa
 粗放	cufh
@@ -12589,6 +12597,7 @@ C位出道	cwid
 捯	dcog
 捣	dcoh
 搗	dcoh
+焘	dcp
 电磁屏蔽	dcpb
 道袍	dcpc
 道旁	dcph
@@ -12597,6 +12606,7 @@ C位出道	cwid
 盗骗	dcpm
 倒票	dcpn
 道破	dcpo
+焘	dcpp
 軇	dcpt
 倒赔	dcpw
 到期	dcqi
@@ -16661,6 +16671,7 @@ DDoS	ddos
 蹀	dpsw
 喋	dpt
 德配天地	dptd
+咥	dptg
 道破天机	dptj
 跌停	dptk
 喋	dptw
@@ -18926,6 +18937,7 @@ DDoS	ddos
 得意之作	dyvz
 倒也未必	dywb
 但也未必	dywb
+饨	dywb
 独一无二	dywe
 倒也无妨	dywf
 多元文化	dywh
@@ -19579,6 +19591,7 @@ DDoS	ddos
 耳根清净	egqj
 饿鬼投胎	egtt
 恶鬼投胎	egtt
+嗯	egtv
 耳挂式耳机	eguj
 二更食堂	egut
 二个小时	egxu
@@ -22316,6 +22329,7 @@ ez收徒	ezut
 反面	fjmm
 藩	fjmp
 非镜面屏	fjmp
+蕃	fjmp
 风景迷人	fjmr
 反目	fjmu
 风景名胜	fjmu
@@ -23426,6 +23440,7 @@ ez收徒	ezut
 傅	fukt
 府库	fuku
 浮亏	fukv
+艴	fukv
 浮夸	fukx
 伏	fuky
 伕	fuky
@@ -24785,6 +24800,8 @@ ez收徒	ezut
 尬	gac
 尬	gacl
 嘎达	gada
+轧	gae
+轧	gaeb
 公安分局	gafj
 个案分析	gafx
 嘎嘎	gaga
@@ -26633,6 +26650,7 @@ ez收徒	ezut
 扛	gho
 掆	ghoh
 扛	ghot
+豇	ghp
 钢炮	ghpc
 刚拍	ghpd
 焹	ghpe
@@ -26640,6 +26658,7 @@ ez收徒	ezut
 钢坯	ghpi
 钢瓶	ghpk
 港片	ghpm
+豇	ghpt
 刚好碰上	ghpu
 罡	ghq
 钢琴	ghqb
@@ -28174,7 +28193,9 @@ ez收徒	ezut
 果农	gons
 国女	gonv
 国内	gonw
+掴	goo
 Google	goog
+掴	goor
 果	gop
 果品	gopb
 果皮	gopi
@@ -29853,6 +29874,7 @@ Google	goog
 庋	gvc
 鬼才	gvcd
 归藏	gvch
+廆	gvcp
 庋	gvcq
 厬	gvct
 改正错误	gvcw
@@ -30028,6 +30050,7 @@ Google	goog
 归纳	gvna
 匦	gvnh
 龟男	gvnj
+匮	gvnj
 归宁	gvnk
 孤枕难眠	gvnm
 孤掌难鸣	gvnm
@@ -30048,6 +30071,7 @@ Google	goog
 公众平台	gvpt
 规培	gvpw
 观众朋友	gvpy
+炔	gvpy
 圭	gvq
 改正缺点	gvqd
 归期	gvqi
@@ -30638,6 +30662,7 @@ Google	goog
 挂孝	gxxn
 挂鞋	gxxp
 挂靴	gxxt
+聒	gxxt
 高血压病	gxyb
 管弦乐队	gxyd
 瓜叶	gxye
@@ -30666,6 +30691,7 @@ Google	goog
 滚	gy
 滚	gya
 滚	gyah
+混	gyat
 滚吧	gyba
 公益宝贝	gybb
 棍棒	gybh
@@ -31791,6 +31817,7 @@ Google	goog
 花草树木	hcum
 好说	hcuo
 获此殊荣	hcur
+镐	hcut
 好书	hcuu
 号数	hcuu
 好耍	hcux
@@ -31956,6 +31983,7 @@ Google	goog
 骸骨	hdgu
 海龟	hdgv
 海归	hdgv
+解	hdgv
 还给	hdgw
 很大关系	hdgx
 海沟	hdgz
@@ -34717,7 +34745,9 @@ Google	goog
 𬴃	hovx
 騞	hovx
 获准	hovy
+饸	how
 火旺	howh
+饸	howt
 货物	howu
 活物	howu
 火舞	howu
@@ -35114,11 +35144,13 @@ Google	goog
 恍然若失	hrru
 𤩽	hrry
 瑍	hrry
+嬛	hrs
 换色	hrse
 环伺	hrsi
 涣散	hrsj
 换算	hrsr
 欢送	hrss
+嬛	hrss
 还俗	hrsu
 何人所为	hrsw
 唤	hrt
@@ -36545,6 +36577,7 @@ https://	http
 慧	hvr
 璯	hvrb
 回绕	hvrc
+珲	hvre
 恨之入骨	hvrg
 会让	hvrh
 含着热泪	hvrl
@@ -39787,6 +39820,7 @@ id劝退	idqt
 呈送	igss
 成俗	igsu
 呈	igt
+噌	igtb
 成套	igtc
 承台	igtd
 撑竿跳高	igtg
@@ -40068,6 +40102,7 @@ id劝退	idqt
 长街	ihjp
 长久	ihjq
 长卷	ihjr
+裳	ihjs
 猖獗	ihjt
 长句	ihju
 长局	ihju
@@ -45445,6 +45480,7 @@ ip正确	ipvq
 奖惩分明	jifm
 讥	jifn
 譤	jifq
+诘	jift
 肌肤	jifu
 几副	jifu
 几幅	jifu
@@ -45875,6 +45911,7 @@ ip正确	ipvq
 既然	jirj
 寂然	jirj
 酒池肉林	jirl
+其	jirl
 玑	jirn
 积弱	jiro
 极弱	jiro
@@ -46758,6 +46795,7 @@ https://www.jsxiaoshi.com/	jisu
 井口	jkkz
 京口	jkkz
 旌	jkl
+甑	jkla
 敬老	jklc
 经历	jkli
 经理	jkli
@@ -47475,6 +47513,7 @@ https://www.jsxiaoshi.com/	jisu
 减	jmat
 減	jmat
 溅	jmav
+浅	jmav
 肩	jmb
 箭靶	jmba
 賎	jmba
@@ -51023,6 +51062,7 @@ https://www.jsxiaoshi.com/	jisu
 精神污染	juwr
 枸	juwt
 椐	juwt
+桔	juwt
 橘	juwt
 技术问题	juwt
 梮	juwt
@@ -52026,6 +52066,7 @@ https://www.jsxiaoshi.com/	jisu
 军博	jybo
 晙	jybq
 进一步加强	jybq
+隽	jybs
 迥异不同	jybt
 军部	jybu
 九阴白骨爪	jybv
@@ -54227,7 +54268,9 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 开机自启	kjzq
 苛捐杂税	kjzu
 快	kk
+浍	kka
 快啊	kkaa
+浍	kkah
 苦苦哀求	kkaq
 磕磕绊绊	kkbb
 磕磕巴巴	kkbb
@@ -57531,6 +57574,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 老而弥坚	lemj
 乐美	lemw
 了	lepp
+垃	leq
+垃	leqj
 乐趣	lequ
 勒	ler
 勒	lerp
@@ -57539,6 +57584,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 叻	let
 乐町	letk
 乐天	letm
+嘞	letp
 叻	letp
 乐土	letu
 笼而统之	letv
@@ -60403,6 +60449,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 椤	low
 螺纹	lowf
 落网	lowh
+饹	lowq
 椤	lowr
 落伍	lowu
 裸舞	lowu
@@ -61694,6 +61741,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 轳	lueb
 舻	lueb
 舮	lueb
+六	luel
 辂	lueq
 辘	luet
 留守儿童	luet
@@ -63448,6 +63496,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 马肉	marz
 妈	mas
 马赛	masd
+嬷	mash
 骂死	masi
 马嘶	masi
 嬤	masi
@@ -68866,6 +68915,7 @@ https://typer.owenyang.top/	mxyi
 那末	namo
 蒳	namx
 𦰡	namy
+内	nan
 呐呐	nana
 哪呢	nane
 哪能	nang
@@ -68874,6 +68924,7 @@ https://typer.owenyang.top/	mxyi
 哪年	nanm
 拿捏	nanp
 那女	nanv
+内	nanx
 捺	nao
 貀	naoh
 捺	naot
@@ -69183,9 +69234,11 @@ https://typer.owenyang.top/	mxyi
 孬种	ncvs
 纳粹主义	ncvy
 憹	ncvz
+桡	ncw
 脑王	ncwh
 你猜我画	ncwh
 内测玩家	ncwj
+桡	ncwp
 脑雾	ncwu
 硇	ncx
 闹心	ncxb
@@ -72833,6 +72886,7 @@ o(´^｀)o	ofyw
 三十五	oosw
 三十一	oosy
 噢	oot
+喔	ootg
 哦	ootv
 噢	ooty
 十九	oouj
@@ -74226,6 +74280,7 @@ pdf文件	pdfj
 郫	pid
 破产倒闭	pidb
 劈刀	pidc
+裨	pidc
 皮带	pidd
 皮袋	pidd
 鲏	pidg
@@ -74449,6 +74504,7 @@ P图	pitu
 批注	pivu
 批准	pivy
 枇	piw
+椑	piwc
 皮外	piwd
 批文	piwf
 皮纹	piwf
@@ -74748,6 +74804,7 @@ P图	pitu
 泙	pkac
 洴	pkam
 平安	pkan
+冯	pkav
 慿	pkav
 屏	pkb
 屏保	pkbc
@@ -75580,7 +75637,9 @@ POLO衫	polo
 破晓	poxn
 破鞋	poxp
 坡下	poxx
+陂	poy
 破音	poyb
+陂	poyg
 鄱阳	poyh
 破译	poyi
 破亿	poyi
@@ -77631,6 +77690,7 @@ py交易	pyjy
 奇谋	qimz
 芪	qimz
 耆	qin
+稽	qinb
 耆	qinb
 气恼	qinc
 气冲牛斗	qind
@@ -82599,6 +82659,7 @@ QQ音乐	qqyy
 热么	reme
 热门	remf
 日耳曼人	remr
+若	remt
 惹	remv
 热媒	remw
 热闹	renc
@@ -86398,6 +86459,7 @@ Shift	shif
 楒	siwv
 思维	siww
 四维	siww
+食	siww
 死心	sixb
 私信	sixb
 私心	sixb
@@ -89696,6 +89758,7 @@ san值狂掉	svkd
 貣	tevl
 特种	tevs
 特	tevt
+忒	tevv
 特准	tevy
 特务	tewu
 特为	teww
@@ -90438,6 +90501,7 @@ san值狂掉	svkd
 体色	tise
 踢死	tisi
 替死	tisi
+媞	tiss
 趧	tiss
 提速	tisu
 跳出三界之外，不在五行之中	tisv
@@ -91938,12 +92002,14 @@ T恤衫	tixuuj
 条路	tnlu
 托尼老师	tnlu
 跳楼	tnlz
+苕	tnm
 条码	tnma
 跳马	tnma
 蓚	tnmf
 挑明	tnmk
 条命	tnmk
 桃乃木香奈	tnmn
+苕	tnmt
 条目	tnmu
 挑眉	tnmw
 天怒民怨	tnmy
@@ -94166,6 +94232,7 @@ T恤衫	tixuuj
 土味视频	twup
 台湾事务办公室	twuu
 天文数字	twuz
+忒	twvv
 体无完肤	twwf
 图文无关	twwg
 天文望远镜	twwj
@@ -94912,6 +94979,7 @@ txt文件	txtj
 鲨	uaad
 啥！”	uaae
 沙	uaaf
+挲	uaao
 裟	uaas
 硰	uaax
 沙坝	uaba
@@ -96245,6 +96313,7 @@ txt文件	txtj
 婶儿	ufer
 谂	uff
 身法	uffa
+谌	uffb
 身份	ufff
 十分丰富	ufff
 十分反感	uffg
@@ -96713,6 +96782,7 @@ txt文件	txtj
 昇	ugb
 深感不安	ugba
 上个版本	ugbb
+晟	ugbb
 晠	ugbb
 胜败	ugbd
 升本	ugbf
@@ -96946,6 +97016,7 @@ txt文件	txtj
 盛年	ugnm
 陕甘宁地区	ugnq
 是个男人	ugnr
+乘	ugnt
 盛怒	ugnu
 帅哥你谁	ugnu
 圣女	ugnv
@@ -97872,6 +97943,7 @@ txt文件	txtj
 十个	uige
 诗歌	uige
 时隔	uige
+蛳	uige
 实根	uigf
 矢	uigg
 失	uigg
@@ -107075,6 +107147,7 @@ https://api.ihint.me/shuang/	ulpb
 捉	voos
 灼	vop
 灼	vopa
+焯	vopc
 桌旁	voph
 拙朴	vopu
 叕	voq
@@ -109618,6 +109691,7 @@ https://api.ihint.me/shuang/	ulpb
 职业女性	vynx
 这样那样	vyny
 枝源派本	vypb
+屯	vypb
 迍	vypq
 只言片语	vypy
 正义切割	vyqg
@@ -110091,12 +110165,14 @@ https://api.ihint.me/shuang/	ulpb
 挖矿	wakl
 挖空	waks
 挖苦	waku
+凹	wal
 哇啦	wala
 瓦楞	walg
 瓦砾	wali
 瓦蓝	walj
 瓦亮	wall
 哇凉	wall
+凹	walp
 五爱论坛	walt
 蛙鸣	wamk
 挖煤	wamw
@@ -112837,6 +112913,7 @@ WiFi	wifi
 我爱	woai
 涹	woas
 渦	woat
+涴	woav
 涡	woax
 沃	woay
 我爸	woba
@@ -114397,6 +114474,7 @@ Word	word
 巍	wwhp
 为患	wwhr
 微红	wwhs
+崴	wwhs
 崣	wwhs
 嵔	wwhs
 维护	wwhu
@@ -115661,6 +115739,7 @@ Word	word
 鑫	xbu
 锌	xbua
 新沙	xbua
+镡	xbuc
 新设	xbue
 心神	xbuf
 新生	xbug
@@ -117096,6 +117175,7 @@ Word	word
 皙	xiwd
 戏外	xiwd
 槢	xiwd
+栖	xiwe
 细问	xiwf
 檄文	xiwf
 希望	xiwh
@@ -117152,6 +117232,7 @@ Word	word
 鈢	xixw
 西夏	xixx
 膝下	xixx
+歙	xixx
 錫	xixx
 喜讯	xixy
 鉨	xixy
@@ -123077,6 +123158,7 @@ magnet:?xt=urn:btih:	xylw
 亚太	yatd
 牙疼	yatg
 押题	yati
+吖	yatl
 压条	yatn
 哑	yatn
 亚铁	yatp
@@ -124663,6 +124745,7 @@ magnet:?xt=urn:btih:	xylw
 夜拍	yepd
 页	yepj
 叶片	yepm
+射	yept
 野	yepz
 野禽	yeqb
 夜勤	yeqb
@@ -125843,6 +125926,7 @@ magnet:?xt=urn:btih:	xylw
 一共	yigs
 义工	yigs
 以供	yigs
+蛇	yigt
 一股	yigu
 已故	yigu
 遗孤	yigu
@@ -128770,6 +128854,7 @@ magnet:?xt=urn:btih:	xylw
 圜	yrjs
 原句	yrju
 悠然见南山	yrju
+宛	yrjv
 一如既往	yrjw
 原价	yrjx
 冤家	yrjx
@@ -128790,6 +128875,7 @@ magnet:?xt=urn:btih:	xylw
 远了	yrle
 远离	yrli
 原理	yrli
+怨灵	yrlk
 圆领	yrlk
 沅陵	yrlk
 原谅	yrll
@@ -130214,6 +130300,7 @@ magnet:?xt=urn:btih:	xylw
 鱼龙	yuls
 玉龙	yuls
 优胜劣汰	yult
+谷	yult
 旕	yult
 语录	yulu
 雨露	yulu
@@ -132524,6 +132611,7 @@ magnet:?xt=urn:btih:	xylw
 姷	yzsz
 呦	yzt
 犹他	yzta
+哟	yzta
 远在天边	yztb
 油桃	yztc
 犹太	yztd
@@ -132748,6 +132836,7 @@ magnet:?xt=urn:btih:	xylw
 咋讲	zajl
 杂件	zajm
 杂交	zajn
+咱就	zajq
 杂居	zaju
 杂家	zajx
 偺	zakb
@@ -132799,6 +132888,7 @@ magnet:?xt=urn:btih:	xylw
 杂碎	zasv
 砸碎	zasv
 咋	zat
+咱	zatd
 咂	zate
 杂谈	zatj
 咋	zatk
@@ -134545,7 +134635,6 @@ magnet:?xt=urn:btih:	xylw
 攒机	zjji
 最近几年	zjjn
 暂借	zjjp
-咱就	zjjq
 寁	zjjs
 最近几天	zjjt
 暂居	zjju

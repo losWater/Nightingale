@@ -4233,6 +4233,7 @@ AV男优	avny	99998
 庳	bicc	99998
 痺	bicc	99997
 彼此	bici	99999
+贲	bicj	99999
 痹	bicp	99999
 庇	bict	99999
 彼长此消	bicx	99999
@@ -4386,6 +4387,7 @@ B超	biic	99999
 佊	bikg	99998
 必看	bikj	99999
 壁龛	bikj	99998
+佛	bikk	99999
 偪	bikp	99999
 鼻孔	biks	99999
 碧空	biks	99998
@@ -5719,7 +5721,8 @@ B佬	bilc	99999
 丙烷	bkwj	99999
 槟	bkwl	99999
 碧空万里	bkwl	99998
-饼	bkwm	99999
+栟	bkwm	99999
+饼	bkwm	99998
 本科文凭	bkwp	99999
 棅	bkwp	99998
 栤	bkwp	99997
@@ -6933,6 +6936,7 @@ B佬	bilc	99999
 薄层	bocg	99999
 鹁	bocg	99998
 勃	bocp	99999
+孛	bocp	99998
 博	boct	99999
 薄脆	bocv	99999
 帛	bod	99999
@@ -7077,6 +7081,7 @@ B佬	bilc	99999
 跛	bos	99999
 播撒	bosa	99999
 播洒	bosa	99998
+趵	bosa	99997
 跛	bosg	99999
 蹳	bosh	99999
 波斯	bosi	99999
@@ -9365,6 +9370,7 @@ ban位买房	bwmf	99998
 悲咽	bwye	99999
 贝爷	bwye	99998
 霸王硬上弓	bwyg	99999
+陂	bwyg	99998
 北洋	bwyh	99999
 不无遗憾	bwyh	99998
 被淹	bwyj	99999
@@ -11144,6 +11150,7 @@ Ciallo～(∠・ω＜)⌒☆	cial	99999
 垐	ciaq	99998
 泚	ciat	99999
 次	ciax	99999
+粢	ciaz	99999
 糍粑	ciba	99999
 词霸	ciba	99998
 此仇不报	cibb	99999
@@ -12447,6 +12454,7 @@ Ctrl	ctrl	99999
 蹙额	cuee	99999
 擦身而过	cueg	99999
 苍山洱海	cueh	99999
+酢	cuek	99999
 从上而下	cuex	99999
 草上飞	cuf	99999
 测试服	cuf	99998
@@ -14264,6 +14272,7 @@ C位出道	cwid	99999
 捯	dcog	99999
 捣	dcoh	99999
 搗	dcoh	99998
+焘	dcp	99999
 电磁屏蔽	dcpb	99999
 道袍	dcpc	99999
 道旁	dcph	99999
@@ -14272,6 +14281,7 @@ C位出道	cwid	99999
 盗骗	dcpm	99998
 倒票	dcpn	99999
 道破	dcpo	99999
+焘	dcpp	99999
 軇	dcpt	99999
 倒赔	dcpw	99999
 到期	dcqi	99999
@@ -18852,6 +18862,7 @@ DDoS	ddos	99999
 喋	dpt	99999
 打喷嚏	dpt	99998
 德配天地	dptd	99999
+咥	dptg	99999
 道破天机	dptj	99999
 跌停	dptk	99999
 喋	dptw	99999
@@ -21539,6 +21550,7 @@ DDoS	ddos	99999
 定义为	dyw	99997
 倒也未必	dywb	99999
 但也未必	dywb	99998
+饨	dywb	99997
 独一无二	dywe	99999
 倒也无妨	dywf	99999
 多元文化	dywh	99999
@@ -22303,6 +22315,7 @@ DDoS	ddos	99999
 二锅头	egt	99999
 饿鬼投胎	egtt	99999
 恶鬼投胎	egtt	99998
+嗯	egtv	99999
 耳挂式	egu	99999
 耳挂式耳机	eguj	99999
 二更食堂	egut	99999
@@ -25465,6 +25478,7 @@ ez收徒	ezut	99999
 反面	fjmm	99999
 藩	fjmp	99999
 非镜面屏	fjmp	99998
+蕃	fjmp	99997
 风景迷人	fjmr	99999
 反目	fjmu	99999
 风景名胜	fjmu	99998
@@ -26831,6 +26845,7 @@ ez收徒	ezut	99999
 傅	fukt	99999
 府库	fuku	99999
 浮亏	fukv	99999
+艴	fukv	99998
 浮夸	fukx	99999
 伏	fuky	99999
 伕	fuky	99998
@@ -28449,6 +28464,8 @@ ez收徒	ezut	99999
 尬	gacl	99999
 国奥队	gad	99999
 嘎达	gada	99999
+轧	gae	99999
+轧	gaeb	99999
 公安分局	gafj	99999
 个案分析	gafx	99999
 嘎嘎	gaga	99999
@@ -30546,6 +30563,7 @@ ez收徒	ezut	99999
 扛	gho	99999
 掆	ghoh	99999
 扛	ghot	99999
+豇	ghp	99999
 钢炮	ghpc	99999
 刚拍	ghpd	99999
 焹	ghpe	99999
@@ -30553,6 +30571,7 @@ ez收徒	ezut	99999
 钢坯	ghpi	99999
 钢瓶	ghpk	99999
 港片	ghpm	99999
+豇	ghpt	99999
 刚好碰上	ghpu	99999
 罡	ghq	99999
 赶回去	ghq	99998
@@ -32354,7 +32373,9 @@ ez收徒	ezut	99999
 果农	gons	99999
 国女	gonv	99999
 国内	gonw	99999
+掴	goo	99999
 Google	goog	99999
+掴	goor	99999
 果	gop	99999
 果品	gopb	99999
 果皮	gopi	99999
@@ -34220,6 +34241,7 @@ Google	goog	99999
 庋	gvc	99999
 鬼才	gvcd	99999
 归藏	gvch	99999
+廆	gvcp	99999
 庋	gvcq	99999
 厬	gvct	99999
 改正错误	gvcw	99999
@@ -34404,6 +34426,7 @@ Google	goog	99999
 归纳	gvna	99999
 匦	gvnh	99999
 龟男	gvnj	99999
+匮	gvnj	99998
 归宁	gvnk	99999
 孤枕难眠	gvnm	99999
 孤掌难鸣	gvnm	99998
@@ -34424,6 +34447,7 @@ Google	goog	99999
 公众平台	gvpt	99999
 规培	gvpw	99999
 观众朋友	gvpy	99999
+炔	gvpy	99998
 圭	gvq	99999
 改正缺点	gvqd	99999
 归期	gvqi	99999
@@ -35102,6 +35126,7 @@ Google	goog	99999
 挂孝	gxxn	99999
 挂鞋	gxxp	99999
 挂靴	gxxt	99999
+聒	gxxt	99998
 更需要	gxy	99999
 高血压	gxy	99998
 管弦乐	gxy	99997
@@ -35136,6 +35161,7 @@ Google	goog	99999
 公园	gy	99997
 滚	gya	99999
 滚	gyah	99999
+混	gyat	99999
 雇佣兵	gyb	99999
 过一遍	gyb	99998
 滚一边	gyb	99997
@@ -36426,6 +36452,7 @@ Google	goog	99999
 花草树木	hcum	99999
 好说	hcuo	99999
 获此殊荣	hcur	99999
+镐	hcut	99999
 好书	hcuu	99999
 号数	hcuu	99998
 好耍	hcux	99999
@@ -36606,6 +36633,7 @@ Google	goog	99999
 骸骨	hdgu	99999
 海龟	hdgv	99999
 海归	hdgv	99998
+解	hdgv	99997
 还给	hdgw	99999
 很大关系	hdgx	99999
 海沟	hdgz	99999
@@ -39792,7 +39820,9 @@ Google	goog	99999
 𬴃	hovx	99999
 騞	hovx	99998
 获准	hovy	99999
+饸	how	99999
 火旺	howh	99999
+饸	howt	99999
 货物	howu	99999
 活物	howu	99998
 火舞	howu	99997
@@ -40270,11 +40300,13 @@ Google	goog	99999
 恍然若失	hrru	99999
 𤩽	hrry	99999
 瑍	hrry	99998
+嬛	hrs	99999
 换色	hrse	99999
 环伺	hrsi	99999
 涣散	hrsj	99999
 换算	hrsr	99999
 欢送	hrss	99999
+嬛	hrss	99998
 还俗	hrsu	99999
 何人所为	hrsw	99999
 唤	hrt	99999
@@ -41841,6 +41873,7 @@ https://	http	99999
 黑种人	hvr	99997
 璯	hvrb	99999
 回绕	hvrc	99999
+珲	hvre	99999
 恨之入骨	hvrg	99999
 会让	hvrh	99999
 含着热泪	hvrl	99999
@@ -45421,6 +45454,7 @@ id劝退	idqt	99998
 呈	igt	99999
 撑竿跳	igt	99998
 唱高调	igt	99997
+噌	igtb	99999
 成套	igtc	99999
 承台	igtd	99999
 撑竿跳高	igtg	99999
@@ -45723,6 +45757,7 @@ id劝退	idqt	99998
 长街	ihjp	99999
 长久	ihjq	99999
 长卷	ihjr	99999
+裳	ihjs	99999
 猖獗	ihjt	99999
 长句	ihju	99999
 长局	ihju	99998
@@ -51908,6 +51943,7 @@ ip正确	ipvq	99999
 奖惩分明	jifm	99999
 讥	jifn	99999
 譤	jifq	99999
+诘	jift	99999
 肌肤	jifu	99999
 几副	jifu	99998
 几幅	jifu	99997
@@ -52349,6 +52385,7 @@ ip正确	ipvq	99999
 既然	jirj	99999
 寂然	jirj	99998
 酒池肉林	jirl	99999
+其	jirl	99998
 玑	jirn	99999
 积弱	jiro	99999
 极弱	jiro	99998
@@ -53318,6 +53355,7 @@ https://www.jsxiaoshi.com/	jisu	99996
 旌	jkl	99999
 加快了	jkl	99998
 进口量	jkl	99997
+甑	jkla	99999
 敬老	jklc	99999
 经历	jkli	99999
 经理	jkli	99998
@@ -54093,6 +54131,7 @@ https://www.jsxiaoshi.com/	jisu	99996
 减	jmat	99999
 減	jmat	99998
 溅	jmav	99999
+浅	jmav	99998
 肩	jmb	99999
 讲明白	jmb	99998
 价目表	jmb	99997
@@ -57913,9 +57952,10 @@ https://www.jsxiaoshi.com/	jisu	99996
 精神污染	juwr	99998
 枸	juwt	99999
 椐	juwt	99998
-橘	juwt	99997
-技术问题	juwt	99996
-梮	juwt	99995
+桔	juwt	99997
+橘	juwt	99996
+技术问题	juwt	99995
+梮	juwt	99994
 剧务	juwu	99999
 巨物	juwu	99998
 举世无双	juwu	99997
@@ -59062,6 +59102,7 @@ https://www.jsxiaoshi.com/	jisu	99996
 军博	jybo	99999
 晙	jybq	99999
 进一步加强	jybq	99998
+隽	jybs	99999
 迥异不同	jybt	99999
 军部	jybu	99999
 九阴白骨爪	jybv	99999
@@ -61561,7 +61602,9 @@ $	k	99997
 快	kk	99999
 看看	kk	99998
 快快	kk	99997
+浍	kka	99999
 快啊	kkaa	99999
+浍	kkah	99999
 苦苦哀求	kkaq	99999
 开口绷	kkb	99999
 磕磕绊绊	kkbb	99999
@@ -65288,6 +65331,8 @@ $	k	99997
 老而弥坚	lemj	99999
 乐美	lemw	99999
 了	lepp	99999
+垃	leq	99999
+垃	leqj	99999
 乐趣	lequ	99999
 勒	ler	99999
 勒	lerp	99999
@@ -65296,7 +65341,8 @@ $	k	99997
 叻	let	99999
 乐町	letk	99999
 乐天	letm	99999
-叻	letp	99999
+嘞	letp	99999
+叻	letp	99998
 乐土	letu	99999
 笼而统之	letv	99999
 乐透	letz	99999
@@ -68457,6 +68503,7 @@ $	k	99997
 椤	low	99999
 螺纹	lowf	99999
 落网	lowh	99999
+饹	lowq	99999
 椤	lowr	99999
 落伍	lowu	99999
 裸舞	lowu	99998
@@ -69906,6 +69953,7 @@ $	k	99997
 轳	lueb	99999
 舻	lueb	99998
 舮	lueb	99997
+六	luel	99999
 辂	lueq	99999
 辘	luet	99999
 留守儿童	luet	99998
@@ -71872,6 +71920,7 @@ $	k	99997
 马肉	marz	99999
 妈	mas	99999
 马赛	masd	99999
+嬷	mash	99999
 骂死	masi	99999
 马嘶	masi	99998
 嬤	masi	99997
@@ -78026,6 +78075,7 @@ https://typer.owenyang.top/	mxyi	99999
 那末	namo	99998
 蒳	namx	99999
 𦰡	namy	99999
+内	nan	99999
 呐呐	nana	99999
 哪呢	nane	99999
 哪能	nang	99999
@@ -78034,6 +78084,7 @@ https://typer.owenyang.top/	mxyi	99999
 哪年	nanm	99998
 拿捏	nanp	99999
 那女	nanv	99999
+内	nanx	99999
 捺	nao	99999
 貀	naoh	99999
 捺	naot	99999
@@ -78401,9 +78452,11 @@ https://typer.owenyang.top/	mxyi	99999
 孬种	ncvs	99997
 纳粹主义	ncvy	99999
 憹	ncvz	99999
+桡	ncw	99999
 脑王	ncwh	99999
 你猜我画	ncwh	99998
 内测玩家	ncwj	99999
+桡	ncwp	99999
 脑雾	ncwu	99999
 硇	ncx	99999
 闹心	ncxb	99999
@@ -82654,6 +82707,7 @@ o(´^｀)o	ofyw	99963
 三十五	oosw	99999
 三十一	oosy	99999
 噢	oot	99999
+喔	ootg	99999
 哦	ootv	99999
 噢	ooty	99999
 十九	oouj	99999
@@ -84186,6 +84240,7 @@ pdf文件	pdfj	99999
 郫	pid	99999
 破产倒闭	pidb	99999
 劈刀	pidc	99999
+裨	pidc	99998
 皮带	pidd	99999
 皮袋	pidd	99998
 鲏	pidg	99999
@@ -84420,6 +84475,7 @@ P图	pitu	99999
 批注	pivu	99999
 批准	pivy	99999
 枇	piw	99999
+椑	piwc	99999
 皮外	piwd	99999
 批文	piwf	99999
 皮纹	piwf	99998
@@ -84743,7 +84799,8 @@ P图	pitu	99999
 泙	pkac	99999
 洴	pkam	99999
 平安	pkan	99999
-慿	pkav	99999
+冯	pkav	99999
+慿	pkav	99998
 屏	pkb	99999
 屏保	pkbc	99999
 屛	pkbc	99998
@@ -85630,7 +85687,9 @@ POLO衫	polo	99997
 破晓	poxn	99999
 破鞋	poxp	99999
 坡下	poxx	99999
+陂	poy	99999
 破音	poyb	99999
+陂	poyg	99999
 鄱阳	poyh	99999
 破译	poyi	99999
 破亿	poyi	99998
@@ -88071,7 +88130,8 @@ py交易	pyjy	99999
 奇谋	qimz	99999
 芪	qimz	99998
 耆	qin	99999
-耆	qinb	99999
+稽	qinb	99999
+耆	qinb	99998
 气恼	qinc	99999
 气冲牛斗	qind	99999
 七尺男儿	qine	99999
@@ -93562,6 +93622,7 @@ QQ音乐	qqyy	99999
 热么	reme	99999
 热门	remf	99999
 日耳曼人	remr	99999
+若	remt	99999
 惹	remv	99999
 热媒	remw	99999
 热闹	renc	99999
@@ -97834,6 +97895,7 @@ Shift	shif	99999
 楒	siwv	99999
 思维	siww	99999
 四维	siww	99998
+食	siww	99997
 死心	sixb	99999
 私信	sixb	99998
 私心	sixb	99997
@@ -98729,6 +98791,7 @@ Shift	shif	99999
 三品大员	spdy	99999
 斯皮尔伯格	speg	99999
 碎片化	sph	99999
+食品厂	spi	99999
 撕皮出道	spid	99999
 撕破脸	spl	99999
 算盘落空	splk	99999
@@ -101587,6 +101650,7 @@ san值狂掉	svkd	99999
 貣	tevl	99999
 特种	tevs	99999
 特	tevt	99999
+忒	tevv	99999
 特准	tevy	99999
 特务	tewu	99999
 特为	teww	99999
@@ -102433,7 +102497,8 @@ san值狂掉	svkd	99999
 体色	tise	99998
 踢死	tisi	99999
 替死	tisi	99998
-趧	tiss	99999
+媞	tiss	99999
+趧	tiss	99998
 提速	tisu	99999
 跳出三界之外，不在五行之中	tisv	99999
 跳出三界之外	tisw	99999
@@ -104116,12 +104181,14 @@ T恤	tixu	99997
 条路	tnlu	99999
 托尼老师	tnlu	99998
 跳楼	tnlz	99999
+苕	tnm	99999
 条码	tnma	99999
 跳马	tnma	99998
 蓚	tnmf	99999
 挑明	tnmk	99999
 条命	tnmk	99998
 桃乃木香奈	tnmn	99999
+苕	tnmt	99999
 条目	tnmu	99999
 挑眉	tnmw	99999
 天怒民怨	tnmy	99999
@@ -106575,6 +106642,7 @@ T恤	tixu	99997
 天文数字	twuz	99999
 逃亡者	twv	99999
 眺望着	twv	99998
+忒	twvv	99999
 体无完肤	twwf	99999
 图文无关	twwg	99999
 天文望远镜	twwj	99999
@@ -107443,6 +107511,7 @@ txt文件	txtj	99999
 鲨	uaad	99999
 啥！”	uaae	99999
 沙	uaaf	99999
+挲	uaao	99999
 裟	uaas	99999
 硰	uaax	99999
 沙坝	uaba	99999
@@ -108926,6 +108995,7 @@ txt文件	txtj	99999
 婶儿	ufer	99998
 谂	uff	99999
 身法	uffa	99999
+谌	uffb	99999
 身份	ufff	99999
 十分丰富	ufff	99998
 十分反感	uffg	99999
@@ -109422,7 +109492,8 @@ txt文件	txtj	99999
 申公豹	ugb	99997
 深感不安	ugba	99999
 上个版本	ugbb	99999
-晠	ugbb	99998
+晟	ugbb	99998
+晠	ugbb	99997
 胜败	ugbd	99999
 升本	ugbf	99999
 石锅拌饭	ugbf	99998
@@ -109671,6 +109742,7 @@ txt文件	txtj	99999
 盛年	ugnm	99999
 陕甘宁地区	ugnq	99999
 是个男人	ugnr	99999
+乘	ugnt	99999
 盛怒	ugnu	99999
 帅哥你谁	ugnu	99998
 圣女	ugnv	99999
@@ -110667,6 +110739,7 @@ txt文件	txtj	99999
 十个	uige	99999
 诗歌	uige	99998
 时隔	uige	99997
+蛳	uige	99996
 实根	uigf	99999
 矢	uigg	99999
 失	uigg	99998
@@ -112991,7 +113064,6 @@ https://api.ihint.me/shuang/	ulpb	99997
 视频会员	uphy	99998
 售票处	upi	99999
 刷跑车	upi	99998
-食品厂	upi	99997
 受排挤	upj	99999
 收盘价	upj	99998
 商品价格	upjg	99999
@@ -121100,6 +121172,7 @@ https://api.ihint.me/shuang/	ulpb	99997
 捉	voos	99999
 灼	vop	99999
 灼	vopa	99999
+焯	vopc	99999
 桌旁	voph	99999
 拙朴	vopu	99999
 叕	voq	99999
@@ -123986,6 +124059,7 @@ https://api.ihint.me/shuang/	ulpb	99997
 这样那样	vyny	99999
 遮阳篷	vyp	99999
 枝源派本	vypb	99999
+屯	vypb	99998
 迍	vypq	99999
 只言片语	vypy	99999
 这一切	vyq	99999
@@ -124520,12 +124594,14 @@ https://api.ihint.me/shuang/	ulpb	99997
 挖矿	wakl	99999
 挖空	waks	99999
 挖苦	waku	99999
+凹	wal	99999
 哇啦	wala	99999
 瓦楞	walg	99999
 瓦砾	wali	99999
 瓦蓝	walj	99999
 瓦亮	wall	99999
 哇凉	wall	99998
+凹	walp	99999
 五爱论坛	walt	99999
 蛙鸣	wamk	99999
 挖煤	wamw	99999
@@ -127706,6 +127782,7 @@ WiFi	wifi	99999
 我爱	woai	99999
 涹	woas	99999
 渦	woat	99999
+涴	woav	99999
 涡	woax	99999
 沃	woay	99999
 我爸	woba	99999
@@ -129466,8 +129543,9 @@ Word	word	99999
 巍	wwhp	99998
 为患	wwhr	99999
 微红	wwhs	99999
-崣	wwhs	99998
-嵔	wwhs	99997
+崴	wwhs	99998
+崣	wwhs	99997
+嵔	wwhs	99996
 维护	wwhu	99999
 围护	wwhu	99998
 峗	wwhv	99999
@@ -130960,6 +131038,7 @@ Word	word	99999
 下半身	xbu	99997
 锌	xbua	99999
 新沙	xbua	99998
+镡	xbuc	99999
 新设	xbue	99999
 心神	xbuf	99999
 新生	xbug	99999
@@ -132688,6 +132767,7 @@ Word	word	99999
 皙	xiwd	99999
 戏外	xiwd	99998
 槢	xiwd	99997
+栖	xiwe	99999
 细问	xiwf	99999
 檄文	xiwf	99998
 希望	xiwh	99999
@@ -132746,7 +132826,8 @@ Word	word	99999
 鈢	xixw	99999
 西夏	xixx	99999
 膝下	xixx	99998
-錫	xixx	99997
+歙	xixx	99997
+錫	xixx	99996
 喜讯	xixy	99999
 鉨	xixy	99998
 鉩	xixy	99997
@@ -139328,6 +139409,7 @@ magnet:?xt=urn:btih:	xylw	99998
 亚太	yatd	99999
 牙疼	yatg	99999
 押题	yati	99999
+吖	yatl	99999
 压条	yatn	99999
 哑	yatn	99998
 亚铁	yatp	99999
@@ -141064,6 +141146,7 @@ magnet:?xt=urn:btih:	xylw	99998
 夜拍	yepd	99999
 页	yepj	99999
 叶片	yepm	99999
+射	yept	99999
 野	yepz	99999
 野禽	yeqb	99999
 夜勤	yeqb	99998
@@ -142401,6 +142484,7 @@ magnet:?xt=urn:btih:	xylw	99998
 一共	yigs	99999
 义工	yigs	99998
 以供	yigs	99997
+蛇	yigt	99999
 一股	yigu	99999
 已故	yigu	99998
 遗孤	yigu	99997
@@ -145692,6 +145776,7 @@ magnet:?xt=urn:btih:	xylw	99998
 圜	yrjs	99999
 原句	yrju	99999
 悠然见南山	yrju	99998
+宛	yrjv	99999
 一如既往	yrjw	99999
 原价	yrjx	99999
 冤家	yrjx	99998
@@ -145713,8 +145798,9 @@ magnet:?xt=urn:btih:	xylw	99998
 远了	yrle	99999
 远离	yrli	99999
 原理	yrli	99998
-圆领	yrlk	99999
-沅陵	yrlk	99998
+怨灵	yrlk	99999
+圆领	yrlk	99998
+沅陵	yrlk	99997
 原谅	yrll	99999
 原粮	yrll	99998
 圆脸	yrlm	99999
@@ -147243,7 +147329,8 @@ magnet:?xt=urn:btih:	xylw	99998
 鱼龙	yuls	99999
 玉龙	yuls	99998
 优胜劣汰	yult	99999
-旕	yult	99998
+谷	yult	99998
+旕	yult	99997
 语录	yulu	99999
 雨露	yulu	99998
 伛偻	yulv	99999
@@ -149834,6 +149921,7 @@ magnet:?xt=urn:btih:	xylw	99998
 姷	yzsz	99999
 呦	yzt	99999
 犹他	yzta	99999
+哟	yzta	99998
 远在天边	yztb	99999
 油桃	yztc	99999
 犹太	yztd	99999
@@ -150070,6 +150158,7 @@ magnet:?xt=urn:btih:	xylw	99998
 咋讲	zajl	99999
 杂件	zajm	99999
 杂交	zajn	99999
+咱就	zajq	99999
 杂居	zaju	99999
 杂家	zajx	99999
 偺	zakb	99999
@@ -150121,6 +150210,7 @@ magnet:?xt=urn:btih:	xylw	99998
 杂碎	zasv	99999
 砸碎	zasv	99998
 咋	zat	99999
+咱	zatd	99999
 咂	zate	99999
 杂谈	zatj	99999
 咋	zatk	99999
@@ -152092,7 +152182,6 @@ magnet:?xt=urn:btih:	xylw	99998
 攒机	zjji	99999
 最近几年	zjjn	99999
 暂借	zjjp	99999
-咱就	zjjq	99999
 寁	zjjs	99999
 最近几天	zjjt	99999
 暂居	zjju	99999

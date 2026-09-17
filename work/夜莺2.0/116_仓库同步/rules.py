@@ -5,7 +5,8 @@ import os, re
 MAX_FILE = 20 * 1048576   # 仓库单文件上限（GitHub 硬限 100MB；超过 20MB 的中间产物一律不入库并登记）
 # 目录名（任意层级）整目录排除
 DIR_EXACT = {'jobs', 'round1', 'round2', 'configs', 'practice', 'raw', 'engine-check', 'engine-check-final', 'engine-check-light',
-             'Rime_主力版', 'Rime_手机版', 'models', 'smoke', 'calibration', 'output', '__pycache__', '.candidate_check', 'node_modules', 'target'}
+             'Rime_主力版', 'Rime_手机版', 'models', 'smoke', 'calibration', 'output', '__pycache__', '.candidate_check', 'node_modules', 'target',
+             'upstream', '夜莺魔虎试验版'}   # 127：魔虎上游包（第三方 GPL 二进制与大词库）和由它生成的试验包不入库，build.py 可重建
 DIR_RE = [(re.compile(r'备份'), '*备份*/'),                                  # 实装前备份_*、修改前备份、正式同步前备份…
           (re.compile(r'^\d\d_(projection|perturbed|random)$'), '[0-9][0-9]_projection/\n[0-9][0-9]_perturbed/\n[0-9][0-9]_random/'),   # 11 的运行目录
           (re.compile(r'^output-'), 'output-*/'),                             # 退火器单次运行输出（config/checkpoint/solution 各 5MB）

@@ -606,6 +606,7 @@ www.baidu.com	999999	baidu
 庇	999999	bic
 庳	999998	bicc
 痺	999997	bicc
+贲	999999	bicj
 痹	999999	bicp
 庇	999999	bict
 鼻	999999	bid
@@ -639,6 +640,7 @@ B超	999999	biic
 俾	999999	bikc
 彼	999999	bikg
 佊	999998	bikg
+佛	999999	bikk
 偪	999999	bikp
 佖	999999	bikv
 鄪	999999	biky
@@ -831,7 +833,8 @@ B佬	999999	bilc
 鞆	999998	bkrx
 饼	999999	bkw
 槟	999999	bkwl
-饼	999999	bkwm
+栟	999999	bkwm
+饼	999998	bkwm
 棅	999998	bkwp
 栤	999997	bkwp
 柄	999999	bkwx
@@ -985,6 +988,7 @@ B佬	999999	bilc
 博	999999	boc
 鹁	999998	bocg
 勃	999999	bocp
+孛	999998	bocp
 博	999999	boct
 帛	999999	bod
 袯	999998	boda
@@ -1038,6 +1042,7 @@ B佬	999999	bilc
 癶	999999	borr
 髆	999999	bort
 跛	999999	bos
+趵	999997	bosa
 跛	999999	bosg
 蹳	999999	bosh
 踣	999999	bost
@@ -1230,6 +1235,7 @@ ban位买房	999998	bwmf
 碑	999999	bwxc
 碚	999999	bwxt
 鉳	999997	bwxt
+陂	999998	bwyg
 糒	999999	bwz
 糒	999999	bwzz
 八仙过海，各显其能	999999	bxgn
@@ -1390,6 +1396,7 @@ Ciallo～(∠・ω＜)⌒☆	999999	cial
 垐	999998	ciaq
 泚	999999	ciat
 次	999999	ciax
+粢	999999	ciaz
 辞	999999	cic
 辞	999999	cica
 蛓	999998	cicg
@@ -1599,6 +1606,7 @@ Ctrl	999999	ctrl
 醋	999999	cue
 醋	999999	cueb
 卒	999999	cuec
+酢	999999	cuek
 麁	999999	cuft
 簇	999999	cuh
 簇	999999	cuhg
@@ -1810,6 +1818,8 @@ C位出道	999999	cwid
 捯	999999	dcog
 捣	999999	dcoh
 搗	999998	dcoh
+焘	999999	dcp
+焘	999999	dcpp
 軇	999999	dcpt
 壔	999998	dcqt
 纛	999999	dcr
@@ -2499,6 +2509,7 @@ DDoS	999999	ddos
 趃	999998	dpsg
 蹀	999999	dpsw
 喋	999999	dpt
+咥	999999	dptg
 喋	999999	dptw
 恎	999999	dpvg
 戜	999999	dpvr
@@ -2766,6 +2777,7 @@ DDoS	999999	ddos
 惇	999999	dyvp
 犜	999998	dyvq
 驐	999997	dyvq
+饨	999997	dywb
 礅	999999	dyx
 砘	999999	dyxb
 碷	999997	dyxb
@@ -2927,6 +2939,7 @@ DDoS	999999	ddos
 阨	999999	eeyv
 腭	999999	eez
 腭	999999	eezb
+嗯	999999	egtv
 鹤	999999	eh
 欸	999999	ei
 诶	999999	eif
@@ -3270,6 +3283,7 @@ ez收徒	999999	ezut
 范	999999	fjm
 蘩	999999	fjmi
 藩	999999	fjmp
+蕃	999997	fjmp
 范	999999	fjmv
 凡	999999	fjn
 凡	999999	fjnn
@@ -3422,6 +3436,7 @@ ez收徒	999999	ezut
 复	999998	fukq
 逢山开路，遇水搭桥	999996	fukq
 傅	999999	fukt
+艴	999998	fukv
 伏	999999	fuky
 伕	999998	fuky
 父	999999	ful
@@ -3631,6 +3646,8 @@ ez收徒	999999	ezut
 嘎	999999	ga
 尬	999999	gac
 尬	999999	gacl
+轧	999999	gae
+轧	999999	gaeb
 旮	999999	gah
 旮	999999	gahb
 伽	999999	gak
@@ -3906,8 +3923,10 @@ ez收徒	999999	ezut
 扛	999999	gho
 掆	999999	ghoh
 扛	999999	ghot
+豇	999999	ghp
 焹	999999	ghpe
 焵	999999	ghph
+豇	999999	ghpt
 罡	999999	ghq
 堈	999999	ghqh
 鿍	999998	ghql
@@ -4082,7 +4101,9 @@ ez收徒	999999	ezut
 菓	999999	gom
 菓	999999	gomp
 蔮	999998	gomp
+掴	999999	goo
 Google	999999	goog
+掴	999999	goor
 果	999999	gop
 果	999999	gopp
 褁	999999	gops
@@ -4329,6 +4350,7 @@ Google	999999	goog
 瞡	999998	gvbp
 晷	999999	gvbt
 庋	999999	gvc
+廆	999999	gvcp
 庋	999999	gvcq
 厬	999999	gvct
 龟	999999	gvd
@@ -4365,12 +4387,14 @@ Google	999999	goog
 蓕	999998	gvmq
 闺	999999	gvn
 匦	999999	gvnh
+匮	999998	gvnj
 闺	999999	gvnq
 撌	999999	gvol
 摫	999999	gvop
 猤	999999	gvoy
 鬼	999999	gvp
 鬼	999999	gvpp
+炔	999998	gvpy
 圭	999999	gvq
 攰	999999	gvqp
 圭	999998	gvqq
@@ -4440,12 +4464,14 @@ Google	999999	goog
 騧	999999	gxvt
 栝	999999	gxw
 栝	999999	gxwt
+聒	999998	gxxt
 胍	999999	gxz
 劀	999999	gxzg
 胍	999999	gxzh
 滚	999999	gy
 滚	999999	gya
 滚	999999	gyah
+混	999999	gyat
 鲧	999999	gyd
 鲧	999998	gydi
 辊	999999	gye
@@ -4591,6 +4617,7 @@ Google	999999	goog
 噑	999995	hctc
 嚎	999999	hcto
 嚆	999999	hctt
+镐	999999	hcut
 椃	999999	hcwn
 亳bo	999999	hcwq
 聕	999998	hcxt
@@ -4600,6 +4627,7 @@ Google	999999	goog
 塰	999999	hdaq
 醢	999999	hde
 醢	999999	hdeq
+解	999997	hdgv
 旱的旱死，涝的涝死	999998	hdhs
 害	999999	hdj
 回答道：“	999999	hdjf
@@ -5046,6 +5074,8 @@ Google	999999	goog
 惑	999999	hovv
 𬴃	999999	hovx
 騞	999998	hovx
+饸	999999	how
+饸	999999	howt
 奯	999998	hoya
 换	999999	hr
 浣	999999	hra
@@ -5114,6 +5144,8 @@ Google	999999	goog
 環	999999	hrrs
 𤩽	999999	hrry
 瑍	999998	hrry
+嬛	999999	hrs
+嬛	999998	hrss
 唤	999999	hrt
 喛	999999	hrtq
 患	999999	hrtv
@@ -5432,6 +5464,7 @@ https://	999999	http
 恚	999999	hvqv
 慧	999999	hvr
 璯	999999	hvrb
+珲	999999	hvre
 殨	999998	hvrl
 彗	999999	hvrp
 慧	999998	hvrv
@@ -5922,6 +5955,7 @@ id劝退	999998	idqt
 靗	999998	igrp
 珵	999999	igrr
 呈	999999	igt
+噌	999999	igtb
 逞	999999	igtq
 呈	999998	igtr
 铖	999999	igu
@@ -5974,6 +6008,7 @@ id劝退	999998	idqt
 尝	999999	ihj
 常	999999	ihje
 尝	999999	ihjh
+裳	999999	ihjs
 偿	999999	ihk
 伥	999999	ihka
 倡	999999	ihkb
@@ -6782,6 +6817,7 @@ ip正确	999999	ipvq
 系	999999	jifi
 讥	999999	jifn
 譤	999999	jifq
+诘	999999	jift
 记	999999	jifv
 急	999999	jig
 乩	999999	jigb
@@ -6897,6 +6933,7 @@ ip正确	999999	ipvq
 基	999999	jir
 卙	999997	jirc
 諅	999997	jirf
+其	999998	jirl
 玑	999999	jirn
 殛	999999	jirp
 𪟝	999998	jirp
@@ -7026,6 +7063,7 @@ https://www.jsxiaoshi.com/	999996	jisu
 俓	999998	jkkt
 倞	999999	jkky
 旌	999999	jkl
+甑	999999	jkla
 旌	999998	jklm
 旍	999997	jklq
 警	999999	jkm
@@ -7163,6 +7201,7 @@ https://www.jsxiaoshi.com/	999996	jisu
 减	999999	jmat
 減	999998	jmat
 溅	999999	jmav
+浅	999998	jmav
 肩	999999	jmb
 賎	999998	jmba
 瞷	999999	jmbb
@@ -7956,8 +7995,9 @@ https://www.jsxiaoshi.com/	999996	jisu
 榉	999999	juwr
 枸	999999	juwt
 椐	999998	juwt
-橘	999997	juwt
-梮	999995	juwt
+桔	999997	juwt
+橘	999996	juwt
+梮	999994	juwt
 椈	999999	juwz
 聚	999999	jux
 聚	999999	juxa
@@ -8070,6 +8110,7 @@ https://www.jsxiaoshi.com/	999996	jisu
 浚	999999	jyaq
 晙	999999	jyb
 晙	999999	jybq
+隽	999999	jybs
 麇	999999	jyc
 麇	999999	jycn
 麏	999999	jyct
@@ -8390,6 +8431,8 @@ $	999997	k
 磡	999998	kjxp
 砍	999998	kjxx
 快	999999	kk
+浍	999999	kka
+浍	999999	kkah
 巜	999997	kkbb
 鲙	999999	kkd
 鱠	999999	kkdb
@@ -8996,10 +9039,13 @@ $	999997	k
 仂	999999	lek
 仂	999999	lekp
 了	999999	lepp
+垃	999999	leq
+垃	999999	leqj
 勒	999999	ler
 勒	999999	lerp
 叻	999999	let
-叻	999999	letp
+嘞	999999	letp
+叻	999998	letp
 忇	999999	levp
 饹	999999	lew
 饹	999999	lewq
@@ -9708,6 +9754,7 @@ $	999997	k
 骡	999999	lovi
 骆	999999	lovq
 椤	999999	low
+饹	999999	lowq
 椤	999999	lowr
 饠	999999	loxb
 脶	999999	loz
@@ -9956,6 +10003,7 @@ $	999997	k
 轳	999999	lueb
 舻	999998	lueb
 舮	999997	lueb
+六	999999	luel
 辂	999999	lueq
 辘	999999	luet
 甪	999999	luf
@@ -10321,6 +10369,7 @@ $	999997	k
 玛	999999	mar
 玛	999999	marv
 妈	999999	mas
+嬷	999999	mash
 嬤	999997	masi
 妈	999999	masv
 嫲	999999	masw
@@ -11212,6 +11261,8 @@ https://typer.owenyang.top/	999999	mxyi
 𦰡	999999	nam
 蒳	999999	namx
 𦰡	999999	namy
+内	999999	nan
+内	999999	nanx
 捺	999999	nao
 貀	999999	naoh
 捺	999999	naot
@@ -11267,6 +11318,8 @@ https://typer.owenyang.top/	999999	mxyi
 恼	999999	ncvn
 悩	999998	ncvn
 憹	999999	ncvz
+桡	999999	ncw
+桡	999999	ncwp
 硇	999999	ncx
 硇	999999	ncxp
 鐃	999998	ncxp
@@ -11794,6 +11847,7 @@ o(´^｀)o	999963	ofyw
 哦！”	999999	ooae
 哦……”	999998	oose
 噢	999999	oot
+喔	999999	ootg
 哦	999999	ootv
 噢	999999	ooty
 哦？”	999998	oowe
@@ -12140,6 +12194,7 @@ pdf文件	999999	pdfj
 痞	999999	pict
 庀	999998	pict
 郫	999999	pid
+裨	999998	pidc
 鲏	999999	pidg
 郫	999998	pidy
 諀	999999	pifc
@@ -12214,6 +12269,7 @@ P图	999999	pitu
 駓	999998	pivp
 悂	999999	pivq
 枇	999999	piw
+椑	999999	piwc
 枇	999999	piwt
 砒	999999	pix
 銔	999999	pixc
@@ -12286,7 +12342,8 @@ P图	999999	pitu
 涄	999999	pkab
 泙	999999	pkac
 洴	999999	pkam
-慿	999999	pkav
+冯	999999	pkav
+慿	999998	pkav
 屏	999999	pkb
 屛	999998	pkbc
 屏	999998	pkbm
@@ -12455,6 +12512,8 @@ POLO衫	999997	polo
 砶	999999	poxd
 破	999999	poxg
 鏺	999999	poxh
+陂	999999	poy
+陂	999999	poyg
 粕	999999	poz
 粕	999999	pozd
 撇	999999	pp
@@ -12781,7 +12840,8 @@ py交易	999999	pyjy
 葺	999999	qimx
 芪	999998	qimz
 耆	999999	qin
-耆	999999	qinb
+稽	999999	qinb
+耆	999998	qinb
 掑	999999	qiol
 捿	999999	qios
 摖	999999	qiot
@@ -13643,6 +13703,7 @@ QQ音乐	999999	qqyy
 饶	999998	rcwp
 热	999999	re
 惹	999999	rem
+若	999999	remt
 惹	999999	remv
 热	999999	reo
 热	999999	reop
@@ -14215,6 +14276,7 @@ Shift	999999	shif
 杫	999999	siws
 饲	999999	siwt
 楒	999999	siwv
+食	999997	siww
 鐁	999999	sixh
 磃	999999	sixn
 鋖	999999	sixs
@@ -14748,6 +14810,7 @@ san值狂掉	999999	svkd
 特	999999	tev
 貣	999999	tevl
 特	999999	tevt
+忒	999999	tevv
 疼	999999	tg
 漛	999999	tgap
 疼	999999	tgc
@@ -14907,7 +14970,8 @@ san值狂掉	999999	svkd
 踢	999999	tis
 趯	999999	tisb
 蹄	999999	tise
-趧	999999	tiss
+媞	999999	tiss
+趧	999998	tiss
 跳出三界之外，不在五行之中	999999	tisv
 踢	999999	tisx
 啼	999999	tit
@@ -15163,7 +15227,9 @@ T恤衫	999999	tixuuj
 鋚	999999	tnku
 鎥	999998	tnku
 條	999999	tnky
+苕	999999	tnm
 蓚	999999	tnmf
+苕	999999	tnmt
 蓨	999999	tnmz
 粜	999999	tnn
 糶	999999	tnnb
@@ -15497,6 +15563,7 @@ T恤衫	999999	tixuuj
 𬯎	999998	tvyj
 腿	999999	tvz
 腿	999999	tvzq
+忒	999999	twvv
 头悬梁，锥刺股	999998	txlg
 txt文件	999999	txtj
 天下武功，唯快不破	999999	txwp
@@ -15559,6 +15626,7 @@ txt文件	999999	txtj
 鲨	999999	uaad
 啥！”	999999	uaae
 沙	999999	uaaf
+挲	999999	uaao
 裟	999999	uaas
 硰	999999	uaax
 厦	999999	uac
@@ -15748,6 +15816,7 @@ txt文件	999999	txtj
 鰰	999996	ufdp
 祳	999998	ufdz
 谂	999999	uff
+谌	999999	uffb
 诜	999999	uffp
 谉	999998	uffp
 谂	999999	uffv
@@ -15826,7 +15895,8 @@ txt文件	999999	txtj
 泩	999999	ugam
 湦	999998	ugam
 昇	999999	ugb
-晠	999998	ugbb
+晟	999998	ugbb
+晠	999997	ugbb
 曻	999999	ugbl
 昇	999998	ugbm
 琞	999999	ugbr
@@ -15849,6 +15919,7 @@ txt文件	999999	txtj
 蕂	999997	ugmp
 剩	999999	ugn
 剩	999998	ugng
+乘	999999	ugnt
 焺	999999	ugpm
 圣	999999	ugq
 省亲xkqb	999997	ugqb
@@ -15968,6 +16039,7 @@ txt文件	999999	txtj
 诗	999999	uift
 试	999998	uift
 失	999999	uig
+蛳	999996	uige
 矢	999999	uigg
 失	999998	uigg
 释	999999	uih
@@ -17256,6 +17328,7 @@ https://api.ihint.me/shuang/	999997	ulpb
 捉	999999	voos
 灼	999999	vop
 灼	999999	vopa
+焯	999999	vopc
 叕	999999	voq
 劅	999999	voqg
 叕	999998	voqq
@@ -17567,6 +17640,7 @@ https://api.ihint.me/shuang/	999997	ulpb
 只有累死的牛，没有耕坏的地	999998	vyld
 只有累死的牛，没有耕坏的田	999999	vylt
 稕	999999	vynp
+屯	999998	vypb
 迍	999999	vypq
 肫	999999	vyz
 肫	999999	vyzb
@@ -17661,6 +17735,8 @@ https://api.ihint.me/shuang/	999997	ulpb
 窊	999999	wajh
 佤	999999	wak
 佤	999999	waka
+凹	999999	wal
+凹	999999	walp
 挖	999999	wao
 挖	999999	waob
 攨	999999	waoh
@@ -17934,6 +18010,7 @@ WiFi	999999	wifi
 渥	999999	woag
 涹	999999	woas
 渦	999999	woat
+涴	999999	woav
 涡	999999	woax
 沃	999999	woay
 斡	999999	woc
@@ -18165,8 +18242,9 @@ Word	999999	word
 巍	999999	wwh
 嵬	999999	wwhp
 巍	999998	wwhp
-崣	999998	wwhs
-嵔	999997	wwhs
+崴	999998	wwhs
+崣	999997	wwhs
+嵔	999996	wwhs
 峗	999999	wwhv
 峞	999998	wwhv
 鄬	999998	wwhy
@@ -18332,6 +18410,7 @@ Word	999999	word
 噺	999998	xbth
 鑫	999999	xbu
 锌	999999	xbua
+镡	999999	xbuc
 鑫	999998	xbuu
 忻	999999	xbv
 忻	999998	xbvh
@@ -18536,6 +18615,7 @@ Word	999999	word
 析	999999	xiw
 皙	999999	xiwd
 槢	999997	xiwd
+栖	999999	xiwe
 析	999998	xiwh
 檄	999999	xiwq
 橀	999998	xiwq
@@ -18557,7 +18637,8 @@ Word	999999	word
 鎴	999999	xixv
 鏭	999998	xixv
 鈢	999999	xixw
-錫	999997	xixx
+歙	999997	xixx
+錫	999996	xixx
 鉨	999998	xixy
 鉩	999997	xixy
 磎	999996	xixy
@@ -19669,6 +19750,7 @@ magnet:?xt=urn:btih:	999998	xylw
 娅	999999	yasn
 齖	999998	yasu
 哑	999999	yat
+吖	999999	yatl
 哑	999998	yatn
 唖	999998	yatp
 呀	999999	yatu
@@ -19986,6 +20068,7 @@ magnet:?xt=urn:btih:	999998	xylw
 烨	999999	yepc
 爗	999997	yepc
 页	999999	yepj
+射	999999	yept
 野	999999	yepz
 墷	999999	yeqc
 枼	999999	yerw
@@ -20184,6 +20267,7 @@ magnet:?xt=urn:btih:	999998	xylw
 鶃	999997	yigp
 螠	999999	yigq
 遗	999998	yigq
+蛇	999999	yigt
 鸃	999998	yigv
 蜴	999999	yigx
 蛦	999998	yigx
@@ -20775,6 +20859,7 @@ magnet:?xt=urn:btih:	999998	xylw
 园	999999	yrjp
 囦	999998	yrjp
 圜	999999	yrjs
+宛	999999	yrjv
 衏	999999	yrkt
 苑	999999	yrm
 蒬	999999	yrmd
@@ -21077,7 +21162,8 @@ magnet:?xt=urn:btih:	999998	xylw
 鹆	999998	yulg
 雨	999998	yull
 旟	999995	yull
-旕	999998	yult
+谷	999998	yult
+旕	999997	yult
 慾	999998	yulv
 欲	999999	yulx
 芋	999999	yum
@@ -21413,6 +21499,7 @@ magnet:?xt=urn:btih:	999998	xylw
 羑	999999	yzrq
 姷	999999	yzsz
 呦	999999	yzt
+哟	999998	yzta
 呦	999999	yztp
 远在天边，近在眼前	999999	yztq
 嚘	999997	yztq
@@ -21452,6 +21539,7 @@ magnet:?xt=urn:btih:	999998	xylw
 迊	999999	zapq
 沯	999999	zapx
 咋	999999	zat
+咱	999999	zatd
 咂	999999	zate
 咋	999999	zatk
 囐	999999	zaty

@@ -37,6 +37,15 @@ adj = 0
 for c in list(blocks):
     t = target(c, blocks[c])
     if t != blocks[c]: blocks[c] = t; adj += 1
+# 规则 5b（2026-09-17）：登记在 83/补音表.json 的补音字，让位给该码位全部词；字与字的次序不动；人工指定的码位不动
+buyin = json.load(open(B + '/83_单字表重放/补音表.json', encoding='utf-8'))['条目']; buyin_applied = 0
+for c, cs in buyin.items():
+    blk = blocks.get(c, [])
+    if c in man or not any(len(w) > 1 for w in blk): continue
+    last = max(i for i, w in enumerate(blk) if len(w) > 1)
+    # 只有"后面到最后一个词之间不再有别的单字"的补音字才后移——越过别的字会打乱单字表次序（juwt：桔不得越过橘；114 有此断言）
+    mv = [w for i, w in enumerate(blk[:last]) if w in cs and all(len(x) > 1 or x in cs for x in blk[i + 1:last])]
+    if mv: blocks[c] = [w for w in blk[:last + 1] if w not in mv] + mv + blk[last + 1:]; buyin_applied += 1
 # 人工指定：按 码位人工指定.json 的顺序把指定项置前
 manual_applied = 0
 for c, seq in man.items():
@@ -61,6 +70,7 @@ for name, fmt, enc in (('夜莺2.0字词表_普通格式.txt', 'plain', 'utf-8-s
 o62 = collections.OrderedDict()
 for w, c in load(B + '/62_无简词字词表导出/夜莺2.0无简词字词表_普通格式.txt'): o62.setdefault(c, []).append(w)
 diff = [c for c in set(blocks) | set(o62) if blocks.get(c) != o62.get(c)]
+print('补音字让位生效 %d 个码位' % buyin_applied)
 print('\n合并后码位 %d；规则调整了 %d 个码位；人工指定生效 %d 个码位' % (len(blocks), adj, manual_applied))
 print('与 62 比对：不一致码位 %d' % len(diff))
 for c in sorted(diff)[:10]: print('   %-5s 合并[%s]  62[%s]' % (c, '、'.join(blocks.get(c, [])[:5]), '、'.join(o62.get(c, [])[:5])))

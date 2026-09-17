@@ -108810,6 +108810,7 @@ magnet:?xt=urn:btih:	xylw
 远离	yrli
 原理	yrli
 圆领	yrlk
+怨灵	yrlk
 沅陵	yrlk
 原谅	yrll
 原粮	yrll
@@ -112121,6 +112122,7 @@ magnet:?xt=urn:btih:	xylw
 咋讲	zajl
 杂件	zajm
 杂交	zajn
+咱就	zajq
 杂居	zaju
 杂家	zajx
 砸开	zakd
@@ -113619,7 +113621,6 @@ magnet:?xt=urn:btih:	xylw
 攒机	zjji
 最近几年	zjjn
 暂借	zjjp
-咱就	zjjq
 最近几天	zjjt
 暂居	zjju
 攒聚	zjju
