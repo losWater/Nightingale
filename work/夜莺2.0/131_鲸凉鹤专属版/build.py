@@ -52,7 +52,12 @@ for c, ws in his.items():
     assert got == [w for _, w in ws], ('词序变了', c, got[:5], [w for _, w in ws][:5])
 lines = ['%s=%d,%s' % (c, i, t) for c in sorted(merged) for i, t in sorted(merged[c].items())]
 open(OUT + '/夜莺2.0_鲸凉鹤专属_手心挂接.txt', 'wb').write(('\r\n'.join(lines) + '\r\n').encode('utf-8'))
-open(OUT + '/夜莺2.0_鲸凉鹤专属_普通格式.txt', 'wb').write(('\r\n'.join('%s\t%s' % (t, c) for c in sorted(merged) for _, t in sorted(merged[c].items())) + '\r\n').encode('utf-8'))
+flat = [(t, c) for c in sorted(merged) for _, t in sorted(merged[c].items())]      # 顺序 = 手心格式的码位与候选序，即本表的定稿次序
+for name, fmt in (('普通', '%s\t%s'), ('码前', None)):
+    body = '\r\n'.join((fmt % (t, c)) if fmt else ('%s\t%s' % (c, t)) for t, c in flat) + '\r\n'
+    open(OUT + '/夜莺2.0_鲸凉鹤专属_%s.txt' % name, 'wb').write(body.encode('utf-8-sig'))      # 与夜莺正式版普通字词表同款：UTF-8 带 BOM、CRLF
+old = OUT + '/夜莺2.0_鲸凉鹤专属_普通格式.txt'
+if os.path.exists(old): os.remove(old)      # 本脚本早先版本的文件名
 import shutil; shutil.copy2(AUX, OUT + '/夜莺2.0_辅助码.txt')
 json.dump(dropped, open(OUT + '/被替换掉的原单字条目.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 json.dump(report['空位码位'], open(OUT + '/序号留空的码位.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -75,7 +80,9 @@ readme = f"""# 夜莺 2.0 · 鲸凉鹤专属版（{datetime.date.today().strftim
 ## 文件
 
 - `夜莺2.0_鲸凉鹤专属_手心挂接.txt`：手心格式（`码=序号,内容`），和你原来的文件同款，UTF-8 无 BOM、CRLF，直接替换即可。共 {len(lines)} 条。
-- `夜莺2.0_鲸凉鹤专属_普通格式.txt`：同样内容的"文字<Tab>编码"版，给别的输入法用。
+- `夜莺2.0_鲸凉鹤专属_普通.txt`：同样内容的"文字<Tab>编码"版，给别的输入法用；顺序就是手心格式的候选次序。
+- `夜莺2.0_鲸凉鹤专属_码前.txt`："编码<Tab>文字"版，内容与顺序同上。
+  这两个文件与夜莺正式版的普通字词表同款：UTF-8 带 BOM、CRLF。
 - `夜莺2.0_辅助码.txt`：夜莺的辅助码（每个字全码的后两键 = 首根键 + 末根键），{sum(1 for _ in open(AUX, encoding='utf-8-sig'))} 字。
 
 ## 来源
