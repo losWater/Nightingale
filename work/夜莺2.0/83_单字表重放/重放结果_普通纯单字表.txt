@@ -1150,7 +1150,7 @@
 导	dcvt
 氘	dcz
 氘	dczl
-带	dd
+待	dd
 戴	ddc
 戴	ddcl
 轪	dde
@@ -1744,7 +1744,7 @@
 都	dzny
 抖	dzo
 抖	dzoc
-豆	dzp
+兜	dzp
 豆	dzpp
 逗	dzpq
 钭	dzu
@@ -3708,6 +3708,7 @@
 撑	igo
 撑	igoo
 承	igp
+承	igpf
 承	igpp
 城	igq
 城	igqb
@@ -4207,6 +4208,7 @@
 槿	jbwr
 馑	jbwr
 禁	jbwt
+金	jbx
 矜	jbz
 矜	jbzq
 己	ji
@@ -11414,7 +11416,7 @@
 玮	wwrx
 娓	wws
 娓	wwsg
-味	wwt
+喂	wwt
 唯	wwtb
 味	wwtl
 喂	wwts
@@ -13330,6 +13332,7 @@
 在	zdcq
 哉	zdct
 栽	zdcw
+载	zde
 崽	zdh
 崽	zdhv
 灾	zdj
@@ -13341,6 +13344,8 @@
 甾	zdlp
 再	zdp
 再	zdpq
+哉	zdt
+栽	zdw
 则	ze
 泽	zea
 泽	zear

@@ -12754,7 +12754,7 @@ dczl	氘
 dczu	刀俎
 dczw	盗贼
 dczz	盗走
-dd	带
+dd	待
 ddal	瀻
 dday	点灯熬油
 ddba	动荡不安
@@ -19154,7 +19154,7 @@ dzny	都
 dzo	抖
 dzoc	抖
 dzou	斗殴
-dzp	豆
+dzp	兜
 dzpd	蛋仔派对
 dzpg	斗篷
 dzpg	毭
@@ -32249,8 +32249,8 @@ hdz	氦
 hdzb	话到嘴边
 hdzc	还早
 hdzc	海藻
-hdzd	昏倒在地
 hdzd	还在
+hdzd	昏倒在地
 hdzh	海葬
 hdzh	活到最后
 hdzi	孩子
@@ -39735,6 +39735,7 @@ igp	承
 igpb	成品
 igpb	诚聘
 igpd	成排
+igpf	承
 igph	成功破获
 igpi	成批
 igpj	秤盘
@@ -44452,6 +44453,7 @@ jbww	仅为
 jbww	近卫
 jbwx	洁白无瑕
 jbwz	久病无孝子
+jbx	金
 jbxb	尽心
 jbxf	箭不虚发
 jbxi	今昔
@@ -45524,8 +45526,8 @@ jiht	解除合同
 jihu	几乎
 jihu	几户
 jihu	疾呼
-jihv	几回
 jihv	机会
+jihv	几回
 jihv	忌讳
 jihv	集会
 jihx	计划
@@ -46124,8 +46126,8 @@ jiye	基业
 jiyg	剞
 jiyh	几样
 jiyh	寄养
-jiyi	几亿
 jiyi	记忆
+jiyi	几亿
 jiyi	技艺
 jiyj	几眼
 jiyj	急眼
@@ -67941,6 +67943,7 @@ mwky	骂我可以
 mwl	霉
 mwla	没啦
 mwlb	美林
+mwld	没来
 mwle	没了
 mwlg	眉棱
 mwli	美丽
@@ -97963,8 +97966,8 @@ uijb	使劲
 uijb	驶进
 uijc	竍
 uijg	室
-uiji	十几
 uiji	实际
+uiji	十几
 uiji	时机
 uiji	世纪
 uijj	市场经济
@@ -98279,8 +98282,8 @@ uivh	市长
 uivh	师长
 uivi	实质
 uivi	食指
-uivj	施展
 uivj	实战
+uivj	施展
 uivl	时装
 uivo	石桌
 uivp	驶
@@ -114663,7 +114666,7 @@ wwsv	尾随
 wwsv	玩物丧志
 wwsy	为我所用
 wwsz	媦
-wwt	味
+wwt	喂
 wwtb	唯
 wwtc	微淘
 wwte	维特
@@ -114676,8 +114679,8 @@ wwtl	味
 wwtn	微调
 wwto	委托
 wwtp	偎贴
-wwts	喂
 wwts	胃痛
+wwts	喂
 wwts	卫通
 wwts	喴
 wwtt	稳稳妥妥
@@ -128940,8 +128943,8 @@ yrua	冤杀
 yruc	袁绍
 yrue	远射
 yrue	远涉
-yruf	元神
 yruf	原神
+yruf	元神
 yrug	原生
 yrug	原声
 yrugzddc	怨声载道
@@ -133225,6 +133228,7 @@ zddu	在读
 zddu	坐到地上
 zddx	子弹短信
 zddx	在大多数情况下
+zde	载
 zdee	灾厄
 zdej	罪大恶极
 zder	崽儿
@@ -133365,6 +133369,7 @@ zdsd	自动锁定
 zdsd	自动锁敌
 zdsj	再三
 zdsm	做点什么
+zdt	哉
 zdtc	在逃
 zdtd	最大特点
 zdti	载体
@@ -133416,6 +133421,7 @@ zdvs	栽种
 zdvs	载重
 zdvv	走得正行得直
 zdvz	载舟
+zdw	栽
 zdwd	在外
 zdwd	最低温度
 zdwf	载文

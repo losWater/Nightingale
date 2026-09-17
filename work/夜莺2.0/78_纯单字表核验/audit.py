@@ -6,7 +6,8 @@ sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
 B='E:/夜莺2.0/work/夜莺2.0'
 rank={e['字']:e['字频'] for e in json.load(open(B+'/59_单字当量排行/单字当量排行.json',encoding='utf-8'))}
 TOL={'jv':'剧','jvb':'居','jvn':'巨','jvo':'狙','xv':'绪',
-     'yvl':'欲','yvz':'予','yvc':'郁','yvo':'羽'}          # 54批次登记容错码
+     'yvl':'欲','yvz':'予','yvc':'郁','yvo':'羽',
+     'jbx':'金','igpf':'承','zde':'载','zdt':'哉','zdw':'栽','dzp':'兜'}   # 2026-09-17 第二十六批          # 54批次登记容错码
 SPEC={'eh':'鹤','by':'莺'}                                            # 57盘点特殊简码
 IRR={'lqq':'六'}                                            # 尚存无理码
 KEEP={'bje':'般','gjb':'敢','hop':'火','isa':'冲','qtq':'却','zid':'自'}  # 用户裁定保留兼占

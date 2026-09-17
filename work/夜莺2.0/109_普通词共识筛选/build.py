@@ -56,6 +56,10 @@ for w in sorted(w for w, c in cnt.items() if c >= 3 and w not in ours):
 blocks = collections.OrderedDict()
 for w, c in keep: blocks.setdefault(c, []).append(w)
 for w, c in added.items(): blocks.setdefault(c, []).append(w)
+# 2026-09-17 人工补词（用户实打反馈，规则码）：不在表中则补入码位末尾
+for _c, _ws in json.load(open(H + '/人工补词.json', encoding='utf-8'))['条目'].items():
+    for _w in _ws:
+        if _w not in blocks.get(_c, []): blocks.setdefault(_c, []).append(_w)
 # 2026-09-16 词无理码表（83）里的特设入口若不在表中则补入码位末尾（如 yeby=夜莺）
 for _c, _w in json.load(open(B + '/83_单字表重放/词无理码表.json', encoding='utf-8-sig'))['条目'].items():
     if _w not in blocks.get(_c, []): blocks.setdefault(_c, []).append(_w)

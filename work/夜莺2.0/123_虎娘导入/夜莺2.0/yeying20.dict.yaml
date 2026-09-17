@@ -1,5 +1,5 @@
 name: yeying20
-version: "2026.09.16"
+version: "2026.09.17"
 sort: by_weight
 columns:
   - text
@@ -1830,7 +1830,7 @@ C位出道	999999	cwid
 陦	999999	dcyt
 氘	999999	dcz
 氘	999999	dczl
-带	999999	dd
+待	999999	dd
 瀻	999999	ddal
 当断不断，反受其乱	999999	ddbl
 曃	999997	ddbq
@@ -2797,7 +2797,7 @@ DDoS	999999	ddos
 都	999999	dzny
 抖	999999	dzo
 抖	999999	dzoc
-豆	999999	dzp
+兜	999999	dzp
 毭	999998	dzpg
 豆	999999	dzpp
 逗	999999	dzpq
@@ -5908,6 +5908,7 @@ id劝退	999998	idqt
 摚	999999	igoq
 挰	999999	igor
 承	999999	igp
+承	999999	igpf
 承	999999	igpp
 畻	999999	igpq
 城	999999	igq
@@ -6711,6 +6712,7 @@ ip正确	999999	ipvq
 槿	999999	jbwr
 馑	999998	jbwr
 禁	999999	jbwt
+金	999999	jbx
 砛	999997	jbxq
 釒	999998	jbxu
 矜	999999	jbz
@@ -18244,10 +18246,10 @@ Word	999999	word
 娓	999999	wwsg
 媙	999998	wwss
 媦	999999	wwsz
-味	999999	wwt
+喂	999999	wwt
 唯	999999	wwtb
 味	999999	wwtl
-喂	999999	wwts
+喂	999998	wwts
 喴	999996	wwts
 我王守义今天就要看看你的13香不香	999998	wwuy
 威	999999	wwv
@@ -21515,6 +21517,7 @@ magnet:?xt=urn:btih:	999998	xylw
 在	999999	zdcq
 哉	999999	zdct
 栽	999999	zdcw
+载	999999	zde
 崽	999999	zdh
 崽	999998	zdhv
 縡	999999	zdia
@@ -21533,6 +21536,8 @@ magnet:?xt=urn:btih:	999998	xylw
 菑	999999	zdmp
 再	999999	zdp
 再	999999	zdpq
+哉	999999	zdt
+栽	999999	zdw
 则	999999	ze
 泽	999999	zea
 沢	999999	zeab

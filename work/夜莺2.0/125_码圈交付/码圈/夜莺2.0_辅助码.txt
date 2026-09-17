@@ -4284,7 +4284,7 @@
 扼=ov
 扽=ob
 找=ov
-承=pp
+承=pf pp
 技=oq
 抂=or
 抃=og

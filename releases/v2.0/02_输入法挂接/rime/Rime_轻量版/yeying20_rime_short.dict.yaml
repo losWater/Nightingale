@@ -1610,7 +1610,7 @@ columns: [text, code, weight]
 一脉	yi;pp md;zp	5599
 一脉	yimd	5599
 一脉相传	ymxi	50112
-一脉相承	yi;pp md;zp xl;wb ig;pp	125863
+一脉相承	yi;pp md;zp xl;wb ig;pf	125863
 一脉相承	ymxi	125863
 一脉相通	ymxt	51478
 一脚	yi jnp	38404
@@ -21939,7 +21939,7 @@ columns: [text, code, weight]
 传扬	ir;ka yh;ox	106477
 传扬	iryh	106477
 传承	ir igk	252711
-传承	ir;ka ig;pp	252711
+传承	ir;ka ig;pf	252711
 传承	irig	252711
 传承文明	iiwm	1
 传抄	ir ick	51581
@@ -28119,7 +28119,7 @@ columns: [text, code, weight]
 做得不错	zdbc	1
 做得到	zdd	33333
 做得好	zdh	33333
-做得完	zdw	100000
+做得完	zdw	50000
 做得很不错	zdhc	1
 做慈善	zcu	50000
 做戏	zo xik	42855
@@ -69376,7 +69376,6 @@ columns: [text, code, weight]
 在华	zd hxc	49454
 在华	zd;cq hx;kc	49454
 在华	zdhx	49454
-在单位	zdw	33333
 在即	zd jic	169680
 在即	zd;cq ji;sy	169680
 在即	zdji	169680
@@ -69590,7 +69589,7 @@ columns: [text, code, weight]
 在相同条件下	zxtx	1
 在短期内	zdqn	1
 在社会上	zuhu	1
-在等我	zdw	50000
+在等我	zdw	33333
 在线	zd xmc	275461
 在线	zd;cq xm;iv	275461
 在线	zdxm	275461
@@ -70431,7 +70430,7 @@ columns: [text, code, weight]
 坐地日行八万里	zdrl	1
 坐地起价	zdqj	1
 坐地还钱	zdhq	1
-坐地铁	zdt	100000
+坐地铁	zdt	33333
 坐垫	zo dmx	159983
 坐垫	zo;xq dm;oq	159983
 坐垫	zodm	159983
@@ -70897,7 +70896,7 @@ columns: [text, code, weight]
 坦坦荡荡	tj;qp tj;qp dh;mx dh;mx	97895
 坦坦荡荡	ttdd	97895
 坦承	tj igq	129620
-坦承	tj;qp ig;pp	129620
+坦承	tj;qp ig;pf	129620
 坦承	tjig	129620
 坦桑尼亚	tj;qp sh;qw ni;bt ya;nn	167534
 坦桑尼亚	tsny	167534
@@ -78916,7 +78915,7 @@ columns: [text, code, weight]
 失去	ui;gg qu;qh	485533
 失去	uiqu	485533
 失去	uq	485533
-失去了	uql	100000
+失去了	uql	50000
 失去了知觉	uqlj	1
 失去信心	uqxx	1
 失去光泽	uqgz	1
@@ -79868,7 +79867,7 @@ columns: [text, code, weight]
 奉天承运	ftiy	3930
 奉子成婚	fzih	1
 奉承	fg igr	188613
-奉承	fg;rr ig;pp	188613
+奉承	fg;rr ig;pf	188613
 奉承	fgig	188613
 奉旨	fg vir	47808
 奉旨	fg;rr vi;tb	47808
@@ -84459,7 +84458,6 @@ columns: [text, code, weight]
 子弹	zidj	344479
 子弹上膛	zdut	1
 子弹壳	zdk	50000
-子弹头	zdt	53010
 子弹时间	zduj	1
 子弹短信	zddx	1
 子承父业	zify	51781
@@ -92549,7 +92547,7 @@ columns: [text, code, weight]
 就得	jq;en dw;kt	19007
 就得	jqdw	19007
 就得这样	jdvy	1
-就必须	jbx	100000
+就必须	jbx	50000
 就快	jq kke	45832
 就快	jq;en kk;vy	45832
 就快	jqkk	45832
@@ -96717,7 +96715,7 @@ columns: [text, code, weight]
 师恩	ui;le en;jv	49067
 师恩	uien	49067
 师承	ui igl	87867
-师承	ui;le ig;pp	87867
+师承	ui;le ig;pf	87867
 师承	uiig	87867
 师旅	ui lvl	35460
 师旅	ui;le lv;lz	35460
@@ -99904,7 +99902,7 @@ columns: [text, code, weight]
 应战	yk;cy vj;gv	152112
 应战	ykvj	152112
 应承	yk igc	118118
-应承	yk;cy ig;pp	118118
+应承	yk;cy ig;pf	118118
 应承	ykig	118118
 应把	yk bac	1
 应把	yk;cy ba;ov	1
@@ -104801,7 +104799,7 @@ columns: [text, code, weight]
 待批	dd;kt pi;ot	19938
 待批	ddpi	19938
 待承	dd igk	9138
-待承	dd;kt ig;pp	9138
+待承	dd;kt ig;pf	9138
 待承	ddig	9138
 待援	dd yrk	48582
 待援	dd;kt yr;oq	48582
@@ -118585,27 +118583,28 @@ columns: [text, code, weight]
 找骂	vcma	30822
 找麻烦	vc;ov ma;cw fj;pj	146649
 找麻烦	vmf	146649
+承	ig;pf	20702
 承	ig;pp	20702
 承上启下	iuqx	81957
 承不承认	ibir	1
 承先启后	ixqh	52287
 承兑	ig dvp	92333
-承兑	ig;pp dv;lp	92333
+承兑	ig;pf dv;lp	92333
 承兑	igdv	92333
-承前启后	ig;pp qm;lg qi;bt hz;ft	107034
+承前启后	ig;pf qm;lg qi;bt hz;ft	107034
 承前启后	iqqh	107034
 承办	ig bjp	220495
-承办	ig;pp bj;pp	220495
+承办	ig;pf bj;pp	220495
 承办	igbj	220495
 承办人	ibr	70200
 承包	ig bcp	225887
-承包	ig;pp bc;nv	225887
+承包	ig;pf bc;nv	225887
 承包	igbc	225887
 承包人	ibr	130344
-承包人	ig;pp bc;nv rf;xx	130344
+承包人	ig;pf bc;nv rf;xx	130344
 承包合同	ibht	1
 承包商	ibu	170222
-承包商	ig;pp bc;nv uh;et	170222
+承包商	ig;pf bc;nv uh;et	170222
 承包工程	ibgi	1
 承包户	ibh	78338
 承包空屏	ibkp	1
@@ -118613,10 +118612,10 @@ columns: [text, code, weight]
 承包经营	ibjy	1
 承包费	ibf	74954
 承压	ig yap	71329
-承压	ig;pp ya;ca	71329
+承压	ig;pf ya;ca	71329
 承压	igya	71329
 承受	ig uzp	364911
-承受	ig;pp uz;hq	364911
+承受	ig;pf uz;hq	364911
 承受	iguz	364911
 承受不住	iubv	1
 承受不起	iubq	1
@@ -118627,25 +118626,25 @@ columns: [text, code, weight]
 承受能力	iunl	1
 承受范围	iufw	1
 承台	ig tdp	50995
-承台	ig;pp td;ht	50995
+承台	ig;pf td;ht	50995
 承台	igtd	50995
 承应	ig ykp	24520
-承应	ig;pp yk;cy	24520
+承应	ig;pf yk;cy	24520
 承应	igyk	24520
 承建	ig jmp	142242
-承建	ig;pp jm;pq	142242
+承建	ig;pf jm;pq	142242
 承建	igjm	142242
 承当	ig dhp	58938
-承当	ig;pp dh;yp	58938
+承当	ig;pf dh;yp	58938
 承当	igdh	58938
 承德	ig dep	99937
-承德	ig;pp de;kv	99937
+承德	ig;pf de;kv	99937
 承德	igde	99937
 承恩	ig enp	23349
-承恩	ig;pp en;jv	23349
+承恩	ig;pf en;jv	23349
 承恩	igen	23349
 承担	ig djp	361731
-承担	ig;pp dj;op	361731
+承担	ig;pf dj;op	361731
 承担	igdj	361731
 承担不了	idbl	1
 承担不起	idbq	1
@@ -118656,66 +118655,66 @@ columns: [text, code, weight]
 承担起	idq	50000
 承担风险	idfx	1
 承接	ig jpp	171084
-承接	ig;pp jp;os	171084
+承接	ig;pf jp;os	171084
 承接	igjp	171084
 承揽	ig ljp	90272
-承揽	ig;pp lj;oj	90272
+承揽	ig;pf lj;oj	90272
 承揽	iglj	90272
 承欢	ig hrp	42939
-承欢	ig;pp hr;qx	42939
+承欢	ig;pf hr;qx	42939
 承欢	ighr	42939
 承欢膝下	ihxx	1
 承租	ig zup	104679
-承租	ig;pp zu;nq	104679
+承租	ig;pf zu;nq	104679
 承租	igzu	104679
-承租人	ig;pp zu;nq rf;xx	110024
+承租人	ig;pf zu;nq rf;xx	110024
 承租人	izr	110024
 承蒙	ig mgp	148562
-承蒙	ig;pp mg;mo	148562
+承蒙	ig;pf mg;mo	148562
 承蒙	igmg	148562
 承蒙关照	imgv	1
 承蒙厚爱	imha	1
 承袭	ig xip	98256
-承袭	ig;pp xi;ns	98256
+承袭	ig;pf xi;ns	98256
 承袭	igxi	98256
 承认	ig rfp	437679
-承认	ig;pp rf;fx	437679
+承认	ig;pf rf;fx	437679
 承认	igrf	437679
 承认	ir	437679
 承认差距	irij	1
 承认错误	ircw	1
 承让	ig rhp	88728
-承让	ig;pp rh;fp	88728
+承让	ig;pf rh;fp	88728
 承让	igrh	88728
 承诺	ig nop	382768
-承诺	ig;pp no;ft	382768
+承诺	ig;pf no;ft	382768
 承诺	igno	382768
 承诺	in	382768
 承诺书	inu	100000
 承购	ig gzp	58318
-承购	ig;pp gz;jh	58318
+承购	ig;pf gz;jh	58318
 承购	iggz	58318
 承贷	ig ddp	56377
-承贷	ig;pp dd;kj	56377
+承贷	ig;pf dd;kj	56377
 承贷	igdd	56377
 承转	ig vrp	17935
-承转	ig;pp vr;ea	17935
+承转	ig;pf vr;ea	17935
 承转	igvr	17935
 承载	ig zdp	234539
-承载	ig;pp zd;ce	234539
+承载	ig;pf zd;ce	234539
 承载	igzd	234539
 承载了	izl	50000
 承载着	izv	50000
 承运	ig yyp	108533
-承运	ig;pp yy;pq	108533
+承运	ig;pf yy;pq	108533
 承运	igyy	108533
 承重	ig vsp	123129
-承重	ig;pp vs;cp	123129
+承重	ig;pf vs;cp	123129
 承重	igvs	123129
-承重墙	ig;pp vs;cp ql;qt	75297
+承重墙	ig;pf vs;cp ql;qt	75297
 承重墙	ivq	75297
 承销	ig xnp	79003
-承销	ig;pp xn;uz	79003
+承销	ig;pf xn;uz	79003
 承销	igxn	79003
 承销商	ixu	67774
 技	ji;oq	34932
@@ -137890,7 +137889,7 @@ columns: [text, code, weight]
 早点	zc;bc dm;gp	409636
 早点	zcdm	409636
 早点	zd	409636
-早点儿	zde	100000
+早点儿	zde	78386
 早点儿睡	zdeu	1
 早点回去	zdhq	1
 早点睡	zdu	100000
@@ -160290,6 +160289,9 @@ columns: [text, code, weight]
 没权	mw;ah qr;wq	10671
 没权	mwqr	10671
 没权没势	mqmu	1
+没来	mw lda	1
+没来	mw;ah ld;ll	1
+没来	mwld	1
 没来得及	mldj	1
 没来由	mly	33333
 没来由的	mlyd	1
@@ -195285,7 +195287,7 @@ columns: [text, code, weight]
 秉性	bkxk	119439
 秉性难移	bxny	1
 秉承	bk ign	146216
-秉承	bk;np ig;pp	146216
+秉承	bk;np ig;pf	146216
 秉承	bkig	146216
 秉持	bk iin	121570
 秉持	bk;np ii;ot	121570
@@ -206879,14 +206881,14 @@ columns: [text, code, weight]
 继往开来	ji;ib wh;kq kd;pm ld;ll	116224
 继往开来	jwkl	116224
 继承	ji igi	299340
-继承	ji;ib ig;pp	299340
+继承	ji;ib ig;pf	299340
 继承	jiig	299340
 继承了	jil	50000
-继承人	ji;ib ig;pp rf;xx	180626
+继承人	ji;ib ig;pf rf;xx	180626
 继承人	jir	180626
 继承发展	jifv	1
 继承发扬	jify	1
-继承权	ji;ib ig;pp qr;wq	136542
+继承权	ji;ib ig;pf qr;wq	136542
 继承权	jiq	136542
 继承者	jiv	87439
 继母	ji mui	158014
@@ -212598,8 +212600,6 @@ columns: [text, code, weight]
 聘问	pbwf	26442
 聙	jk;xz	1
 聚	ju;xa	13757
-聚丙烯	jbx	103161
-聚丙烯	ju;xa bk;px xi;pe	103161
 聚义	ju yix	34553
 聚义	ju;xa yi;ap	34553
 聚义	juyi	34553
@@ -234360,7 +234360,7 @@ columns: [text, code, weight]
 说起	uo qif	203457
 说起	uo;fp qi;sv	203457
 说起	uoqi	203457
-说起来	uql	50000
+说起来	uql	100000
 说起来容易做起来难	uqln	1
 说起话来	uqhl	1
 说辞	uo cif	146854
@@ -239803,7 +239803,7 @@ columns: [text, code, weight]
 起开	qi;sv kd;pm	51419
 起开	qikd	51419
 起得早	qdz	100000
-起承转合	qi;sv ig;pp vr;ea he;xt	66585
+起承转合	qi;sv ig;pf vr;ea he;xt	66585
 起承转合	qivh	66585
 起搏	qi bos	39923
 起搏	qi;sv bo;ot	39923
@@ -244326,7 +244326,7 @@ columns: [text, code, weight]
 轴心	vz;ep xb;vv	125152
 轴心	vzxb	125152
 轴承	vz ige	191682
-轴承	vz;ep ig;pp	191682
+轴承	vz;ep ig;pf	191682
 轴承	vzig	191682
 轴瓦	vz wae	66182
 轴瓦	vz;ep wa;pa	66182
@@ -268507,7 +268507,7 @@ columns: [text, code, weight]
 顺手牵羊	uuqy	99097
 顺手牵羊	uy;lj uz;oo qm;yv yh;uu	99097
 顺承	uy igl	21561
-顺承	uy;lj ig;pp	21561
+顺承	uy;lj ig;pf	21561
 顺承	uyig	21561
 顺拐	uy gkl	32799
 顺拐	uy;lj gk;op	32799

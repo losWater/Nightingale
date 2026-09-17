@@ -5977,7 +5977,6 @@
 几百万	jbw
 就必须	jbx
 举报信	jbx
-聚丙烯	jbx
 就不要	jby
 捡便宜	jby
 贾宝玉	jby
@@ -12555,8 +12554,8 @@
 说清楚	uqi
 啥情况	uqk
 视情况	uqk
-失去了	uql
 说起来	uql
+失去了	uql
 生气了	uql
 数千名	uqm
 沙琪玛	uqm
@@ -16678,7 +16677,6 @@
 左对齐	zdq
 坐电梯	zdt
 坐地铁	zdt
-子弹头	zdt
 早点睡	zdu
 做点事	zdu
 走读生	zdu
@@ -16687,7 +16685,6 @@
 最大值	zdv
 做得完	zdw
 在等我	zdw
-在单位	zdw
 脏东西	zdx
 紫丁香	zdx
 自定义	zdy

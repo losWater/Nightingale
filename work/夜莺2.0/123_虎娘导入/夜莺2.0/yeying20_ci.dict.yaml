@@ -1,5 +1,5 @@
 name: yeying20_ci
-version: "2026.09.16"
+version: "2026.09.17"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -27675,8 +27675,8 @@ encoder:
 话到嘴边	999999	hdzb
 还早	999999	hdzc
 海藻	999998	hdzc
-昏倒在地	999999	hdzd
-还在	999998	hdzd
+还在	999999	hdzd
+昏倒在地	999998	hdzd
 海葬	999999	hdzh
 活到最后	999998	hdzh
 孩子	999999	hdzi
@@ -38779,8 +38779,8 @@ encoder:
 几乎	999999	jihu
 几户	999998	jihu
 疾呼	999997	jihu
-几回	999999	jihv
-机会	999998	jihv
+机会	999999	jihv
+几回	999998	jihv
 忌讳	999997	jihv
 集会	999996	jihv
 计划	999999	jihx
@@ -39211,8 +39211,8 @@ encoder:
 基业	999999	jiye
 几样	999999	jiyh
 寄养	999998	jiyh
-几亿	999999	jiyi
-记忆	999998	jiyi
+记忆	999999	jiyi
+几亿	999998	jiyi
 技艺	999997	jiyi
 几眼	999999	jiyj
 急眼	999998	jiyj
@@ -56883,6 +56883,7 @@ encoder:
 骂我可以	999999	mwky
 没啦	999999	mwla
 美林	999999	mwlb
+没来	999999	mwld
 没了	999999	mwle
 眉棱	999999	mwlg
 美丽	999999	mwli
@@ -82048,8 +82049,8 @@ encoder:
 尸臭	999998	uiiz
 使劲	999999	uijb
 驶进	999998	uijb
-十几	999999	uiji
-实际	999998	uiji
+实际	999999	uiji
+十几	999998	uiji
 时机	999997	uiji
 世纪	999996	uiji
 市场经济	999999	uijj
@@ -82295,8 +82296,8 @@ encoder:
 师长	999998	uivh
 实质	999999	uivi
 食指	999998	uivi
-施展	999999	uivj
-实战	999998	uivj
+实战	999999	uivj
+施展	999998	uivj
 时装	999999	uivl
 石桌	999999	uivo
 事成之前	999999	uivq
@@ -96501,7 +96502,7 @@ encoder:
 微调	999999	wwtn
 委托	999999	wwto
 偎贴	999999	wwtp
-胃痛	999998	wwts
+胃痛	999999	wwts
 卫通	999997	wwts
 稳稳妥妥	999999	wwtt
 畏途	999999	wwtu
@@ -108194,8 +108195,8 @@ encoder:
 袁绍	999999	yruc
 远射	999999	yrue
 远涉	999998	yrue
-元神	999999	yruf
-原神	999998	yruf
+原神	999999	yruf
+元神	999998	yruf
 原生	999999	yrug
 原声	999998	yrug
 怨声载道	999999	yrugzddc

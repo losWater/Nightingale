@@ -13900,7 +13900,7 @@ C位出道	cwid
 刀俎	dczu
 盗贼	dczw
 盗走	dczz
-带	dd
+待	dd
 得到	dd
 到底	dd
 对答案	dda
@@ -20984,7 +20984,7 @@ DDoS	ddos
 抖	dzo
 抖	dzoc
 斗殴	dzou
-豆	dzp
+兜	dzp
 动作片	dzp
 打嘴炮	dzp
 蛋仔派对	dzpd
@@ -35516,8 +35516,8 @@ Google	goog
 话到嘴边	hdzb
 还早	hdzc
 海藻	hdzc
-昏倒在地	hdzd
 还在	hdzd
+昏倒在地	hdzd
 海葬	hdzh
 活到最后	hdzh
 孩子	hdzi
@@ -43499,6 +43499,7 @@ id劝退	idqt
 成品	igpb
 诚聘	igpb
 成排	igpd
+承	igpf
 成功破获	igph
 成批	igpi
 秤盘	igpj
@@ -48528,9 +48529,9 @@ ip正确	ipvq
 仅为	jbww
 洁白无瑕	jbwx
 久病无孝子	jbwz
+金	jbx
 就必须	jbx
 举报信	jbx
-聚丙烯	jbx
 尽心	jbxb
 箭不虚发	jbxf
 今昔	jbxi
@@ -49822,8 +49823,8 @@ ip正确	ipvq
 几乎	jihu
 几户	jihu
 疾呼	jihu
-几回	jihv
 机会	jihv
+几回	jihv
 忌讳	jihv
 集会	jihv
 计划	jihx
@@ -50377,8 +50378,8 @@ https://www.jsxiaoshi.com/	jisu
 剞	jiyg
 几样	jiyh
 寄养	jiyh
-几亿	jiyi
 记忆	jiyi
+几亿	jiyi
 技艺	jiyi
 几眼	jiyj
 急眼	jiyj
@@ -73310,6 +73311,7 @@ MVP结算页面	mvpm
 霉	mwl
 没啦	mwla
 美林	mwlb
+没来	mwld
 没了	mwle
 眉棱	mwlg
 魅力	mwli
@@ -105554,8 +105556,8 @@ txt文件	txtj
 使劲	uijb
 驶进	uijb
 室	uijg
-十几	uiji
 实际	uiji
+十几	uiji
 时机	uiji
 世纪	uiji
 市场经济	uijj
@@ -105861,8 +105863,8 @@ txt文件	txtj
 师长	uivh
 食指	uivi
 实质	uivi
-施展	uivj
 实战	uivj
+施展	uivj
 时装	uivl
 石桌	uivo
 驶	uivp
@@ -107867,8 +107869,8 @@ https://api.ihint.me/shuang/	ulpb
 时崎狂三	uqks
 申请课题	uqkt
 失去控制	uqkv
-失去了	uql
 说起来	uql
+失去了	uql
 生气了	uql
 失去灵魂	uqlh
 势穷力竭	uqlj
@@ -123833,7 +123835,7 @@ Word	word
 未遂	wwsv
 玩物丧志	wwsv
 为我所用	wwsy
-味	wwt
+喂	wwt
 问问题	wwt
 窝窝头	wwt
 唯	wwtb
@@ -123848,8 +123850,8 @@ Word	word
 微调	wwtn
 委托	wwto
 偎贴	wwtp
-喂	wwts
 胃痛	wwts
+喂	wwts
 卫通	wwts
 稳稳妥妥	wwtt
 畏途	wwtu
@@ -138948,8 +138950,8 @@ magnet:?xt=urn:btih:	xylw
 袁绍	yruc
 远射	yrue
 远涉	yrue
-元神	yruf
 原神	yruf
+元神	yruf
 原生	yrug
 原声	yrug
 怨声载道	yrugzddc
@@ -143446,6 +143448,7 @@ magnet:?xt=urn:btih:	xylw
 坐到地上	zddu
 子弹短信	zddx
 在大多数情况下	zddx
+载	zde
 早点儿	zde
 灾厄	zdee
 罪大恶极	zdej
@@ -143591,9 +143594,9 @@ magnet:?xt=urn:btih:	xylw
 自动锁敌	zdsd
 再三	zdsj
 做点什么	zdsm
+哉	zdt
 坐电梯	zdt
 坐地铁	zdt
-子弹头	zdt
 在逃	zdtc
 最大特点	zdtd
 载体	zdti
@@ -143651,9 +143654,9 @@ magnet:?xt=urn:btih:	xylw
 载重	zdvs
 走得正行得直	zdvv
 载舟	zdvz
+栽	zdw
 做得完	zdw
 在等我	zdw
-在单位	zdw
 在外	zdwd
 最低温度	zdwd
 载文	zdwf
