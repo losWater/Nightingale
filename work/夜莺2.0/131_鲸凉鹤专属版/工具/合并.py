@@ -30,7 +30,9 @@ OUT_HAND = '合并结果_手心挂接.txt'
 OUT_PLAIN = '合并结果_普通.txt'
 OUT_FRONT = '合并结果_码前.txt'
 OUT_LOG = '合并报告.txt'
-OUTPUTS = {OUT_HAND, OUT_PLAIN, OUT_FRONT, OUT_LOG}
+OUT_SHIFT = '占位符移位清单.txt'
+OUTPUTS = {OUT_HAND, OUT_PLAIN, OUT_FRONT, OUT_LOG, OUT_SHIFT}
+PLACEHOLDERS = set('①②③④⑤⑥⑦⑧⑨⑩')
 
 
 def txts(d):
@@ -198,9 +200,50 @@ def main():
            ['  %s 第 %d 行  %s' % (x['名'], n, s) for x in (chars, words) for n, s in x['跳过']]
            if (chars['跳过'] or words['跳过']) else [])
     w(OUT_LOG, '\r\n'.join(log) + '\r\n', True)
+    # 占位符移位清单：夜莺单字插进来时，你钉在固定位次上的占位符和它后面的词会被往后推
+    orig = collections.defaultdict(list)      # 你原文件里的样子（含被替换掉的那些单字），只用于清单显示
+    for c, i, t in words['行']:
+        orig[c].append((i, t))
+    for c in orig:
+        orig[c].sort()
+    shift_rows = []
+    for c, items in sorted(orig.items()):
+        if not any(t in PLACEHOLDERS for _, t in items):
+            continue
+        now = {t: i for i, t in merged[c].items()}
+        moved = [(t, i, now.get(t)) for i, t in items if t in PLACEHOLDERS and now.get(t) != i]
+        if not moved:
+            continue
+        first = min(i for _, i, _ in moved)
+        tail = [(t, i, now.get(t)) for i, t in items if t not in PLACEHOLDERS and i > first and now.get(t) != i]
+        need = max((b - a for _, a, b in moved + tail if b), default=0)
+        shift_rows.append((c, items, moved, tail, need))
+    used_ph = sum(1 for v in orig.values() if any(t in PLACEHOLDERS for _, t in v))
+    if shift_rows:
+        fmt = lambda pairs: '  '.join('%d=%s' % x for x in pairs)
+        st = ['占位符移位清单', '=' * 60, '',
+              '你用 ①②③ 这类占位符把叠词钉在固定的候选位上（例如 csmh=4,匆匆忙忙 是按 4 键上屏）。',
+              '夜莺单字插进来时，如果那个码位夜莺也有字，占位符和它后面的词会被整体往后推。',
+              '下面这些码位受影响，你可以自己调（一般删掉几个占位符，后面的词就回到原位了）。', '',
+              '用了占位符的码位共 %d 个，其中 %d 个受影响。' % (used_ph, len(shift_rows)), '']
+        for c, items, moved, tail, need in shift_rows:
+            st += ['-' * 60, c,
+                   '  你原来  ' + fmt(items),
+                   '  现在    ' + fmt(sorted(merged[c].items())),
+                   '  占位符  ' + '  '.join('%s %d→%s' % x for x in moved)]
+            if tail:
+                st.append('  被推后  ' + '  '.join('%s %d→%s' % x for x in tail))
+            if need:
+                st.append('  想还原  在这个码位删掉 %d 个占位符即可' % need)
+            st.append('')
+        w(OUT_SHIFT, '\r\n'.join(st) + '\r\n', True)
+    elif os.path.exists(os.path.join(base, OUT_SHIFT)):
+        os.remove(os.path.join(base, OUT_SHIFT))      # 这次没有移位，删掉上次留下的清单
     print('合并完成：%d 条，%d 个码位。字词同码 %d 个码位，空位 %d 个。\n' % (len(flat), len(merged), same_code, gaps_total))
+    if shift_rows:
+        print('其中 %d 个码位的占位符被夜莺单字往后推了，明细见 %s\n' % (len(shift_rows), OUT_SHIFT))
     print('已生成：')
-    for n in (OUT_HAND, OUT_PLAIN, OUT_FRONT, OUT_LOG):
+    for n in (OUT_HAND, OUT_PLAIN, OUT_FRONT, OUT_LOG) + ((OUT_SHIFT,) if shift_rows else ()):
         print('   %s' % n)
     return 0
 
