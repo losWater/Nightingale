@@ -88750,6 +88750,7 @@ columns: [text, code, weight]
 巨擘	ju;nn bo;bo	65744
 巨擘	jubo	65744
 巨无霸	ju;nn wu;yy ba;lz	148605
+巨构	jvgz	23811
 巨款	ju krn	166693
 巨款	ju;nn kr;qx	166693
 巨款	jukr	166693
@@ -111829,6 +111830,9 @@ columns: [text, code, weight]
 抽动	iz dso	133459
 抽动	iz;op ds;pp	133459
 抽动	izds	133459
+抽卡	iz kao	1
+抽卡	iz;op ka;gg	1
+抽卡	izka	1
 抽卡游戏	ikyx	1
 抽印	iz ybo	7276
 抽印	iz;op yb;ll	7276
@@ -115889,6 +115893,9 @@ columns: [text, code, weight]
 损益	sy yio	70509
 损益	sy;oj yi;lq	70509
 损益	syyi	70509
+损管	sy gro	33046
+损管	sy;oj gr;hx	33046
+损管	sygr	33046
 损耗	sy hco	158669
 损耗	sy;oj hc;lg	158669
 损耗	syhc	158669
@@ -196052,6 +196059,9 @@ columns: [text, code, weight]
 耀州	yc vzy	47475
 耀州	yc;yb vz;ll	47475
 耀州	ycvz	47475
+耀斑	yc bjy	118952
+耀斑	yc;yb bj;rp	118952
+耀斑	ycbj	118952
 耀武扬威	yc;yb wu;ps yh;ox ww;vs	119663
 耀武扬威	ywyw	119663
 耀目	yc muy	91970
@@ -204389,6 +204399,9 @@ columns: [text, code, weight]
 艾玛	ai mam	176170
 艾玛	ai;mp ma;rv	176170
 艾玛	aima	176170
+艾琳	ai lbm	120917
+艾琳	ai;mp lb;rw	120917
+艾琳	ailb	120917
 艾瑞	ai rvm	48480
 艾瑞	ai;mp rv;rl	48480
 艾瑞	airv	48480

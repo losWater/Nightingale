@@ -21,8 +21,16 @@ no_short=[(t,c) for t,c in rows if not short(t,c)]
 for label,rr in [('有简词',rows),('无简词',no_short)]:
  for reverse in [False,True]:
   write(OUT/'普通字词表'/f'夜莺2.0_{label}_{"码前" if reverse else "普通"}.txt',''.join(f'{c}\t{t}\r\n' if reverse else f'{t}\t{c}\r\n' for t,c in rr))
+symbols=[tuple(x.rsplit('\t',1)) for x in (W/'00_维护/主表/夜莺2.0符号表.txt').read_text(encoding='utf-8-sig').splitlines() if x]   # 2026-09-17 第三张主表
+pointer['符号表']='00_维护/主表/夜莺2.0符号表.txt'
 groups=defaultdict(list)
 for t,c in rows:groups[c].append(t)
+for t,c in symbols:groups[c].append(t)   # 符号排在同码位原有条目之后
+# 发布用的两份：综合表＝字词表＋符号（＋快符，下面并入）；普通单字表＝单字表＋符号（含多字符的符号），给只打单字的人
+plain_single=[(t,c) for t,c in single]+[(t,c) for t,c in symbols]
+plain_single.sort(key=lambda r:(r[1],))
+for reverse in [False,True]:
+ write(OUT/'普通字词表'/f'夜莺2.0_普通单字表_{"码前" if reverse else "普通"}.txt',''.join(f'{c}\t{t}\r\n' if reverse else f'{t}\t{c}\r\n' for t,c in plain_single))
 quick=[]
 for line in (P/'参考模板/快符原表.txt').read_text(encoding='utf-8-sig').splitlines():
  m=re.fullmatch(r'([a-z]+),(\d+)=(.+)',line)
@@ -31,6 +39,7 @@ for line in (P/'参考模板/快符原表.txt').read_text(encoding='utf-8-sig').
   if t not in groups[c]:groups[c].insert(n-1,t)
 assert len(quick)==40
 quickset={(t,c) for t,c,n in quick}
+symbolset={(t,c) for t,c in symbols}
 allrows=[(t,c,n) for c in sorted(groups) for n,t in enumerate(groups[c],1)]
 assert all(groups[c][n-1]==t for t,c,n in quick)
 unsupported=[r for r in allrows if r[0].startswith('$ddcmd(')]
@@ -39,10 +48,13 @@ allrows=[r for r in allrows if not r[0].startswith('$ddcmd(')]
 valid=[(t,c,n) for t,c,n in allrows if re.fullmatch('[a-z]{1,4}',c)]
 excluded=[(t,c,n) for t,c,n in allrows if len(c)>4]
 write(OUT/'说明与核验/超过四码_原表保留.txt',''.join(f'{t}\t{c}\t{n}\r\n' for t,c,n in excluded))
+for reverse in [False,True]:
+ write(OUT/'普通字词表'/f'夜莺2.0_综合表_{"码前" if reverse else "普通"}.txt',''.join(f'{c}\t{t}\r\n' if reverse else f'{t}\t{c}\r\n' for t,c,n in allrows))
 write(OUT/'普通字词表/夜莺2.0_快符_码前.txt',''.join(f'{c}\t{t}\r\n' for t,c,n in quick))
 modules=defaultdict(list)
 for t,c,n in allrows:
  if (t,c) in quickset:k='04_快符'
+ elif (t,c) in symbolset:k='05_符号'
  elif len(t)==1:k='01_核心单字'
  elif short(t,c):k='03_简词'
  else:k='02_普通全码词'
@@ -183,6 +195,7 @@ for kind,label in [('light','轻量版'),('main','主力版')]:
  write(dest/'default.custom.yaml','patch:'+chr(10)+'  schema_list:'+chr(10)+''.join('    - schema: '+x+chr(10) for x in order+['yeying20_xm']),'utf-8');(dest/'default.custom.yaml.example').unlink(missing_ok=True)
  write(dest/'使用说明.md',f'# 夜莺2.0 Rime · {label}\n\n把本包全部文件解压到 Rime 用户目录（小狼毫：右键托盘图标 → 用户文件夹），然后右键托盘图标 → 重新部署，即可直接使用，不需要手动改任何配置。包内 default.custom.yaml 已把 `yeying20_{kind}` 设为首选方案；如果你原来有自己的 default.custom.yaml，解压时会被覆盖，请先备份并把 schema_list 合并。两个包可共存（后解压的为首选，F4 可切换）；文件和用户词典使用 2.0 独立名称。\n\n包含当前定稿单字、简词、全码词和40条快符；空格首选、分号次选、单引号三选。支持F2持续拆分提示以及反引号双拼、波浪号全拼反查。拆分和辅助码已更新2.0（含正根）。\n\n轻量版使用Rime原生整句；主力版沿用V5模型及Windows x64原生引擎，最多36键进入V5，超过后原生整句接续。主力运行库沿用原包，未验证其他操作系统。\n\n固定码表逐项继承当前字词表顺序。整句词典重新生成；只有能与当前字音、全码对应的词生成逐字辅助拼写，其余保留固定入口，没有猜测多音字读音。旧版准确率报告不适用于2.0；本次验证记录见包内核验结果。\n','utf-8')
  write(dest/'使用说明.md',(dest/'使用说明.md').read_text(encoding='utf-8').rstrip('\n')+'\n\n## 钉选与造词（2026-09-16 新增，主力版/轻量版）\n\n- **Ctrl+数字 钉选 / 加词**：候选里第 N 个是你想要的，按 Ctrl+N 上屏。它若是码表候选，就同时钉为这个编码的首选，原来的候选依次后退，再钉别的会排到它前面（记在用户目录 `yeying20_pin.txt`，一行一个编码，制表符分隔，重启不丢，想撤销就删掉那一行再重新部署）；它若是整句或联想出来、码表里没有的词，就按夜莺词规则自动加进 `yeying20_words.txt`，下次打它的码就在候选里（带〔造〕）。\n- **自动造词（只限二字词）**：连续打出两个字，Rime 自动把这两个字按双拼四码存进用户词典 `yeying20_fixed_user`；下次打这个四码它出现在候选末尾。不想要的词选中后按 Shift+Delete 删除。\n- **Ctrl+Enter 主动造词（不限长度）**：把想要的词打出来（整句拼、逐字打都行），在上屏前按 Ctrl+Enter：当前将要上屏的整段文字按夜莺词规则编码（二字取两字双拼四码，三字取三字首码，四字及以上取前三字首码加末字首码；多音字取全部读音组合）写进用户目录 `yeying20_words.txt`，同时上屏。下次打那个码它就在候选里，带〔造〕标记；选中后 Shift+Delete 删除，Ctrl+N 可钉。\n- 码表候选的顺序不会随使用频率自动变化：钉过的在前，其余按码表原序，造的词排最后。\n- **简词进整句（开关，默认关）**：整句默认只用单字与四码词拼句，不混入简词（二简词、三字三码等），识别更稳；想让简词也参与整句，按 Ctrl+` 打开方案菜单，切到"简词进整句"即可，主力版切换时会重新加载整句引擎，约几秒。\n','utf-8')
+ report['符号表条数']=len(symbols);report['综合表条数']=len(allrows);report['普通单字表条数']=len(plain_single)
  report['Rime固定条数']=len(allrows);report['Rime整句词典条数']=len(fallback)-len(short_fb);report['Rime整句词典条数_含简词']=len(fallback);report['简词条数_默认不进整句']=len(short_fb);report['Rime逐字拼写词数']=len(word_sound);report['Rime原生词边数']=len(lex)
  print('generated',label,flush=True)
 # 2026-09-16 群友反馈：魔虎 V5 引擎只有 Windows 版，手机（同文/仓）用不了 → 手机版 = 轻量版全部文件 + 万象 LTS 语法模型（.gram，420MB）

@@ -3,7 +3,7 @@
     python apply_ledger.py            # 预演：列出每行会做什么、体检结果，不写任何文件
     python apply_ledger.py --apply    # 落盘：先备份两张主表与台账，再写表，回填台账（状态/时间/结果/前后 SHA256）
 台账 实战问题机器参数.tsv 字段：问题ID 原文摘录 状态 目标码表 操作 原编码 原字词 新编码 新字词 目标候选位 备注 处理时间 处理结果 修改前SHA256 修改后SHA256
-  状态：待处理 / 已修复 / 忽略（只处理"待处理"）；目标码表：单字表 / 字词表
+  状态：待处理 / 已修复 / 忽略（只处理"待处理"）；目标码表：单字表 / 字词表 / 符号表
   操作：查询；新增（新编码 新字词 [目标候选位，缺省排最后；占位则原有的顺延]）；删除（原编码 原字词）；
         改码（原编码 原字词 → 新编码 [目标候选位]）；改词（原编码 原字词 → 新字词）；调序（原编码 原字词 → 目标候选位，其余顺延）
   候选位 = 该表里同码的第几个（字词表里字和词一起数；单字表里只数字）。
@@ -12,7 +12,7 @@
 import io, sys, os, csv, json, hashlib, shutil, datetime, collections
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); M = H + '/主表'; LEDGER = H + '/实战问题机器参数.tsv'
-TABLES = {'单字表': M + '/夜莺2.0单字表.txt', '字词表': M + '/夜莺2.0字词表.txt'}
+TABLES = {'单字表': M + '/夜莺2.0单字表.txt', '字词表': M + '/夜莺2.0字词表.txt', '符号表': M + '/夜莺2.0符号表.txt'}
 FIELDS = ['问题ID', '原文摘录', '状态', '目标码表', '操作', '原编码', '原字词', '新编码', '新字词', '目标候选位', '备注', '处理时间', '处理结果', '修改前SHA256', '修改后SHA256']
 sha = lambda b: hashlib.sha256(b).hexdigest()
 def load(p): return [tuple(l.split('\t')) for l in open(p, encoding='utf-8').read().split('\n') if l]

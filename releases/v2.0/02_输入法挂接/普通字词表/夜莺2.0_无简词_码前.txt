@@ -329,6 +329,7 @@ aiku	哀苦
 aikv	伌
 aikz	隘口
 ail	霭
+ailb	艾琳
 aile	爱了
 aile	挨了
 aile	矮了
@@ -43770,6 +43771,7 @@ izjv	创造价值
 izjx	仇家
 izjx	愁嫁
 izk	仇
+izka	抽卡
 izkc	抽考
 izkh	仇
 izkj	锤子科技
@@ -51218,6 +51220,7 @@ jvgr	建筑工人
 jvgs	胶柱鼓瑟
 jvgs	建筑公司
 jvgy	建筑工业
+jvgz	巨构
 jvhd	九转还魂丹
 jvhf	卷帙浩繁
 jvhh	九转还魂
@@ -88430,6 +88433,7 @@ syfy	所有费用
 syfz	四羊方尊
 sygj	笋干
 sygj	所有国家
+sygr	损管
 syh	笋
 syhc	损耗
 syhd	损害
@@ -123808,6 +123812,7 @@ ycbc	药包
 ycbd	摇摆
 ycbd	用词不当
 ycbi	摇臂
+ycbj	耀斑
 ycbj	腰板
 ycbm	要变
 ycbp	眑
@@ -129056,8 +129061,8 @@ yryb	易燃易爆
 yryb	仪容仪表
 yrye	原野
 yrye	原液
-yryh	鸳鸯
 yryh	原样
+yryh	鸳鸯
 yryi	愿意
 yryi	原意
 yryj	怨言

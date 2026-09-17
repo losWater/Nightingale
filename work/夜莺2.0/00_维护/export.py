@@ -8,7 +8,7 @@
 import io, sys, os, re, json, subprocess, hashlib, datetime, shutil, time, collections
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); W = os.path.dirname(H); A = set(sys.argv[1:]); log = []
-M = {'单字表': H + '/主表/夜莺2.0单字表.txt', '字词表': H + '/主表/夜莺2.0字词表.txt'}; ENV = dict(os.environ, PYTHONIOENCODING='utf-8')
+M = {'单字表': H + '/主表/夜莺2.0单字表.txt', '字词表': H + '/主表/夜莺2.0字词表.txt', '符号表': H + '/主表/夜莺2.0符号表.txt'}; ENV = dict(os.environ, PYTHONIOENCODING='utf-8')
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest(); start = {n: sha(p) for n, p in M.items()}
 def finish(ok):
     open(H + '/导出记录.jsonl', 'a', encoding='utf-8').write(json.dumps({'时间': datetime.datetime.now().isoformat(timespec='seconds'), '参数': sorted(A), '结果': '通过' if ok else '中止', '主表sha256': start, '步骤': log}, ensure_ascii=False) + '\n')
@@ -33,7 +33,7 @@ def checkup(tabs):
     d = sorted(c for c in set(a) | set(b) if a.get(c) != b.get(c))
     if d: bad.append('两表单字不一致 %d 个码位，如 %s' % (len(d), d[:8]))
     return bad
-bad = checkup(rows); print('%s 主表结构体检  单字表 %d 行，字词表 %d 行  %s' % ('✗' if bad else '✓', len(rows['单字表']), len(rows['字词表']), '；'.join(bad)))
+bad = checkup(rows); print('%s 主表结构体检  单字表 %d 行，字词表 %d 行，符号表 %d 行  %s' % ('✗' if bad else '✓', len(rows['单字表']), len(rows['字词表']), len(rows['符号表']), '；'.join(bad)))
 if bad: finish(False); sys.exit(1)
 D = H + '/派生'; os.makedirs(D, exist_ok=True)
 open(D + '/夜莺2.0字词表_码前.txt', 'wb').write(('\r\n'.join('%s\t%s' % (c, t) for t, c in rows['字词表']) + '\r\n').encode('utf-8-sig'))

@@ -1,0 +1,142 @@
+﻿夜莺 o 区方案表
+============================================================================
+
+【假名】or = 平假名，ob = 片假名，训令式罗马音。小字放大字次选；拗音挂 i 段假名后面；ー 放 orp / obp。
+
+平假名码    候选                       片假名码    候选
+----------------------------------------------------------------------------
+ora     あ  ぁ                     oba     ア  ァ
+ori     い  ぃ                     obi     イ  ィ
+oru     う  ぅ                     obu     ウ  ゥ
+ore     え  ぇ                     obe     エ  ェ
+oro     お  ぉ                     obo     オ  ォ
+orn     ん                        obn     ン
+orka    か  ゕ                     obka    カ  ヵ
+orki    き  きゃ  きゅ  きょ            obki    キ  キャ  キュ  キョ
+orku    く                        obku    ク
+orke    け  ゖ                     obke    ケ  ヶ
+orko    こ                        obko    コ
+orsa    さ                        obsa    サ
+orsi    し  しゃ  しゅ  しょ            obsi    シ  シャ  シュ  ショ
+orsu    す                        obsu    ス
+orse    せ                        obse    セ
+orso    そ                        obso    ソ
+orta    た                        obta    タ
+orti    ち  ちゃ  ちゅ  ちょ            obti    チ  チャ  チュ  チョ
+ortu    つ  っ                     obtu    ツ  ッ
+orte    て                        obte    テ
+orto    と                        obto    ト
+orna    な                        obna    ナ
+orni    に  にゃ  にゅ  にょ            obni    ニ  ニャ  ニュ  ニョ
+ornu    ぬ                        obnu    ヌ
+orne    ね                        obne    ネ
+orno    の                        obno    ノ
+orha    は                        obha    ハ
+orhi    ひ  ひゃ  ひゅ  ひょ            obhi    ヒ  ヒャ  ヒュ  ヒョ
+orhu    ふ                        obhu    フ
+orhe    へ                        obhe    ヘ
+orho    ほ                        obho    ホ
+orma    ま                        obma    マ
+ormi    み  みゃ  みゅ  みょ            obmi    ミ  ミャ  ミュ  ミョ
+ormu    む                        obmu    ム
+orme    め                        obme    メ
+ormo    も                        obmo    モ
+orya    や  ゃ                     obya    ヤ  ャ
+oryu    ゆ  ゅ                     obyu    ユ  ュ
+oryo    よ  ょ                     obyo    ヨ  ョ
+orra    ら                        obra    ラ
+orri    り  りゃ  りゅ  りょ            obri    リ  リャ  リュ  リョ
+orru    る                        obru    ル
+orre    れ                        obre    レ
+orro    ろ                        obro    ロ
+orwa    わ  ゎ                     obwa    ワ  ヮ
+orwo    を                        obwo    ヲ
+orga    が                        obga    ガ
+orgi    ぎ  ぎゃ  ぎゅ  ぎょ            obgi    ギ  ギャ  ギュ  ギョ
+orgu    ぐ                        obgu    グ
+orge    げ                        obge    ゲ
+orgo    ご                        obgo    ゴ
+orza    ざ                        obza    ザ
+orzi    じ  じゃ  じゅ  じょ            obzi    ジ  ジャ  ジュ  ジョ
+orzu    ず                        obzu    ズ
+orze    ぜ                        obze    ゼ
+orzo    ぞ                        obzo    ゾ
+orda    だ                        obda    ダ
+ordi    ぢ  ぢゃ  ぢゅ  ぢょ            obdi    ヂ  ヂャ  ヂュ  ヂョ
+ordu    づ                        obdu    ヅ
+orde    で                        obde    デ
+ordo    ど                        obdo    ド
+orba    ば                        obba    バ
+orbi    び  びゃ  びゅ  びょ            obbi    ビ  ビャ  ビュ  ビョ
+orbu    ぶ                        obbu    ブ
+orbe    べ                        obbe    ベ
+orbo    ぼ                        obbo    ボ
+orpa    ぱ                        obpa    パ
+orpi    ぴ  ぴゃ  ぴゅ  ぴょ            obpi    ピ  ピャ  ピュ  ピョ
+orpu    ぷ                        obpu    プ
+orpe    ぺ                        obpe    ペ
+orpo    ぽ                        obpo    ポ
+orp     ー                        obp     ー
+----------------------------------------------------------------------------
+
+【日语标点】放 orb（or + 标点的 b）。ord 被夜莺的「偶然的/偶然地」占着。、。「」『』 快符与 ofbd 已有，不重复收。
+
+orb    日语标点       ・  〜  々  〆  〇  ゝ  ゞ  ヽ  ヾ  〽  ゛  ゜  ※  ♪  ♫
+
+【数字序号】整组按顺序列出，打完引导码按数字键选。
+
+old    罗马数字大写     Ⅰ  Ⅱ  Ⅲ  Ⅳ  Ⅴ  Ⅵ  Ⅶ  Ⅷ  Ⅸ  Ⅹ  Ⅺ  Ⅻ
+olx    罗马数字小写     ⅰ  ⅱ  ⅲ  ⅳ  ⅴ  ⅵ  ⅶ  ⅷ  ⅸ  ⅹ  ⅺ  ⅻ
+oxu    圆圈数字       ①  ②  ③  ④  ⑤  ⑥  ⑦  ⑧  ⑨  ⑩  ⑪  ⑫  ⑬  ⑭  ⑮  ⑯  ⑰  ⑱  ⑲  ⑳
+
+【拼音声调】op + 元音键，四声落在 1234 选。
+
+opa    a          1=ā  2=á  3=ǎ  4=à
+opo    o          1=ō  2=ó  3=ǒ  4=ò
+ope    e          1=ē  2=é  3=ě  4=è  5=ê
+opi    i          1=ī  2=í  3=ǐ  4=ì
+opu    u          1=ū  2=ú  3=ǔ  4=ù
+opv    ü          1=ǖ  2=ǘ  3=ǚ  4=ǜ  5=ü
+opn    n          1=ń  2=ň  3=ǹ
+opm    m          1=ḿ  2=m̀
+
+【ot 特殊符号】一个码位二到三个，照小鹤原版。
+
+ota    ＆α      otb    ～β©     otc    ℃       otd    °=≠     ote    のε      
+otf    ′Φ■     otg    √γ✓     oth    ℉※¤     oti    ×÷✗     otj    ＋－      
+otk    ⤴∅      otl    m³      otm    ″μ￠     otn    ♂♀№     oto    €Ω      
+otp    ㎡π      otq    ☰☷      otr    ¥       ots    ∴∵▲     ott    ฿℡      
+otu    ϟ囍™     otv    §®㈱     otw    ‱∞      otx    ＜≤★     oty    £≈●     
+otz    ↑↓←     otdy   ＞≥      
+
+【of 成组符号】一个码位一整组，照小鹤原版（圆圈数字、罗马、假名那五组不要，我们自己那套更精确）。
+
+ofku   括号数字     ⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽⑾⑿⒀⒁⒂⒃⒄⒅⒆⒇
+ofdu   点数字      ⒈⒉⒊⒋⒌⒍⒎⒏⒐⒑⒒⒓⒔⒕⒖⒗⒘⒙⒚⒛
+ofvu   中文数字     ㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩
+ofub   上标       ¹²³⁴⁵⁶⁷⁸⁹⁰⁺⁻⁼⁽⁾ⁿˣ
+ofxb   下标       ₁₂₃₄₅₆₇₈₉₀₊₋₌₍₎ₙₓ
+ofjg   结构符号     ⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻
+ofdw   单位       ㎎㎏㎜㎝㎞㎡㏄㏎㏑㏒㏕
+ofpy   拼音字母     āáǎàōóǒòêēéěèīíǐìūúǔùǖǘǚǜüḿ̀ńňǹ
+ofhb   货币       €$￠£￡¥฿
+ofjt   箭头       ←→↑↓↗↙↘↖↔⇆⇤⇥«»
+ofvb   制表       ┌└┐┘─│├┤┬┴┼┏┗┓┛━┃┣┫┳┻╋
+oftu   特殊       ℃°‰♂♀§№☆★○●◎◇◆□■△▲※〓＃＆＠＼＾＿￣
+ofvy   注音       ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤ
+ofpp   偏旁部首     勹灬冫艹屮辶刂匚阝廾丨虍彐卩钅冂冖宀疒肀丿攵凵犭亻彡饣礻扌氵纟亠囗忄讠衤
+ofbd   标点       “”（）《》〈〉〔〕「」『』【】〖〗［］｛｝．。，、；：？！…—·ˉˇ¨々～‖∶＂＇
+ofux   数学       ＋－＝＜＞±×÷∈∏∑⁄√∝∞∟∠∣∥¬∧∨∩∪∫∮∴∵∶∷∽≈≌≒≠≡≤≥≦≧≮≯⊕⊙⊥⊿
+ofxd   希腊大写     ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+ofxx   希腊小写     αβγδεζηθικλμνξοπρστυφχψω
+ofed   俄文大写     АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЁ
+ofex   俄文小写     абвгдежзийклмнопрстуфхцчшщъыьэюяё
+
+----------------------------------------------------------------------------
+
+合计：假名 144 码位 240 条；日语标点 1 码位 15 条；数字序号 3 码位 44 条；声调 8 码位 31 条；ot 27 码位 66 条；of 20 码位 481 条。
+总计 203 个码位、877 条。
+与夜莺现有码位相撞：1 处  ofdw 夜莺有 nm/μm/μg（落地时夜莺原有的排前面）
+
+提醒：手心、搜狗一页 5 个候选，old 按 5 出 Ⅴ，Ⅵ 起翻页；Rime 可把页大小调到 9。
+日语标点的引导键已定为 orb（2026-09-17）。o 区还空着的两码前缀：oa oc og oh oi oj ok om on oq os ow oy oz。

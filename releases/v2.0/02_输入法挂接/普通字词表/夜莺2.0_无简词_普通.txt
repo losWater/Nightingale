@@ -329,6 +329,7 @@ AI换脸	aihl
 伌	aikv
 隘口	aikz
 霭	ail
+艾琳	ailb
 爱了	aile
 挨了	aile
 矮了	aile
@@ -43770,6 +43771,7 @@ ip正确	ipvq
 仇家	izjx
 愁嫁	izjx
 仇	izk
+抽卡	izka
 抽考	izkc
 仇	izkh
 锤子科技	izkj
@@ -51218,6 +51220,7 @@ https://www.jsxiaoshi.com/	jisu
 胶柱鼓瑟	jvgs
 建筑公司	jvgs
 建筑工业	jvgy
+巨构	jvgz
 九转还魂丹	jvhd
 卷帙浩繁	jvhf
 九转还魂	jvhh
@@ -88430,6 +88433,7 @@ san值狂掉	svkd
 四羊方尊	syfz
 笋干	sygj
 所有国家	sygj
+损管	sygr
 笋	syh
 损耗	syhc
 损害	syhd
@@ -123808,6 +123812,7 @@ magnet:?xt=urn:btih:	xylw
 摇摆	ycbd
 用词不当	ycbd
 摇臂	ycbi
+耀斑	ycbj
 腰板	ycbj
 要变	ycbm
 眑	ycbp
@@ -129056,8 +129061,8 @@ magnet:?xt=urn:btih:	xylw
 仪容仪表	yryb
 原野	yrye
 原液	yrye
-鸳鸯	yryh
 原样	yryh
+鸳鸯	yryh
 愿意	yryi
 原意	yryi
 怨言	yryj

@@ -12,6 +12,8 @@ assert ['说道：“','ud'] not in ns
 assert rows(O/'普通字词表/夜莺2.0_无简词_码前.txt')==[r[::-1] for r in ns]
 g=defaultdict(list)
 for t,c in base:g[c].append(t)
+sym=rows(P.parent/'00_维护/主表/夜莺2.0符号表.txt')
+for t,c in sym:g[c].append(t)   # 2026-09-17 第三张主表：符号排在同码位原有条目之后
 quick=[]
 for s in (P/'参考模板/快符原表.txt').read_text(encoding='utf-8-sig').splitlines():
  m=re.fullmatch('([a-z]+),(\d+)=(.+)',s)
@@ -24,6 +26,9 @@ for p in (O/'手心/模块化挂接').glob('*.txt'):
  for s in p.read_text(encoding='utf-8-sig').splitlines():
   c,tail=s.split('=',1);n,t=tail.split(',',1);mod.append((t,c,int(n)))
 assert len(mod)==len(set(mod)) and set(mod)==expected
+assert rows(O/'普通字词表/夜莺2.0_综合表_普通.txt')==[[t,c] for t,c,n in sorted(expected,key=lambda r:(r[1],r[2]))]   # 综合表＝字词表＋符号＋快符
+ps=rows(P.parent/'00_维护/主表/夜莺2.0单字表.txt')+sym
+assert rows(O/'普通字词表/夜莺2.0_普通单字表_普通.txt')==[[t,c] for t,c in sorted(ps,key=lambda r:r[1])]   # 普通单字表＝单字表＋符号
 sg=[]
 for s in (O/'搜狗挂接/夜莺2.0_挂接_含快符.txt').read_text(encoding='utf-16').splitlines():
  head,t=s.split('=',1);c,n=head.split(',');sg.append((t,c,int(n)))
