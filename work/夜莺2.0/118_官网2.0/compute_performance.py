@@ -9,7 +9,7 @@ W = 'E:/夜莺2.0/work/夜莺2.0'; H = os.path.dirname(os.path.abspath(__file__)
 J = lambda p: json.load(open(p, encoding='utf-8-sig'))
 # 最终表
 bycode = collections.OrderedDict(); codes = collections.defaultdict(list)
-for l in open(W + '/113_扩展字入表/夜莺2.0最终表_普通格式.txt', encoding='utf-8-sig'):
+for l in open(W + '/00_维护/主表/夜莺2.0字词表.txt', encoding='utf-8-sig'):
     p = l.rstrip('\r\n').split('\t')
     if len(p) >= 2:
         bycode.setdefault(p[1], []).append(p[0])

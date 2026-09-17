@@ -15,7 +15,7 @@ BUYIN = json.load(open(B+'/83_单字表重放/补音表.json',encoding='utf-8'))
 YIELD_EXC = {}  # 第二十三批补读音：用户裁定新读音全码排最后（暴让曝、邪让铘）
 def load(drop_tol):
     seq=[];codes=collections.defaultdict(set);order=collections.defaultdict(list)
-    for line in open(B+'/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt',encoding='utf-8-sig'):
+    for line in open(sys.argv[1] if len(sys.argv)>1 else B+'/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt',encoding='utf-8-sig'):   # 2026-09-17 可指定表路径（主表体检用）
         p=line.rstrip('\n').rstrip('\r').split('\t')
         if len(p)<2 or len(p[0])!=1 or not p[1].isalpha(): continue
         w,c=p[0],p[1]

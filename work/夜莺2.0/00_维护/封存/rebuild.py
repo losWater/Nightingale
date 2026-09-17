@@ -6,7 +6,9 @@
     python ...\\rebuild.py --export --deploy                         # 再加：更新本机小狼毫与虎娘
     python ...\\rebuild.py --export --release                        # 再加：117 发布目录、118 官网数据（git 提交与 Release 上传仍手动，属对外动作）
 任何一步关卡不过即停，不往下跑。每次运行在 00_维护/重建记录.jsonl 追加一行（时间、各步结论、最终表条数与 SHA256）。"""
-import io, sys, os, re, json, subprocess, hashlib, datetime, shutil, time
+import sys
+if '--我知道已封存' not in sys.argv: sys.exit('生成链已于 2026-09-17 封存：主表冻结后不再从 83→113 重新生成。维护请用 apply_ledger.py，导出请用 export.py。')
+import io, os, re, json, subprocess, hashlib, datetime, shutil, time
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); W = os.path.dirname(H); A = set(sys.argv[1:]); log = []
 ENV = dict(os.environ, PYTHONIOENCODING='utf-8')

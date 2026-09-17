@@ -4,15 +4,15 @@ import json,re,csv,zipfile,shutil,hashlib,os
 
 P=Path(__file__).resolve().parent; W=P.parent
 OUT=P/'夜莺2.0_字词表与输入法'; OUT.mkdir(exist_ok=True)
-SRC=W/'113_扩展字入表/夜莺2.0最终表_普通格式.txt'   # 2026-09-16 含扩展字   # 2026-09-15 换源：最终表（78 单字 + 91 普通词 + 102 二字简词 + 103 三字词三码）
+SRC=W/'00_维护/主表/夜莺2.0字词表.txt'   # 2026-09-16 含扩展字   # 2026-09-15 换源：最终表（78 单字 + 91 普通词 + 102 二字简词 + 103 三字词三码）
 def write(p,s,enc='utf-8-sig'):
  p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s,encoding=enc,newline='')
 def js(p,obj):write(p,json.dumps(obj,ensure_ascii=False,indent=2),'utf-8')
 rows=[tuple(x.rsplit('\t',1)) for x in SRC.read_text(encoding='utf-8-sig').splitlines() if x]
 assert len(rows)==len(set(rows))
-pointer={'单字表':'78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt','字词表':'113_扩展字入表/夜莺2.0最终表_普通格式.txt（110 投票序 + 112 扩展字）'}
+pointer={'单字表':'00_维护/主表/夜莺2.0单字表.txt','字词表':'00_维护/主表/夜莺2.0字词表.txt'}   # 2026-09-17 主表冻结
 baseline=W/'78_纯单字表核验'
-single=[tuple(x.rsplit('\t',1)) for x in (baseline/'夜莺2.0纯单字表_普通格式.txt').read_text(encoding='utf-8-sig').splitlines() if x]+[tuple(x.rsplit('\t',1)) for x in (W/'112_扩展字继承/夜莺2.0扩展字表_普通格式.txt').read_text(encoding='utf-8-sig').splitlines() if x]   # 2026-09-16 加扩展字
+single=[tuple(x.rsplit('\t',1)) for x in (W/'00_维护/主表/夜莺2.0单字表.txt').read_text(encoding='utf-8-sig').splitlines() if x]   # 2026-09-16 加扩展字
 assert set(single)=={(t,c) for t,c in rows if len(t)==1}
 def short(t,c):
  # Punctuation is not a word character: 说道：“ is still the two-character phrase 说道.

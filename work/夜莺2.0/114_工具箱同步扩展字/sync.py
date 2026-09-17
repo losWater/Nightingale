@@ -25,11 +25,11 @@ for l in open(B + '/112_扩展字继承/夜莺2.0扩展字拆分表.txt', encodi
 assert len(ext) == 7391, len(ext)
 # 字码：113 最终表里的单字行（8105 在前、扩展字在后，词不计入候选位——与 105 的口径一致）
 groups = collections.OrderedDict(); codes_of = collections.defaultdict(list)
-for line in open(B + '/113_扩展字入表/夜莺2.0最终表_普通格式.txt', encoding='utf-8-sig'):
+for line in open(B + '/00_维护/主表/夜莺2.0字词表.txt', encoding='utf-8-sig'):
     p = line.rstrip('\r\n').split('\t')
     if len(p) >= 2 and len(p[0]) == 1: groups.setdefault(p[1], []).append(p[0]); codes_of[p[0]].append(p[1])
 g78 = collections.OrderedDict()
-for line in open(B + '/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt', encoding='utf-8-sig'):
+for line in open(B + '/00_维护/主表/夜莺2.0单字表.txt', encoding='utf-8-sig'):
     p = line.rstrip('\r\n').split('\t')
     if len(p) >= 2: g78.setdefault(p[1], []).append(p[0])
 for k, chars in g78.items(): assert groups[k][:len(chars)] == chars, k   # 8105 字在每个码位的先后不变

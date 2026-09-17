@@ -4,12 +4,12 @@
  "status": "release",
  "files": {
   "01_正式码表/夜莺2.0字词表.txt": {
-   "source": "work/夜莺2.0/113_扩展字入表/夜莺2.0最终表_普通格式.txt",
-   "sha256": "1284beffdb4e9d9a2a56772f979f75df561892e1ba431fdfc0eecd44990d7981",
-   "bytes": 2346775
+   "source": "work/夜莺2.0/00_维护/主表/夜莺2.0字词表.txt",
+   "sha256": "6e4c0f246c1223fe8ef1119ca8c2200052f74580fc9f7082cbc27669571eb551",
+   "bytes": 2191540
   },
   "01_正式码表/夜莺2.0字词表_码前.txt": {
-   "source": "work/夜莺2.0/113_扩展字入表/夜莺2.0最终表_码前格式.txt",
+   "source": "work/夜莺2.0/00_维护/派生/夜莺2.0字词表_码前.txt",
    "sha256": "2c3b25bb45e02405abb82e76983e5da33da1187f3b232b3326e57be818182125",
    "bytes": 2346775
   },
@@ -29,9 +29,9 @@
    "bytes": 3567
   },
   "01_正式码表/夜莺2.0纯单字表.txt": {
-   "source": "work/夜莺2.0/78_纯单字表核验/夜莺2.0纯单字表_普通格式.txt",
-   "sha256": "9fcb4b5450d61ca410f235feb9d82d870f00bd6d9b16e23c4a13a2ad017fabe6",
-   "bytes": 132022
+   "source": "work/夜莺2.0/00_维护/主表/夜莺2.0单字表.txt",
+   "sha256": "12a5fa0d62faad45f322f9bf55f0dc51e13f74570200d9b7f2a3ef084d7358cc",
+   "bytes": 185976
   },
   "01_正式码表/夜莺2.0词无理码表.json": {
    "source": "work/夜莺2.0/83_单字表重放/词无理码表.json",
@@ -245,8 +245,8 @@
   },
   "02_输入法挂接/说明与核验/生成清单.json": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/生成清单.json",
-   "sha256": "fd3cac95277e39705f0f0ecbf159e977c756e52832e643fcf66e8945a76b9197",
-   "bytes": 1607
+   "sha256": "a8ec7dabaab9e5a2e53665685acef7a8488a6c5e6daea3d692a8f6ea4701d5c1",
+   "bytes": 1535
   },
   "02_输入法挂接/说明与核验/超过四码_原表保留.txt": {
    "source": "work/夜莺2.0/106_全平台导出/夜莺2.0_字词表与输入法/说明与核验/超过四码_原表保留.txt",
@@ -300,7 +300,7 @@
   },
   "04_查询与练习/夜莺2.0离线工具包.zip": {
    "source": "work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包.zip",
-   "sha256": "dafffdb62e8b1bea6944f4e29cfae79d88a16462046aca1e045e2341648bbfb8",
+   "sha256": "e8a37764d22ce60970e5e18c43cc237a4c1039a6f1d46fdb9e722b8ad767ce9c",
    "bytes": 1744963
   },
   "04_查询与练习/夜莺啾啾工具箱.html": {
@@ -370,13 +370,13 @@
   },
   "05_规则与裁决/当前任务树.md": {
    "source": "work/夜莺2.0/当前任务树.md",
-   "sha256": "6a2e3d829b5559175ed0aa5349a8aa960e7d0b5fc47dd956ec7ab66da07a1cc4",
-   "bytes": 40274
+   "sha256": "92902d4f3ccf116cd847a7f3296702384fe48b1f8fd18643d3a355416d848ef5",
+   "bytes": 41937
   },
   "05_规则与裁决/码表概念与规则.md": {
    "source": "work/夜莺2.0/码表概念与规则.md",
-   "sha256": "dd0394a3889647edafe23134f908731c63e4aa9a33f822c5393d7c39605ea757",
-   "bytes": 22295
+   "sha256": "17ff36d6fa257da8b30f45005ad038d5ba49f6a405cf23fa5fdc39aa2d0f89f4",
+   "bytes": 22582
   },
   "05_规则与裁决/评估规则.md": {
    "source": "work/夜莺2.0/评估规则.md",
@@ -391,19 +391,19 @@
  },
  "release_assets": {
   "Nightingale-2.0-tables-20260916.zip": {
-   "sha256": "33befb32f6dd407339102da2f0ad82c37874a8e0758e9ddd4bd7d804ee0f6f69",
-   "bytes": 10183999
+   "sha256": "4fb20663c6ab74e9175b99e33fbe54a261d97d80dbb5fc1b7d5c01f816ff5a3f",
+   "bytes": 10183954
   },
   "Nightingale-Rime-2.0-light-20260916.zip": {
-   "sha256": "3f558c40034cbc7581e4cdf5cea5eae28013682770693dbb4a1cc29f6dc7aa9a",
+   "sha256": "d96264d41a57aa4a232d51c76ac2818cf8bfe33d436070dd95de73cb8534cdfd",
    "bytes": 5980713
   },
   "Nightingale-Rime-2.0-main-20260916.zip": {
-   "sha256": "88d47e4c2af43901f514e12c47f7d51e89eb7c52fb4865849c0e0f3f4dcd9b71",
+   "sha256": "ecb5620b736994ecfd7b00f75e0cf1574e27bb245ffbfa24cd78af4888dc1834",
    "bytes": 403112910
   },
   "Nightingale-Rime-2.0-mobile-20260916.zip": {
-   "sha256": "22165d4b2130c8d74167097fec14a802555d2b851acb8bc71205adc90911becc",
+   "sha256": "d73e0d40c1905672f7adb6b38145aab50292e1621ab3c23285471c89db6fcd77",
    "bytes": 378006376
   },
   "Nightingale-Toolbox-2.0-20260916.html": {
@@ -411,7 +411,7 @@
    "bytes": 17698057
   },
   "Nightingale-Toolbox-offline-2.0-20260916.zip": {
-   "sha256": "dafffdb62e8b1bea6944f4e29cfae79d88a16462046aca1e045e2341648bbfb8",
+   "sha256": "e8a37764d22ce60970e5e18c43cc237a4c1039a6f1d46fdb9e722b8ad767ce9c",
    "bytes": 1744963
   }
  },

@@ -3,7 +3,7 @@ from collections import defaultdict
 import json,re,csv,subprocess,shutil,os
 P=Path(__file__).resolve().parent;O=P/'夜莺2.0_字词表与输入法'
 def rows(p,enc='utf-8-sig'):return [x.split('\t') for x in p.read_text(encoding=enc).splitlines() if x]
-base=rows(P.parent/'113_扩展字入表/夜莺2.0最终表_普通格式.txt')
+base=rows(P.parent/'00_维护/主表/夜莺2.0字词表.txt')
 normal=rows(O/'普通字词表/夜莺2.0_有简词_普通.txt');assert normal==base
 assert rows(O/'普通字词表/夜莺2.0_有简词_码前.txt')==[r[::-1] for r in base]
 ns=rows(O/'普通字词表/夜莺2.0_无简词_普通.txt')
