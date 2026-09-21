@@ -36,11 +36,17 @@ for part in ('曲', '庸', '卸左', '年', '衮', '彖', '衍', '戌', '其他'
 p('**常用字提醒**：庸、慵、镛、墉、鳙 的全码有变（如 庸 yscr → yscz），三简 ysc 等照旧。')
 # 二
 F = R['freq']
-h(2, '二、调整频（%d 处）' % sum(len(v) for v in F.values()))
+h(2, '二、调整频（%d 处）' % (sum(len(v) for v in F.values()) + len(R['jm'])))
 for k in ('字', '词', '简词'):
-    if k not in F: continue
-    h(3, '%s（%d）' % (k, len(F[k])))
-    block(['%-5s %s　→　%s' % (c, '、'.join(o), '、'.join(n)) for c, o, n in sorted(F[k])])
+    if k not in F and not (k == '字' and R['jm']): continue
+    n = len(F.get(k, [])) + (len(R['jm']) if k == '字' else 0)
+    h(3, '%s（%d）' % (k, n))
+    if k == '字' and R['jm']:
+        p('简码换人：')
+        block(['%-4s %s → %s' % (c, '、'.join(a), '、'.join(b)) for c, a, b in R['jm']])
+        p('让出简码的字都退回全码：什 ufkc、噢 保留二简 oo、哎 aitp。')
+        p('码位内顺序：')
+    block(['%-5s %s　→　%s' % (c, '、'.join(o), '、'.join(n)) for c, o, n in sorted(F.get(k, []))])
 # 三
 A = R['add']
 h(2, '三、新增（%d 条）' % sum(len(v) for v in A.values() if v))
@@ -72,9 +78,6 @@ for k in ('字', '词', '简词'):
         block(cols(['%s %s' % (c, t) for t, c in v], 5))
 # 五
 h(2, '五、其它调整')
-h(3, '单字简码换人（%d 处）' % len(R['jm']))
-block(['%-4s %s → %s' % (c, '、'.join(a), '、'.join(b)) for c, a, b in R['jm']])
-p('让出简码的字都退回全码：什 ufkc、噢 保留二简 oo、哎 aitp。伸有了三简后，全码 ufkp 按出简让全排在「侁」之后。')
 S = D.get('符号', [])
 h(3, 'o 引导符号区（删 %d 条）' % len(S))
 p('删去逗号、句号、分号、引号，以及快符里已有的符号；假名区不变。')

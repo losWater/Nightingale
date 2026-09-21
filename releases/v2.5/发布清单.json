@@ -420,13 +420,13 @@
   },
   "夜莺2.5更新日志.md": {
    "source": "work/夜莺2.0/117_发布v2.0/夜莺2.5更新日志.md",
-   "sha256": "beaeacba885d084352ecce12b68406c68d943748476f59c9046a66ed0a3d2bf2",
-   "bytes": 8496
+   "sha256": "f48b6517fc104cda5ba5bb2e12dd52879c8ca11bddc0976611ec8f198e036163",
+   "bytes": 8426
   },
   "夜莺2.5更新日志.txt": {
    "source": "work/夜莺2.0/117_发布v2.0/夜莺2.5更新日志.txt",
-   "sha256": "20a314b688a3f0e84419dd24cea3b9ce9fdfedf80efe2d026ecafa41d6e2757d",
-   "bytes": 9612
+   "sha256": "bf076dda26cee0cc1bca891f5a8fc0043c9f8f4d593967f4f365dd42f44b8bc8",
+   "bytes": 9544
   }
  },
  "release_assets": {
