@@ -60,7 +60,9 @@ if os.path.exists(R + '/发布清单.json'):
     except Exception: prev = set()
 # 对外文件名带版本：「夜莺2.0…」→「夜莺{VER}…」（2026-09-22 你定：上传的码表要改名）。
 # 只改发布目录与附件的文件名；Rime 方案名 yeying20、生成链与本机部署里的内部文件名不动。
-ren = lambda name: name.replace('夜莺2.0', '夜莺' + VER)
+ren = lambda name: name if name == '夜莺2.0升级日志.md' else name.replace('夜莺2.0', '夜莺' + VER)   # 2.0 的升级日志保留原名
+for _ext in ('md', 'txt'):   # 本版更新日志（143_2.5更新日志/写日志.py 生成）
+    if os.path.exists(H + '/夜莺%s更新日志.%s' % (VER, _ext)): plan['夜莺%s更新日志.%s' % (VER, _ext)] = H + '/夜莺%s更新日志.%s' % (VER, _ext)
 plan = {ren(k): v for k, v in plan.items()}
 def repack(src, dst):
     """zip 里的条目名同样改名；保留原 ZipInfo 的时间与属性，结果可复现。"""
