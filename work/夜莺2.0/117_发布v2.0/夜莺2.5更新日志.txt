@@ -1,7 +1,7 @@
 ﻿夜莺 2.5 更新日志
 ========================================
 
-对照基线：2026 年 9 月 17 日的夜莺 2.0 综合表（156105 条）→ 夜莺 2.5 综合表（156296 条）。
+对照基线：2026 年 9 月 17 日的夜莺 2.0 综合表（156105 条）→ 夜莺 2.5 综合表（156294 条）。
 
 条目 = 文字 + 编码。「字」为单字，「词」为码长四码及以上的多字词，「简词」为码长不足四码的多字词。
 
@@ -372,13 +372,14 @@ Rime 方案名与个人词库不变，直接覆盖安装即可。Bime 码表文�
 
 五、其它调整
 ----------------------------------------
-【o 引导符号区（删 31 条）】
-删去逗号、句号、分号、引号，以及快符里已有的符号；假名区不变。
+【o 引导符号区（删 33 条）】
+删去逗号、句号、冒号、分号、引号，以及快符里已有的符号；假名区不变。
 
-  ofbd ·　ofbd —　ofbd “　ofbd ”　ofbd …　ofbd 、　ofbd 。　ofbd 《
-  ofbd 》　ofbd 「　ofbd 」　ofbd 『　ofbd 』　ofbd 【　ofbd 】　ofbd 〔
-  ofbd 〕　ofbd 〖　ofbd 〗　ofbd ！　ofbd ＂　ofbd ＇　ofbd （　ofbd ）
-  ofbd ，　ofbd ．　ofbd ；　ofbd ？　ofhb $　ofjt →　ote の
+  ofbd ·　ofbd —　ofbd “　ofbd ”　ofbd …　ofbd ∶　ofbd 、　ofbd 。
+  ofbd 《　ofbd 》　ofbd 「　ofbd 」　ofbd 『　ofbd 』　ofbd 【　ofbd 】
+  ofbd 〔　ofbd 〕　ofbd 〖　ofbd 〗　ofbd ！　ofbd ＂　ofbd ＇　ofbd （
+  ofbd ）　ofbd ，　ofbd ．　ofbd ：　ofbd ；　ofbd ？　ofhb $　ofjt →
+  ote の
 
 【拆分显示】
 ・含「曲」的字、「庸」族，以及彖、衍、戌、卸左、年、衮 等部件，拆分统一按既定规则；多数字只改拆分显示，编码不变。

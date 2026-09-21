@@ -82841,14 +82841,12 @@ ofbd	［
 ofbd	］
 ofbd	｛
 ofbd	｝
-ofbd	：
 ofbd	ˉ
 ofbd	ˇ
 ofbd	¨
 ofbd	々
 ofbd	～
 ofbd	‖
-ofbd	∶
 ofdu	⒈
 ofdu	⒉
 ofdu	⒊

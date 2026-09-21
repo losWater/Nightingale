@@ -82841,14 +82841,12 @@ https://typer.owenyang.top/	mxyi
 ］	ofbd
 ｛	ofbd
 ｝	ofbd
-：	ofbd
 ˉ	ofbd
 ˇ	ofbd
 ¨	ofbd
 々	ofbd
 ～	ofbd
 ‖	ofbd
-∶	ofbd
 ⒈	ofdu
 ⒉	ofdu
 ⒊	ofdu
