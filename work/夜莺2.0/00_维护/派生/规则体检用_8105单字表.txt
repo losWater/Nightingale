@@ -8820,7 +8820,8 @@
 撒	saoq
 靸	sar
 靸	sars
-脎	saz
+糁	saz
+糁	sazf
 脎	sazy
 扫	sc
 溞	sca

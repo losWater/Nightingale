@@ -1,43 +1,43 @@
 {
- "时间": "2026-09-22T00:57:37",
+ "时间": "2026-09-22T02:41:27",
  "目录": "D:/nightingale/releases/v2.5",
  "文件数": 85,
  "附件": {
   "Nightingale-Rime-2.5-main-20260922.zip": {
    "本地文件名": "夜莺2.5_Rime主力版_整句含模型_电脑用.zip",
    "显示名": "夜莺主力 · Rime 主力版（基于魔虎 rime-mohu 制作，夜莺只换了码表词库；整句含模型，电脑用）",
-   "sha256": "0ac838a4d49faffd022407ec31643515fc4cddcd9c049db09421831121d2e85f",
-   "bytes": 473075089
+   "sha256": "56f76bf425bcadb1a33907891ee3b2e1a4796e732aea4d1be864c33131f9545e",
+   "bytes": 473075131
   },
   "Nightingale-Rime-2.5-light-20260922.zip": {
    "本地文件名": "夜莺2.5_Rime轻量版_无模型_小体积.zip",
    "显示名": "Rime 轻量版（Rime 原生整句，无模型，体积小）",
-   "sha256": "5ef627e8eb5b9ce16418b6dec3fbfb32531b329578b604e2d70f33119c058663",
-   "bytes": 5773143
+   "sha256": "88b630cba13d9126e3400705e2211c6ec77b3f596f5b6956700012716932483c",
+   "bytes": 5773160
   },
   "Nightingale-Rime-2.5-mobile-20260922.zip": {
    "本地文件名": "夜莺2.5_Rime手机版_同文与仓_万象模型.zip",
    "显示名": "Rime 手机版（同文／仓输入法，万象语法模型）",
-   "sha256": "a18fb56f697dcd0238f000b68da93f6517fcc70f74a2e699998ea0d18981b171",
-   "bytes": 377725806
+   "sha256": "2302749517c9a1a7952d345a547e04a5418872c1329f1cb376b429c4804c0db5",
+   "bytes": 377725827
   },
   "Nightingale-2.5-tables-20260922.zip": {
    "本地文件名": "夜莺2.5_码表与挂接包_手心搜狗冰凌Bime.zip",
    "显示名": "码表与挂接包（手心、搜狗、冰凌、Bime、纯码表）",
-   "sha256": "6c406d2d3f0a95e071c1cb3be0df7d32539e737e276073f8f42acf80ef1339a3",
-   "bytes": 12117111
+   "sha256": "c858b1ff6b7b0df8724ec3ae7fbf321bac3444d1b139159590dbf605e79fc8f3",
+   "bytes": 12117187
   },
   "Nightingale-Toolbox-2.5-20260922.html": {
    "本地文件名": "夜莺啾啾工具箱_拆分查询与字根练习.html",
    "显示名": "啾啾工具箱（单个网页：拆分查询、部件反查、字根练习）",
-   "sha256": "eafe32f53f2612d5e2ea1e81a73b4ef3eafb9a520709469a002a82da14ceaf73",
-   "bytes": 17689221
+   "sha256": "2db30ada54cd386210a4bfe9a2b7552d97a71810fef746210a96ebf24df975d1",
+   "bytes": 17689333
   },
   "Nightingale-Toolbox-offline-2.5-20260922.zip": {
    "本地文件名": "夜莺2.5_离线工具包.zip",
    "显示名": "离线工具包（工具箱各页面的离线版）",
-   "sha256": "3b45c61969e7a4b04b7d186307f478b2c297c20972c27dc48905664f1852223e",
-   "bytes": 1743962
+   "sha256": "1608b284bcdce18e99ee8b2852d6cc038318557c4a7663e266d2f0e4d78035aa",
+   "bytes": 1743966
   }
  }
 }

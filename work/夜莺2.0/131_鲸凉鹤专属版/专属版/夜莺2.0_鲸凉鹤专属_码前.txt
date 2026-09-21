@@ -151630,11 +151630,12 @@ saye	撒野
 sayf	撒盐
 sayj	撒盐
 sayt	仨月
-saz	脎
+saz	糁
 saz	洒在
 saz	撒在
 sazd	洒在
 sazd	撒在
+sazf	糁
 sazi	撒子
 sazi	仨字
 sazs	萨总

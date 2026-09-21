@@ -97872,8 +97872,9 @@ QQ音乐	qqyy
 撒下	saxx
 撒野	saye
 撒盐	sayj
-脎	saz
+糁	saz
 撒在	sazd
+糁	sazf
 撒子	sazi
 脎	sazy
 随便	sb

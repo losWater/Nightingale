@@ -14295,7 +14295,8 @@ saus	钑
 savs	馺
 sawt	櫒
 saxs	鈒
-saz	脎
+saz	糁
+sazf	糁
 sazy	脎
 sc	扫
 sca	溞

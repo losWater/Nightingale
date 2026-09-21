@@ -97872,8 +97872,9 @@ saxx	洒下
 saxx	撒下
 saye	撒野
 sayj	撒盐
-saz	脎
+saz	糁
 sazd	撒在
+sazf	糁
 sazi	撒子
 sazy	脎
 sb	随便
