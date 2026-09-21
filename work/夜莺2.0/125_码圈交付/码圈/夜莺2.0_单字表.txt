@@ -73,7 +73,7 @@
 娭	aisg
 嫒	aisq
 哀	aist
-哎	ait
+唉	ait
 唉	aitg
 哎	aitp
 嗳	aitq
@@ -2954,6 +2954,7 @@
 赗	fgj
 赗	fgjb
 寷	fgjp
+鄷	fgjy
 俸	fgk
 偑	fgkg
 僼	fgkp
@@ -2973,7 +2974,6 @@
 烽	fgp
 煈	fgpg
 烽	fgpr
-鄷	fgpy
 焨	fgpz
 封	fgq
 堸	fgqg
@@ -4239,7 +4239,7 @@
 绲	gyi
 绲	gyit
 丨	gyll
-蓘	gyms
+蓘	gymh
 璭	gyrq
 衮	gys
 衮	gysh
@@ -6047,7 +6047,6 @@
 磭	ioxz
 穿	ir
 汌	iral
-剶	irbg
 賗	irbl
 暷	irbt
 船	ire
@@ -6066,6 +6065,7 @@
 川	irl
 川	irll
 巛	irll
+剶	irpg
 舛	irr
 舛	irrl
 玔	irrl
@@ -6118,7 +6118,7 @@
 珫	isrp
 憃	isrv
 蹖	issd
-嘃	istl
+嘃	istz
 铳	isu
 铳	isup
 忡	isv
@@ -7024,6 +7024,7 @@
 检	jmwy
 剑	jmx
 劔	jmxa
+餰	jmxa
 磵	jmxb
 剑	jmxg
 剣	jmxg
@@ -7034,7 +7035,6 @@
 鑬	jmxp
 鑳	jmxs
 碱	jmxt
-餰	jmxt
 礆	jmxx
 硷	jmxy
 鐗	jmxz
@@ -7840,8 +7840,8 @@
 衉	kaqq
 咖	kat
 咔	katg
-咯	katq
 喀	katq
+咯	katq
 咖	katt
 鉲	kaxg
 胩	kaz
@@ -8758,7 +8758,6 @@
 溧	liaw
 凓	liaw
 戾	lib
-劙	libg
 曞	libq
 戾	liby
 历	lic
@@ -8880,6 +8879,7 @@
 搮	liow
 力	lip
 蠡	lipg
+劙	lipg
 鬲	lipl
 隶	lipp
 吏	lipp
@@ -10862,7 +10862,7 @@
 您	nbk
 您	nbkv
 拰	nboq
-脌	nbzc
+脌	nbzl
 脑	nc
 淖	nca
 淖	ncac
@@ -11273,6 +11273,7 @@
 醲	nsez
 农	nsj
 农	nsjs
+農	nsjz
 侬	nsk
 侬	nsks
 儂	nskz
@@ -11283,7 +11284,6 @@
 挊	nsog
 挵	nsom
 燶	nspz
-農	nspz
 弄	nsr
 弄	nsrm
 哝	nst
@@ -11343,7 +11343,7 @@
 鐞	nzxt
 哦	o
 噢	oo
-噢	oot
+喔	oot
 喔	ootg
 哦	ootv
 噢	ooty
@@ -12243,7 +12243,6 @@
 俟	qikg
 倛	qikl
 迄	qikq
-欫	qikx
 僛	qikx
 旗	qil
 旂	qilh
@@ -12317,6 +12316,7 @@
 骑	qivt
 慼	qivv
 缼	qivx
+欫	qivx
 戚	qivy
 慽	qivy
 邔	qivy
@@ -15127,10 +15127,10 @@
 覾	ufjp
 穼	ufjw
 邥	ufjy
-什	ufk
+伸	ufk
 什	ufkc
-伸	ufkp
 侁	ufkp
+伸	ufkp
 敒	ufkq
 肾	ufl
 肾	uflz
@@ -18660,9 +18660,9 @@
 墟	xuqn
 垿	xuqz
 顼	xur
-珬	xura
 顼	xurj
 珝	xuro
+珬	xurp
 殈	xurq
 絮	xus
 絮	xusi
@@ -19728,9 +19728,9 @@
 偃	yjks
 芫	yjm
 菸	yjma
+葕	yjma
 芫	yjmp
 莚	yjmq
-葕	yjmt
 严	yjn
 阏	yjna
 阎	yjnd
@@ -19799,6 +19799,7 @@
 恹	yjvy
 验	yjvy
 檐	yjw
+椼	yjwa
 櫩	yjwd
 檐	yjwf
 楌	yjwf
@@ -19806,7 +19807,6 @@
 樮	yjwp
 欕	yjwq
 椻	yjws
-椼	yjwt
 研	yjx
 硏	yjxc
 砚	yjxj
@@ -20057,13 +20057,13 @@
 庸	ysc
 廱	yscb
 鷛	yscg
-庸	yscr
 鄘	yscy
 痈	yscz
+庸	yscz
 鳙	ysd
-鳙	ysdr
 鰫	ysdt
 鲬	ysdz
+鳙	ysdz
 雍	yse
 雍	yseb
 壅	yseq
@@ -20083,7 +20083,7 @@
 雝	yslb
 邕	yslv
 苚	ysmz
-牅	ysnl
+牅	ysnz
 拥	yso
 拥	ysoz
 永	ysp
@@ -20091,29 +20091,29 @@
 永	yspp
 㶲	yspz
 墉	ysq
-墉	ysqr
 埇	ysqz
+墉	ysqz
 郺	ysrv
 踊	yss
-嫞	yssl
 踴	yssp
 踊	yssz
+嫞	yssz
 咏	yst
 噰	ystb
 咏	ystp
 喁	ystq
 嗈	ystv
 镛	ysu
-镛	ysur
+镛	ysuz
 慵	ysv
 愑	ysvp
-慵	ysvr
 愹	ysvt
 悀	ysvz
+慵	ysvz
 栐	ysw
-槦	yswl
 栐	yswp
 柡	yswp
+槦	yswz
 硧	ysxz
 砽	ysxz
 臃	ysz

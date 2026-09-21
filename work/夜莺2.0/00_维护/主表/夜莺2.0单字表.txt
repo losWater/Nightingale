@@ -47,7 +47,7 @@
 哀	ais
 嫒	aisq
 哀	aist
-哎	ait
+唉	ait
 唉	aitg
 哎	aitp
 嗳	aitq
@@ -1952,6 +1952,7 @@
 缝	fgiq
 赗	fgj
 赗	fgjb
+鄷	fgjy
 俸	fgk
 俸	fgkr
 葑	fgm
@@ -2815,6 +2816,7 @@
 辊	gyet
 绲	gyi
 绲	gyit
+蓘	gymh
 衮	gys
 衮	gysh
 棍	gyw
@@ -3997,6 +3999,7 @@
 传	irka
 川	irl
 川	irll
+剶	irpg
 舛	irr
 舛	irrl
 串	irt
@@ -4035,6 +4038,7 @@
 舂	isr
 舂	isrd
 珫	isrp
+嘃	istz
 铳	isu
 铳	isup
 忡	isv
@@ -5122,8 +5126,8 @@
 卡	kagg
 咖	kat
 咔	katg
-咯	katq
 喀	katq
+咯	katq
 咖	katt
 胩	kaz
 胩	kazg
@@ -5829,6 +5833,7 @@
 狸	liop
 力	lip
 蠡	lipg
+劙	lipg
 鬲	lipl
 隶	lipp
 吏	lipp
@@ -7111,6 +7116,7 @@
 您	nb
 您	nbk
 您	nbkv
+脌	nbzl
 脑	nc
 淖	nca
 淖	ncac
@@ -7393,6 +7399,7 @@
 𬪩	nses
 农	nsj
 农	nsjs
+農	nsjz
 侬	nsk
 侬	nsks
 秾	nsn
@@ -7441,7 +7448,7 @@
 耨	nzlt
 哦	o
 噢	oo
-噢	oot
+喔	oot
 喔	ootg
 哦	ootv
 噢	ooty
@@ -9912,10 +9919,10 @@
 绅	ufip
 审	ufj
 审	ufjp
-什	ufk
+伸	ufk
 什	ufkc
-伸	ufkp
 侁	ufkp
+伸	ufkp
 肾	ufl
 肾	uflz
 莘	ufm
@@ -12195,6 +12202,7 @@
 顼	xur
 顼	xurj
 珝	xuro
+珬	xurp
 絮	xus
 絮	xusi
 婿	xusz
@@ -12856,6 +12864,7 @@
 恹	yjvy
 验	yjvy
 檐	yjw
+椼	yjwa
 檐	yjwf
 棪	yjwp
 研	yjx
@@ -13001,12 +13010,12 @@
 颙	ysb
 颙	ysbj
 庸	ysc
-庸	yscr
 鄘	yscy
 痈	yscz
+庸	yscz
 鳙	ysd
-鳙	ysdr
 鲬	ysdz
+鳙	ysdz
 雍	yse
 雍	yseb
 壅	yseq
@@ -13022,25 +13031,27 @@
 佣	yskz
 邕	ysl
 邕	yslv
+牅	ysnz
 拥	yso
 拥	ysoz
 永	ysp
 永	yspp
 㶲	yspz
 墉	ysq
-墉	ysqr
 埇	ysqz
+墉	ysqz
 踊	yss
 踊	yssz
+嫞	yssz
 咏	yst
 咏	ystp
 喁	ystq
 镛	ysu
-镛	ysur
+镛	ysuz
 慵	ysv
-慵	ysvr
 栐	ysw
 栐	yswp
+槦	yswz
 臃	ysz
 臃	yszb
 用	yszz
@@ -13839,6 +13850,7 @@
 準	vyac
 尅	kect
 菸	yjma
+葕	yjma
 榀	pbwt
 痩	uzcq
 喰	cjt
@@ -15393,7 +15405,6 @@
 仹	fgkr
 靊	fglp
 檒	fgwg
-鄷	fgpy
 鵬	pgzg
 堸	fgqg
 犎	fgqv
@@ -15777,7 +15788,6 @@
 趏	gxst
 謴	gyfl
 裷	yrdv
-蓘	gyms
 緷	yyie
 惃	gyvt
 璭	gyrq
@@ -16423,14 +16433,12 @@
 汌	iral
 賗	irbl
 輲	irel
-剶	irbg
 暷	irbt
 僢	irkl
 踳	irsb
 巛	irll
 玔	irrl
 瑏	irru
-嘃	istl
 喠	vstp
 爞	ispg
 褈	isdp
@@ -16735,8 +16743,8 @@
 銒	xkxc
 錽	wjxq
 鑯	jmxp
-餰	jmxt
 劔	jmxa
+餰	jmxa
 剱	jmxg
 劒	jmxg
 鑳	jmxs
@@ -17375,7 +17383,6 @@
 攭	liog
 叓	uipq
 搮	liow
-劙	libg
 瓥	lihg
 縭	liiq
 纅	yciw
@@ -18015,7 +18022,6 @@
 魶	nadx
 拰	nboq
 囜	nbjh
-脌	nbzc
 嫐	ncss
 蝚	rzgw
 鐃	ncxp
@@ -18133,7 +18139,6 @@
 醲	nsez
 儂	nskz
 檂	nswz
-農	nspz
 欁	nsww
 硸	ntxc
 伮	nukq
@@ -18381,8 +18386,8 @@
 褀	qidl
 褄	qids
 剘	qirg
-欫	qikx
 缼	qivx
+欫	qivx
 裿	yidt
 濝	qiai
 湆	qiad
@@ -20358,7 +20363,6 @@
 鱮	xudl
 槒	xuwp
 楈	xuwz
-珬	xura
 烚	xxpt
 炠	xxpp
 筪	xxhp
@@ -20715,7 +20719,6 @@
 篶	yjhp
 渷	yjap
 灎	yjaq
-葕	yjmt
 莚	yjmq
 齞	yjsl
 齴	yjsf
@@ -20757,7 +20760,6 @@
 黤	yjdp
 櫩	yjwd
 欕	yjwq
-椼	yjwt
 楌	yjwf
 黭	yjdm
 黫	yjdq
@@ -20854,7 +20856,6 @@
 遠	yrqq
 嗈	ystv
 噰	ystb
-嫞	yssl
 醟	yspe
 慂	ysav
 灉	ysab
@@ -20863,16 +20864,15 @@
 勈	yshp
 鷛	yscg
 廱	yscb
-牅	ysnl
 愑	ysvp
 悀	ysvz
+慵	ysvz
 砽	ysxz
 郺	ysrv
 愹	ysvt
 踴	yssp
 鰫	ysdt
 柡	yswp
-槦	yswl
 雝	yslb
 嬳	ytsq
 籰	ythq

@@ -1013,7 +1013,7 @@
 剱=xg
 割=jg
 剳=mg
-剶=bg
+剶=pg
 剷=jg
 剺=lg
 剻=hg
@@ -1039,7 +1039,7 @@
 劕=hg
 劖=gg
 劗=vg
-劙=bg
+劙=pg
 劚=bg
 力=pp
 劜=pb
@@ -1758,7 +1758,7 @@
 嘀=tt
 嘁=ty
 嘂=tt
-嘃=tl
+嘃=tz
 嘈=tb
 嘉=qt
 嘌=tt
@@ -2261,7 +2261,7 @@
 墆=qe
 墇=qc
 墈=qp
-墉=qr
+墉=qz
 墋=qf
 墌=qp
 墍=dq
@@ -2749,7 +2749,7 @@
 嫛=ns
 嫜=sc
 嫝=sp
-嫞=sl
+嫞=sz
 嫟=st
 嫠=ls
 嫡=st
@@ -3558,7 +3558,7 @@
 庵=cp
 庶=cp
 康=cp
-庸=cr
+庸=cz
 庹=cb
 庺=cw
 庼=cj
@@ -4091,7 +4091,7 @@
 慰=bv
 慱=vt
 慲=vx
-慵=vr
+慵=vz
 慷=vp
 慸=mv
 慺=vs
@@ -5628,7 +5628,7 @@
 椹=wb
 椺=ww
 椻=ws
-椼=wt
+椼=wa
 椽=wo
 椾=wg
 椿=wb
@@ -5753,7 +5753,7 @@
 槢=wd
 槣=wt
 槥=wp
-槦=wl
+槦=wz
 槪=wp
 槬=wh
 槭=wy
@@ -5965,7 +5965,7 @@
 欧=nx
 欨=nx
 欩=gx
-欫=kx
+欫=vx
 欬=lx
 欭=jx
 欮=lx
@@ -7367,7 +7367,7 @@
 牂=nu
 牃=nw
 牄=nt
-牅=nl
+牅=nz
 片=nn
 版=nq
 牉=nr
@@ -7698,7 +7698,7 @@
 珩=rk
 珪=rq
 珫=rp
-珬=ra
+珬=rp
 班=rg
 珮=re
 珯=rt
@@ -10087,7 +10087,7 @@
 脉=zp
 脊=az
 脋=gz
-脌=zc
+脌=zl
 脍=zh
 脎=zy
 脏=zq
@@ -10738,7 +10738,7 @@
 葑=mt
 葓=ml
 葔=mg
-葕=mt
+葕=ma
 葖=my
 著=mb
 葘=mp
@@ -10838,7 +10838,7 @@
 蓕=mq
 蓖=mt
 蓗=ms
-蓘=ms
+蓘=mh
 蓙=mq
 蓚=mf
 蓛=mq
@@ -12664,7 +12664,7 @@
 辯=af
 辰=zz
 辱=zt
-農=pz
+農=jz
 辴=tz
 辵=fs
 辶=qq
@@ -12975,7 +12975,7 @@
 鄱=hy
 鄳=py
 鄵=ty
-鄷=py
+鄷=jy
 鄸=my
 鄹=xy
 鄻=yy
@@ -13604,7 +13604,7 @@
 镘=uq
 镙=ui
 镚=uz
-镛=ur
+镛=uz
 镜=up
 镝=ut
 镞=ug
@@ -14230,7 +14230,7 @@
 餭=xr
 餮=rw
 餯=xo
-餰=xt
+餰=xa
 餲=xn
 餴=xm
 餵=xs
@@ -14830,7 +14830,7 @@
 鳖=ld
 鳗=dq
 鳘=kd
-鳙=dr
+鳙=dz
 鳚=dt
 鳛=dd
 鳜=dx

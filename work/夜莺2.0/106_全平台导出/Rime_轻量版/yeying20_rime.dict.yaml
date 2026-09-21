@@ -904,8 +904,6 @@ columns: [text, code, weight]
 一早	yi zcp	315982
 一早	yi;pp zc;bc	315982
 一早	yizc	315982
-一时	yi uip	355939
-一时	yi;pp ui;bt	355939
 一时三刻	yusk	40189
 一时之快	yuvk	1
 一时之间	yuvj	1
@@ -9182,7 +9180,7 @@ columns: [text, code, weight]
 中年男子	vnnz	1
 中年老登	vnld	1
 中庸	vs yst	165827
-中庸	vs;tl ys;cr	165827
+中庸	vs;tl ys;cz	165827
 中庸	vsys	165827
 中庸之道	vyvd	34451
 中庸思想	vysx	1
@@ -28853,6 +28851,9 @@ columns: [text, code, weight]
 全日	qr;xr ri;bb	100999
 全日	qrri	100999
 全明星赛	qmxs	1
+全是	qr uix	1
+全是	qr;xr ui;bs	1
+全是	qrui	1
 全是套路	qutl	1
 全景	qr jkx	177899
 全景	qr;xr jk;by	177899
@@ -35205,6 +35206,9 @@ columns: [text, code, weight]
 凡此	fjci	21388
 凡此种种	fcvv	1
 凡胎肉眼	ftry	1
+凡间	fj jmn	125123
+凡间	fj;nn jm;nb	125123
+凡间	fjjm	125123
 凡需	fj xun	1
 凡需	fj;nn xu;ll	1
 凡需	fjxu	1
@@ -40455,7 +40459,7 @@ columns: [text, code, weight]
 割麦	ge;jg md;rq	88408
 割麦	gemd	88408
 剳	da;mg	1
-剶	ir;bg	1
+剶	ir;pg	1
 剷	ij;jg	1
 剺	li;lg	1
 剻	pg;hg	1
@@ -40548,7 +40552,7 @@ columns: [text, code, weight]
 劕	vi;hg	1
 劖	ij;gg	1
 劗	jm;vg	1
-劙	li;bg	1
+劙	li;pg	1
 劚	vu;bg	1
 力	li;pp	138355
 力不从心	lbcx	178829
@@ -60670,7 +60674,7 @@ columns: [text, code, weight]
 嘀嘀咕咕	ddgg	59768
 嘁	qi;ty	106
 嘂	jn;tt	1
-嘃	is;tl	1
+嘃	is;tz	1
 嘈	cc;tb	413
 嘈嘈切切	ccqq	15695
 嘈嘈杂杂	cczz	21886
@@ -66926,7 +66930,7 @@ columns: [text, code, weight]
 墆	vi;qe	1
 墇	vh;qc	1
 墈	kj;qp	1
-墉	ys;qr	6
+墉	ys;qz	6
 墋	if;qf	1
 墌	vi;qp	1
 墍	xi;dq	1
@@ -69650,6 +69654,9 @@ columns: [text, code, weight]
 夜校	ye xne	166902
 夜校	ye;er xn;wp	166902
 夜校	yexn	166902
+夜桜	ye yke	1
+夜桜	ye;er yk;ws	1
+夜桜	yeyk	1
 夜泊	ye boe	54331
 夜泊	ye;er bo;ad	54331
 夜泊	yebo	54331
@@ -77875,7 +77882,7 @@ columns: [text, code, weight]
 嫛	yi;ns	1
 嫜	vh;sc	1
 嫝	kh;sp	1
-嫞	ys;sl	1
+嫞	ys;sz	1
 嫟	ni;st	1
 嫠	li;ls	1
 嫡	di;st	69
@@ -82790,6 +82797,9 @@ columns: [text, code, weight]
 寓所	yuso	155798
 寓教于乐	yjyl	109866
 寓教于乐	yu;jq jn;nq yu;cc le;yy	109866
+寓言	yu yjj	161734
+寓言	yu;jq yj;ff	161734
+寓言	yuyj	161734
 寔	ui;js	1
 寕	nk;jt	1
 寙	yu;jh	1
@@ -88750,6 +88760,9 @@ columns: [text, code, weight]
 巨擘	ju;nn bo;bo	65744
 巨擘	jubo	65744
 巨无霸	ju;nn wu;yy ba;lz	148605
+巨构	ju gzn	23811
+巨构	ju;nn gz;wh	23811
+巨构	jugz	23811
 巨构	jvgz	23811
 巨款	ju krn	166693
 巨款	ju;nn kr;qx	166693
@@ -90810,7 +90823,7 @@ columns: [text, code, weight]
 平度	pk;pc du;cq	72497
 平度	pkdu	72497
 平庸	pk ysp	224569
-平庸	pk;pc ys;cr	224569
+平庸	pk;pc ys;cz	224569
 平庸	pkys	224569
 平庸之辈	pyvb	1
 平庸无奇	pywq	12574
@@ -93129,23 +93142,23 @@ columns: [text, code, weight]
 康辉	kh hvc	45992
 康辉	kh;cp hv;ye	45992
 康辉	khhv	45992
-庸	ys;cr	1529
+庸	ys;cz	1529
 庸中佼佼	yvjj	1
 庸人自扰	yrzr	38398
 庸人自扰之	yrzv	1
 庸俗	ys suc	203208
-庸俗	ys;cr su;kt	203208
+庸俗	ys;cz su;kt	203208
 庸俗	yssu	203208
-庸庸碌碌	ys;cr ys;cr lu;xp lu;xp	96388
+庸庸碌碌	ys;cz ys;cz lu;xp lu;xp	96388
 庸庸碌碌	yyll	96388
 庸手	ys uzc	30411
-庸手	ys;cr uz;oo	30411
+庸手	ys;cz uz;oo	30411
 庸手	ysuz	30411
 庸才	ys cdc	98371
-庸才	ys;cr cd;tt	98371
+庸才	ys;cz cd;tt	98371
 庸才	yscd	98371
 庸碌	ys luc	80594
-庸碌	ys;cr lu;xp	80594
+庸碌	ys;cz lu;xp	80594
 庸碌	yslu	80594
 庹	to;cb	6
 庺	ss;cw	1
@@ -104920,9 +104933,9 @@ columns: [text, code, weight]
 慰问品	ww;bv wf;nt pb;tt	121356
 慱	tr;vt	1
 慲	mj;vx	1
-慵	ys;vr	147
+慵	ys;vz	147
 慵懒	ys ljv	170903
-慵懒	ys;vr lj;vj	170903
+慵懒	ys;vz lj;vj	170903
 慵懒	yslj	170903
 慷	kh;vp	926
 慷他人之慨	ktrk	1
@@ -106223,6 +106236,9 @@ columns: [text, code, weight]
 我都知道	wdvd	1
 我问一下	wwyx	1
 我问你答	wwnd	1
+我靠	wo kcf	1
+我靠	wo;fv kc;vn	1
+我靠	wokc	1
 戒	jp;vm	6888
 戒严	jp yjv	164723
 戒严	jp;vm yj;nf	164723
@@ -107649,6 +107665,9 @@ columns: [text, code, weight]
 才智	cd;tt vi;gb	165496
 才智	cdvi	165496
 才智过人	cvgr	15454
+才有	cd yzt	1
+才有	cd;tt yz;cz	1
+才有	cdyz	1
 才有可能	cykn	1
 才气	cd qit	135621
 才气	cd;tt qi;zz	135621
@@ -128800,7 +128819,7 @@ columns: [text, code, weight]
 昏头涨脑	htvn	11312
 昏头转向	htvx	25224
 昏庸	hy ysz	79490
-昏庸	hy;zb ys;cr	79490
+昏庸	hy;zb ys;cz	79490
 昏庸	hyys	79490
 昏招	hy vcz	13971
 昏招	hy;zb vc;ot	13971
@@ -139809,6 +139828,9 @@ columns: [text, code, weight]
 桡骨	rcgu	106035
 桢	vf;wj	245
 档	dh;wp	6003
+档位	dh www	45632
+档位	dh;wp ww;kj	45632
+档位	dhww	45632
 档口	dh kzw	58439
 档口	dh;wp kz;tt	58439
 档口	dhkz	58439
@@ -140734,7 +140756,7 @@ columns: [text, code, weight]
 椹	uf;wb	10
 椺	xi;ww	1
 椻	yj;ws	1
-椼	yj;wt	1
+椼	yj;wa	1
 椽	ir;wo	63
 椽子	ir ziw	76751
 椽子	ir;wo zi;pp	76751
@@ -141154,7 +141176,7 @@ columns: [text, code, weight]
 槢	xi;wd	1
 槣	ji;wt	1
 槥	hv;wp	1
-槦	ys;wl	1
+槦	ys;wz	1
 槪	gd;wp	1
 槬	hx;wh	1
 槭	qi;wy	9
@@ -142229,7 +142251,7 @@ columns: [text, code, weight]
 欧阳	ouyh	85902
 欨	xu;nx	1
 欩	ic;gx	1
-欫	qi;kx	1
+欫	qi;vx	1
 欬	kd;lx	1
 欭	yi;jx	1
 欮	jt;lx	1
@@ -144313,7 +144335,7 @@ columns: [text, code, weight]
 毈	dr;lh	1
 毊	xn;qt	1
 毋	wu;ii	411
-毋庸置疑	wu;ii ys;cr vi;qq yi;ts	174905
+毋庸置疑	wu;ii ys;cz vi;qq yi;ts	174905
 毋庸置疑	wyvy	174905
 毋庸讳言	wyhy	85028
 毋庸赘述	wyvu	1
@@ -162544,7 +162566,7 @@ columns: [text, code, weight]
 牂	zh;nu	1
 牃	dp;nw	1
 牄	ql;nt	1
-牅	ys;nl	1
+牅	ys;nz	1
 片	pm;nn	57002
 片中	pm vsn	132805
 片中	pm;nn vs;tl	132805
@@ -165865,6 +165887,9 @@ columns: [text, code, weight]
 玉屏	yu pkr	51522
 玉屏	yu;rr pk;bm	51522
 玉屏	yupk	51522
+玉帝	yu dir	88213
+玉帝	yu;rr di;je	88213
+玉帝	yudi	88213
 玉帝老儿	ydle	1
 玉成	yu igr	61496
 玉成	yu;rr ig;vb	61496
@@ -166799,7 +166824,7 @@ columns: [text, code, weight]
 珩	hg;rk	50
 珪	gv;rq	14
 珫	is;rp	1
-珬	xu;ra	1
+珬	xu;rp	1
 班	bj;rg	41223
 班上	bj uhr	62048
 班上	bj;rg uh;gp	62048
@@ -200560,7 +200585,7 @@ columns: [text, code, weight]
 脊髓	jisv	180415
 脊髓灰质炎	jshy	77640
 脋	xp;gz	1
-脌	nb;zc	1
+脌	nb;zl	1
 脍	kk;zh	50
 脍炙人口	kk;zh vi;rp rf;xx kz;tt	123932
 脍炙人口	kvrk	123932
@@ -208245,7 +208270,7 @@ columns: [text, code, weight]
 葑	fg;mt	28
 葓	hs;ml	1
 葔	hz;mg	1
-葕	yj;mt	1
+葕	yj;ma	1
 葖	tu;my	1
 著	vo;mb	10236
 著	vu;mb	10236
@@ -208825,7 +208850,7 @@ columns: [text, code, weight]
 蓖麻	bi;mt ma;cw	110893
 蓖麻	bima	110893
 蓗	zs;ms	1
-蓘	gy;ms	1
+蓘	gy;mh	1
 蓙	zo;mq	1
 蓚	tn;mf	1
 蓛	ce;mq	1
@@ -229175,7 +229200,7 @@ columns: [text, code, weight]
 辱骂	ru maz	179043
 辱骂	ru;zt ma;tv	179043
 辱骂	ruma	179043
-農	ns;pz	1
+農	ns;jz	1
 辴	ij;tz	1
 辵	io;fs	1
 辶	io;qq	1
@@ -236798,7 +236823,7 @@ columns: [text, code, weight]
 鄱阳	poyh	61690
 鄳	mg;py	1
 鄵	cc;ty	1
-鄷	fg;py	1
+鄷	fg;jy	1
 鄸	mg;my	1
 鄹	zz;xy	1
 鄻	lm;yy	1
@@ -239008,7 +239033,7 @@ columns: [text, code, weight]
 金店	jb;uu dm;ct	60158
 金店	jbdm	60158
 金庸	jb ysu	76170
-金庸	jb;uu ys;cr	76170
+金庸	jb;uu ys;cz	76170
 金庸	jbys	76170
 金戈铁马	jb;uu ge;vv tp;ug ma;vv	69860
 金戈铁马	jgtm	69860
@@ -242243,7 +242268,7 @@ columns: [text, code, weight]
 镘	mj;uq	6
 镙	lo;ui	1
 镚	bg;uz	18
-镛	ys;ur	23
+镛	ys;uz	23
 镜	jk;up	12036
 镜中	jk vsu	46666
 镜中	jk;up vs;tl	46666
@@ -245246,7 +245271,7 @@ columns: [text, code, weight]
 附带	fudd	191699
 附带说一句	fduj	1
 附庸	fu ysy	135487
-附庸	fu;yq ys;cr	135487
+附庸	fu;yq ys;cz	135487
 附庸	fuys	135487
 附庸风雅	fyfy	56717
 附录	fu luy	113452
@@ -253311,7 +253336,7 @@ columns: [text, code, weight]
 餭	hl;xr	1
 餮	tp;rw	158
 餯	hv;xo	1
-餰	jm;xt	1
+餰	jm;xa	1
 餲	ai;xn	1
 餴	ff;xm	1
 餵	ww;xs	1
@@ -257291,7 +257316,7 @@ columns: [text, code, weight]
 鳗鱼	mj;dq yu;dd	172927
 鳗鱼	mjyu	172927
 鳘	mb;kd	2
-鳙	ys;dr	5
+鳙	ys;dz	5
 鳚	ww;dt	1
 鳛	xi;dd	1
 鳜	gv;dx	14

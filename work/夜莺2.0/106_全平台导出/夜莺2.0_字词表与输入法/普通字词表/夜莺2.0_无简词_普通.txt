@@ -404,7 +404,7 @@ AI换脸	aihl
 嫒	aisq
 哀	aist
 哀诉	aisu
-哎	ait
+唉	ait
 艾特	aite
 唉	aitg
 挨踢	aiti
@@ -2523,8 +2523,8 @@ www.baidu.com	baidu
 被代理人	bdlr
 白龙	bdls
 白葱	bdls
-败露	bdlu
 白鹭	bdlu
+败露	bdlu
 白露	bdlu
 败类	bdlw
 拜伦	bdly
@@ -9448,6 +9448,7 @@ ban位买房	bwmf
 财运	cdyy
 彩云	cdyy
 菜油	cdyz
+才有	cdyz
 踩在	cdzd
 采择	cdze
 才子	cdzi
@@ -14015,6 +14016,7 @@ DDoS	ddos
 檔	dhwp
 党务	dhwu
 当午	dhwu
+档位	dhww
 党委	dhww
 挡位	dhww
 砀	dhx
@@ -21232,6 +21234,7 @@ ez收徒	ezut
 凤姐	fgjp
 寷	fgjp
 蜂聚	fgju
+鄷	fgjy
 俸	fgk
 偑	fgkg
 疯狂	fgkl
@@ -21305,7 +21308,6 @@ ez收徒	ezut
 烽	fgpr
 奉陪	fgpw
 丰沛	fgpw
-鄷	fgpy
 焨	fgpz
 封	fgq
 风琴	fgqb
@@ -22261,6 +22263,7 @@ ez收徒	ezut
 犯境	fjjk
 犯贱	fjjm
 繁简	fjjm
+凡间	fjjm
 翻搅	fjjn
 犯戒	fjjp
 贩	fjjq
@@ -23401,8 +23404,8 @@ ez收徒	ezut
 弗	fuk
 反手可得	fukd
 俛	fukd
-妇科	fuke
 复刻	fuke
+妇科	fuke
 复垦	fukf
 刜	fukg
 富康	fukh
@@ -30793,8 +30796,8 @@ Google	goog
 狗咬吕洞宾不识好人心	gylx
 滚轮	gyly
 诡异莫测	gymc
+蓘	gymh
 光耀门楣	gymm
-蓘	gyms
 光耀门庭	gymt
 滚木	gymu
 顾影弄姿	gynz
@@ -41744,7 +41747,6 @@ ip正确	ipvq
 传报	irbc
 传本	irbf
 冲任不固	irbg
-剶	irbg
 穿帮	irbh
 船帮	irbh
 宠辱不惊	irbj
@@ -41889,6 +41891,7 @@ ip正确	ipvq
 穿暖	irnr
 出入平安	irpa
 船篷	irpg
+剶	irpg
 船票	irpn
 传票	irpn
 穿破	irpo
@@ -42215,12 +42218,12 @@ ip正确	ipvq
 虫体	isti
 重弹	istj
 重听	istk
-嘃	istl
 冲天	istm
 充填	istm
 重贴	istp
 冲突	istu
 重头	istz
+嘃	istz
 铳	isu
 冲杀	isua
 重设	isue
@@ -45378,8 +45381,8 @@ ip正确	ipvq
 家常豆腐	jidf
 激荡	jidh
 既当	jidh
-几滴	jidi
 基地	jidi
+几滴	jidi
 极低	jidi
 鸡蛋	jidj
 𫌀	jidj
@@ -45477,9 +45480,9 @@ ip正确	ipvq
 乩	jigb
 极高	jigc
 技改	jigd
+几个	jige
 及格	jige
 鸡哥	jige
-几个	jige
 几根	jigf
 机耕	jigg
 螏	jigg
@@ -45577,8 +45580,8 @@ ip正确	ipvq
 级	jiis
 急冲	jiis
 给	jiit
-几处	jiiu
 基础	jiiu
+几处	jiiu
 寄出	jiiu
 挤出	jiiu
 纪	jiiv
@@ -45845,8 +45848,8 @@ ip正确	ipvq
 垍	jiqd
 鸡	jiqg
 罽	jiqg
-几起	jiqi
 机器	jiqi
+几起	jiqi
 极其	jiqi
 及其	jiqi
 激情	jiqk
@@ -48036,6 +48039,7 @@ https://www.jsxiaoshi.com/	jisu
 将门无犬子	jmwz
 剑	jmx
 劔	jmxa
+餰	jmxa
 坚信	jmxb
 艰辛	jmxb
 磵	jmxb
@@ -48071,7 +48075,6 @@ https://www.jsxiaoshi.com/	jisu
 鑳	jmxs
 碱	jmxt
 见血	jmxt
-餰	jmxt
 剪下	jmxx
 剑侠	jmxx
 绝密信息	jmxx
@@ -50628,6 +50631,7 @@ https://www.jsxiaoshi.com/	jisu
 娇生惯养	jugy
 技术过硬	jugy
 军事工业	jugy
+巨构	jugz
 技术改造	jugz
 搅屎棍子	jugz
 毩	jugz
@@ -52594,8 +52598,8 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 咔	katg
 卡托	kato
 卡贴	katp
-咯	katq
 喀	katq
+咯	katq
 卡通	kats
 咖	katt
 喀什	kaui
@@ -58050,7 +58054,6 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 李白	libd
 礼拜	libd
 历本	libf
-劙	libg
 离愁别恨	libh
 立邦	libh
 利弊	libi
@@ -58340,6 +58343,7 @@ $ddcmd(　　　静夜思·李白\r\r床前明月光，疑是地上霜。\r举�
 礼炮	lipc
 蠡	lipg
 力捧	lipg
+劙	lipg
 鬲	lipl
 隶	lipp
 吏	lipp
@@ -68925,9 +68929,9 @@ https://typer.owenyang.top/	mxyi
 钠	nau
 纳什	nauf
 拿上	nauh
+那是	naui
 那时	naui
 纳什	naui
-那是	naui
 镎	nauo
 纳税	nauv
 钠	naux
@@ -69070,8 +69074,8 @@ https://typer.owenyang.top/	mxyi
 男不养猫	nbym
 你不也是	nbyu
 那不一样	nbyy
-脌	nbzc
 内部资料	nbzl
+脌	nbzl
 内部资源	nbzy
 脑	nc
 淖	nca
@@ -71489,6 +71493,7 @@ https://typer.owenyang.top/	mxyi
 农	nsjs
 农具	nsju
 农家	nsjx
+農	nsjz
 侬	nsk
 弄开	nskd
 农科	nske
@@ -71525,7 +71530,6 @@ https://typer.owenyang.top/	mxyi
 挵	nsom
 弄破	nspo
 燶	nspz
-農	nspz
 弄清	nsqk
 浓情	nsqk
 弄权	nsqr
@@ -72842,7 +72846,7 @@ o(´^｀)o	ofyw
 二十二	ooss
 三十五	oosw
 三十一	oosy
-噢	oot
+喔	oot
 喔	ootg
 哦	ootv
 噢	ooty
@@ -77575,7 +77579,6 @@ py交易	pyjy
 气孔	qiks
 凄苦	qiku
 气哭	qiku
-欫	qikx
 僛	qikx
 气口	qikz
 旗	qil
@@ -77839,6 +77842,7 @@ py交易	pyjy
 起床战争	qivv
 慼	qivv
 缼	qivx
+欫	qivx
 戚	qivy
 慽	qivy
 邔	qivy
@@ -80622,6 +80626,7 @@ QQ音乐	qqyy
 全胜	qrug
 券商	qruh
 确认收货	qruh
+全是	qrui
 诠释	qrui
 权势	qrui
 全市	qrui
@@ -96385,7 +96390,7 @@ txt文件	txtj
 身家	ufjx
 说风就是雨	ufjy
 邥	ufjy
-什	ufk
+伸	ufk
 十分恐怖	ufkb
 什	ufkc
 伸开	ufkd
@@ -96398,8 +96403,8 @@ txt文件	txtj
 十分困难	ufkn
 十分可能	ufkn
 沈括	ufko
-伸	ufkp
 侁	ufkp
+伸	ufkp
 十分可怕	ufkp
 敒	ufkq
 深空	ufks
@@ -107585,8 +107590,8 @@ https://api.ihint.me/shuang/	ulpb
 转业	vrye
 沾染因果	vryg
 中日友好	vryh
-专一	vryi
 转移	vryi
+专一	vryi
 转义	vryi
 转眼	vryj
 专研	vryj
@@ -112911,6 +112916,7 @@ WiFi	wifi
 窝	wojx
 我军	wojy
 倭	wok
+我靠	wokc
 我可	woke
 蜗壳	woke
 偓	wokg
@@ -121336,13 +121342,13 @@ Word	word
 携手前行	xuqx
 垿	xuqz
 顼	xur
-珬	xura
 现实如此	xurc
 旭日	xuri
 顼	xurj
 惜时如金	xurj
 虚弱	xuro
 珝	xuro
+珬	xurp
 显示日期	xurq
 殈	xurq
 虚荣	xurs
@@ -124791,6 +124797,7 @@ magnet:?xt=urn:btih:	xylw
 页岩	yeyj
 野营	yeyk
 夜莺	yeyk
+夜桜	yeyk
 养儿育女	yeyn
 也用	yeys
 夜用	yeys
@@ -125682,8 +125689,8 @@ magnet:?xt=urn:btih:	xylw
 以便	yibm
 一遍	yibm
 仪表	yibn
-衣钵	yibo
 一波	yibo
+衣钵	yibo
 曀	yibp
 賹	yibq
 敡	yibq
@@ -125811,9 +125818,9 @@ magnet:?xt=urn:btih:	xylw
 已发	yifa
 诣	yifb
 詍	yifb
+一份	yiff
 一分	yiff
 义愤	yiff
-一份	yiff
 一封	yifg
 遗风	yifg
 以防	yifh
@@ -126961,6 +126968,7 @@ magnet:?xt=urn:btih:	xylw
 芫	yjm
 掩码	yjma
 菸	yjma
+葕	yjma
 烟民	yjmb
 盐民	yjmb
 眼毛	yjmc
@@ -126976,7 +126984,6 @@ magnet:?xt=urn:btih:	xylw
 湮灭	yjmp
 芫	yjmp
 莚	yjmq
-葕	yjmt
 眼目	yjmu
 烟幕	yjmu
 夜间模式	yjmu
@@ -127227,6 +127234,7 @@ magnet:?xt=urn:btih:	xylw
 兖州	yjvz
 欲加之罪	yjvz
 檐	yjw
+椼	yjwa
 言外	yjwd
 櫩	yjwd
 衍文	yjwf
@@ -127254,7 +127262,6 @@ magnet:?xt=urn:btih:	xylw
 椻	yjws
 有进无退	yjwt
 以进为退	yjwt
-椼	yjwt
 厌恶	yjwu
 烟雾	yjwu
 延误	yjwu
@@ -129149,10 +129156,10 @@ magnet:?xt=urn:btih:	xylw
 用词	ysci
 用餐	yscj
 用错	ysco
-庸	yscr
 永存	yscy
 鄘	yscy
 痈	yscz
+庸	yscz
 鳙	ysd
 用到	ysdc
 甬道	ysdc
@@ -129164,7 +129171,6 @@ magnet:?xt=urn:btih:	xylw
 用典	ysdm
 用掉	ysdn
 勇夺	ysdo
-鳙	ysdr
 涌动	ysds
 鰫	ysdt
 拥堵	ysdu
@@ -129173,6 +129179,7 @@ magnet:?xt=urn:btih:	xylw
 拥趸	ysdy
 勇斗	ysdz
 鲬	ysdz
+鳙	ysdz
 雍	yse
 雍	yseb
 一扫而光	yseg
@@ -129329,9 +129336,9 @@ magnet:?xt=urn:btih:	xylw
 预算内资金	ysnj
 永宁	ysnk
 邕宁	ysnk
-牅	ysnl
 永年	ysnm
 忧思难忘	ysnw
+牅	ysnz
 拥	yso
 拥	ysoz
 永	ysp
@@ -129350,9 +129357,9 @@ magnet:?xt=urn:btih:	xylw
 用枪	ysql
 用钱	ysqm
 涌泉	ysqr
-墉	ysqr
 用去	ysqu
 埇	ysqz
+墉	ysqz
 佣人	ysrf
 用人	ysrf
 压缩软件	ysrj
@@ -129366,10 +129373,10 @@ magnet:?xt=urn:btih:	xylw
 壅塞	yssd
 拥塞	ysse
 用色	ysse
-嫞	yssl
 踴	yssp
 庸俗	yssu
 踊	yssz
+嫞	yssz
 咏	yst
 噰	ystb
 伊斯坦布尔	yste
@@ -129394,12 +129401,12 @@ magnet:?xt=urn:btih:	xylw
 勇士	ysui
 用时	ysui
 用膳	ysuj
-镛	ysur
 用书	ysuu
 用水	ysuv
 野蔌山肴	ysuy
 用手	ysuz
 庸手	ysuz
+镛	ysuz
 慵	ysv
 有所准备	ysvb
 元素周期表	ysvb
@@ -129416,12 +129423,12 @@ magnet:?xt=urn:btih:	xylw
 有所追求	ysvq
 元素周期	ysvq
 颜色正确	ysvq
-慵	ysvr
 臃肿	ysvs
 愹	ysvt
 永驻	ysvu
 永州	ysvz
 悀	ysvz
+慵	ysvz
 栐	ysw
 营私舞弊	yswb
 拥吻	yswf
@@ -129429,7 +129436,6 @@ magnet:?xt=urn:btih:	xylw
 勇往	yswh
 用完	yswj
 压缩文件	yswj
-槦	yswl
 栐	yswp
 鱼死网破	yswp
 柡	yswp
@@ -129440,6 +129446,7 @@ magnet:?xt=urn:btih:	xylw
 用为	ysww
 有所为有所不为	ysww
 有损无益	yswy
+槦	yswz
 用心	ysxb
 以死相逼	ysxb
 有所想法	ysxf
@@ -129961,6 +129968,7 @@ magnet:?xt=urn:btih:	xylw
 移山倒海	yudh
 余地	yudi
 雨滴	yudi
+玉帝	yudi
 于丹	yudj
 以水代酒	yudj
 已是定局	yudj
@@ -130659,6 +130667,7 @@ magnet:?xt=urn:btih:	xylw
 雨衣	yuyi
 语言	yuyj
 预言	yuyj
+寓言	yuyj
 育婴	yuyk
 鱼鹰	yuyk
 有史以来	yuyl

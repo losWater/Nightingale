@@ -41,15 +41,18 @@ ext = {l.split('\t')[0] for l in open(W + '/112_扩展字继承/夜莺2.0扩展�
 open(D + '/规则体检用_8105单字表.txt', 'wb').write(('\r\n'.join('%s\t%s' % r for r in rows['单字表'] if r[0] not in ext) + '\r\n').encode('utf-8-sig'))
 ok, lines = step('规则体检', [W + '/78_纯单字表核验/audit.py', D + '/规则体检用_8105单字表.txt'], [r'完整表[^\n]*未通过 0 项'], show=3, gate=False)
 if not ok: print('   （只报告不拦。详情：python 78_纯单字表核验/audit.py 00_维护/派生/规则体检用_8105单字表.txt）')
+# 拆分：唯一原本是啾啾工具箱的「拆分查询」页，其余八处副本在此对齐（2026-09-21）
+step('拆分同步', [H + '/sync_chaifen.py', '--apply'], [r'全部一致|已同步'], show=1)
 P = W + '/106_全平台导出'
 if os.path.isdir(P + '/engine-check-final'): shutil.rmtree(P + '/engine-check-final')      # 106 自己生成的核验目录
 step('106 导出', [P + '/build.py']); step('106 引擎核验', [P + '/verify.py'], [r'main PASS', r'light PASS', r'mobile PASS'], show=4); step('106 打包', [P + '/package.py'], show=3)
 step('114 工具箱', [W + '/114_工具箱同步扩展字/sync.py']); step('115 练习例字', [W + '/115_练习例字补扩展字/sync.py'])
-step('123 虎娘', [W + '/123_虎娘导入/build.py']); step('125 码圈', [W + '/125_码圈交付/build.py']); step('131 鲸凉鹤专属', [W + '/131_鲸凉鹤专属版/build.py']); step('131 打包', [W + '/131_鲸凉鹤专属版/package.py'])
+step('123 虎娘', [W + '/123_虎娘导入/build.py']); step('137 虎娘单字', [W + '/137_虎娘单字版/build.py'], [r'交叉核对：\d+ 个码位与正式虎娘表逐位一致'], show=2)
+step('125 码圈', [W + '/125_码圈交付/build.py']); step('131 鲸凉鹤专属', [W + '/131_鲸凉鹤专属版/build.py']); step('131 打包', [W + '/131_鲸凉鹤专属版/package.py'])
 
 M7 = W + '/127_魔虎基座试验'   # Rime 主力版「夜莺主力」（魔虎基座；数据取自上面 106 的中间产物）
 step('主力版 生成', [M7 + '/build.py']); step('主力版 引擎核验', [M7 + '/verify.py'], [r'main PASS'], show=2); step('主力版 打包', [M7 + '/package.py'])
-if '--deploy' in A: step('本机部署', [H + '/deploy_local.py'], [r'0 failure', r'tigirl update exit: 0'], show=3)
+if '--deploy' in A: step('本机部署', [H + '/deploy_local.py'], [r'0 failure', r'tigirl update exit: 0', r'tigirl 单字版 exit: 0'], show=4)
 if '--release' in A:
     step('117 发布目录', [W + '/117_发布v2.0/build_release.py']); step('118 官网数据', [W + '/118_官网2.0/compute_performance.py']); step('118 同步官网', [W + '/118_官网2.0/sync_to_repo.py'])
 assert {n: sha(p) for n, p in M.items()} == start, '主表在导出过程中被改动了！'

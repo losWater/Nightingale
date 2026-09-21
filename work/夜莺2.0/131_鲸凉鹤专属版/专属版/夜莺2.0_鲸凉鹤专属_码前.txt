@@ -765,7 +765,7 @@ aist	哀
 aisu	哀诉
 aisy	爱隼
 aisz	爱搜
-ait	哎
+ait	唉
 ait	熬出头
 aita	爱他
 aita	爱她
@@ -35913,6 +35913,7 @@ fgjr	风卷
 fgjs	凨
 fgjt	封爵
 fgju	蜂聚
+fgjy	鄷
 fgjz	封建
 fgk	俸
 fgk	房管科
@@ -36048,7 +36049,6 @@ fgpu	奉浦
 fgpw	奉陪
 fgpw	丰沛
 fgpx	风评
-fgpy	鄷
 fgpz	焨
 fgq	封
 fgqb	富国强兵
@@ -52158,8 +52158,8 @@ gym	观音庙
 gym	搞阴谋
 gyma	滚吗
 gymc	诡异莫测
+gymh	蓘
 gymm	光耀门楣
-gyms	蓘
 gymt	光耀门庭
 gymu	滚木
 gymu	棍母
@@ -70714,7 +70714,6 @@ irbc	传报
 irbc	穿爆
 irbf	传本
 irbg	冲任不固
-irbg	剶
 irbh	穿帮
 irbh	船帮
 irbi	椽笔
@@ -70966,6 +70965,7 @@ irpa	出入平安
 irpb	穿品
 irpe	串皮
 irpg	船篷
+irpg	剶
 irpi	串皮
 irpj	穿盘
 irpm	串骗
@@ -71503,7 +71503,6 @@ isti	重提
 isti	虫体
 istj	重弹
 istk	重听
-istl	嘃
 istl	重推
 istm	冲天
 istm	充填
@@ -71514,6 +71513,7 @@ istu	冲突
 istv	重推
 istv	冲退
 istz	重头
+istz	嘃
 istz	重投
 isu	铳
 isua	冲杀
@@ -80464,6 +80464,7 @@ jmwy	缄默无言
 jmwz	将门无犬子
 jmx	剑
 jmxa	劔
+jmxa	餰
 jmxb	坚信
 jmxb	艰辛
 jmxb	磵
@@ -80511,7 +80512,6 @@ jmxs	奸雄
 jmxs	鑳
 jmxt	碱
 jmxt	见血
-jmxt	餰
 jmxu	简序
 jmxx	剪下
 jmxx	剑侠
@@ -84468,9 +84468,9 @@ jugy	技术过硬
 jugy	军事工业
 jugz	计时工资
 jugz	技术改造
+jugz	搅屎棍子
 jugz	毩
 jugz	毱
-jugz	搅屎棍子
 juh	岠
 juh	结束后
 juh	军事化
@@ -88120,8 +88120,8 @@ katl	卡推
 katn	卡条
 kato	卡托
 katp	卡贴
-katq	咯
 katq	喀
+katq	咯
 kats	卡通
 katt	咖
 katu	卡图
@@ -98297,7 +98297,6 @@ libd	礼拜
 libd	𥛉
 libf	立本
 libf	历本
-libg	劙
 libh	离愁别恨
 libh	立邦
 libi	利弊
@@ -98736,6 +98735,7 @@ lipd	立派
 lipe	力劈
 lipg	蠡
 lipg	力捧
+lipg	劙
 lipi	力劈
 lipj	李盼
 lipj	立判
@@ -118903,10 +118903,10 @@ nbyz	您有
 nbz	牛鼻子
 nbz	哪辈子
 nbz	牛蒡子
-nbzc	脌
 nbzc	您早
 nbzd	您在
 nbzl	内部资料
+nbzl	脌
 nbzo	您做
 nbzo	您坐
 nbzu	你不早说
@@ -123810,6 +123810,7 @@ nsjs	农
 nsju	农具
 nsjx	农家
 nsjx	弄假
+nsjz	農
 nsjz	弄件
 nsk	侬
 nska	农卡
@@ -123881,7 +123882,6 @@ nsps	弄破
 nspu	农圃
 nspu	农普
 nspz	燶
-nspz	農
 nsqe	弄起
 nsqi	弄起
 nsqi	弄齐
@@ -127997,7 +127997,7 @@ ooss	二十二
 oosu	三十
 oosw	三十五
 oosy	三十一
-oot	噢
+oot	喔
 ootg	喔
 ootm	哦天
 ootv	哦
@@ -138256,7 +138256,6 @@ qiks	气控
 qiks	七孔
 qiku	凄苦
 qiku	气哭
-qikx	欫
 qikx	僛
 qikz	气口
 qikz	骑扣
@@ -138687,6 +138686,7 @@ qivv	浅尝辄止
 qivv	起床战争
 qivv	慼
 qivx	缼
+qivx	欫
 qivx	气爪
 qivx	齐抓
 qivy	戚
@@ -171863,7 +171863,7 @@ ufjy	邥
 ufjy	说风就是雨
 ufjz	神剑
 ufjz	身兼
-ufk	什
+ufk	伸
 ufk	示范课
 ufka	深咖
 ufkb	十分恐怖
@@ -171881,8 +171881,8 @@ ufkl	十分快乐
 ufkn	十分困难
 ufkn	十分可能
 ufko	沈括
-ufkp	伸
 ufkp	侁
+ufkp	伸
 ufkp	十分可怕
 ufkq	敒
 ufkr	身宽
@@ -214574,7 +214574,6 @@ xuqy	畜群
 xuqz	垿
 xur	顼
 xur	心上人
-xura	珬
 xurc	现实如此
 xure	蓄热
 xure	虚热
@@ -214583,6 +214582,7 @@ xurj	顼
 xurj	惜时如金
 xuro	虚弱
 xuro	珝
+xurp	珬
 xurq	显示日期
 xurq	殈
 xurs	虚荣
@@ -224732,6 +224732,7 @@ yjm	眼睫毛
 yjm	一进门
 yjma	掩码
 yjma	菸
+yjma	葕
 yjmb	烟民
 yjmb	盐民
 yjmc	眼毛
@@ -224757,7 +224758,6 @@ yjmo	研墨
 yjmp	湮灭
 yjmp	芫
 yjmq	莚
-yjmt	葕
 yjmu	眼目
 yjmu	烟幕
 yjmu	夜间模式
@@ -225123,6 +225123,7 @@ yjvz	眼周
 yjvz	兖州
 yjw	檐
 yjw	有机物
+yjwa	椼
 yjwa	檐瓦
 yjwb	一九五八
 yjwd	言外
@@ -225156,7 +225157,6 @@ yjws	椻
 yjws	一九五三
 yjwt	有进无退
 yjwt	以进为退
-yjwt	椼
 yjwu	厌恶
 yjwu	烟雾
 yjwu	延误
@@ -228243,13 +228243,13 @@ yscg	鷛
 ysci	用词
 yscj	用餐
 ysco	用错
-yscr	庸
 yscs	永琮
 yscu	用醋
 yscv	雍翠
 yscy	永存
 yscy	鄘
 yscz	痈
+yscz	庸
 ysd	鳙
 ysd	有所得
 ysd	压缩袋
@@ -228273,7 +228273,6 @@ ysdm	用电
 ysdm	用典
 ysdn	用掉
 ysdo	勇夺
-ysdr	鳙
 ysds	涌动
 ysds	永动
 ysdt	鰫
@@ -228286,6 +228285,7 @@ ysdx	元素对象
 ysdy	拥趸
 ysdz	勇斗
 ysdz	鲬
+ysdz	鳙
 yse	雍
 yseb	雍
 ysee	咏鹅
@@ -228527,13 +228527,13 @@ ysnj	永南
 ysnj	预算内资金
 ysnk	永宁
 ysnk	邕宁
-ysnl	牅
 ysnm	永年
 ysno	永诺
 ysno	庸懦
 ysns	永农
 ysnu	佣奴
 ysnw	忧思难忘
+ysnz	牅
 ysnz	永南
 yso	拥
 ysoo	用哦
@@ -228574,11 +228574,11 @@ ysqm	用钱
 ysqn	埇桥
 ysqq	雍丘
 ysqr	涌泉
-ysqr	墉
 ysqr	用券
 ysqr	用权
 ysqu	用去
 ysqz	埇
+ysqz	墉
 ysr	优酸乳
 ysrf	佣人
 ysrf	庸人
@@ -228600,13 +228600,13 @@ yssd	壅塞
 ysse	拥塞
 ysse	用色
 yssi	咏思
-yssl	嫞
 yssp	踴
 ysss	永松
 yssu	庸俗
 yssv	永岁
 yssy	饔飧
 yssz	踊
+yssz	嫞
 yst	咏
 yst	有所图
 yst	易碎贴
@@ -228661,7 +228661,6 @@ ysuj	用膳
 ysuk	永帅
 ysul	有所涉猎
 ysuo	永硕
-ysur	镛
 ysus	用膳
 ysuu	用熟
 ysuu	用书
@@ -228672,6 +228671,7 @@ ysuy	野蔌山肴
 ysuy	永顺
 ysuz	用手
 ysuz	庸手
+ysuz	镛
 ysv	慵
 ysv	有素质
 ysvb	有所准备
@@ -228701,13 +228701,13 @@ ysvp	用之
 ysvq	有所追求
 ysvq	元素周期
 ysvq	颜色正确
-ysvr	慵
 ysvr	用砖
 ysvs	臃肿
 ysvt	愹
 ysvu	永驻
 ysvz	永州
 ysvz	悀
+ysvz	慵
 ysvz	雍州
 ysvz	邕州
 ysw	栐
@@ -228722,7 +228722,6 @@ yswh	永旺
 yswh	勇往
 yswj	用完
 yswj	压缩文件
-yswl	槦
 yswo	用我
 yswo	蛹卧
 yswp	栐
@@ -228736,6 +228735,7 @@ ysww	用为
 ysww	勇为
 ysww	有所为有所不为
 yswy	有损无益
+yswz	槦
 yswz	音素文字
 ysx	严肃性
 ysxb	用心

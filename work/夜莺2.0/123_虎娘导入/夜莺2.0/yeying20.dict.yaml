@@ -1,5 +1,5 @@
 name: yeying20
-version: "2026.09.17"
+version: "2026.09.21"
 sort: by_weight
 columns:
   - text
@@ -20,7 +20,7 @@ import_tables:
 ...
 
 啊	999999	a	aa
-！	999998	a	of
+！	999998	a
 阿	999999	aa
 啊！”	999999	aaae
 啊……”	999999	aase
@@ -99,7 +99,7 @@ AI换脸	999999	aihl
 娭	999999	aisg
 嫒	999999	aisq
 哀	999999	aist
-哎	999999	ait
+唉	999999	ait
 唉	999999	aitg
 哎	999999	aitp
 嗳	999999	aitq
@@ -248,7 +248,7 @@ AV女优	999999	avny
 AV男优	999998	avny
 哎哟，不错哦	999999	aybo
 不	999999	b	bu
-》	999998	b	of
+》	999998	b
 >	999997	b
 吧	999999	ba
 灞	999999	baa
@@ -1246,8 +1246,8 @@ ban位买房	999998	bwmf
 百足之虫，死而不僵	999999	bzvj
 不自由，毋宁死	999998	bzys
 才	999999	c	cd
-】	999998	c	of
-〕	999997	c	of
+】	999998	c
+〕	999997	c
 擦	999999	ca
 遪	999999	cahq
 擦	999999	cao
@@ -1707,7 +1707,7 @@ C位出道	999999	cwid
 腠	999999	czz
 腠	999999	czzy
 的	999999	d	de
-、	999998	d	of
+、	999998	d
 大	999999	da
 溚	999999	daa
 的啊！	999999	daaa
@@ -2819,7 +2819,7 @@ DDoS	999999	ddos
 脰	999999	dzzp
 刀子嘴，豆腐心	999998	dzzx
 而	999999	e	er
-（	999998	e	of
+（	999998	e
 耳不聋，眼不花	999998	eblh
 儿不嫌母丑，狗不嫌家贫	999999	ebxp
 恶	999999	ee
@@ -3007,7 +3007,7 @@ DDoS	999999	ddos
 Excel	999999	exce
 ez收徒	999999	ezut
 发	999999	f	fa
-“	999998	f	of
+“	999998	f
 ‘	999997	f
 法	999999	fa
 法	999999	faa
@@ -3146,6 +3146,7 @@ ez收徒	999999	ezut
 赗	999999	fgj
 赗	999998	fgjb
 寷	999998	fgjp
+鄷	999999	fgjy
 俸	999999	fgk
 偑	999999	fgkg
 僼	999999	fgkp
@@ -3165,7 +3166,6 @@ ez收徒	999999	ezut
 烽	999999	fgp
 煈	999999	fgpg
 烽	999999	fgpr
-鄷	999999	fgpy
 焨	999999	fgpz
 封	999999	fgq
 堸	999999	fgqg
@@ -3628,7 +3628,7 @@ ez收徒	999999	ezut
 缹	999999	fzvp
 缶	999999	fzvv
 个	999999	g	ge
-”	999998	g	of
+”	999998	g
 ’	999997	g
 嘎	999999	ga
 尬	999999	gac
@@ -4466,7 +4466,7 @@ Google	999999	goog
 绲	999999	gyit
 丨	999999	gyll
 狗咬吕洞宾，不识好人心	999999	gylx
-蓘	999999	gyms
+蓘	999999	gymh
 璭	999999	gyrq
 衮	999999	gys
 衮	999999	gysh
@@ -4532,7 +4532,7 @@ Google	999999	goog
 枸	999999	gzwt
 鈎	999999	gzxh
 和	999999	h	he
-『	999998	h	of
+『	999998	h
 哈	999999	ha
 蛤	999999	hag
 虾	999999	hagg
@@ -5633,7 +5633,7 @@ https://	999999	http
 糇	999999	hzzg
 吃	999999	i	ii
 ——	999998	i
-—	999997	i	of
+—	999997	i
 差	999999	ia
 汊	999999	iaa
 汊	999999	iaaa
@@ -6316,7 +6316,6 @@ IP地址	999999	ipdv
 ip正确	999999	ipvq
 穿	999999	ir
 汌	999999	iral
-剶	999998	irbg
 賗	999999	irbl
 暷	999998	irbt
 船	999999	ire
@@ -6336,6 +6335,7 @@ ip正确	999999	ipvq
 川	999999	irl
 川	999999	irll
 巛	999998	irll
+剶	999998	irpg
 舛	999999	irr
 舛	999999	irrl
 玔	999998	irrl
@@ -6390,7 +6390,7 @@ ip正确	999999	ipvq
 憃	999999	isrv
 蹖	999997	issd
 楚虽三户，亡秦必楚	999999	issi
-嘃	999999	istl
+嘃	999998	istz
 铳	999999	isu
 铳	999999	isup
 忡	999999	isv
@@ -6631,7 +6631,7 @@ ip正确	999999	ipvq
 侴	999999	izx
 侴	999999	izxg
 就	999999	j	jq
-』	999998	j	of
+』	999998	j
 进	999999	jb
 津	999999	jba
 浕	999999	jbaa
@@ -7322,6 +7322,7 @@ https://www.jsxiaoshi.com/	999996	jisu
 检	999999	jmwy
 剑	999999	jmx
 劔	999999	jmxa
+餰	999998	jmxa
 磵	999997	jmxb
 剑	999999	jmxg
 剣	999996	jmxg
@@ -7332,7 +7333,6 @@ https://www.jsxiaoshi.com/	999996	jisu
 鑬	999996	jmxp
 鑳	999998	jmxs
 碱	999999	jmxt
-餰	999997	jmxt
 礆	999996	jmxx
 硷	999998	jmxy
 鐗	999999	jmxz
@@ -7867,8 +7867,8 @@ https://www.jsxiaoshi.com/	999996	jisu
 豦	999998	jugo
 勮	999999	jugp
 遽	999999	jugq
-毩	999997	jugz
-毱	999996	jugz
+毩	999996	jugz
+毱	999995	jugz
 岠	999999	juh
 簴	999995	juhl
 岠	999999	juhn
@@ -8147,7 +8147,7 @@ https://www.jsxiaoshi.com/	999996	jisu
 君子一言，驷马难追	999999	jzyv
 看	999999	k	kj
 ￥	999998	k
-$	999997	k	of
+$	999997	k
 卡	999999	ka
 卡	999999	kag
 卡	999999	kagg
@@ -8157,8 +8157,8 @@ $	999997	k	of
 衉	999999	kaqq
 咖	999999	kat
 咔	999999	katg
-咯	999999	katq
-喀	999998	katq
+喀	999999	katq
+咯	999998	katq
 咖	999999	katt
 鉲	999999	kaxg
 胩	999999	kaz
@@ -9095,7 +9095,6 @@ $	999997	k	of
 溧	999999	liaw
 凓	999998	liaw
 戾	999999	lib
-劙	999999	libg
 曞	999999	libq
 戾	999999	liby
 历	999999	lic
@@ -9217,6 +9216,7 @@ $	999997	k	of
 搮	999999	liow
 力	999999	lip
 蠡	999999	lipg
+劙	999997	lipg
 鬲	999999	lipl
 隶	999999	lipp
 吏	999998	lipp
@@ -10299,7 +10299,7 @@ $	999997	k	of
 𦝼	999999	lzzs
 娄	999998	lzzs
 没	999999	m	mo
-」	999998	m	of
+」	999998	m
 吗	999999	ma
 吗！”	999999	maae
 嘛！”	999998	maae
@@ -11192,7 +11192,7 @@ https://typer.owenyang.top/	999999	mxyi
 鍪	999999	mzz
 鍪	999999	mzzu
 你	999999	n	ni
-「	999998	n	of
+「	999998	n
 那	999999	na
 那	999999	nab
 那	999999	naby
@@ -11238,7 +11238,7 @@ https://typer.owenyang.top/	999999	mxyi
 您	999999	nbk
 您	999999	nbkv
 拰	999999	nboq
-脌	999999	nbzc
+脌	999998	nbzl
 脑	999999	nc
 淖	999999	nca
 淖	999999	ncac
@@ -11666,6 +11666,7 @@ https://typer.owenyang.top/	999999	mxyi
 醲	999999	nsez
 农	999999	nsj
 农	999999	nsjs
+農	999999	nsjz
 侬	999999	nsk
 侬	999999	nsks
 儂	999999	nskz
@@ -11676,7 +11677,6 @@ https://typer.owenyang.top/	999999	mxyi
 挊	999999	nsog
 挵	999999	nsom
 燶	999999	nspz
-農	999998	nspz
 弄	999999	nsr
 你所热爱的，就是你的生活	999999	nsrh
 弄	999999	nsrm
@@ -11746,7 +11746,7 @@ https://typer.owenyang.top/	999999	mxyi
 啂	999998	nztb
 鐞	999999	nzxt
 哦	999999	o	ee
-〖	999998	o	of
+〖	999998	o
 ！！！	999999	oaaa
 ！！！！！！	999998	oaaa
 ！！”	999999	oaae
@@ -11872,48 +11872,20 @@ https://typer.owenyang.top/	999999	mxyi
 ゾ	999999	obzo
 ズ	999999	obzu
 、、、	999999	oddd
-“	999999	ofbd
-”	999998	ofbd
-（	999997	ofbd
-）	999996	ofbd
-《	999995	ofbd
-》	999994	ofbd
-〈	999993	ofbd
-〉	999992	ofbd
-〔	999991	ofbd
-〕	999990	ofbd
-「	999989	ofbd
-」	999988	ofbd
-『	999987	ofbd
-』	999986	ofbd
-【	999985	ofbd
-】	999984	ofbd
-〖	999983	ofbd
-〗	999982	ofbd
-［	999981	ofbd
-］	999980	ofbd
-｛	999979	ofbd
-｝	999978	ofbd
-．	999977	ofbd
-。	999976	ofbd
-，	999975	ofbd
-、	999974	ofbd
-；	999973	ofbd
-：	999972	ofbd
-？	999971	ofbd
-！	999970	ofbd
-…	999969	ofbd
-—	999968	ofbd
-·	999967	ofbd
-ˉ	999966	ofbd
-ˇ	999965	ofbd
-¨	999964	ofbd
-々	999963	ofbd
-～	999962	ofbd
-‖	999961	ofbd
-∶	999960	ofbd
-＂	999959	ofbd
-＇	999958	ofbd
+〈	999999	ofbd
+〉	999998	ofbd
+［	999997	ofbd
+］	999996	ofbd
+｛	999995	ofbd
+｝	999994	ofbd
+：	999993	ofbd
+ˉ	999992	ofbd
+ˇ	999991	ofbd
+¨	999990	ofbd
+々	999989	ofbd
+～	999988	ofbd
+‖	999987	ofbd
+∶	999986	ofbd
 ⒈	999999	ofdu
 ⒉	999998	ofdu
 ⒊	999997	ofdu
@@ -12015,12 +11987,11 @@ nm	999999	ofdw
 я	999968	ofex
 ё	999967	ofex
 €	999999	ofhb
-$	999998	ofhb
-￠	999997	ofhb
-£	999996	ofhb
-￡	999995	ofhb
-¥	999994	ofhb
-฿	999993	ofhb
+￠	999998	ofhb
+£	999997	ofhb
+￡	999996	ofhb
+¥	999995	ofhb
+฿	999994	ofhb
 ⿰	999999	ofjg
 ⿱	999998	ofjg
 ⿲	999997	ofjg
@@ -12034,19 +12005,18 @@ $	999998	ofhb
 ⿺	999989	ofjg
 ⿻	999988	ofjg
 ←	999999	ofjt
-→	999998	ofjt
-↑	999997	ofjt
-↓	999996	ofjt
-↗	999995	ofjt
-↙	999994	ofjt
-↘	999993	ofjt
-↖	999992	ofjt
-↔	999991	ofjt
-⇆	999990	ofjt
-⇤	999989	ofjt
-⇥	999988	ofjt
-«	999987	ofjt
-»	999986	ofjt
+↑	999998	ofjt
+↓	999997	ofjt
+↗	999996	ofjt
+↙	999995	ofjt
+↘	999994	ofjt
+↖	999993	ofjt
+↔	999992	ofjt
+⇆	999991	ofjt
+⇤	999990	ofjt
+⇥	999989	ofjt
+«	999988	ofjt
+»	999987	ofjt
 ⑴	999999	ofku
 ⑵	999998	ofku
 ⑶	999997	ofku
@@ -12422,7 +12392,7 @@ o(´^｀)o	999963	ofyw
 噢	999999	oo
 哦！”	999999	ooae
 哦……”	999998	oose
-噢	999999	oot
+喔	999999	oot
 喔	999999	ootg
 哦	999999	ootv
 噢	999999	ooty
@@ -12651,8 +12621,7 @@ m̀	999998	opm
 ≠	999997	otd
 ＞	999999	otdy
 ≥	999998	otdy
-の	999999	ote
-ε	999998	ote
+ε	999999	ote
 ′	999999	otf
 Φ	999998	otf
 ■	999997	otf
@@ -12769,7 +12738,7 @@ m	999999	otl
 ⑲	999981	oxu
 ⑳	999980	oxu
 拍	999999	p	pd
-〗	999998	p	of
+〗	999998	p
 怕	999999	pa
 潖	999999	paa
 潖	999999	paav
@@ -13645,8 +13614,7 @@ py交易	999999	pyjy
 俟	999999	qikg
 倛	999999	qikl
 迄	999999	qikq
-欫	999999	qikx
-僛	999998	qikx
+僛	999999	qikx
 旗	999999	qil
 旂	999998	qilh
 旗	999998	qill
@@ -13719,6 +13687,7 @@ py交易	999999	pyjy
 骑	999999	qivt
 慼	999997	qivv
 缼	999999	qivx
+欫	999998	qivx
 戚	999999	qivy
 慽	999998	qivy
 邔	999997	qivy
@@ -14503,7 +14472,7 @@ QQ音乐	999999	qqyy
 裠	999999	qyps
 群	999999	qypu
 人	999999	r	rf
-）	999998	r	of
+）	999998	r
 人不犯我，我不犯人	999999	rbfr
 人不可貌相，海水不可斗量	999999	rbkl
 人不人，鬼不鬼	999998	rbrg
@@ -14884,7 +14853,7 @@ QQ音乐	999999	qqyy
 腬	999997	rzzw
 所	999999	s	so
 ……	999998	s
-…	999997	s	of
+…	999997	s
 洒	999999	sa
 挲	999999	saa
 洒	999999	saae
@@ -15458,7 +15427,7 @@ san值狂掉	999999	svkd
 馊	999999	szwq
 櫢	999998	szwq
 他	999999	t	ta
-→	999998	t	of
+→	999998	t
 她	999999	ta
 溻	999999	taa
 涾	999999	taab
@@ -16650,10 +16619,10 @@ txt文件	999999	txtj
 覾	999995	ufjp
 穼	999998	ufjw
 邥	999998	ufjy
-什	999999	ufk
+伸	999999	ufk
 什	999999	ufkc
-伸	999999	ufkp
-侁	999998	ufkp
+侁	999999	ufkp
+伸	999998	ufkp
 敒	999999	ufkq
 肾	999999	ufl
 师傅领进门，修行靠个人	999999	uflr
@@ -17344,7 +17313,7 @@ https://api.ihint.me/shuang/	999997	ulpb
 夀	999998	uzpt
 膄	999999	uzzq
 这	999999	v	ve
-《	999998	v	of
+《	999998	v
 <	999997	v
 炸	999999	va
 渣	999999	vaa
@@ -18525,7 +18494,7 @@ https://api.ihint.me/shuang/	999997	ulpb
 粙	999999	vzzp
 肘	999999	vzzt
 我	999999	w	wo
-？	999998	w	of
+？	999998	w
 ¿	999997	w
 挖	999999	wa
 洼	999999	waa
@@ -19172,8 +19141,8 @@ Word	999999	word
 为渊驱鱼，为丛驱雀	999999	wyqq
 无源之水，无本之木	999999	wyvm
 小	999999	x	xn
-【	999998	x	of
-〔	999997	x	of
+【	999998	x
+〔	999997	x
 心	999999	xb
 辛	999999	xba
 辛	999999	xbaa
@@ -20300,9 +20269,9 @@ Word	999999	word
 墟	999999	xuqn
 垿	999999	xuqz
 顼	999999	xur
-珬	999999	xura
 顼	999999	xurj
 珝	999998	xuro
+珬	999999	xurp
 殈	999998	xurq
 絮	999999	xus
 絮	999999	xusi
@@ -20494,7 +20463,7 @@ magnet:?xt=urn:btih:	999998	xylw
 臐	999998	xyzd
 信则有，不信则无	999998	xzyw
 有	999999	y	yz
-·	999998	y	of
+·	999998	y
 呀	999999	ya
 涯	999999	yaa
 涯	999999	yaaq
@@ -21393,9 +21362,9 @@ magnet:?xt=urn:btih:	999998	xylw
 偃	999999	yjks
 芫	999999	yjm
 菸	999998	yjma
+葕	999997	yjma
 芫	999998	yjmp
 莚	999999	yjmq
-葕	999999	yjmt
 严	999999	yjn
 阏	999999	yjna
 阎	999999	yjnd
@@ -21465,6 +21434,7 @@ magnet:?xt=urn:btih:	999998	xylw
 恹	999999	yjvy
 验	999998	yjvy
 檐	999999	yjw
+椼	999999	yjwa
 櫩	999998	yjwd
 檐	999998	yjwf
 楌	999997	yjwf
@@ -21472,7 +21442,6 @@ magnet:?xt=urn:btih:	999998	xylw
 樮	999998	yjwp
 欕	999997	yjwq
 椻	999999	yjws
-椼	999997	yjwt
 研	999999	yjx
 硏	999999	yjxc
 砚	999999	yjxj
@@ -21732,13 +21701,13 @@ magnet:?xt=urn:btih:	999998	xylw
 庸	999999	ysc
 廱	999999	yscb
 鷛	999999	yscg
-庸	999999	yscr
 鄘	999998	yscy
 痈	999999	yscz
+庸	999998	yscz
 鳙	999999	ysd
-鳙	999999	ysdr
 鰫	999999	ysdt
 鲬	999998	ysdz
+鳙	999997	ysdz
 雍	999999	yse
 雍	999999	yseb
 壅	999999	yseq
@@ -21758,7 +21727,7 @@ magnet:?xt=urn:btih:	999998	xylw
 雝	999998	yslb
 邕	999999	yslv
 苚	999999	ysmz
-牅	999999	ysnl
+牅	999999	ysnz
 拥	999999	yso
 拥	999999	ysoz
 永	999999	ysp
@@ -21766,29 +21735,29 @@ magnet:?xt=urn:btih:	999998	xylw
 永	999999	yspp
 㶲	999999	yspz
 墉	999999	ysq
-墉	999998	ysqr
 埇	999999	ysqz
+墉	999998	ysqz
 郺	999998	ysrv
 踊	999999	yss
-嫞	999999	yssl
 踴	999999	yssp
 踊	999999	yssz
+嫞	999998	yssz
 咏	999999	yst
 噰	999999	ystb
 咏	999999	ystp
 喁	999999	ystq
 嗈	999999	ystv
 镛	999999	ysu
-镛	999999	ysur
+镛	999997	ysuz
 慵	999999	ysv
 愑	999999	ysvp
-慵	999999	ysvr
 愹	999999	ysvt
 悀	999998	ysvz
+慵	999997	ysvz
 栐	999999	ysw
-槦	999999	yswl
 栐	999999	yswp
 柡	999997	yswp
+槦	999999	yswz
 硧	999999	ysxz
 砽	999998	ysxz
 臃	999999	ysz

@@ -1,5 +1,5 @@
 name: yeying20_ci
-version: "2026.09.17"
+version: "2026.09.21"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -2112,8 +2112,8 @@ encoder:
 被代理人	999999	bdlr
 白龙	999999	bdls
 白葱	999998	bdls
-败露	999999	bdlu
-白鹭	999998	bdlu
+白鹭	999999	bdlu
+败露	999998	bdlu
 白露	999997	bdlu
 败类	999999	bdlw
 拜伦	999999	bdly
@@ -8175,6 +8175,7 @@ encoder:
 财运	999999	cdyy
 彩云	999998	cdyy
 菜油	999999	cdyz
+才有	999998	cdyz
 踩在	999999	cdzd
 采择	999999	cdze
 才子	999999	cdzi
@@ -12073,8 +12074,9 @@ encoder:
 当晚	999999	dhwj
 党务	999999	dhwu
 当午	999998	dhwu
-党委	999999	dhww
-挡位	999998	dhww
+档位	999999	dhww
+党委	999998	dhww
+挡位	999997	dhww
 当心	999999	dhxb
 断鹤续凫	999999	dhxf
 都很喜欢	999999	dhxh
@@ -19046,6 +19048,7 @@ encoder:
 犯境	999998	fjjk
 犯贱	999999	fjjm
 繁简	999998	fjjm
+凡间	999997	fjjm
 翻搅	999999	fjjn
 犯戒	999999	fjjp
 翻卷	999999	fjjr
@@ -20035,8 +20038,8 @@ encoder:
 夫君	999999	fujy
 逢十进一	999998	fujy
 反手可得	999999	fukd
-妇科	999999	fuke
-复刻	999998	fuke
+复刻	999999	fuke
+妇科	999998	fuke
 复垦	999999	fukf
 富康	999999	fukh
 乏善可陈	999999	fuki
@@ -38667,8 +38670,8 @@ encoder:
 家常豆腐	999999	jidf
 激荡	999999	jidh
 既当	999998	jidh
-几滴	999999	jidi
-基地	999998	jidi
+基地	999999	jidi
+几滴	999998	jidi
 极低	999997	jidi
 鸡蛋	999999	jidj
 忌惮	999997	jidj
@@ -38734,9 +38737,9 @@ encoder:
 击缶	999999	jifz
 极高	999999	jigc
 技改	999999	jigd
-及格	999999	jige
-鸡哥	999998	jige
-几个	999997	jige
+几个	999999	jige
+及格	999998	jige
+鸡哥	999997	jige
 几根	999999	jigf
 机耕	999999	jigg
 纪纲	999999	jigh
@@ -38808,8 +38811,8 @@ encoder:
 击穿	999999	jiir
 几重	999999	jiis
 急冲	999997	jiis
-几处	999999	jiiu
-基础	999998	jiiu
+基础	999999	jiiu
+几处	999998	jiiu
 寄出	999997	jiiu
 挤出	999996	jiiu
 经常出现	999998	jiix
@@ -38999,8 +39002,8 @@ encoder:
 击破	999998	jipo
 吉普	999999	jipu
 几顷	999999	jiqb
-几起	999999	jiqi
-机器	999998	jiqi
+机器	999999	jiqi
+几起	999998	jiqi
 极其	999997	jiqi
 及其	999996	jiqi
 激情	999999	jiqk
@@ -42815,8 +42818,9 @@ encoder:
 娇生惯养	999999	jugy
 技术过硬	999998	jugy
 军事工业	999997	jugy
-技术改造	999999	jugz
-搅屎棍子	999998	jugz
+巨构	999999	jugz
+技术改造	999998	jugz
+搅屎棍子	999997	jugz
 及时汇报	999999	juhb
 句号	999999	juhc
 聚合	999999	juhe
@@ -57756,9 +57760,9 @@ encoder:
 那头	999999	natz
 纳什	999999	nauf
 拿上	999999	nauh
-那时	999999	naui
-纳什	999998	naui
-那是	999997	naui
+那是	999999	naui
+那时	999998	naui
+纳什	999997	naui
 纳税	999999	nauv
 拿手	999999	nauz
 拿着	999999	nave
@@ -67288,9 +67292,10 @@ encoder:
 全胜	999998	qrug
 券商	999999	qruh
 确认收货	999998	qruh
-诠释	999999	qrui
-权势	999998	qrui
-全市	999997	qrui
+全是	999999	qrui
+诠释	999998	qrui
+权势	999997	qrui
+全市	999996	qrui
 劝说	999999	qruo
 全书	999999	qruu
 权术	999998	qruu
@@ -90334,8 +90339,8 @@ encoder:
 转业	999998	vrye
 沾染因果	999999	vryg
 中日友好	999999	vryh
-专一	999999	vryi
-转移	999998	vryi
+转移	999999	vryi
+专一	999998	vryi
 转义	999997	vryi
 转眼	999999	vryj
 专研	999998	vryj
@@ -95030,6 +95035,7 @@ encoder:
 莴苣	999998	woju
 我家	999999	wojx
 我军	999999	wojy
+我靠	999999	wokc
 我可	999999	woke
 蜗壳	999998	woke
 我看	999999	wokj
@@ -104851,6 +104857,7 @@ encoder:
 页岩	999998	yeyj
 野营	999999	yeyk
 夜莺	999998	yeyk
+夜桜	999997	yeyk
 养儿育女	999999	yeyn
 也用	999999	yeys
 夜用	999998	yeys
@@ -105630,8 +105637,8 @@ encoder:
 以便	999998	yibm
 一遍	999997	yibm
 仪表	999999	yibn
-衣钵	999999	yibo
-一波	999998	yibo
+一波	999999	yibo
+衣钵	999998	yibo
 一尘不染	999998	yibr
 一步	999999	yibu
 移步	999998	yibu
@@ -105709,9 +105716,9 @@ encoder:
 一二	999999	yier
 依法	999999	yifa
 已发	999998	yifa
-一分	999999	yiff
-义愤	999998	yiff
-一份	999997	yiff
+一份	999999	yiff
+一分	999998	yiff
+义愤	999997	yiff
 一封	999999	yifg
 遗风	999998	yifg
 以防	999999	yifh
@@ -109019,6 +109026,7 @@ encoder:
 移山倒海	999998	yudh
 余地	999999	yudi
 雨滴	999998	yudi
+玉帝	999997	yudi
 于丹	999999	yudj
 以水代酒	999998	yudj
 已是定局	999997	yudj
@@ -109518,6 +109526,7 @@ encoder:
 雨衣	999996	yuyi
 语言	999999	yuyj
 预言	999998	yuyj
+寓言	999997	yuyj
 育婴	999999	yuyk
 鱼鹰	999998	yuyk
 有史以来	999999	yuyl

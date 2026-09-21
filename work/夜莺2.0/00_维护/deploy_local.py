@@ -31,8 +31,18 @@ if stop:   # 完全脱钩启动：不继承本进程的输出管道，否则调�
 subprocess.run(['cmd', '/c', 'start', '', '/wait', 'WeaselDeployer.exe', '/deploy'], cwd=WEASEL)
 logs = sorted(glob.glob(os.environ['TEMP'] + '/rime.weasel/*.log'), key=os.path.getmtime)
 last = [l for l in open(logs[-1], encoding='utf-8', errors='replace') if 'finished updating schemas' in l]; print(last[-1].strip()[-60:] if last else '未找到部署结果')
-root = os.environ['LOCALAPPDATA'] + '/Tigirl'; dst = root + '/码表/夜莺2.0'
-for f in glob.glob(W + '/123_虎娘导入/夜莺2.0/*'): shutil.copy2(f, dst)
+root = os.environ['LOCALAPPDATA'] + '/Tigirl'
 imps = sorted(glob.glob('C:/Program Files/Tigirl/versions/*/x64/Tigirl.Import.exe'), key=os.path.getmtime)
-p = subprocess.run([imps[-1], '--update', dst.replace('/', '\\'), (root + '/拼音反查码表').replace('/', '\\'), root.replace('/', '\\'), '夜莺2.0', 'zh-CN'], capture_output=True)
-print('tigirl update exit: %d' % p.returncode)
+def tigirl(src, name, tag):
+    """--schema 建新方案，--update 更新已有；已注册过就走 update，免得清掉用户词频。"""
+    dst = root + '/码表/' + name; os.makedirs(dst, exist_ok=True)
+    for f in glob.glob(src + '/*'):
+        if os.path.isfile(f): shutil.copy2(f, dst)
+    mode = '--update' if os.path.isdir(root + '/schemas/' + name) else '--schema'
+    p = subprocess.run([imps[-1], mode, dst.replace('/', '\\'), (root + '/拼音反查码表').replace('/', '\\'),
+                        root.replace('/', '\\'), name, 'zh-CN'], capture_output=True)
+    print('tigirl %s exit: %d' % (tag, p.returncode))
+    return p.returncode
+tigirl(W + '/123_虎娘导入/夜莺2.0', '夜莺2.0', 'update')            # 日常用：字 + 词 + 简词
+tigirl(W + '/137_虎娘单字版/夜莺2.0单字', '夜莺2.0单字', '单字版')      # 练习用：纯单字，见 137/说明
+# 不动 config.txt 的「当前码表」——换哪个方案由你在虎娘里点

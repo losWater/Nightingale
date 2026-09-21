@@ -1,0 +1,277 @@
+<title>虎娘候选窗配色</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#F1F0ED; --card:#FAFAF8; --ink:#1B1D21; --mid:#4C525A; --mute:#787E87;
+  --rule:#DBD9D4; --rule2:#C6C3BC; --accent:#1C5E8C; --accent-soft:rgba(28,94,140,.12);
+  --chip:#E6E4DF; --ok:#3F7A52;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#15161A; --card:#1C1E23; --ink:#E7E8EB; --mid:#AAB0BA; --mute:#868C96;
+  --rule:#292C33; --rule2:#3A3E47; --accent:#77B3DC; --accent-soft:rgba(119,179,220,.16);
+  --chip:#262A31; --ok:#6FAE83;
+}}
+:root[data-theme="dark"]{
+  --paper:#15161A; --card:#1C1E23; --ink:#E7E8EB; --mid:#AAB0BA; --mute:#868C96;
+  --rule:#292C33; --rule2:#3A3E47; --accent:#77B3DC; --accent-soft:rgba(119,179,220,.16);
+  --chip:#262A31; --ok:#6FAE83;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased}
+.wrap{max-width:70rem; margin:0 auto; padding-block:2.6rem 4rem; padding-left:20px; padding-right:20px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+h1{font-family:"Noto Serif SC",Georgia,serif; font-weight:700; font-size:clamp(1.5rem,4vw,2.05rem);
+  margin:0 0 .5rem; letter-spacing:-.01em; text-wrap:balance}
+.lede{color:var(--mid); max-width:46rem; margin:0 0 .5rem}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--mute); margin-bottom:.8rem}
+
+.bar{position:sticky; top:env(safe-area-inset-top,0px); z-index:5; margin:1.8rem 0 1.4rem;
+  padding-block:.7rem; background:var(--paper); border-bottom:1px solid var(--rule);
+  display:flex; flex-wrap:wrap; gap:.7rem 1.4rem; align-items:center}
+.bar .lab{font-size:.78rem; color:var(--mute); letter-spacing:.04em}
+.seg{display:flex; flex-wrap:wrap; gap:4px; background:var(--chip); padding:3px; border-radius:6px}
+.seg button{font:inherit; font-size:.82rem; padding:.28rem .7rem; border:0; border-radius:4px;
+  background:none; color:var(--mid); cursor:pointer; white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--card); color:var(--ink); font-weight:600;
+  box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.seg button:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+
+h2{font-family:"Noto Serif SC",Georgia,serif; font-weight:600; font-size:1.12rem;
+  margin:2.4rem 0 .3rem; padding-top:1.3rem; border-top:1px solid var(--rule)}
+h2 .n{font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:400;
+  letter-spacing:.14em; color:var(--accent); display:block; margin-bottom:.4rem}
+.sub{color:var(--mute); font-size:.87rem; margin:0 0 1.3rem; max-width:46rem}
+
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(19rem,1fr)); gap:1.1rem}
+.card{background:var(--card); border:1px solid var(--rule); border-radius:8px; overflow:hidden;
+  display:flex; flex-direction:column}
+.stage{padding:1.6rem 1.1rem; display:flex; align-items:center; justify-content:center; min-height:9.2rem}
+.meta{padding:.8rem 1rem 1rem; border-top:1px solid var(--rule); display:flex; flex-direction:column; gap:.55rem}
+.nm{display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap}
+.nm b{font-family:"Noto Serif SC",Georgia,serif; font-size:1.02rem; font-weight:600}
+.tag{font-size:.68rem; letter-spacing:.06em; padding:.1rem .42rem; border-radius:3px;
+  background:var(--accent-soft); color:var(--accent); font-family:"IBM Plex Mono",monospace}
+.note{font-size:.82rem; color:var(--mid); line-height:1.6}
+.sw{display:flex; gap:.34rem; flex-wrap:wrap}
+.sw span{font-family:"IBM Plex Mono",monospace; font-size:.66rem; color:var(--mute);
+  display:inline-flex; align-items:center; gap:.3rem}
+.sw i{width:11px; height:11px; border-radius:2px; border:1px solid var(--rule2);
+  background-image:linear-gradient(45deg,#bbb 25%,transparent 25%,transparent 75%,#bbb 75%),
+    linear-gradient(45deg,#bbb 25%,transparent 25%,transparent 75%,#bbb 75%);
+  background-size:6px 6px; background-position:0 0,3px 3px; position:relative; flex:none}
+.sw i::after{content:""; position:absolute; inset:0; background:var(--c)}
+
+.cand{font-size:14px; line-height:1.5; white-space:nowrap; display:inline-block;
+  padding:7px 11px; position:relative; max-width:100%; overflow:hidden}
+.cand.retro{font-family:"SimSun","宋体","NSimSun",serif; font-size:15px; padding:5px 9px;
+  -webkit-font-smoothing:none}
+.cand .row{display:flex; gap:11px; align-items:baseline}
+.cand.retro .row{gap:9px}
+.cand .it{position:relative; padding:1px 4px; border-radius:3px}
+.cand.retro .it{border-radius:0; padding:1px 3px}
+.cand .it.on::before{content:""; position:absolute; inset:0; border-radius:inherit; background:var(--selbg)}
+.cand .it > *{position:relative}
+.cand .num{opacity:.62; margin-right:2px; font-family:"IBM Plex Mono",monospace; font-size:.86em}
+.cand.retro .num{opacity:1; font-family:inherit; font-size:1em}
+.cand .an{opacity:.74; font-size:.86em}
+
+pre{background:var(--chip); border:1px solid var(--rule); border-radius:6px; padding:.85rem 1rem;
+  overflow-x:auto; font-family:"IBM Plex Mono",monospace; font-size:.78rem; line-height:1.7; margin:1rem 0}
+.btn{font:inherit; font-size:.84rem; padding:.42rem .9rem; border:1px solid var(--rule2);
+  border-radius:5px; background:var(--card); color:var(--ink); cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.done{color:var(--ok); font-size:.82rem; margin-left:.6rem}
+.tw{overflow-x:auto; border:1px solid var(--rule); border-radius:6px; margin:1rem 0; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-size:.84rem; min-width:26rem}
+th,td{padding:.45rem .75rem; text-align:left; border-bottom:1px solid var(--rule); white-space:nowrap}
+th{font-size:.73rem; color:var(--mute); font-weight:600; background:var(--paper)}
+tbody tr:last-child td{border-bottom:0}
+td.m{font-family:"IBM Plex Mono",monospace; font-size:.92em}
+.panel{background:var(--card); border:1px solid var(--rule); border-left:3px solid var(--accent);
+  border-radius:0 6px 6px 0; padding:1rem 1.15rem; margin:1.2rem 0}
+.panel p:last-child{margin-bottom:0}
+.panel p{margin:0 0 .7rem}
+footer{margin-top:2.6rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+  color:var(--mute); font-size:.82rem}
+@media (max-width:440px){.wrap{padding-left:16px; padding-right:16px} .stage{padding:1.2rem .7rem}}
+</style>
+
+<div class="wrap">
+
+<div class="eyebrow">Tigirl · CandidateTheme</div>
+<h1>虎娘候选窗配色</h1>
+<p class="lede">目标是把候选窗做成智能 ABC 那个年代的样子：Win9x 的系统灰、黑宋体、直角、藏蓝高亮。</p>
+<p class="lede">配色写死在 <span class="mono">native/CandidateTheme.cpp</span>，每个主题是四个 ARGB 加边框宽度和四角圆角。下面按真实数值渲染，九个内置主题一并列出作对照。</p>
+
+<div class="bar">
+  <span class="lab">桌面底色</span>
+  <div class="seg" id="bg" role="group" aria-label="桌面底色">
+    <button type="button" id="bg-doc" data-k="doc" aria-pressed="true">浅色文档</button>
+    <button type="button" id="bg-win" data-k="win" aria-pressed="false">Win98 桌面</button>
+    <button type="button" id="bg-ide" data-k="ide" aria-pressed="false">深色编辑器</button>
+    <button type="button" id="bg-grey" data-k="grey" aria-pressed="false">中灰</button>
+  </div>
+  <span class="lab">候选内容</span>
+  <div class="seg" id="ct" role="group" aria-label="候选内容">
+    <button type="button" id="ct-full" data-k="full" aria-pressed="true">带拆分注释</button>
+    <button type="button" id="ct-plain" data-k="plain" aria-pressed="false">纯候选</button>
+  </div>
+</div>
+
+<h2><span class="n">提案 · 复古</span>智能 ABC</h2>
+<p class="sub">第一版已选定，另外两版留作对照。直角是这套风格最要紧的一处——九个内置主题全是圆角，圆角一去掉，年代感立刻就出来了。Win95 那种左上白、右下深灰的双色立体边做不了，主题只给一个边框色和一个宽度，所以用单色边近似。</p>
+<div class="grid" id="mine"></div>
+
+<h2><span class="n">不用等作者</span>字体那一半现在就能改</h2>
+<p class="sub">复古感有一半来自字体，而字体是 config.txt 的普通设置项，跟主题无关。把下面几行写进去，今天就能拿到大半效果。</p>
+<div class="panel">
+  <p><strong>在虎娘的「输入设置」里改，或者直接编辑 <span class="mono">%LOCALAPPDATA%\Tigirl\config.txt</span>：</strong></p>
+</div>
+<pre id="cfg"></pre>
+<p class="sub">在作者加入新主题之前，九个内置里最接近的是<strong>「纸」</strong>：黑字、暖白底、灰边，只差一个直角和那身系统灰。配上宋体 12 已经很像了。</p>
+
+<h2><span class="n">内置 · 9 个</span>现有主题</h2>
+<p class="sub">数值直接取自仓库源码，未作改动。你现在用的是「赛博朋克」。</p>
+<div class="grid" id="stock"></div>
+
+<h2><span class="n">改动</span>只加选定的那一个</h2>
+<p class="sub">主题是编译期写死的，运行时填未知名字会退回「默认」，所以得改源码。下面只加选定的「智能ABC」一个主题，两处各改一行——一次只加一个，比一次塞三个好审得多。</p>
+<pre id="patch"></pre>
+<button class="btn" type="button" id="copy">复制这段改动</button><span class="done" id="copied" hidden>已复制</span>
+
+<div class="tw"><table>
+  <thead><tr><th>字段</th><th>含义</th><th>这套复古配色怎么用它</th></tr></thead>
+  <tbody>
+    <tr><td class="m">foreground</td><td>候选文字</td><td>纯黑，不留透明度</td></tr>
+    <tr><td class="m">background</td><td>窗口底</td><td>Win9x 系统灰 #C0C0C0，不透明</td></tr>
+    <tr><td class="m">border</td><td>描边</td><td>单色，近似立体边的暗侧</td></tr>
+    <tr><td class="m">selection</td><td>选中块</td><td>藏蓝 #000080；这里用 0x66 而不是惯例的 0x48，见下方说明</td></tr>
+    <tr><td class="m">borderWidth</td><td>边框宽</td><td>2 像素，接近当年立体边的厚度</td></tr>
+    <tr><td class="m">corners</td><td>四角圆角</td><td>全 0，直角</td></tr>
+  </tbody>
+</table></div>
+
+<div class="panel">
+  <p><strong>一处偏离惯例，提 PR 时要说明。</strong>九个内置主题的选中色一律是「前景色 + 0x48」。这套复古配色的选中色不跟前景走，用的是独立的藏蓝 <span class="mono">#000080</span>，因为那抹藏蓝正是当年最认得出的信号。</p>
+  <p>透明度提到 0x66 是为了让它在灰底上看得清；再高黑字就压不住了。文字是叠在选中块之上画的，所以这两个值要一起看。</p>
+</div>
+
+<footer>渲染按 CandidateTheme 的字段直接映射到 CSS，用于比选配色；真实渲染走分层窗口与预乘 BGRA 合成，边缘抗锯齿会略有差别。候选行内容取自夜莺 2.0 开启「显示拆分」时的实际显示。宋体预览效果取决于本机是否装有该字体。</footer>
+
+</div>
+
+<script>
+(function(){
+  var STOCK=[
+    {n:'默认',fg:0xff000000,bg:0xfffff8f3,bd:0xff1a7b6b,sel:0x48000000,bw:1.25,r:[5,5,5,5]},
+    {n:'通透',fg:0xff2277ee,bg:0x00000000,bd:0x00000000,sel:0x482277ee,bw:1.25,r:[5,5,5,5]},
+    {n:'一般通透',fg:0xff2277ee,bg:0x1a000000,bd:0x00000000,sel:0x482277ee,bw:1.25,r:[5,5,5,5]},
+    {n:'迷雾',fg:0xffd9d9d9,bg:0xff2f2f2f,bd:0xff5a5a5a,sel:0x48d9d9d9,bw:1.25,r:[5,5,5,5]},
+    {n:'星夜',fg:0xffffdc6a,bg:0xff232b39,bd:0xff3a6b9b,sel:0x48ffdc6a,bw:1.25,r:[5,5,5,5]},
+    {n:'纸',fg:0xff111111,bg:0xfff5f2e8,bd:0xffa8a09d,sel:0x48111111,bw:1.3,r:[5,5,5,5]},
+    {n:'粉',fg:0xff000000,bg:0xfffdf9f5,bd:0xffdeacac,sel:0x48000000,bw:1.25,r:[5,5,5,5]},
+    {n:'赛博朋克',fg:0xff71e4fd,bg:0x88001122,bd:0xfff651fc,sel:0x4871e4fd,bw:1.5,r:[10,0,10,0]},
+    {n:'清晨',fg:0xff303030,bg:0xfffdfdff,bd:0xff56a1dd,sel:0x48303030,bw:1.25,r:[5,5,5,5]}
+  ];
+  var MINE=[
+    {n:'智能ABC',fg:0xff000000,bg:0xffc0c0c0,bd:0xff808080,sel:0x66000080,bw:2,r:[0,0,0,0],retro:1,pick:1,
+     note:'最正的一版，已选定。系统灰底、黑字、直角，边框用立体边的暗侧灰。放在任何底色上都是那个年代的窗口。'},
+    {n:'智能ABC·提示条',fg:0xff000000,bg:0xffffffe1,bd:0xff000000,sel:0x66000080,bw:1,r:[0,0,0,0],retro:1,
+     note:'走当年提示框那一路：奶油黄底配一像素黑边。比系统灰轻快，在深色底上尤其跳。'},
+    {n:'智能ABC·蓝框',fg:0xff000000,bg:0xffc0c0c0,bd:0xff000080,sel:0x66000080,bw:2,r:[0,0,0,0],retro:1,
+     note:'灰底不变，边框换成标题栏那抹藏蓝，和选中色呼应。三版里最有精神的一个。'}
+  ];
+  var BG={doc:'#ffffff', win:'#008080', ide:'#1e2127', grey:'#8a8d93'};
+  function css(v){
+    var a=((v>>>24)&255)/255,r=(v>>>16)&255,g=(v>>>8)&255,b=v&255;
+    return 'rgba('+r+','+g+','+b+','+(Math.round(a*1000)/1000)+')';
+  }
+  function hex(v){ return '0x'+('00000000'+(v>>>0).toString(16)).slice(-8); }
+  var state={bg:'doc',ct:'full'};
+  function cand(){
+    var full=state.ct==='full';
+    var items=full
+      ? [['1','对','〔又·寸 duì 基本〕'],['2','队',''],['3','兑',''],['4','怼','']]
+      : [['1','对',''],['2','队',''],['3','兑',''],['4','怼',''],['5','镦','']];
+    var html='<div class="row">';
+    items.forEach(function(it,i){
+      html+='<span class="it'+(i===0?' on':'')+'"><span class="num">'+it[0]+'</span>'+
+        '<span>'+it[1]+'</span>'+(it[2]?'<span class="an"> '+it[2]+'</span>':'')+'</span>';
+    });
+    return html+'</div>';
+  }
+  function card(t,tag){
+    var d=document.createElement('div'); d.className='card';
+    var stage=document.createElement('div'); stage.className='stage';
+    stage.style.background=BG[state.bg];
+    var win=document.createElement('div'); win.className='cand'+(t.retro?' retro':'');
+    win.style.background=css(t.bg);
+    win.style.color=css(t.fg);
+    win.style.border=t.bw+'px solid '+css(t.bd);
+    win.style.borderRadius=t.r[0]+'px '+t.r[1]+'px '+t.r[2]+'px '+t.r[3]+'px';
+    win.style.setProperty('--selbg',css(t.sel));
+    win.innerHTML=cand();
+    stage.appendChild(win);
+    var meta=document.createElement('div'); meta.className='meta';
+    var sw=[['前景',t.fg],['背景',t.bg],['边框',t.bd],['选中',t.sel]].map(function(p){
+      return '<span><i style="--c:'+css(p[1])+'"></i>'+p[0]+' '+hex(p[1])+'</span>';
+    }).join('');
+    meta.innerHTML='<div class="nm"><b>'+t.n+'</b>'+(tag?'<span class="tag">'+tag+'</span>':'')+
+      '<span class="tag">边 '+t.bw+' · 角 '+t.r.join('/')+'</span></div>'+
+      (t.note?'<div class="note">'+t.note+'</div>':'')+
+      '<div class="sw">'+sw+'</div>';
+    d.appendChild(stage); d.appendChild(meta);
+    return d;
+  }
+  function draw(){
+    var a=document.getElementById('mine'), b=document.getElementById('stock');
+    a.innerHTML=''; b.innerHTML='';
+    MINE.forEach(function(t){ a.appendChild(card(t,t.pick?'已选定':'备选')); });
+    STOCK.forEach(function(t){ b.appendChild(card(t,t.n==='赛博朋克'?'你在用':'')); });
+  }
+  function wire(id,key){
+    var box=document.getElementById(id);
+    box.addEventListener('click',function(e){
+      var btn=e.target.closest('button'); if(!btn) return;
+      state[key]=btn.dataset.k;
+      Array.prototype.forEach.call(box.querySelectorAll('button'),function(x){
+        x.setAttribute('aria-pressed', x===btn ? 'true':'false');
+      });
+      draw();
+    });
+  }
+  wire('bg','bg'); wire('ct','ct');
+  document.getElementById('cfg').textContent=
+    '字体\t宋体\n字体大小\t12\n显示候选序号\t是\n竖排候选\t否\n候选窗动效\t否\n主题\t纸';
+  var P=MINE.filter(function(t){ return t.pick; })[0];
+  var patch='// native/CandidateTheme.h —— 名字表，9 改 10，末尾加一个名字\n'+
+    'inline constexpr std::array<std::u16string_view,10> candidateThemeNames=\n'+
+    '  {u"默认",u"通透",u"一般通透",u"迷雾",u"星夜",u"纸",u"粉",u"赛博朋克",u"清晨",u"智能ABC"};\n\n'+
+    '// native/CandidateTheme.cpp —— 调色板，同样 9 改 10，末尾追加一行\n'+
+    'static const std::array<CandidateTheme,10> themes={{\n'+
+    '    ... 原有九行不动 ...\n'+
+    '    {'+hex(P.fg)+','+hex(P.bg)+','+hex(P.bd)+','+hex(P.sel)+','+P.bw+
+      ',{'+P.r.join(',')+'}}   // 智能ABC\n}};';
+  document.getElementById('patch').textContent=patch;
+  document.getElementById('copy').addEventListener('click',function(){
+    var done=document.getElementById('copied');
+    function ok(){ done.hidden=false; setTimeout(function(){ done.hidden=true; },1800); }
+    function sel(){
+      var r=document.createRange(); r.selectNodeContents(document.getElementById('patch'));
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); ok();
+    }
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(patch).then(ok,sel);
+      } else sel();
+    }catch(e){ sel(); }
+  });
+  draw();
+})();
+</script>

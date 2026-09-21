@@ -1,0 +1,595 @@
+<title>键位热力的盲点</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#ECEEF1; --card:#F6F7F9; --ink:#171A1F; --mid:#4A5462; --mute:#6D7885;
+  --rule:#D2D7DE; --rule2:#BFC6CF;
+  --sp:#2F6690;   /* 双拼层 */
+  --rt:#B5551A;   /* 字根层 */
+  --sp-soft:rgba(47,102,144,.14); --rt-soft:rgba(181,85,26,.13);
+  --mark:#FBEBD2;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#13161A; --card:#1A1E24; --ink:#E3E7EB; --mid:#A9B3BE; --mute:#8A95A2;
+  --rule:#272D35; --rule2:#39424C;
+  --sp:#74ACD2; --rt:#DE8B4C;
+  --sp-soft:rgba(116,172,210,.18); --rt-soft:rgba(222,139,76,.16);
+  --mark:#3A2E1C;
+}}
+:root[data-theme="dark"]{
+  --paper:#13161A; --card:#1A1E24; --ink:#E3E7EB; --mid:#A9B3BE; --mute:#8A95A2;
+  --rule:#272D35; --rule2:#39424C;
+  --sp:#74ACD2; --rt:#DE8B4C;
+  --sp-soft:rgba(116,172,210,.18); --rt-soft:rgba(222,139,76,.16);
+  --mark:#3A2E1C;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink); margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+  font-size:16px; line-height:1.85; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:46rem; margin:0 auto; padding-block:0 5rem; padding-left:20px; padding-right:20px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace; font-variant-numeric:tabular-nums}
+code,kbd{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:.88em}
+code{background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:.05em .34em}
+
+/* ── 报头 ── */
+header.mast{padding-block:3.2rem 1.6rem; border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--mute); margin-bottom:1.1rem}
+h1{font-family:"Noto Serif SC",Georgia,serif; font-weight:700; font-size:clamp(1.75rem,5.4vw,2.6rem);
+  line-height:1.32; margin:0 0 .9rem; text-wrap:balance; letter-spacing:-.01em}
+h1 .sub{display:block; font-size:.58em; font-weight:600; color:var(--mid); margin-top:.5rem; line-height:1.5}
+.byline{font-size:.88rem; color:var(--mute); display:flex; flex-wrap:wrap; gap:.4rem 1rem; margin-top:1.2rem}
+
+/* ── 键盘图 ── */
+.kbfig{margin:2.4rem 0 0; padding:1.4rem 1rem 1.1rem; background:var(--card);
+  border:1px solid var(--rule); border-radius:4px}
+.kbfig .cap{font-size:.8rem; color:var(--mute); line-height:1.65; margin:0 0 1rem}
+.kbfig .cap b{color:var(--ink); font-weight:600}
+.kb{display:flex; flex-direction:column; gap:6px; align-items:center; overflow-x:auto; padding-bottom:4px}
+.kbrow{display:flex; gap:5px}
+.key{width:clamp(22px,5.4vw,34px); display:flex; flex-direction:column; align-items:center; gap:3px;
+  background:none; border:0; padding:0; cursor:pointer; color:inherit; font:inherit}
+.key .bars{width:100%; height:52px; display:flex; align-items:flex-end; justify-content:center; gap:2px}
+.key .bar{width:44%; border-radius:1px 1px 0 0; min-height:1px}
+.key .bar.s{background:var(--sp)}
+.key .bar.r{background:var(--rt)}
+.key .cap2{font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:600; color:var(--mid);
+  width:100%; text-align:center; border-top:1px solid var(--rule2); padding-top:3px}
+.key.hot .cap2{color:#fff; background:var(--rt); border-color:var(--rt); border-radius:0 0 2px 2px}
+.key:focus-visible{outline:2px solid var(--sp); outline-offset:2px}
+.legend{display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; justify-content:center; margin-top:.9rem;
+  font-size:.76rem; color:var(--mid)}
+.legend i{display:inline-block; width:10px; height:10px; border-radius:1px; margin-right:.4rem; vertical-align:-1px}
+#readout{margin-top:.8rem; text-align:center; font-size:.82rem; color:var(--mid); min-height:1.6em}
+#readout b{font-family:"IBM Plex Mono",monospace; color:var(--ink)}
+
+/* ── 正文 ── */
+section{padding-block:2.6rem 0}
+h2{font-family:"Noto Serif SC",Georgia,serif; font-weight:700; font-size:1.42rem; line-height:1.45;
+  margin:0 0 1.1rem; padding-top:1.6rem; border-top:1px solid var(--rule); text-wrap:balance}
+h2 .num{display:block; font-family:"IBM Plex Mono",monospace; font-size:.68rem; font-weight:400;
+  letter-spacing:.18em; color:var(--rt); margin-bottom:.55rem}
+h3{font-family:"Noto Serif SC",Georgia,serif; font-weight:600; font-size:1.08rem; line-height:1.5;
+  margin:2.2rem 0 .8rem; text-wrap:balance}
+h3 .n{font-family:"IBM Plex Mono",monospace; font-size:.85em; color:var(--rt); margin-right:.5em}
+p{margin:0 0 1.1rem}
+strong{font-weight:600}
+mark{background:var(--mark); color:inherit; padding:.05em .2em; border-radius:2px}
+blockquote{margin:1.3rem 0; padding:.1rem 0 .1rem 1.1rem; border-left:3px solid var(--rt);
+  color:var(--mid); font-size:.95rem}
+blockquote p:last-child{margin-bottom:0}
+ol,ul{margin:0 0 1.2rem; padding-left:1.4rem}
+li{margin-bottom:.55rem}
+li::marker{color:var(--mute); font-family:"IBM Plex Mono",monospace; font-size:.9em}
+pre{background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:.9rem 1rem;
+  overflow-x:auto; font-size:.82rem; line-height:1.75; margin:1.2rem 0}
+hr{border:0; border-top:1px solid var(--rule); margin:2.4rem 0}
+
+/* ── 表 ── */
+.tw{overflow-x:auto; margin:1.3rem 0; border:1px solid var(--rule); border-radius:4px; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-size:.86rem; min-width:min(100%,22rem)}
+th,td{padding:.52rem .8rem; text-align:left; border-bottom:1px solid var(--rule); white-space:nowrap}
+th{font-weight:600; font-size:.76rem; letter-spacing:.04em; color:var(--mute); background:var(--paper)}
+tbody tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums}
+tr.hi td{background:var(--rt-soft); font-weight:600}
+td .note{color:var(--mute); font-weight:400; font-size:.92em}
+.k{font-family:"IBM Plex Mono",monospace; font-weight:600}
+
+/* ── 论点条 ── */
+.thesis{background:var(--card); border:1px solid var(--rule); border-left:3px solid var(--rt);
+  border-radius:0 4px 4px 0; padding:1.1rem 1.2rem; margin:1.4rem 0; font-size:.97rem}
+.thesis p:last-child{margin-bottom:0}
+.verdict{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.68rem; font-weight:600;
+  letter-spacing:.1em; padding:.16rem .5rem; border-radius:2px; margin-bottom:.6rem}
+.verdict.yes{background:var(--sp-soft); color:var(--sp)}
+.verdict.no{background:var(--rt-soft); color:var(--rt)}
+footer{margin-top:3rem; padding-top:1.4rem; border-top:1px solid var(--rule);
+  font-size:.82rem; color:var(--mute)}
+@media (prefers-reduced-motion:no-preference){.key .bar{transition:opacity .15s}}
+.key:hover .bar{opacity:.72}
+@media (max-width:460px){body{font-size:15px} .wrap{padding-left:16px; padding-right:16px}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">夜莺 2.0 · 实测报告</div>
+  <h1>键位热力的盲点
+    <span class="sub">避重目标如何系统性地把高频字根推向双拼冷门键</span>
+  </h1>
+  <div class="byline">
+    <span>2026 年 9 月 17 日</span>
+    <span>字频口径：形码盒子 1.0 六千字 · 打简</span>
+  </div>
+</header>
+
+<figure class="kbfig">
+  <p class="cap"><b>同一副键盘，两种量法。</b>上面这层是键位热力（这个字母一共被按了多少次），下面这层是字根量（它在第三、四码位扛了多少）。点一个键看具体数字。</p>
+  <div class="kb" id="kb"></div>
+  <div class="legend">
+    <span><i style="background:var(--sp)"></i>键位热力（全部码位）</span>
+    <span><i style="background:var(--rt)"></i>字根量（第 3、4 位）</span>
+  </div>
+  <div id="readout">p　键位热力 <b>2.34%</b> 第 25 名　　字根量 <b>6.81%</b> 第 2 名</div>
+</figure>
+
+<section>
+  <h2><span class="num">零</span>一句话</h2>
+  <p><strong>我们一直用「键位热力」判断某个键忙不忙，但这个指标在音形码上是失真的。</strong>它把双拼两码和字根两码混在一起算，于是双拼用得少的键看起来很闲，实际上字根层的负担可能是全键盘最重的。更麻烦的是，这不是偶然误差：退火的避重目标会<strong>主动</strong>把高频字根往这些键上推。</p>
+  <p>夜莺 2.0 的 <code>p</code> 键就是活例子。按键位热力它排倒数第二，按字根量它排第二。而且这不是某一版的偶然：1.0 和 2.0 的 <code>p</code> 上装的根几乎完全不同，但都是「末根大户」。</p>
+  <div class="thesis">
+    <span class="verdict yes">结论边界</span>
+    <p>本文查到最后，问题落在<strong>报告口径</strong>上，不在目标函数上，也不在 2.0 的布局上。3.8 的反事实模拟显示现行布局已接近局部最优，3.9 显示这份「负担」找不到对应的物理代价。所以这篇文章不是在说夜莺 2.0 有毛病要修，而是在说<strong>我们看方案的那张报表少了一层</strong>。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">一</span>现象：p 键的两个矛盾数字</h2>
+  <p>事情起于群里的一句话。有人注意到，夜莺把一些很常见的部首放在了 <code>p</code>、<code>q</code>、<code>a</code>、<code>z</code> 这类键上，而这些键的使用率统计都很低。他追问了一句：</p>
+  <blockquote><p>这个频率被这个常用偏旁独占了嘛？再加个权呢？</p></blockquote>
+  <p>意思是：如果 <code>p</code> 键的量全部来自某一个根，那这个根的实际使用率其实很高，只是被「键位使用率低」的表象掩盖了。</p>
+  <p>把两个口径分开算，得到这样一组数：</p>
+  <div class="tw"><table>
+    <thead><tr><th>口径</th><th class="n">p 的占比</th><th class="n">全键盘名次</th></tr></thead>
+    <tbody>
+      <tr><td>键位热力（全部按键）</td><td class="n">2.34%</td><td class="n">第 25</td></tr>
+      <tr class="hi"><td>字根量（第三、四位）</td><td class="n">6.81%</td><td class="n">第 2</td></tr>
+      <tr><td>全码第 3 位</td><td class="n">10.6%</td><td class="n">第 1</td></tr>
+      <tr><td>全码第 4 位</td><td class="n">15.9%</td><td class="n">第 1</td></tr>
+    </tbody>
+  </table></div>
+  <p>同一个键，一个指标说它倒数第二，另一个说它全键盘第一。</p>
+  <p>差异从哪来？夜莺的编码是「双拼两码 + 首根键 + 末根键」。键位热力把四个位置一锅算，而 <code>p</code> 在小鹤双拼里只承担 ie 这一个韵母，双拼层几乎不用（双拼量 1.20%，全键盘最低）。四个位置里有两个几乎不出力，总量自然被拉到倒数。</p>
+  <p>反过来看 <code>i</code> 键：键位热力 8.27% 排第一，字根量只有 2.04% 排第 24。它的量几乎全部来自双拼。</p>
+  <div class="thesis"><p><strong>键位热力测的是「这个字母被按了多少次」，而我们真正关心的「这个键在字根层扛了多少」，是另一回事。</strong></p></div>
+</section>
+
+<section>
+  <h2><span class="num">二</span>成因：避重的量纲压过手感</h2>
+  <p>现象确认之后，我把因果链理了一遍：</p>
+  <blockquote>
+    <p>我的字词避重算法是，让字根绕过那些高频的双拼按键组合。那么 p 作为一个只有 ie 音的键，为了字词避重，自然会倾向于把高频根往这些冷门音上加。</p>
+    <p>假设 abxp 是一个字的全码，同时 abxp 可能还是另一组词的全码。因为 p 只有 ie 这个音，所以 p 会承担大量的末根使用点，因为 p 作为韵母没人用。而字的全码的末根确实会拆碎，所以 p 这个位置，就天然喜欢加笔画根。</p>
+  </blockquote>
+  <p>拆开说是四步：</p>
+  <ol>
+    <li>退火的目标函数里，字词避重是一个<strong>带权的软惩罚项</strong>——撞得越多扣分越多，不是撞了就判死。（我最初写的是「硬约束」，这是个错误，3.9 有更正与实据。）</li>
+    <li>词的编码由双拼决定。高频双拼组合（如 <code>di</code>、<code>ui</code>、<code>ji</code>）被大量词占据，字根若落在这些键上，全码更容易和词撞。</li>
+    <li>双拼冷门的键成了<strong>安全区</strong>：<code>p</code> 开头或结尾的四码组合，本来就很少被词占用。算法把字根往这儿放，避重压力最小。</li>
+    <li>末根位尤其如此。首根多少还受字形起笔的限制，末根则是「剩下什么算什么」，自由度最大。于是双拼冷门键成了末根的去处。（我当时的说法是「p 天然喜欢加笔画根」，实测下来这个方向对，但范围比笔画更宽——准确的说法是「吸末根大户」，详见 3.5。）</li>
+  </ol>
+  <p>这条链子的关键不在软硬，而在<strong>量纲</strong>。</p>
+  <p>搬一组根到双拼热门键，撞词的变化以「上百个词位」计（3.8 实测：搬到 <code>i</code> 多撞 160，搬到 <code>u</code> 多撞 219）；而手感的变化以「千分之一当量」计（同样两步，−0.0019 和 −0.0018）。两个数放进同一个求和式，<strong>避重那一侧天然大出两三个数量级</strong>。</p>
+  <div class="thesis"><p>所以算法把字根往双拼冷门键上堆，不是因为手感没被计价——它被计价了——而是因为它在总分里的分量根本掀不动避重。<mark>这是一个量纲问题，不是一个遗漏问题。</mark></p></div>
+</section>
+
+<section>
+  <h2><span class="num">三</span>验证</h2>
+
+  <h3><span class="n">3.1</span>双拼量与字根量呈负相关</h3>
+  <p>前 1500 字，键级相关系数：</p>
+  <div class="tw"><table>
+    <tbody>
+      <tr class="hi"><td>双拼量 × 字根总量</td><td class="n">−0.502</td></tr>
+      <tr><td>双拼量 × 首根量</td><td class="n">−0.469</td></tr>
+      <tr><td>双拼量 × 末根量</td><td class="n">−0.312</td></tr>
+    </tbody>
+  </table></div>
+  <p>按双拼量从低到高排，头尾对照很清楚：</p>
+  <div class="tw"><table>
+    <thead><tr><th>键</th><th class="n">双拼量</th><th class="n">字根量</th><th></th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">p</td><td class="n">1.20%</td><td class="n">6.81%</td><td><span class="note">双拼最冷，字根第二重</span></td></tr>
+      <tr><td class="k">o</td><td class="n">1.87%</td><td class="n">3.24%</td><td></td></tr>
+      <tr><td class="k">a</td><td class="n">2.00%</td><td class="n">4.37%</td><td></td></tr>
+      <tr><td class="k">q</td><td class="n">2.03%</td><td class="n">5.22%</td><td></td></tr>
+      <tr><td class="k">n</td><td class="n">2.09%</td><td class="n">5.56%</td><td></td></tr>
+      <tr><td class="k">…</td><td class="n"></td><td class="n"></td><td></td></tr>
+      <tr><td class="k">d</td><td class="n">7.56%</td><td class="n">2.29%</td><td></td></tr>
+      <tr><td class="k">u</td><td class="n">8.18%</td><td class="n">0.69%</td><td><span class="note">字根量全键盘最低</span></td></tr>
+      <tr><td class="k">i</td><td class="n">9.86%</td><td class="n">2.04%</td><td><span class="note">双拼最热，字根倒数第三</span></td></tr>
+    </tbody>
+  </table></div>
+  <p>−0.502 不算强相关，但方向明确，而且两端的极值完全吻合预测。</p>
+
+  <h3><span class="n">3.2</span>不是长尾堆出来的</h3>
+  <p>有人会问：<code>p</code> 上挂了 41 个根形，字根量大会不会只是根多、每个都不重？</p>
+  <p>我们对每个键只取使用量前 50% 和前 30% 的根（四舍五入，至少保留一个），重新排名：</p>
+  <div class="tw"><table>
+    <thead><tr><th>键</th><th class="n">全部根</th><th class="n">前 50%</th><th class="n">前 30%</th><th class="n">名次变动</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">p</td><td class="n">6.81% 第 2</td><td class="n">6.79% 第 2</td><td class="n">6.50% 第 2</td><td class="n">0</td></tr>
+      <tr><td class="k">k</td><td class="n">7.27% 第 1</td><td class="n">7.90% 第 1</td><td class="n">9.35% 第 1</td><td class="n">0</td></tr>
+      <tr><td class="k">c</td><td class="n">5.81% 第 4</td><td class="n">5.66% 第 5</td><td class="n">4.60% 第 9</td><td class="n">−5</td></tr>
+      <tr><td class="k">v</td><td class="n">4.80% 第 8</td><td class="n">3.93% 第 12</td><td class="n">3.36% 第 15</td><td class="n">−7</td></tr>
+      <tr><td class="k">a</td><td class="n">4.37% 第 12</td><td class="n">4.78% 第 7</td><td class="n">5.24% 第 6</td><td class="n">+6</td></tr>
+      <tr><td class="k">o</td><td class="n">3.24% 第 15</td><td class="n">3.47% 第 14</td><td class="n">4.10% 第 11</td><td class="n">+4</td></tr>
+    </tbody>
+  </table></div>
+  <p>砍掉 70% 的长尾根，<code>p</code> 仍是第 2，量只从 6.81% 掉到 6.50%。它的头部九个根是「子、一、横、力、田、二、由、果、身」，其中六个在全局四百零三个根形里排前六十。</p>
+  <p>对照组 <code>v</code> 掉了七位，它才是真正的长尾型——量靠一堆中低频根凑。而 <code>a</code>、<code>o</code> 升了六位和四位，那是「单根独大」：<code>a</code> 的 67% 来自氵，<code>o</code> 的 89% 来自扌。</p>
+  <div class="thesis"><p><code>p</code> 是全键盘唯一一个「多个高频根挤在同一个键」的情况。</p></div>
+
+  <h3><span class="n">3.3</span>一个必须纠正的推断</h3>
+  <p>写到这里，一个顺理成章的推论是：<code>p</code> 在右手小指上排，本来就难按，高频根堆在那里会伤手感。</p>
+  <p><strong>这个推论不成立。</strong>按当量表算，<code>p</code> 的固有难度是 1.3077，二十六个键里排第 22，比 <code>x</code>（1.5538）、<code>c</code>（1.5231）、<code>z</code>（1.5231）好按得多。</p>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>键的固有难度 × 双拼量</td><td class="n">−0.285</td></tr>
+      <tr><td>键的固有难度 × 字根总量</td><td class="n">−0.119 <span class="note">几乎无关</span></td></tr>
+      <tr class="hi"><td>键的固有难度 × 末根量</td><td class="n">+0.304</td></tr>
+    </tbody>
+  </table></div>
+  <p>所以准确的说法是：<strong>字根总量和键的难易无关，但末根确实倾向于落在难按的键上。</strong></p>
+  <p>这个纠正让结论更可靠，也更值得注意：问题不在「高频根被塞进了烂位置」，而在「我们的评估指标看不见字根层，所以无从判断这个位置好不好」。</p>
+
+  <h3><span class="n">3.4</span>代价在「那一跳」上</h3>
+  <p>进一步按击键当量加权——代价 = 进入该键的击键对当量 × 该位的量：</p>
+  <div class="tw"><table>
+    <thead><tr><th>键</th><th class="n">字根量</th><th class="n">代价占比</th><th class="n">代价量比</th></tr></thead>
+    <tbody>
+      <tr><td class="k">y</td><td class="n">3.07%</td><td class="n">3.29%</td><td class="n">1.071</td></tr>
+      <tr class="hi"><td class="k">p</td><td class="n">6.81%</td><td class="n">7.22%</td><td class="n">1.062</td></tr>
+      <tr><td class="k">x</td><td class="n">2.24%</td><td class="n">2.35%</td><td class="n">1.053</td></tr>
+      <tr><td class="k">…</td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
+      <tr><td class="k">f</td><td class="n">3.57%</td><td class="n">3.30%</td><td class="n">0.927</td></tr>
+      <tr><td class="k">r</td><td class="n">5.31%</td><td class="n">4.85%</td><td class="n">0.913</td></tr>
+    </tbody>
+  </table></div>
+  <p><code>p</code> 的代价量比 1.062，排第二费力。但如前所述，这不是因为 <code>p</code> 本身难按，而是<strong>从前一个键移动到 <code>p</code> 的那一跳贵</strong>。<code>y</code> 的比值更高（1.071），但它字根量只有 3.07%，总代价远不如 <code>p</code>。</p>
+  <p>最省力的字根键是 <code>r</code>（0.913），字根量 5.31% 只花 4.85% 的代价。看上去 <code>r</code> 是给 <code>p</code> 卸担子的现成去处——<strong>但这个推断经不起模拟，3.8 会把它推翻。</strong></p>
+
+  <h3><span class="n">3.5</span>被推走的不是笔画根，是末根</h3>
+  <p>在成因那一节，我的原话是「p 天然喜欢加笔画根」。把两代对照起来看，这个方向是对的，但覆盖面要往外推一层。</p>
+  <p>给每个根定义一个<strong>末根倾向</strong>：它作为末根被敲的量，除以作为首根与末根的总量。辶、卩、阝 这类在书写顺序里必然靠后的根，倾向应接近 1；亻、氵、扌 这类必然靠前的偏旁，应接近 0。</p>
+  <p>1.0 的 <code>p</code> 键上，除了母、田、力，还有辶（走之）和卩（打耳）。查下来：</p>
+  <div class="tw"><table>
+    <thead><tr><th>根</th><th class="n">末根倾向</th><th class="n">1.0 的键</th><th class="n">2.0 的键</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>辶</td><td class="n">1.000</td><td class="n">p</td><td class="n">q</td></tr>
+      <tr class="hi"><td>卩</td><td class="n">1.000</td><td class="n">p</td><td class="n">y</td></tr>
+      <tr><td>母</td><td class="n">0.877</td><td class="n">p</td><td class="n">i</td></tr>
+      <tr><td>力</td><td class="n">0.693</td><td class="n">p</td><td class="n">p</td></tr>
+      <tr><td>田</td><td class="n">0.556</td><td class="n">p</td><td class="n">p</td></tr>
+    </tbody>
+  </table></div>
+  <p>辶和卩是纯末根，一次都不当首根。它们在 2.0 里被挪走了，但接盘的 <code>q</code> 和 <code>y</code> 同样是末根大户——各键的加权平均末根倾向里，<code>q</code> 排第二（0.721），<code>y</code> 排第五（0.647）。</p>
+  <p>再看 2.0 的 <code>p</code> 上换进来的是什么：</p>
+  <div class="tw"><table>
+    <thead><tr><th>根</th><th class="n">末根倾向</th><th class="n">占全局字根量</th></tr></thead>
+    <tbody>
+      <tr><td>灬</td><td class="n">1.000</td><td class="n">0.30%</td></tr>
+      <tr><td>儿</td><td class="n">0.922</td><td class="n">0.69%</td></tr>
+      <tr><td>㐅</td><td class="n">0.917</td><td class="n">0.54%</td></tr>
+      <tr><td>争字底</td><td class="n">0.852</td><td class="n">0.22%</td></tr>
+      <tr><td>里</td><td class="n">0.721</td><td class="n">0.54%</td></tr>
+      <tr><td>子</td><td class="n">0.713</td><td class="n">0.73%</td></tr>
+      <tr><td>力</td><td class="n">0.693</td><td class="n">0.68%</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>所以两代 <code>p</code> 的共性不止是「笔画根」，更是「末根大户」。</strong>1.0 装的是辶、卩、母这批结构性末根，2.0 换成灬、儿、㐅、横这批笔画性末根。具体的根换了，末根的性质没换。笔画根末根倾向高（灬 1.000、㐅 0.917），所以「笔画容易当末笔」这个判断成立；它只是更大规律里的一个子集——辶、卩 这些非笔画的结构性末根同样是 1.000，同样被吸过去。</p>
+  <p>把各键按加权平均末根倾向排序，再对照它们的双拼量。下表的字根量是全码口径：每个字都按四码算首末两根，不看打简，只用于键与键之间横向比较。</p>
+  <div class="tw"><table>
+    <thead><tr><th>键</th><th class="n">末根倾向</th><th class="n">双拼量名次</th><th class="n">字根量（全码口径）</th></tr></thead>
+    <tbody>
+      <tr><td class="k">t</td><td class="n">0.733</td><td class="n">第 20</td><td class="n">7.51%</td></tr>
+      <tr><td class="k">q</td><td class="n">0.721</td><td class="n">第 23</td><td class="n">6.97%</td></tr>
+      <tr><td class="k">z</td><td class="n">0.671</td><td class="n">第 13</td><td class="n">2.22%</td></tr>
+      <tr><td class="k">h</td><td class="n">0.654</td><td class="n">第 6</td><td class="n">2.84%</td></tr>
+      <tr><td class="k">y</td><td class="n">0.647</td><td class="n">第 5</td><td class="n">4.48%</td></tr>
+      <tr><td class="k">a</td><td class="n">0.622</td><td class="n">第 24</td><td class="n">4.43%</td></tr>
+      <tr class="hi"><td class="k">p</td><td class="n">0.606</td><td class="n">第 26</td><td class="n">13.03%</td></tr>
+    </tbody>
+  </table></div>
+  <p>末根倾向最高的七个键里，除 <code>h</code>、<code>y</code> 外全在双拼冷门区。而 <code>p</code> 虽然倾向只排第 9，字根量却是第二名的近两倍——<strong>它是「末根倾向偏高」与「字根量最大」这两件事的唯一交集</strong>。</p>
+  <div class="thesis"><p>算法推走的不是某一类字形，而是某一类<strong>位置属性</strong>。末根是四个位置里自由度最大的——首根受字形起笔约束，末根则是「剩下什么算什么」，最容易被拿去填避重的坑。</p></div>
+
+  <h3><span class="n">3.6</span>两代之间的漂移</h3>
+  <p>1.0 和 2.0 的 <code>p</code> 键内容对照：</p>
+<pre>1.0 的 p（12 个根）
+  母 辶 鬼 变字头 卩 田 十 力 古 束 丘 耂
+
+2.0 的 p（41 个根）
+  㐅 一 三 丌 不 为 乂 了 争字底 二 互 互中间 儿 兀
+  兼 力 办 子 彐 彑 录字头 敖左 果 横 水 永 氺 火 灬
+  田 由 甲 申 电 聿 肀 莫 身 里 鬼 黽</pre>
+  <p>从十二个涨到四十一个，而且 2.0 吸进了「横、一、二、三、乂、丨」这一批笔画与准笔画根——1.0 的 <code>p</code> 上一个笔画根都没有（撇在 <code>e</code> 键）。</p>
+  <p>两代用的是同一套退火框架、同一个避重约束，只是字频和参数有别。<code>p</code> 的负担在两代之间单调加重，符合「避重压力持续把字根往安全区推」的预期。</p>
+
+  <h3><span class="n">3.7</span>两条反驳，一条成立一条不成立</h3>
+  <p>这个结论抛到群里之后，收到两条反驳。都值得认真算一遍。</p>
+
+  <div class="thesis">
+    <span class="verdict yes">反驳一 · 前提成立</span>
+    <p>夜莺字根多，拆笔画的情况本来就没那么多，笔画落到 <code>p</code> 并没有问题。</p>
+  </div>
+  <p>前提完全正确。夜莺有四百零三个根形、一百三十组，绝大多数字都能整根拆完，轮不到退回笔画：</p>
+  <div class="tw"><table>
+    <thead><tr><th>口径</th><th class="n">前 500</th><th class="n">前 1500</th><th class="n">前 3500</th></tr></thead>
+    <tbody>
+      <tr><td>笔画根占字根总用量（严格）</td><td class="n">3.37%</td><td class="n">3.39%</td><td class="n">3.29%</td></tr>
+      <tr><td>同上（宽口径，含二、三、㐅、丷等）</td><td class="n">8.66%</td><td class="n">7.95%</td><td class="n">7.68%</td></tr>
+      <tr><td>码里出现笔画根的字数占比</td><td class="n">1.80%</td><td class="n">2.80%</td><td class="n">2.77%</td></tr>
+    </tbody>
+  </table></div>
+  <p>也就是说，一百个字里只有不到三个会在码里用到笔画根。字根数量确实把拆笔画压得很低，这一点我完全同意——字根数量本身就是一个重要的环节。</p>
+  <p>但结论只对了一半，因为<strong>笔画根虽然总量小，分布却极不均匀</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th>键</th><th class="n">占全部笔画根用量</th><th class="n">占全局字根量</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">p</td><td class="n">29.8%</td><td class="n">2.37%</td></tr>
+      <tr><td class="k">l</td><td class="n">17.5%</td><td class="n">1.39%</td></tr>
+      <tr><td class="k">a</td><td class="n">16.8%</td><td class="n">1.33%</td></tr>
+      <tr><td class="k">f</td><td class="n">12.4%</td><td class="n">0.99%</td></tr>
+      <tr><td class="k">g</td><td class="n">11.7%</td><td class="n">0.93%</td></tr>
+    </tbody>
+  </table></div>
+  <p>全键盘三成的笔画根用量压在 <code>p</code> 一个键上。把笔画根从 <code>p</code> 身上全部摘掉重排：</p>
+  <div class="tw"><table>
+    <thead><tr><th>口径</th><th class="n">p 的字根量</th><th class="n">名次</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>全部根</td><td class="n">6.81%</td><td class="n">第 2</td></tr>
+      <tr><td>去掉严格笔画根</td><td class="n">5.38%</td><td class="n">第 6</td></tr>
+      <tr><td>去掉宽口径笔画根</td><td class="n">4.82%</td><td class="n">第 9</td></tr>
+    </tbody>
+  </table></div>
+  <p>所以准确的说法是：<mark>笔画不是 <code>p</code> 变重的全部原因，但它是把 <code>p</code> 从第 9 推到第 2 的那一把。</mark>摘掉笔画根，<code>p</code> 仍在前十，说明本文的主论点（避重把高频根推向双拼冷门键）不依赖笔画；而 2.4 个百分点的增量落在同一个键上，也说明「总量小所以没问题」这个推理在这里不能用——总量小不等于分布均匀。</p>
+
+  <div class="thesis">
+    <span class="verdict no">反驳二 · 不成立</span>
+    <p>总体上看，边缘按键的使用率还是少的。</p>
+  </div>
+  <p>这条恰恰是本文要指出的那个错觉。把小指列四个键（<code>q</code>、<code>a</code>、<code>z</code>、<code>p</code>）合起来算：</p>
+  <div class="tw"><table>
+    <thead><tr><th>口径</th><th class="n">前 500</th><th class="n">前 1500</th><th class="n">前 3500</th></tr></thead>
+    <tbody>
+      <tr><td>键位热力（全部码位）</td><td class="n">9.69%</td><td class="n">10.49%</td><td class="n">10.85%</td></tr>
+      <tr class="hi"><td>字根量（第 3、4 位）</td><td class="n">17.30%</td><td class="n">17.96%</td><td class="n">18.44%</td></tr>
+      <tr><td>倍率</td><td class="n">1.8×</td><td class="n">1.7×</td><td class="n">1.7×</td></tr>
+    </tbody>
+  </table></div>
+  <p>边缘键「用得少」这个印象，只在把双拼层和字根层混在一起算的时候才成立。单看字根层，四个边缘键扛着将近五分之一的量，而它们只占键盘的 15%。<strong>这不是反例，这是本文现象在更大尺度上的复现。</strong></p>
+
+  <h3><span class="n">3.8</span>反事实检验：那把根搬走行不行</h3>
+  <p>到这里为止全是观察。要确认因果链，得动手改一改看会怎样。</p>
+  <p>先立模型。夜莺的全码是「双拼两码 + 首根键 + 末根键」，三简是「双拼两码 + 首根键」，而词码是纯双拼、不含字根。所以搬字根只动单字，不动词——词码是固定的障碍物。按这个式子把全部单字全码重算一遍，对照主表：</p>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>可重算的全码位</td><td class="n">15929</td></tr>
+      <tr><td>与主表吻合</td><td class="n">15929</td></tr>
+      <tr class="hi"><td>不吻合</td><td class="n">0</td></tr>
+    </tbody>
+  </table></div>
+  <p>模型能精确复现现行码表，可以拿来做反事实。另外字根按组绑定，同组必须同键，所以只能整组搬。<code>p</code> 上共 11 个组：</p>
+  <div class="tw"><table>
+    <thead><tr><th>组</th><th class="n">占 p 的量</th><th>含根形</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>横</td><td class="n">37.8%</td><td>一、三、不、二、敖左、横</td></tr>
+      <tr><td>儿／子</td><td class="n">27.6%</td><td>丌、了、儿、兀、子</td></tr>
+      <tr><td>田／里／果</td><td class="n">9.8%</td><td>果、田、由、甲、申、电…</td></tr>
+      <tr><td>力</td><td class="n">9.0%</td><td>为、力、办</td></tr>
+      <tr><td>乂</td><td class="n">5.2%</td><td>㐅、乂</td></tr>
+      <tr><td>其余六组合计</td><td class="n">10.6%</td><td>火、兼、水、身、莫、鬼</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="thesis">
+    <span class="verdict no">结果一</span>
+    <p><code>r</code> 不是答案。把最大的一组「横」搬到 <code>r</code>，总当量不降反升：1.3722 → 1.3742。</p>
+  </div>
+  <p>原因是 3.4 那个指标被我用错了。当量是<strong>键对</strong>的成本，不是单键的成本。<code>r</code> 便宜，是因为现在走到 <code>r</code> 的那批字的双拼正好跟 <code>r</code> 搭得顺；<code>p</code> 那批字的双拼是另一副样子：</p>
+  <div class="tw"><table>
+    <thead><tr><th>进入 p 做首根</th><th class="n">占比</th><th class="n">当量</th><th>进入 r 做首根</th><th class="n">占比</th><th class="n">当量</th></tr></thead>
+    <tbody>
+      <tr><td class="k">i→p</td><td class="n">24.7%</td><td class="n">1.500</td><td class="k">i→r</td><td class="n">32.1%</td><td class="n">1.100</td></tr>
+      <tr><td class="k">u→p</td><td class="n">12.8%</td><td class="n">1.300</td><td class="k">o→r</td><td class="n">10.8%</td><td class="n">1.200</td></tr>
+      <tr><td class="k">e→p</td><td class="n">10.3%</td><td class="n">1.200</td><td class="k">j→r</td><td class="n">10.4%</td><td class="n">1.100</td></tr>
+      <tr><td class="k">n→p</td><td class="n">9.5%</td><td class="n">1.600</td><td class="k">e→r</td><td class="n">8.2%</td><td class="n">1.300</td></tr>
+    </tbody>
+  </table></div>
+  <p><code>r</code> 现在的加权入键当量是 1.2556，<code>p</code> 是 1.3522。但把 <code>p</code> 那批字原样搬到 <code>r</code>，入键当量只到 1.2775——<mark><code>r</code> 的便宜带不走，它属于现在走它的那批字。</mark>而且首根一动，末根那一跳也跟着变，两笔加起来净亏。</p>
+
+  <div class="thesis">
+    <span class="verdict no">结果二</span>
+    <p>最好的落点全在双拼热门键，而它们全都要付避重的账。</p>
+  </div>
+  <p>把「横」组扫过全部 25 个候选落点，按落点的双拼量排：</p>
+  <div class="tw"><table>
+    <thead><tr><th>落点</th><th class="n">落点双拼量</th><th class="n">Δ当量</th><th class="n">Δ撞词</th><th class="n">Δ重码位</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">i</td><td class="n">10.97%</td><td class="n">−0.0019</td><td class="n">+160</td><td class="n">−34</td></tr>
+      <tr><td class="k">u</td><td class="n">7.93%</td><td class="n">−0.0018</td><td class="n">+219</td><td class="n">−30</td></tr>
+      <tr><td class="k">e</td><td class="n">5.56%</td><td class="n">−0.0001</td><td class="n">+25</td><td class="n">−30</td></tr>
+      <tr><td class="k">…</td><td class="n"></td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
+      <tr><td class="k">r</td><td class="n">2.36%</td><td class="n">+0.0021</td><td class="n">+45</td><td class="n">−20</td></tr>
+      <tr><td class="k">a</td><td class="n">2.19%</td><td class="n">+0.0024</td><td class="n">−12</td><td class="n">±0</td></tr>
+    </tbody>
+  </table></div>
+  <p>手感最好的 <code>i</code> 和 <code>u</code> 正是全键盘双拼量第一和第三，搬过去要多撞 160 和 219 个词位。把两列拉通算相关：</p>
+  <div class="tw"><table>
+    <tbody>
+      <tr class="hi"><td>落点双拼量 × Δ撞词（横组）</td><td class="n">+0.668</td></tr>
+      <tr class="hi"><td>落点双拼量 × Δ撞词（儿／子组）</td><td class="n">+0.787</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>这是从干预方向对第二节因果链的正面确认。</strong>前面几节是观察到「高频根落在双拼冷门键上」，这里是真去搬，发现每一个双拼热门落点都立刻要付避重代价——<mark>算法当初把根放在 <code>p</code>，不是疏忽，是它在这条约束下能找到的解。</mark></p>
+
+  <div class="thesis">
+    <span class="verdict yes">结果三</span>
+    <p>能捡的便宜只在其他冷门键之间。</p>
+  </div>
+  <p>扫描里确实存在几个不亏的动作：</p>
+  <div class="tw"><table>
+    <thead><tr><th>动作</th><th class="n">Δ当量</th><th class="n">Δ撞词</th><th class="n">Δ重码位</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>儿／子 → a</td><td class="n">+0.0005</td><td class="n">+8</td><td class="n">−48</td></tr>
+      <tr><td>儿／子 → t</td><td class="n">+0.0027</td><td class="n">−20</td><td class="n">−14</td></tr>
+      <tr><td>横 → o</td><td class="n">+0.0010</td><td class="n">+4</td><td class="n">−19</td></tr>
+      <tr><td>横 → a</td><td class="n">+0.0024</td><td class="n">−12</td><td class="n">±0</td></tr>
+    </tbody>
+  </table></div>
+  <p><code>p</code> 的字根量能从 12.73% 降到 9.22%，重码位少 48 个，代价接近于零。但请注意这几个落点是谁：<code>a</code> 双拼量 2.19%、<code>t</code> 2.15%、<code>o</code> 2.71%——<strong>全是双拼冷门键</strong>。</p>
+  <p>所以在现有约束下，能做的只是把负担在冷门键之间重新摊平，没法把它挪到手感更好的热门键上。而最好的那个手感落点带来的收益也只有 0.14%，小到不值得动整张码表。</p>
+  <div class="thesis"><p>结论有两层，都不轻：<strong>一是现行布局并没有做错，它已经在这条约束下接近局部最优；二是要改的是约束的配比，不是布局本身。</strong></p></div>
+
+  <h3><span class="n">3.9</span>两处更正：约束是软的，集中度是无害的</h3>
+  <p>写到这里我回头去翻了退火配置清单，发现前面有两个说法站不住，必须更正。</p>
+
+  <div class="thesis">
+    <span class="verdict no">更正一</span>
+    <p>避重不是硬约束。</p>
+  </div>
+  <p>我在第二节最初写的是「字词避重是硬约束」。翻 46 号实验的记录，原话是「只有<strong>字词软碰撞系数</strong>不同」——避重一直是带权的软惩罚。那份清单里出现的「硬约束」指的是<strong>主读音保护</strong>（每个受保护的字至少要有一处首选），跟避重没有关系。</p>
+  <p>更打脸的是权重的方向：</p>
+  <div class="tw"><table>
+    <thead><tr><th>项</th><th class="n">历史权重</th></tr></thead>
+    <tbody>
+      <tr><td>字词碰撞</td><td class="n">0.10</td></tr>
+      <tr class="hi"><td>音末到首形（双拼末码 → 首根键）</td><td class="n">0.25</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>避重的权重比手感项还低。</strong>（这是 0.85 时代配置里的值，清单明确注明不保证在 2.0 生效，但方向足够推翻原来那句话。）</p>
+  <p>这同时否掉了我原来那个「算法不用付手感代价，因为热力没算这笔账」的说法。「音末到首形」计权 0.25，说明<mark>进入字根键的那一跳一直在被计价</mark>。这也正好解释 3.8 为什么搬不动——布局本来就是按这个当量优化过的，我是在一个已经优化过的维度上找漏洞。</p>
+
+  <div class="thesis">
+    <span class="verdict no">更正二</span>
+    <p>集中度找不到物理代价。</p>
+  </div>
+  <p>既然当量已经算过了，那「p 扛得多」这件事如果真有害，害处只能走另外几条通道：同指连击、小指负担、键本身难按。三条全查了，<code>p</code> 一条都不超标：</p>
+  <div class="tw"><table>
+    <thead><tr><th>通道</th><th class="n">p 的表现</th><th>全键盘位置</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>参与同指对</td><td class="n">0.08%</td><td>倒数第一</td></tr>
+      <tr><td>小指负担</td><td class="n">2.34%</td><td>四个小指键里最轻（z 2.98%、q 2.68%、a 2.48%）</td></tr>
+      <tr><td>固有难度</td><td class="n">1.3077</td><td>第 22 / 26</td></tr>
+    </tbody>
+  </table></div>
+  <p>原因很实在：这套方案没有用分号和斜杠，<code>p</code> 在右手小指上是<strong>独苗</strong>，它只能跟自己同指，而同键连击本来就稀少。整体同指率 14.72%，绝大部分堆在 <code>u</code>（2.77%）和 <code>j</code>（2.49%）这两个右手食指键上。</p>
+  <p><strong>所以「<code>p</code> 扛了全键盘第二多的字根」是事实，但它没有转化成任何一条能测出来的击键代价。</strong></p>
+  <div class="thesis"><p>这两处更正让全文的结论往回收了一大步，但收得有价值：<mark>本文发现的是一个报告口径的缺陷，不是一个目标函数的缺陷。</mark>前者只要改报表，后者要改算法——而只有前者有证据支撑。</p></div>
+</section>
+
+<section>
+  <h2><span class="num">四</span>对目标函数的修正建议</h2>
+  <div class="thesis">
+    <span class="verdict yes">适用范围</span>
+    <p><strong>这一节讲的是以后怎么造方案，不是夜莺 2.0 要改。</strong></p>
+  </div>
+  <p>2.0 的布局不动。理由 3.8 已经给足：手工搬根最多值 0.14% 的手感收益，而每个像样的落点都要多撞上百个词位；更重要的是 2.0 已经有相当数量的用户在用，肌肉记忆的价值远高于这点数字。<mark>一个已经接近局部最优的布局，不值得为了一个刚发现的指标去动它。</mark></p>
+  <p>下面的建议是给下一代方案、给别的音形码作者、也给退火脚本的下一次修改用的。</p>
+  <div class="thesis"><p>结论落到一句话：<strong>要改的是报告口径，不是目标函数。</strong></p></div>
+  <p>我原本在这里写的是「目标函数里要把字根层的负担单列一项」。3.9 把这个建议否掉了：字根位的当量已经在计价（音末到首形，权重 0.25），再单列一项等于重复计费。下面按把握程度从高到低排三条。</p>
+
+  <h3><span class="n">建议一</span>评估报告必须分层呈现</h3>
+  <p>这条零风险，纯赚。「键位负担」这一项现在是只报告、不计分——这个设定本身是对的，问题出在<strong>报告的内容是混算的总热力</strong>。同一个键的双拼量和字根量必须分开列，否则像 <code>p</code> 这样双拼冷、字根热的键会一直被读成「闲键」。</p>
+  <p>改动只在报表，不动优化，不动码表，不影响任何已发布的方案。任何音形码的评估都该这么列。</p>
+
+  <h3><span class="n">建议二</span>去查「形到形」那一跳有没有计权</h3>
+  <p>这是唯一可能真实存在的缺口。配置清单里，「音末到首形」明确带权 0.25，而「全码形到形」（首根键 → 末根键）的措辞是「也<strong>核对</strong>」——核对不是加权。如果这一跳真的只报告不计分，那它才是实打实漏掉的击键代价，而且正好落在自由度最大的末根位上。</p>
+  <p>这需要翻引擎配置才能确认，本文没有做到这一步，先记为待查。</p>
+
+  <h3><span class="n">建议三</span>该校准的是量纲，不是指标数量</h3>
+  <p>第二节已经说过：撞词的变化以百计，当量的变化以千分之一计。清单自己就写着「共同种子短跑校准各项量纲，<strong>不允许单项压倒其他核心目标</strong>」——这条要求是对的，问题是它有没有真的执行到位。避重 0.1 对当量 0.25 这个比例看着手感更重，实际乘出来是避重碾压。</p>
+
+  <div class="thesis">
+    <span class="verdict no">明确不建议</span>
+    <p>给集中度加惩罚项。3.9 的三条物理通道全部显示 <code>p</code> 没有超标。在没有身体感受支撑的情况下加一个集中度惩罚，等于拿真实的避重收益去换一个漂亮的数字——3.8 已经演示过代价：每个手感好的落点都要多撞一百多个词位。</p>
+  </div>
+  <p>还有一点观察值得记下但不构成建议：<strong>末根位是四个位置里唯一和手感明显冲突的</strong>（末根量与键难度 +0.304），两代 <code>p</code> 换了一整批根、末根的性质却没变（3.5）。这说明它是结构性的。但在找到它的物理代价之前，不该为它动目标函数。</p>
+  <p>我们做了一个粗略的下界估计：若把字根量按键的固有难度重排（量最大的配最好按的键），加权成本能降 2.33%。这个数字不大，说明现状在「键的固有难度」这个维度上并没有大错。3.8 的反事实模拟把话说得更死：手工搬根最多只能拿到 0.14% 的手感收益，而且每一个好落点都要多撞上百个词位。<strong>真正的问题从来不是布局差，而是我们此前没有一个指标能看见字根层，所以根本无从判断它好不好。</strong></p>
+  <div class="thesis"><p>这也是本文最后想说的：这次收获不是「发现夜莺 2.0 有个毛病要修」，而是<strong>多了一把以前没有的尺子</strong>。尺子的价值在下一次造方案时才兑现，而不是拿它去锯已经装好的那张桌子。</p></div>
+</section>
+
+<section>
+  <h2><span class="num">五</span>可复现</h2>
+  <p>所有数据来自公开可查的三份材料：</p>
+  <ul>
+    <li>字频：形码盒子 1.0 的六千字默认字频</li>
+    <li>当量：形码盒子的按键当量数据</li>
+    <li>码表与拆分：夜莺 2.0 公开发布的单字表与拆分表</li>
+  </ul>
+  <p>统计口径：</p>
+  <ul>
+    <li><strong>打简</strong>——每个字取它最短的正式码（一简 → 二简 → 三简 → 全码），容错码与特殊简码不计，它们是额外入口不是常打路径。</li>
+    <li><strong>字根只在实际被敲到时才计数</strong>——码长一二位不碰形码，三码只用首根，四码用首末两根。</li>
+    <li>分档取前 500、前 1500、前 3500 字，累计口径。</li>
+  </ul>
+  <p>3.7 的笔画根按两种口径统计：严格口径只算十个纯笔画形（一、丨、丿、丶、乙、横、竖、撇、点、折），宽口径再加二、三、㐅、乂、丷、冫、彡等由纯笔形组成的准笔画根。</p>
+  <p>3.8 与 3.9 的反事实模拟有三个脚本：地基核验与逐组搬迁、26 个落点全扫、同指与小指负担核算。模拟只重算单字全码与三简，词码是纯双拼、不随字根移动，因此当作固定障碍物；字根按组绑定，只整组搬。</p>
+  <p>3.9 引用的权重来自退火指标核对清单的历史追溯段，属 0.85 时代配置，该文件明确注明不保证在 2.0 生效。「形到形是否计权」本文未能确认，记为待查。</p>
+  <p>脚本与完整数据随夜莺 2.0 的维护目录发布，另有三个可离线打开的网页：<strong>按键热力</strong>（键位热力，三档可切换）、<strong>字根热力</strong>（130 组与 403 根形的排名，以及每个键的根贡献分解）、<strong>字根盲点分析</strong>（本文数据合一，自带数据可直接转发）。</p>
+</section>
+
+<section>
+  <h2><span class="num">六</span>致谢</h2>
+  <p>这个发现始于群里一位跟打高手的追问。那位朋友没有直接给出结论，只是指出「键位使用率低」和「键上的根使用率低」可能不是一回事，并且要求「加个权看看」。因果链由我接着推完，而两条反驳把它修得更准：一位群友指出夜莺字根多、拆笔画少，逼出了 3.7 的定量核算；另一位提出边缘键整体用量本就不高，反而给出了本文现象在更大尺度上的第二个例证。</p>
+  <div class="thesis"><p>这类问题的价值在于：它不是指出某个参数调得不好，而是指出<strong>我们衡量好坏的尺子本身漏了一个维度</strong>。参数可以重调，尺子错了则所有历史结论都要重新审视。</p></div>
+</section>
+
+<footer>夜莺 2.0 · 键位热力与字根热力实测 · 2026 年 9 月</footer>
+
+</div>
+
+<script>
+(function(){
+  // [键位热力%, 字根量%, 热力名次, 字根名次] — 前 1500 字，打简口径
+  var D = {"a":[2.48,4.37,24,12],"b":[3.83,4.79,9,9],"c":[3.18,5.81,17,4],"d":[6.48,2.29,3,21],
+    "e":[2.82,3.28,21,14],"f":[3.2,3.57,15,13],"g":[3.61,2.13,11,23],"h":[4.04,2.58,8,18],
+    "i":[8.27,2.04,1,24],"j":[5.69,6.54,4,3],"k":[3.8,7.27,10,1],"l":[4.17,4.51,7,10],
+    "m":[3.48,2.55,12,19],"n":[2.79,5.56,22,5],"o":[2.15,3.24,26,15],"p":[2.34,6.81,25,2],
+    "q":[2.68,5.12,23,7],"r":[3.2,5.31,14,6],"s":[2.9,2.33,20,20],"t":[2.94,4.48,19,11],
+    "u":[6.65,0.69,2,26],"v":[4.64,4.8,6,8],"w":[3.31,3.0,13,17],"x":[3.18,2.24,16,22],
+    "y":[5.18,3.07,5,16],"z":[2.98,1.66,18,25]};
+  var ROWS = ["qwertyuiop","asdfghjkl","zxcvbnm"], MAX = 8.6;
+  var kb = document.getElementById("kb"), out = document.getElementById("readout");
+  function show(k){
+    var d = D[k];
+    out.innerHTML = '<b>' + k + '</b>　键位热力 <b>' + d[0].toFixed(2) + '%</b> 第 ' + d[2] +
+      ' 名　　字根量 <b>' + d[1].toFixed(2) + '%</b> 第 ' + d[3] + ' 名';
+  }
+  ROWS.forEach(function(row){
+    var r = document.createElement("div"); r.className = "kbrow";
+    row.split("").forEach(function(k){
+      var d = D[k];
+      var b = document.createElement("button");
+      b.className = "key" + (k === "p" ? " hot" : "");
+      b.type = "button";
+      b.setAttribute("aria-label", k + " 键：键位热力 " + d[0] + "%，字根量 " + d[1] + "%");
+      b.innerHTML =
+        '<span class="bars">' +
+          '<span class="bar s" style="height:' + Math.max(1, d[0] / MAX * 52) + 'px"></span>' +
+          '<span class="bar r" style="height:' + Math.max(1, d[1] / MAX * 52) + 'px"></span>' +
+        '</span><span class="cap2">' + k + '</span>';
+      b.addEventListener("click", function(){ show(k); });
+      b.addEventListener("mouseenter", function(){ show(k); });
+      r.appendChild(b);
+    });
+    kb.appendChild(r);
+  });
+})();
+</script>

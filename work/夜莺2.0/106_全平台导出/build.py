@@ -90,9 +90,15 @@ write(OUT/'说明与核验/搜狗五笔_容量裁剪明细.txt','字词\t编码\
 header='[CODETABLEHEADER]\r\nName=夜莺2.0词库\r\nVersion=2.0|260915\r\nAuthor=nightingale\r\nCodeScheme=夜莺2.0[夜莺]\r\nCodeLength=4\r\nBWCodeLength=0\r\nSpecialPrefix=0\r\nPhraseRule=3\r\npa2=w11w12w21w22\r\npa3=w11w21w31\r\npe4=w11w21w31r11\r\n[CODETABLE]\r\n'
 write(OUT/'冰凌五笔/夜莺2.0_词库_含快符.txt',header+''.join(f'{c}\t{t}\t{10000-n}\r\n' for t,c,n in valid),'utf-16')
 write(OUT/'Bime/mb/夜莺2.0/夜莺字词.txt',''.join(f'{t}\t{c}\t{100000-n}\r\n' for t,c,n in valid))
-splitrows=list(csv.DictReader((W/'55_拆分继承核验/当前完整拆分表.txt').open(encoding='utf-8-sig'),delimiter='\t'))
-splits={r['汉字']:r['完整拆分'] for r in splitrows}
-for r in csv.DictReader((W/'112_扩展字继承/夜莺2.0扩展字拆分表.txt').open(encoding='utf-8-sig'),delimiter='	'):splits.setdefault(r['汉字'],r['完整拆分'])   # 2026-09-16 扩展字拆分一并进 Bime 拆分文件与 Rime 反查
+# 拆分内容取自唯一原本：啾啾工具箱·拆分查询（2026-09-21）。55/112 两份拆分表冻结不动，这里只借它们的行序（只读），
+# 以后改拆分只改啾啾，不再改这两份；只有加新字时才从拆分重新导出新的拆分表。
+_s=(W/'65_群友离线工具包/夜莺啾啾工具箱.html').read_text(encoding='utf-8-sig')
+_m=re.search(r'\b(?:const|let) views\s*=\s*',_s); _v=json.JSONDecoder().raw_decode(_s[_m.end():])[0]['query']
+_m=re.search(r'\bconst D\s*=\s*',_v); AUTH={c:r['新拆'] for c,r in json.JSONDecoder().raw_decode(_v[_m.end():])[0].items()}
+splits={}
+for p in ('55_拆分继承核验/当前完整拆分表.txt','112_扩展字继承/夜莺2.0扩展字拆分表.txt'):
+ for r in csv.DictReader((W/p).open(encoding='utf-8-sig'),delimiter='\t'):splits.setdefault(r['汉字'],AUTH[r['汉字']])
+assert len(splits)==len(AUTH)==15496,(len(splits),len(AUTH))
 write(OUT/'Bime/mb/夜莺2.0/夜莺.拆分',''.join(f'{t}\t{s}\r\n' for t,s in splits.items()))
 write(OUT/'Bime/使用说明.txt','将mb内的夜莺2.0文件夹复制到Bime的mb目录，再重载码表、选择夜莺2.0。最大码长设4。包含快符及全部15496字（8105通用规范汉字+7391扩展字）的拆分。没有覆盖个人config.txt或用户调整.txt。旧个人调频可能改变候选顺序。\r\n')
 report={'基线':pointer,'来源SHA256':hashlib.sha256(SRC.read_bytes()).hexdigest(),'原表条数':len(rows),'无简词条数':len(no_short),'无简词口径':'删除二、三字且不足四码的简词；保留全部单字、四码及以上词、四字及以上词。快符单列。','快符':len(quick),'四码内含快符':len(valid),'超过四码条目':len(excluded),'手心模块':{k:len(v) for k,v in modules.items()},'辅助码字数':len(aux),'搜狗挂接条数':len(sogou),'搜狗挂接保留次选起步单字数':len(gaps),'搜狗五笔条数':len(wubi),'搜狗五笔裁剪条数':len(cut),'裁剪口径':'只裁全码非首选词；候选位越后越先裁，同位按现有综合排序指数由低到高；保留所有单字、简词、快符及人工指定项。未回写源表。','冰凌及Bime条数':len(valid)}
