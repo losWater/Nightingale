@@ -7,7 +7,7 @@
 import io, sys, os, json, zlib, zipfile, re, collections, unicodedata
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); W = 'E:/夜莺2.0/work/夜莺2.0'
-Z = zipfile.ZipFile('D:/nightingale/releases/v2.0/测试/音の根源码.zip'); names = {}
+Z = zipfile.ZipFile('D:/nightingale/releases/v2.5/测试/音の根源码.zip'); names = {}
 for i in Z.infolist():
     try: n = i.filename.encode('cp437').decode('gbk')
     except Exception: n = i.filename

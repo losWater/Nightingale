@@ -22,7 +22,7 @@ open(H + '/README.md', 'w', encoding='utf-8').write('''# 夜莺 2.0 维护（202
 
 ## 第一步：改主表
 
-1. 你把问题用白话写进 `D:/nightingale/releases/v2.0/用户实战反馈.txt`（你手写的文件，脚本不碰）。
+1. 你把问题用白话写进 `D:/nightingale/releases/v2.5/用户实战反馈.txt`（你手写的文件，脚本不碰）。
 2. 每个问题翻译成 `实战问题机器参数.tsv` 里的几行原子操作（状态填"待处理"）：查询 / 新增 / 删除 / 改码 / 改词 / 调序。单字的改动两张表各写一行。
 3. `python apply_ledger.py` 预演，看每行结果和体检；确认后 `python apply_ledger.py --apply` 落盘。自动备份到 `备份/时间戳/`，台账回填时间、结果、前后 SHA256。没被点名的行不变。
 

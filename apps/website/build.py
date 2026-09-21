@@ -1,6 +1,6 @@
 """Build the preview from website sources and the maintained 2.0 release tools.
 
-2026-09-16 夜莺 2.0：构建来源改为 releases/v2.0。工具页取离线工具包（拆分查询、部件反查、字根练习、完整拆分表、字根图），
+2026-09-16 夜莺 2.0：构建来源改为 releases/v2.5。工具页取离线工具包（拆分查询、部件反查、字根练习、完整拆分表、字根图），
 字根表由 2.0 字根总表 + 当前完整根表生成（130 组 / 404 根形），啾啾工具箱单文件一并发布。
 """
 from pathlib import Path
@@ -13,7 +13,7 @@ import markdown
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = Path(__file__).resolve().parent
 OUT = ROOT / '.tmp' / 'website-preview'
-RELEASE = ROOT / 'releases' / 'v2.0'
+RELEASE = ROOT / 'releases' / 'v2.5'   # 同步到仓库时由 sync_to_repo.py 替换成真实版本
 TOOLS = RELEASE / '04_查询与练习'
 STROKES = {'横', '竖', '撇', '折', '点'}
 
