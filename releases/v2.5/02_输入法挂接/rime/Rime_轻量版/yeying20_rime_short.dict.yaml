@@ -63641,6 +63641,7 @@ columns: [text, code, weight]
 哪一种	nyv	100000
 哪个	na get	397095
 哪个	na;ty ge;xl	397095
+哪个	nag	397095
 哪个	nage	397095
 哪个不知	ngbv	1
 哪个人	ngr	100000
@@ -63657,6 +63658,7 @@ columns: [text, code, weight]
 哪也不去	nybq	1
 哪些	na xpt	339542
 哪些	na;ty xp;sp	339542
+哪些	nax	339542
 哪些	naxp	339542
 哪些事	nxu	50000
 哪些人	nxr	50000
@@ -63671,12 +63673,14 @@ columns: [text, code, weight]
 哪件事情	njuq	1
 哪位	na wwt	57328
 哪位	na;ty ww;kj	57328
+哪位	naw	100000
 哪位	naww	57328
 哪像	na xlt	1
 哪像	na;ty xl;kd	1
 哪像	naxl	1
 哪儿	na ert	471786
 哪儿	na;ty er;pp	471786
+哪儿	nae	471786
 哪儿	naer	471786
 哪儿	ne	471786
 哪儿去了	neql	1
@@ -63697,17 +63701,21 @@ columns: [text, code, weight]
 哪壶没开提哪壶	nhmh	1
 哪天	na tmt	90555
 哪天	na;ty tm;yy	90555
+哪天	nat	90555
 哪天	natm	90555
 哪家	na jxt	218109
 哪家	na;ty jx;jo	218109
+哪家	naj	218109
 哪家	najx	218109
 哪家强	njq	50000
 哪年	na nmt	43843
 哪年	na;ty nm;kl	43843
+哪年	nan	50000
 哪年	nanm	43843
 哪年哪月	nnny	1
 哪张	na vht	61868
 哪张	na;ty vh;ba	61868
+哪张	nav	61868
 哪张	navh	61868
 哪怕	na pat	344935
 哪怕	na;ty pa;vd	344935
@@ -63716,6 +63724,7 @@ columns: [text, code, weight]
 哪怕是	npu	50000
 哪所	na sot	1
 哪所	na;ty so;bh	1
+哪所	nas	50000
 哪所	naso	1
 哪敢	na gjt	19102
 哪敢	na;ty gj;bq	19102
@@ -63736,19 +63745,23 @@ columns: [text, code, weight]
 哪本	nwbf	36425
 哪条	na tnt	37373
 哪条	na;ty tn;qy	37373
+哪条	nat	37373
 哪条	natn	37373
 哪条	nwtn	37373
 哪来的	nld	50000
 哪来的自信	nldx	1
 哪样	na yht	222751
 哪样	na;ty yh;wu	222751
+哪样	nay	222751
 哪样	nayh	222751
 哪根葱	ngc	100000
 哪次	na cit	57771
 哪次	na;ty ci;ax	57771
+哪次	nac	57771
 哪次	naci	57771
 哪点	na dmt	58422
 哪点	na;ty dm;gp	58422
+哪点	nad	58422
 哪点	nadm	58422
 哪知	na vit	65642
 哪知	na;ty vi;gt	65642
@@ -63756,6 +63769,7 @@ columns: [text, code, weight]
 哪知道	nvd	50000
 哪种	na vst	26112
 哪种	na;ty vs;nl	26112
+哪种	nav	100000
 哪种	navs	26112
 哪算	na srt	5128
 哪算	na;ty sr;hm	5128
@@ -63768,10 +63782,12 @@ columns: [text, code, weight]
 哪能	nang	20081
 哪般	na bjt	64042
 哪般	na;ty bj;eh	64042
+哪般	nab	64042
 哪般	nabj	64042
 哪行	na xkt	7444
 哪行	na;ty xk;kk	7444
 哪行	nahh	7444
+哪行	nax	33333
 哪行	naxk	7444
 哪路	na lut	12916
 哪路	na;ty lu;sq	12916
@@ -63779,11 +63795,13 @@ columns: [text, code, weight]
 哪辈子	nbz	50000
 哪边	na bmt	158974
 哪边	na;ty bm;pq	158974
+哪边	nab	158974
 哪边	nabm	158974
 哪部分	nbf	50000
 哪都有你	ndyn	1
 哪里	na lit	568068
 哪里	na;ty li;pp	568068
+哪里	nal	568068
 哪里	nali	568068
 哪里	nl	568068
 哪里不会点哪里	nlbl	1

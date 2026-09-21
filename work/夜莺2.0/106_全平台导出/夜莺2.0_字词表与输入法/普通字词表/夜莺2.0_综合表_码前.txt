@@ -78186,6 +78186,8 @@ n	你
 n	「
 na	那
 nab	那
+nab	哪边
+nab	哪般
 nabf	那本
 nabf	哪本
 nabh	那帮
@@ -78199,6 +78201,7 @@ nabu	那不
 nabu	那部
 naby	那
 nac	南
+nac	哪次
 nacg	那层
 naci	那次
 naci	哪次
@@ -78206,6 +78209,7 @@ naco	拿错
 nacu	南
 nacv	纳粹
 nad	衲
+nad	哪点
 nadc	拿到
 nadh	袦
 nadk	拿定
@@ -78223,6 +78227,7 @@ nadx	魶
 nady	那顿
 nadz	那都
 nadz	纳豆
+nae	哪儿
 naer	那儿
 naer	哪儿
 naex	軜
@@ -78232,6 +78237,7 @@ nafg	那封
 nafi	乸
 nafj	那番
 nafu	纳福
+nag	哪个
 nage	那个
 nage	哪个
 nagj	哪敢
@@ -78256,6 +78262,7 @@ naih	那场
 nair	那串
 naiu	拿出
 naix	纳
+naj	哪家
 najb	拿进
 naji	那几
 najl	拿奖
@@ -78273,6 +78280,7 @@ nakd	拿开
 nakk	那块
 nakr	那款
 nakz	那口
+nal	哪里
 nald	拿来
 nale	拿了
 nalg	雫
@@ -78297,6 +78305,7 @@ namo	那末
 namx	蒳
 namy	𦰡
 nan	内
+nan	哪年
 nana	呐呐
 nane	哪呢
 nang	哪能
@@ -78326,6 +78335,7 @@ nari	那日
 naru	纳入
 narx	靹
 nas	娜
+nas	哪所
 nasi	那厮
 nasj	拿伞
 naso	那所
@@ -78334,6 +78344,8 @@ nasr	哪算
 nasx	妠
 nasy	娜
 nat	哪
+nat	哪天
+nat	哪条
 natc	那套
 natd	那台
 natm	那天
@@ -78356,6 +78368,8 @@ nauo	镎
 nauv	纳税
 naux	钠
 nauz	拿手
+nav	哪种
+nav	哪张
 nave	拿着
 navg	纳徵
 navh	那张
@@ -78365,6 +78379,7 @@ navi	哪知
 navs	那种
 navs	哪种
 navu	拿住
+naw	哪位
 nawj	那晚
 nawj	拿完
 nawo	那我
@@ -78372,6 +78387,8 @@ naww	那位
 naww	哪位
 naww	纳为
 nax	拿
+nax	哪些
+nax	哪行
 naxb	纳新
 naxk	那行
 naxk	哪行
@@ -78382,6 +78399,7 @@ naxo	拿
 naxp	那些
 naxp	哪些
 naxx	拿下
+nay	哪样
 nayc	那要
 nayh	那样
 nayh	哪样

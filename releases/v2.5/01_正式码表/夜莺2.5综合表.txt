@@ -78186,6 +78186,8 @@ https://typer.owenyang.top/	mxyi
 「	n
 那	na
 那	nab
+哪边	nab
+哪般	nab
 那本	nabf
 哪本	nabf
 那帮	nabh
@@ -78199,6 +78201,7 @@ https://typer.owenyang.top/	mxyi
 那部	nabu
 那	naby
 南	nac
+哪次	nac
 那层	nacg
 那次	naci
 哪次	naci
@@ -78206,6 +78209,7 @@ https://typer.owenyang.top/	mxyi
 南	nacu
 纳粹	nacv
 衲	nad
+哪点	nad
 拿到	nadc
 袦	nadh
 拿定	nadk
@@ -78223,6 +78227,7 @@ https://typer.owenyang.top/	mxyi
 那顿	nady
 那都	nadz
 纳豆	nadz
+哪儿	nae
 那儿	naer
 哪儿	naer
 軜	naex
@@ -78232,6 +78237,7 @@ https://typer.owenyang.top/	mxyi
 乸	nafi
 那番	nafj
 纳福	nafu
+哪个	nag
 那个	nage
 哪个	nage
 哪敢	nagj
@@ -78256,6 +78262,7 @@ https://typer.owenyang.top/	mxyi
 那串	nair
 拿出	naiu
 纳	naix
+哪家	naj
 拿进	najb
 那几	naji
 拿奖	najl
@@ -78273,6 +78280,7 @@ https://typer.owenyang.top/	mxyi
 那块	nakk
 那款	nakr
 那口	nakz
+哪里	nal
 拿来	nald
 拿了	nale
 雫	nalg
@@ -78297,6 +78305,7 @@ https://typer.owenyang.top/	mxyi
 蒳	namx
 𦰡	namy
 内	nan
+哪年	nan
 呐呐	nana
 哪呢	nane
 哪能	nang
@@ -78326,6 +78335,7 @@ https://typer.owenyang.top/	mxyi
 纳入	naru
 靹	narx
 娜	nas
+哪所	nas
 那厮	nasi
 拿伞	nasj
 那所	naso
@@ -78334,6 +78344,8 @@ https://typer.owenyang.top/	mxyi
 妠	nasx
 娜	nasy
 哪	nat
+哪天	nat
+哪条	nat
 那套	natc
 那台	natd
 那天	natm
@@ -78356,6 +78368,8 @@ https://typer.owenyang.top/	mxyi
 纳税	nauv
 钠	naux
 拿手	nauz
+哪种	nav
+哪张	nav
 拿着	nave
 纳徵	navg
 那张	navh
@@ -78365,6 +78379,7 @@ https://typer.owenyang.top/	mxyi
 那种	navs
 哪种	navs
 拿住	navu
+哪位	naw
 那晚	nawj
 拿完	nawj
 那我	nawo
@@ -78372,6 +78387,8 @@ https://typer.owenyang.top/	mxyi
 哪位	naww
 纳为	naww
 拿	nax
+哪些	nax
+哪行	nax
 纳新	naxb
 那行	naxk
 哪行	naxk
@@ -78382,6 +78399,7 @@ https://typer.owenyang.top/	mxyi
 那些	naxp
 哪些	naxp
 拿下	naxx
+哪样	nay
 那要	nayc
 那样	nayh
 哪样	nayh
