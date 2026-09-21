@@ -2,7 +2,7 @@
 """组装 2.0 发布目录到仓库 D:/nightingale/releases/v2.5（照 v1.0 的五个分类），并准备 GitHub Release 附件。
 大包（Rime 主力版 380MB 等）放 02_输入法挂接/rime/发布包/，只作本地留存，不入 git；上传到 GitHub Release 附件。
 可重复运行：全量覆盖 releases/v2.5（保留 发布包/ 内容）。"""
-import io, sys, os, json, shutil, hashlib, datetime
+import zipfile, io, sys, os, json, shutil, hashlib, datetime
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 W = 'E:/夜莺2.0/work/夜莺2.0'; U = W + '/65_群友离线工具包'; O = U + '/夜莺2.0离线工具包'; X = W + '/106_全平台导出'
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, W + '/00_维护')
@@ -58,6 +58,17 @@ prev = set()
 if os.path.exists(R + '/发布清单.json'):
     try: prev = set(json.load(open(R + '/发布清单.json', encoding='utf-8'))['files'].keys())
     except Exception: prev = set()
+# 对外文件名带版本：「夜莺2.0…」→「夜莺{VER}…」（2026-09-22 你定：上传的码表要改名）。
+# 只改发布目录与附件的文件名；Rime 方案名 yeying20、生成链与本机部署里的内部文件名不动。
+ren = lambda name: name.replace('夜莺2.0', '夜莺' + VER)
+plan = {ren(k): v for k, v in plan.items()}
+def repack(src, dst):
+    """zip 里的条目名同样改名；保留原 ZipInfo 的时间与属性，结果可复现。"""
+    with zipfile.ZipFile(src) as zi, zipfile.ZipFile(dst, 'w', zipfile.ZIP_DEFLATED) as zo:
+        for info in sorted(zi.infolist(), key=lambda i: ren(i.filename)):
+            data = zi.read(info); info2 = zipfile.ZipInfo(ren(info.filename), info.date_time)
+            info2.external_attr, info2.compress_type = info.external_attr, zipfile.ZIP_DEFLATED
+            zo.writestr(info2, data)
 for rel in prev - set(plan):
     q = R + '/' + rel
     if os.path.isfile(q): os.remove(q); print('移除上次生成、本次不再有的文件：', rel)
@@ -76,7 +87,10 @@ for k, v in old_assets.items():
 for fn in os.listdir(pk):
     if fn.startswith('SHA256SUMS-') and fn.endswith('.txt'): os.remove(pk + '/' + fn)      # 本脚本旧版生成的校验文件
 for name, (src, cn, label) in big.items():
-    dst = pk + '/' + cn; shutil.copy2(src, dst); assets[name] = {'本地文件名': cn, '显示名': label, 'sha256': sha(dst), 'bytes': os.path.getsize(dst)}
+    cn = ren(cn); dst = pk + '/' + cn
+    if name.endswith('.zip') and ('tables' in name or 'offline' in name): repack(src, dst)
+    else: shutil.copy2(src, dst)
+    assets[name] = {'本地文件名': cn, '显示名': label, 'sha256': sha(dst), 'bytes': os.path.getsize(dst)}
 open(pk + '/校验值SHA256.txt', 'w', encoding='utf-8', newline='\n').write(''.join('%s  %s  （Release 上叫 %s）\n' % (v['sha256'], v['本地文件名'], k) for k, v in assets.items()))
 open(R + '/02_输入法挂接/rime/README.md', 'w', encoding='utf-8').write(f"""# Rime 挂接（夜莺{VER}）
 
