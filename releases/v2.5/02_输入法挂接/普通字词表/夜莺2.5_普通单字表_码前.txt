@@ -20781,7 +20781,7 @@ yo	哟
 yot	唷
 yota	哟
 yotz	唷
-yr	元
+yr	远
 yra	源
 yrag	渕
 yrag	渆
@@ -20842,7 +20842,7 @@ yroq	援
 yroq	猨
 yros	猿
 yroy	獂
-yrp	远
+yrp	元
 yrpp	鼋
 yrpp	元
 yrpp	黿

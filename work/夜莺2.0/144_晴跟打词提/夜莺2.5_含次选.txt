@@ -138718,7 +138718,7 @@ magnet:?xt=urn:btih:	xylw2
 羽泉组合	yqzh
 又岂在朝朝暮暮	yqzm
 遇强则强	yqzq
-元	yr_
+远	yr_
 有人	yr2
 犹如	yr3
 源	yra_
@@ -138976,7 +138976,7 @@ magnet:?xt=urn:btih:	xylw2
 猿	yros
 怨偶	yrou
 獂	yroy
-远	yrp_
+元	yrp_
 羊肉片	yrp2
 易燃品	yrp3
 原批	yrpi

@@ -146617,7 +146617,7 @@ magnet:?xt=urn:btih:	xylw	99998
 羽泉组合	yqzh	99999
 又岂在朝朝暮暮	yqzm	99999
 遇强则强	yqzq	99999
-元	yr	99999
+远	yr	99999
 有人	yr	99998
 犹如	yr	99997
 源	yra	99999
@@ -146889,7 +146889,7 @@ magnet:?xt=urn:btih:	xylw	99998
 猿	yros	99999
 怨偶	yrou	99999
 獂	yroy	99999
-远	yrp	99999
+元	yrp	99999
 羊肉片	yrp	99998
 易燃品	yrp	99997
 原批	yrpi	99999
