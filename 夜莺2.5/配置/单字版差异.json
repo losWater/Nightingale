@@ -1,0 +1,4 @@
+[
+  {"record": "MAC25-0001-01", "operation": "delete", "text": "自", "code": "zi"},
+  {"record": "MAC25-0001-02", "operation": "insert", "text": "子", "code": "zi", "position": 1}
+]

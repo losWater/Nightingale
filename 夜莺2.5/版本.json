@@ -1,0 +1,7 @@
+{
+  "version": "2.5",
+  "status": "active",
+  "source_commit": "c72948ac7ded746ebdd5900679ae79f5c9e9a96d",
+  "release_tag": "v2.5",
+  "note": "2.5 首发后的维护周期。官方主表已含元远互换；子自仅为 Mac 单字版差异。"
+}

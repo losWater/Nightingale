@@ -1,0 +1,23 @@
+# MoHu's native commit hook reads smart/dictionary to recover full character
+# spellings. Its personal Memory is still bound to our translator namespace.
+smart:
+  dictionary: yeying25_mac_rime
+tiger:
+  scheme: flypy
+  candidate_type: mohu_flypy
+  lexicon: yeying25_v5/data/nightingale.lexicon.txt
+  beam: 64
+  all_ranks: true
+  candidate_limit: 4
+  initial_quality: 50
+  user_model: true
+  user_model_weight: 0.85
+  user_model_snapshot: yeying25_v5/config/user-ngram.snapshot
+  personal_lexicon_namespace: translator
+  personal_refresh_interval: 30
+  decode_context_chars: 2
+  decode_context_takeover: false
+  word_edge_weight: 1.5
+  text_lexicon_weight: 6.5
+  reading_prior_weight: 1.0
+  composed_reading_prior_weight: 1.0

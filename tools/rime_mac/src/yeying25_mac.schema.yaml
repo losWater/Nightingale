@@ -1,0 +1,85 @@
+# Nightingale 2.5: native Rime baseline, isolated from older installations.
+schema:
+  schema_id: yeying25_mac
+  name: 夜莺2.5·Mac
+  version: "2.5-mac.1"
+  author: [夜莺作者 losWater]
+  dependencies: [yeying25_mac_rime_fixed, yeying25_mac_rime_short]
+
+switches:
+  - name: ascii_mode
+    states: [中文, 西文]
+  - name: ascii_punct
+    states: [。，, ．，]
+  - name: yeying_short_words
+    reset: 0
+    states: [普通整句, 简词整句]
+
+engine:
+  processors:
+    - lua_processor@*yeying25_mac_lookup_key
+    - lua_processor@*yeying25_mac_pin_key
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors: [ascii_segmentor, matcher, abc_segmentor, punct_segmentor, fallback_segmentor]
+  translators:
+    - lua_translator@*yeying25_mac_lookup
+    - punct_translator
+    - lua_translator@*yeying25_mac_mix
+  filters: [uniquifier]
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+  algebra:
+    - derive/^(\w{2});\w\w$/$1/
+    - derive/^(\w{2});(\w)\w$/$1$2/
+    - xform/^(\w{2});(\w)(\w)$/$1$2$3/
+
+translator:
+  dictionary: yeying25_mac_rime
+  user_dict: yeying25_mac_sentence
+  enable_user_dict: true
+  enable_completion: false
+  contextual_suggestions: false
+  max_homophones: 7
+  max_homographs: 7
+  max_sentences: 2
+
+translator_short:
+  dictionary: yeying25_mac_rime_short
+  user_dict: yeying25_mac_sentence_short
+  enable_user_dict: true
+  enable_completion: false
+  contextual_suggestions: false
+  max_homophones: 7
+  max_homographs: 7
+  max_sentences: 2
+
+fixed:
+  dictionary: yeying25_mac_rime_fixed
+  enable_user_dict: false
+  enable_sentence: false
+  enable_completion: false
+
+menu:
+  page_size: 9
+punctuator:
+  import_preset: default
+key_binder:
+  import_preset: default
+  bindings:
+    - {when: has_menu, accept: semicolon, send: 2}
+    - {when: has_menu, accept: apostrophe, send: 3}
+    - {when: has_menu, accept: bracketleft, send: Page_Up}
+    - {when: has_menu, accept: bracketright, send: Page_Down}
+recognizer:
+  import_preset: default
+  patterns:
+    yeying25_mac_lookup: '^([`~][a-z]*|~~[a-z]*)$'

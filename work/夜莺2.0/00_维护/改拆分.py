@@ -7,6 +7,7 @@
 那一步照老规矩走台账（apply_ledger.py），候选位按 出简让全／扩展字排末尾 定。
 """
 import io, sys, os, re, json, shutil, datetime, collections
+raise SystemExit('旧拆分入口已停用，请运行仓库根 tools/maintenance/edit_split.py')
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); W = os.path.dirname(H)
 SRC = W + '/65_群友离线工具包/夜莺啾啾工具箱.html'

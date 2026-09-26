@@ -9,11 +9,9 @@
   候选位 = 该表里同码的第几个（字词表里字和词一起数；单字表里只数字）。
 只许动两张主表；没被点名的行一个字节都不变。落盘前对结果做结构体检（不过则拒绝落盘）：
   ① 无重复行 ② 单字表每一行都在字词表里，反之字词表的单字行都在单字表里 ③ 每个码位上，单字在两表里的先后一致。"""
-import io, sys, os, csv, json, hashlib, shutil, datetime, collections
-raise SystemExit('旧维护入口已停用，请运行仓库根 tools/maintenance/apply_ledger.py')
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-H = os.path.dirname(os.path.abspath(__file__)); M = H + '/主表'; LEDGER = H + '/实战问题机器参数.tsv'
-TABLES = {'单字表': M + '/夜莺2.0单字表.txt', '字词表': M + '/夜莺2.0字词表.txt', '符号表': M + '/夜莺2.0符号表.txt'}
+import io, sys, os, csv, json, hashlib, shutil, datetime, collections, argparse
+from pathlib import Path
+from context import load as load_context, table_paths, atomic
 FIELDS = ['问题ID', '原文摘录', '状态', '目标码表', '操作', '原编码', '原字词', '新编码', '新字词', '目标候选位', '备注', '处理时间', '处理结果', '修改前SHA256', '修改后SHA256']
 sha = lambda b: hashlib.sha256(b).hexdigest()
 def load(p): return [tuple(l.split('\t')) for l in open(p, encoding='utf-8').read().split('\n') if l]
@@ -66,13 +64,27 @@ def checkup(tabs):
     if diff: bad.append('两表单字不一致 %d 个码位：%s' % (len(diff), ['%s 单字表[%s] 字词表[%s]' % (c, ''.join(a.get(c, [])), ''.join(b.get(c, []))) for c in sorted(diff)[:8]]))
     return bad
 def main():
-    rows_l = list(csv.DictReader(open(LEDGER, encoding='utf-8-sig', newline=''), delimiter='\t'))
-    assert not rows_l or list(rows_l[0].keys()) == FIELDS, '台账字段不符'
+    parser = argparse.ArgumentParser(description='默认只预演；--apply 才改表。历史状态不会重复执行。')
+    parser.add_argument('--root')
+    parser.add_argument('--version', help='目录名，仅允许对当前未封存目录落盘')
+    parser.add_argument('--apply', action='store_true')
+    args = parser.parse_args()
+    _, directory, _ = load_context(args.root, args.version, writable=args.apply)
+    H = str(directory); LEDGER = str(directory/'记录/修改台账.tsv')
+    TABLES = {n: str(p) for n, p in table_paths(directory).items()}
+    with open(LEDGER, encoding='utf-8-sig', newline='') as stream:
+        reader = csv.DictReader(stream, delimiter='\t')
+        assert reader.fieldnames == FIELDS, '台账字段不符'
+        rows_l = list(reader)
+    assert all(None not in r and None not in r.values() for r in rows_l), '台账列数不符'
+    ids = [r['问题ID'] for r in rows_l]
+    assert all(ids) and len(ids) == len(set(ids)), '台账问题ID为空或重复'
     pending = [r for r in rows_l if r['状态'].strip() == '待处理']
     tabs = {n: load(p) for n, p in TABLES.items()}; before = {n: render(tabs[n]) for n in tabs}
     for n, p in TABLES.items(): assert before[n] == open(p, 'rb').read(), n + ' 读写不往返，拒绝处理'
     base_bad = checkup(tabs)
-    if not pending: print('没有待处理的行。主表体检：%s' % (base_bad or '通过')); return
+    if base_bad: raise ValueError('原始主表体检失败：' + str(base_bad))
+    if not pending: print('没有待处理的行。主表体检：通过'); return
     results = []
     for r in pending:
         n = r['目标码表'].strip(); assert n in TABLES, '目标码表只能是 单字表/字词表：%s' % r['问题ID']
@@ -83,14 +95,25 @@ def main():
     for n in tabs: print('%s：%d → %d 行  %s → %s' % (n, before[n].count(b'\n'), after[n].count(b'\n'), sha(before[n])[:12], sha(after[n])[:12]))
     if bad: print('✗ 体检不过，拒绝落盘：\n  ' + '\n  '.join(bad)); sys.exit(1)
     print('体检通过。')
-    if '--apply' not in sys.argv: print('（预演，未写任何文件；确认后加 --apply）'); return
-    now = datetime.datetime.now(); bk = H + '/备份/' + now.strftime('%Y%m%d_%H%M%S'); os.makedirs(bk)
+    if not args.apply: print('（预演，未写任何文件；确认后加 --apply）'); return
+    now = datetime.datetime.now().astimezone(); bk = H + '/备份/' + now.strftime('%Y%m%d_%H%M%S_%f'); os.makedirs(bk)
     for n, p in TABLES.items(): shutil.copy2(p, bk)
     shutil.copy2(LEDGER, bk)
-    for n, p in TABLES.items():
-        if after[n] != before[n]: open(p + '.tmp', 'wb').write(after[n]); os.replace(p + '.tmp', p)
     for r, res in zip(pending, results):
         n = r['目标码表'].strip(); r.update({'状态': '已修复' if r['操作'].strip() != '查询' else '已查询', '处理时间': now.isoformat(timespec='seconds'), '处理结果': res, '修改前SHA256': sha(before[n]), '修改后SHA256': sha(after[n])})
-    w = csv.DictWriter(open(LEDGER, 'w', encoding='utf-8-sig', newline=''), fieldnames=FIELDS, delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(rows_l)
+    output = io.StringIO(newline='')
+    w = csv.DictWriter(output, fieldnames=FIELDS, delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(rows_l)
+    # Abort on concurrent edits; retain backups and roll back ordinary write failures.
+    originals = {Path(p): before[n] for n, p in TABLES.items()}
+    originals[Path(LEDGER)] = (Path(bk)/Path(LEDGER).name).read_bytes()
+    if any(p.read_bytes() != data for p, data in originals.items()):
+        raise ValueError('预演期间文件发生变化，拒绝覆盖')
+    try:
+        for n, p in TABLES.items():
+            if after[n] != before[n]: atomic(p, after[n])
+        atomic(LEDGER, output.getvalue().encode('utf-8'))
+    except Exception:
+        for p, data in originals.items(): atomic(p, data)
+        raise
     print('已落盘 %d 行；备份在 %s' % (len(pending), bk))
-main()
+if __name__ == '__main__': main()

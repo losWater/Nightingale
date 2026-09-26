@@ -6,6 +6,7 @@
 关卡：主表结构体检不过、任何一步失败即停。规则体检（78 的 14 项）只报告不拦——人工裁定可以高于规则，由你看报告决定。
 运行前后校验两张主表的 SHA256 未变（保证本步只读）。每次运行在 导出记录.jsonl 追加一行。"""
 import io, sys, os, re, json, subprocess, hashlib, datetime, shutil, time, collections
+raise SystemExit('旧导出链已停用，请运行仓库根 tools/maintenance/export.py 或 build_mac.py')
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 H = os.path.dirname(os.path.abspath(__file__)); W = os.path.dirname(H); A = set(sys.argv[1:]); log = []
 M = {'单字表': H + '/主表/夜莺2.0单字表.txt', '字词表': H + '/主表/夜莺2.0字词表.txt', '符号表': H + '/主表/夜莺2.0符号表.txt'}; ENV = dict(os.environ, PYTHONIOENCODING='utf-8')

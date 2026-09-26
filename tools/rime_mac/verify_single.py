@@ -1,0 +1,63 @@
+from pathlib import Path
+from collections import defaultdict
+import json, random, shutil, subprocess, tempfile, re
+from paths import ROOT
+p = ROOT/'release-single'
+stage = Path(tempfile.mkdtemp(prefix='verify-single-', dir=ROOT))
+shutil.copytree(p, stage, dirs_exist_ok=True)
+shutil.copy2(p/'default.custom.yaml.example', stage/'default.custom.yaml')
+table = defaultdict(list)
+quick = []
+for line in (ROOT/'upstream/nightingale-v25-symbo.txt').read_text().splitlines():
+    code,position,symbol = re.fullmatch(r'([a-z]+),(\d+)=(.+)',line).groups()
+    quick.append((code,int(position),symbol))
+for line in (p/'yeying25_single.dict.yaml').read_text().split('...',1)[1].splitlines():
+    if not line: continue
+    char, code, weight = line.split('\t')
+    assert len(char) == 1 or any(char==symbol and code==c for c,_,symbol in quick)
+    assert not code.startswith(';')
+    table[code].append(char)
+codes = random.Random(25).sample(sorted(c for c in table if not c.startswith(';')), 500)
+def quick_keys(code,position): return code + {1:'{space}',2:';',3:"'"}[position]
+keys = ['ufk','oot','ait','niky','niky{space}','[{space}','~shuang','ni{F2}','ni{Tab}'] + [quick_keys(c,n) for c,n,_ in quick] + ['niky;']
+english = ['ctrl', 'hello', 'control', 'hello_world', 'hello123']
+keys += english + [word+'{space}' for word in english] + ['ctrl{BackSpace}', 'ctrl{Escape}']
+keys += ['zi{space}', 'zid{space}', 'zip{space}']
+proc = subprocess.run([str(ROOT/'rime_probe'),str(stage),'yeying25_single','--deploy']+codes+keys,
+                      capture_output=True,text=True,timeout=60)
+assert proc.returncode == 0, proc.stderr
+results, commits = {}, {}
+for line in proc.stdout.splitlines():
+    row = line.split('\t')
+    if row[0] == 'COMMIT': commits[row[1]] = row[2]
+    elif row[0] != 'METRICS': results[row[0]] = row[2:]
+for code in codes:
+    assert results[code][0] == code, (code,results[code])
+    assert results[code][1:] == table[code][:9], (code,results[code],table[code])
+    assert code not in commits
+assert commits['niky{space}'] == commits['[{space}'] == '你'
+assert results['~shuang'][0] == '~shuang' and '双' in results['~shuang'][1:]
+assert results['ni{F2}'][0] == '~~ni'
+assert results['ni{Tab}'][0] == ''
+for code,position,symbol in quick:
+    assert table[code][position-1] == symbol
+    key = quick_keys(code,position)
+    assert commits[key] == symbol, (key,commits.get(key),symbol)
+    assert results[key][0] == '', (key,results[key])
+assert commits['niky;'] == table['niky'][1]
+assert table['zi'][0] == '子' and '自' not in table['zi']
+assert commits['zi{space}'] == commits['zip{space}'] == '子'
+assert commits['zid{space}'] == '自'
+for word in english:
+    assert results[word][0] == word, (word,results[word])
+    assert word not in commits, (word,commits[word])
+    assert commits[word+'{space}'] == word, (word,commits.get(word+'{space}'))
+assert results['ctrl{BackSpace}'][0] == 'ctr'
+assert results['ctrl{Escape}'][0] == ''
+for log in stage.glob('*ERROR*'): assert not log.read_text(),log.read_text()
+report = {'sampled_code_slots':len(codes),'single_character_rows':sum(map(len,table.values())),
+          'quick_symbol_keys_verified':len(quick),'semicolon_second_selection':'passed',
+          'english_guard':'passed',
+          'manual_selection_lookup_history':'passed','test_directory':str(stage)}
+(ROOT/'verification-single.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps(report,ensure_ascii=False,indent=2))

@@ -14,6 +14,11 @@ work/*_assembled.tsv
 work/v031_full.tsv
 
 # Python / 编辑器
+.cache/
+/夜莺*/产物/
+/夜莺*/备份/
+*.userdb/
+*.snapshot
 __pycache__/
 *.pyc
 .pytest_cache/
