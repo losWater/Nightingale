@@ -58,11 +58,12 @@ def main():
     schema = schema.replace('yeying25_single_lookup_input', 'yeying25_shape_lookup_input')
     schema = schema.replace('yeying25_single_comment', 'yeying25_shape_comment')
     schema = schema.replace('夜莺2.5·形码', '夜莺2.5·单字').replace('2.5-shape.2', '2.5-single.3')
-    schema = schema.replace('2.5-single.3', '2.5-single.5')
+    schema = schema.replace('2.5-single.3', '2.5-single.6')
     schema = schema.replace('  dependencies: [yeying25_mac_rime_fixed]\n', '')
     schema = schema.replace('    - lua_processor@*yeying25_mac_pin_key\n', '')
     schema = schema.replace('    - ascii_composer', '    - lua_processor@*yeying25_single_prefix\n    - ascii_composer', 1)
     schema = schema.replace('    - speller', '    - lua_processor@*yeying25_single_english_guard\n    - speller', 1)
+    schema = schema.replace('    - recognizer', '    - lua_processor@*yeying25_single_period\n    - recognizer', 1)
     schema = schema.replace('lua_translator@*yeying25_single_table', 'table_translator')
     schema = schema.replace('dictionary: yeying25_mac_rime_fixed', 'dictionary: yeying25_single')
     schema = schema.replace('auto_clear: max_length', 'auto_clear: manual')
@@ -76,10 +77,12 @@ def main():
     (out/'lua/yeying25_single_prefix_data.lua').write_text('return {' + ','.join('['+json.dumps(p)+']=true' for p in sorted(prefixes)) + '}\n')
     shutil.copy2(CODE/'src/yeying25_single_prefix.lua', out/'lua')
     shutil.copy2(CODE/'src/yeying25_single_english_guard.lua', out/'lua')
+    shutil.copy2(CODE/'src/yeying25_single_period.lua', out/'lua')
     (out/'README.md').write_text(
         '# 夜莺2.5·单字\n\n数据为夜莺2.5正式普通单字表，不混入词组或模型候选。\n'
         '最大码长9、四码不自动上屏、空码手动清除，与本机虎码单字一致。\n'
         '英文串保护：无候选时继续输入字母不清屏；五码起按英文串保留，空格原样上屏。\n'
+        '中文1至4码有候选时，句号提交当前选中候选并输出句号，不再被默认翻页/网址规则截获。\n'
         '九候选，使用虎码的圈字序号；空格/分号/引号选词，减号/等号翻页，左右键移动候选。\n'
         '快符使用夜莺v2.5的symbo.txt：字母后二选/三选，例如 a;→！，w;→？，s;→……，i;→——。\n'
         '分号选第二项，单引号选第三项；不是分号引导的虎码快符。多字符快符原样保留。\n'
@@ -91,7 +94,7 @@ def main():
     combined = ROOT/'release-dual'
     for name in ('yeying25_single.schema.yaml', 'yeying25_single.dict.yaml'):
         shutil.copy2(out/name, combined/name)
-    for name in ('yeying25_single_prefix.lua', 'yeying25_single_prefix_data.lua', 'yeying25_single_english_guard.lua'):
+    for name in ('yeying25_single_prefix.lua', 'yeying25_single_prefix_data.lua', 'yeying25_single_english_guard.lua', 'yeying25_single_period.lua'):
         shutil.copy2(out/'lua'/name, combined/'lua'/name)
     shutil.copy2(out/'README.md', combined/'SINGLE-README.md')
     (combined/'default.custom.yaml.example').write_text('patch:\n  schema_list:\n'

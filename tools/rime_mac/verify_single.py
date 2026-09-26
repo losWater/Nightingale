@@ -23,6 +23,11 @@ keys = ['ufk','oot','ait','niky','niky{space}','[{space}','~shuang','ni{F2}','ni
 english = ['ctrl', 'hello', 'control', 'hello_world', 'hello123']
 keys += english + [word+'{space}' for word in english] + ['ctrl{BackSpace}', 'ctrl{Escape}']
 keys += ['zi{space}', 'zid{space}', 'zip{space}']
+period_commits = {'f.':'发。', 'f,':'发，', 'dv.':'对。', 'rj.':'然。',
+                  'd.v':'的。', 'r.j':'人。', 'niky{Right}.':'伱。',
+                  'hello.world{space}':'hello.world', 'ct.':'ct。', '.':'。',
+                  'f{Control+period}.':'发.'}
+keys += list(period_commits)
 proc = subprocess.run([str(ROOT/'rime_probe'),str(stage),'yeying25_single','--deploy']+codes+keys,
                       capture_output=True,text=True,timeout=60)
 assert proc.returncode == 0, proc.stderr
@@ -54,10 +59,14 @@ for word in english:
     assert commits[word+'{space}'] == word, (word,commits.get(word+'{space}'))
 assert results['ctrl{BackSpace}'][0] == 'ctr'
 assert results['ctrl{Escape}'][0] == ''
+for key, expected in period_commits.items():
+    assert commits.get(key) == expected, (key,commits.get(key),expected)
+assert results['d.v'][0] == 'v' and results['r.j'][0] == 'j'
 for log in stage.glob('*ERROR*'): assert not log.read_text(),log.read_text()
 report = {'sampled_code_slots':len(codes),'single_character_rows':sum(map(len,table.values())),
           'quick_symbol_keys_verified':len(quick),'semicolon_second_selection':'passed',
           'english_guard':'passed',
+          'period_commits_and_continuation':'passed',
           'manual_selection_lookup_history':'passed','test_directory':str(stage)}
 (ROOT/'verification-single.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(report,ensure_ascii=False,indent=2))
