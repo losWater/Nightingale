@@ -8,6 +8,7 @@ import re
 import build_dual
 
 from paths import ROOT, CODE, ACTIVE, VERSION
+from semantics import apply_overrides
 
 def main():
     build_dual.build()
@@ -33,17 +34,8 @@ def main():
         char, code, _ = row.split('\t')
         slots[code].append(char)
     # Explicit platform differences live with the active version, not in shared code.
-    for change in json.loads((ACTIVE/'配置/单字版差异.json').read_text()):
-        bucket = slots[change['code']]; text = change['text']
-        if change['operation']=='delete':
-            if text in bucket: bucket.remove(text)
-        elif change['operation']=='insert':
-            if text in bucket: bucket.remove(text)
-            position = change['position']
-            if not 1 <= position <= len(bucket)+1: raise ValueError('单字差异候选位越界')
-            bucket.insert(position-1,text)
-            prefixes.update(change['code'][:n] for n in range(1,len(change['code'])+1))
-        else: raise ValueError('未知单字版差异操作')
+    apply_overrides(slots,json.loads((ACTIVE/'配置/单字版差异.json').read_text()))
+    prefixes={code[:n] for code,words in slots.items() if words for n in range(1,len(code)+1)}
     # Restore Nightingale's letter-code candidate positions, not Tiger's ;x codes.
     for line in (ROOT/'upstream/nightingale-v25-symbo.txt').read_text().splitlines():
         match = re.fullmatch(r'([a-z]+),(\d+)=(.+)', line)

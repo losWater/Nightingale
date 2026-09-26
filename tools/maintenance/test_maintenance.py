@@ -22,7 +22,7 @@ class MaintenanceTests(unittest.TestCase):
         for name in ('主表','记录','资料','配置'):(self.active/name).mkdir(parents=True,exist_ok=True)
         (self.root/'maintenance.json').write_text(json.dumps({'active':'夜莺7.1'}))
         (self.active/'版本.json').write_text(json.dumps({'version':'7.1','status':'active'}))
-        for name in ('单字表','字词表'):(self.active/'主表'/(name+'.txt')).write_text('甲\taa\n乙\tab\n')
+        for name in ('单字表','字词表'):(self.active/'主表'/(name+'.txt')).write_text('甲\taa\n甲\taaxx\n乙\tab\n乙\tabyy\n')
         (self.active/'主表/符号表.txt').write_text('！\toa\n')
         (self.active/'配置/单字版差异.json').write_text('[]\n')
         self.ledger([])
@@ -33,7 +33,7 @@ class MaintenanceTests(unittest.TestCase):
 
     def row(self,table='单字表',id='T-1'):
         return {**dict.fromkeys(FIELDS,''),'问题ID':id,'状态':'待处理','目标码表':table,
-                '操作':'改码','原编码':'aa','原字词':'甲','新编码':'ac'}
+                '操作':'改码','原编码':'aa','原字词':'甲','新编码':'aax'}
 
     def snapshot(self):
         return {str(p.relative_to(self.root)):p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
@@ -48,7 +48,7 @@ class MaintenanceTests(unittest.TestCase):
     def test_apply_then_repeat_is_noop(self):
         self.ledger([self.row(),self.row('字词表','T-2')]);result=self.run_ledger('--apply')
         self.assertEqual(result.returncode,0,result.stderr)
-        self.assertIn('甲\tac',(self.active/'主表/单字表.txt').read_text())
+        self.assertIn('甲\taax',(self.active/'主表/单字表.txt').read_text())
         with (self.active/'记录/修改台账.tsv').open() as f:rows=list(csv.DictReader(f,delimiter='\t'))
         self.assertTrue(all(r['状态']=='已修复' and len(r['修改后SHA256'])==64 for r in rows))
         self.assertTrue(list((self.active/'备份').glob('*/修改台账.tsv')))
@@ -107,6 +107,7 @@ class MaintenanceTests(unittest.TestCase):
         r.update({'操作':'查询','原编码':'aa'});self.assertIn('乙、丙',apply_row(rows,r))
 
     def test_split_preview_apply_and_record(self):
+        for name in ('单字表','字词表'):(self.active/'主表'/(name+'.txt')).write_text('甲\taa\n甲\taabc\n乙\tab\n乙\tabdd\n')
         roots=[{'根':'首','键':'b'},{'根':'末','键':'c'}]
         data={'甲':{'新拆':'首 ＋ 末','根':roots},'乙':{'新拆':'中','根':[{'根':'中','键':'d'}]}}
         query='const D = '+json.dumps(data,ensure_ascii=False)+';'

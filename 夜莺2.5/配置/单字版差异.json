@@ -1,4 +1,4 @@
 [
-  {"record": "MAC25-0001-01", "operation": "delete", "text": "自", "code": "zi"},
-  {"record": "MAC25-0001-02", "operation": "insert", "text": "子", "code": "zi", "position": 1}
+  {"record": "MAC25-0001-01", "operation": "delete", "text": "自", "code": "zi", "expected_candidates": ["自"], "requires": [["自", "zid"]]},
+  {"record": "MAC25-0001-02", "operation": "insert", "text": "子", "code": "zi", "position": 1, "expected_candidates": [], "requires": [["子", "zip"], ["子", "zipp"]]}
 ]
