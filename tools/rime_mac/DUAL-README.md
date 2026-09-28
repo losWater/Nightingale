@@ -4,7 +4,9 @@
 两版共用夜莺2.5码表、查询、钉选及主动造词数据。
 形码指固定码表输入方式，编码仍是夜莺的双拼＋首末根，不是改成虎码编码。
 
-## V5 整句版
+## V5 整句版（强烈推荐）
+
+只建议使用 V5 版本；形码和形码单字版只供有明确专项需求的用户选择。
 
 小鹤双拼连续输入，魔虎 V5 本地模型辅助整句，模型候选标记 V5。
 保留固定简码和词序，设置菜单没有魔虎语义等未接入功能。
@@ -46,4 +48,5 @@ squirrel.custom.yaml.example 只给出横排补丁；请合并进已有 style �
 夜莺：https://github.com/losWater/Nightingale/releases/tag/v2.5
 V5 模型与原生引擎：https://github.com/fcxxxz/rime-mohu/releases/tag/latest
 上游署名及许可证保留在文档与 LICENSE-mohu 中。
-此包用于作者 Mac 实打，尚未向 GitHub 发布。
+魔虎原作者为 fcxxxz，V5 模型、原生引擎及相关 Lua 并非夜莺原创。原始声明见发布包 attribution/。
+当前验证平台为 macOS 鼠须管；V5 的原生引擎仅适用于 Apple Silicon。

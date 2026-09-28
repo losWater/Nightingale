@@ -3,6 +3,10 @@ from collections import defaultdict
 import json, random, shutil, subprocess, tempfile, re
 from paths import ROOT
 p = ROOT/'release-single'
+schema_text = (p/'yeying25_single.schema.yaml').read_text()
+assert 'lua_processor@*yeying25_single_period' not in schema_text
+assert 'import_preset' not in schema_text.split('key_binder:',1)[1].split('recognizer:',1)[0]
+assert 'lua_processor@*yeying25_single_prefix' not in schema_text
 stage = Path(tempfile.mkdtemp(prefix='verify-single-', dir=ROOT))
 shutil.copytree(p, stage, dirs_exist_ok=True)
 shutil.copy2(p/'default.custom.yaml.example', stage/'default.custom.yaml')
@@ -26,8 +30,12 @@ keys += ['zi{space}', 'zid{space}', 'zip{space}']
 period_commits = {'f.':'发。', 'f,':'发，', 'dv.':'对。', 'rj.':'然。',
                   'd.v':'的。', 'r.j':'人。', 'niky{Right}.':'伱。',
                   'hello.world{space}':'hello.world', 'ct.':'ct。', '.':'。',
-                  'f{Control+period}.':'发.'}
+                  # ASCII punctuation is passed through to the host by native Rime;
+                  # the probe only captures the candidate's commit, not the host key.
+                  'f{Control+period}.':'发'}
 keys += list(period_commits)
+paging_code = next(code for code in sorted(table) if len(table[code]) > 9)
+keys += ['{Control+period}', paging_code+'=', paging_code+'=-', paging_code+'=.', paging_code+'=,']
 proc = subprocess.run([str(ROOT/'rime_probe'),str(stage),'yeying25_single','--deploy']+codes+keys,
                       capture_output=True,text=True,timeout=60)
 assert proc.returncode == 0, proc.stderr
@@ -50,8 +58,9 @@ for code,position,symbol in quick:
     assert commits[key] == symbol, (key,commits.get(key),symbol)
     assert results[key][0] == '', (key,results[key])
 assert commits['niky;'] == table['niky'][1]
-assert table['zi'][0] == '子' and '自' not in table['zi']
-assert commits['zi{space}'] == commits['zip{space}'] == '子'
+assert table['zi'][0] == '自' and '子' not in table['zi']
+assert commits['zi{space}'] == '自'
+assert commits['zip{space}'] == '子'
 assert commits['zid{space}'] == '自'
 for word in english:
     assert results[word][0] == word, (word,results[word])
@@ -62,8 +71,31 @@ assert results['ctrl{Escape}'][0] == ''
 for key, expected in period_commits.items():
     assert commits.get(key) == expected, (key,commits.get(key),expected)
 assert results['d.v'][0] == 'v' and results['r.j'][0] == 'j'
+assert results[paging_code+'='][1] == table[paging_code][9]
+assert results[paging_code+'=-'][1] == table[paging_code][0]
+assert commits[paging_code+'=.'] == table[paging_code][9] + '。'
+assert commits[paging_code+'=,'] == table[paging_code][9] + '，'
 for log in stage.glob('*ERROR*'): assert not log.read_text(),log.read_text()
+sequence = ['f.', 'f,', 'dv.', 'rj.', 'rj.', 'rj,', 'd.g', 'r.j'] * 30
+expected = {'f.':'发。','f,':'发，','dv.':'对。','rj.':'然。','rj,':'然，','d.g':'的。','r.j':'人。'}
+repeated = subprocess.run([str(ROOT/'rime_probe'),str(stage),'yeying25_single']+sequence,
+                          capture_output=True,text=True,timeout=60)
+assert repeated.returncode == 0, repeated.stderr
+commit_rows = []
+for line in repeated.stdout.splitlines():
+    row = line.split('\t')
+    if row[0] == 'COMMIT':
+        assert row[2] == expected[row[1]], row
+        commit_rows.append(row[1])
+    elif row[0] != 'METRICS':
+        assert row[2] == {'d.g':'g','r.j':'j'}.get(row[0], ''), row
+assert commit_rows == sequence, (len(commit_rows),len(sequence))
+compiled = (stage/'build/yeying25_single.schema.yaml').read_text()
+bindings = compiled.split('key_binder:',1)[1].split('menu:',1)[0]
+assert 'accept: period,' not in bindings and 'accept: comma,' not in bindings
+assert 'accept: minus, send: Page_Up' in bindings and 'accept: equal, send: Page_Down' in bindings
 report = {'sampled_code_slots':len(codes),'single_character_rows':sum(map(len,table.values())),
+          'consecutive_punctuation_cases':len(sequence),'tiger_paging_bindings':'passed',
           'quick_symbol_keys_verified':len(quick),'semicolon_second_selection':'passed',
           'english_guard':'passed',
           'period_commits_and_continuation':'passed',

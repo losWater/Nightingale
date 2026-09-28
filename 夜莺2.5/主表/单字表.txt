@@ -8321,6 +8321,7 @@
 锹	qnu
 锹	qnup
 悄	qnv
+翘	qnvo
 憔	qnvp
 愀	qnvp
 悄	qnvz
@@ -12506,6 +12507,8 @@
 钥	ycu
 铫	ycup
 钥	ycuz
+尧	ycv
+尧	ycvp
 杳	ycw
 杳	ycwb
 耀	ycy

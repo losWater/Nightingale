@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nightingale-Rime-2.5-mac-v5-20260928.zip",
+    "label": "夜莺 V5 版（强烈推荐） · macOS Apple Silicon",
+    "size": 232970218,
+    "sha256": "a8c1c083d37bc7d8af63ab97d397bac04bc8503f01084f89b13eca89ed0024d2"
+  },
+  {
+    "name": "Nightingale-Rime-2.5-mac-shape-20260928.zip",
+    "label": "夜莺 形码版 · macOS",
+    "size": 1421041,
+    "sha256": "9c18a9d27618ed183e6d6645a9fac8d1ab5b1e6cc7084ea2db2d050d799d5dfc"
+  },
+  {
+    "name": "Nightingale-Rime-2.5-mac-single-20260928.zip",
+    "label": "夜莺 形码单字版 · macOS",
+    "size": 309771,
+    "sha256": "1f2da67e01f29cdc5a95a5b365ba7296d27b536e6c1ee4eb3bc5b7066c5bf395"
+  }
+]

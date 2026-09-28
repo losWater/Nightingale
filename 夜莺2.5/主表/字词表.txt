@@ -90638,6 +90638,7 @@ py交易	pyjy
 钱难赚，屎难吃	qnvi
 乔装	qnvl
 强弩之末	qnvm
+翘	qnvo
 憔	qnvp
 愀	qnvp
 敲钟	qnvs
@@ -140864,6 +140865,7 @@ magnet:?xt=urn:btih:	xylw
 妖兽	ycuz
 钥	ycuz
 摇手	ycuz
+尧	ycv
 预测值	ycv
 药渣	ycva
 夭折	ycve
@@ -140873,6 +140875,7 @@ magnet:?xt=urn:btih:	xylw
 遥指	ycvi
 腰斩	ycvj
 忧从中来	ycvl
+尧	ycvp
 肴馔	ycvr
 騕	ycvs
 咬住	ycvu

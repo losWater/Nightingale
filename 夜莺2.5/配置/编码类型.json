@@ -1,23 +1,125 @@
 {
   "source": "c72948ac7ded746ebdd5900679ae79f5c9e9a96d:work/夜莺2.0/83_单字表重放/无理码表.json；只迁移明确登记的例外，不推导或改码",
   "entries": [
-    {"text":"剧","code":"jv","type":"容错码"},
-    {"text":"居","code":"jvb","type":"容错码"},
-    {"text":"巨","code":"jvn","type":"容错码"},
-    {"text":"狙","code":"jvo","type":"容错码"},
-    {"text":"绪","code":"xv","type":"容错码"},
-    {"text":"欲","code":"yvl","type":"容错码"},
-    {"text":"予","code":"yvz","type":"容错码"},
-    {"text":"郁","code":"yvc","type":"容错码"},
-    {"text":"羽","code":"yvo","type":"容错码"},
-    {"text":"金","code":"jbx","type":"容错码"},
-    {"text":"承","code":"igpf","type":"容错码"},
-    {"text":"载","code":"zde","type":"容错码"},
-    {"text":"哉","code":"zdt","type":"容错码"},
-    {"text":"栽","code":"zdw","type":"容错码"},
-    {"text":"兜","code":"dzp","type":"容错码"},
-    {"text":"鹤","code":"eh","type":"自定义码"},
-    {"text":"莺","code":"by","type":"自定义码"},
-    {"text":"六","code":"lqq","type":"自定义码"}
+    {
+      "text": "予",
+      "code": "yvz",
+      "type": "容错码"
+    },
+    {
+      "text": "兜",
+      "code": "dzp",
+      "type": "容错码"
+    },
+    {
+      "text": "六",
+      "code": "lqq",
+      "type": "自定义码"
+    },
+    {
+      "text": "剧",
+      "code": "jv",
+      "type": "容错码"
+    },
+    {
+      "text": "哉",
+      "code": "zdt",
+      "type": "容错码"
+    },
+    {
+      "text": "尧",
+      "code": "ycpp",
+      "type": "容错码"
+    },
+    {
+      "text": "尧",
+      "code": "ycv",
+      "type": "简码"
+    },
+    {
+      "text": "尧",
+      "code": "ycvp",
+      "type": "全码"
+    },
+    {
+      "text": "居",
+      "code": "jvb",
+      "type": "容错码"
+    },
+    {
+      "text": "巨",
+      "code": "jvn",
+      "type": "容错码"
+    },
+    {
+      "text": "承",
+      "code": "igpf",
+      "type": "容错码"
+    },
+    {
+      "text": "栽",
+      "code": "zdw",
+      "type": "容错码"
+    },
+    {
+      "text": "欲",
+      "code": "yvl",
+      "type": "容错码"
+    },
+    {
+      "text": "狙",
+      "code": "jvo",
+      "type": "容错码"
+    },
+    {
+      "text": "绪",
+      "code": "xv",
+      "type": "容错码"
+    },
+    {
+      "text": "羽",
+      "code": "yvo",
+      "type": "容错码"
+    },
+    {
+      "text": "翘",
+      "code": "qnp",
+      "type": "容错码"
+    },
+    {
+      "text": "翘",
+      "code": "qnpo",
+      "type": "容错码"
+    },
+    {
+      "text": "翘",
+      "code": "qnvo",
+      "type": "全码"
+    },
+    {
+      "text": "莺",
+      "code": "by",
+      "type": "自定义码"
+    },
+    {
+      "text": "载",
+      "code": "zde",
+      "type": "容错码"
+    },
+    {
+      "text": "郁",
+      "code": "yvc",
+      "type": "容错码"
+    },
+    {
+      "text": "金",
+      "code": "jbx",
+      "type": "容错码"
+    },
+    {
+      "text": "鹤",
+      "code": "eh",
+      "type": "自定义码"
+    }
   ]
 }

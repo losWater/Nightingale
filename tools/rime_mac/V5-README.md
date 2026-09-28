@@ -1,4 +1,6 @@
-# 夜莺 2.5 · V5（Mac Apple Silicon）
+# 夜莺 2.5 · V5（强烈推荐 · Mac Apple Silicon）
+
+只建议使用 V5 版本。形码、形码单字版仅供明确需要固定码表或单字练习的用户选择。
 
 新增独立方案「夜莺2.5·V5」，原「夜莺2.5·Mac」保留，Control+反引号可切换对照。
 横排样式沿用本机鼠须管设置。
@@ -16,6 +18,7 @@ V5 有独立的整句用户词典和学习快照，钉选/主动造词与基础�
 ## 来源和改动
 
 - 夜莺数据：https://github.com/losWater/Nightingale/releases/tag/v2.5
+- 魔虎原作者：fcxxxz。V5 模型、原生引擎和相关 Lua 来自魔虎 rime-mohu，不是夜莺原创：https://github.com/fcxxxz/rime-mohu
 - 魔虎引擎/Lua/模型：https://github.com/fcxxxz/rime-mohu/releases/tag/latest
 - 上游代码许可见 LICENSE-mohu（GPL v3）。
 - Lua 适配改私有模块/数据目录名、V5 候选标记，并读取候选条数设置（四条）；保留上游引擎算法。
@@ -30,4 +33,5 @@ lua/yeying25_v5_*.lua、整个 yeying25_v5 目录到 Rime 用户目录相应位�
 重新部署后选「夜莺2.5·V5」。引擎更新时需要完全退出并重启鼠须管。
 若浏览器下载的动态库受隔离限制，只对本包 yeying25_v5/runtime 解除隔离。
 
-这是作者本机试用版，未向 GitHub 发布。首次选方案需要加载模型，随后测量热态按键延迟。
+已在 Apple Silicon Mac 的鼠须管 1.1.2 / librime 1.16.0 验证。此包不适用于 Windows、Intel Mac 或手机。首次选方案需要加载模型。
+上游原始 README、模型说明及发布声明保存在 attribution/，不因方案显示名调整而删除。原文件中的魔虎目录和安装方式是上游资料；安装夜莺请遵循本包 README.md。
