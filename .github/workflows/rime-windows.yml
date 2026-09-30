@@ -1,0 +1,60 @@
+name: Verify and publish Windows Rime
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/rime-windows.yml'
+      - 'tools/rime_windows/**'
+      - 'tools/rime_mac/rime_probe.c'
+permissions:
+  contents: read
+concurrency:
+  group: rime-windows-release
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build Windows packages from verified source assets
+        shell: pwsh
+        run: |
+          python tools/rime_windows/package_release.py --source-manifest "夜莺2.5/记录/Rime发布清单-20260928.json" --source-dir "$env:RUNNER_TEMP/source" --upstream "$env:RUNNER_TEMP/upstream.zip" --output "$env:RUNNER_TEMP/windows-release" --version 2.5 --stamp 20260930
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Compile native Windows probe
+        shell: cmd
+        run: |
+          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+          cl /nologo /utf-8 /O2 tools\rime_mac\rime_probe.c /Fe:"%RUNNER_TEMP%\rime_probe.exe"
+      - name: Verify actual ZIPs with official Weasel engine
+        shell: pwsh
+        run: |
+          python tools/rime_windows/verify_release.py "$env:RUNNER_TEMP/windows-release" --probe "$env:RUNNER_TEMP/rime_probe.exe" --work "$env:RUNNER_TEMP/windows-test"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Preserve verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-rime-evidence
+          path: |
+            ${{ runner.temp }}/windows-test/*.txt
+            ${{ runner.temp }}/windows-release/*.json
+            ${{ runner.temp }}/windows-release/*.txt
+          retention-days: 30
+      - name: Upload verified packages without overwriting existing assets
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $dir = "$env:RUNNER_TEMP/windows-release"
+          gh release upload v2.5 "$dir/Nightingale-Rime-2.5-windows-v5-20260930.zip" "$dir/Nightingale-Rime-2.5-windows-shape-20260930.zip" "$dir/Nightingale-Rime-2.5-windows-single-20260930.zip" "$dir/SHA256SUMS-windows-20260930.txt" "$dir/windows-verification.json" --repo losWater/Nightingale
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
