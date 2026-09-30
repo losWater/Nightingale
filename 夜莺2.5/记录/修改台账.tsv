@@ -1,4 +1,5 @@
 问题ID	原文摘录	状态	目标码表	操作	原编码	原字词	新编码	新字词	目标候选位	备注	处理时间	处理结果	修改前SHA256	修改后SHA256
+REL25-WIN-02	Windows补发进度与权限阻塞记录	待授权	Windows Rime发布	验证准备						三个Windows ZIP已生成于产物/windows/publication/20260930；公共YAML和Lua与Mac原包逐字节一致；DLL为x64且上游SHA256匹配；GPL和原作者声明保留；官网分平台源码已准备但未上线	2026-09-30	本地结构校验通过；GitHub拒绝推送39ba1bf，现有PAT缺workflow scope；Windows原生验证、附件上传、官网Windows下载入口均未完成；远端main只到d05d1aa，不得宣称已补发		
 REL25-WIN-01	用户已公告Windows与Mac正式发布，紧急补齐Windows三个Rime版本及官网	待验证	Windows Rime发布	平台适配						新增tools/rime_windows和Windows CI；固定已发布Mac公共数据及魔虎上游哈希，替换Windows x64 DLL依赖；独立安装说明和横排示例；保留来源声明；不修改本机Rime	2026-09-30	本地语法检查通过，待官方小狼毫0.17.4 Windows原生引擎测试；通过后才能上传		
 P0014-01	符号区冒号没删	已修复	符号表	删除	ofbd	：					2026-09-22T00:16:22	删除 ofbd=：；ofbd：〈、〉、［、］、｛、｝、：、ˉ、ˇ、¨、々、～、‖、∶ → 〈、〉、［、］、｛、｝、ˉ、ˇ、¨、々、～、‖、∶	e8af3493730134f9b9d28f6eedc6a4f763a438b7429632da4424cd145ccaaec6	e8d6fa6fba2570dfe00ee9043cfcdf3705c04b3a22431add651e81cf578e1ade
 P0014-02	符号区冒号没删	已修复	符号表	删除	ofbd	∶					2026-09-22T00:16:22	删除 ofbd=∶；ofbd：〈、〉、［、］、｛、｝、ˉ、ˇ、¨、々、～、‖、∶ → 〈、〉、［、］、｛、｝、ˉ、ˇ、¨、々、～、‖	e8af3493730134f9b9d28f6eedc6a4f763a438b7429632da4424cd145ccaaec6	e8d6fa6fba2570dfe00ee9043cfcdf3705c04b3a22431add651e81cf578e1ade
