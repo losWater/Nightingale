@@ -3,11 +3,21 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#ifdef _WIN32
+#include <windows.h>
+#else
 #include <dlfcn.h>
+#endif
 
 static double now_ms(void) {
+#ifdef _WIN32
+  LARGE_INTEGER t, f;
+  QueryPerformanceCounter(&t); QueryPerformanceFrequency(&f);
+  return (double)t.QuadPart * 1000.0 / (double)f.QuadPart;
+#else
   struct timespec t; clock_gettime(CLOCK_MONOTONIC, &t);
   return t.tv_sec * 1000.0 + t.tv_nsec / 1000000.0;
+#endif
 }
 static int compare_double(const void *a, const void *b) {
   double d = *(const double *)a - *(const double *)b;
@@ -15,16 +25,30 @@ static int compare_double(const void *a, const void *b) {
 }
 int main(int argc, char **argv) {
   if (argc < 4) return 2;
+#ifdef _WIN32
+  const char *dll = getenv("RIME_TEST_DLL");
+  const char *shared = getenv("RIME_TEST_SHARED");
+  if (!dll || !shared) return 2;
+  HMODULE lib = LoadLibraryA(dll);
+  if (!lib) { fprintf(stderr, "LoadLibrary error %lu\n", GetLastError()); return 3; }
+  RimeApi *(*get_api)(void) = (RimeApi *(*)(void))GetProcAddress(lib, "rime_get_api");
+#else
   void *lib = dlopen("/Library/Input Methods/Squirrel.app/Contents/Frameworks/librime.1.dylib", RTLD_NOW | RTLD_GLOBAL);
   if (!lib) { fprintf(stderr, "%s\n", dlerror()); return 3; }
   if (!dlopen("/Library/Input Methods/Squirrel.app/Contents/Frameworks/rime-plugins/librime-lua.dylib", RTLD_NOW | RTLD_GLOBAL)) {
     fprintf(stderr, "%s\n", dlerror()); return 3;
   }
   RimeApi *(*get_api)(void) = dlsym(lib, "rime_get_api");
+#endif
+  if (!get_api) return 3;
   RimeApi *api = get_api();
   RIME_STRUCT(RimeTraits, traits);
   const char *modules[] = {"default", "lua", NULL};
+#ifdef _WIN32
+  traits.shared_data_dir = shared;
+#else
   traits.shared_data_dir = "/Library/Input Methods/Squirrel.app/Contents/SharedSupport";
+#endif
   traits.user_data_dir = argv[1];
   traits.app_name = "rime.nightingale_probe";
   traits.distribution_name = "Nightingale test";
