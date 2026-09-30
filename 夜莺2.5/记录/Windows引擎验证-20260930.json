@@ -1,0 +1,82 @@
+{
+  "platform": "Windows x64",
+  "weasel": "0.17.4",
+  "engine_sha256": "2d8f1bc3737635a11d9fb1bfca4dc9e70533633930a8a0142a81ca879c39c45b",
+  "installer_url": "https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe",
+  "installer_sha256": "cf509534a8f5f8af9c98ed7cbb8f135439f145a8cbe7e50ede42bb5b5ab45c29",
+  "scope": "Official engine isolated deployment and key sequences; not manual GUI application coverage",
+  "results": [
+    {
+      "asset": {
+        "name": "Nightingale-Rime-2.5-windows-v5-20260930.zip",
+        "label": "夜莺 V5 版（强烈推荐） · Windows x64 小狼毫",
+        "sha256": "32fa9c8e9fcd43df623bbf2955896422342539c35dc97d12ecdad0a61383d946",
+        "size": 228756762
+      },
+      "schema": "yeying25_v5",
+      "passed": true,
+      "keys": [
+        "ycv{space}",
+        "ycvp{space}",
+        "ycpp{space}",
+        "qnvo{space}",
+        "qnp{space}",
+        "qnv{space}",
+        "yr{space}",
+        "yrp{space}",
+        "zi{space}",
+        "zip{space}",
+        "woxihryeyk",
+        "woxihryeyk{space}"
+      ]
+    },
+    {
+      "asset": {
+        "name": "Nightingale-Rime-2.5-windows-shape-20260930.zip",
+        "label": "夜莺 形码版 · Windows x64 小狼毫",
+        "sha256": "e8b921e889d81c13f1e53d5e6b33a5f7bd46155aed634f788f5e589a6cd7244a",
+        "size": 1419003
+      },
+      "schema": "yeying25_shape",
+      "passed": true,
+      "keys": [
+        "ycv{space}",
+        "ycvp{space}",
+        "ycpp{space}",
+        "qnvo{space}",
+        "qnp{space}",
+        "qnv{space}",
+        "yr{space}",
+        "yrp{space}",
+        "zi{space}",
+        "zip{space}"
+      ]
+    },
+    {
+      "asset": {
+        "name": "Nightingale-Rime-2.5-windows-single-20260930.zip",
+        "label": "夜莺 形码单字版 · Windows x64 小狼毫",
+        "sha256": "8fbf5cec4f3b200fd6c8af9b671be683eea05265c07b79ab9e60e6f3590df028",
+        "size": 309093
+      },
+      "schema": "yeying25_single",
+      "passed": true,
+      "keys": [
+        "ycv{space}",
+        "ycvp{space}",
+        "ycpp{space}",
+        "qnvo{space}",
+        "qnp{space}",
+        "qnv{space}",
+        "yr{space}",
+        "yrp{space}",
+        "zi{space}",
+        "zip{space}",
+        "f.",
+        "dv.",
+        "ct{space}",
+        "fzp{space}"
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ python -m http.server 8765 --bind 127.0.0.1 --directory .tmp/website-preview
 
 构建来源为 `releases/v2.5`；作者文章读取 `素材/作者的话.md`。构建依赖 Python Markdown（`pip install Markdown`），浏览器运行无需依赖。
 
-正式网站：https://loswater.github.io/Nightingale/ 。GitHub Pages 使用 gh-pages 分支根目录，发布时上传 `.tmp/website-preview` 的构建结果。码表与 Rime 包在 v2.0 Release 附件。
+正式网站：https://loswater.github.io/Nightingale/ 。GitHub Pages 使用 gh-pages 分支根目录，发布时上传 `.tmp/website-preview` 的构建结果。当前码表与 Windows/Mac Rime 包在 v2.5 Release 附件；首页按系统区分下载。
 
 ## 2.0 改版（2026-09-16）
 

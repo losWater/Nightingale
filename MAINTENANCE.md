@@ -68,7 +68,8 @@ python3 tools/maintenance/rollover.py 2.6 --apply  # 确认发布后执行
 - assets/rime 的小型基线ZIP只提供适配代码及语言元数据；固定字词表、当前全码、反查拆分都从当前目录重新生成，不从旧发布包继承候选表。
 - 大文件 `rime-mohu-flypy-latest.zip`、`mohu-sentence-ngram-v5.bin.zip` 放 .cache/rime；固定地址和哈希见 assets/rime/mohu-release.json，不能随意用新版 latest 替换。
 - yeying25_* 内部标识暂保留兼容；用户界面的版本名在完整构建时从版本.json取得。快符兼容中间文件的旧名字不代表另一个真源。
-- 本次迁移打通主表维护、普通表导出、Mac三个方案及拆分维护。旧 Windows 全平台发布/官网脚本仍是历史工具，尚未迁入新入口，不应宣称 Windows/手机版已验证或运行它们发布。
+- 主表维护、普通表导出、Mac三个方案及拆分维护沿用当前入口。Windows 三方案由 `tools/rime_windows` 从已发布且哈希固定的共同数据构建，替换 Windows DLL 和安装说明；`.github/workflows/rime-windows.yml` 使用官方小狼毫 0.17.4 的 x64 引擎隔离验证实际 ZIP，通过后上传附件。模型候选与整句上屏必须通过，不能仅凭普通 Rime 回退候选判定成功。
+- 20260930 Windows 包已通过原生引擎验证，证据见当前周期 `记录/Windows引擎验证-20260930.json`。后续每次发布须固定源包清单、上游散列、平台宿主并复验，不能沿用旧验证结论。旧 Windows 全平台脚本仍是历史工具；手机版尚未验证。
 - 规则文档保留历史裁定原文，其中旧路径只作来源追溯；日常操作以本页为准。
 
 原 `/Users/ice2447/nightingale-mac` 只保留已安装包、备份和此前 Git 历史，后续不在两份仓库间双向维护。本仓库未推送。

@@ -15,6 +15,7 @@ def main():
     p.add_argument('--tag', required=True)
     p.add_argument('--directory', type=Path, required=True)
     p.add_argument('--notes', type=Path, required=True)
+    p.add_argument('--platform', choices=('mac', 'windows'), default='mac')
     p.add_argument('--apply', action='store_true')
     args = p.parse_args()
     if args.repo != 'losWater/Nightingale':
@@ -45,10 +46,11 @@ def main():
     if release.get('immutable'):
         raise ValueError('Release is immutable')
     assets = json.loads((args.directory/'assets.json').read_text())
-    sums = list(args.directory.glob('SHA256SUMS-mac-*.txt'))
+    sums = list(args.directory.glob(f'SHA256SUMS-{args.platform}-*.txt'))
     if len(sums) != 1:
         raise ValueError('Expected one checksum file')
-    assets.append({'name': sums[0].name, 'label': '本次 Mac Rime 三版本 SHA256 校验值',
+    platform_label = 'Mac' if args.platform == 'mac' else 'Windows'
+    assets.append({'name': sums[0].name, 'label': f'本次 {platform_label} Rime 三版本 SHA256 校验值',
                    'sha256': hashlib.sha256(sums[0].read_bytes()).hexdigest(), 'size': sums[0].stat().st_size})
     existing = {a['name']: a for a in release['assets']}
     for asset in assets:
