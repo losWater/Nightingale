@@ -31,8 +31,10 @@ def main():
     url = 'https://github.com/rime/weasel/releases/download/0.17.4/' + installer.name
     urllib.request.urlretrieve(url, installer)
     extracted = work / 'weasel'
-    subprocess.run(['7z', 'x', str(installer), '-o' + str(extracted), '-y'], check=True)
-    dlls = [p for p in extracted.rglob('rime.dll') if machine(p) == 0x8664]
+    # NSIS contains x64 and x86 files with the same installed names. Keep
+    # duplicate payloads rather than overwriting the x64 engine with x86.
+    subprocess.run(['7z', 'x', str(installer), '-o' + str(extracted), '-aou', '-y'], check=True)
+    dlls = [p for p in extracted.rglob('rime*.dll') if machine(p) == 0x8664]
     print('Official x64 engines:', dlls, flush=True)
     assert len(dlls) == 1, dlls
     dll = dlls[0]
