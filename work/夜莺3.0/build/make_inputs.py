@@ -81,6 +81,24 @@ for (c, py), r in basis.items():
     entries.append(e)
 entries.sort(key=lambda e: (-e['频率'], e['词'], e['拼音']))
 entries += reserved                       # 固定二简简词占位，频率 0，置于末尾（同 54）
+# 作者 2026-10-01：2.5 中凡没有单字二简的二码位，首选都是二字简词（今天 jt、这样 vy……），一律留给词。
+N25 = Path.home() / 'Nightingale/夜莺2.5'
+_single2 = {l.split('\t')[1].strip() for l in open(N25 / '产物/普通单字表.txt', encoding='utf-8-sig')
+            if '\t' in l and len(l.split('\t')[0]) == 1 and len(l.split('\t')[1].strip()) == 2}
+_word2 = {}
+for l in open(N25 / '产物/综合字词表.txt', encoding='utf-8-sig'):
+    p_ = l.rstrip('\n').split('\t')
+    if len(p_) == 2 and len(p_[1]) == 2 and len(p_[0]) >= 2 and p_[1] not in _single2:
+        _word2.setdefault(p_[1], p_[0])
+# 嗯 en：口语补读的特殊二简（作者 2026-10-01），同样留出，出码表时按 2.5 给嗯
+_word2.setdefault('en', '嗯')
+_have = {''.join(x['element'][2:] for x in e['元素序列']) for e in reserved}
+for code, word in sorted(_word2.items()):
+    if code not in _have:
+        entries.append({'词': word, '拼音': 'reserved',
+                        '元素序列': [{'element': f'P_{code[0]}', 'index': 0}, {'element': f'P_{code[1]}', 'index': 0}],
+                        '频率': 0})
+RESERVED2 = sorted(_word2)
 index_of = collections.defaultdict(list)
 for i, e in enumerate(entries):
     index_of[e['词']].append(i)
@@ -227,6 +245,7 @@ elif W.get('eq_bins'):   # 分档不加权当量：排除固定一二简读音
     yz['eq_bins'] = bins
 json.dump(yz, open(OUT / 'yozakura.json', 'w', encoding='utf-8'), ensure_ascii=False)
 json.dump(W, open(OUT / 'weights.json', 'w', encoding='utf-8'), ensure_ascii=False)
+print('留给词的二码位', len(RESERVED2), ' '.join(RESERVED2))
 print('根组', len(groups), '元素条目', len(entries), '字词避重目标', len(new_targets), '未换算', unmapped)
 print('分层（读音身份数 / 非前缀条目）', {n: (t['size'], t['非前缀条目']) for n, t in tiers.items()})
 print('输出', OUT)
