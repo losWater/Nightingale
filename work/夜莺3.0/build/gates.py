@@ -36,8 +36,10 @@ def analyse(codes):
     for i, (full, _, _, _) in enumerate(codes):
         by_code[full].append(i)
     exempt = lambda i: any(j != i and sig(E[j]) == sig(E[i]) for j in by_code[codes[i][0]])
+    # 实际选重口径（作者 2026-10-01）：只看必须打全码的读音；有一二三简的读音在全码位让位，不参与
+    ft = lambda i: not (0 < len(codes[i][2]) < len(codes[i][0]))
     def effective(idx):
-        return [i for i in idx if any(j < i and sig(E[j]) != sig(E[i]) for j in by_code[codes[i][0]])]
+        return [i for i in idx if ft(i) and any(j < i and ft(j) and sig(E[j]) != sig(E[i]) for j in by_code[codes[i][0]])]
     def non_exclusive(idx):
         bad, ex = [], []
         for i in idx:

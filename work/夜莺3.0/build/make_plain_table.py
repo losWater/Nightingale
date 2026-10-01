@@ -11,7 +11,7 @@
 
 用法：python build/make_plain_table.py <方案运行目录> <输出目录>
 """
-import json, sys, collections
+import json, os, sys, collections
 from pathlib import Path
 import yaml
 
@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / 'lib'))
 from shuangpin import encode
 
 N25 = Path.home() / 'Nightingale/夜莺2.5'
-INP = ROOT / 'build/out/formal'
+INP = ROOT / 'build/out' / os.environ.get('YZ_INP', 'n30')   # 2026-10-02：默认改用 n30（formal 为旧自然码赛，条目已不对齐）
 L = getattr(yaml, 'CSafeLoader', yaml.SafeLoader)
 
 

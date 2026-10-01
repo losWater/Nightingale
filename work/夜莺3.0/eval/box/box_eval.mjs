@@ -18,7 +18,7 @@ const sections = r.evaluate.map(s => {
     trible += x.freq * x.trible;
     for (const k of flags) cnt[k] += x.freq * x[k];
   }
-  return { range: `${s.start + 1}-${s.end}`, missing: miss, keyEq: keyEq / s.freq, ziEq: ziEq / s.freq,
+  return { range: `${s.start + 1}-${s.end}`, freq: s.freq, pairs, missing: miss, keyEq: keyEq / s.freq, ziEq: ziEq / s.freq,
            keyLength: CL / s.freq, selectRate: sel / s.freq, tribleRate: trible / s.freq,
            ...Object.fromEntries(flags.map(k => [k + 'Rate', pairs ? cnt[k] / pairs : 0])) };
 });

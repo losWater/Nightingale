@@ -57,12 +57,15 @@ def evaluate(jid):
     return res
 
 
-def full_only(items, code_txt):
-    """只保留每个读音的全码（去掉引擎临时简码），候选位按全码原序。"""
+def full_only(items, code_txt, elements=None):
+    """全码口径：去掉引擎临时简码（三简等），只保留全码；
+    固定一二简（已知、沿用 2.5）照常保留（作者 2026-10-01）。"""
+    from make_table import load_elements
+    E = load_elements(elements or EL)
     rows = [l.rstrip('\n').split('\t') for l in open(code_txt, encoding='utf-8')]
     keep = []
     for code, rank, i, ch, py in items:
-        if code == rows[i][1]:
+        if code == rows[i][1] or (E[i].get('简码长度') and len(code) == E[i]['简码长度']):
             keep.append((code, rank, i, ch, py))
     return sorted(keep)
 

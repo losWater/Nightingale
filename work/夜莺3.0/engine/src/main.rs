@@ -31,6 +31,34 @@ fn main() -> Result<(), 错误> {
             let 上下文 = 默认上下文::新建(输入)?;
             let 编码器 = 默认编码器::新建(&上下文)?;
             let mut 目标函数 = 默认目标函数::新建(&上下文, 编码器)?;
+            if std::env::var_os("NIGHTINGALE_BATCH").is_some() {
+                // 常驻批量评分：stdin 每行一个 {元素: 键} 覆盖，stdout 输出分数，stderr 以 BATCH_END 收尾
+                use chai::contexts::default::默认安排;
+                use std::io::BufRead;
+                for line in std::io::stdin().lock().lines() {
+                    let line = line.unwrap();
+                    if line.trim().is_empty() {
+                        continue;
+                    }
+                    let over: std::collections::HashMap<String, String> =
+                        serde_json::from_str(&line).expect("批量输入须为 JSON 对象");
+                    let mut 决策 = 上下文.初始决策.clone();
+                    for (名, 键) in &over {
+                        let e = 上下文.棱镜.元素转数字[名];
+                        let k = 上下文.棱镜.键转数字[&键.chars().next().unwrap()];
+                        let mut a = [(0usize, 0usize); chai::最大元素编码长度];
+                        a[0] = (k as usize, 0);
+                        决策.元素[e] = 默认安排::键位(a);
+                    }
+                    let (指标, 分数) = 目标函数.计算(&决策, &None);
+                    println!(
+                        "{}",
+                        serde_json::json!({"score": 分数, "complexity": 指标.complexity, "metric": &指标})
+                    );
+                    eprintln!("BATCH_END");
+                }
+                return Ok(());
+            }
             let (指标, 分数) = 目标函数.计算(&上下文.初始决策, &None);
             let 码表 = 上下文.生成码表(&目标函数.编码结果);
             let 码表路径 = 命令行.输出编码结果(码表);

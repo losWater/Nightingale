@@ -15,7 +15,7 @@
 
 用法：python build/make_inputs.py [输出目录名]   默认 build/out/base
 """
-import copy, json, sys, collections
+import copy, json, os, sys, collections
 from pathlib import Path
 import yaml
 
@@ -60,7 +60,7 @@ assert all(layout.values()), [g for g, k in layout.items() if not k]
 E54 = yaml.safe_load(open(F54 / 'elements.yaml', encoding='utf-8'))
 basis = {(r['字'], r['拼音']): r for r in load(ROOT / 'data/inputs/夜桜字音基准.json')}
 fixed_short = {(e['词'], e['拼音']): e['简码长度'] for e in E54 if e.get('简码长度')}
-FIX_PATH = ROOT / 'data/inputs/2.5一二简固定.json'
+FIX_PATH = ROOT / os.environ.get('YZ_FIX', 'data/inputs/2.5一二简固定.json')   # 3.0 起用 data/inputs/3.0一二简.json
 USE_FIX25 = '"fix25": true' in (sys.argv[2] if len(sys.argv) > 2 else '')
 if USE_FIX25:   # 作者 2026-09-30：固定夜莺2.5 全部一简、二简（码为本字音节前缀者）
     fixed_short = {(c, py): n for c, py, n in load(FIX_PATH)['fixed']}
@@ -91,7 +91,9 @@ for l in open(N25 / '产物/综合字词表.txt', encoding='utf-8-sig'):
     if len(p_) == 2 and len(p_[1]) == 2 and len(p_[0]) >= 2 and p_[1] not in _single2:
         _word2.setdefault(p_[1], p_[0])
 # 嗯 en：口语补读的特殊二简（作者 2026-10-01），同样留出，出码表时按 2.5 给嗯
-_word2.setdefault('en', '嗯')
+# 2026-10-02：3.0 起嗯补了 en 读音并列为正式二简，此时不再留给词
+if ('嗯', 'en') not in fixed_short:
+    _word2.setdefault('en', '嗯')
 _have = {''.join(x['element'][2:] for x in e['元素序列']) for e in reserved}
 for code, word in sorted(_word2.items()):
     if code not in _have:
@@ -203,8 +205,8 @@ share = {k: v / sum(share.values()) for k, v in share.items()}
 yz = {'n': n_real, 'signature': signature, 'frequency': [float(e['频率']) for e in entries[:n_real]],
       'exclusive': [{'indices': tiers[1500]['indices'], 'weight': W['excl1500']},
                     {'indices': tiers[3500]['indices'], 'weight': W['excl3500']},
-                    {'indices': tiers[1500]['indices'], 'weight': W['eff1500'], 'effective': True},
-                    {'indices': tiers[3500]['indices'], 'weight': W['eff3500'], 'effective': True,
+                    {'indices': tiers[1500]['indices'], 'weight': W['eff1500'], 'effective': True, 'actual': W.get('eff_actual', True)},
+                    {'indices': tiers[3500]['indices'], 'weight': W['eff3500'], 'effective': True, 'actual': W.get('eff_actual', True),
                      'allow': W.get('eff3500_allow', 0)}],
       'target_share': share, 'overload_weight': W['overload'],
       'rank_gate': {'p': 21}, 'rank_gate_weight': W['rank_gate'],

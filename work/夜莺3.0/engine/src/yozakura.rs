@@ -18,6 +18,10 @@ struct Tier {
     /// true：仅当有更常用（元素序号更小）且签名不同的读音同码才算违例（有效重码口径）
     #[serde(default)]
     effective: bool,
+    /// true：实际选重口径（作者 2026-10-01）——只看必须打全码的读音（无一二三简），
+    /// 有简码的读音在全码位上让位（有简让全），不参与比较
+    #[serde(default)]
+    actual: bool,
     /// 分档当量用：true 时档内按读音频率加权（否则不加权平均）
     #[serde(default)]
     weighted: bool,
@@ -74,6 +78,9 @@ struct ClashRule {
     /// 允许的撞码数；超出部分每个罚 weight（作者 2026-10-01：规则③设为硬约束 ≤ 5）
     #[serde(default)]
     allow: usize,
+    /// true 时按冲突条数计（一个字撞几个词算几条），否则按撞码的字数计（作者 2026-10-01：6 万词软约束）
+    #[serde(default)]
+    pairs: bool,
 }
 
 #[derive(serde::Deserialize)]
@@ -102,7 +109,7 @@ struct ShapeCfg {
 struct Data {
     c: Config,
     /// 字词撞码规则的词码集合（与 c.word_clash 同序）
-    clash_codes: Vec<rustc_hash::FxHashSet<u64>>,
+    clash_codes: Vec<rustc_hash::FxHashMap<u64, usize>>,
     /// 当量表按键编号展开：eq[a * radix + b]
     eq: Vec<f64>,
     radix: usize,
@@ -159,17 +166,16 @@ fn data(p: &默认目标函数参数) -> Option<&'static Data> {
             .word_clash
             .iter()
             .map(|rule| {
-                rule.words
-                    .iter()
-                    .map(|w| {
-                        let (mut v, mut m) = (0u64, 1u64);
-                        for ch in w.chars() {
-                            v += digit(ch) * m;
-                            m *= radix as u64;
-                        }
-                        v
-                    })
-                    .collect()
+                let mut cnt = rustc_hash::FxHashMap::default();
+                for w in &rule.words {
+                    let (mut v, mut m) = (0u64, 1u64);
+                    for ch in w.chars() {
+                        v += digit(ch) * m;
+                        m *= radix as u64;
+                    }
+                    *cnt.entry(v).or_insert(0usize) += 1;
+                }
+                cnt
             })
             .collect();
         Some(Data { c, clash_codes, eq, radix, share, gate, key_of })
@@ -221,9 +227,43 @@ pub fn 计算(rows: &[编码信息], p: &默认目标函数参数) -> Option<分
                 })
                 .or_insert((i, si, usize::MAX));
         }
+        // 实际选重口径：只由必须打全码的读音建表
+        let r3 = r * r * r;
+        let full_typed = |i: usize| {
+            let full = rows[i].全码.原始编码;
+            let short = rows[i].简码.原始编码;
+            !(short > 0 && short < r3 && short != full)
+        };
+        let mut map2: rustc_hash::FxHashMap<u64, (usize, u32, usize)> = Default::default();
+        if c.exclusive.iter().any(|t| t.actual) {
+            for i in 0..c.n {
+                if !full_typed(i) {
+                    continue;
+                }
+                let code = rows[i].全码.原始编码;
+                let si = c.signature[i];
+                map2.entry(code)
+                    .and_modify(|e| {
+                        if e.2 == usize::MAX && si != e.1 {
+                            e.2 = i;
+                        }
+                    })
+                    .or_insert((i, si, usize::MAX));
+            }
+        }
         for tier in &c.exclusive {
             let mut v = 0usize;
             for &i in &tier.indices {
+                if tier.actual {
+                    if !full_typed(i) {
+                        continue;
+                    }
+                    let (_, s1, m2) = map2[&rows[i].全码.原始编码];
+                    if c.signature[i] != s1 || m2 < i {
+                        v += 1;
+                    }
+                    continue;
+                }
                 let (m1, s1, m2) = map[&rows[i].全码.原始编码];
                 let si = c.signature[i];
                 let hit = if si != s1 {
@@ -374,8 +414,10 @@ pub fn 计算(rows: &[编码信息], p: &默认目标函数参数) -> Option<分
                 let full = rows[i].全码.原始编码;
                 let short = rows[i].简码.原始编码;
                 let shorter = short > 0 && short < r3 && short != full;
-                if !shorter && codes.contains(&full) {
-                    v += 1;
+                if !shorter {
+                    if let Some(&n) = codes.get(&full) {
+                        v += if rule.pairs { n } else { 1 };
+                    }
                 }
             }
             out.clashes.push(v);

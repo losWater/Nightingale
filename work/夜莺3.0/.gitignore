@@ -10,3 +10,9 @@ engine/target/
 runs/
 build/out/
 tools/
+
+# 中间产物（可重新生成）
+reading/out/
+reading/out_*.log
+construct/*.npy
+construct/*.npz
