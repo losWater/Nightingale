@@ -14,7 +14,8 @@ const groupLink = g => `<span class="g" data-g="${g}" title="${esc(D.groups[g].r
 const zi = i => `<span class="zi">${esc(D.readings[i][0])}</span><small>${esc(D.readings[i][1])}</small>`;
 const codeOf = i => D.readings[i][2] + M.K[k[M.g1[i]]] + M.K[k[M.g2[i]]];
 
-fetch('data.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(init)
+// 本地版把数据嵌在页面里（window.TIAOGEN_DATA）；网页版从 data.json 取
+(window.TIAOGEN_DATA ? Promise.resolve(window.TIAOGEN_DATA) : fetch('data.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })).then(init)
   .catch(e => { $('#loading').textContent = '数据载入失败（' + e.message + '），请刷新页面重试。'; });
 
 function layoutArr(name) { return Int8Array.from(D.groups.map(g => M.KI[D.layouts[name][g.id]])); }
@@ -246,7 +247,8 @@ function renderPane() {
       + `<table><thead><tr><th>字</th><th>三简被谁占</th><th>首根组</th><th>键</th></tr></thead><tbody>` + items.map(([i, j]) =>
         `<tr><td>${zi(i)}</td><td>${j >= 0 ? zi(j) + ' ' + groupLink(M.g1[j]) : '—'}</td><td>${groupLink(M.g1[i])}</td><td class="num">${D.readings[i][2]}${M.K[k[M.g1[i]]]}</td></tr>`).join('') + '</tbody></table>';
   } else if (tab === 'saved') {
-    P.innerHTML = `<h3>已保存的布局（${saved.length}）</h3><p>${db ? '保存在云端，换设备打开也在；Claude 也能直接读取做正式评测。' : '当前环境不支持云端保存，只存在这个浏览器里。'}</p>`
+    P.innerHTML = `<h3>已保存的布局（${saved.length}）</h3><p>${db ? '保存在云端，换设备打开也在；Claude 也能直接读取做正式评测。' : '只存在这个浏览器里（清除浏览器数据会丢失）。重要的布局请“导出全部”存成文件。'}</p>`
+      + `<p><button data-export>导出全部</button> <button data-import>导入…</button><input type="file" id="importfile" accept=".json,application/json" hidden></p>`
       + (saved.length ? `<table><thead><tr><th>名称</th><th>总分</th><th>门禁</th><th>形码</th><th>6万</th><th>换键</th><th></th></tr></thead><tbody>` + saved.map(s =>
         `<tr><td>${esc(s.name)}<br><small style="color:var(--muted)">${esc((s.savedAt || '').slice(0, 16).replace('T', ' '))}</small></td><td class="num">${(+s.S).toFixed(1)}</td>`
         + `<td>${s.pen ? '<span class="gate fail">✗</span>' : '✓'}</td><td class="num">${(+s.形码成本).toFixed(4)}</td><td class="num">${s.冲突6万}</td><td class="num">${s.换键}</td>`
@@ -318,13 +320,25 @@ function runFix(n) {
 // 保存：优先云端（db），不可用时退回本浏览器
 let db = null, saved = [];
 function localSaved() { try { return JSON.parse(localStorage.getItem('tiaogen_saved') || '[]'); } catch (e) { return []; } }
+function setLocal(list) { saved = list; try { localStorage.setItem('tiaogen_saved', JSON.stringify(list)); } catch (e) { stat('浏览器存储不可用，请用“导出全部”另存文件'); } fillSelects(); if (tab === 'saved' && M) renderPane(); }
+// 合并导入的布局：同 id 的跳过；返回新增条数
+function mergeLocal(list) {
+  const have = new Set(saved.map(s => s.id)), add = list.filter(s => s && s.id && s.name && s.layout && !have.has(s.id));
+  if (add.length) setLocal(saved.concat(add).sort((a, b) => (b.savedAt || '').localeCompare(a.savedAt || '')));
+  return add.length;
+}
+function seedLocal() {
+  saved = localSaved();
+  let seeded = false; try { seeded = localStorage.getItem('tiaogen_seeded') === '1'; localStorage.setItem('tiaogen_seeded', '1'); } catch (e) { }
+  if (!seeded && window.TIAOGEN_SEED) mergeLocal(window.TIAOGEN_SEED);
+}
 (async () => {
   try { if (window.claude && window.claude.use) db = await window.claude.use('db'); } catch (e) { db = null; }
   if (db) {
     db.collection('layouts').orderBy('savedAt', 'desc').onSnapshot(s => {
       saved = s.docs.map(d => Object.assign({ id: d.id }, d.data())); fillSelects(); if (tab === 'saved' && M) renderPane();
-    }, e => { db = null; saved = localSaved(); fillSelects(); if (tab === 'saved' && M) renderPane(); });
-  } else { saved = localSaved(); fillSelects(); if (tab === 'saved' && M) renderPane(); }
+    }, e => { db = null; seedLocal(); fillSelects(); if (tab === 'saved' && M) renderPane(); });
+  } else { seedLocal(); fillSelects(); if (tab === 'saved' && M) renderPane(); }
 })();
 function stat(t) { $('#savestat').textContent = t; setTimeout(() => { if ($('#savestat').textContent === t) $('#savestat').textContent = ''; }, 3000); }
 async function saveLayout() {
@@ -334,7 +348,7 @@ async function saveLayout() {
   $('#save').disabled = true;
   try {
     if (db) { await db.collection('layouts').add(doc); }
-    else { doc.id = 'l' + Date.now(); saved = [doc].concat(localSaved()); localStorage.setItem('tiaogen_saved', JSON.stringify(saved)); fillSelects(); }
+    else { doc.id = 'l' + Date.now(); setLocal([doc].concat(saved)); }
     stat('已保存：' + name); $('#savename').value = ''; tab = 'saved'; renderPane();
   } catch (e) {
     stat(e && e.code === 'quota_exceeded' ? '存储已满，请先删掉一些旧布局' : '保存失败，请再试一次');
@@ -344,13 +358,20 @@ async function deleteSaved(id, btn) {
   if (btn.dataset.confirm !== '1') { btn.dataset.confirm = '1'; btn.textContent = '确认删除'; return; }
   try {
     if (db) await db.collection('layouts').doc(id).delete();
-    else { saved = localSaved().filter(s => s.id !== id); localStorage.setItem('tiaogen_saved', JSON.stringify(saved)); fillSelects(); renderPane(); }
+    else setLocal(saved.filter(s => s.id !== id));
   } catch (e) { stat('删除失败，请再试一次'); }
 }
 
 // 下载普通单字表（与 make_plain_table.py 同规则：核心字全码+简码、有简让全、扩展字、符号表）
 let dls = null;
-(async () => { try { if (window.claude && window.claude.use) dls = await window.claude.use('downloads'); } catch (e) { dls = null; } if (dls) { $('#dl').hidden = false; $('#dl2').hidden = false; } })();
+const LOCAL = !(window.claude && window.claude.use);
+function saveFile(filename, blob) {
+  if (dls) return dls.save({ filename, data: blob });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  return Promise.resolve();
+}
+(async () => { try { if (!LOCAL) dls = await window.claude.use('downloads'); } catch (e) { dls = null; } if (dls || LOCAL) { $('#dl').hidden = false; $('#dl2').hidden = false; } })();
 async function downloadTable(codeFirst) {
   const base = $('#savename').value.trim() || labelFor(startName) + (hist.length ? '_调整版' : '');
   const fname = ('夜莺_' + base + '_普通单字表' + (codeFirst ? '_码前' : '') + '.txt').replace(/[\\/:*?"<>|]/g, '_');
@@ -358,7 +379,7 @@ async function downloadTable(codeFirst) {
   try {
     let txt = buildTable(D, M, k);
     if (codeFirst) txt = txt.split('\n').filter(Boolean).map(l => { const [ch, code] = l.split('\t'); return code + '\t' + ch; }).join('\n') + '\n';
-    await dls.save({ filename: fname, data: new Blob([txt], { type: 'text/plain' }) });
+    await saveFile(fname, new Blob([txt], { type: 'text/plain' }));
     stat('已下载：' + fname);
   } catch (e) {
     const c = e && e.code;
@@ -368,7 +389,20 @@ async function downloadTable(codeFirst) {
   } finally { $('#dl').disabled = false; $('#dl2').disabled = false; }
 }
 
+function exportSaved() {
+  const name = '夜莺调根台_布局_' + new Date().toISOString().slice(0, 10) + '.json';
+  saveFile(name, new Blob([JSON.stringify(saved, null, 1)], { type: 'application/json' })).then(() => stat('已导出：' + name), () => stat('导出失败'));
+}
+async function importSaved(file) {
+  try {
+    const list = JSON.parse(await file.text()), arr = Array.isArray(list) ? list : [list];
+    if (db) { let n = 0; for (const s of arr) if (s && s.name && s.layout && !saved.some(x => x.id === s.id)) { const c = Object.assign({}, s); delete c.id; await db.collection('layouts').add(c); n++; } stat(`导入 ${n} 个布局`); }
+    else stat(`导入 ${mergeLocal(arr)} 个布局（同名同 id 的已跳过）`);
+  } catch (e) { stat('导入失败：不是调根台导出的 JSON 文件'); }
+}
+
 function bind() {
+  $('#pane').addEventListener('change', e => { if (e.target.id === 'importfile' && e.target.files[0]) importSaved(e.target.files[0]); });
   $('#dl').addEventListener('click', () => downloadTable(false));
   $('#dl2').addEventListener('click', () => downloadTable(true));
   $('#save').addEventListener('click', saveLayout);
@@ -377,6 +411,8 @@ function bind() {
     const l = e.target.closest('[data-load]'), d = e.target.closest('[data-del]');
     if (l) { const s = saved.find(x => x.id === l.dataset.load); if (s) { tabu = []; apply(D.groups.map((g, i) => [i, M.KI[s.layout[g.id]]]), `载入：${esc(s.name)}`); } }
     if (d) deleteSaved(d.dataset.del, d);
+    if (e.target.closest('[data-export]')) exportSaved();
+    if (e.target.closest('[data-import]')) $('#importfile').click();
     const cs = e.target.closest('[data-csort]'); if (cs) { clashSort = cs.dataset.csort; renderPane(); }
     if (e.target.closest('[data-call]')) { clashAll = !clashAll; renderPane(); }
   });

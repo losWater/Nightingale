@@ -2,7 +2,7 @@
 function buildTable(D, M, k) {
   const N = M.N, K = M.K, slots = new Map();
   const push = (code, key, ch) => { let s = slots.get(code); if (!s) slots.set(code, s = []); s.push([key, ch]); };
-  const m = M.evaluate(k, true), mask = m.mask;
+  const m = M.evaluate(k, true), mask = m.mask, two = [];
   for (let i = 0; i < N; i++) {
     const r = D.readings[i], syl = r[2], ch = r[0];
     const full = syl + K[k[M.g1[i]]] + K[k[M.g2[i]]];
@@ -10,6 +10,7 @@ function buildTable(D, M, k) {
     const short = ot === 1 ? syl[0] : ot === 2 ? syl : (!mask[i] ? syl + K[k[M.g1[i]]] : '');
     push(full, [0, short ? 1 : 0, -r[5], i], ch);
     if (short) push(short, [0, 0, 0, i], ch);
+    if (short.length === 2) two.push([i, ch, full]);
   }
   const seen = new Set(); let ext = 0;
   for (const [ch, syl, a, b] of D.ext) {
@@ -18,6 +19,8 @@ function buildTable(D, M, k) {
     seen.add(ch + code); push(code, [1, 0, 0, ext++], ch);
   }
   D.sym.forEach(([ch, code], j) => push(code, [2, 0, 0, j], ch));
+  // 二简字补三码：二简读音的全码前三码在整张表里空着时，本字也放上去
+  for (const [i, ch, full] of two) if (!slots.has(full.slice(0, 3))) push(full.slice(0, 3), [0, 0, 0, i], ch);
   const cmp = (x, y) => { for (let t = 0; t < 4; t++) if (x[0][t] !== y[0][t]) return x[0][t] < y[0][t] ? -1 : 1; return x[1] < y[1] ? -1 : x[1] > y[1] ? 1 : 0; };
   const codes = [...slots.keys()].sort((a, b) => a < b ? -1 : a > b ? 1 : 0);
   const out = [];

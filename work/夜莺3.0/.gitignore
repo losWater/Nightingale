@@ -16,3 +16,8 @@ reading/out/
 reading/out_*.log
 construct/*.npy
 construct/*.npz
+
+# 调根台生成物（build.sh）
+tool/tiaogen/index.html
+tool/tiaogen/夜莺调根台.html
+tool/tiaogen/data_ref.json
