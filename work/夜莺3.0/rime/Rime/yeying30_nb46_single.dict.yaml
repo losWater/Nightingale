@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.6"
+version: "3.0-nb46-single.7"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -15,10 +15,12 @@ columns: [text, code, weight]
 吖	aatn	99999
 啊	aato	99999
 桛	aawv	99999
+阿	aay	99999
 阿	aayo	99999
 腌	aaz	99999
 腌	aazh	99999
 昂	ah	99999
+昂	ahb	99999
 昂	ahby	99999
 昻	ahby	99998
 醠	ahce	99999
@@ -50,6 +52,7 @@ columns: [text, code, weight]
 敳	aihq	99999
 矮	aihu	99999
 欸	aihx	99999
+爱	aii	99999
 爱	aiiq	99999
 伌	aikk	99999
 僾	aikq	99999
@@ -404,6 +407,7 @@ columns: [text, code, weight]
 贁	bdbq	99999
 韛	bdbz	99999
 兡	bdcd	99999
+白	bdd	99999
 白	bddd	99999
 襬	bddu	99999
 薭	bdgc	99999
@@ -686,6 +690,7 @@ columns: [text, code, weight]
 辬	bjap	99999
 昄	bjb	99999
 昄	bjbq	99999
+般	bjc	99999
 般	bjch	99999
 褩	bjcl	99999
 螌	bjcm	99999
@@ -753,6 +758,7 @@ columns: [text, code, weight]
 倂	bkkc	99999
 併	bkkg	99999
 傡	bkkj	99999
+并	bkl	99999
 并	bklg	99999
 靐	bklh	99999
 蛃	bkm	99999
@@ -1023,6 +1029,7 @@ columns: [text, code, weight]
 蛂	bpma	99999
 瘪	bpq	99999
 瘪	bpqu	99999
+别	bpt	99999
 别	bptg	99999
 別	bptg	99998
 部	bu	99999
@@ -1149,6 +1156,7 @@ columns: [text, code, weight]
 〕	c	99997
 擦	ca	99999
 遪	cahl	99999
+擦	cao	99999
 擦	caot	99999
 攃	caot	99998
 嚓	cat	99999
@@ -1161,6 +1169,7 @@ columns: [text, code, weight]
 艚	ccc	99999
 艚	cccb	99999
 襙	ccdw	99999
+草	ccg	99999
 蓸	ccgb	99999
 草	ccgc	99999
 艹	ccgg	99999
@@ -1214,6 +1223,7 @@ columns: [text, code, weight]
 棌	cdwi	99999
 材	cdwo	99999
 测	ce	99999
+测	cea	99999
 测	ceag	99999
 萴	cegg	99999
 蓛	cegq	99999
@@ -1250,6 +1260,7 @@ columns: [text, code, weight]
 嶒	cgh	99999
 嶒	cghb	99999
 竲	cgjb	99999
+曾	cgl	99999
 曾	cglb	99999
 曽	cglb	99998
 蹭	cgs	99999
@@ -1428,6 +1439,7 @@ columns: [text, code, weight]
 篡	crhh	99999
 簒	crhh	99998
 巑	crhl	99999
+窜	crj	99999
 窜	crjn	99999
 攒	cro	99999
 攒	croj	99999
@@ -1516,6 +1528,7 @@ columns: [text, code, weight]
 噈	cutn	99999
 媨	cuuc	99999
 憱	cuvn	99999
+粗	cuz	99999
 粗	cuze	99999
 脆	cv	99999
 淬	cva	99999
@@ -1577,9 +1590,11 @@ columns: [text, code, weight]
 邨	cypy	99999
 忖	cyv	99999
 忖	cyvo	99999
+村	cyw	99999
 村	cywo	99999
 籿	cyzo	99999
 凑	cz	99999
+凑	cza	99999
 凑	czay	99999
 辏	czc	99999
 辏	czcy	99999
@@ -1655,6 +1670,7 @@ columns: [text, code, weight]
 氘	dcdn	99999
 祷	dcdo	99999
 禂	dcdt	99999
+到	dcf	99999
 到	dcfg	99999
 島	dcfh	99999
 刀	dcg	99999
@@ -1847,6 +1863,7 @@ columns: [text, code, weight]
 檔	dhwh	99999
 砀	dhx	99999
 砀	dhxx	99999
+当	dhy	99999
 当	dhye	99999
 地	di	99999
 滴	dia	99999
@@ -2069,6 +2086,7 @@ columns: [text, code, weight]
 町	dkh	99999
 嵿	dkhl	99999
 町	dkho	99999
+定	dkj	99999
 顁	dkjl	99999
 定	dkjs	99999
 仃	dkk	99999
@@ -2217,6 +2235,7 @@ columns: [text, code, weight]
 嚲	doec	99999
 夛	doef	99999
 亸	doeq	99999
+多	dof	99999
 多	doff	99999
 崜	dohp	99999
 敚	dolq	99999
@@ -2319,6 +2338,7 @@ columns: [text, code, weight]
 碟	dpxw	99999
 胅	dpzh	99999
 丢	dq	99999
+丢	dqf	99999
 丢	dqfh	99999
 铥	dqs	99999
 铥	dqsh	99999
@@ -2349,6 +2369,7 @@ columns: [text, code, weight]
 媏	drul	99999
 椴	drw	99999
 椴	drwh	99999
+断	drz	99999
 断	drzh	99999
 腶	drzh	99998
 动	ds	99999
@@ -2388,6 +2409,7 @@ columns: [text, code, weight]
 墥	dsmh	99999
 垌	dsmt	99999
 挏	dsot	99999
+动	dsp	99999
 动	dspi	99999
 冬	dsq	99999
 冬	dsqa	99999
@@ -2450,6 +2472,7 @@ columns: [text, code, weight]
 剢	duog	99999
 独	duom	99999
 帾	dupb	99999
+度	duq	99999
 度	duqq	99999
 毒	dur	99999
 阇	durb	99999
@@ -2511,6 +2534,7 @@ columns: [text, code, weight]
 陮	dvyd	99999
 队	dvyx	99999
 得	dw	99999
+得	dwk	99999
 得	dwko	99999
 嘚	dwt	99999
 嘚	dwto	99999
@@ -2574,6 +2598,7 @@ columns: [text, code, weight]
 篼	dzhe	99999
 窦	dzj	99999
 窦	dzjy	99999
+都	dzl	99999
 都	dzly	99999
 蚪	dzm	99999
 蚪	dzmc	99999
@@ -2705,6 +2730,7 @@ columns: [text, code, weight]
 腭	eezb	99999
 欸	ei	99999
 诶	eifh	99999
+欸	eih	99999
 欸	eihx	99999
 嗯	en	99999
 蒽	eng	99999
@@ -2713,6 +2739,7 @@ columns: [text, code, weight]
 恩	enjv	99999
 摁	eno	99999
 摁	enov	99999
+嗯	ent	99999
 嗯	entv	99999
 二	er	99999
 洱	era	99999
@@ -2740,6 +2767,7 @@ columns: [text, code, weight]
 耏	erlf	99999
 鸸	erlj	99999
 而	erll	99999
+二	erp	99999
 貮	erpl	99999
 髵	erpl	99998
 二	erpp	99999
@@ -2768,6 +2796,7 @@ columns: [text, code, weight]
 “	f	99998
 ‘	f	99997
 法	fa	99999
+法	faa	99999
 沷	faaa	99999
 法	faah	99999
 发	faba	99999
@@ -3064,6 +3093,7 @@ columns: [text, code, weight]
 籵	fjzc	99999
 膰	fjzh	99999
 佛	fo	99999
+佛	fok	99999
 佛	fokh	99999
 仏	fokh	99998
 坲	fomh	99999
@@ -3442,6 +3472,7 @@ columns: [text, code, weight]
 晐	gdb	99999
 晐	gdbl	99999
 祴	gddg	99999
+该	gdf	99999
 该	gdfl	99999
 荄	gdg	99999
 葢	gdge	99999
@@ -3596,6 +3627,7 @@ columns: [text, code, weight]
 羹	ggny	99999
 羮	ggny	99998
 挭	ggop	99999
+更	ggp	99999
 刯	ggpg	99999
 更	ggpp	99999
 焿	ggpx	99999
@@ -3735,6 +3767,7 @@ columns: [text, code, weight]
 拐	gko	99999
 拐	gkoi	99999
 掴	gkor	99999
+怪	gkv	99999
 怪	gkvm	99999
 光	gl	99999
 洸	gla	99999
@@ -3766,6 +3799,7 @@ columns: [text, code, weight]
 桄	glwe	99999
 欟	glwe	99998
 銧	glxe	99999
+光	gly	99999
 光	glye	99999
 胱	glz	99999
 胱	glze	99999
@@ -3803,6 +3837,7 @@ columns: [text, code, weight]
 蝈	gomr	99999
 埚	gomx	99999
 墎	gomy	99999
+过	goo	99999
 过	gool	99999
 帼	gop	99999
 帼	gopr	99999
@@ -3851,6 +3886,7 @@ columns: [text, code, weight]
 悹	grjv	99999
 倌	grk	99999
 倌	grkh	99999
+关	grl	99999
 关	grly	99999
 掼	gro	99999
 掼	groj	99999
@@ -4059,6 +4095,7 @@ columns: [text, code, weight]
 螝	gvmp	99999
 蟡	gvmp	99998
 邽	gvmy	99999
+归	gvn	99999
 归	gvne	99999
 帰	gvnp	99999
 摫	gvoe	99999
@@ -4110,6 +4147,7 @@ columns: [text, code, weight]
 椝	gvyw	99999
 胿	gvzm	99999
 给	gw	99999
+给	gwi	99999
 给	gwit	99999
 挂	gx	99999
 刮	gxc	99999
@@ -4127,6 +4165,7 @@ columns: [text, code, weight]
 卦	gxm	99999
 坬	gxmi	99999
 卦	gxmv	99999
+挂	gxo	99999
 挂	gxom	99999
 煱	gxpt	99999
 冎	gxrr	99999
@@ -4143,6 +4182,7 @@ columns: [text, code, weight]
 劀	gxzg	99999
 胍	gxzi	99999
 滚	gy	99999
+滚	gya	99999
 滚	gyah	99999
 辊	gyc	99999
 辊	gycu	99999
@@ -4223,6 +4263,7 @@ columns: [text, code, weight]
 蛤	hamt	99999
 铪	has	99999
 铪	hast	99999
+哈	hat	99999
 哈	hatt	99999
 好	hc	99999
 浩	hca	99999
@@ -4280,6 +4321,7 @@ columns: [text, code, weight]
 噑	hctc	99997
 嚎	hcto	99999
 嚆	hctt	99999
+好	hcu	99999
 好	hcue	99999
 恏	hcuv	99999
 椃	hcwr	99999
@@ -4297,6 +4339,7 @@ columns: [text, code, weight]
 害	hdjt	99999
 亥	hdl	99999
 亥	hdll	99999
+还	hdp	99999
 还	hdpl	99999
 骸	hdr	99999
 骸	hdrl	99999
@@ -4408,6 +4451,7 @@ columns: [text, code, weight]
 𬣳	hff	99999
 𬣳	hffs	99999
 詪	hffs	99998
+很	hfk	99999
 很	hfks	99999
 狠	hfo	99999
 狠	hfos	99999
@@ -4459,6 +4503,7 @@ columns: [text, code, weight]
 笐	hhhr	99999
 绗	hhi	99999
 绗	hhik	99999
+行	hhk	99999
 行	hhkk	99999
 垳	hhmk	99999
 蚢	hhmr	99999
@@ -4566,6 +4611,7 @@ columns: [text, code, weight]
 徊	hkk	99999
 徊	hkkt	99999
 耲	hkll	99999
+坏	hkm	99999
 壊	hkml	99999
 坏	hkmp	99999
 踝	hks	99999
@@ -5137,6 +5183,7 @@ columns: [text, code, weight]
 隳	hvyv	99999
 黑	hw	99999
 潶	hwad	99999
+黑	hwd	99999
 黑	hwdd	99999
 黒	hwhp	99999
 𬭶	hws	99999
@@ -5152,6 +5199,7 @@ columns: [text, code, weight]
 舙	hxct	99999
 划	hxe	99999
 划	hxeg	99999
+话	hxf	99999
 譮	hxfb	99999
 话	hxft	99999
 誮	hxfu	99999
@@ -5302,6 +5350,7 @@ columns: [text, code, weight]
 岔	ialh	99999
 垞	iam	99999
 垞	iamu	99999
+差	ian	99999
 差	ianm	99999
 疀	ians	99999
 秅	ianu	99999
@@ -5406,6 +5455,7 @@ columns: [text, code, weight]
 尺	iebb	99999
 㬚	iebq	99999
 瞮	iebq	99998
+车	iec	99999
 车	iecc	99999
 聅	iefh	99999
 莗	iegc	99999
@@ -5808,6 +5858,7 @@ columns: [text, code, weight]
 缠	iji	99999
 缠	ijih	99999
 纒	ijim	99999
+产	ijj	99999
 产	ijjf	99999
 剷	ijjg	99999
 産	ijjm	99999
@@ -5869,6 +5920,7 @@ columns: [text, code, weight]
 揣	iko	99999
 揣	ikol	99999
 搋	ikor	99999
+踹	iks	99999
 踹	iksl	99999
 啜	ikt	99999
 啜	iktq	99999
@@ -5878,6 +5930,7 @@ columns: [text, code, weight]
 凔	ilat	99999
 牎	ilev	99999
 刱	ilga	99999
+窗	ilj	99999
 窗	iljq	99999
 傸	ilkp	99999
 剙	illa	99999
@@ -5907,6 +5960,7 @@ columns: [text, code, weight]
 绰	ioic	99999
 綽	ioic	99998
 辶	ioll	99999
+戳	ioo	99999
 戳	iooe	99999
 擉	ioom	99999
 歠	ioqx	99999
@@ -5940,6 +5994,7 @@ columns: [text, code, weight]
 遄	irh	99999
 遄	irhl	99999
 篅	irhl	99998
+穿	irj	99999
 穿	irju	99999
 传	irk	99999
 传	irka	99999
@@ -6109,6 +6164,7 @@ columns: [text, code, weight]
 炊	ivpx	99999
 锤	ivs	99999
 锤	ivsp	99999
+吹	ivt	99999
 吹	ivtx	99999
 槌	ivw	99999
 槌	ivwl	99999
@@ -6136,6 +6192,7 @@ columns: [text, code, weight]
 萶	iygb	99998
 蓴	iygo	99999
 箺	iyhb	99999
+纯	iyi	99999
 纯	iyib	99999
 偆	iykb	99999
 堾	iym	99999
@@ -6194,6 +6251,7 @@ columns: [text, code, weight]
 愁	izn	99999
 稠	iznt	99999
 愁	iznv	99999
+抽	izo	99999
 搊	izof	99999
 抽	izoh	99999
 帱	izp	99999
@@ -6599,6 +6657,7 @@ columns: [text, code, weight]
 敬	jkgq	99999
 憼	jkgv	99999
 菁	jkgz	99999
+经	jki	99999
 经	jkim	99999
 坕	jkim	99998
 竞	jkj	99999
@@ -7698,6 +7757,7 @@ $	k	99997
 咯	katq	99998
 咖	katt	99999
 咔	katv	99999
+卡	kav	99999
 卡	kavv	99999
 鉲	kaxv	99999
 胩	kaz	99999
@@ -7806,6 +7866,7 @@ $	k	99997
 科	ken	99999
 科	kenc	99999
 稞	kenh	99999
+可	keo	99999
 搕	keoe	99999
 可	keoo	99999
 炣	kep	99999
@@ -7853,6 +7914,7 @@ $	k	99997
 坑	kg	99999
 劥	kgei	99999
 硻	kgex	99999
+坑	kgm	99999
 坑	kgmr	99999
 摼	kgom	99999
 铿	kgs	99999
@@ -7952,6 +8014,7 @@ $	k	99997
 鲙	kksh	99999
 哙	kkt	99999
 哙	kkth	99999
+快	kkv	99999
 快	kkvy	99999
 会	kkx	99999
 会	kkxh	99999
@@ -8033,6 +8096,7 @@ $	k	99997
 阔	kort	99999
 懖	koxv	99999
 宽	kr	99999
+宽	krj	99999
 寛	krje	99999
 宽	krjj	99999
 款	krm	99999
@@ -8048,6 +8112,7 @@ $	k	99997
 崆	ksh	99999
 箜	kshm	99999
 崆	kshm	99998
+空	ksj	99999
 鵼	ksjj	99999
 空	ksjm	99999
 倥	ksk	99999
@@ -8086,6 +8151,7 @@ $	k	99997
 骷	kur	99999
 骷	kurt	99999
 跍	kust	99999
+哭	kut	99999
 哭	kuty	99999
 枯	kuw	99999
 桍	kuwb	99999
@@ -8187,6 +8253,7 @@ $	k	99997
 挎	kxo	99999
 挎	kxob	99999
 骻	kxrb	99999
+跨	kxs	99999
 跨	kxsb	99999
 姱	kxu	99999
 姱	kxub	99999
@@ -8212,6 +8279,7 @@ $	k	99997
 菎	kygu	99999
 崑	kyhu	99999
 崐	kyhu	99998
+困	kyj	99999
 困	kyjw	99999
 堃	kyl	99999
 堃	kylm	99999
@@ -8514,9 +8582,11 @@ $	k	99997
 叻	leti	99999
 忇	levi	99999
 砳	lexx	99999
+乐	ley	99999
 阞	leyi	99999
 乐	leyy	99999
 冷	lg	99999
+冷	lga	99999
 冷	lgaq	99999
 睖	lgbq	99999
 崚	lgh	99999
@@ -8972,6 +9042,7 @@ $	k	99997
 俩	llk	99999
 俩	llkl	99999
 俍	llks	99999
+两	lll	99999
 两	llll	99999
 墚	llm	99999
 墚	llmw	99999
@@ -9004,6 +9075,7 @@ $	k	99997
 濓	lmal	99998
 潋	lmaq	99999
 澰	lmax	99999
+连	lmc	99999
 覝	lmce	99999
 连	lmcl	99999
 裢	lmd	99999
@@ -9086,6 +9158,7 @@ $	k	99997
 了	lnee	99999
 辽	lnel	99999
 叾	lnet	99999
+聊	lnf	99999
 聊	lnfi	99999
 爒	lnfy	99999
 蓼	lng	99999
@@ -9340,6 +9413,7 @@ $	k	99997
 乱	lr	99999
 滦	lra	99999
 滦	lraw	99999
+乱	lrc	99999
 乱	lrcb	99999
 羉	lrei	99999
 曫	lrfb	99999
@@ -9416,6 +9490,7 @@ $	k	99997
 胧	lsz	99999
 胧	lszn	99999
 略	lt	99999
+略	lth	99999
 略	lthq	99999
 圙	ltj	99999
 圙	ltjl	99999
@@ -9603,6 +9678,7 @@ $	k	99997
 闾	lvrt	99999
 铝	lvs	99999
 铝	lvst	99999
+吕	lvt	99999
 鷜	lvtj	99999
 吕	lvtt	99999
 虑	lvv	99999
@@ -9690,6 +9766,7 @@ $	k	99997
 頪	lwzl	99999
 类	lwzy	99999
 俩	lx	99999
+俩	lxk	99999
 俩	lxkl	99999
 倆	lxkx	99999
 论	ly	99999
@@ -9698,6 +9775,7 @@ $	k	99997
 沦	lyau	99999
 轮	lyc	99999
 轮	lycu	99999
+论	lyf	99999
 论	lyfu	99999
 菕	lygg	99999
 崙	lyhg	99999
@@ -9765,6 +9843,7 @@ $	k	99997
 遱	lztl	99999
 喽	lztu	99999
 慺	lzvu	99999
+楼	lzw	99999
 楼	lzwu	99999
 陋	lzy	99999
 陋	lzyb	99999
@@ -9931,6 +10010,7 @@ $	k	99997
 愗	mczv	99999
 矛	mczz	99999
 买	md	99999
+买	mdb	99999
 买	mdby	99999
 卖	mdc	99999
 劢	mdci	99999
@@ -9955,6 +10035,7 @@ $	k	99997
 脉	mdz	99999
 脉	mdzp	99999
 么	me	99999
+么	mef	99999
 么	mefh	99999
 嚒	meti	99999
 们	mf	99999
@@ -9963,6 +10044,7 @@ $	k	99997
 暪	mfbx	99999
 虋	mfgg	99999
 菛	mfgr	99999
+们	mfk	99999
 们	mfkr	99999
 扪	mfo	99999
 扪	mfor	99999
@@ -10306,6 +10388,7 @@ $	k	99997
 缈	mnif	99999
 缪	mnif	99998
 竗	mnjf	99999
+秒	mnn	99999
 秒	mnnf	99999
 描	mno	99999
 描	mnoh	99999
@@ -10432,6 +10515,7 @@ $	k	99997
 篾	mpha	99999
 蠛	mpma	99999
 搣	mpoa	99999
+灭	mpp	99999
 幭	mppa	99999
 灭	mppp	99999
 烕	mpqa	99999
@@ -10444,6 +10528,7 @@ $	k	99997
 鴓	mpvj	99999
 鑖	mpxa	99999
 谬	mq	99999
+谬	mqf	99999
 谬	mqff	99999
 缪	mqi	99999
 缪	mqif	99999
@@ -10541,6 +10626,7 @@ $	k	99997
 嵄	mwhy	99999
 寐	mwj	99999
 寐	mwjl	99999
+每	mwk	99999
 每	mwki	99999
 毎	mwki	99998
 徾	mwkq	99999
@@ -10608,6 +10694,7 @@ $	k	99997
 侔	mzkv	99999
 蛑	mzm	99999
 蛑	mzmv	99999
+某	mzr	99999
 某	mzrw	99999
 踎	mzst	99999
 哞	mzt	99999
@@ -10619,6 +10706,7 @@ $	k	99997
 你	n	99999
 「	n	99998
 那	na	99999
+那	nab	99999
 那	naby	99999
 南	nac	99999
 南	nacu	99999
@@ -10657,6 +10745,7 @@ $	k	99997
 肭	nazx	99999
 您	nb	99999
 囜	nbjh	99999
+您	nbk	99999
 您	nbkv	99999
 拰	nbom	99999
 脌	nbzn	99999
@@ -10737,9 +10826,11 @@ $	k	99997
 嫩	nf	99999
 恁	nfk	99999
 恁	nfkv	99999
+嫩	nfu	99999
 嫩	nfuq	99999
 嫰	nfux	99999
 能	ng	99999
+能	ngh	99999
 能	nghu	99999
 嗯	ngt	99999
 嗯	ngtv	99999
@@ -10751,6 +10842,7 @@ $	k	99997
 齉	nhd	99999
 齉	nhdl	99999
 譨	nhfr	99999
+囊	nhj	99999
 囊	nhjl	99999
 嚢	nhjl	99998
 攮	nho	99999
@@ -10839,6 +10931,7 @@ $	k	99997
 萳	njg	99999
 莮	njgi	99999
 萳	njgu	99999
+男	njh	99999
 男	njhi	99999
 畘	njhm	99999
 囡	njj	99999
@@ -10894,6 +10987,7 @@ $	k	99997
 酿	nlc	99999
 醸	nlcl	99999
 酿	nlcs	99999
+娘	nlu	99999
 嬢	nlul	99999
 娘	nlus	99999
 年	nm	99999
@@ -10903,6 +10997,7 @@ $	k	99997
 卄	nmgg	99999
 蔫	nmgp	99999
 簐	nmhx	99999
+年	nmk	99999
 年	nmkn	99999
 埝	nmm	99999
 埝	nmmv	99999
@@ -10996,6 +11091,7 @@ $	k	99997
 嵲	nph	99999
 巕	nphu	99999
 嵲	nphw	99999
+捏	npo	99999
 捏	npom	99999
 敜	npqq	99999
 痆	npqu	99999
@@ -11041,6 +11137,7 @@ $	k	99997
 杻	nqw	99999
 杻	nqwm	99999
 暖	nr	99999
+暖	nrb	99999
 暖	nrbq	99999
 煗	nrpy	99999
 奻	nruu	99999
@@ -11065,6 +11162,7 @@ $	k	99997
 挵	nsog	99999
 挊	nsov	99999
 燶	nspr	99999
+弄	nsr	99999
 弄	nsrg	99999
 哝	nst	99999
 哝	nstl	99999
@@ -11075,6 +11173,7 @@ $	k	99997
 虐	nt	99999
 疟	ntq	99999
 疟	ntqp	99999
+虐	ntv	99999
 虐	ntvp	99999
 硸	ntxc	99999
 怒	nu	99999
@@ -11100,12 +11199,14 @@ $	k	99997
 恧	nvlv	99999
 钕	nvs	99999
 钕	nvsu	99999
+女	nvu	99999
 女	nvuu	99999
 籹	nvzu	99999
 内	nw	99999
 氝	nwdx	99999
 馁	nwq	99999
 馁	nwqu	99999
+内	nwr	99999
 内	nwrx	99999
 內	nwrx	99998
 鮾	nwsu	99999
@@ -11113,6 +11214,7 @@ $	k	99997
 娞	nwuu	99999
 耨	nz	99999
 譳	nzfl	99999
+耨	nzl	99999
 耨	nzlo	99999
 羺	nznl	99999
 啂	nztb	99999
@@ -11713,6 +11815,7 @@ $	k	99997
 ⅺ	olx	99989
 ⅻ	olx	99988
 噢	oo	99999
+噢	oot	99999
 哦	oote	99999
 噢	ooty	99999
 ā	opa	99999
@@ -12034,6 +12137,7 @@ m	otl	99999
 啪	pat	99999
 啪	patd	99999
 妑	pauk	99999
+怕	pav	99999
 怕	pavd	99999
 杷	paw	99999
 杷	pawk	99999
@@ -12057,6 +12161,7 @@ m	otl	99999
 颦	pbsc	99999
 频	pbsj	99999
 頻	pbsl	99999
+品	pbt	99999
 嚬	pbtl	99999
 品	pbtt	99999
 姘	pbu	99999
@@ -12086,6 +12191,7 @@ m	otl	99999
 刨	pcr	99999
 刨	pcrg	99999
 鞄	pcrk	99999
+跑	pcs	99999
 跑	pcsk	99999
 咆	pct	99999
 咆	pctk	99999
@@ -12114,6 +12220,7 @@ m	otl	99999
 徘	pdk	99999
 俳	pdke	99999
 徘	pdke	99998
+排	pdo	99999
 拍	pdod	99999
 排	pdoe	99999
 哌	pdt	99999
@@ -12125,6 +12232,7 @@ m	otl	99999
 湓	pfae	99999
 歕	pfcx	99999
 葐	pfge	99999
+盆	pfl	99999
 瓫	pfla	99999
 盆	pfle	99999
 喷	pft	99999
@@ -12202,6 +12310,7 @@ m	otl	99999
 舽	phcn	99999
 乓	phd	99999
 乓	phda	99999
+旁	phj	99999
 旁	phjl	99999
 彷	phk	99999
 彷	phkl	99999
@@ -12442,6 +12551,7 @@ m	otl	99999
 扁	pmbg	99999
 鶣	pmbj	99999
 翩	pmbo	99999
+片	pme	99999
 片	pmee	99999
 覑	pmee	99998
 谝	pmf	99999
@@ -12551,6 +12661,7 @@ m	otl	99999
 桲	powe	99999
 櫇	powl	99999
 朴	powv	99999
+破	pox	99999
 砶	poxd	99999
 破	poxg	99999
 鏺	poxh	99999
@@ -12567,6 +12678,7 @@ m	otl	99999
 暼	pplb	99998
 撆	pplo	99999
 鐅	ppls	99999
+撇	ppo	99999
 撇	ppoq	99999
 𬭯	pps	99999
 𬭯	ppsq	99999
@@ -12610,6 +12722,7 @@ m	otl	99999
 穙	pun	99999
 穙	punn	99999
 菐	punn	99998
+扑	puo	99999
 擈	puol	99999
 獛	puon	99999
 扑	puov	99999
@@ -12678,6 +12791,7 @@ m	otl	99999
 胚	pwzp	99999
 剖	pz	99999
 箁	pzht	99999
+剖	pzj	99999
 剖	pzjg	99999
 咅	pzjt	99999
 裒	pzl	99999
@@ -12718,6 +12832,7 @@ m	otl	99999
 蠄	qbmq	99999
 坅	qbmq	99998
 埁	qbmq	99997
+秦	qbn	99999
 秦	qbnn	99999
 擒	qbo	99999
 搇	qbol	99999
@@ -12963,6 +13078,7 @@ m	otl	99999
 氰	qkdz	99999
 勍	qke	99999
 勍	qkei	99999
+请	qkf	99999
 夝	qkfm	99999
 请	qkfz	99999
 擎	qkg	99999
@@ -13008,6 +13124,7 @@ m	otl	99999
 强	ql	99999
 溬	qlah	99999
 漒	qlam	99999
+强	qlb	99999
 强	qlbm	99999
 襁	qld	99999
 襁	qldm	99999
@@ -13132,6 +13249,7 @@ m	otl	99999
 仱	qmkq	99999
 愆	qmkv	99999
 倩	qmkz	99999
+前	qml	99999
 前	qmlg	99999
 遣	qmm	99999
 墘	qmmb	99999
@@ -13190,6 +13308,7 @@ m	otl	99999
 肷	qmzx	99999
 脥	qmzx	99998
 瞧	qn	99999
+瞧	qnb	99999
 瞧	qnbp	99999
 郻	qnby	99999
 韒	qnbz	99999
@@ -13265,6 +13384,7 @@ m	otl	99999
 陗	qnyz	99999
 且	qp	99999
 淁	qpau	99999
+且	qpe	99999
 且	qpee	99999
 聺	qpft	99999
 茄	qpg	99999
@@ -13451,6 +13571,7 @@ m	otl	99999
 椦	qrwi	99999
 棬	qrwk	99999
 权	qrwq	99999
+全	qrx	99999
 鐉	qrxl	99999
 全	qrxr	99999
 硂	qrxr	99998
@@ -13646,6 +13767,7 @@ m	otl	99999
 群	qy	99999
 裙	qyd	99999
 裙	qydt	99999
+群	qye	99999
 裠	qyel	99999
 群	qyeu	99999
 逡	qyh	99999
@@ -13662,6 +13784,7 @@ m	otl	99999
 绕	rc	99999
 荛	rcg	99999
 荛	rcge	99999
+绕	rci	99999
 绕	rcie	99999
 遶	rcml	99999
 扰	rco	99999
@@ -13675,6 +13798,7 @@ m	otl	99999
 热	re	99999
 惹	reg	99999
 惹	regv	99999
+热	reo	99999
 热	reop	99999
 忍	rf	99999
 韌	rfbg	99999
@@ -13730,6 +13854,7 @@ m	otl	99999
 仍	rg	99999
 礽	rgds	99999
 芿	rggs	99999
+仍	rgk	99999
 仍	rgks	99999
 扔	rgo	99999
 扔	rgos	99999
@@ -13740,6 +13865,7 @@ m	otl	99999
 瀼	rhal	99999
 禳	rhd	99999
 禳	rhdl	99999
+让	rhf	99999
 譲	rhfl	99999
 让	rhfp	99999
 蘘	rhg	99999
@@ -13764,6 +13890,7 @@ m	otl	99999
 嚷	rhtl	99999
 懹	rhvl	99999
 日	ri	99999
+日	rib	99999
 日	ribb	99999
 囸	rijs	99999
 驲	riv	99999
@@ -13775,6 +13902,7 @@ m	otl	99999
 袇	rjde	99999
 袡	rjdm	99999
 衻	rjdp	99999
+然	rjf	99999
 然	rjfp	99999
 苒	rjg	99999
 苒	rjgm	99999
@@ -13815,6 +13943,7 @@ m	otl	99999
 婼	rout	99999
 楉	rowt	99999
 软	rr	99999
+软	rrc	99999
 软	rrcx	99999
 緛	rriy	99999
 偄	rrky	99999
@@ -14069,6 +14198,7 @@ m	otl	99999
 啬	sec	99999
 啬	sect	99999
 譅	sefs	99999
+色	seg	99999
 色	segk	99999
 歰	segs	99999
 塞	sej	99999
@@ -14090,9 +14220,11 @@ m	otl	99999
 懎	sevt	99999
 鏼	sexi	99999
 森	sf	99999
+森	sfw	99999
 椮	sfwf	99999
 森	sfww	99999
 僧	sg	99999
+僧	sgk	99999
 僧	sgkb	99999
 桑	sh	99999
 丧	shc	99999
@@ -14212,6 +14344,7 @@ m	otl	99999
 繖	sjiq	99999
 俕	sjkw	99999
 壭	sjmy	99999
+三	sjp	99999
 帴	sjpe	99999
 三	sjpp	99999
 馓	sjq	99999
@@ -14253,6 +14386,7 @@ m	otl	99999
 髿	sopf	99999
 琐	sor	99999
 琐	sorj	99999
+锁	sos	99999
 锁	sosj	99999
 趖	sosm	99999
 鮻	sosq	99999
@@ -14273,6 +14407,7 @@ m	otl	99999
 酸	srcq	99999
 蒜	srg	99999
 蒜	srgt	99999
+算	srh	99999
 算	srhg	99999
 筭	srhg	99998
 笇	srhv	99999
@@ -14471,6 +14606,7 @@ m	otl	99999
 孙	sy	99999
 隼	syd	99999
 隼	sydc	99999
+孙	sye	99999
 孙	syey	99999
 飧	syf	99999
 飧	syfq	99999
@@ -14579,6 +14715,7 @@ m	otl	99999
 嚃	tatl	99999
 嚺	tatl	99998
 咜	tatu	99999
+她	tau	99999
 她	tauf	99999
 牠	tavf	99999
 榻	taw	99999
@@ -14693,6 +14830,7 @@ m	otl	99999
 慝	terv	99999
 铽	tes	99999
 铽	tesv	99999
+特	tev	99999
 特	tevo	99999
 疼	tg	99999
 漛	tgap	99999
@@ -14707,6 +14845,7 @@ m	otl	99999
 駦	tgnv	99999
 熥	tgp	99999
 熥	tgpl	99999
+疼	tgq	99999
 疼	tgqa	99999
 腾	tgz	99999
 縢	tgzi	99999
@@ -14996,6 +15135,7 @@ m	otl	99999
 鞓	tkrr	99999
 铤	tks	99999
 铤	tksl	99999
+听	tkt	99999
 听	tkth	99999
 婷	tku	99999
 娗	tkul	99999
@@ -15102,6 +15242,7 @@ m	otl	99999
 挑	tnoe	99999
 髫	tnp	99999
 髫	tnpt	99999
+条	tnq	99999
 庣	tnqe	99999
 条	tnqy	99999
 粜	tnr	99999
@@ -15207,6 +15348,7 @@ m	otl	99999
 蛈	tpmh	99999
 帖	tpp	99999
 帖	tppt	99999
+铁	tps	99999
 铁	tpsh	99999
 驖	tpvr	99999
 飻	tpxf	99999
@@ -15221,6 +15363,7 @@ m	otl	99999
 疃	trh	99999
 疃	trhh	99999
 篿	trho	99999
+团	trj	99999
 团	trjo	99999
 団	trjo	99998
 鷻	trjq	99999
@@ -15399,6 +15542,7 @@ m	otl	99999
 頹	tvnl	99999
 頺	tvnl	99998
 頽	tvnl	99997
+推	tvo	99999
 推	tvod	99999
 煺	tvp	99999
 魋	tvpd	99999
@@ -15441,6 +15585,7 @@ m	otl	99999
 豚	tyz	99999
 豚	tyzo	99999
 头	tz	99999
+头	tza	99999
 头	tzay	99999
 亠	tzee	99999
 蘣	tzgm	99999
@@ -15553,6 +15698,7 @@ m	otl	99999
 梢	ucw	99999
 柖	ucwt	99999
 梢	ucwz	99999
+少	ucy	99999
 少	ucyf	99999
 晒	udb	99999
 晒	udbc	99999
@@ -15596,6 +15742,7 @@ m	otl	99999
 拾	ueot	99999
 猞	ueot	99998
 摵	ueoy	99999
+射	uep	99999
 射	uepo	99999
 麝	ueq	99999
 厍	ueqc	99999
@@ -15790,6 +15937,7 @@ m	otl	99999
 熵	uhpt	99999
 鬺	uhpx	99999
 鞝	uhrt	99999
+上	uhv	99999
 上	uhvp	99999
 恦	uhvt	99999
 慯	uhvx	99999
@@ -16064,6 +16212,7 @@ m	otl	99999
 衰	uklp	99999
 蟀	ukm	99999
 蟀	ukmc	99999
+帅	ukn	99999
 帅	uknp	99999
 摔	uko	99999
 摔	ukoc	99999
@@ -16080,6 +16229,7 @@ m	otl	99999
 霜	ullb	99999
 鹴	ullj	99999
 塽	ulmp	99999
+双	ulq	99999
 双	ulqq	99999
 孀	ulu	99999
 孀	ulub	99999
@@ -16095,6 +16245,7 @@ m	otl	99999
 爽	uly	99999
 爽	ulyp	99999
 说	uo	99999
+说	uof	99999
 说	uofe	99999
 説	uofe	99998
 蒴	uog	99999
@@ -16120,6 +16271,7 @@ m	otl	99999
 数	uozq	99999
 矟	uozz	99999
 涮	ur	99999
+涮	ura	99999
 涮	urag	99999
 拴	uro	99999
 拴	uror	99999
@@ -16249,8 +16401,10 @@ m	otl	99999
 閖	uvrp	99999
 脽	uvzd	99999
 谁	uw	99999
+谁	uwf	99999
 谁	uwfd	99999
 刷	ux	99999
+刷	uxb	99999
 刷	uxbg	99999
 耍	uxl	99999
 耍	uxlu	99999
@@ -16263,6 +16417,7 @@ m	otl	99999
 蕣	uygn	99999
 舜	uyi	99999
 舜	uyin	99999
+顺	uyn	99999
 顺	uynj	99999
 吮	uyt	99999
 吮	uyte	99999
@@ -16342,6 +16497,7 @@ m	otl	99999
 搾	vaok	99998
 揸	vaop	99999
 挓	vaou	99999
+炸	vap	99999
 炸	vapk	99999
 灹	vapu	99999
 痄	vaq	99999
@@ -16999,6 +17155,7 @@ m	otl	99999
 粘	vjz	99999
 粘	vjzt	99999
 拽	vk	99999
+拽	vko	99999
 拽	vkof	99999
 装	vl	99999
 湷	vlab	99999
@@ -17097,6 +17254,7 @@ m	otl	99999
 转	vr	99999
 沌	vra	99999
 沌	vrab	99999
+转	vrc	99999
 转	vrca	99999
 転	vrch	99999
 篆	vrh	99999
@@ -17316,6 +17474,7 @@ m	otl	99999
 隹	vvd	99999
 隹	vvdd	99999
 諈	vvfp	99999
+追	vvh	99999
 追	vvhl	99999
 畷	vvhq	99999
 缀	vvi	99999
@@ -17342,6 +17501,7 @@ m	otl	99999
 簻	vxhl	99999
 爪	vxi	99999
 爪	vxii	99999
+抓	vxo	99999
 抓	vxoi	99999
 髽	vxp	99999
 髽	vxpm	99999
@@ -17413,6 +17573,7 @@ m	otl	99999
 掫	vzoq	99999
 烐	vzpc	99999
 炿	vzpe	99999
+周	vzr	99999
 珘	vzrc	99999
 周	vzrt	99999
 咒	vzt	99999
@@ -17457,6 +17618,7 @@ m	otl	99999
 坬	wami	99999
 劸	wami	99998
 蛙	wamm	99999
+挖	wao	99999
 挖	waob	99999
 攨	waoi	99999
 瓦	wap	99999
@@ -17476,6 +17638,7 @@ m	otl	99999
 腽	waze	99999
 膃	waze	99998
 外	wd	99999
+外	wdf	99999
 夞	wdfu	99999
 外	wdfv	99999
 崴	wdh	99999
@@ -17868,6 +18031,7 @@ m	otl	99999
 鎢	wuxp	99999
 錻	wuxs	99999
 勿	wuxx	99999
+无	wuy	99999
 阢	wuye	99999
 鴮	wuyj	99999
 无	wuyy	99999
@@ -18339,6 +18503,7 @@ m	otl	99999
 觲	xkgv	99999
 篂	xkhm	99999
 緈	xkiu	99999
+行	xkk	99999
 侀	xkkg	99999
 行	xkkk	99999
 倖	xkku	99999
@@ -19022,6 +19187,7 @@ m	otl	99999
 匈	xsrr	99999
 匂	xsru	99999
 胷	xsrz	99999
+兄	xst	99999
 兄	xste	99999
 忷	xsvr	99999
 恟	xsvr	99998
@@ -21120,6 +21286,7 @@ m	otl	99999
 咂	zatp	99999
 囐	zaty	99999
 紮	zawi	99999
+砸	zax	99999
 砸	zaxp	99999
 磼	zaxw	99999
 臜	zaz	99999
@@ -21127,6 +21294,7 @@ m	otl	99999
 早	zc	99999
 澡	zca	99999
 澡	zcaw	99999
+早	zcb	99999
 早	zcbc	99999
 醩	zccb	99999
 艁	zcct	99999
@@ -21191,6 +21359,7 @@ m	otl	99999
 仔	zdke	99999
 甾	zdn	99999
 甾	zdnh	99999
+再	zdp	99999
 再	zdpm	99999
 则	ze	99999
 泽	zea	99999
@@ -21216,6 +21385,7 @@ m	otl	99999
 箦	zehj	99999
 笮	zehk	99999
 簀	zehl	99999
+则	zej	99999
 则	zejg	99999
 迮	zek	99999
 伬	zekb	99999
@@ -21242,6 +21412,7 @@ m	otl	99999
 怎	zf	99999
 谮	zff	99999
 谮	zffb	99999
+怎	zfk	99999
 怎	zfkv	99999
 囎	zftb	99999
 增	zg	99999
@@ -21260,6 +21431,7 @@ m	otl	99999
 曾	zglb	99999
 䎖	zglo	99999
 鄫	zgly	99999
+增	zgm	99999
 增	zgmb	99999
 増	zgmb	99998
 熷	zgpb	99999
@@ -21311,6 +21483,7 @@ m	otl	99999
 辎	zich	99999
 輺	zich	99998
 胾	zicx	99999
+自	zid	99999
 自	zidd	99999
 禌	zidi	99999
 子	zie	99999
@@ -21411,6 +21584,7 @@ m	otl	99999
 瓉	zjrl	99999
 趱	zjs	99999
 趱	zjsj	99999
+咱	zjt	99999
 噆	zjtb	99999
 咱	zjtd	99999
 赞	zjv	99999
@@ -21500,6 +21674,7 @@ m	otl	99999
 倧	zskt	99999
 偬	zskv	99999
 倊	zskv	99998
+总	zsl	99999
 总	zslv	99999
 蝬	zsmq	99999
 堫	zsmq	99998
@@ -21546,6 +21721,7 @@ m	otl	99999
 箤	zuhc	99998
 崪	zuhc	99997
 卆	zuhc	99996
+组	zui	99999
 组	zuie	99999
 傶	zuky	99999
 族	zul	99999
@@ -21568,6 +21744,7 @@ m	otl	99999
 阻	zuy	99999
 阻	zuye	99999
 最	zv	99999
+最	zvb	99999
 晬	zvbc	99999
 最	zvbq	99999
 醉	zvc	99999
@@ -21597,6 +21774,7 @@ m	otl	99999
 贼	zw	99999
 戝	zwbe	99999
 蠈	zwbm	99999
+贼	zwj	99999
 贼	zwjc	99999
 鲗	zws	99999
 鱡	zwsc	99999

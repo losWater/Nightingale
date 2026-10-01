@@ -4,6 +4,7 @@
 - 8105 核心字全部读音：全码 + 简码（一二简=固定沿用2.5；三简=引擎退火时自动分配，暂定）。
 - 扩展字（2.5 单字表中 8105 以外的字）：2.5 正式全码的音节（小鹤→自然码）+ 新布局首末根键；无简码。
 - 符号表：沿用 2.5 原码。
+- 二简字补三码：有二简的读音，若其全码前三码在整张表里没有任何字，就把该字也放上去（二码、三码同字）。
 同码候选序：
 - 简码位：按引擎候选位。
 - 全码位：无简码读音在前、有简码读音让位在后（有简让全）；各自按读音频率降序；扩展字排在核心字之后；符号最后。
@@ -43,6 +44,7 @@ def main(run_dir, out_dir, scheme='ziranma'):
     # ---- 核心字 ----
     slots = collections.defaultdict(list)       # 码 -> [(排序键, 字)]
     core_chars = set()
+    two_short = []                              # 二简读音：(候选位, 序号, 字, 全码)
     for i, r in enumerate(rows):
         ch, full, short = r[0], r[1], r[3]
         core_chars.add(ch)
@@ -52,6 +54,8 @@ def main(run_dir, out_dir, scheme='ziranma'):
         slots[full].append(((0, 1 if has_short else 0, -f, i), ch))
         if has_short:
             slots[short].append(((0, 0, int(r[4]), i), ch))
+            if len(short) == 2:
+                two_short.append((int(r[4]), i, ch, full))
 
     # ---- 扩展字 ----
     all_py = json.load(open(ROOT / 'data/inputs/全音节映射.json', encoding='utf-8'))['小鹤']
@@ -90,6 +94,13 @@ def main(run_dir, out_dir, scheme='ziranma'):
             slots[p[1]].append(((2, 0, 0, sym), p[0]))
             sym += 1
 
+    # ---- 二简字补三码（2026-10-02 作者定）：三码位空着才补 ----
+    filled = 0
+    for _, i, ch, full in sorted(two_short):
+        if full[:3] not in slots:
+            slots[full[:3]].append(((0, 0, 0, i), ch))
+            filled += 1
+
     out_dir.mkdir(parents=True, exist_ok=True)
     lines = []
     for code in sorted(slots):
@@ -103,7 +114,7 @@ def main(run_dir, out_dir, scheme='ziranma'):
     path.write_text(''.join(lines), encoding='utf-8')
     stat = collections.Counter(len(c) for c in slots for _ in slots[c])
     print('输出', path, '行数', len(lines), '；码长分布', dict(sorted(stat.items())),
-          '；扩展字', ext, '；符号', sym, '；跳过', len(skipped))
+          '；扩展字', ext, '；符号', sym, '；二简补三码', filled, '；跳过', len(skipped))
     return path
 
 
