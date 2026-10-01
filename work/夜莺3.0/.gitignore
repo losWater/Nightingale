@@ -1,0 +1,12 @@
+.venv/
+models/
+corpus/
+*.pyc
+__pycache__/
+.DS_Store
+# 大型中间产物
+reading/out/*.jsonl
+engine/target/
+runs/
+build/out/
+tools/
