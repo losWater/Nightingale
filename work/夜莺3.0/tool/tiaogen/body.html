@@ -1,0 +1,40 @@
+<div class="app">
+  <header>
+    <h1>夜莺调根台</h1>
+    <div class="ctl">
+      <label for="start">起点</label><select id="start"></select>
+      <label for="ref">对照</label><select id="ref"></select>
+      <button id="undo" title="撤销">撤销</button><button id="redo" title="重做">重做</button>
+      <button id="fix1" class="primary">按冲突自动修一步</button><button id="fix10">连续修 10 步</button>
+      <button id="dl" hidden title="每行：字&lt;Tab&gt;码">下载码表（字前）</button>
+      <button id="dl2" hidden title="每行：码&lt;Tab&gt;字">下载码表（码前）</button>
+      <button id="copy">复制当前布局</button>
+      <label for="savename" class="sr">保存名称</label><input id="savename" placeholder="给当前布局起个名字" maxlength="40">
+      <button id="save">保存当前布局</button><span id="savestat" aria-live="polite"></span>
+    </div>
+  </header>
+  <section class="metrics" id="metrics"><div id="loading">正在载入 8454 个读音、6 万词……</div></section>
+  <div class="main">
+    <section class="board">
+      <div class="bar2">
+        <label for="heat">热力</label>
+        <select id="heat">
+          <option value="none">不着色</option><option value="use">形码键使用</option><option value="dup">重码牵涉</option>
+          <option value="clash">字词冲突牵涉</option><option value="lose">没拿到三简</option>
+        </select>
+        <span>把根组拖到别的键上即可换键；点根组看详情。橙色下划线 = 相对 2.5 换了键。</span>
+      </div>
+      <div class="kscroll"><div class="kbd" id="kbd"></div></div>
+    </section>
+    <aside class="side">
+      <div class="tabs" role="group" aria-label="详情">
+        <button data-tab="group" aria-pressed="true">根组</button><button data-tab="dup" aria-pressed="false">重码</button>
+        <button data-tab="clash" aria-pressed="false">字词冲突</button><button data-tab="lose" aria-pressed="false">没拿到三简</button>
+        <button data-tab="saved" aria-pressed="false">已保存</button>
+        <button data-tab="log" aria-pressed="false">修改记录</button>
+      </div>
+      <div class="lastdiff" id="lastdiff" hidden></div>
+      <div class="pane" id="pane"></div>
+    </aside>
+  </div>
+</div>
