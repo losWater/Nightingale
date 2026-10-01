@@ -1,7 +1,7 @@
 schema:
   schema_id: yeying30_nb46_single
   name: 夜莺3.0·NB46单字（试用）
-  version: "3.0-nb46-single.2"
+  version: "3.0-nb46-single.3"
   author: [夜莺作者 losWater]
   description: 夜莺3.0候选NB46单字码表试用版（二简ui=事）。操作同2.5单字版；不含2.5的反查与拆分显示。
 
@@ -30,6 +30,7 @@ engine:
   translators:
     - punct_translator
     - table_translator
+    - lua_translator@*yeying30_nb46_adjust_translator
     - history_translator@repeat_last
     - history_translator@repeat_last_right
   filters:

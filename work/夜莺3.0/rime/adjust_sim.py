@@ -44,9 +44,14 @@ def longer_short(t, x):
             if holder(f[:L]) == t: return f[:L]
 def fill(x, excl):
     if len(x) >= 4 or holder(x): return
-    cand = [t for t in prefix.get(x, []) if t not in excl and eligible(t, x)]
-    if not cand: return
-    best = max(cand, key=lambda t: freq_of(t, x)); y = longer_short(best, x)
+    orig = next((t for t in base.get(x, []) if t in core), None)
+    if orig and orig not in excl and eligible(orig, x):
+        best = orig                     # 先还给码表原占位字
+    else:
+        cand = [t for t in prefix.get(x, []) if t not in excl and eligible(t, x)]
+        if not cand: return
+        best = max(cand, key=lambda t: freq_of(t, x))
+    y = longer_short(best, x)
     front(x, best); excl.add(best)
     if y: remove_from(y, best); fill(y, excl)
 def bump(b, s):

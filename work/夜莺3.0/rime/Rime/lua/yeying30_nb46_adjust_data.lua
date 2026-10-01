@@ -2,7 +2,8 @@
 -- 记录文件：<用户目录>/yeying30_nb46_adjust.tsv，每行：时间 \t 码 \t 字 \t 参数 \t 动作
 --   top  ：把字提到该码首选
 --   up   ：上移——字从该码挪到长一级的码；那里若是有人的简码位，原占位字被挤上去（只往上挪，最多到全码）；
---          空出来的简码位由“以该码开头、字频最高、还没有更短简码”的核心字接过，接班者原简码位照此继续补
+--          空出来的简码位先还给码表里原本占它的字（若它还没有更短简码），否则由“以该码开头、字频最高、
+--          还没有更短简码”的核心字接过；接班者原简码位照此继续补
 --   down ：下移——字从该码挪到短一级的码，原占位字被挤上去；字原来的简码位空出来后同样按字频补
 --   undo ：撤销上一步（整步，涉及的码一起恢复）
 local M = { loaded = false, state = {}, base = {}, codes = {}, prefix = {}, freq = {}, core = {}, ops = {} }
@@ -121,7 +122,14 @@ end
 function M.fill(x, excl)
   if #x >= 4 or holder(x) then return end
   local best, bf = nil, -1
-  for _, t in ipairs(M.prefix[x] or {}) do
+  -- 先还给码表里原本占这个位的字（如 ue 的“射”）；它已有更短简码或被排除时，才按字频补
+  for _, t in ipairs(M.base[x] or {}) do
+    if M.core[t] then
+      if not excl[t] and eligible(t, x) then best, bf = t, math.huge end
+      break
+    end
+  end
+  for _, t in ipairs(best and {} or (M.prefix[x] or {})) do
     if not excl[t] and eligible(t, x) then
       local f = freq_of(t, x)
       if f > bf then best, bf = t, f end
