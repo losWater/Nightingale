@@ -44,7 +44,8 @@ def init():
                     start = dict(proj)
                 else:
                     start = dict(proj)
-                    for k in rng.sample(groups, len(groups) // 2):
+                    frac = 4 if kind == 'shuf25' else 2      # shuf25：打乱 1/4；shuf50：打乱 1/2
+                    for k in rng.sample(groups, len(groups) // frac):
                         start[k] = rng.choice([x for x in KEYS if x != proj[k]])
                 jobs.append({'id': jid, 'group': g, 'squad': q, 'kind': kind, 'seed': seed, 'start': start})
     T.mkdir(parents=True, exist_ok=True)
