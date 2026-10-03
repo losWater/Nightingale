@@ -16267,7 +16267,7 @@ m	otl
 鼠	uudb
 襩	uudl
 襡	uudm
-署	uue
+熟	uue
 戍	uuea
 署	uueb
 孰	uueh
@@ -18131,7 +18131,7 @@ m	otl
 鰃	wwss
 鰄	wwsu
 鲔	wwsz
-味	wwt
+喂	wwt
 唯	wwtd
 味	wwtl
 喂	wwts
