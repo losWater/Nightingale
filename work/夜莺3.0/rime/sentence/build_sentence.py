@@ -4,9 +4,10 @@
 - 组件用 @*包装模块 引用，不需要改 rime.lua。
 - 码表：夜莺 3.0 NB46 无一简版（方案 C）；字频排名沿用虎整句；白名单、补充词为空。
 - 模型：五元模型与词先验原样使用（模型放 models/，词先验改名 yeying_sentence.lexical.bin）。
+- 空二码：data/inputs/整句空二码.json 里的字下放到空着的二码（仅整句）。
 用法：python rime/sentence/build_sentence.py <虎整句包目录> <无一简普通单字表> <输出目录>
 """
-import re, shutil, sys
+import json, re, shutil, sys
 from pathlib import Path
 
 src, table, out = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
@@ -85,6 +86,13 @@ a = rename((src / 'tiger_sentence_ascii.schema.yaml').read_text(encoding='utf-8'
 # ---- 数据 ----
 lines = [l.rstrip('\n') for l in open(table, encoding='utf-8-sig') if '\t' in l]
 assert not any(len(l.split('\t')[1]) == 1 for l in lines), '码表里不应有一码'
+fill = json.load(open(Path(__file__).resolve().parents[2] / 'data/inputs/整句空二码.json', encoding='utf-8'))['二简']
+used = {l.split('\t')[1] for l in lines}
+for code, ch in fill.items():
+    assert code not in used, f'{code} 不是空码'
+    assert any(l.split('\t') == [ch, c] for l in lines for c in [l.split('\t')[1]] if c[:2] == code), f'{ch} 没有以 {code} 开头的码'
+    lines.append(f'{ch}\t{code}')
+lines.sort(key=lambda l: l.split('\t')[1])
 (out / 'yeying_sentence.codes.txt').write_text(
     '# 夜莺整句码表：夜莺 3.0 NB46 无一简版（方案 C）。格式“字<Tab>码”，同码内行序即候选序。\n' + '\n'.join(lines) + '\n', encoding='utf-8')
 shutil.copy(src / 'tiger_sentence.char_ranks.txt', out / 'yeying_sentence.char_ranks.txt')
