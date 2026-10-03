@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.9"
+version: "3.0-nb46-single.10"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -17384,7 +17384,7 @@ m	otl	99999
 莇	vugi	99999
 茱	vugl	99999
 苎	vugp	99999
-筑	vuh	99999
+竹	vuh	99999
 箸	vuhb	99999
 竹	vuhh	99999
 笜	vuhh	99998
