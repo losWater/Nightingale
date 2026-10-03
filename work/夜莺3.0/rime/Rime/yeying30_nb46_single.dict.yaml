@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.10"
+version: "3.0-nb46-single.11"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -12804,7 +12804,7 @@ m	otl	99999
 起	q	99999
 ：“	q	99998
 ：‘	q	99997
-秦	qb	99999
+勤	qb	99999
 沁	qba	99999
 瀙	qbae	99999
 溱	qban	99999

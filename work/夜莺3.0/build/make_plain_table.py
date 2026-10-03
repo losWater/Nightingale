@@ -98,6 +98,15 @@ def main(run_dir, out_dir, scheme='ziranma'):
     # ---- 手动三简（可选）----
     manual = os.environ.get('YZ_MANUAL')
     if manual:
+        for code2, ch, _ in json.load(open(manual, encoding='utf-8')).get('二简', []):
+            idx = next(i for i, r in enumerate(rows) if r[0] == ch and r[1][:2] == code2)   # 该读音
+            old = [x for _, x in slots.get(code2, [])]
+            slots[code2] = [((0, 0, 0, -1), ch)]
+            for c, v in slots.items():
+                if len(c) == 4 and c[:2] == code2:
+                    slots[c] = [((k[0], 1 if x == ch else (0 if x in old else k[1]), k[2], k[3]), x) if k[0] == 0 else (k, x) for k, x in v]
+            two_short[:] = [t for t in two_short if not (t[3][:2] == code2 and t[2] in old)] + [(0, idx, ch, rows[idx][1])]
+            print('手动二简', code2, ch, '（原', ''.join(old) or '空', '）')
         for code3, ch, _ in json.load(open(manual, encoding='utf-8'))['三简']:
             assert any(c[:3] == code3 and len(c) == 4 and ch in [x for _, x in v] for c, v in slots.items()), (code3, ch)
             old = [x for _, x in slots.get(code3, [])]
