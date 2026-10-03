@@ -4,7 +4,8 @@
 - 组件用 @*包装模块 引用，不需要改 rime.lua。
 - 码表：夜莺 3.0 NB46 无一简版（方案 C）；字频排名沿用虎整句；白名单、补充词为空。
 - 模型：五元模型与词先验原样使用（模型放 models/，词先验改名 yeying_sentence.lexical.bin）。
-- 空二码：data/inputs/整句空二码.json 里的字下放到空着的二码（仅整句）。
+- 空二码：data/inputs/整句空二码.json 里的字下放到空着的二码（仅整句）；它们腾出的三码给同前缀、只能打全码、
+  字频最高的常用字（字音基准里字频 > 0；没有就不给）。
 用法：python rime/sentence/build_sentence.py <虎整句包目录> <无一简普通单字表> <输出目录>
 """
 import json, re, shutil, sys
@@ -92,6 +93,29 @@ for code, ch in fill.items():
     assert code not in used, f'{code} 不是空码'
     assert any(l.split('\t') == [ch, c] for l in lines for c in [l.split('\t')[1]] if c[:2] == code), f'{ch} 没有以 {code} 开头的码'
     lines.append(f'{ch}\t{code}')
+# 腾出的三码：下放字整句里只用二码，原三码转给同前缀最常用的全码字
+import collections, yaml
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'lib'))
+from shuangpin import encode
+E = yaml.load(open(Path(__file__).resolve().parents[2] / 'build/out/n30/elements.yaml', encoding='utf-8'),
+              Loader=getattr(yaml, 'CSafeLoader', yaml.SafeLoader))
+fr = collections.defaultdict(float)
+for e in E:
+    if e['拼音'] != 'reserved':
+        try: fr[(e['词'], encode(e['拼音'], 'xiaohe'))] += e['频率']
+        except Exception: pass
+pairs = [l.split('\t') for l in lines]
+codes = collections.defaultdict(set); first = {}
+for ch, c in pairs:
+    codes[ch].add(c); first.setdefault(c, ch)
+for c2, ch in fill.items():
+    for c3 in [c for c in codes[ch] if len(c) == 3 and c[:2] == c2 and first[c] == ch]:
+        cands = sorted(((fr[(x, c2)], x) for x, c in pairs if len(c) == 4 and c[:3] == c3 and x != ch
+                        and not any(len(k) < 4 and k[:2] == c2 for k in codes[x]) and fr[(x, c2)] > 0), reverse=True)
+        if cands:
+            x = cands[0][1]
+            lines = [l for l in lines if l != f'{ch}\t{c3}'] + [f'{x}\t{c3}']
+            print(f'腾出三码 {c3}：{ch} → {x}')
 lines.sort(key=lambda l: l.split('\t')[1])
 (out / 'yeying_sentence.codes.txt').write_text(
     '# 夜莺整句码表：夜莺 3.0 NB46 无一简版（方案 C）。格式“字<Tab>码”，同码内行序即候选序。\n' + '\n'.join(lines) + '\n', encoding='utf-8')
