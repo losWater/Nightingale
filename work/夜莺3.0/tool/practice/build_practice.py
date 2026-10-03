@@ -69,6 +69,9 @@ rep('导入会替换两种模式的进度', '导入会替换所有模式的进�
 
 # ---- 归并组带上 2.0 键位；“正”的键位跟随布局 ----
 rep("return {根:name,键:items[0].键,原组:origin,", "return {根:name,键:items[0].键,原键:items[0].原键,原组:origin,")
+# 3.0 把 2.0 的同键归并组拆到不同键（如鸟 J、虫 M）：每个键只保留有字根的部分，归并提示只指同键的部分
+rep("return parts.map(([name,members],partIndex)=>", "const live=parts.filter(([,m])=>items.some(x=>m.split(' ').includes(x.根)));\n return live.map(([name,members],partIndex)=>")
+rep('归并提示:partIndex>0?parts[0][0]:""', '归并提示:partIndex>0?live[0][0]:""')
 zheng = next(x for x in new_roots if x['根'] == '正')
 rep('grouped.push({根:"正",键:"s",', f'grouped.push({{根:"正",键:"{zheng["键"]}",原键:"{zheng["原键"]}",')
 
