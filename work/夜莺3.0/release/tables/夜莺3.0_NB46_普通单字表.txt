@@ -3917,7 +3917,7 @@
 供	gskl
 公	gsl
 公	gslh
-工	gsm
+攻	gsm
 蚣	gsmh
 功	gsmi
 贡	gsmj

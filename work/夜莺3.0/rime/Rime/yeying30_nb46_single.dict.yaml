@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.11"
+version: "3.0-nb46-single.12"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -3936,7 +3936,7 @@ columns: [text, code, weight]
 供	gskl	99999
 公	gsl	99999
 公	gslh	99999
-工	gsm	99999
+攻	gsm	99999
 蚣	gsmh	99999
 功	gsmi	99999
 贡	gsmj	99999
