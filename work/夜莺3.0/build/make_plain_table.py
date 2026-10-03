@@ -4,6 +4,7 @@
 - 8105 核心字全部读音：全码 + 简码（一二简=固定沿用2.5；三简=引擎退火时自动分配，暂定）。
 - 扩展字（2.5 单字表中 8105 以外的字）：2.5 正式全码的音节（小鹤→自然码）+ 新布局首末根键；无简码。
 - 符号表：沿用 2.5 原码。
+- 手动三简（可选，环境变量 YZ_MANUAL 指向 data/inputs/3.0手动调整.json）：指定三码只给指定字，原占位字退回全码。
 - 二简字补三码：有二简的读音，若其全码前三码在整张表里没有任何字，就把该字也放上去（二码、三码同字）。
 同码候选序：
 - 简码位：按引擎候选位。
@@ -93,6 +94,19 @@ def main(run_dir, out_dir, scheme='ziranma'):
         if len(p) >= 2:
             slots[p[1]].append(((2, 0, 0, sym), p[0]))
             sym += 1
+
+    # ---- 手动三简（可选）----
+    manual = os.environ.get('YZ_MANUAL')
+    if manual:
+        for code3, ch, _ in json.load(open(manual, encoding='utf-8'))['三简']:
+            assert any(c[:3] == code3 and len(c) == 4 and ch in [x for _, x in v] for c, v in slots.items()), (code3, ch)
+            old = [x for _, x in slots.get(code3, [])]
+            slots[code3] = [((0, 0, 0, -1), ch)]
+            # 全码位的“有简让全”标记跟着改：得三简的字标为有简，失去的标为无简
+            for c, v in slots.items():
+                if len(c) == 4 and c[:3] == code3:
+                    slots[c] = [((k[0], 1 if x == ch else (0 if x in old else k[1]), k[2], k[3]), x) if k[0] == 0 else (k, x) for k, x in v]
+            print('手动三简', code3, ch, '（原', ''.join(old) or '空', '）')
 
     # ---- 二简字补三码（2026-10-02 作者定）：三码位空着才补 ----
     filled = 0

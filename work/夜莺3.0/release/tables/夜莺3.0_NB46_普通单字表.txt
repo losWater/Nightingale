@@ -3134,7 +3134,7 @@
 蕧	fugq
 芙	fugy
 茯	fugy
-弗	fuh
+符	fuh
 阜	fuhc
 簠	fuhe
 筟	fuhe
@@ -18469,11 +18469,11 @@ m	otl
 猩	xko
 擤	xkoe
 猩	xkom
-形	xkp
+型	xkp
 形	xkpf
 刑	xkpg
-型	xkpm
 煋	xkpm
+型	xkpm
 邢	xkpy
 饧	xkq
 饧	xkqx
@@ -20580,7 +20580,7 @@ m	otl
 鶢	yrij
 缘	yrio
 爰	yriq
-园	yrj
+圆	yrj
 园	yrje
 圆	yrjj
 鹓	yrjj
@@ -21115,7 +21115,7 @@ m	otl
 陨	yyyj
 奫	yyyn
 又	yz
-油	yza
+游	yza
 游	yzae
 油	yzah
 泑	yzai
