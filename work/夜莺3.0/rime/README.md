@@ -9,3 +9,9 @@
 
 `make_dict.py`：由普通单字表重新生成码表（保留快符等附加条目）。
 `adjust_sim.py`：插件逻辑的 Python 复刻，重放记录查看每步状态。汇总记录：`release/summarize_adjust.py`。
+
+## 反查（2026-10-05）
+- 用法同 2.5：`` ` ``+全拼或双拼，列出该读音的字〔拆分 · 码〕。NB46 单字方案另有 F2 / `~~码`：列出以该码开头的常用字。
+- 整句方案只支持 `` ` ``（整句引擎用 `~` 作暂存标记，不能用 `~~`/F2）。
+- 数据：`python rime/make_lookup.py <码表> rime/Rime/lua/yeying30_{nb46,sentence}_lookup_data.lua [有一简1/0]`，改码后需重新生成。
+- 依赖 2.5 已装的 `yeying25_mac_lookup_key.lua`、`yeying25_shape_lookup_input.lua`。

@@ -1,7 +1,7 @@
 schema:
   schema_id: yeying30_nb46_single
   name: 夜莺3.0·NB46单字（试用）
-  version: "3.0-nb46-single.3"
+  version: "3.0-nb46-single.4"
   author: [夜莺作者 losWater]
   description: 夜莺3.0候选NB46单字码表试用版（二简ui=事）。操作同2.5单字版；不含2.5的反查与拆分显示。
 
@@ -17,6 +17,8 @@ switches:
 engine:
   processors:
     - lua_processor@*yeying30_nb46_adjust_key
+    - lua_processor@*yeying25_mac_lookup_key
+    - lua_processor@*yeying25_shape_lookup_input
     - ascii_composer
     - recognizer
     - key_binder
@@ -28,6 +30,7 @@ engine:
     - express_editor
   segmentors: [ascii_segmentor, matcher, abc_segmentor, punct_segmentor, fallback_segmentor]
   translators:
+    - lua_translator@*yeying30_nb46_lookup
     - punct_translator
     - table_translator
     - lua_translator@*yeying30_nb46_adjust_translator
@@ -72,6 +75,7 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    yeying30_lookup: '^([`~][a-z]*|~~[a-z]*)$'
 simplification:
   option_name: simplification
   opencc_config: s2t.json
