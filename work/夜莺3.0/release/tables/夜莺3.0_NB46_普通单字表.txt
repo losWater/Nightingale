@@ -153,8 +153,7 @@
 袄	aod
 翱	aodo
 袄	aody
-岙	aof
-岙	aofh
+奥	aof
 謸	aofq
 奥	aofy
 薁	aog
@@ -204,7 +203,8 @@
 媼	aoue
 懊	aov
 懊	aovy
-隩	aoy
+岙	aoy
+岙	aoyh
 隩	aoyy
 不	b
 吧	ba
@@ -6972,10 +6972,7 @@
 交	jnep
 虠	jner
 郊	jney
-鷮	jnfj
 訆	jnfn
-敿	jnfq
-敽	jnfq
 角	jng
 斠	jngc
 藠	jngd
@@ -7055,6 +7052,9 @@
 礁	jnx
 礁	jnxp
 鐎	jnxp
+鷮	jnyj
+敿	jnyq
+敽	jnyq
 脚	jnz
 胶	jnzp
 膲	jnzp
@@ -7341,7 +7341,6 @@
 孓	jte
 孓	jtea
 诀	jtf
-勪	jtfi
 殌	jtfm
 谲	jtft
 诀	jtfy
@@ -7419,6 +7418,7 @@
 鐍	jtxt
 砄	jtxy
 鈌	jtxy
+勪	jtyi
 臄	jtzo
 矡	jtzq
 据	ju
@@ -19678,7 +19678,6 @@ m	otl
 詏	ycfi
 邎	ycfl
 谣	ycfv
-夭	ycfy
 訞	ycfy
 殀	ycfy
 药	ycg
@@ -19767,6 +19766,7 @@ m	otl
 磘	ycxv
 耀	ycy
 耀	ycyd
+夭	ycyy
 腰	ycz
 腰	yczu
 也	ye

@@ -47,5 +47,5 @@ c1 = [(E[i]['词'], f) for p, i, f in typed if i in T1 and f in wr and wr[f][0][
 c2 = [(E[i]['词'], f) for p, i, f in typed if i in T1 and f in wr]
 c3 = [(E[i]['词'], f) for p, i, f in typed if i in T3 and f in wr and wr[f][0][0] <= 10000]
 print(f'前1521选重 {len(d1)} {d1}  前3571选重 {len(d3)} {d3}')
-print(f'字词撞① {len(c1)} {c1}  ② {len(c2)}  ③ {len(c3)} {c3}')
+print(f'字词撞① {len(c1)} {c1}  ② {len(c2)} {c2}  ③ {len(c3)} {c3}')
 print(f'前1500四码 {four}')

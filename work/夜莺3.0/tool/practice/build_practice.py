@@ -1,5 +1,5 @@
 """夜莺 3.0（NB46）临时字根练习：以夜莺 2.0 离线工具包的字根练习页为底，换成 NB46 键位。
-- 根集合：3.0 根组（= 2.5，去掉已无字使用的“鱼省”，补上 2.5 新增的“戈无点”）。
+- 根集合：3.0 根组（= 2.5，去掉已无字使用的“鱼省”，补上 2.5 新增的“戈无点”、3.0 新增的“夭”〔归入天组，原键留空＝新根〕）。
 - 模式：归并组 / 全部根形，各分“全部”和“只练改动过的根”（键位与 2.0 不同的根；2.0 与 2.5 键位相同）。
 - 进度单独存（nightingale30_nb46_memory_v1），不影响 2.0 练习的进度。
 用法：python tool/practice/build_practice.py [布局json] [输出html]
@@ -46,6 +46,8 @@ for x in roots:
     if r == '戈':
         g = g_of['戈无点']
         new_roots.append({'根': '戈无点', '键': layout[g], '原键': meta['layout'][g], '组': x['组'], '例字': '尧、晓、烧、浇、挠'})
+    if r == '天':
+        new_roots.append({'根': '夭', '键': layout[g_of['夭']], '原键': '', '组': x['组'], '例字': '笑、跃、沃、妖、夭'})
 missing = set(g_of) - {x['根'] for x in new_roots}
 assert not missing, missing
 put('roots', new_roots)
@@ -55,7 +57,16 @@ ex, _, _ = literal('rootExamples')
 order = ['尧', '晓', '烧', '浇', '挠', '侥', '娆', '峣', '桡', '哓']
 lst = [{'字': c, '位置': '首根' if splits[c][0][0] == '戈无点' else '末根', '拆分': ' ＋ '.join(p[0] for p in splits[c])} for c in order if c in splits]
 ex['戈无点'] = {'1': lst[:1], '2': lst[:2], '4': lst[:4]}
+lst = [{'字': c, '位置': '首末' if len(splits[c]) == 1 else ('首根' if splits[c][0][0] == '夭' else '末根'),
+        '拆分': ' ＋ '.join(p[0] for p in splits[c])} for c in ['笑', '跃', '沃', '妖', '袄', '夭'] if c in splits]
+ex['夭'] = {'1': lst[:1], '2': lst[:2], '4': lst[:4]}
 put('rootExamples', ex)
+
+# 夭并入“大”那一部分（2.0 练习页按部分出归并组卡片）
+parts, _, _ = literal('familyPartitions')
+for part in parts.get('大／小', []):
+    if part[0] == '大' and '夭' not in part[1].split(): part[1] += ' 夭'
+put('familyPartitions', parts)
 
 # ---- 标题与说明 ----
 rep('<title>夜莺2.0字根记忆练习</title>', '<title>夜莺3.0（NB46）字根练习</title>')

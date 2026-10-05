@@ -18,6 +18,7 @@ def family_map():
         p = l.split('\t')
         if len(p) >= 3:
             fam[p[0]] = p[2]
+    fam.setdefault('夭', fam.get('天'))          # 3.0 新增：夭归入天所在的根族（大／小）
     return fam
 
 

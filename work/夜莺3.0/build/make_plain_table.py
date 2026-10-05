@@ -34,6 +34,7 @@ def main(run_dir, out_dir, scheme='ziranma'):
     meta = json.load(open(INP / 'meta.json', encoding='utf-8'))
     g_of = {r: g for g, rs in meta['groups'].items() for r in rs}
     splits = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
+    splits25 = json.load(open(ROOT / 'data/baseline/splits_2.5.json', encoding='utf-8'))   # 核对扩展字的 2.5 码用
     E = yaml.load(open(INP / 'elements.yaml', encoding='utf-8'), Loader=L)
     n = sum(1 for e in E if e['拼音'] != 'reserved')
     rows = [l.rstrip('\n').split('\t') for l in open(out / 'code.txt', encoding='utf-8')][:n]
@@ -75,8 +76,8 @@ def main(run_dir, out_dir, scheme='ziranma'):
         ch, code = p[0], p[1]
         if ch not in splits:
             skipped.append(ch); continue
-        rs = splits[ch]
-        if code[2:] != old_keys[rs[0][0]] + old_keys[rs[-1][0]]:
+        rs25 = splits25.get(ch, splits[ch])
+        if code[2:] != old_keys[rs25[0][0]] + old_keys[rs25[-1][0]]:
             continue                              # 非正式全码（容错等）
         if code[:2] not in xh2zr:
             skipped.append(ch); continue

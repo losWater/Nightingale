@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.12"
+version: "3.0-nb46-single.13"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -162,8 +162,7 @@ columns: [text, code, weight]
 袄	aod	99999
 翱	aodo	99999
 袄	aody	99999
-岙	aof	99999
-岙	aofh	99999
+奥	aof	99999
 謸	aofq	99999
 奥	aofy	99999
 薁	aog	99999
@@ -213,7 +212,8 @@ columns: [text, code, weight]
 媼	aoue	99998
 懊	aov	99999
 懊	aovy	99999
-隩	aoy	99999
+岙	aoy	99999
+岙	aoyh	99999
 隩	aoyy	99999
 不	b	99999
 》	b	99998
@@ -6995,10 +6995,7 @@ columns: [text, code, weight]
 交	jnep	99999
 虠	jner	99999
 郊	jney	99999
-鷮	jnfj	99999
 訆	jnfn	99999
-敿	jnfq	99999
-敽	jnfq	99998
 角	jng	99999
 斠	jngc	99999
 藠	jngd	99999
@@ -7078,6 +7075,9 @@ columns: [text, code, weight]
 礁	jnx	99999
 礁	jnxp	99999
 鐎	jnxp	99998
+鷮	jnyj	99999
+敿	jnyq	99999
+敽	jnyq	99998
 脚	jnz	99999
 胶	jnzp	99999
 膲	jnzp	99998
@@ -7364,7 +7364,6 @@ columns: [text, code, weight]
 孓	jte	99999
 孓	jtea	99999
 诀	jtf	99999
-勪	jtfi	99999
 殌	jtfm	99999
 谲	jtft	99999
 诀	jtfy	99999
@@ -7442,6 +7441,7 @@ columns: [text, code, weight]
 鐍	jtxt	99999
 砄	jtxy	99999
 鈌	jtxy	99998
+勪	jtyi	99999
 臄	jtzo	99999
 矡	jtzq	99999
 据	ju	99999
@@ -19724,9 +19724,8 @@ m	otl	99999
 詏	ycfi	99999
 邎	ycfl	99999
 谣	ycfv	99999
-夭	ycfy	99999
-訞	ycfy	99998
-殀	ycfy	99997
+訞	ycfy	99999
+殀	ycfy	99998
 药	ycg	99999
 药	ycga	99999
 苭	ycgi	99999
@@ -19813,6 +19812,7 @@ m	otl	99999
 磘	ycxv	99998
 耀	ycy	99999
 耀	ycyd	99999
+夭	ycyy	99999
 腰	ycz	99999
 腰	yczu	99999
 也	ye	99999

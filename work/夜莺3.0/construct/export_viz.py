@@ -38,6 +38,7 @@ from pathlib import Path as _P
 N25 = _P.home() / 'Nightingale/夜莺2.5'
 splits = json.load(open(MD.ROOT / 'data/baseline/splits.json', encoding='utf-8'))
 old_keys = json.load(open(MD.ROOT / 'data/baseline/root_key.json', encoding='utf-8'))
+splits25 = json.load(open(MD.ROOT / 'data/baseline/splits_2.5.json', encoding='utf-8'))   # 核对扩展字的 2.5 码用
 g_of = {r: g for g, rs in MD.META['groups'].items() for r in rs}
 GI = {g: i for i, g in enumerate(G)}
 core = {e['词'] for e in FO.E[:N]}
@@ -52,7 +53,8 @@ for l in open(N25 / '主表/单字表.txt', encoding='utf-8-sig'):
     rs = splits[p_[0]]
     if p_[1][:2] not in VALID:
         continue
-    if p_[1][2:] != old_keys[rs[0][0]] + old_keys[rs[-1][0]]:
+    rs25 = splits25.get(p_[0], rs)
+    if p_[1][2:] != old_keys[rs25[0][0]] + old_keys[rs25[-1][0]]:
         continue
     ext.append([p_[0], p_[1][:2], GI[g_of[rs[0][0]]], GI[g_of[rs[-1][0]]]])
 data['ext'] = ext
