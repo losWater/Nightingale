@@ -1,17 +1,18 @@
 """普通单字表门禁检查（实际选重口径）：前1521/3571 选重、字词撞①②③、前1500四码。
 用法：.venv/bin/python release/check_table.py <普通单字表> [有一简:1/0]
 """
-import collections, json, sys, yaml
+import collections, json, os, sys, yaml
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'lib')); sys.path.insert(0, str(ROOT / 'eval'))
 from shuangpin import encode
 from word_clash import top_words
-E = yaml.load(open(ROOT / 'build/out/n30/elements.yaml', encoding='utf-8'), Loader=yaml.CSafeLoader)
-META = json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))
+INP = ROOT / 'build/out' / os.environ.get('YZ_INP', 'n30')
+E = yaml.load(open(INP / 'elements.yaml', encoding='utf-8'), Loader=yaml.CSafeLoader)
+META = json.load(open(INP / 'meta.json', encoding='utf-8'))
 N = sum(1 for e in E if e['拼音'] != 'reserved')
 g_of = {r: g for g, rs in META['groups'].items() for r in rs}
-sp = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
+sp = json.load(open(os.environ.get('YZ_SPLITS') or ROOT / 'data/baseline/splits.json', encoding='utf-8'))
 T1, T3 = set(META['tier_indices']['1500']), set(META['tier_indices']['3500'])
 ONE = {(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1}
 path = sys.argv[1]; use_one = (sys.argv[2] if len(sys.argv) > 2 else '1') == '1'

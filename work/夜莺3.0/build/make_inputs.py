@@ -37,6 +37,8 @@ groups = {f"G{g['序号']:03d}": list(g['根形']) for g in load(F54 / '当前�
 groups['G094'].append('戈无点')
 groups['G104'].append('正')
 groups['G065'].append('夭')                   # 2026-10-05 群友建议、作者同意：夭归并入天组（原拆为 撇＋大）
+for _g, _rs in json.loads(os.environ.get('YZ_EXTRA_ROOTS', '{}')).items():   # 试算：追加归并根 {组: [根…]}
+    groups[_g] += _rs
 groups['G032'] = [r for r in groups['G032'] if r != '鱼省']
 groups['G016'] += groups.pop('G127')          # 水 + 火（锚定同键）
 groups['G088'] += groups.pop('G126')          # 车/东 + 西（锚定同键）
@@ -46,7 +48,7 @@ groups['G135'] = chong                                          # 虫系
 MUTEX = [('G020', 'G135')]
 
 root_key = load(ROOT / 'data/baseline/root_key.json')
-splits = load(ROOT / 'data/baseline/splits.json')
+splits = load(os.environ.get('YZ_SPLITS') or ROOT / 'data/baseline/splits.json')   # 试算可换拆分
 g_of = {r: g for g, rs in groups.items() for r in rs}
 missing = sorted(set(root_key) - set(g_of))
 assert not missing, ('2.5 字根未归组', missing)

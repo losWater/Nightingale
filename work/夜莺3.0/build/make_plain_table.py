@@ -33,7 +33,7 @@ def main(run_dir, out_dir, scheme='ziranma'):
     mapping = cfg['form']['mapping']
     meta = json.load(open(INP / 'meta.json', encoding='utf-8'))
     g_of = {r: g for g, rs in meta['groups'].items() for r in rs}
-    splits = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
+    splits = json.load(open(os.environ.get('YZ_SPLITS') or ROOT / 'data/baseline/splits.json', encoding='utf-8'))
     splits25 = json.load(open(ROOT / 'data/baseline/splits_2.5.json', encoding='utf-8'))   # 核对扩展字的 2.5 码用
     E = yaml.load(open(INP / 'elements.yaml', encoding='utf-8'), Loader=L)
     n = sum(1 for e in E if e['拼音'] != 'reserved')
