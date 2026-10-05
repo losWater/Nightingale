@@ -19,6 +19,7 @@ def family_map():
         if len(p) >= 3:
             fam[p[0]] = p[2]
     fam.setdefault('夭', fam.get('天'))          # 3.0 新增：夭归入天所在的根族（大／小）
+    fam.setdefault('父', fam.get('母'))          # 3.0 新增：父归入母所在的根族
     return fam
 
 
