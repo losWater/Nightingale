@@ -91,6 +91,9 @@ a = rename((src / 'tiger_sentence_ascii.schema.yaml').read_text(encoding='utf-8'
 
 # ---- 数据 ----
 lines = [l.rstrip('\n') for l in open(table, encoding='utf-8-sig') if '\t' in l]
+# 整句先不放符号（作者 2026-10-07，待定）：去掉 2.5 符号表里的条目，符号不混进整句词典
+_sym = {tuple(l.rstrip('\n').split('\t')[:2]) for l in open(Path.home() / 'Nightingale/夜莺2.5/主表/符号表.txt', encoding='utf-8-sig') if '\t' in l}
+lines = [l for l in lines if tuple(l.split('\t')[:2]) not in _sym]
 assert not any(len(l.split('\t')[1]) == 1 for l in lines), '码表里不应有一码'
 fill = json.load(open(Path(__file__).resolve().parents[2] / 'data/inputs/整句空二码.json', encoding='utf-8'))['二简']
 used = {l.split('\t')[1] for l in lines}
