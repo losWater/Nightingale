@@ -5,11 +5,11 @@
   依赖 2.5 字根的容错与 六 lqq 去掉。
 - 同码排序（2.5 规则第五节、五之六，作者 2026-10-07 修订）：
   同码的字全部可让给首个词才让：词₁ → 字… → 其余词（最多一个词排到字前）；否则字在前。
-  短码位（<4 码）：常用字不让（字的简码不让位）；其余字可让 ⇔ 简词频率 > 字频 × 16。
+  短码位（<4 码）：字一律在前，简词排在字后（作者 2026-10-07：字重要，简码是给字的，简词是送的）。
   全码位·二字词：字可让 ⇔ 该读音有简码，或 词频 > 字频 × 16。
   全码位·三字及以上词：常用字不让（2.5 规则 5a）；其余字可让 ⇔ 词频 > 字频 × 16。
-  “常用字” = 通规字中该读音字频 ≥ 0.1/百万（YZ_PROTECT=freq，作者 2026-10-07 定，三码位与长词同一口径）。
-  一简、二简一律不让；彩蛋码（莺 by、鹤 eh）固定首位；容错码一律排在词后。
+  长词里的“常用字” = 通规字中该读音字频 ≥ 0.1/百万（YZ_PROTECT=freq，作者 2026-10-07 定）。
+  彩蛋码（莺 by、鹤 eh）固定首位；容错码一律排在词后。
   字频按读音、每百万；词频取虎码词库，查不到按 0.5。
 - 综合表 = 字词表 + 符号表 + 快符（同夜莺 2.5 tools/maintenance/export.py）。
 用法：.venv/bin/python release/make_ciku.py [输出目录]
@@ -102,7 +102,7 @@ def can_yield(ch, code, w):
     if len(code) == 4 and len(w) == 2 and has_short(ch, sy): return True, '有简码'
     if (ch, code) in TOLERANCE: return True, '容错码'
     if (ch, code) in CUSTOM: return False, '自定义码（彩蛋）'
-    if len(code) <= 2: return False, '一二简不让'
+    if len(code) <= 3: return False, '简码不让'          # 作者 2026-10-07：字重要，一二三简都是给字的，简词是送的
     if (len(code) < 4 or len(w) > 2) and protected(ch, sy): return False, '常用字不让'
     cf = rf.get((ch, sy), 0); wf = wfreq(w)
     r = (wf if wf is not None else WORD_DEFAULT) / max(cf, FLOOR)
