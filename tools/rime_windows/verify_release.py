@@ -8,7 +8,11 @@ import shutil
 import struct
 import subprocess
 import urllib.request
+import sys
 import zipfile
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'rime_mac'))
+import release_checks  # noqa: E402  测试码与 Mac 验证共用
 
 
 def machine(path):
@@ -57,14 +61,7 @@ def main():
             assert hashlib.sha256((stage / n).read_bytes()).hexdigest() == digest
         schema = manifest['schema']
         shutil.copy2(stage / 'default.custom.yaml.example', stage / 'default.custom.yaml')
-        checks = [('ycv{space}', '尧'), ('ycvp{space}', '尧'), ('ycpp{space}', '尧'),
-                  ('qnvo{space}', '翘'), ('qnp{space}', '翘'), ('qnv{space}', '悄'),
-                  ('yr{space}', '远'), ('yrp{space}', '元'), ('zi{space}', '自'), ('zip{space}', '子')]
-        inputs = [k for k, _ in checks]
-        if schema == 'yeying25_v5':
-            inputs += ['woxihryeyk', 'woxihryeyk{space}']
-        if schema == 'yeying25_single':
-            inputs += ['f.', 'dv.', 'ct{space}', 'fzp{space}']
+        inputs, commits, sentence, punct = release_checks.checks(stage, schema)   # 测试码取自包内码表，不写死版本
         run = subprocess.run([str(args.probe.resolve()), str(stage), schema, '--deploy', *inputs],
                              env=env, capture_output=True, timeout=300)
         stdout = run.stdout.decode('utf-8', errors='replace')
@@ -74,17 +71,13 @@ def main():
         print(stdout, flush=True)
         print(stderr[-12000:], flush=True)
         assert run.returncode == 0, run.returncode
-        for keys, char in checks:
-            assert f'COMMIT\t{keys}\t{char}' in stdout, (keys, char)
-        if schema == 'yeying25_v5':
+        for keys, text in commits + (punct or []):
+            assert f'COMMIT\t{keys}\t{text}' in stdout, (keys, text)
+        if sentence:
             # Must see a native-model-tagged candidate: plain Rime fallback is not a pass.
-            assert '我喜欢夜莺' in stdout
-            assert any(l.startswith('SOURCE\twoxihryeyk\t') and l.endswith('\tV5') for l in stdout.splitlines())
-            assert 'COMMIT\twoxihryeyk{space}\t我喜欢夜莺' in stdout
-        if schema == 'yeying25_single':
-            assert 'COMMIT\tf.\t发。' in stdout
-            assert 'COMMIT\tdv.\t对。' in stdout
-            assert 'COMMIT\tfzp{space}\t否' in stdout
+            assert sentence[1] in stdout
+            assert any(l.startswith(f'SOURCE\t{sentence[0]}\t') and l.endswith('\tV5') for l in stdout.splitlines())
+            assert f'COMMIT\t{sentence[0]}{{space}}\t{sentence[1]}' in stdout
         errors = [p for p in stage.rglob('*') if p.is_file() and '.ERROR.' in p.name and p.stat().st_size]
         assert not errors, [(str(p), p.read_text(encoding='utf-8', errors='replace')[-12000:]) for p in errors]
         results.append(dict(asset=entry, schema=schema, passed=True, keys=inputs))
@@ -93,7 +86,7 @@ def main():
                   scope='Official engine isolated deployment and key sequences; not manual GUI application coverage',
                   results=results)
     (args.directory / 'windows-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print('ALL THREE WINDOWS PACKAGES PASSED', flush=True)
+    print(f'ALL {len(results)} WINDOWS PACKAGES PASSED', flush=True)
 
 
 if __name__ == '__main__':

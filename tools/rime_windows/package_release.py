@@ -1,5 +1,9 @@
 """Build Windows payloads from a hash-pinned, already released common payload.
 
+Version and stamp are the only inputs: the Mac packages and their SHA-256 digests are read from the
+GitHub release v<version> itself, and the V5 runtime directory name is read from the Mac package, so
+nothing here needs editing for a new release.
+
 Never writes installed input method data. Native Windows verification is separate.
 """
 import argparse
@@ -7,6 +11,8 @@ import hashlib
 import json
 from pathlib import Path
 import struct
+import os
+import re
 import urllib.request
 import zipfile
 
@@ -26,18 +32,43 @@ def fetch(url, path, digest):
     return path
 
 
+def github_release(repo, tag):
+    req = urllib.request.Request(f'https://api.github.com/repos/{repo}/releases/tags/{tag}',
+                                 headers={'Accept': 'application/vnd.github+json'})
+    if os.environ.get('GH_TOKEN'):
+        req.add_header('Authorization', 'Bearer ' + os.environ['GH_TOKEN'])
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.load(r)
+
+
+def release_sources(repo, version):
+    """The Mac packages attached to release v<version>, with GitHub's own SHA-256 digests."""
+    assets = github_release(repo, f'v{version}')['assets']
+    pattern = re.compile(rf'Nightingale-Rime-{re.escape(version)}-mac-(v5|shape|single)-\d{{8}}\.zip')
+    sources = [dict(name=a['name'], size=a['size'], sha256=a['digest'].removeprefix('sha256:'), url=a['browser_download_url'])
+               for a in assets if pattern.fullmatch(a['name'])]
+    flavors = sorted(pattern.fullmatch(s['name']).group(1) for s in sources)
+    assert flavors == ['shape', 'single', 'v5'], ('expected one Mac package per flavour on the release', flavors)
+    return sorted(sources, key=lambda s: ['v5', 'shape', 'single'].index(pattern.fullmatch(s['name']).group(1)))
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--source-manifest', type=Path, required=True)
+    p.add_argument('--repo', default='losWater/Nightingale')
+    p.add_argument('--upstream-repo', default='fcxxxz/rime-mohu')
+    p.add_argument('--upstream-tag', default='latest', help='魔虎发布页标签；Windows 运行库取自当时该标签下的 flypy 包')
     p.add_argument('--source-dir', type=Path, required=True)
     p.add_argument('--upstream', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--version', required=True)
-    p.add_argument('--stamp', required=True)
+    p.add_argument('--stamp', required=True, help='YYYYMMDD, used in file names and zip timestamps')
     args = p.parse_args()
+    assert re.fullmatch(r'20\d{6}', args.stamp), args.stamp
+    zip_time = (int(args.stamp[:4]), int(args.stamp[4:6]), int(args.stamp[6:]), 0, 0, 0)
     args.output.mkdir(parents=True, exist_ok=True)
-    release = json.loads((REPO / 'assets/rime/mohu-release.json').read_text(encoding='utf-8'))
-    upstream = next(a for a in release['assets'] if a['name'] == 'rime-mohu-flypy-latest.zip')
+    # 魔虎运行库直接取上游发布页当前的 flypy 包，用 GitHub 给出的 SHA-256 核对，并把来源写进 manifest
+    up = github_release(args.upstream_repo, args.upstream_tag)
+    upstream = next(a for a in up['assets'] if re.fullmatch(r'rime-mohu-flypy-[\w.-]+\.zip', a['name']) and 'mobile' not in a['name'])
     fetch(upstream['browser_download_url'], args.upstream, upstream['digest'].removeprefix('sha256:'))
     with zipfile.ZipFile(args.upstream) as z:
         runtime = {n.removeprefix('mohu/'): z.read(n) for n in z.namelist()
@@ -50,10 +81,9 @@ def main():
             assert data[:2] == b'MZ' and data[pe:pe + 4] == b'PE\0\0'
             assert struct.unpack_from('<H', data, pe + 4)[0] == 0x8664, name
     results = []
-    for source in json.loads(args.source_manifest.read_text(encoding='utf-8')):
+    for source in release_sources(args.repo, args.version):
         flavor = next(f for f in ('v5', 'shape', 'single') if f'-mac-{f}-' in source['name'])
-        path = fetch(f'https://github.com/losWater/Nightingale/releases/download/v{args.version}/' + source['name'],
-                     args.source_dir / source['name'], source['sha256'])
+        path = fetch(source.pop('url'), args.source_dir / source['name'], source['sha256'])
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             old = json.loads(z.read('manifest.json'))
@@ -61,12 +91,16 @@ def main():
                 assert sha(z.read(name)) == digest, name
             files = {n: z.read(n) for n in z.namelist() if not n.endswith('/')}
         schema = old['schema']
+        # V5 运行库目录名取自 Mac 包本身（2.5 是 yeying25_v5/，3.0 起是 yeying_v5/），不写死
+        homes = {n.split('/runtime/')[0] for n in files if '/runtime/' in n}
+        assert flavor != 'v5' or len(homes) == 1, homes
+        home = homes.pop() if homes else ''
         for name in list(files):
             if (name.endswith('.dylib') or name.startswith('squirrel.')
                     or name in ('manifest.json', 'v5-manifest.json', 'README.md', 'FEATURES.md', 'V5-README.md')):
                 del files[name]
         if flavor == 'v5':
-            files.update({'yeying25_v5/' + n: data for n, data in runtime.items()})
+            files.update({home + '/' + n: data for n, data in runtime.items()})
         title = {'v5': 'V5 版（强烈推荐）', 'shape': '形码版', 'single': '形码单字版'}[flavor]
         files['weasel.custom.yaml.example'] = b'patch:\n  "style/horizontal": true\n'
         files['README.md'] = (f'# 夜莺 {args.version} · Windows {title}\n\n'
@@ -76,9 +110,9 @@ def main():
             '## 安装与升级\n\n'
             '1. 安装官方小狼毫 0.17.4：https://github.com/rime/weasel/releases/tag/0.17.4 。\n'
             '2. 从小狼毫菜单打开“用户文件夹”，先完整备份。退出小狼毫算法服务后再更新文件。\n'
-            '3. 将包内 YAML 文件和 lua/ 合并复制到用户文件夹；V5 还须复制整个 yeying25_v5/。'
+            '3. 将包内 YAML 文件和 lua/ 合并复制到用户文件夹' + (f'；V5 还须复制整个 {home}/。' if home else '。') +
             '不要多套一层文件夹，不要将文件放进小狼毫程序目录，不替换程序的 rime.dll。\n'
-            '4. 不覆盖自己的词库、钉选数据、yeying25_v5/config/ 学习记录。'
+            '4. 不覆盖自己的词库、钉选数据' + (f'、{home}/config/ 学习记录。' if home else '。') +
             f'参考 default.custom.yaml.example，把 `{schema}` 加入现有 patch/schema_list；'
             '首次安装且没有 default.custom.yaml 时，可复制示例并去掉 .example。\n'
             '5. 横排候选参考 weasel.custom.yaml.example，合并到已有 weasel.custom.yaml；不要整份覆盖自定义设置。\n'
@@ -87,7 +121,7 @@ def main():
             '## 功能与来源\n\n'
             'V5：固定码序＋本地整句模型；形码：四码、五码顶屏；形码单字：单字与夜莺快符、手动确认。'
             '保留对应 Mac 发布包的字词表、反查和 Lua 行为，只更换平台运行库、候选配置示例与安装说明。'
-            '内部 yeying25_mac 名称是兼容标识，不表示 Windows 运行依赖 Mac。\n\n'
+            '内部名称里的 mac 不表示 Windows 运行依赖 Mac。\n\n'
             '魔虎原作者 **fcxxxz**：https://github.com/fcxxxz/rime-mohu 。'
             'V5 模型、原生引擎及相关 Lua 为魔虎原作，不是夜莺原创。'
             '原作者声明、模型说明和 GPL v3 全文保留在 attribution/ 与 LICENSE-mohu。'
@@ -97,6 +131,8 @@ def main():
         ).encode('utf-8')
         manifest = dict(version=args.version, stamp=args.stamp, platform='windows-x64', schema=schema,
                         source_package=source, upstream_digest=upstream['digest'],
+                        upstream=dict(repo=args.upstream_repo, tag=args.upstream_tag, name=upstream['name'],
+                                      published_at=up.get('published_at')),
                         files={n: sha(b) for n, b in sorted(files.items())})
         files['manifest.json'] = (json.dumps(manifest, ensure_ascii=False, indent=2) + '\n').encode()
         name = f'Nightingale-Rime-{args.version}-windows-{flavor}-{args.stamp}.zip'
@@ -105,7 +141,7 @@ def main():
             raise FileExistsError(target)
         with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
             for n, b in sorted(files.items()):
-                info = zipfile.ZipInfo(n, (2026, 9, 30, 0, 0, 0))
+                info = zipfile.ZipInfo(n, zip_time)
                 info.compress_type = zipfile.ZIP_DEFLATED
                 z.writestr(info, b)
         with zipfile.ZipFile(target) as z:

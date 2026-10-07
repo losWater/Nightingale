@@ -1,12 +1,23 @@
 name: Verify and publish Windows Rime
+# 版本号与日期在运行时填写（Actions → Verify and publish Windows Rime → Run workflow），本文件不写死任何版本。
+# Mac 包与校验值直接从发布页 v<version> 读取；Windows 包验证通过后上传到同一发布页。
+# push 触发时只构建和验证最新发布的版本，不上传。
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号，如 3.0（发布页 v3.0 上须已有三个 Mac 包）'
+        required: true
+      stamp:
+        description: '文件名日期 YYYYMMDD，留空用今天'
+        required: false
   push:
     branches: [main]
     paths:
       - '.github/workflows/rime-windows.yml'
       - 'tools/rime_windows/**'
       - 'tools/rime_mac/rime_probe.c'
+      - 'tools/rime_mac/release_checks.py'
 permissions:
   contents: read
 concurrency:
@@ -25,10 +36,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build Windows packages from verified source assets
+      - name: Resolve version and stamp
+        id: v
         shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          python tools/rime_windows/package_release.py --source-manifest "夜莺2.5/记录/Rime发布清单-20260928.json" --source-dir "$env:RUNNER_TEMP/source" --upstream "$env:RUNNER_TEMP/upstream.zip" --output "$env:RUNNER_TEMP/windows-release" --version 2.5 --stamp 20260930
+          $version = '${{ inputs.version }}'
+          if (-not $version) { $version = (gh release view --repo $env:GITHUB_REPOSITORY --json tagName --jq .tagName).TrimStart('v') }
+          $stamp = '${{ inputs.stamp }}'
+          if (-not $stamp) { $stamp = (Get-Date).ToUniversalTime().ToString('yyyyMMdd') }
+          "version=$version" >> $env:GITHUB_OUTPUT
+          "stamp=$stamp" >> $env:GITHUB_OUTPUT
+          echo "version=$version stamp=$stamp"
+      - name: Build Windows packages from the release's Mac packages
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python tools/rime_windows/package_release.py --repo $env:GITHUB_REPOSITORY --version ${{ steps.v.outputs.version }} --stamp ${{ steps.v.outputs.stamp }} --source-dir "$env:RUNNER_TEMP/source" --upstream "$env:RUNNER_TEMP/upstream.zip" --output "$env:RUNNER_TEMP/windows-release"
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Compile native Windows probe
         shell: cmd
@@ -51,10 +77,12 @@ jobs:
             ${{ runner.temp }}/windows-release/*.txt
           retention-days: 30
       - name: Upload verified packages without overwriting existing assets
+        if: github.event_name == 'workflow_dispatch'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           $dir = "$env:RUNNER_TEMP/windows-release"
-          gh release upload v2.5 "$dir/Nightingale-Rime-2.5-windows-v5-20260930.zip" "$dir/Nightingale-Rime-2.5-windows-shape-20260930.zip" "$dir/Nightingale-Rime-2.5-windows-single-20260930.zip" "$dir/SHA256SUMS-windows-20260930.txt" "$dir/windows-verification.json" --repo losWater/Nightingale
+          $files = @(Get-ChildItem "$dir/Nightingale-Rime-*-windows-*.zip", "$dir/SHA256SUMS-windows-*.txt", "$dir/windows-verification.json" | ForEach-Object FullName)
+          gh release upload "v${{ steps.v.outputs.version }}" @files --repo $env:GITHUB_REPOSITORY
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
