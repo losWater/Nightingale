@@ -1,0 +1,189 @@
+"""夜莺 3.0 官网（本地预览）：以夜莺仓库 apps/website 为底（作者的话取已发布的 gh-pages 版，素材目录不在稀疏检出里），换成 3.0。
+- 首页：版本、方案数据（字根组数、选重、字词冲突）、下载区（v3.0 Release 附件）、更新日志（站内 changelog.html）
+- 性能页：release/compute_performance.py 算出的 3.0 数据（与 2.0 官网同口径；词频改用虎码词库）
+- 工具页：release/make_toolbox.py 的 3.0 工具箱单页；字根表由 3.0 字根练习页内嵌的 roots 数据生成
+- 更新日志：release/夜莺3.0更新日志.md
+每处替换都先核对原文存在，2.0/2.5 字样替换后不能残留（下载区的历史版本链接除外）。
+用法：python release/make_website.py [输出目录]   # 默认 ~/.cache/yeying-site；预览：python3 -m http.server 8765 --directory <输出目录>
+"""
+import json, re, shutil, subprocess, sys, tempfile
+from html import escape
+from pathlib import Path
+import markdown
+ROOT = Path(__file__).resolve().parent.parent
+NG = Path.home() / 'Nightingale'; SRC = NG / 'apps/website'
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / '.cache/yeying-site'
+DATE, STAMP = '2026-10-07', '20261007'
+REL = 'https://github.com/losWater/Nightingale/releases'
+BRANCH = 'https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0'
+STROKES = {'横', '竖', '撇', '折', '点'}
+
+
+def rep(t, old, new, count=1):
+    assert t.count(old) == count, (old[:50], t.count(old))
+    return t.replace(old, new)
+
+
+if OUT.exists(): shutil.rmtree(OUT)
+OUT.mkdir(parents=True)
+tmp = Path(tempfile.mkdtemp())
+subprocess.run([sys.executable, str(ROOT / 'release/make_toolbox.py'), str(tmp / 'tb')], check=True)
+subprocess.run([sys.executable, str(ROOT / 'release/compute_performance.py'), str(ROOT / 'release/tables/夜莺3.0_NB46_字词表.txt'), '3.0', DATE, str(OUT / 'performance-data.json')],
+               check=True, stdout=subprocess.DEVNULL)
+perf = json.load(open(OUT / 'performance-data.json', encoding='utf-8'))
+row = {r['scope']: r for r in perf['rows']}
+r15, r30, r60 = row['前1500字'], row['前3000字'], row['前6000字']
+cf = perf['conflict']
+meta = json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))
+n_groups = len(meta['groups']); n_forms = sum(len(v) for v in meta['groups'].values())
+
+for name in ('style.css', 'site.js', 'bird.svg', 'performance.css', 'performance.js', 'roots.css', 'roots.js', 'author.css'):
+    shutil.copy2(SRC / name, OUT / name)
+shutil.copytree(SRC / 'assets', OUT / 'assets')
+(OUT / 'author.html').write_bytes(subprocess.run(['git', '-C', str(NG), 'show', 'origin/gh-pages:author.html'], check=True, capture_output=True).stdout)
+(OUT / '.nojekyll').touch()
+
+# ---- 首页 ----
+t = (SRC / 'index.html').read_text(encoding='utf-8')
+t = rep(t, 'content="夜莺 2.5，', 'content="夜莺 3.0，')
+t = rep(t, '</span> 夜莺 2.5 · 正式发布</div>', '</span> 夜莺 3.0 · 正式发布</div>')
+t = rep(t, '<p>130 组字根，由退火与人工裁定共同定下键位。', f'<p>{n_groups} 组字根，由退火与人工裁定共同定下键位。')
+t = rep(t, '前 1500 字选重为 0，前 6000 字加权选重率 0.017%。', f'前 1500 字选重为 {r15["选重"]}，前 6000 字加权选重率 {r60["选重加权%"]:.3f}%。')
+t = rep(t, '高频字词全码冲突 55 对降到 0。', f'高频字词全码冲突 {cf["全部单字全码"]} 对降到 {cf["剔除有简码的字"]}。')
+t = rep(t, '<p>按 2.5 最终表与多来源字频重算：每字取主读音最短入口，前 1500 字选重为 0，前 3000 字合计 7，前 6000 字合计 171、按字频加权选重率 0.017%。'
+           '字词冲突取字频前 1500 的字与词频前 10000 的四码词，全码同码 55 对，剔除有简码的字后为 0。</p>',
+        f'<p>按 3.0 字词表与多来源字频重算：每字取主读音最短入口，前 1500 字选重为 {r15["选重"]}，前 3000 字合计 {r30["选重"]}，'
+        f'前 6000 字合计 {r60["选重"]}、按字频加权选重率 {r60["选重加权%"]:.3f}%。字词冲突取字频前 1500 的字与虎码词库词频前 10000 的多字词，'
+        f'全码同码 {cf["全部单字全码"]} 对，剔除有简码的字后为 {cf["剔除有简码的字"]}。</p>')
+t = rep(t, '<p>归并组与全部根形两种模式，答错原题重学。</p>', '<p>归并组与全部根形，可以只练 3.0 改动过的根，答错原题重学。</p>')
+a = t.index('<section class="section download" id="download">'); b = t.index('</section>', a) + len('</section>')
+mac = [('v5', 'Mac · Rime V5 版（强烈推荐）', 'Apple Silicon · 魔虎 V5 本地整句模型'), ('shape', 'Mac · Rime 形码版', '鼠须管 · 无模型 · 四码、五码顶屏'),
+       ('single', 'Mac · Rime 形码单字版', '鼠须管 · 单字练习与夜莺快符')]
+dl = lambda f, title, sub: f'<a href="{REL}/download/v3.0/{f}"><span>{title}<small>{sub}</small></span><b>↓</b></a>'
+download = ('<section class="section download" id="download"><div><span class="eyebrow">MAKE IT YOURS</span><h2>把夜莺带到你的键盘。</h2>'
+            '<p>选择你使用的系统，下载对应输入法包。</p>'
+            f'<div class="version"><span class="status-dot"></span> 夜莺 3.0 <span class="divider">/</span> {DATE} · Mac Rime 三版本</div>'
+            f'<a class="quiet-link" href="{REL}/tag/v3.0">查看发布页与全部附件 ↗</a>'
+            f'<a class="quiet-link" href="{REL}/tag/v2.5">历史版本：2.5 发布页 ↗</a>'
+            f'<a class="quiet-link" href="{REL}/tag/v1.0">历史版本：1.0 发布页 ↗</a></div><div>'
+            '<p><strong>只建议使用 V5 版本。V5 模型：强烈推荐。</strong></p>'
+            '<p>请按操作系统下载，Windows 与 Mac 包不能混装。升级前备份个人词库。</p>'
+            '<p>从 2.5 升级：3.0 的方案标识不再带版本号（yeying_v5、yeying_shape、yeying_single），以后升级直接覆盖即可；'
+            '2.5 的 yeying25_* 方案可以从方案列表里移除。3.0 有 46 组字根换了键位，建议先用<a href="tools/root-practice.html">字根练习</a>的“只练改动过的根”过一遍。</p>'
+            '<h3>macOS · 鼠须管</h3><p>V5 限 Apple Silicon；Intel Mac 不在本次 V5 支持范围。</p><div class="download-list">'
+            + ''.join(dl(f'Nightingale-Rime-3.0-mac-{k}-{STAMP}.zip', a_, s) for k, a_, s in mac) + '</div>'
+            f'<a class="quiet-link" href="{REL}/download/v3.0/SHA256SUMS-mac-{STAMP}.txt">Mac 校验值 ↗</a>'
+            '<h3>Windows · 小狼毫</h3><p>Windows 3.0 包即将提供，完成后会出现在发布页。</p>'
+            '<h3>其他输入法与工具</h3><div class="download-list">'
+            + dl(f'Nightingale-3.0-tables-{STAMP}.zip', '手心 · 搜狗 · 冰凌 · Bime', '3.0 各平台码表与说明，不是 Windows Rime 包')
+            + dl(f'Nightingale-Toolbox-3.0-{STAMP}.html', '啾啾工具箱 · 单文件', '3.0 拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表') + '</div>'
+            '<p>魔虎原作者 <a href="https://github.com/fcxxxz/rime-mohu">fcxxxz / rime-mohu</a>：V5 模型、原生引擎及相关 Lua 为魔虎原作，不是夜莺原创。'
+            '夜莺提供码表、词图与适配；原作者声明和许可证保留在包内 attribution/ 与 LICENSE-mohu。</p></div></section>')
+t = t[:a] + download + t[b:]
+t = rep(t, 'href="https://github.com/losWater/Nightingale/blob/main/releases/v2.5/夜莺2.5更新日志.md"', 'href="changelog.html"')
+t = rep(t, 'href="https://github.com/losWater/Nightingale/blob/main/releases/v2.5/05_规则与裁决/当前任务树.md"', f'href="{BRANCH}/docs/夜莺3.0方向.md"')
+rest = re.sub(r'releases/(tag|download)/v(2\.5|1\.0)[^"]*', '', t)
+rest = rest.replace('releases/v2.5/05_规则与裁决/码表概念与规则.md', '')      # 编码规则没变，仍指向 2.5 的规则文档
+assert not re.search(r'2\.[05]', rest.replace('2.5 升级', '').replace('2.5 的 yeying25_', '').replace('2.5 发布页', '')), re.findall(r'.{30}2\.[05].{10}', rest)
+(OUT / 'index.html').write_text(t, encoding='utf-8')
+
+# ---- 性能页 ----
+t = (SRC / 'performance.html').read_text(encoding='utf-8')
+t = rep(t, 'content="夜莺 2.0 单字性能与字词避重：码长分布、选重、键位负担与字词冲突，全部按 2.0 最终表重算。"',
+        'content="夜莺 3.0 单字性能与字词避重：码长分布、选重、键位负担与字词冲突，全部按 3.0 字词表重算。"')
+t = rep(t, '<title>性能 · 夜莺2.0</title>', '<title>性能 · 夜莺3.0</title>')
+t = rep(t, '<span class="eyebrow">夜莺 2.0 / 性能</span>', '<span class="eyebrow">夜莺 3.0 / 性能</span>')
+t = rep(t, '这里的数据全部按 2.0 最终表、多来源字频与统一当量表重算', '这里的数据全部按 3.0 字词表、多来源字频与统一当量表重算')
+t = rep(t, '2026-09-16 重算 · 单字取主读音最短入口', f'{DATE} 重算 · 单字取主读音最短入口')
+t = rep(t, '<span id="conflict-full">55</span> 对 → <span id="conflict-left">0</span> 对',
+        f'<span id="conflict-full">{cf["全部单字全码"]}</span> 对 → <span id="conflict-left">{cf["剔除有简码的字"]}</span> 对')
+t = rep(t, '<p>夜莺2.0单字 × 2.0 普通词表（四家共识）<br>', '<p>夜莺3.0单字 × 虎码词库词频<br>')
+t = rep(t, '<b id="conflict-full-bar">55 对</b>', f'<b id="conflict-full-bar">{cf["全部单字全码"]} 对</b>')
+t = rep(t, '前 1500 字里没有简码的字只有 126 个。', f'前 1500 字里没有简码的字只有 {cf["前1500字中无简码的字数"]} 个。')
+n_rows = sum(1 for l in open(ROOT / 'release/tables/夜莺3.0_NB46_字词表.txt', encoding='utf-8-sig') if '\t' in l)
+t = rep(t, '<p>2026-09-16 按 2.0 最终表（155139 条）重算。字取字频前 1500（32 多来源字频）的全部四码全码；词取 08 综合排名前 10000 的四码词；同码即计一对。'
+           '剔除有简码的字后再算一次。与 1.0 页面口径相同，词表换为 2.0 的四家共识普通词表。</p>',
+        f'<p>{DATE} 按 3.0 字词表（{n_rows} 条）重算。字取字频前 1500（32 多来源字频）的全部四码全码；词取虎码词库词频前 10000 的多字词；同码即计一对。'
+        '剔除有简码的字后再算一次。口径与 2.0 页面相同，只是词频改用虎码词库（2.0 用的综合词频不在仓库里）；同一口径下 2.5 为 56 对 → 1 对。</p>')
+script = f'{BRANCH}/release/compute_performance.py'
+t = rep(t, 'https://github.com/losWater/Nightingale/blob/main/work/夜莺2.0/118_官网2.0/compute_performance.py', script, 2)
+t = rep(t, '<p>以下数据按 2.0 最终表重算，与上述字词冲突分别统计。</p>', '<p>以下数据按 3.0 字词表重算，与上述字词冲突分别统计。</p>')
+t = rep(t, '<strong>0</strong><h2>前1500字选重</h2>', f'<strong>{r15["选重"]}</strong><h2>前1500字选重</h2>')
+t = rep(t, '<strong>0.017<small>%</small></strong>', f'<strong>{r60["选重加权%"]:.3f}<small>%</small></strong>')
+t = rep(t, '<strong>3.21</strong><h2>前6000字加权键长</h2>', f'<strong>{r60["加权键长"]:.2f}</strong><h2>前6000字加权键长</h2>')
+t = rep(t, '<h3>前1500字：357 → 0</h3><p>前 1500 字里有 357 个字的全码不在首选',
+        f'<h3>前1500字：{r15["全码重"]} → {r15["选重"]}</h3><p>前 1500 字里有 {r15["全码重"]} 个字的全码不在首选')
+t = rep(t, '<h3>前3000字：7 个选重</h3><p>前 1500 字为 0，1501–3000 字区间为 7。前 6000 字合计 171，',
+        f'<h3>前3000字：{r30["选重"]} 个选重</h3><p>前 1500 字为 {r15["选重"]}，1501–3000 字区间为 {row["1501–3000"]["选重"]}。前 6000 字合计 {r60["选重"]}，')
+t = rep(t, '<h3>171 字 ≠ 0.017% 的字</h3><p>171 / 6000 约为 2.85%，这是字数占比；0.017% 是按字频加权的选重率',
+        f'<h3>{r60["选重"]} 字 ≠ {r60["选重加权%"]:.3f}% 的字</h3><p>{r60["选重"]} / 6000 约为 {r60["选重"] / 60:.2f}%，这是字数占比；{r60["选重加权%"]:.3f}% 是按字频加权的选重率')
+t = rep(t, '<caption>夜莺 2.0 单字性能 · 2026-09-16 重算</caption>', f'<caption>夜莺 3.0 单字性能 · {DATE} 重算</caption>')
+t = rep(t, '<p>字表：2.0 最终表（含扩展字', '<p>字表：3.0 字词表（含扩展字')
+assert not re.search(r'2\.[05]', t.replace('2.5 为', '').replace('与 2.0 页面', '').replace('（2.0 用的', '')), re.findall(r'.{30}2\.[05].{10}', t)
+(OUT / 'performance.html').write_text(t, encoding='utf-8')
+
+# ---- 工具页 ----
+HOME_LINK = ('<a href="../index.html" style="position:fixed;right:14px;bottom:14px;z-index:99;padding:8px 14px;border-radius:999px;background:#243a3a;'
+             'color:#f2f1eb;text-decoration:none;font:15px/1 \'Microsoft YaHei\',sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.25)">← 夜莺首页</a>')
+(OUT / 'tools').mkdir()
+pages = {'split.html': '单页/夜莺3.0_拆分查询.html', 'components.html': '单页/夜莺3.0_部件反查.html', 'root-practice.html': '单页/夜莺3.0_字根练习.html',
+         'split-table.html': '单页/夜莺3.0_完整拆分表.html', 'root-chart.html': '单页/夜莺3.0_字根图.html', 'toolbox.html': '夜莺啾啾工具箱.html'}
+for target, src in pages.items():
+    s = (tmp / 'tb' / src).read_text(encoding='utf-8-sig')
+    s = s.replace('</body>', HOME_LINK + '</body>', 1) if '</body>' in s else s.replace('</html>', HOME_LINK + '</html>', 1)
+    (OUT / 'tools' / target).write_text(s, encoding='utf-8')
+
+# ---- 字根表（同 apps/website/build.py，按 (组, 键) 分组：3.0 鸟／虫 拆在两个键）----
+s = (tmp / 'tb/单页/夜莺3.0_字根练习.html').read_text(encoding='utf-8')
+m = re.search(r'\bconst roots\s*=\s*', s); roots, _ = json.JSONDecoder().raw_decode(s[m.end():])
+groups, order = {}, []
+for r in roots:
+    g = (r['组'], r['键'])
+    if g not in groups: groups[g] = []; order.append(g)
+    groups[g].append((r['根'], r.get('例字', '')))
+data = {k: [] for k in 'abcdefghijklmnopqrstuvwxyz'}
+for g in order:
+    names = [n for n, _ in groups[g]]
+    first = g[0].split('／')[0].strip()
+    head = first if first in names else names[0]
+    others = [n for n in names if n != head]
+    data[g[1]].append((head + ('(笔画)' if head in STROKES else ''), '、'.join(others), g[0], dict(groups[g]).get(head, '')))
+sections = []
+for letters in ('qwertyuiop', 'asdfghjkl', 'zxcvbnm'):
+    cards = []
+    for key in letters:
+        items = []
+        for root, alias, family, ex in data[key]:
+            cls = 'root-item stroke-root' if '(笔画)' in root else 'root-item'
+            items.append(f'<div class="{cls}" title="{escape(family + (" · 例字 " + ex if ex else ""), quote=True)}"><dt>{escape(root.replace("(笔画)", ""))}</dt><dd>{escape(alias)}</dd></div>')
+        search = key + ' ' + ' '.join(f'{r} {a} {f} {e}' for r, a, f, e in data[key])
+        cards.append(f'<article class="root-key" data-search="{escape(search, quote=True)}"><div class="key-head"><h2>{key.upper()}</h2><span>{len(data[key])} 组</span></div><dl>{"".join(items)}</dl></article>')
+    sections.append('<div class="root-row">' + ''.join(cards) + '</div>')
+merged = []
+for key in 'abcdefghijklmnopqrstuvwxyz':
+    entries = [f'<span><b>{escape(r.replace("(笔画)", ""))}</b>：{escape(a)}</span>' for r, a, f, e in data[key] if a]
+    merged.append(f'<div class="merge-row"><b class="merge-letter">{key}</b><div>{"； ".join(entries) or "无附属根"}</div></div>')
+t = (SRC / 'roots.html').read_text(encoding='utf-8')
+t = rep(t, '<title>字根表 · 夜莺2.0</title>', '<title>字根表 · 夜莺3.0</title>')
+t = rep(t, '<span class="eyebrow">夜莺 2.0 / 字根表</span>', '<span class="eyebrow">夜莺 3.0 / 字根表</span>')
+t = rep(t, '<p>夜莺2.0 · 字根表</p>', '<p>夜莺3.0 · 字根表</p>')
+assert sum(len(r) for r in groups.values()) == n_forms
+t = t.replace('<!-- ROOT_BOARD -->', ''.join(sections)).replace('<!-- MERGE_LIST -->', ''.join(merged)).replace('{{ROOT_COUNT}}', str(n_groups)).replace('{{FORM_COUNT}}', str(n_forms))
+(OUT / 'tools/roots.html').write_text(t, encoding='utf-8')
+
+# ---- 更新日志 ----
+md = markdown.Markdown(extensions=['toc', 'tables'], extension_configs={'toc': {'baselevel': 2}})
+text = (ROOT / 'release/夜莺3.0更新日志.md').read_text(encoding='utf-8')
+body = md.convert(text.split('\n', 1)[1])                  # 去掉一级标题，页面自己有
+t = (OUT / 'author.html').read_text(encoding='utf-8')
+t = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="夜莺 3.0 更新日志：新字根布局、简码调整、字词让位规则与性能变化。">', t)
+t = re.sub(r'<title>[^<]*</title>', '<title>更新日志 · 夜莺3.0</title>', t)
+t = re.sub(r'<header class="article-heading">.*?</header>', '<header class="article-heading"><p class="eyebrow">夜莺 3.0</p><h1>更新日志</h1>'
+           f'<p>{DATE}</p></header>', t, flags=re.S)
+t = re.sub(r'(<nav aria-label="文章目录">).*?(</nav>)', lambda m_: m_.group(1) + md.toc + m_.group(2), t, flags=re.S)
+t = re.sub(r'(<article class="article-body" id="article">).*?(<p class="article-return">)', lambda m_: m_.group(1) + body + m_.group(2), t, flags=re.S)
+t = t.replace('<a href="index.html#author">作者的话</a>', '<a href="index.html#updates">更新日志</a>').replace('href="index.html#author">← 返回首页', 'href="index.html#updates">← 返回首页')
+t = t.replace('</head>', '<style>.article-body table{border-collapse:collapse;margin:1em 0}.article-body th,.article-body td{border:1px solid var(--line,#ccc);padding:6px 12px;text-align:center}</style></head>', 1)
+(OUT / 'changelog.html').write_text(t, encoding='utf-8')
+shutil.rmtree(tmp)
+print(OUT, '；字根组', n_groups, '根形', n_forms, '；前1500选重', r15['选重'], '前6000加权', r60['选重加权%'], '；冲突', cf['全部单字全码'], '→', cf['剔除有简码的字'])
