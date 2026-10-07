@@ -2,6 +2,9 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 let D, M, k, cur, prevM = null, refM = null, sel = null, heat = 'none', tab = 'group', startName = 'b:喜好第一名', refName = 'b:NB46';
 let hist = [], fut = [], log = [], tabu = [], moveCache = null, busy = false, clashSort = 'char', clashAll = false;
+// 字词冲突页：按形码盒子字频（按字）筛选起止，0 = 不限
+let clashFrom = 0, clashTo = 0;
+try { const c = JSON.parse(localStorage.getItem('tiaogen_clash') || 'null'); if (c) { clashFrom = c.from || 0; clashTo = c.to || 0; } } catch (e) { }
 const ROWS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
 const CELLS = [
   ['形码成本', m => m.形码成本, v => v.toFixed(4), -1], ['三简', m => m.三简, v => v, 1], ['前1500四码', m => m.四码, v => v, -1],
@@ -217,10 +220,13 @@ function renderPane() {
       + (items.length ? `<table><thead><tr><th>字</th><th>与谁重</th><th>全码</th><th>根组</th></tr></thead><tbody>` + items.map(([i, j]) =>
         `<tr><td>${zi(i)}${M.fl[i] & M.flags.T1521 ? ' <span class="gate fail">1521</span>' : ''}</td><td>${zi(j)}</td><td class="num">${codeOf(i)}</td><td>${groupLink(M.g1[i])}+${groupLink(M.g2[i])} / ${groupLink(M.g1[j])}+${groupLink(M.g2[j])}</td></tr>`).join('') + '</tbody></table>' : '<p class="empty">没有重码。</p>');
   } else if (tab === 'clash') {
+    const br = i => (D.boxRank && D.boxRank[i]) || Infinity;          // 不在盒子字表里的排到最后
+    const inRange = i => (!clashFrom || br(i) >= clashFrom) && (!clashTo || br(i) <= clashTo);
+    const clashes = cur.clashes.filter(([i]) => inRange(i));
     const pairs = {};
-    for (const [i, code] of cur.clashes) { const key = M.g1[i] + ',' + M.g2[i]; (pairs[key] = pairs[key] || [0, M.g1[i], M.g2[i]])[0] += D.words[code].length; }
+    for (const [i, code] of clashes) { const key = M.g1[i] + ',' + M.g2[i]; (pairs[key] = pairs[key] || [0, M.g1[i], M.g2[i]])[0] += D.words[code].length; }
     const top = Object.values(pairs).sort((a, b) => b[0] - a[0]).slice(0, 15);
-    const info = cur.clashes.map(([i, code]) => {
+    const info = clashes.map(([i, code]) => {
       const ws = D.words[code]; const r1 = ws.some(w => w[1] <= 10000), r3 = ws.some(w => w[1] <= 30000);
       const t1 = M.fl[i] & M.flags.T1521, t3 = M.fl[i] & M.flags.T3571;
       const tag = (t1 && r1 ? '①' : '') + (t1 && r3 ? '②' : '') + (t3 && r1 ? '③' : '');
@@ -228,17 +234,20 @@ function renderPane() {
       const ws2 = ws.slice().sort((x, y) => x[1] - y[1]);
       return { i, code, ws: ws2, tag, sev, wr: ws2[0][1] };
     });
-    const cmp = { char: (a, b) => a.i - b.i, word: (a, b) => a.wr - b.wr || a.i - b.i, sev: (a, b) => a.sev - b.sev || a.i - b.i }[clashSort];
+    const cmp = { char: (a, b) => a.i - b.i, box: (a, b) => br(a.i) - br(b.i) || a.i - b.i, word: (a, b) => a.wr - b.wr || a.i - b.i, sev: (a, b) => a.sev - b.sev || a.i - b.i }[clashSort];
     info.sort(cmp);
     const shown = clashAll ? info : info.slice(0, 300);
     const opt = (v, t) => `<button data-csort="${v}" aria-pressed="${clashSort === v}">${t}</button>`;
     P.innerHTML = `<h3>字词冲突：${cur.撞码[3]} 条（6 万词）</h3><p>只算必须打全码的读音。① 前1521×前1万词，② 前1521×前3万，③ 前3571×前1万。</p>
+      <p class="ctl"><label for="clashFrom">形码盒子字频：从第</label><input id="clashFrom" type="number" min="0" step="100" value="${clashFrom || ''}" placeholder="1" style="width:6em">
+      <label for="clashTo">字到第</label><input id="clashTo" type="number" min="0" step="100" value="${clashTo || ''}" placeholder="不限" style="width:6em"><span>字（按字；空 = 不限）</span>
+      ${clashFrom || clashTo ? `<span>　筛出 ${clashes.length} 个字音、${clashes.reduce((s, [, c]) => s + D.words[c].length, 0)} 条</span>` : ''}</p>
       <h3>贡献最多的根组对</h3><table><thead><tr><th>首根组</th><th>末根组</th><th>冲突条数</th></tr></thead><tbody>`
       + top.map(([n, a, b]) => `<tr><td>${groupLink(a)}</td><td>${groupLink(b)}</td><td class="num">${n}</td></tr>`).join('') + `</tbody></table>
-      <h3>明细（${info.length} 个字音）</h3><div class="tabs" role="group" aria-label="排序">${opt('char', '按字频（默认）')}${opt('word', '按词频')}${opt('sev', '按严重程度')}`
+      <h3>明细（${info.length} 个字音）</h3><div class="tabs" role="group" aria-label="排序">${opt('char', '按字频（默认）')}${opt('box', '按盒子字频')}${opt('word', '按词频')}${opt('sev', '按严重程度')}`
       + `<button data-call="1">${clashAll ? '只看前 300' : '显示全部'}</button></div>
       <table><thead><tr><th>字</th><th>全码</th><th>撞的词（词频序）</th><th>根组</th></tr></thead><tbody>`
-      + shown.map(x => `<tr><td>${zi(x.i)}<small style="color:var(--muted)"> #${x.i + 1}</small>${x.tag ? ` <span class="gate fail">${x.tag}</span>` : ''}</td><td class="num">${x.code}</td>`
+      + shown.map(x => `<tr><td>${zi(x.i)}<small style="color:var(--muted)"> #${x.i + 1}${D.boxRank && D.boxRank[x.i] ? ' 盒' + D.boxRank[x.i] : ''}</small>${x.tag ? ` <span class="gate fail">${x.tag}</span>` : ''}</td><td class="num">${x.code}</td>`
         + `<td>${x.ws.slice(0, 3).map(w => esc(w[0]) + '<small>' + w[1] + '</small>').join(' ')}${x.ws.length > 3 ? ` …共${x.ws.length}` : ''}</td><td>${groupLink(M.g1[x.i])}+${groupLink(M.g2[x.i])}</td></tr>`).join('')
       + '</tbody></table>' + (!clashAll && info.length > 300 ? `<p>还有 ${info.length - 300} 条，点“显示全部”查看。</p>` : '');
   } else if (tab === 'lose') {
@@ -402,7 +411,15 @@ async function importSaved(file) {
 }
 
 function bind() {
-  $('#pane').addEventListener('change', e => { if (e.target.id === 'importfile' && e.target.files[0]) importSaved(e.target.files[0]); });
+  $('#pane').addEventListener('change', e => {
+    if (e.target.id === 'importfile' && e.target.files[0]) importSaved(e.target.files[0]);
+    if (e.target.id === 'clashFrom' || e.target.id === 'clashTo') {
+      const v = Math.max(0, parseInt(e.target.value, 10) || 0);
+      if (e.target.id === 'clashFrom') clashFrom = v; else clashTo = v;
+      try { localStorage.setItem('tiaogen_clash', JSON.stringify({ from: clashFrom, to: clashTo })); } catch (er) { }
+      renderPane();
+    }
+  });
   $('#dl').addEventListener('click', () => downloadTable(false));
   $('#dl2').addEventListener('click', () => downloadTable(true));
   $('#save').addEventListener('click', saveLayout);

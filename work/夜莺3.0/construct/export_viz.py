@@ -60,6 +60,12 @@ for l in open(N25 / '主表/单字表.txt', encoding='utf-8-sig'):
 data['ext'] = ext
 data['sym'] = [l.rstrip('\n').split('\t')[:2] for l in open(N25 / '主表/符号表.txt', encoding='utf-8-sig') if len(l.rstrip('\n').split('\t')) >= 2]
 data['oneTwo'] = [e.get('简码长度') or 0 for e in FO.E[:N]]
+# 形码盒子字频序（按字，码圈惯例）；不在盒子字表里的记 0
+_box = {}
+for _l in open(MD.ROOT / 'eval/box/默认字频.txt', encoding='utf-8'):
+    _p = _l.rstrip('\n').split('\t')
+    if len(_p) >= 2 and _p[0] not in _box: _box[_p[0]] = len(_box) + 1
+data['boxRank'] = [_box.get(e['词'], 0) for e in FO.E[:N]]
 json.dump(data, open(out_path, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 # 供 JS 核对的参考值
 ref = {}
