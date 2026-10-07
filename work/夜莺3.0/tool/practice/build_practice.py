@@ -97,7 +97,7 @@ put('familyPartitions', parts)
 
 # ---- 标题与说明 ----
 rep('<title>夜莺2.0字根记忆练习</title>', '<title>夜莺3.0字根记忆练习</title>')
-rep('<h1>夜莺2.0字根记忆练习</h1>', '<h1>夜莺3.0字根记忆练习</h1><p>“只练改动过的根”只出键位与 2.x 不同的根和 3.0 新增的根（夭、父），题目上会标出它在 2.x 的键位。</p>')
+rep('<h1>夜莺2.0字根记忆练习</h1>', '<h1>夜莺3.0字根记忆练习</h1><p>“只练改动过的根”只出键位与 2.x 不同的根和 3.0 新增的根（夭、父）；归并组模式里，新根所在的组（大、母）也算改动。题目上会标出它在 2.x 的键位或新增的根。</p>')
 rep("STORAGE='nightingale20_memory_v1'", "STORAGE='nightingale_memory_v1'")
 rep('<option value="group">归并组练习</option><option value="all">全部根形练习（403个）</option>',
     '<option value="group">归并组练习</option><option value="group_changed">归并组练习（只练改动过的）</option>'
@@ -117,7 +117,9 @@ rep('grouped.push({根:"正",键:"s",', f'grouped.push({{根:"正",键:"{zheng["
 rep("document.querySelector('#kind').options[0].textContent='归并组练习（'+grouped.length+'组）';\n"
     "document.querySelector('#kind').options[1].textContent='全部根形练习（'+roots.length+'根）';\n"
     "const decks={group:grouped,all:roots};",
-    "const changed=x=>x.键!==x.原键;\n"
+    "const NEW_ROOTS=new Set(roots.filter(r=>r.原键==='').map(r=>r.根));\n"
+    "const newIn=x=>JSON.stringify(x.成员||[]).match(/[^\\[\\],\"]+/g)?.filter(m=>NEW_ROOTS.has(m))||[];\n"
+    "const changed=x=>x.键!==x.原键||(x.成员&&newIn(x).length>0);   // 归并组：换了键，或组里有新根\n"
     "const decks={group:grouped,group_changed:grouped.filter(changed),all:roots,all_changed:roots.filter(changed)};\n"
     "const KINDS=Object.keys(decks),KIND_NAME={group:'归并组',group_changed:'归并组（改动）',all:'全部根形',all_changed:'全部根形（改动）'};\n"
     "const KIND_LABEL={group:'归并组练习',group_changed:'归并组练习 · 只练改动过的',all:'全部根形练习',all_changed:'全部根形练习 · 只练改动过的'};\n"
@@ -132,7 +134,7 @@ rep("将替换当前两种模式的进度", "将替换当前所有模式的进�
 
 # ---- 题目上标出 2.0 键位 ----
 rep("$('#members').textContent=active&&x.成员?'归并组：'+rootLabel(x.根):'';",
-    "$('#members').textContent=(active&&x.成员?'归并组：'+rootLabel(x.根):'')+(active&&x.原键&&x.键!==x.原键?(x.成员?'　·　':'')+'2.x 在 '+x.原键.toUpperCase()+' 键，3.0 搬家了':'');")
+    "$('#members').textContent=(active&&x.成员?'归并组：'+rootLabel(x.根):'')+(active&&x.原键&&x.键!==x.原键?(x.成员?'　·　':'')+'2.x 在 '+x.原键.toUpperCase()+' 键，3.0 搬家了':'')+(active&&x.成员&&newIn(x).length?'　·　3.0 新增：'+newIn(x).join('、'):'');")
 
 out.write_text(t, encoding='utf-8')
 n = len(new_roots); c = sum(1 for x in new_roots if x['键'] != x['原键'])
