@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="夜莺 3.0 更新日志：新字根布局、简码调整、字词让位规则与性能变化。">
+  <title>更新日志 · 夜莺3.0</title>
+  <link rel="icon" href="bird.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="author.css">
+  <script src="site.js" defer></script>
+<style>.article-body table{border-collapse:collapse;margin:1em 0}.article-body th,.article-body td{border:1px solid var(--line,#ccc);padding:6px 12px;text-align:center}</style></head>
+<body>
+<a class="skip" href="#article">跳到正文</a>
+<header class="header"><a class="brand" href="index.html"><img src="bird.svg" alt="" width="34" height="34">夜莺<span>NIGHTINGALE</span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="performance.html">性能</a><a href="index.html#updates">更新日志</a></nav><div class="header-end"><button id="theme" type="button" aria-label="切换至浅色模式">☼</button></div></header>
+<main class="author-page">
+  <header class="article-heading"><p class="eyebrow">夜莺 3.0</p><h1>更新日志</h1><p>2026-10-07</p></header>
+  <div class="reading-layout">
+    <aside class="article-contents"><details open><summary>文章目录</summary><nav aria-label="文章目录"><div class="toc">
+<ul>
+<li><a href="#_1">字根</a></li>
+<li><a href="#_2">单字</a></li>
+<li><a href="#_3">字词</a></li>
+<li><a href="#25">性能（与 2.5 同口径重算）</a></li>
+<li><a href="#_4">输入法与工具</a></li>
+</ul>
+</div>
+</nav></details></aside>
+    <article class="article-body" id="article"><p>2026-10-07</p>
+<p>夜莺 3.0 仍然是小鹤双拼加首末字根，编码规则不变：单字全码 = 双拼音码 + 首根 + 末根，二字词取两字双拼，三字词取三字首码。这次主要重排了字根键位，常用字的简码也做了调整。</p>
+<h3 id="_1">字根</h3>
+<ul>
+<li><strong>新布局 NB46</strong>：在 2.5 的基础上，46 组字根换了键位，目标是手感更顺、重码更少。“只练改动过的根”可以在字根练习里单独练，题目会提示这个根在 2.x 的键位。</li>
+<li><strong>夭并入天组（Y 键）</strong>：原来拆成“撇 ＋ 大”的 38 个字改拆为夭，如 笑 = ⺮ ＋ 夭、妖 = 女 ＋ 夭。</li>
+<li><strong>父并入母组（I 键）</strong>：原来拆成“八 ＋ 㐅”的 46 个字改拆为父，包括交系字，如 爸 = 父 ＋ 巴、交 = 亠 ＋ 父、校 = 木 ＋ 亠 ＋ 父。</li>
+<li>删去已没有字使用的“鱼省”。</li>
+<li>现为 129 组字根、406 个根形。</li>
+</ul>
+<h3 id="_2">单字</h3>
+<ul>
+<li><strong>读音即字</strong>：多音字的每个读音当作一个字，按这个读音的字频决定简码和候选顺序。</li>
+<li><strong>一简、二简</strong>沿用 2.5，调整了几处：ui 给“事”（时改为三简 uib），en 给“嗯”，qb 给“勤”（秦改为三简 qbn），yr 给“元”（远改为三简 yrp）。</li>
+<li><strong>二简字补三码</strong>：有二简的字，如果它的三码位空着，就把三码也给它，二码、三码打出同一个字。</li>
+<li><strong>三简</strong>按 3.0 字频重新分配，另有一批作者手动调整（如 游 yza、符 fuh、圆 yrj、型 xkp、攻 gsm、竹 vuh）。</li>
+<li>通用规范汉字表 8105 字中，4476 字的全码有变化（主要是字根换键），三简变化 2022 字，二简变化 10 字。</li>
+</ul>
+<h3 id="_3">字词</h3>
+<ul>
+<li>词库沿用 2.5，按 3.0 的字码重新排序。</li>
+<li><strong>字重要</strong>：一、二、三简位上永远是字在前，简词排在字后面。</li>
+<li><strong>全码位让位</strong>：二字词与字同码时，字有简码，或词频超过字频的 16 倍，字才让给词；三字及以上的长词，只有生僻读音（每百万不到 0.1 次）或通规表以外的字才按同样公式让位。</li>
+<li>彩蛋码 by 莺、eh 鹤保留；ü 的容错码（如 jv 剧、xv 绪）排在词后面。</li>
+<li>符号表、快符沿用 2.5。</li>
+</ul>
+<h3 id="25">性能（与 2.5 同口径重算）</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>2.5</th>
+<th>3.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前 1500 字选重</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>前 3000 字选重</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>前 6000 字加权选重率</td>
+<td>0.016%</td>
+<td>0.010%</td>
+</tr>
+<tr>
+<td>前 6000 字加权键长</td>
+<td>3.22</td>
+<td>3.21</td>
+</tr>
+<tr>
+<td>同指大跨排</td>
+<td>1.27%</td>
+<td>0.84%</td>
+</tr>
+<tr>
+<td>高频字词冲突（剔除有简码的字）</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">输入法与工具</h3>
+<ul>
+<li>Rime 包的方案标识去掉了版本号：yeying_v5、yeying_shape、yeying_single。以后升级直接覆盖，不会再留下带旧版本号的文件。</li>
+<li>啾啾工具箱全部换成 3.0 数据：拆分查询、部件反查、字根练习（新增“只练改动过的根”）、字根表、字根图、完整拆分表。</li>
+<li>手心、搜狗、冰凌、Bime 等平台码表同步更新。</li>
+</ul><p class="article-return"><a href="index.html#updates">← 返回首页</a></p></article>
+  </div>
+</main>
+<script>if (window.matchMedia('(max-width:800px)').matches) document.querySelector('.article-contents details').open = false;</script>
+<footer><a class="brand" href="index.html">夜莺<span>NIGHTINGALE</span></a><a href="#">回到顶部 ↑</a></footer>
+</body>
+</html>
