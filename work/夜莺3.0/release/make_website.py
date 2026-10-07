@@ -13,8 +13,10 @@ import markdown
 ROOT = Path(__file__).resolve().parent.parent
 NG = Path.home() / 'Nightingale'; SRC = NG / 'apps/website'
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / '.cache/yeying-site'
-DATE, STAMP = '2026-10-07', '20261007'
+V = '3.0'                                   # 待发布流程统一后改为参数
 REL = 'https://github.com/losWater/Nightingale/releases'
+_rel = json.load(__import__('urllib.request').request.urlopen(f'https://api.github.com/repos/losWater/Nightingale/releases/tags/v{V}', timeout=60))
+DATE = _rel['published_at'][:10]                # 日期取发布页的发布日期
 BRANCH = 'https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0'
 STROKES = {'横', '竖', '撇', '折', '点'}
 
@@ -57,26 +59,44 @@ t = rep(t, '<p>按 2.5 最终表与多来源字频重算：每字取主读音最
         f'全码同码 {cf["全部单字全码"]} 对，剔除有简码的字后为 {cf["剔除有简码的字"]}。</p>')
 t = rep(t, '<p>归并组与全部根形两种模式，答错原题重学。</p>', '<p>归并组与全部根形，可以只练 3.0 改动过的根，答错原题重学。</p>')
 a = t.index('<section class="section download" id="download">'); b = t.index('</section>', a) + len('</section>')
-mac = [('v5', 'Mac · Rime V5 版（强烈推荐）', 'Apple Silicon · 魔虎 V5 本地整句模型'), ('shape', 'Mac · Rime 形码版', '鼠须管 · 无模型 · 四码、五码顶屏'),
-       ('single', 'Mac · Rime 形码单字版', '鼠须管 · 单字练习与夜莺快符')]
-dl = lambda f, title, sub: f'<a href="{REL}/download/v3.0/{f}"><span>{title}<small>{sub}</small></span><b>↓</b></a>'
+# 下载区按发布页上实际的附件生成：文件名、日期、有哪些平台都从发布页读，不写死
+import urllib.request
+with urllib.request.urlopen(f'https://api.github.com/repos/losWater/Nightingale/releases/tags/v{V}', timeout=60) as r_:
+    assets = {x['name']: x for x in json.load(r_)['assets']}
+pick = lambda pat: sorted(n for n in assets if re.fullmatch(pat, n))
+FLAVOR = {'v5': ('Rime V5 版（强烈推荐）', '魔虎 V5 本地整句模型'), 'shape': ('Rime 形码版', '无模型 · 四码、五码顶屏'),
+          'single': ('Rime 形码单字版', '单字练习与夜莺快符')}
+PLAT = {'mac': ('Mac', 'Apple Silicon' , '鼠须管'), 'windows': ('Windows', '小狼毫 x64', '小狼毫')}
+dl = lambda f, title, sub: f'<a href="{assets[f]["browser_download_url"]}"><span>{title}<small>{sub}</small></span><b>↓</b></a>'
+
+
+def platform(plat):
+    name, v5host, host = PLAT[plat]
+    zips = {re.search(rf'-{plat}-(v5|shape|single)-', n).group(1): n for n in pick(rf'Nightingale-Rime-{re.escape(V)}-{plat}-(v5|shape|single)-\d{{8}}\.zip')}
+    if not zips:
+        return f'<p>{name} {V} 包即将提供，完成后会出现在发布页。</p>'
+    links = ''.join(dl(zips[k], f'{name} · {FLAVOR[k][0]}', f'{v5host if k == "v5" else host} · {FLAVOR[k][1]}') for k in ('v5', 'shape', 'single') if k in zips)
+    sums = pick(rf'SHA256SUMS-{plat}-\d{{8}}\.txt')
+    return f'<div class="download-list">{links}</div>' + (f'<a class="quiet-link" href="{assets[sums[0]]["browser_download_url"]}">{name} 校验值 ↗</a>' if sums else '')
+
+
+plats = [PLAT[p_][0] for p_ in ('windows', 'mac') if pick(rf'Nightingale-Rime-{re.escape(V)}-{p_}-.*\.zip')]
+others = pick(rf'Nightingale-{re.escape(V)}-tables-\d{{8}}\.zip'), pick(rf'Nightingale-Toolbox-{re.escape(V)}-\d{{8}}\.html')
 download = ('<section class="section download" id="download"><div><span class="eyebrow">MAKE IT YOURS</span><h2>把夜莺带到你的键盘。</h2>'
             '<p>选择你使用的系统，下载对应输入法包。</p>'
-            f'<div class="version"><span class="status-dot"></span> 夜莺 3.0 <span class="divider">/</span> {DATE} · Mac Rime 三版本</div>'
-            f'<a class="quiet-link" href="{REL}/tag/v3.0">查看发布页与全部附件 ↗</a>'
+            f'<div class="version"><span class="status-dot"></span> 夜莺 {V} <span class="divider">/</span> {DATE} · {" / ".join(plats)} Rime 三版本</div>'
+            f'<a class="quiet-link" href="{REL}/tag/v{V}">查看发布页与全部附件 ↗</a>'
             f'<a class="quiet-link" href="{REL}/tag/v2.5">历史版本：2.5 发布页 ↗</a>'
             f'<a class="quiet-link" href="{REL}/tag/v1.0">历史版本：1.0 发布页 ↗</a></div><div>'
             '<p><strong>只建议使用 V5 版本。V5 模型：强烈推荐。</strong></p>'
             '<p>请按操作系统下载，Windows 与 Mac 包不能混装。升级前备份个人词库。</p>'
             '<p>从 2.5 升级：3.0 的方案标识不再带版本号（yeying_v5、yeying_shape、yeying_single），以后升级直接覆盖即可；'
             '2.5 的 yeying25_* 方案可以从方案列表里移除。3.0 有 46 组字根换了键位，建议先用<a href="tools/root-practice.html">字根练习</a>的“只练改动过的根”过一遍。</p>'
-            '<h3>macOS · 鼠须管</h3><p>V5 限 Apple Silicon；Intel Mac 不在本次 V5 支持范围。</p><div class="download-list">'
-            + ''.join(dl(f'Nightingale-Rime-3.0-mac-{k}-{STAMP}.zip', a_, s) for k, a_, s in mac) + '</div>'
-            f'<a class="quiet-link" href="{REL}/download/v3.0/SHA256SUMS-mac-{STAMP}.txt">Mac 校验值 ↗</a>'
-            '<h3>Windows · 小狼毫</h3><p>Windows 3.0 包即将提供，完成后会出现在发布页。</p>'
+            '<h3>Windows · 小狼毫</h3><p>Windows x64 · 官方小狼毫 0.17.4；V5 不适用于 32 位或原生 ARM64 宿主。</p>' + platform('windows') +
+            '<h3>macOS · 鼠须管</h3><p>V5 限 Apple Silicon；Intel Mac 不在本次 V5 支持范围。</p>' + platform('mac') +
             '<h3>其他输入法与工具</h3><div class="download-list">'
-            + dl(f'Nightingale-3.0-tables-{STAMP}.zip', '手心 · 搜狗 · 冰凌 · Bime', '3.0 各平台码表与说明，不是 Windows Rime 包')
-            + dl(f'Nightingale-Toolbox-3.0-{STAMP}.html', '啾啾工具箱 · 单文件', '3.0 拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表') + '</div>'
+            + ''.join(dl(n, '手心 · 搜狗 · 冰凌 · Bime', f'{V} 各平台码表与说明，不是 Windows Rime 包') for n in others[0])
+            + ''.join(dl(n, '啾啾工具箱 · 单文件', '拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表') for n in others[1]) + '</div>'
             '<p>魔虎原作者 <a href="https://github.com/fcxxxz/rime-mohu">fcxxxz / rime-mohu</a>：V5 模型、原生引擎及相关 Lua 为魔虎原作，不是夜莺原创。'
             '夜莺提供码表、词图与适配；原作者声明和许可证保留在包内 attribution/ 与 LICENSE-mohu。</p></div></section>')
 t = t[:a] + download + t[b:]
