@@ -1,6 +1,6 @@
 -- Control+数字：把当前页第 N 个候选提到首选
 -- Control+U：上移；Control+J（或 D）：下移；Control+0：撤销上一步
-local D = require('yeying30_nb46_adjust_data')
+local D = require('yeying_tune_adjust_data')
 
 local function init(env) D.load() end
 

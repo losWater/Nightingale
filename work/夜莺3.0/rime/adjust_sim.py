@@ -1,16 +1,16 @@
-"""Rime NB46 手动调整插件的 Python 复刻（与 ~/Library/Rime/lua/yeying30_nb46_adjust_data.lua 同逻辑），用于重放记录、排查。"""
+"""Rime NB46 手动调整插件的 Python 复刻（与 ~/Library/Rime/lua/yeying_tune_adjust_data.lua 同逻辑），用于重放记录、排查。"""
 import collections, sys
 from pathlib import Path
 R = Path.home() / 'Library/Rime'
 base = collections.defaultdict(list); codes = collections.defaultdict(list); freq = {}; core = set()
 body = False
-for l in open(R / 'yeying30_nb46_single.dict.yaml', encoding='utf-8'):
+for l in open(R / 'yeying_tune.dict.yaml', encoding='utf-8'):
     l = l.rstrip('\n')
     if body:
         p = l.split('\t')
         if len(p) >= 2: base[p[1]].append(p[0]); codes[p[0]].append(p[1])
     elif l == '...': body = True
-for l in open(R / 'yeying30_nb46_freq.txt', encoding='utf-8'):
+for l in open(R / 'yeying_tune_freq.txt', encoding='utf-8'):
     t, s, f = l.rstrip('\n').split('\t'); freq[(t, s)] = float(f); core.add(t)
 prefix = collections.defaultdict(list)
 for t, cs in codes.items():
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     watch = sys.argv[1].split(',') if len(sys.argv) > 1 else ['ui', 'uib', 'uibo', 'uibb', 'uip', 'uipe']
     show = lambda: '  '.join(f'{c}={"".join(display(c)[:3]) or "∅"}' for c in watch)
     print('初始          ', show())
-    for l in open(R / 'yeying30_nb46_adjust.tsv', encoding='utf-8'):
+    for l in open(R / 'yeying_tune_adjust.tsv', encoding='utf-8'):
         _, code, text, _, act = l.rstrip('\n').split('\t')
         apply(code, text, act)
         print(f'{code:5}{text}{act:5}', show())

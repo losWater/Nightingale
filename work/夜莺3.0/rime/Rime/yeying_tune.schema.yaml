@@ -1,6 +1,6 @@
 schema:
-  schema_id: yeying30_nb46_single
-  name: 夜莺3.0·NB46单字（试用）
+  schema_id: yeying_tune
+  name: "夜莺单字·调频（NB46 试用）"
   version: "3.0-nb46-single.4"
   author: [夜莺作者 losWater]
   description: 夜莺3.0候选NB46单字码表试用版（二简ui=事）。操作同2.5单字版；不含2.5的反查与拆分显示。
@@ -16,13 +16,13 @@ switches:
 
 engine:
   processors:
-    - lua_processor@*yeying30_nb46_adjust_key
-    - lua_processor@*yeying25_mac_lookup_key
-    - lua_processor@*yeying25_shape_lookup_input
+    - lua_processor@*yeying_tune_adjust_key
+    - lua_processor@*yeying_mac_lookup_key
+    - lua_processor@*yeying_shape_lookup_input
     - ascii_composer
     - recognizer
     - key_binder
-    - lua_processor@*yeying25_single_english_guard
+    - lua_processor@*yeying_single_english_guard
     - speller
     - punctuator
     - selector
@@ -30,14 +30,14 @@ engine:
     - express_editor
   segmentors: [ascii_segmentor, matcher, abc_segmentor, punct_segmentor, fallback_segmentor]
   translators:
-    - lua_translator@*yeying30_nb46_lookup
+    - lua_translator@*yeying_tune_lookup
     - punct_translator
     - table_translator
-    - lua_translator@*yeying30_nb46_adjust_translator
+    - lua_translator@*yeying_tune_adjust_translator
     - history_translator@repeat_last
     - history_translator@repeat_last_right
   filters:
-    - lua_filter@*yeying30_nb46_adjust_filter
+    - lua_filter@*yeying_tune_adjust_filter
     - simplifier@simplification
     - uniquifier
 
@@ -49,7 +49,7 @@ speller:
   auto_select_pattern: '^;\w+'
 
 translator:
-  dictionary: yeying30_nb46_single
+  dictionary: yeying_tune
   enable_user_dict: false
   enable_sentence: false
   enable_completion: false
@@ -75,7 +75,7 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    yeying30_lookup: '^([`~][a-z]*|~~[a-z]*)$'
+    yeying_lookup: '^([`~][a-z]*|~~[a-z]*)$'
 simplification:
   option_name: simplification
   opencc_config: s2t.json

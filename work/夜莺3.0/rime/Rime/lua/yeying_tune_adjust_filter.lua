@@ -1,5 +1,5 @@
 -- 按手动调整重排候选：调整过的码按“当前显示顺序”出字；挪来的字若不在本码上则补一个候选；挪走的字不再出现
-local D = require('yeying30_nb46_adjust_data')
+local D = require('yeying_tune_adjust_data')
 
 local function init(env) D.load() end
 

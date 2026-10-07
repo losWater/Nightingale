@@ -1,5 +1,5 @@
 -- 夜莺 3.0 NB46 单字试用：手动调整（共享数据，作者 2026-10-02 定规则）
--- 记录文件：<用户目录>/yeying30_nb46_adjust.tsv，每行：时间 \t 码 \t 字 \t 参数 \t 动作
+-- 记录文件：<用户目录>/yeying_tune_adjust.tsv，每行：时间 \t 码 \t 字 \t 参数 \t 动作
 --   top  ：把字提到该码首选
 --   up   ：上移——字从该码挪到长一级的码；那里若是有人的简码位，原占位字被挤上去（只往上挪，最多到全码）；
 --          空出来的简码位先还给码表里原本占它的字（若它还没有更短简码），否则由“以该码开头、字频最高、
@@ -9,7 +9,7 @@
 local M = { loaded = false, state = {}, base = {}, codes = {}, prefix = {}, freq = {}, core = {}, ops = {} }
 
 local function udir() return rime_api.get_user_data_dir() end
-local function logpath() return udir() .. '/yeying30_nb46_adjust.tsv' end
+local function logpath() return udir() .. '/yeying_tune_adjust.tsv' end
 
 local function st(code)
   local s = M.state[code]
@@ -25,7 +25,7 @@ local function front(code, x) local s = st(code); s.order = without(s.order, x);
 local function remove_from(code, x) local s = st(code); s.order = without(s.order, x); s.removed[x] = true end
 
 local function load_dict()
-  local f = io.open(udir() .. '/yeying30_nb46_single.dict.yaml', 'r')
+  local f = io.open(udir() .. '/yeying_tune.dict.yaml', 'r')
   if not f then return end
   local body = false
   for line in f:lines() do
@@ -40,7 +40,7 @@ local function load_dict()
     elseif line == '...' then body = true end
   end
   f:close()
-  local g = io.open(udir() .. '/yeying30_nb46_freq.txt', 'r')
+  local g = io.open(udir() .. '/yeying_tune_freq.txt', 'r')
   if g then
     for line in g:lines() do
       local t, syl, fq = line:match('^([^\t]+)\t([^\t]+)\t([^\t]+)$')

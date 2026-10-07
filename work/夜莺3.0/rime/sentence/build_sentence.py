@@ -71,7 +71,7 @@ for name, attr in wrappers.items():
 
 # ---- 方案 ----
 s = rename((src / 'tiger_sentence.schema.yaml').read_text(encoding='utf-8'))
-s = rep(s, 'schema_id: yeying_sentence', 'schema_id: yeying30_sentence')
+s = rep(s, 'schema_id: yeying_sentence', 'schema_id: yeying_sentence')
 s = re.sub(r'  name: .*', '  name: 夜莺整句（试用）', s, count=1)
 s = re.sub(r'  version: .*', '  version: "3.0-nb46-noyj-d89r3.2"', s, count=1)
 s = rep(s, '    - TigerClaw', '    - TigerClaw（虎整句引擎）\n    - LosWater（夜莺码表）')
@@ -81,11 +81,11 @@ s = rep(s, 'lua_processor@yeying_sentence_processor', 'lua_processor@*yeying_sen
 s = rep(s, 'lua_translator@yeying_sentence_translator', 'lua_translator@*yeying_sentence_c_translator')
 s = rep(s, 'lua_filter@yeying_sentence_buffer_filter', 'lua_filter@*yeying_sentence_c_filter')
 # 反查：只用 ` 前缀（整句引擎用 ~ 作暂存标记，不能用 2.5 的 ~~/F2）
-s = rep(s, '    - lua_processor@*yeying_sentence_c_ascii\n', '    - lua_processor@*yeying30_lookup_backtick\n    - lua_processor@*yeying_sentence_c_ascii\n')
-s = rep(s, '    - punct_translator\n', '    - lua_translator@*yeying30_sentence_lookup\n    - punct_translator\n')
+s = rep(s, '    - lua_processor@*yeying_sentence_c_ascii\n', '    - lua_processor@*yeying_lookup_backtick\n    - lua_processor@*yeying_sentence_c_ascii\n')
+s = rep(s, '    - punct_translator\n', '    - lua_translator@*yeying_sentence_lookup\n    - punct_translator\n')
 s = rep(s, '  segmentors:\n    - abc_segmentor\n', '  segmentors:\n    - matcher\n    - abc_segmentor\n')
-s = rep(s, 'recognizer:\n  import_preset: default\n', "recognizer:\n  import_preset: default\n  patterns:\n    yeying30_lookup: '^`[a-z]*$'\n")
-(out / 'yeying30_sentence.schema.yaml').write_text(s, encoding='utf-8')
+s = rep(s, 'recognizer:\n  import_preset: default\n', "recognizer:\n  import_preset: default\n  patterns:\n    yeying_lookup: '^`[a-z]*$'\n")
+(out / 'yeying_sentence.schema.yaml').write_text(s, encoding='utf-8')
 a = rename((src / 'tiger_sentence_ascii.schema.yaml').read_text(encoding='utf-8')).replace('虎整句内部切换配置', '夜莺整句内部切换配置')
 (out / 'yeying_sentence_ascii.schema.yaml').write_text(a, encoding='utf-8')
 

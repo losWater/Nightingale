@@ -1,11 +1,11 @@
 """由普通单字表生成 Rime 单字码表：普通单字表 + 附加条目（夜莺 2.5 快符等：现有码表里有、旧普通单字表里没有的）。
 同码内按表中顺序给权重 99999、99998…；附加条目排在同码汉字之后。
-用法：python rime/make_dict.py <旧普通单字表> <新普通单字表> <版本号>   # 就地重写 rime/Rime/yeying30_nb46_single.dict.yaml
+用法：python rime/make_dict.py <旧普通单字表> <新普通单字表> <版本号>   # 就地重写 rime/Rime/yeying_tune.dict.yaml
 """
 import collections, re, sys
 from pathlib import Path
 
-DICT = Path(__file__).resolve().parent / 'Rime/yeying30_nb46_single.dict.yaml'
+DICT = Path(__file__).resolve().parent / 'Rime/yeying_tune.dict.yaml'
 
 
 def read(table):

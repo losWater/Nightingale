@@ -24,7 +24,7 @@ local function make(data_module)
           end
           if #codes > 0 then
             emitted[row[1]] = true
-            yield(Candidate('yeying30_lookup', seg.start, seg._end, row[1], '〔' .. row[2] .. ' · ' .. table.concat(codes, '/') .. '〕'))
+            yield(Candidate('yeying_lookup', seg.start, seg._end, row[1], '〔' .. row[2] .. ' · ' .. table.concat(codes, '/') .. '〕'))
           end
         end
       end
