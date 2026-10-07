@@ -21,6 +21,7 @@ switches:
 engine:
   processors:
     - lua_processor@*yeying25_mac_lookup_key
+    - lua_processor@*yeying25_shape_words
     - lua_processor@*yeying25_mac_pin_key
     - lua_processor@*yeying25_shape_lookup_input
     - ascii_composer
@@ -40,6 +41,7 @@ engine:
     - history_translator@repeat_last_right
   filters:
     - lua_filter@*yeying25_shape_comment
+    - lua_filter@*yeying25_shape_words_filter
     - simplifier@simplification
     - uniquifier
 

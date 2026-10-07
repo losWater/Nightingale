@@ -57,6 +57,9 @@ def main():
     schema = schema.replace('2.5-single.3', '2.5-single.8')
     schema = schema.replace('  dependencies: [yeying25_mac_rime_fixed]\n', '')
     schema = schema.replace('    - lua_processor@*yeying25_mac_pin_key\n', '')
+    # 形码版的录词（独立词表）不带进单字版
+    schema = schema.replace('    - lua_processor@*yeying25_single_words\n', '').replace('    - lua_filter@*yeying25_single_words_filter\n', '')
+    assert '_words' not in schema, '单字版不应挂载录词组件'
     schema = schema.replace('    - speller', '    - lua_processor@*yeying25_single_english_guard\n    - speller', 1)
     # Like Tiger, use only the explicit bindings: '-'/'=' page candidates.
     # Importing default bindings also assigns period to Page_Down.

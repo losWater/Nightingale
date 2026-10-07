@@ -26,7 +26,8 @@ def build():
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, target)
         shutil.copy2(CODE / 'src/yeying25_shape.schema.yaml', out)
-        for name in ('yeying25_shape_table.lua', 'yeying25_shape_comment.lua', 'yeying25_shape_lookup_input.lua'):
+        for name in ('yeying25_shape_table.lua', 'yeying25_shape_comment.lua', 'yeying25_shape_lookup_input.lua',
+                     'yeying25_shape_words.lua', 'yeying25_shape_words_filter.lua'):
             shutil.copy2(CODE / 'src' / name, out / 'lua')
         shutil.copy2(CODE / 'DUAL-README.md', out / 'README.md')
         choices = ['yeying25_v5', 'yeying25_shape'] if flavor == 'dual' else ['yeying25_shape']
