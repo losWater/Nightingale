@@ -1,14 +1,15 @@
 """夜莺 3.0 字词表与综合表（第一版草稿）。
-- 词：2.5 字词表的全部多字词条，词与词的顺序原样保留（词码只看双拼，与字根无关）。
+- 词：2.5 字词表的全部多字词条，词与词的顺序原样保留（词码只看双拼，与字根无关）；作者指定的调换见 data/inputs/3.0词序调整.json。
 - 字：3.0 普通单字表（去掉符号表条目），字与字按 3.0 顺序。
 - 特殊码：保留 莺 by、鹤 eh（自定义码），剧 jv、绪 xv（ü 容错）；ü 三码容错（予居欲狙羽郁巨，这些字没有三简）按 3.0 全码重新推导：ü 写 v + 全码第三码；
   依赖 2.5 字根的容错与 六 lqq 去掉。
 - 同码排序（2.5 规则第五节、五之六，作者 2026-10-07 修订）：
   同码的字全部可让给首个词才让：词₁ → 字… → 其余词（最多一个词排到字前）；否则字在前。
-  短码位（<4 码）：字可让 ⇔ 简词频率 > 字频 × 16（作者 2026-10-07：引擎自动分的三简不再一律“简码不让位”）；
-    已有一简/二简的字在三码位上的补码（二简补三码）一律让简词。
+  短码位（<4 码）：常用字不让（字的简码不让位）；其余字可让 ⇔ 简词频率 > 字频 × 16。
   全码位·二字词：字可让 ⇔ 该读音有简码，或 词频 > 字频 × 16。
-  全码位·三字及以上词：字可让 ⇔ 词频 > 字频 × 16（作者 2026-10-07 试行，取代 2.5 规则 5a 的“一律不让”）。
+  全码位·三字及以上词：常用字不让（2.5 规则 5a）；其余字可让 ⇔ 词频 > 字频 × 16。
+  “常用字” = 通规字中该读音字频 ≥ 0.1/百万（YZ_PROTECT=freq，作者 2026-10-07 定，三码位与长词同一口径）。
+  一简、二简一律不让；彩蛋码（莺 by、鹤 eh）固定首位；容错码一律排在词后。
   字频按读音、每百万；词频取虎码词库，查不到按 0.5。
 - 综合表 = 字词表 + 符号表 + 快符（同夜莺 2.5 tools/maintenance/export.py）。
 用法：.venv/bin/python release/make_ciku.py [输出目录]
@@ -50,20 +51,36 @@ wtot = sum(wt.values())
 wfreq = lambda w: wt[w] / wtot * 1e6 if w in wt else None
 ONE = {(c, encode(p, 'xiaohe')) for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1}
 
+# “不让位的字”口径（环境变量 YZ_PROTECT）：level12 = 通规一、二级字（默认）；freq = 通规 8105 中字频 ≥ 0.1/百万的读音
+LEVEL = {}
+for _n in (1, 2, 3):
+    for _l in open(ROOT / f'data/inputs/通规分级/level-{_n}.txt', encoding='utf-8'):
+        if _l.strip(): LEVEL[_l.strip()] = _n
+import os
+PROTECT = os.environ.get('YZ_PROTECT', 'freq')     # 作者 2026-10-07 定：三码位与长词都用 freq
+
+
+def protected(ch, sy):
+    if PROTECT == 'freq': return ch in LEVEL and rf.get((ch, sy), 0) >= 0.1
+    return LEVEL.get(ch, 9) <= 2
+
 # ---- 字 ----
 chars = collections.defaultdict(list)
 for t, c in D30: chars[c].append(t)
 codes_of = collections.defaultdict(set)
 for t, c in D30: codes_of[t].add(c)
 special = []                                                    # (字, 码, 类型)
+TOLERANCE = set()                                               # 容错码条目（一律排在词后）
+CUSTOM = {('莺', 'by'), ('鹤', 'eh')}                            # 自定义码（彩蛋）固定在首位
 for t, c, kind in [('莺', 'by', '自定义码'), ('鹤', 'eh', '自定义码'), ('剧', 'jv', '容错码'), ('绪', 'xv', '容错码')]:
     assert not chars.get(c), (c, chars.get(c))
     chars[c].append(t); special.append((t, c, kind))
+    if kind == '容错码': TOLERANCE.add((t, c))
 skipped = []
 for t in '予居欲狙羽郁巨':
     full = sorted(c for c in codes_of[t] if len(c) == 4 and c[1] == 'u' and c[0] in 'jqxy')   # 2.5 做法：ü 写 v + 全码第三码
     if full and not chars.get(full[0][0] + 'v' + full[0][2]):
-        c = full[0][0] + 'v' + full[0][2]; chars[c].append(t); special.append((t, c, '容错码'))
+        c = full[0][0] + 'v' + full[0][2]; chars[c].append(t); special.append((t, c, '容错码')); TOLERANCE.add((t, c))
     else:
         skipped.append(t)
 
@@ -71,6 +88,9 @@ for t in '予居欲狙羽郁巨':
 words = collections.defaultdict(list)
 for t, c in W25:
     if len(t) > 1: words[c].append(t)
+for c, w, before in json.load(open(ROOT / 'data/inputs/3.0词序调整.json', encoding='utf-8'))['提前']:   # 作者指定的词序调整
+    ws = words[c]; assert w in ws and before in ws, (c, w, before)
+    ws.remove(w); ws.insert(ws.index(before), w)
 
 
 def has_short(ch, sy):
@@ -80,7 +100,10 @@ def has_short(ch, sy):
 def can_yield(ch, code, w):
     sy = code[:2]
     if len(code) == 4 and len(w) == 2 and has_short(ch, sy): return True, '有简码'
-    if len(code) == 3 and ((ch, sy) in ONE or sy in codes_of[ch]): return True, '已有更短的码（补三码）'
+    if (ch, code) in TOLERANCE: return True, '容错码'
+    if (ch, code) in CUSTOM: return False, '自定义码（彩蛋）'
+    if len(code) <= 2: return False, '一二简不让'
+    if (len(code) < 4 or len(w) > 2) and protected(ch, sy): return False, '常用字不让'
     cf = rf.get((ch, sy), 0); wf = wfreq(w)
     r = (wf if wf is not None else WORD_DEFAULT) / max(cf, FLOOR)
     return r > RATIO, f'{r:.1f}倍'
