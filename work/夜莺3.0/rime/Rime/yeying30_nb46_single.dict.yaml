@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying30_nb46_single
-version: "3.0-nb46-single.14"
+version: "3.0-nb46-single.15"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -20584,7 +20584,7 @@ m	otl	99999
 唷	yot	99999
 哟	yota	99999
 唷	yotz	99999
-远	yr	99999
+元	yr	99999
 源	yra	99999
 沅	yrae	99999
 渕	yrag	99999
@@ -20656,7 +20656,7 @@ m	otl	99999
 援	yroq	99999
 猨	yroq	99998
 獂	yroy	99999
-元	yrp	99999
+远	yrp	99999
 元	yrpe	99999
 鼋	yrph	99999
 黿	yrph	99998
