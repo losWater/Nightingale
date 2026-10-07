@@ -1,7 +1,7 @@
 # Source: 夜莺 3.0 候选 NB46 普通单字表（~/Yozakura；二简 ui=事、en=嗯；试用）+ 夜莺 2.5 快符
 ---
 name: yeying_tune
-version: "3.0-nb46-single.15"
+version: "3.0-nb46-single.16"
 sort: by_weight
 use_preset_vocabulary: false
 columns: [text, code, weight]
@@ -3093,6 +3093,7 @@ columns: [text, code, weight]
 飰	fjxv	99999
 籵	fjzc	99999
 膰	fjzh	99999
+覅	fncx	99999
 佛	fo	99999
 佛	fok	99999
 佛	fokh	99999
@@ -6173,6 +6174,7 @@ columns: [text, code, weight]
 龡	ivxx	99999
 陲	ivy	99999
 陲	ivyp	99999
+歘	ixpx	99999
 纯	iy	99999
 淳	iya	99999
 淳	iyae	99999
@@ -14088,6 +14090,7 @@ m	otl	99999
 壡	rvvm	99999
 枘	rvw	99999
 枘	rvwx	99999
+挼	rxou	99999
 润	rya	99999
 润	ryar	99999
 瞤	rybr	99999

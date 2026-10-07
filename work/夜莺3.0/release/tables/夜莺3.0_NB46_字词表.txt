@@ -26165,6 +26165,7 @@ ez收徒	ezut
 妇女	fn
 疯牛病	fnb
 非你不可	fnbk
+覅	fncx
 妇女代表	fndb
 妇女大会	fndh
 愤怒的小鸟	fndn
@@ -49411,6 +49412,7 @@ ip正确	ipvq
 创新能力	ixnl
 抽象派	ixp
 畅销品	ixp
+歘	ixpx
 吃下去	ixq
 畅想曲	ixq
 春夏秋冬	ixqd
@@ -96291,6 +96293,7 @@ QQ音乐	qqyy
 人心难测	rxnc
 热血男儿	rxne
 仍须努力	rxnl
+挼	rxou
 人心叵测	rxpc
 热血澎湃	rxpp
 绕线器	rxq

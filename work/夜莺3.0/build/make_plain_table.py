@@ -61,6 +61,7 @@ def main(run_dir, out_dir, scheme='ziranma'):
 
     # ---- 扩展字 ----
     all_py = json.load(open(ROOT / 'data/inputs/全音节映射.json', encoding='utf-8'))['小鹤']
+    all_py = [*all_py, 'fiao', 'rua', 'chua']         # 音节表缺这三个罕见音节：覅 fiao、挼 rua、歘 chua（2.5 有，2026-10-07 补）
     xh2zr = {}
     for py in all_py:
         xh2zr.setdefault(encode(py, 'xiaohe'), set()).add(encode(py, scheme))

@@ -1,20 +1,25 @@
-"""夜莺 3.0（NB46）临时字根练习：以夜莺 2.0 离线工具包的字根练习页为底，换成 NB46 键位。
+"""夜莺 3.0 字根练习：以夜莺 2.5 啾啾工具箱里的字根练习页为底（也可指定其他来源），换成 3.0（NB46）键位。
 - 根集合：3.0 根组（= 2.5，去掉已无字使用的“鱼省”，补上 2.5 新增的“戈无点”、3.0 新增的“夭”〔归入天组〕、“父”〔归入母组〕，原键留空＝新根）。
 - 模式：归并组 / 全部根形，各分“全部”和“只练改动过的根”（键位与 2.0 不同的根；2.0 与 2.5 键位相同）。
-- 进度单独存（nightingale30_nb46_memory_v1），不影响 2.0 练习的进度。
-用法：python tool/practice/build_practice.py [布局json] [输出html]
+- 全部例字的拆分刷新为 3.0（夭、父等），不再含该根的例字去掉。
+- 进度单独存（nightingale_memory_v1，不带版本号），不影响 2.x 练习的进度。
+用法：python tool/practice/build_practice.py [布局json] [输出html] [来源html]（来源默认取 2.5 拆分原本里的练习视图）
 """
 import json, re, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
-SRC = Path.home() / 'Nightingale/work/夜莺2.0/65_群友离线工具包/夜莺2.0离线工具包/字根练习.html'
 layout = json.load(open(sys.argv[1] if len(sys.argv) > 1 else ROOT / 'release/NB46_layout.json', encoding='utf-8'))
-out = Path(sys.argv[2] if len(sys.argv) > 2 else Path.home() / 'Downloads/夜莺3.0_NB46_字根练习.html')
+out = Path(sys.argv[2] if len(sys.argv) > 2 else Path.home() / 'Downloads/夜莺3.0_字根练习.html')
+if len(sys.argv) > 3:
+    t = Path(sys.argv[3]).read_text(encoding='utf-8')
+else:
+    _page = (Path.home() / 'Nightingale/夜莺2.5/资料/拆分原本.html').read_text(encoding='utf-8-sig')
+    _m = re.search(r'\b(?:const|let)\s+views\s*=\s*', _page)
+    t = json.JSONDecoder().raw_decode(_page[_m.end():])[0]['practice']
 meta = json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))
 splits = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
 g_of = {r: g for g, rs in meta['groups'].items() for r in rs}
 
-t = SRC.read_text(encoding='utf-8')
 
 
 def literal(name):
@@ -43,7 +48,7 @@ for x in roots:
     if r not in g_of:
         continue                                   # 鱼省：2.5 起已无字使用
     new_roots.append(dict(x, 键=layout[g_of[r]], 原键=x['键']))
-    if r == '戈':
+    if r == '戈' and not any(y['根'] == '戈无点' for y in roots):
         g = g_of['戈无点']
         new_roots.append({'根': '戈无点', '键': layout[g], '原键': meta['layout'][g], '组': x['组'], '例字': '尧、晓、烧、浇、挠'})
     if r == '天':
@@ -65,7 +70,24 @@ ex['夭'] = {'1': lst[:1], '2': lst[:2], '4': lst[:4]}
 lst = [{'字': c, '位置': '首末' if len(splits[c]) == 1 else ('首根' if splits[c][0][0] == '父' else '末根'),
         '拆分': ' ＋ '.join(p[0] for p in splits[c])} for c in ['爸', '交', '爷', '校', '父', '较'] if c in splits]
 ex['父'] = {'1': lst[:1], '2': lst[:2], '4': lst[:4]}
+# 全部例字刷新为 3.0 拆分：不再含该根的去掉，拆分与首末位置按 3.0
+names = lambda c: [p[0] for p in splits.get(c, [])]
+for r, levels in ex.items():
+    for lv, items in levels.items():
+        kept = []
+        for it in items:
+            ns = names(it['字'])
+            if r not in ns: continue
+            it['拆分'] = ' ＋ '.join(ns)
+            it['位置'] = '首末' if len(ns) == 1 else '首根' if ns[0] == r else '末根' if ns[-1] == r else '中间根'
+            kept.append(it)
+        levels[lv] = kept
 put('rootExamples', ex)
+rs, _, _ = literal('roots')
+for x in rs:
+    if x.get('例字'):
+        x['例字'] = '、'.join(c for c in x['例字'].split('、') if x['根'] in names(c))
+put('roots', rs)
 
 # 夭并入“大”那一部分（2.0 练习页按部分出归并组卡片）
 parts, _, _ = literal('familyPartitions')
@@ -74,9 +96,9 @@ for part in parts.get('大／小', []):
 put('familyPartitions', parts)
 
 # ---- 标题与说明 ----
-rep('<title>夜莺2.0字根记忆练习</title>', '<title>夜莺3.0（NB46）字根练习</title>')
-rep('<h1>夜莺2.0字根记忆练习</h1>', '<h1>夜莺3.0（NB46）字根记忆练习 · 临时版</h1><p>键位为 3.0 候选方案 NB46。“只练改动过的根”只出键位与 2.0 不同的根，题目上会标出它在 2.0 的键位。</p>')
-rep("STORAGE='nightingale20_memory_v1'", "STORAGE='nightingale30_nb46_memory_v1'")
+rep('<title>夜莺2.0字根记忆练习</title>', '<title>夜莺3.0字根记忆练习</title>')
+rep('<h1>夜莺2.0字根记忆练习</h1>', '<h1>夜莺3.0字根记忆练习</h1><p>“只练改动过的根”只出键位与 2.x 不同的根和 3.0 新增的根（夭、父），题目上会标出它在 2.x 的键位。</p>')
+rep("STORAGE='nightingale20_memory_v1'", "STORAGE='nightingale_memory_v1'")
 rep('<option value="group">归并组练习</option><option value="all">全部根形练习（403个）</option>',
     '<option value="group">归并组练习</option><option value="group_changed">归并组练习（只练改动过的）</option>'
     '<option value="all">全部根形练习</option><option value="all_changed">全部根形练习（只练改动过的）</option>')
@@ -105,15 +127,12 @@ rep("progress:{group:saved.group,all:saved.all}}", "progress:Object.fromEntries(
 rep("!['group','all'].includes(p.mode)", "!KINDS.includes(p.mode)")
 rep(" for(const k of ['group','all']){const s=upgradeAppend(p.progress[k],k);", " for(const k of KINDS){const s=upgradeAppend(p.progress[k],k);")
 rep("const summary=['group','all'].map(k=>(k==='group'?'归并组':'全部根形')+", "const summary=KINDS.map(k=>KIND_NAME[k]+")
-rep("format:'nightingale-root-practice'", "format:'nightingale30-nb46-root-practice'")
-rep("p.format!=='nightingale-root-practice'", "p.format!=='nightingale30-nb46-root-practice'")
-rep("a.download='夜莺字根练习进度_'", "a.download='夜莺3.0_NB46字根练习进度_'")
 rep("'已导出两种模式的进度文件", "'已导出所有模式的进度文件")
 rep("将替换当前两种模式的进度", "将替换当前所有模式的进度")
 
 # ---- 题目上标出 2.0 键位 ----
 rep("$('#members').textContent=active&&x.成员?'归并组：'+rootLabel(x.根):'';",
-    "$('#members').textContent=(active&&x.成员?'归并组：'+rootLabel(x.根):'')+(active&&x.原键&&x.键!==x.原键?(x.成员?'　·　':'')+'2.0 在 '+x.原键.toUpperCase()+' 键，3.0 搬家了':'');")
+    "$('#members').textContent=(active&&x.成员?'归并组：'+rootLabel(x.根):'')+(active&&x.原键&&x.键!==x.原键?(x.成员?'　·　':'')+'2.x 在 '+x.原键.toUpperCase()+' 键，3.0 搬家了':'');")
 
 out.write_text(t, encoding='utf-8')
 n = len(new_roots); c = sum(1 for x in new_roots if x['键'] != x['原键'])

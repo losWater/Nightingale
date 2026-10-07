@@ -8,5 +8,5 @@
 3. `cd ~/.cache/yeying30-build && NIGHTINGALE_REPO=$PWD python3 tools/rime_mac/package_release.py --stamp YYYYMMDD`，再 `verify_release.py <publication/日期目录>`。
 
 2026-10-07：三方案构建与验证全过，三个 ZIP 发布验证 PASS；方案 id 为 yeying_v5 / yeying_shape / yeying_single。
-拆分原本只换了“拆分查询”的数据 D；工具箱其他视图仍是 2.5 的，待另行更新。
+拆分原本＝3.0 啾啾工具箱（release/make_toolbox.py：拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表六个视图全部是 3.0 数据）。
 夜莺仓库 AGENTS.md / MAINTENANCE.md 里“schema_id 中的历史数字是兼容标识”的说法不符合作者本意，接入正式仓库时一并改掉。

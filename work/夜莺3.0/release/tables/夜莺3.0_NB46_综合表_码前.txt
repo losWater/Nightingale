@@ -26174,6 +26174,7 @@ fn	烦恼
 fn	妇女
 fnb	疯牛病
 fnbk	非你不可
+fncx	覅
 fndb	妇女代表
 fndh	妇女大会
 fndn	愤怒的小鸟
@@ -49425,6 +49426,7 @@ ixnk	吃相难看
 ixnl	创新能力
 ixp	抽象派
 ixp	畅销品
+ixpx	歘
 ixq	吃下去
 ixq	畅想曲
 ixqd	春夏秋冬
@@ -97160,6 +97162,7 @@ rxmt	人血馒头
 rxnc	人心难测
 rxne	热血男儿
 rxnl	仍须努力
+rxou	挼
 rxpc	人心叵测
 rxpp	热血澎湃
 rxq	绕线器

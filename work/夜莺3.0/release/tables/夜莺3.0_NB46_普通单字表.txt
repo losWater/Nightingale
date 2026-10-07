@@ -3076,6 +3076,7 @@
 飰	fjxv
 籵	fjzc
 膰	fjzh
+覅	fncx
 佛	fo
 佛	fok
 佛	fokh
@@ -6151,6 +6152,7 @@
 龡	ivxx
 陲	ivy
 陲	ivyp
+歘	ixpx
 纯	iy
 淳	iya
 淳	iyae
@@ -14054,6 +14056,7 @@ m	otl
 壡	rvvm
 枘	rvw
 枘	rvwx
+挼	rxou
 润	rya
 润	ryar
 瞤	rybr
