@@ -73,8 +73,9 @@ def main():
     with zipfile.ZipFile(args.upstream) as z:
         runtime = {n.removeprefix('mohu/'): z.read(n) for n in z.namelist()
                    if n.startswith('mohu/runtime/') and n.endswith(('.dll', 'runtime-manifest.json', 'runtime-preload.txt'))}
-    assert {Path(n).name for n in runtime} == {'libtigerengine.dll', 'lua54.dll', 'onnxruntime.dll',
-                                             'libwinpthread-1.dll', 'runtime-manifest.json', 'runtime-preload.txt'}
+    # 需要哪些 DLL 以上游的 runtime-manifest.json 为准（魔虎新版已不再带 onnxruntime.dll），不写死文件清单
+    declared = {f['name'] for f in json.loads(runtime['runtime/runtime-manifest.json'])['files']}
+    assert {Path(n).name for n in runtime} == declared | {'runtime-manifest.json', 'runtime-preload.txt'}, (sorted(runtime), sorted(declared))
     for name, data in runtime.items():
         if name.endswith('.dll'):
             pe = struct.unpack_from('<I', data, 0x3c)[0]
