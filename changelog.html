@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="夜莺 3.0 更新日志：新字根布局、简码调整、字词让位规则与性能变化。">
-  <title>更新日志 · 夜莺3.0</title>
+  <meta name="description" content="夜莺各版本更新日志，最新为 3.1。">
+  <title>更新日志 · 夜莺3.1</title>
   <link rel="icon" href="bird.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="author.css">
@@ -14,21 +14,68 @@
 <a class="skip" href="#article">跳到正文</a>
 <header class="header"><a class="brand" href="index.html"><img src="bird.svg" alt="" width="34" height="34">夜莺<span>NIGHTINGALE</span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="performance.html">性能</a><a href="index.html#updates">更新日志</a></nav><div class="header-end"><button id="theme" type="button" aria-label="切换至浅色模式">☼</button></div></header>
 <main class="author-page">
-  <header class="article-heading"><p class="eyebrow">夜莺 3.0</p><h1>更新日志</h1><p>2026-10-07</p></header>
+  <header class="article-heading"><p class="eyebrow">夜莺</p><h1>更新日志</h1><p>最新：3.1（2026-10-15）</p></header>
   <div class="reading-layout">
     <aside class="article-contents"><details open><summary>文章目录</summary><nav aria-label="文章目录"><div class="toc">
 <ul>
-<li><a href="#_1">字根</a></li>
-<li><a href="#_2">单字</a></li>
+<li><a href="#31">夜莺 3.1</a><ul>
+<li><a href="#_1">拆分</a></li>
+<li><a href="#_2">简码</a></li>
 <li><a href="#_3">字词</a></li>
+<li><a href="#_4">输入法</a></li>
+</ul>
+</li>
+<li><a href="#30">夜莺 3.0</a><ul>
+<li><a href="#_5">字根</a></li>
+<li><a href="#_6">单字</a></li>
+<li><a href="#_7">字词</a></li>
 <li><a href="#25">性能（与 2.5 同口径重算）</a></li>
-<li><a href="#_4">输入法与工具</a></li>
+<li><a href="#_8">输入法与工具</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav></details></aside>
-    <article class="article-body" id="article"><p>2026-10-07</p>
+    <article class="article-body" id="article"><h2 id="31">夜莺 3.1</h2>
+<p>2026-10-15</p>
+<p>3.1 是 3.0 发布后根据作者实打和群友反馈做的一次整理：新增两个归并字根，修正几处拆分，调整一批常用字的简码和词序，加了二字词的 ü 容错码；输入法方面，Rime 包解压即用，形码版可以加词。字根键位没有变。</p>
+<h3 id="_1">拆分</h3>
+<ul>
+<li><strong>新增字根“出”，并入山组（H 键）</strong>：原来拆成“凵 ＋ 山”的 38 个字改拆为出，如 拙 = 扌 ＋ 出、础 = 石 ＋ 出、屈 = 尸 ＋ 出。变码 5 字：出 iurh→iuhh、祟 svrt→svht、粜 tnrz→tnhz（失去三简）、糶、䢺。</li>
+<li><strong>睾的上部归入皿组（E 键）</strong>：原来拆成“丿 ＋ 罒”，现在作为“睾字头”与皿、罒、血同组。睾 gcfu→gceu（失去三简，gcf 给了诰）。</li>
+<li><strong>冒字头（冃）按扁日“曰”拆</strong>：冒、帽、瑁、冕、勖、冔、毷、媢、蝐、艒、赗、焨 共 12 字，如 冒 = 曰 ＋ 目、冕 = 曰 ＋ 免。</li>
+<li>变码：冒 mcrb→mcbb，三简 mcr→mcb；冕 mmrs→mmbs（失去三简）；勖 xuri→xubi（失去三简）；冔 xurc→xubc；毷 mcrg→mcbg。</li>
+<li>连带：昴让出三简 mcb（只剩 mcbi）；瑁得三简 mcr；顼得三简 xur。</li>
+<li><strong>彧按字形拆为 弋 ＋ 口 ＋ 彡</strong>（原拆 戈＋口＋一＋丿＋丿），码不变 yuef。</li>
+<li>现为 129 组字根、408 个根形。</li>
+</ul>
+<h3 id="_2">简码</h3>
+<ul>
+<li><strong>出、处、厨、吃</strong>：一简 i 由“吃”改为“出”，二简 iu 由“出”改为“处”，三简 iuq 给“厨”（原来只有四码）；吃改用三简 iit（嗤只留全码 iitm）。</li>
+<li><strong>只、知、智</strong>：二简 vi 给“只”（单用很多，原来的 vit 不好按）；知改用三简 vih；智只留全码 vihb。vihv 上“智慧”排第一、“只会”第二。</li>
+<li><strong>倒、导</strong>：dck 还给“倒”（同 2.5，原来倒只能打四码 dckg）；导改打全码 dcko（首选）。</li>
+<li><strong>激、浅、附</strong>：jia 给“激”（济改打全码 jian）；qma 给“浅”（同 2.5，潜改打全码 qmab）；fuy 给“附”（夫改打全码 fuyy，仍排第一）。</li>
+<li><strong>煮 vul</strong>（朱改打全码 vull）、<strong>伸 ufk</strong>（什改打全码 ufkc、uikc）、<strong>右 yzc</strong>（友改打全码 yzcq）、<strong>搓 coo</strong>（措改打全码 coob）、<strong>幕 muf</strong>（慕改打全码 mufv）、<strong>景 jkb</strong>（睛改打全码 jkbz）。</li>
+</ul>
+<h3 id="_3">字词</h3>
+<ul>
+<li><strong>ü 单字码字在前</strong>：jv 剧、xv 绪，以及 jvb 居、jvr 巨、jvo 狙、yvz 予、yvl 欲、yvo 羽、yvc 郁，是方便打字的正式码（如居的全码 jubt 不好按），一律单字排第一（3.0 里这些码排在词后）。</li>
+<li><strong>二字词的 ü 容错码</strong>：词频前 20000 的二字词，第一个字是 ju、qu、xu 的可以写成 jv、qv、xv，第二个字是 ju 的可以写成 jv，原码照常可用。如 居然 jurj/jvrj、区域 quyu/qvyu、根据 gfju/gfjv。共 250 个新码；新码上容错词排第一，原有的长词让位。</li>
+<li><strong>三码位让给特别常用的简词</strong>：三码位仍然是字在前，但简词的词频超过字频 1000 倍时简词排第一。共 33 处，原来排第一的都是几乎不用的字，如 nag 哪个、jsu 就算是、dgr 打工人、mgx 没关系、vfb 支付宝、hzm 孩子们、npy 女朋友、kyu 可以说。</li>
+<li><strong>词序按作者实打调整</strong>（33 个码位）：如 jiji 积极、lmxi 练习、tsyi 同意、vfui 真实、duzi 独自、qmli 潜力、guge 谷歌、gowh 过往、jkvy 精准、ourj 偶然、dt 点头、yeyk 夜莺。</li>
+<li><strong>新增词</strong>：催更、等我、当我、幻都、出价、就好、拿钱、小岛、渔夫。</li>
+<li><strong>脯（果脯的 fǔ）不再让给长词</strong>：fuzw 上脯排在“丰收在望”前面。</li>
+</ul>
+<h3 id="_4">输入法</h3>
+<ul>
+<li><strong>解压即用</strong>：Rime 包直接带好 default.custom.yaml，解压到用户文件夹、点“重新部署”就能用，不用再改名或合并配置。V5、形码、单字三个方案都已列好，装几个包、先后顺序都不影响。注意：这会替换用户文件夹里原有的 default.custom.yaml，如果你还用着别的方案，部署后要把它们加回方案列表。</li>
+<li><strong>形码版加词（录词）</strong>：按 Ctrl+Enter 开始录词，照常逐字打出，再按 Ctrl+Enter 结束，录下的字按夜莺词规则存为词（二字 AaAbBaBb、三字 AaBaCa、四字以上 AaBaCaZa）。录词时第一个候选后面显示〔录词：…〕，没有输入时按 Esc 取消；造的词带〔造〕，选中后 Shift+Delete 删除。形码版的词表独立，与 V5 版的造词互不影响。</li>
+<li><strong>Windows 包</strong>改用魔虎当前的运行库（不再需要 onnxruntime.dll）。</li>
+</ul>
+<h2 id="30">夜莺 3.0</h2>
+<p>2026-10-07</p>
 <p>夜莺 3.0 仍然是小鹤双拼加首末字根，编码规则不变：单字全码 = 双拼音码 + 首根 + 末根，二字词取两字双拼，三字词取三字首码。这次主要重排了字根键位，常用字的简码也做了调整。</p>
-<h3 id="_1">字根</h3>
+<h3 id="_5">字根</h3>
 <ul>
 <li><strong>新布局 NB46</strong>：在 2.5 的基础上，46 组字根换了键位，目标是手感更顺、重码更少。“只练改动过的根”可以在字根练习里单独练，题目会提示这个根在 2.x 的键位。</li>
 <li><strong>夭并入天组（Y 键）</strong>：原来拆成“撇 ＋ 大”的 38 个字改拆为夭，如 笑 = ⺮ ＋ 夭、妖 = 女 ＋ 夭。</li>
@@ -36,7 +83,7 @@
 <li>删去已没有字使用的“鱼省”。</li>
 <li>现为 129 组字根、406 个根形。</li>
 </ul>
-<h3 id="_2">单字</h3>
+<h3 id="_6">单字</h3>
 <ul>
 <li><strong>读音即字</strong>：多音字的每个读音当作一个字，按这个读音的字频决定简码和候选顺序。</li>
 <li><strong>一简、二简</strong>沿用 2.5，调整了几处：ui 给“事”（时改为三简 uib），en 给“嗯”，qb 给“勤”（秦改为三简 qbn），yr 给“元”（远改为三简 yrp）。</li>
@@ -44,7 +91,7 @@
 <li><strong>三简</strong>按 3.0 字频重新分配，另有一批作者手动调整（如 游 yza、符 fuh、圆 yrj、型 xkp、攻 gsm、竹 vuh）。</li>
 <li>通用规范汉字表 8105 字中，4476 字的全码有变化（主要是字根换键），三简变化 2022 字，二简变化 10 字。</li>
 </ul>
-<h3 id="_3">字词</h3>
+<h3 id="_7">字词</h3>
 <ul>
 <li>词库沿用 2.5，按 3.0 的字码重新排序。</li>
 <li><strong>字重要</strong>：一、二、三简位上永远是字在前，简词排在字后面。</li>
@@ -94,7 +141,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_4">输入法与工具</h3>
+<h3 id="_8">输入法与工具</h3>
 <ul>
 <li>Rime 包的方案标识去掉了版本号：yeying_v5、yeying_shape、yeying_single。以后升级直接覆盖，不会再留下带旧版本号的文件。</li>
 <li>啾啾工具箱全部换成 3.0 数据：拆分查询、部件反查、字根练习（新增“只练改动过的根”）、字根表、字根图、完整拆分表。</li>
