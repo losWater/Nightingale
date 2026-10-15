@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'lib'))
 from shuangpin import encode
 
-new = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'release/tables/夜莺3.0_NB46_字词表.txt'
+new = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'release/tables/字词表.txt'
 out = Path(sys.argv[2]) if len(sys.argv) > 2 else Path.home() / 'Downloads/夜莺3.0_字词表首选变化报告.csv'
 
 

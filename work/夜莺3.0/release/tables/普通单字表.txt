@@ -1393,10 +1393,10 @@
 嵯	cohm
 矬	cohm
 嵳	cohm
-措	coo
+搓	coo
 措	coob
-搓	coom
 挫	coom
+搓	coom
 撮	cooq
 厝	coq
 厝	coqb
@@ -1668,7 +1668,7 @@
 嶌	dchj
 岛	dcj
 岛	dcjh
-导	dck
+倒	dck
 倒	dckg
 导	dcko
 衜	dcko
@@ -3275,7 +3275,7 @@
 鍑	fuxq
 砆	fuxy
 鈇	fuxy
-夫	fuy
+附	fuy
 附	fuyf
 夫	fuyy
 阝	fuyy
@@ -3409,10 +3409,10 @@
 稁	gcen
 高	gcet
 髙	gcet
+睾	gceu
 膏	gcez
-睾	gcf
+诰	gcf
 诰	gcft
-睾	gcfu
 藁	gcg
 菒	gcgh
 藁	gcgw
@@ -5304,7 +5304,7 @@
 喉	hzth
 糇	hzz
 糇	hzzh
-吃	i
+出	i
 差	ia
 汊	iaa
 汊	iaaa
@@ -5775,7 +5775,7 @@
 歯	iisr
 踟	iist
 齝	iist
-嗤	iit
+吃	iit
 吃	iitb
 噄	iiti
 嗤	iitm
@@ -6036,7 +6036,7 @@
 憧	isvh
 忡	isvn
 隀	isyh
-出	iu
+处	iu
 滁	iua
 滀	iuah
 滁	iual
@@ -6060,8 +6060,10 @@
 蓫	iugl
 触	iugm
 斶	iuh
+出	iuhh
 岀	iuhh
 斶	iuhm
+䢺	iuhy
 绌	iui
 绌	iuih
 竐	iujh
@@ -6086,17 +6088,15 @@
 亍	iup
 亍	iupo
 幮	iupo
-处	iuq
+厨	iuq
 厨	iuqo
 处	iuqv
 琡	iur
 雛	iurd
 芻	iurf
-出	iurh
 琡	iurq
 璴	iurs
 閦	iurx
-䢺	iury
 锄	ius
 躇	iusb
 齭	iush
@@ -6345,7 +6345,7 @@
 矜	jbz
 矜	jbzq
 己	ji
-济	jia
+激	jia
 濈	jiaa
 洎	jiad
 泲	jiaf
@@ -6605,7 +6605,7 @@
 瀞	jkae
 汫	jkag
 泾	jkam
-睛	jkb
+景	jkb
 晶	jkbb
 弪	jkbm
 曔	jkbq
@@ -9923,8 +9923,10 @@
 泖	mca
 渵	mcah
 泖	mcai
-昴	mcb
+冒	mcb
+冒	mcbb
 眊	mcbg
+毷	mcbg
 昴	mcbi
 戼	mcbp
 軞	mccg
@@ -9961,10 +9963,8 @@
 帽	mcpb
 髦	mcpg
 瓱	mcpg
-冒	mcr
+瑁	mcr
 瑁	mcrb
-冒	mcrb
-毷	mcrg
 冃	mcrp
 锚	mcs
 锚	mcsh
@@ -10308,6 +10308,7 @@
 矈	mmbl
 矏	mmbl
 矊	mmbp
+冕	mmbs
 麫	mmcb
 葂	mmgi
 黽	mmhh
@@ -10325,8 +10326,6 @@
 丏	mmp
 丏	mmpb
 靣	mmpt
-冕	mmr
-冕	mmrs
 免	mms
 勉	mmsi
 𩾃	mmss
@@ -10519,7 +10518,7 @@
 亩	mueh
 畆	mueh
 畒	muex
-慕	muf
+幕	muf
 暮	mufb
 募	mufi
 墓	mufm
@@ -13147,7 +13146,7 @@ m	otl
 腔	qlz
 腔	qlzm
 前	qm
-潜	qma
+浅	qma
 潜	qmab
 汘	qmac
 浅	qmae
@@ -14525,6 +14524,7 @@ m	otl
 嵗	svha
 岁	svhf
 亗	svhp
+祟	svht
 绥	svi
 繀	svid
 绥	sviu
@@ -14549,7 +14549,6 @@ m	otl
 髓	svrl
 髄	svrl
 瓍	svrl
-祟	svrt
 鞖	svru
 𬭼	svs
 歳	svsa
@@ -15189,8 +15188,10 @@ m	otl
 迢	tngl
 蓨	tngz
 笤	tnh
+糶	tnhd
 笤	tnht
 岧	tnht
+粜	tnhz
 絩	tnie
 窕	tnj
 窕	tnje
@@ -15211,10 +15212,7 @@ m	otl
 条	tnq
 庣	tnqe
 条	tnqy
-粜	tnr
-糶	tnrd
 脁	tnre
-粜	tnrz
 跳	tns
 跳	tnse
 趒	tnse
@@ -15767,7 +15765,7 @@ m	otl
 宷	ufji
 穼	ufjw
 邥	ufjy
-什	ufk
+伸	ufk
 什	ufkc
 侁	ufke
 伸	ufkh
@@ -16839,7 +16837,7 @@ m	otl
 胀	vhzd
 粻	vhzd
 粀	vhzp
-知	vi
+只	vi
 治	via
 汁	viac
 洷	viaf
@@ -16897,7 +16895,7 @@ m	otl
 藢	vigq
 觗	vigr
 芷	vigs
-智	vih
+知	vih
 智	vihb
 雉	vihd
 劕	vihg
@@ -17367,7 +17365,7 @@ m	otl
 侏	vukl
 住	vukm
 伫	vukp
-朱	vul
+煮	vul
 鼄	vulh
 鴸	vulj
 朱	vull
@@ -19206,7 +19204,9 @@ m	otl
 煦	xub
 晇	xubb
 盱	xubc
+冔	xubc
 旴	xubc
+勖	xubi
 朂	xubi
 暊	xubl
 煦	xubp
@@ -19269,9 +19269,7 @@ m	otl
 欻	xupx
 序	xuq
 序	xuqz
-勖	xur
-冔	xurc
-勖	xuri
+顼	xur
 顼	xurj
 珝	xuro
 珬	xurp
@@ -21124,7 +21122,7 @@ m	otl
 泑	yzai
 浟	yzaq
 湵	yzaq
-友	yzc
+右	yzc
 酉	yzcc
 𬨎	yzcc
 輏	yzcc

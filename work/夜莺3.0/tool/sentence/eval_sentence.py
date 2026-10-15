@@ -11,7 +11,7 @@ from shuangpin import encode
 
 ROOT = Path(__file__).resolve().parents[2]
 TP = Path.home() / 'Downloads/虎整句-Rime-20261001-D89-r3-四档纠错瓢虫版'
-NB46 = ROOT / 'release/tables/夜莺3.0_NB46_普通单字表.txt'
+NB46 = ROOT / 'release/tables/普通单字表.txt'
 NOYJ = Path.home() / 'Downloads/夜莺3.0_NB46_无一简试验版_普通单字表.txt'
 
 G = {}

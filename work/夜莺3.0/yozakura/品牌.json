@@ -1,0 +1,16 @@
+{
+ "说明": "夜桜（自然码）工具箱/练习页配置：YZ_BRAND=yozakura/品牌.json .venv/bin/python release/make_toolbox.py <输出目录>。路径相对本文件。",
+ "名称": "夜桜1.0",
+ "版本": "1.0",
+ "布局名": "ZR27",
+ "布局": "ZR27_layout.json",
+ "单字表": "夜桜_ZR27_普通单字表.txt",
+ "字词表": null,
+ "练习对照": {
+  "名称": "夜莺 3.x",
+  "布局": "../release/NB46_layout.json"
+ },
+ "练习存储": "yozakura_memory_v1",
+ "工具箱名": "夜桜嘤嘤工具箱",
+ "形象": "形象/夜桜Q版.png"
+}

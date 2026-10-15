@@ -14,10 +14,11 @@ N = sum(1 for e in E if e['拼音'] != 'reserved')
 g_of = {r: g for g, rs in META['groups'].items() for r in rs}
 sp = json.load(open(os.environ.get('YZ_SPLITS') or ROOT / 'data/baseline/splits.json', encoding='utf-8'))
 T1, T3 = set(META['tier_indices']['1500']), set(META['tier_indices']['3500'])
-ONE = {(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1}
+ONE = {(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/一二简.json', encoding='utf-8'))['fixed'] if n == 1}
+SCHEME = os.environ.get('YZ_SCHEME', 'xiaohe')   # 双拼方案（夜桜试算用 ziranma）
 path = sys.argv[1]; use_one = (sys.argv[2] if len(sys.argv) > 2 else '1') == '1'
 wr = {}
-for r, (w, c) in enumerate(top_words('xiaohe', 30000), 1): wr.setdefault(c, []).append((r, w))
+for r, (w, c) in enumerate(top_words(SCHEME, 30000), 1): wr.setdefault(c, []).append((r, w))
 pos, codes, k = {}, collections.defaultdict(list), collections.Counter()
 for l in open(path, encoding='utf-8-sig'):
     p = l.rstrip('\n').split('\t')
@@ -25,7 +26,7 @@ for l in open(path, encoding='utf-8-sig'):
     pos[(p[0], p[1])] = k[p[1]]; k[p[1]] += 1; codes[p[0]].append(p[1])
 typed, four = [], 0
 for i in range(N):
-    ch, py = E[i]['词'], E[i]['拼音']; sy = encode(py, 'xiaohe')
+    ch, py = E[i]['词'], E[i]['拼音']; sy = encode(py, SCHEME)
     if use_one and (ch, py) in ONE: continue
     mine = [c for c in codes[ch] if c[:2] == sy]
     if any(len(c) < 4 for c in mine): continue

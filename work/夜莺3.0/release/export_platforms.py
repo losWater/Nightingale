@@ -1,4 +1,4 @@
-"""夜莺 3.0 各平台文本码表导出（格式照夜莺 2.0 106_全平台导出/build.py 的文本部分；Rime 包另做）。
+"""夜莺各平台文本码表导出（版本取 release/版本.json）（格式照夜莺 2.0 106_全平台导出/build.py 的文本部分；Rime 包另做）。
 输入：单字表（3.0 普通单字表去掉符号）、字词表（release/make_ciku.py）、符号表与快符（夜莺 2.5 主表，原样沿用）、拆分（data/baseline/splits.json）。
 输出：普通字词表（有简词/无简词/综合表/普通单字表/快符）、手心（模块化挂接、辅助码）、搜狗挂接、搜狗五笔、冰凌五笔、Bime、说明与核验。
 用法：python release/export_platforms.py [输出目录]
@@ -6,9 +6,11 @@
 import collections, datetime, hashlib, json, re, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / 'release'))
+from config import C
 N25 = Path.home() / 'Nightingale/夜莺2.5'
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / 'Downloads/夜莺3.0_字词表与输入法'
-NAME, VER = '夜莺3.0', '3.0|' + datetime.date.today().strftime('%y%m%d')
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / f'Downloads/{C.NAME}_字词表与输入法'
+NAME, VER = C.NAME, f'{C.V}|' + C.STAMP[2:]
 
 
 def write(p, s, enc='utf-8-sig'):
@@ -19,11 +21,11 @@ def rd(p):
     return [tuple(l.rstrip('\r\n').split('\t')[:2]) for l in open(p, encoding='utf-8-sig') if '\t' in l]
 
 
-SRC = ROOT / 'release/tables/夜莺3.0_NB46_字词表.txt'
+SRC = ROOT / 'release/tables/字词表.txt'
 rows = rd(SRC)
 assert len(rows) == len(set(rows))
 symbols = rd(N25 / '主表/符号表.txt'); symbolset = set(symbols)
-single = [r for r in rd(ROOT / 'release/tables/夜莺3.0_NB46_普通单字表.txt') if r not in symbolset]
+single = [r for r in rd(ROOT / 'release/tables/普通单字表.txt') if r not in symbolset]
 special = {(t, c) for t, c in rows if len(t) == 1} - set(single)          # 彩蛋码、容错码只在字词表里
 single_all = single + sorted(special, key=lambda r: r[1])
 assert {(t, c) for t, c in rows if len(t) == 1} == set(single_all)
@@ -106,7 +108,7 @@ missing = [t for t in chars if t not in splits]
 write(OUT / f'Bime/mb/{NAME}/夜莺.拆分', ''.join(f'{t}\t{" ＋ ".join(p[0] for p in splits[t])}\r\n' for t in chars if t in splits))
 write(OUT / 'Bime/使用说明.txt', f'将mb内的{NAME}文件夹复制到Bime的mb目录，再重载码表、选择{NAME}。最大码长设4。包含快符及全部{len(chars)}字的拆分。没有覆盖个人config.txt或用户调整.txt。旧个人调频可能改变候选顺序。\r\n')
 
-write(OUT / '使用说明.txt', f'{NAME} 码表导出，{datetime.date.today()}：单字（NB46 布局，含手动调整）＋ 词（沿用夜莺2.5词库，按 3.0 字词让位规则重排）＋ 符号表 ＋ 快符。简码位字在前、简词在后。\r\n'
+write(OUT / '使用说明.txt', f'{NAME} 码表导出，{C.DATE}：单字（{C.LAYOUT} 布局，含手动调整）＋ 词（沿用夜莺2.5词库，按 {C.V} 字词让位规则重排）＋ 符号表 ＋ 快符。简码位字在前、简词在后。\r\n'
       '普通字词表：普通=字词在前；码前=编码在前；无简词仍保留四字及以上词。普通表不混入快符，快符单列；各平台码表已包含快符，手心为独立模块。\r\n'
       '搜狗挂接为自定义短语格式，UTF-16LE BOM；不包含四码二字词，删词后保留原序号，让位字从2开始。\r\n'
       '搜狗五笔为编码TAB字词，UTF-8。冰凌为UTF-16LE BOM专用文本词库。\r\n手心挂接使用UTF-8；Bime使用UTF-8 BOM、CRLF。\r\n'

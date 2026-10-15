@@ -98,7 +98,8 @@ assert not any(len(l.split('\t')[1]) == 1 for l in lines), '码表里不应有�
 fill = json.load(open(Path(__file__).resolve().parents[2] / 'data/inputs/整句空二码.json', encoding='utf-8'))['二简']
 used = {l.split('\t')[1] for l in lines}
 for code, ch in fill.items():
-    assert code not in used, f'{code} 不是空码'
+    if code in used:                                 # 正式码表后来给这个二码上了字（如 xy 训）：以正式码表为准，不再补
+        print(f'  整句空二码 {code}={ch} 跳过：正式码表已占用'); continue
     assert any(l.split('\t') == [ch, c] for l in lines for c in [l.split('\t')[1]] if c[:2] == code), f'{ch} 没有以 {code} 开头的码'
     lines.append(f'{ch}\t{code}')
 # 腾出的三码：下放字整句里只用二码，原三码转给同前缀最常用的全码字

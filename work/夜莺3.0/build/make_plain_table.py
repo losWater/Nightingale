@@ -4,7 +4,7 @@
 - 8105 核心字全部读音：全码 + 简码（一二简=固定沿用2.5；三简=引擎退火时自动分配，暂定）。
 - 扩展字（2.5 单字表中 8105 以外的字）：2.5 正式全码的音节（小鹤→自然码）+ 新布局首末根键；无简码。
 - 符号表：沿用 2.5 原码。
-- 手动三简（可选，环境变量 YZ_MANUAL 指向 data/inputs/3.0手动调整.json）：指定三码只给指定字，原占位字退回全码。
+- 手动三简（可选，环境变量 YZ_MANUAL 指向 data/inputs/手动调整.json）：指定三码只给指定字，原占位字退回全码。
 - 二简字补三码：有二简的读音，若其全码前三码在整张表里没有任何字，就把该字也放上去（二码、三码同字）。
 同码候选序：
 - 简码位：按引擎候选位。
@@ -100,15 +100,18 @@ def main(run_dir, out_dir, scheme='ziranma'):
     # ---- 手动三简（可选）----
     manual = os.environ.get('YZ_MANUAL')
     if manual:
-        for code2, ch, _ in json.load(open(manual, encoding='utf-8')).get('二简', []):
-            idx = next(i for i, r in enumerate(rows) if r[0] == ch and r[1][:2] == code2)   # 该读音
+        _m = json.load(open(manual, encoding='utf-8'))
+        for code2, ch, _ in _m.get('一简', []) + _m.get('二简', []):   # 一简与二简同样处理（一简只在作者个人调整里用过）
+            n2 = len(code2)
+            idx = next(i for i, r in enumerate(rows) if r[0] == ch and r[1][:n2] == code2)   # 该读音
             old = [x for _, x in slots.get(code2, [])]
             slots[code2] = [((0, 0, 0, -1), ch)]
             for c, v in slots.items():
-                if len(c) == 4 and c[:2] == code2:
+                if len(c) == 4 and c[:n2] == code2:
                     slots[c] = [((k[0], 1 if x == ch else (0 if x in old else k[1]), k[2], k[3]), x) if k[0] == 0 else (k, x) for k, x in v]
-            two_short[:] = [t for t in two_short if not (t[3][:2] == code2 and t[2] in old)] + [(0, idx, ch, rows[idx][1])]
-            print('手动二简', code2, ch, '（原', ''.join(old) or '空', '）')
+            if n2 == 2:
+                two_short[:] = [t for t in two_short if not (t[3][:2] == code2 and t[2] in old)] + [(0, idx, ch, rows[idx][1])]
+            print('手动一简' if n2 == 1 else '手动二简', code2, ch, '（原', ''.join(old) or '空', '）')
         for code3, ch, _ in json.load(open(manual, encoding='utf-8'))['三简']:
             assert any(c[:3] == code3 and len(c) == 4 and ch in [x for _, x in v] for c, v in slots.items()), (code3, ch)
             old = [x for _, x in slots.get(code3, [])]
@@ -118,6 +121,10 @@ def main(run_dir, out_dir, scheme='ziranma'):
                 if len(c) == 4 and c[:3] == code3:
                     slots[c] = [((k[0], 1 if x == ch else (0 if x in old else k[1]), k[2], k[3]), x) if k[0] == 0 else (k, x) for k, x in v]
             print('手动三简', code3, ch, '（原', ''.join(old) or '空', '）')
+        # 自定义码（作者 2026-10-15）：不按“音码＋首根”的码，如 吃 iio；该码上原有的字不动，排在它后面
+        for code, ch, _ in json.load(open(manual, encoding='utf-8')).get('自定义码', []):
+            slots[code] = [((-1, 0, 0, 0), ch)] + [e for e in slots.get(code, []) if e[1] != ch]
+            print('自定义码', code, ch)
 
     # ---- 二简字补三码（2026-10-02 作者定）：三码位空着才补 ----
     filled = 0

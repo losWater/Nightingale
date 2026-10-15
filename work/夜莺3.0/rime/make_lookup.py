@@ -14,7 +14,7 @@ table, out = Path(sys.argv[1]), Path(sys.argv[2])
 use_one = (sys.argv[3] if len(sys.argv) > 3 else '1') == '1'
 E = yaml.load(open(ROOT / 'build/out/n30/elements.yaml', encoding='utf-8'), Loader=getattr(yaml, 'CSafeLoader', yaml.SafeLoader))
 splits = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
-ONE = {(c, p): None for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1}
+ONE = {(c, p): None for c, p, n in json.load(open(ROOT / 'data/inputs/一二简.json', encoding='utf-8'))['fixed'] if n == 1}
 
 codes = collections.defaultdict(list)
 for l in open(table, encoding='utf-8-sig'):

@@ -6,7 +6,7 @@
 - 夜桜字音基准（data/inputs/夜桜字音基准.json）：新分读音频率。
 
 改动：
-1. 根组：戈 += 戈无点；止 += 正；天组 += 夭、母组 += 父（2026-10-05）；鱼省 移除（2.5 无）；水火合组（锚定）；车(东)+西合组（锚定）；
+1. 根组：戈 += 戈无点；止 += 正；天组 += 夭、母组 += 父（2026-10-05）；山组 += 出、皿组 += 睾字头（2026-10-15）；鱼省 移除（2.5 无）；水火合组（锚定）；车(东)+西合组（锚定）；
    虫、𠀐 自 鸟／虫 组拆出为新组（与鸟组互斥，由目标函数约束）。
 2. 元素：首末根按 2.5 拆分重映射到新根组；音码换自然码；频率 = 夜桜自然频率；按读音频率降序（读音即字）。
 3. 分层：前 N = 前 N 字主读音 + 频率 ≥ 第 N 字的次要读音；写入各 tier 的 top。
@@ -36,6 +36,8 @@ def load(p):
 groups = {f"G{g['序号']:03d}": list(g['根形']) for g in load(F54 / '当前完整根表.json')['根组']}
 groups['G094'].append('戈无点')
 groups['G104'].append('正')
+groups['G124'].append('睾字头')               # 2026-10-15 作者：睾的上部（原拆为 丿＋罒）并入皿／血组
+groups['G100'].append('出')                   # 2026-10-15 作者：出（原拆为 凵＋山）并入山组
 groups['G065'].append('夭')                   # 2026-10-05 群友建议、作者同意：夭归并入天组（原拆为 撇＋大）
 groups['G007'].append('父')                   # 2026-10-05 作者：父归并入母组（原拆为 八＋㐅；交系下部同改）
 for _g, _rs in json.loads(os.environ.get('YZ_EXTRA_ROOTS', '{}')).items():   # 试算：追加归并根 {组: [根…]}
@@ -64,7 +66,7 @@ assert all(layout.values()), [g for g, k in layout.items() if not k]
 E54 = yaml.safe_load(open(F54 / 'elements.yaml', encoding='utf-8'))
 basis = {(r['字'], r['拼音']): r for r in load(ROOT / 'data/inputs/夜桜字音基准.json')}
 fixed_short = {(e['词'], e['拼音']): e['简码长度'] for e in E54 if e.get('简码长度')}
-FIX_PATH = ROOT / os.environ.get('YZ_FIX', 'data/inputs/2.5一二简固定.json')   # 3.0 起用 data/inputs/3.0一二简.json
+FIX_PATH = ROOT / os.environ.get('YZ_FIX', 'data/inputs/2.5一二简固定.json')   # 3.0 起用 data/inputs/一二简.json
 USE_FIX25 = '"fix25": true' in (sys.argv[2] if len(sys.argv) > 2 else '')
 if USE_FIX25:   # 作者 2026-09-30：固定夜莺2.5 全部一简、二简（码为本字音节前缀者）
     fixed_short = {(c, py): n for c, py, n in load(FIX_PATH)['fixed']}
@@ -98,6 +100,9 @@ for l in open(N25 / '产物/综合字词表.txt', encoding='utf-8-sig'):
 # 2026-10-02：3.0 起嗯补了 en 读音并列为正式二简，此时不再留给词
 if ('嗯', 'en') not in fixed_short:
     _word2.setdefault('en', '嗯')
+if SCHEME != 'xiaohe':   # 词的二码是声母缩写，与双拼无关；只需让出本方案下单字二简的码
+    for _c in {encode(py, SCHEME) for (c, py), n in fixed_short.items() if n == 2}:
+        _word2.pop(_c, None)
 _have = {''.join(x['element'][2:] for x in e['元素序列']) for e in reserved}
 for code, word in sorted(_word2.items()):
     if code not in _have:
@@ -147,7 +152,10 @@ for k in KEYS:
     m[f'P_{k}'] = k
 _mc = float((json.loads(sys.argv[2]) if len(sys.argv) > 2 else {}).get('move_cost', 0))
 # 换键代价（作者 2026-10-01）：留在夜莺2.5 原键得 0，换到其他键得 move_cost（经引擎正则化计入目标）
-cfg['generated_mapping_space'] = {g: [{'value': k, 'score': 0.0 if k == layout[g] else _mc} for k in KEYS] for g in groups}
+_mb = layout   # YZ_MOVE_BASE=<form.json>：换键代价改为相对该布局（夜桜：相对 3.1 NB46）
+if os.environ.get('YZ_MOVE_BASE'):
+    _mb = {g: load(os.environ['YZ_MOVE_BASE'])['mapping'][g] for g in groups}
+cfg['generated_mapping_space'] = {g: [{'value': k, 'score': 0.0 if k == _mb[g] else _mc} for k in KEYS] for g in groups}
 cfg['optimization']['objective']['regularization_strength'] = 1.0
 cfg['generated_mapping_space'].update({f'P_{k}': [{'value': k, 'score': 0.0}] for k in KEYS})
 obj = cfg['optimization']['objective']

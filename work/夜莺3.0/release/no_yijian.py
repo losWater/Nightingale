@@ -16,8 +16,19 @@ L = getattr(yaml, 'CSafeLoader', yaml.SafeLoader)
 E = yaml.load(open(ROOT / 'build/out/n30/elements.yaml', encoding='utf-8'), Loader=L)
 FR = {(e['词'], e['拼音']): e['频率'] for e in E if e['拼音'] != 'reserved'}
 TOT = sum(FR.values())
-ONE = [(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1]
+_FIX = [(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/一二简.json', encoding='utf-8'))['fixed'] if n == 1]
+_PY = {}
+for r in json.load(open(ROOT / 'data/inputs/字音基准.json', encoding='utf-8-sig')): _PY.setdefault(r['字'], []).append(r['拼音'])
 src, outdir = Path(sys.argv[1]), Path(sys.argv[2])
+# 一简字以输入表为准（作者个人版可能改了一简，如 b 边）：每个一码位的首字，读音取一二简表里的，没有就取字音基准里首字母对得上的
+_first = {}
+for l in open(src, encoding='utf-8-sig'):
+    p = l.rstrip('\n').split('\t')
+    if len(p) >= 2 and len(p[1]) == 1: _first.setdefault(p[1], p[0])
+ONE = []
+for k, ch in sorted(_first.items()):
+    py = next((p for c, p in _FIX if c == ch and encode(p, 'xiaohe')[0] == k), None) or next(p for p in _PY.get(ch, []) if encode(p, 'xiaohe')[0] == k)
+    ONE.append((ch, py))
 outdir.mkdir(parents=True, exist_ok=True)
 
 

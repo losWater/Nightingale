@@ -16,7 +16,7 @@ L = getattr(yaml, 'CSafeLoader', yaml.SafeLoader)
 E = yaml.load(open(ROOT / 'build/out/n30/elements.yaml', encoding='utf-8'), Loader=L)
 META = json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))
 N = sum(1 for e in E if e['拼音'] != 'reserved')
-ONE = {(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/3.0一二简.json', encoding='utf-8'))['fixed'] if n == 1}
+ONE = {(c, p) for c, p, n in json.load(open(ROOT / 'data/inputs/一二简.json', encoding='utf-8'))['fixed'] if n == 1}
 TIGER = Path(sys.argv[2] if len(sys.argv) > 2 else Path.home() / 'Downloads/虎码秃版 鼠须管 （Mac）')
 
 CB = ['前1500', '1500–3500', '3500–6000', '6000后']
