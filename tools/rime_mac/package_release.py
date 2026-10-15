@@ -51,23 +51,23 @@ def main():
                 raise ValueError('Refuse personal/generated runtime data: '+rel)
             files[rel] = path.read_bytes()
         files.update(attribution)
-        files['default.custom.yaml.example'] = ('patch:\n  schema_list:\n    - schema: '+schema+'\n').encode()
+        # 用户只会“解压到用户文件夹 + 重新部署”：直接附可用的 default.custom.yaml，三个包内容相同、都列出全部三个方案，
+        # 先后装几个包都不会互相挡住；没装的方案部署时只在日志里记一行 missing input schema，不影响使用。
+        files['default.custom.yaml'] = ('patch:\n  schema_list:\n    - schema: yeying25_v5\n    - schema: yeying25_shape\n    - schema: yeying25_single\n').encode()
         original = (ROOT/folder/'README.md').read_text()
         files['FEATURES.md'] = original.encode()
         files['README.md'] = (f'# 夜莺 {VERSION} · {title}\n\n'
             '**只建议使用 V5 版本。V5 模型：强烈推荐。**\n\n'
             '本次发行针对 macOS 鼠须管。V5 引擎限 Apple Silicon；Windows、Intel Mac、手机未验证，不是通用安装包。\n\n'
             '## 安装与升级\n\n先通过鼠须管菜单打开用户文件夹，备份整个目录。'
-            '将本包 YAML、lua/ 及（V5 包的）yeying25_v5/ 合并复制进去。'
-            '不要删除或替换自己的用户词库、钉选数据和 yeying25_v5/config 学习数据。\n'
-            f'参考 default.custom.yaml.example，将 `{schema}` 加入已有 patch/schema_list；'
-            '已有其他输入方案的不要整份覆盖 default.custom.yaml。'
-            'squirrel.custom.yaml.example 是横排候选补丁，同样只合并需要的设置。\n'
-            '执行“重新部署”，然后切换到本包方案。V5 更新原生库后须完全退出并重启鼠须管。'
+            '把整个包解压到用户文件夹（同名文件覆盖），然后点“重新部署”，用 Control+反引号 切换到夜莺方案。'
+            '包里的 default.custom.yaml 已经列好夜莺的三个方案（V5、形码、形码单字），装几个包、先后顺序都不影响。'
+            '用户词库、钉选数据和 yeying25_v5/config 学习数据不在包里，不会被覆盖。'
+            'squirrel.custom.yaml.example 是可选的横排候选样式，不用也能正常使用。\n'
+            'V5 更新原生库后须完全退出并重启鼠须管。'
             '若系统隔离阻止动态库加载，先确认下载来自夜莺官方 Release，'
             '仅针对用户目录中本包的 yeying25_v5/runtime 解除隔离，不关闭全局系统保护。\n\n'
-            '功能详情见 FEATURES.md；V5 的来源、模型说明另见 V5-README.md。'
-            '各包只默认启用自己的一个方案。\n\n'
+            '功能详情见 FEATURES.md；V5 的来源、模型说明另见 V5-README.md。\n\n'
             '## 原作者与声明\n\n魔虎原作者 **fcxxxz**：https://github.com/fcxxxz/rime-mohu 。'
             'V5 模型、原生引擎及相关 Lua 为魔虎原作，不是夜莺原创。'
             '夜莺提供码表、词图与适配；上游声明和许可证完整保存在 attribution/ 与 LICENSE-mohu。\n').encode()

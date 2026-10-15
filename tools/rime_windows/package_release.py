@@ -103,6 +103,9 @@ def main():
             files.update({home + '/' + n: data for n, data in runtime.items()})
         title = {'v5': 'V5 版（强烈推荐）', 'shape': '形码版', 'single': '形码单字版'}[flavor]
         files['weasel.custom.yaml.example'] = b'patch:\n  "style/horizontal": true\n'
+        # 用户只会“解压到用户文件夹 + 重新部署”：直接附可用的 default.custom.yaml（三个包相同，列出全部三个方案）
+        files.pop('default.custom.yaml.example', None)
+        files['default.custom.yaml'] = ('patch:\n  schema_list:\n' + ''.join(f'    - schema: {schema.rsplit("_", 1)[0]}_{f}\n' for f in ('v5', 'shape', 'single'))).encode()
         files['README.md'] = (f'# 夜莺 {args.version} · Windows {title}\n\n'
             '**只建议使用 V5 版本。V5 模型：强烈推荐。**\n\n'
             '平台：Windows x64，小狼毫 0.17.4 官方版。V5 原生库不支持 32 位或原生 ARM64 宿主。'
@@ -110,13 +113,10 @@ def main():
             '## 安装与升级\n\n'
             '1. 安装官方小狼毫 0.17.4：https://github.com/rime/weasel/releases/tag/0.17.4 。\n'
             '2. 从小狼毫菜单打开“用户文件夹”，先完整备份。退出小狼毫算法服务后再更新文件。\n'
-            '3. 将包内 YAML 文件和 lua/ 合并复制到用户文件夹' + (f'；V5 还须复制整个 {home}/。' if home else '。') +
-            '不要多套一层文件夹，不要将文件放进小狼毫程序目录，不替换程序的 rime.dll。\n'
-            '4. 不覆盖自己的词库、钉选数据' + (f'、{home}/config/ 学习记录。' if home else '。') +
-            f'参考 default.custom.yaml.example，把 `{schema}` 加入现有 patch/schema_list；'
-            '首次安装且没有 default.custom.yaml 时，可复制示例并去掉 .example。\n'
-            '5. 横排候选参考 weasel.custom.yaml.example，合并到已有 weasel.custom.yaml；不要整份覆盖自定义设置。\n'
-            '6. 启动小狼毫并执行“重新部署”，Ctrl+` 切换到夜莺方案。更新 V5 DLL 后必须重启算法服务，'
+            '3. 把整个包解压到用户文件夹（同名文件覆盖），不要多套一层文件夹，不要放进小狼毫程序目录。\n'
+            '4. 执行“重新部署”，Ctrl+` 切换到夜莺方案。包里的 default.custom.yaml 已列好夜莺的三个方案，装几个包、先后顺序都不影响；'
+            '用户词库、钉选数据' + (f'和 {home}/config/ 学习记录' if home else '') + '不在包里，不会被覆盖。'
+            'weasel.custom.yaml.example 是可选的横排候选样式，不用也能正常使用。更新 V5 DLL 后必须重启算法服务，'
             '仅重新部署不足以替换已加载的 DLL。\n\n'
             '## 功能与来源\n\n'
             'V5：固定码序＋本地整句模型；形码：四码、五码顶屏；形码单字：单字与夜莺快符、手动确认。'

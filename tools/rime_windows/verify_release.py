@@ -60,7 +60,7 @@ def main():
         for n, digest in manifest['files'].items():
             assert hashlib.sha256((stage / n).read_bytes()).hexdigest() == digest
         schema = manifest['schema']
-        shutil.copy2(stage / 'default.custom.yaml.example', stage / 'default.custom.yaml')
+        # 只做用户会做的事：解压 + 部署（不复制、不改名任何文件）
         inputs, commits, sentence, punct = release_checks.checks(stage, schema)   # 测试码取自包内码表，不写死版本
         run = subprocess.run([str(args.probe.resolve()), str(stage), schema, '--deploy', *inputs],
                              env=env, capture_output=True, timeout=300)
@@ -78,8 +78,10 @@ def main():
             assert sentence[1] in stdout
             assert any(l.startswith(f'SOURCE\t{sentence[0]}\t') and l.endswith('\tV5') for l in stdout.splitlines())
             assert f'COMMIT\t{sentence[0]}{{space}}\t{sentence[1]}' in stdout
-        errors = [p for p in stage.rglob('*') if p.is_file() and '.ERROR.' in p.name and p.stat().st_size]
-        assert not errors, [(str(p), p.read_text(encoding='utf-8', errors='replace')[-12000:]) for p in errors]
+        assert schema in release_checks.deployed_schemas(stage), ('解压部署后方案不在切换列表里', schema)
+        errors = [l for p in stage.rglob('*') if p.is_file() and '.ERROR.' in p.name for l in p.read_text(encoding='utf-8', errors='replace').splitlines()
+                  if l.startswith('E') and 'missing input schema' not in l]
+        assert not errors, errors[-50:]
         results.append(dict(asset=entry, schema=schema, passed=True, keys=inputs))
     report = dict(platform='Windows x64', weasel='0.17.4', engine_sha256=hashlib.sha256(dll.read_bytes()).hexdigest(),
                   installer_url=url, installer_sha256=hashlib.sha256(installer.read_bytes()).hexdigest(),

@@ -62,3 +62,25 @@ def checks(stage, schema):
                     punct.append((c + '.', top + '。'))
         inputs += [k for k, _ in punct]
     return inputs, commits, sentence, punct
+
+
+def deployed_schemas(stage):
+    """部署后用户在切换菜单里能看到的方案：build/default.yaml 列出、且 build/ 里真的编译出了该方案。"""
+    text = (Path(stage) / 'build/default.yaml').read_text(encoding='utf-8')
+    block = text.split('\nschema_list:\n', 1)[1]
+    out = []
+    for line in block.splitlines():
+        m = re.fullmatch(r'\s+- schema: (\S+)', line)
+        if not m: break
+        out.append(m.group(1))
+    return [s for s in out if (Path(stage) / 'build' / f'{s}.schema.yaml').exists()]   # 列出且真的编译出来了
+
+
+def deploy_errors(stage):
+    """部署/运行日志里的错误；方案列表里列了但没装的方案（missing input schema）不算错。"""
+    bad = []
+    for log in Path(stage).glob('*ERROR*'):
+        for line in log.read_text(errors='replace').splitlines():
+            if line.startswith('E') and 'missing input schema' not in line:
+                bad.append(line)
+    return bad
