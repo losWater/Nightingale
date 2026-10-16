@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="夜桜 1.0，夜莺的自然码版：夜莺 3.1 的字根与拆分，配自然码双拼。">
+  <meta name="theme-color" content="#1c1520">
+  <title>夜桜 · 夜莺的自然码版</title>
+  <link rel="icon" href="../bird.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    :root{--bg:#1c1520;--panel:#261c2b;--text:#f1e9ee;--muted:#b4a3ad;--line:#3d2f40;--accent:#f2b6cc;--button:#f0bfd2;--ink:#3a1d2b;--moon:#f3dbe5}
+    :root[data-theme=light]{--bg:#faf3f5;--panel:#f3e6eb;--text:#3b2433;--muted:#7a5d6b;--line:#e6d2da;--accent:#a8466e;--button:#a8466e;--ink:#fff;--moon:#f2d6e0}
+    ::selection{background:#c9739a}
+    .character-frame{background:#fff;border-color:#e8b9cb88}
+    .character-art figcaption small{color:#d58aa8}
+    .moved{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+    .moved li{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--panel);display:flex;flex-direction:column;gap:2px}
+    .moved b{font-family:var(--serif);font-size:20px;font-weight:500}.moved small{color:var(--muted);font-size:11px;min-height:1.6em}
+    .moved span{font:12px var(--sans);letter-spacing:1px;color:var(--muted)}.moved em{font-style:normal;color:var(--accent);font-weight:600}
+    .compare{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+    .compare th,.compare td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+    .compare th[scope=row]{text-align:left;font-weight:400;color:var(--muted)}.compare thead th{font-weight:600}
+    .compare td:nth-child(2){color:var(--accent);font-weight:600}
+    .sibling{display:inline-block;margin-top:14px;font-size:12px;color:var(--muted)}.sibling:hover{color:var(--accent)}
+  </style>
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="header"><a class="brand" href="#">夜桜<span>YOZAKURA</span></a>
+    <nav aria-label="主导航"><a href="#learn">开始学习</a><a href="#tools">查询与练习</a><a href="#diff">与夜莺的区别</a><a href="#download">下载</a><a href="../index.html">夜莺 ↗</a></nav>
+    <div class="header-end"><a href="https://github.com/losWater/Yozakura" class="github">GitHub ↗</a><button id="theme" type="button" aria-label="切换至浅色模式" title="切换明暗模式">☼</button></div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> 夜桜 1.0 · 夜莺的自然码版</div>
+        <h1 id="hero-title">夜桜<span>同一套字根，<br>换一种双拼。</span></h1>
+        <p class="intro">夜莺 3.1 的字根与拆分 · 自然码双拼</p>
+        <p class="principles">乱序字根 <i>·</i> 拆分直观 <i>·</i> 常用字无重 <i>·</i> 常用字词避重</p>
+        <div class="actions"><a class="button primary" href="#learn">开始学习 <span>→</span></a><a class="button secondary" href="#download">下载码表 <span>↓</span></a></div>
+        <a class="quiet-link" href="tools/split.html">已经在用了？查一个字的拆分 ↗</a><br>
+        <a class="sibling" href="../index.html">用小鹤双拼？请看夜莺 ↗</a>
+      </div>
+      <figure class="hero-art character-art">
+        <div class="character-frame"><img src="yozakura-chibi.jpg" alt="Q版夜桜：深紫长发、樱花和服，捧着发光的“桜”字键帽，周围飘着樱花花瓣" width="900" height="900" fetchpriority="high"></div>
+        <figcaption>夜色里，樱花落在指尖。<small>YOZAKURA · 夜桜</small></figcaption>
+      </figure>
+    </section>
+    <section class="features" aria-label="方案特点">
+      <article><span class="feature-number">01 / 同源</span><h2>与夜莺同根</h2><p>字根、归并、拆分与夜莺 3.1 完全相同，<br>夜莺改动时夜桜同步更新。</p></article>
+      <article><span class="feature-number">02 / 双拼</span><h2>自然码音码</h2><p>音码用自然码双拼。<br>为配合自然码，27 组字根换了键。</p></article>
+      <article><span class="feature-number">03 / 单字</span><h2>常用字无重</h2><p>前 1500 字选重为 0，<br>前 6000 字加权选重率 0.011%。</p></article>
+      <article><span class="feature-number">04 / 字词</span><h2>常用字词避重</h2><p>有简码的字在全码位让给词。<br>高频字词全码冲突 72 对降到 0。</p></article>
+    </section>
+    <section class="section learn" id="learn">
+      <div class="section-heading"><div><span class="eyebrow">GET STARTED</span><h2>从读音出发，用字形落笔。</h2></div><p>会自然码双拼，就有了熟悉的起点。<br>接下来，认识字根，练习拆分。</p></div>
+      <div class="learn-layout"><div class="formula"><span class="tiny-label">单字全码 · 四键成字</span><div class="keys"><kbd>a</kbd><kbd>b</kbd><span>＋</span><kbd>x</kbd><kbd>y</kbd></div><div class="key-labels"><span>自然码音码</span><span>首根</span><span>末根</span></div><p>先取读音，再取规范拆分的首、末字根。<br>常用字还可以使用一至三简；二字词取两字双拼，三字词取三字首码。规则与夜莺相同，只是音码换成自然码。</p><a href="https://github.com/losWater/Yozakura/blob/main/docs/夜桜自然码.md">阅读夜桜的设计记录 ↗</a></div>
+        <div class="steps"><div class="practice-companion"><img src="yozakura-chibi.jpg" alt="Q版夜桜捧着桜字键帽" width="900" height="900" loading="lazy"><p>从一个字根开始，<br>慢慢熟悉每一个键位。</p></div><a href="tools/roots.html"><span>01</span><div><h3>认识字根</h3><p>查看键位分布，找到每个字根的位置。</p></div><b>↗</b></a><a href="tools/root-practice.html"><span>02</span><div><h3>练熟键位</h3><p>字根练习按题数间隔复习；夜莺用户可以只练换了键的根。</p></div><b>↗</b></a><a href="tools/split.html"><span>03</span><div><h3>开始拆字</h3><p>遇到不会拆的字随时查询，看拆分与可用编码。</p></div><b>↗</b></a></div></div>
+      <details class="scope"><summary>“常用字无重”的统计口径</summary><p>与夜莺官网同一口径，按 夜桜 1.0 字词表与多来源字频重算：每字取主读音最短入口，前 1500 字选重为 0，前 3000 字合计 1，前 6000 字合计 205、按字频加权选重率 0.011%。字词冲突取字频前 1500 的字与虎码词库词频前 10000 的多字词，全码同码 72 对，剔除有简码的字后为 0。</p></details>
+    </section>
+    <section class="section" id="tools"><div class="section-heading"><div><span class="eyebrow">YOUR TOOLBOX</span><h2>遇到一个字，就来这里。</h2></div><p>查询与练习，随时打开。<br>都在浏览器本地运行，不需要联网。</p></div>
+      <div class="tool-grid"><a class="tool-card" href="tools/split.html"><span class="tool-glyph">拆</span><h3>拆分查询 <b>↗</b></h3><p>查汉字的规范拆分与全部编码，也可以输入编码查候选。</p></a><a class="tool-card" href="tools/components.html"><span class="tool-glyph">根</span><h3>部件反查 <b>↗</b></h3><p>从熟悉的部件出发，按首根、末根找到目标字。</p></a><a class="tool-card" href="tools/root-chart.html"><span class="tool-glyph">图</span><h3>字根图 <b>↗</b></h3><p>整张键盘上的字根分布，适合打印或放在手边。</p></a><a class="tool-card" href="tools/toolbox.html"><span class="tool-glyph">箱</span><h3>夜桜嘤嘤工具箱 <b>↗</b></h3><p>以上全部合在一个页面里，含完整拆分表，可下载离线用。</p></a></div>
+    </section>
+    <section class="section" id="diff"><div class="section-heading"><div><span class="eyebrow">FROM NIGHTINGALE</span><h2>从夜莺过来，只要记住这些。</h2></div><p>拆分、简码规则都不变。<br>27 组字根换了键，其余 102 组与夜莺 3.1 相同。</p></div>
+      <ul class="moved"><li><b>折</b><small>乙、弓、飞</small><span>B → <em>N</em></span></li><li><b>日</b><small>目、曰</small><span>B → <em>D</em></span></li><li><b>音</b><small></small><span>D → <em>G</em></span></li><li><b>片</b><small>丬、爿、北字旁…</small><span>E → <em>U</em></span></li><li><b>夕</b><small>然左角、歹、夜下角…</small><span>F → <em>L</em></span></li><li><b>耳</b><small></small><span>F → <em>D</em></span></li><li><b>艹</b><small>卅、卌、带字头…</small><span>G → <em>F</em></span></li><li><b>田</b><small>由、甲、申…</small><span>H → <em>M</em></span></li><li><b>鸟</b><small>鸟省、乌、鳥</small><span>J → <em>V</em></span></li><li><b>已</b><small>巳、巴、己…</small><span>K → <em>Z</em></span></li><li><b>辶</b><small>廴</small><span>L → <em>W</em></span></li><li><b>衣</b><small>𧘇、襄、襄省</small><span>L → <em>C</em></span></li><li><b>土</b><small>士、壬</small><span>M → <em>Z</em></span></li><li><b>工</b><small>𢀖</small><span>M → <em>O</em></span></li><li><b>寸</b><small>丁、可、才</small><span>O → <em>K</em></span></li><li><b>鬼</b><small></small><span>P → <em>N</em></span></li><li><b>以</b><small></small><span>R → <em>Q</em></span></li><li><b>艮</b><small>即字旁</small><span>S → <em>O</em></span></li><li><b>定字底</b><small>畏下、疋、龰…</small><span>S → <em>X</em></span></li><li><b>示</b><small></small><span>T → <em>V</em></span></li><li><b>匕</b><small>比左、七、𠤎</small><span>U → <em>S</em></span></li><li><b>马</b><small>馬、缶、牛…</small><span>V → <em>G</em></span></li><li><b>石</b><small></small><span>X → <em>P</em></span></li><li><b>韦</b><small></small><span>X → <em>C</em></span></li><li><b>月</b><small>⺝、用、甬字底</small><span>Z → <em>B</em></span></li><li><b>米</b><small></small><span>Z → <em>H</em></span></li><li><b>予</b><small>矛</small><span>Z → <em>B</em></span></li></ul>
+      <div class="section-heading" style="margin-top:46px"><div><h2 style="font-size:22px">与夜莺 3.1 同口径对比</h2></div><p>两边都按各自的正式字词表重算。</p></div>
+      <table class="compare"><thead><tr><th></th><th scope="col">夜桜 1.0</th><th scope="col">夜莺 3.1</th></tr></thead><tbody><tr><th scope="row">前 1500 字选重</th><td>0</td><td>0</td></tr><tr><th scope="row">前 3000 字选重</th><td>1</td><td>1</td></tr><tr><th scope="row">前 6000 字加权选重率</th><td>0.011%</td><td>0.009%</td></tr><tr><th scope="row">前 6000 字加权键长</th><td>3.21</td><td>3.22</td></tr><tr><th scope="row">前 1500 字无简码的字</th><td>108</td><td>114</td></tr><tr><th scope="row">字词全码同码 → 剔除有简码的字</th><td>72 → 0</td><td>62 → 0</td></tr></tbody></table>
+      <p style="font-size:13px;color:var(--muted)">夜莺手动定的简码，夜桜按同一读音换算成自然码照搬；个别经作者复核不照搬的，记录在设计记录里。</p>
+    </section>
+    <section class="section download" id="download"><div><span class="eyebrow">MAKE IT YOURS</span><h2>把夜桜带到你的键盘。</h2><p>选择你使用的系统，下载对应输入法包。</p><div class="version"><span class="status-dot"></span> 夜桜 1.0 <span class="divider">/</span> 2026-10-16 发布</div><a class="quiet-link" href="https://github.com/losWater/Yozakura/releases/tag/yozakura-v1.0">查看发布页与全部附件 ↗</a></div><div><p>请按操作系统下载，Windows 与 Mac 包不能混装。已经装了夜莺也没关系：夜桜的方案名和文件名都和夜莺分开，两个可以并存。</p><h3>macOS · 鼠须管</h3><p>V5 限 Apple Silicon。</p><div class="download-list"><a href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/Yozakura-Rime-1.0-mac-v5-20261015.zip"><span>Mac · Rime V5 版（推荐）<small>Apple Silicon · 魔虎 V5 本地整句模型 · 自然码</small></span><b>↓</b></a><a href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/Yozakura-Rime-1.0-mac-shape-20261015.zip"><span>Mac · Rime 形码版<small>鼠须管 · 无模型 · 四码、五码顶屏</small></span><b>↓</b></a><a href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/Yozakura-Rime-1.0-mac-single-20261015.zip"><span>Mac · Rime 形码单字版<small>鼠须管 · 单字练习</small></span><b>↓</b></a></div><a class="quiet-link" href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/SHA256SUMS-mac-20261015.txt">Mac 校验值 ↗</a><h3>Windows · 小狼毫</h3><p>Windows 包即将提供，完成后会出现在发布页。</p><h3>其他输入法与工具</h3><div class="download-list"><a href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/Yozakura-1.0-tables-20261015.zip"><span>各平台码表<small>1.0 字词表与手心、搜狗、冰凌等平台码表</small></span><b>↓</b></a><a href="https://github.com/losWater/Yozakura/releases/download/yozakura-v1.0/Yozakura-Toolbox-1.0-20261015.html"><span>夜桜嘤嘤工具箱 · 单文件<small>拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表</small></span><b>↓</b></a></div><p>魔虎原作者 <a href="https://github.com/fcxxxz/rime-mohu">fcxxxz / rime-mohu</a>：V5 模型、原生引擎及相关 Lua 为魔虎原作。夜桜提供码表与适配；原作者声明和许可证保留在包内。</p></div></section>
+    <section class="section updates" id="updates"><div><img class="update-portrait" src="yozakura-chibi.jpg" alt="夜桜头像" width="900" height="900" loading="lazy"><span class="eyebrow">GROWING WITH NIGHTINGALE</span><h2>夜莺每进一步，夜桜也跟上一步。</h2><p>夜桜的字根和拆分取自夜莺，夜莺调整后夜桜一条命令重建。<br>用自然码打字的反馈，同样欢迎。</p></div><div class="update-links"><a href="https://github.com/losWater/Yozakura/blob/main/docs/夜桜自然码.md">设计与维护记录 <span>↗</span></a><a href="../changelog.html">夜莺更新日志 <span>↗</span></a><a href="https://github.com/losWater/Yozakura/issues">反馈一个问题 <span>↗</span></a></div></section>
+  </main>
+  <footer><a class="brand" href="#">夜桜<span>YOZAKURA</span></a><p class="community">欢迎加入qq群聊交流：<strong>1121088815</strong></p><a href="https://github.com/losWater/Yozakura">在 GitHub 上一起完善 ↗</a></footer>
+</body>
+</html>
