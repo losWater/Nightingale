@@ -63,7 +63,7 @@ def main():
     schema = schema.replace('    - speller', '    - lua_processor@*yeying25_single_english_guard\n    - speller', 1)
     # Like Tiger, use only the explicit bindings: '-'/'=' page candidates.
     # Importing default bindings also assigns period to Page_Down.
-    schema = schema.replace('key_binder:\n  import_preset: default\n', 'key_binder:\n', 1)
+    assert 'import_preset' not in schema.split('key_binder:', 1)[1].split('recognizer:', 1)[0]   # 形码版也不再导入默认按键（句号不翻页）
     schema = schema.replace('lua_translator@*yeying25_single_table', 'table_translator')
     schema = schema.replace('dictionary: yeying25_mac_rime_fixed', 'dictionary: yeying25_single')
     schema = schema.replace('auto_clear: max_length', 'auto_clear: manual')

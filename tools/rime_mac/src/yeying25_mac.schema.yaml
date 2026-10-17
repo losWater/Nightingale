@@ -73,8 +73,34 @@ menu:
 punctuator:
   import_preset: default
 key_binder:
-  import_preset: default
   bindings:
+    # 照抄 Rime 默认按键（不导入默认表，去掉“逗号/句号翻页”两条：句号要能顶字上屏，2026-10-17）
+    - {when: composing, accept: "Control+p", send: Up}
+    - {when: composing, accept: "Control+n", send: Down}
+    - {when: composing, accept: "Control+b", send: Left}
+    - {when: composing, accept: "Control+f", send: Right}
+    - {when: composing, accept: "Control+a", send: Home}
+    - {when: composing, accept: "Control+e", send: End}
+    - {when: composing, accept: "Control+d", send: Delete}
+    - {when: composing, accept: "Control+k", send: "Shift+Delete"}
+    - {when: composing, accept: "Control+h", send: BackSpace}
+    - {when: composing, accept: "Control+g", send: Escape}
+    - {when: composing, accept: "Control+bracketleft", send: Escape}
+    - {when: composing, accept: "Control+y", send: Page_Up}
+    - {when: composing, accept: "Alt+v", send: Page_Up}
+    - {when: composing, accept: "Control+v", send: Page_Down}
+    - {when: always, accept: "Control+Shift+1", select: .next}
+    - {when: always, accept: "Control+Shift+2", toggle: ascii_mode}
+    - {when: always, accept: "Control+Shift+3", toggle: full_shape}
+    - {when: always, accept: "Control+Shift+4", toggle: simplification}
+    - {when: always, accept: "Control+Shift+5", toggle: extended_charset}
+    - {when: always, accept: "Control+Shift+exclam", select: .next}
+    - {when: always, accept: "Control+Shift+at", toggle: ascii_mode}
+    - {when: always, accept: "Control+Shift+numbersign", toggle: full_shape}
+    - {when: always, accept: "Control+Shift+dollar", toggle: simplification}
+    - {when: always, accept: "Control+Shift+percent", toggle: extended_charset}
+    - {when: has_menu, accept: minus, send: Page_Up}
+    - {when: has_menu, accept: equal, send: Page_Down}
     - {when: has_menu, accept: semicolon, send: 2}
     - {when: has_menu, accept: apostrophe, send: 3}
     - {when: has_menu, accept: bracketleft, send: Page_Up}
