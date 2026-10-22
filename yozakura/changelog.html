@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="夜桜各版本更新日志，最新为 1.1。">
+  <title>更新日志 · 夜桜1.1</title>
+  <link rel="icon" href="../bird.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../author.css">
+  <script src="../site.js" defer></script>
+<style>:root{--bg:#1c1520;--panel:#261c2b;--text:#f1e9ee;--muted:#b4a3ad;--line:#3d2f40;--accent:#f2b6cc;--button:#f0bfd2;--ink:#3a1d2b;--moon:#f3dbe5}:root[data-theme=light]{--bg:#faf3f5;--panel:#f3e6eb;--text:#3b2433;--muted:#7a5d6b;--line:#e6d2da;--accent:#a8466e;--button:#a8466e;--ink:#fff;--moon:#f2d6e0}::selection{background:#c9739a}.article-body table{border-collapse:collapse;margin:1em 0}.article-body th,.article-body td{border:1px solid var(--line);padding:6px 12px;text-align:center}</style></head>
+<body>
+<a class="skip" href="#article">跳到正文</a>
+<header class="header"><a class="brand" href="index.html">夜桜<span>YOZAKURA</span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="index.html#download">下载</a><a href="../index.html">夜莺 ↗</a></nav><div class="header-end"><button id="theme" type="button" aria-label="切换至浅色模式">☼</button></div></header>
+<main class="author-page">
+  <header class="article-heading"><p class="eyebrow">夜桜</p><h1>更新日志</h1><p>最新：1.1（2026-10-21）</p></header>
+  <div class="reading-layout">
+    <aside class="article-contents"><details open><summary>文章目录</summary><nav aria-label="文章目录"><div class="toc">
+<ul>
+<li><a href="#11">夜桜 1.1</a><ul>
+<li><a href="#_1">一、根的修改</a></li>
+<li><a href="#_2">二、字的修改</a></li>
+<li><a href="#_3">三、词的修改</a></li>
+<li><a href="#_4">四、简词的修改</a></li>
+<li><a href="#_5">五、码位的修改</a></li>
+<li><a href="#_6">六、输入法</a></li>
+</ul>
+</li>
+<li><a href="#10">夜桜 1.0</a></li>
+</ul>
+</div>
+</nav></details></aside>
+    <article class="article-body" id="article"><h2 id="11">夜桜 1.1</h2>
+<p>2026-10-21</p>
+<p>本版先行跟进夜莺下一版（3.2）的修改（根、字、词序），码都按自然码与 ZR27 键位换算。从 1.0 升级：方案名与文件名不变，解压覆盖后重新部署即可。</p>
+<h3 id="_1">一、根的修改</h3>
+<ul>
+<li><strong>新增字根“睿字头”，并入宝盖组</strong>：睿、壑、壡上部（原拆 ⺊＋冖＋一＋八＋人）当作帽子，归宝盖。原拆法保留，两种打法都能用：睿 rvj／rvjd（原 rvv／rvvd 保留）；壑 hejz（原 hev／hevz 保留）；壡 rvjz（原 rvvz 保留）。</li>
+<li><strong>去掉字根“衣”“襄”“襄省”，衣组取消</strong>：衣拆成上面的亠（e 键）和下面的 𧘇；𧘇 并入止组（x 键）。衣字架的字按 亠＋里面＋𧘇 拆，如 哀＝亠＋口＋𧘇（aiex）、衷 vsex、褒 bkex、裹 goex；衣在右边、下面的字末码由 c 变 x，如 依 yikx、袋 dlkx、装 vdux、裂 lxlx、表 bcrx、浓 nsax。襄＝亠＋口＋口＋龷＋𧘇，囊的下部＝龷＋𧘇，如 嚷 rhtx、壤 rhzx、镶 xdsx、囊 nhjx、襄 xdex。</li>
+<li>跟着变的简码：衣 yie（原 yic）、哀 aie（原 aic）、袤 mke（原 mkc）、裒 pbe（原 pbc）、瓤 rhe（原 rhc）；衷 vse、衮 gpe、轶 yic 新得三简；衰、裹、褒、襄、彝 不再有三简（衰 uyex、裹 goex、褒 bkex、襄 xdex、彝 yief）；率（shuài）仍是 uye。</li>
+</ul>
+<h3 id="_2">二、字的修改</h3>
+<ul>
+<li><strong>变上二简 bm</strong>（原来是边），bmt 仍保留。</li>
+<li><strong>边改打 bmw</strong>（新增容错码：先拆走之），全码 bmiw 照旧。</li>
+<li>编仍是 bmi。</li>
+</ul>
+<h3 id="_3">三、词的修改</h3>
+<ul>
+<li><strong>新增词</strong>：还没完 hmw（排第一）。</li>
+<li><strong>换算自然码时并到同一码的词，改按词频排序</strong>（10-17 已随 1.0 安装包更新，此前下载的 1.0 没有这项修正）：夜莺的词码是小鹤双拼，换成自然码后，原本不同码的二字词和成语缩写可能落到同一个码上，之前按小鹤码的字母序拼接，常把成语排在常用二字词前面。现在同一来源的词保持原顺序，不同来源的按词频归并，1651 个码位首选变化，如 xddv 相对（原 行得端坐得正）、ubgj 手感（原 事不关己）、bixw 陛下（原 不耻下问）、bhub 帮手（原 把话说明白）。</li>
+</ul>
+<h3 id="_4">四、简词的修改</h3>
+<ul>
+<li><strong>简词顺序按作者核对调整</strong>（27 处，旧首选→新首选）：bls 不利索→布鲁斯；bxb 便携版→补习班；ddj 跺跺脚→电动机；dvw 逗着玩→动植物；dwu 耽误事→对我说；dwy 都未有→动物园；dzr 得罪人→大自然；gdg 搞的鬼→郭德纲；gqd 跟前的→过去的；gsu 钢丝绳→甘肃省；jbs 渐变色→锦标赛；jlj 捡垃圾→据了解；lnu 冷凝水→辽宁省；mum 买什么→没什么；ngr 哪个人→那个人；qad 亲爱哒→亲爱的；qvd 圈重点→其中的；swd 送我的→所谓的；uyw 是一位→是因为；vld 整理的→这里的；vm 证明→这么；wmd 完美的→我们的；wmu 外面是→我们是；xqy 详情页→星期一；xtb 小图标→新台币；ywv 一万种→意味着；zlm 走了吗→在里面。</li>
+</ul>
+<h3 id="_5">五、码位的修改</h3>
+<ul>
+<li><strong>全码码位的词序按作者核对调整</strong>（100 处，旧首选→新首选）：blff 白粉→百分；blhe 白鹤→百合；buwm 榜上无名→不是我们；bvyg 不值一顾→不止一个；clyb 菜油→才有；diao 低凹→迪奥；diji 第几→低级；diub 低手→敌手；dmug 当面是人，背后是鬼→大马士革；dmvk 店招→点着；fvqu 反治其身→发展趋势；gdgx 搞东搞西→感到高兴；gehh 隔行→各行；gruv 灌水→关税；gtnl 故土难离→共同努力；guly 骨龄→孤零；hdhe 黄鹤→黄河；hhyx 挥挥衣袖→哈哈一笑；hkdi 好滴→好地；hvuh 会商→会上；hwpm 划片→画片；ieiu 扯出→撤出；iffh 陈放→充分发挥；ijlv 掣襟露肘→产率；iuji 初几→初级；jibm 几遍→即便；jicg 几层→基层；jida 几大→极大；jido 几朵→极多；jidr 几段→极端；jids 几栋→激动；jiih 几场→机场；jijn 几斤→基金；jijx 几届→季节；jipc 几票→机票；jipi 几批→鸡皮；jiqu 几区→汲取；jiub 几首→棘手；jiva 几匝→叽喳；jivs 几种→集中；jmgx 紧密关系→经贸关系；jmhz 将门虎子→经贸合作；jttb 䦆头→噱头；jtwm 进退无门→今天我们；judl 绝世独立→精神动力；jugk 举高→居高；kesv 客岁→可随；lkji 老几→牢记；lkvh 老丈→老张；lnqu 临去→林区；lvup 捋顺→旅顺；lyji 另计→灵机；lyjn 领进→领巾；lyxg 兰因絮果→利益相关；maua 麻纱→玛莎；mlih 卖唱→卖场；ngji 能级→能及；nmih 碾场→年长；nztc 内调→哪条；pmuj 偏衫→平面设计；pypy 评评→平平；qigo 起锅→齐国；qmku 钱库→期末考试；qssi 穷死→琼斯；qtjm 情同姐妹→却见；qvyv 其中有诈→其中一种；rfrf 忍忍→人人；rgxz 人工选择→如果现在；sjqk 三缄其口→实际情况；takj 踏勘→他看；tbxh 太不像话→特别喜欢；trxd 突然行动→突然想到；tyju 挺举→厅局；uedm 设点→射电；upjj 生平仅见→商品经济；uuby 实属不易→莎士比亚；veyk 折腰→这要；vfer 真二→震耳；viib 纸抽→之仇；vsts 肿痛→中通；vsvd 中装→重装；vysx 中庸思想→重要思想；whyu 妄语→文化艺术；wjzl 万载→湾仔；wuyi 五一→无疑；wzye 尾页→伟业；xgxx 心肝血虚→相关信息；xyhl 形骸→星海；yibh 依傍→一帮；yidl 一袋→一代；yiqr 乙醛→一圈；yiru 移入→一如；yith 饴糖→一趟；yitr 疑团→一团；yiuo 臆说→一说；ykmo 妖魔→要么；yksi 咬死→要死；yvvy 由衷之言→一直这样；zlwo 在握→在我；zrgs 钻工→责任公司。</li>
+</ul>
+<h3 id="_6">六、输入法</h3>
+<ul>
+<li><strong>修复：形码版、V5 版打字后按句号没反应</strong>。Rime 默认按键把句号设成了“下一页”，有候选时句号被当成翻页吃掉，不能顶字上屏（逗号正常）。现在两个方案都不再导入默认按键表，句号、逗号都直接顶字上屏；翻页用 - = 或 [ ]。单字版本来就没有这个问题。</li>
+<li><strong>新增：单字版可以自己调字序</strong>。有候选时按 Ctrl+数字，把当前页第几个字提到首选；Ctrl+D 把选中的字下移一级（如全码上到三简，原来占这个三简的字退回全码）；Ctrl+U 把选中的字上移一级（如三简退回全码，空出的简码位由字频最高的字补上）；Ctrl+0 撤销上一步。调整立即生效，记录在用户目录的 yozakura_single_adjust.tsv 里，只在本机生效，升级不会覆盖。Ctrl+J 仍是拆分开关。</li>
+</ul>
+<h2 id="10">夜桜 1.0</h2>
+<p>2026-10-15</p>
+<p>首个版本：夜莺 3.1 的字根与拆分，配自然码双拼。为配合自然码，字根键位用 ZR27（相对夜莺 NB46 有 27 组字根换了键），简码规则与夜莺相同，夜莺手动定的简码按同一读音换算成自然码照搬。</p><p class="article-return"><a href="index.html#download">← 返回夜桜首页</a></p></article>
+  </div>
+</main>
+<script>if (window.matchMedia('(max-width:800px)').matches) document.querySelector('.article-contents details').open = false;</script>
+<footer><a class="brand" href="index.html">夜桜<span>YOZAKURA</span></a><p class="community">欢迎加入qq群聊交流：<strong>1121088815</strong></p></footer>
+</body>
+</html>
