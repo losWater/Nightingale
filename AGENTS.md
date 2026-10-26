@@ -1,6 +1,10 @@
 # 夜莺当前维护入口
 
-- 先读 MAINTENANCE.md。maintenance.json 指定当前维护目录，目前为夜莺2.5；该目录的主表、拆分资料、配置和台账是唯一维护原本。
+> **本分支维护的是 3.x（当前对外正式版 3.1），入口不在根目录。** 3.x 的码表、构建与发布真源在 `work/夜莺3.0`，步骤见 [`release/发布流程.md`](https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0/release/发布流程.md)：改 `data/` 里的数据 → `build/rebuild_table.py` 重出单字表 → `release/update_local_rime.py` 装本机 → 更新日志记一条；发版用 `release/publish.py`，版本号读 `release/版本.json`。
+>
+> 根目录的 `maintenance.json` → `夜莺2.5` 与 `tools/maintenance`（`apply_ledger.py` / `rollover.py`）是 **2.x 周期的遗留链路**，保留供追溯与历史构建。**3.x 的字、码、词、简码改动不要写进 `夜莺2.5/记录/修改台账.tsv`。**
+
+- 先读 MAINTENANCE.md。maintenance.json 指定 **2.x** 的维护目录，目前为夜莺2.5；该目录的主表、拆分资料、配置和台账是 2.x 的唯一维护原本。3.x 走 `work/夜莺3.0`，不沿用这套 rollover 结构。
 - tools/maintenance 和 tools/rime_mac 是跨版本通用工具；不得再往脚本里写版本专属主表路径或本机绝对路径。
 - 码表修改使用当前版本的记录/修改台账.tsv，默认预演、明确 --apply 才落盘。历史记录保留，撤销新增记录；不得重放已完成历史。
 - 不自动重建、重排或裁决码表。用户说改哪个字就只查相关码位；规则解释和人工裁定以当前版本资料为准。
