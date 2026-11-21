@@ -2,7 +2,7 @@
 
 夜莺是一套基于小鹤双拼的音形输入方案：双拼音码＋首末字根，常用字可用简码。
 
-当前正式版本为 **3.1**（2026-10-15）。[官网](https://loswater.github.io/Nightingale/) · [发布页与全部附件](https://github.com/losWater/Nightingale/releases/tag/v3.1) · [更新日志](https://loswater.github.io/Nightingale/changelog.html)
+当前正式版本为 **3.2**（2026-11-21）。[官网](https://loswater.github.io/Nightingale/) · [发布页与全部附件](https://github.com/losWater/Nightingale/releases/tag/v3.2) · [更新日志](https://loswater.github.io/Nightingale/changelog.html)
 
 ## Rime 下载
 
@@ -14,11 +14,11 @@
 
 | 版本 | 下载与用途 |
 |---|---|
-| **V5 版（强烈推荐）** | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-windows-v5-20261015.zip)：本地整句模型，保留夜莺固定码序 |
-| 形码版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-windows-shape-20261015.zip)：无模型，最大四码、五码顶屏 |
-| 形码单字版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-windows-single-20261015.zip)：单字与夜莺快符，手动确认上屏 |
+| **V5 版（强烈推荐）** | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-windows-v5-20261121.zip)：本地整句模型，保留夜莺固定码序 |
+| 形码版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-windows-shape-20261121.zip)：无模型，最大四码、五码顶屏 |
+| 形码单字版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-windows-single-20261121.zip)：单字与夜莺快符，手动确认上屏 |
 
-[校验值](https://github.com/losWater/Nightingale/releases/download/v3.1/SHA256SUMS-windows-20261015.txt) · [引擎验证报告](https://github.com/losWater/Nightingale/releases/download/v3.1/windows-verification.json)
+[校验值](https://github.com/losWater/Nightingale/releases/download/v3.2/SHA256SUMS-windows-20261121.txt) · [引擎验证报告](https://github.com/losWater/Nightingale/releases/download/v3.2/windows-verification.json)
 
 ### Mac · 鼠须管
 
@@ -26,20 +26,20 @@ V5 原生引擎仅适用于 **Apple Silicon**；Mac 包不能用于 Windows 或�
 
 | 版本 | 下载与用途 |
 |---|---|
-| **V5 版（强烈推荐）** | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-mac-v5-20261015.zip)：本地整句模型，保留夜莺固定码序 |
-| 形码版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-mac-shape-20261015.zip)：无模型，最大四码、五码顶屏 |
-| 形码单字版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Rime-3.1-mac-single-20261015.zip)：单字与夜莺快符，手动确认上屏 |
+| **V5 版（强烈推荐）** | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-mac-v5-20261121.zip)：本地整句模型，保留夜莺固定码序 |
+| 形码版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-mac-shape-20261121.zip)：无模型，最大四码、五码顶屏 |
+| 形码单字版 | [下载](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Rime-3.2-mac-single-20261121.zip)：单字与夜莺快符，手动确认上屏 |
 
-[校验值](https://github.com/losWater/Nightingale/releases/download/v3.1/SHA256SUMS-mac-20261015.txt)
+[校验值](https://github.com/losWater/Nightingale/releases/download/v3.2/SHA256SUMS-mac-20261121.txt)
 
 **安装**：把整个包解压到 Rime 用户文件夹（同名文件覆盖），点“重新部署”，用 Ctrl+` 切换到夜莺方案。包里的 default.custom.yaml 已列好夜莺的三个方案，装几个包、先后顺序都不影响；它会替换原有的 default.custom.yaml，如果还用着别的方案，部署后把它们加回方案列表。安装前建议备份用户文件夹；V5 更换原生库后须重启小狼毫算法服务或鼠须管。
 
-从 2.5 升级：3.x 的方案标识不再带版本号（yeying_v5、yeying_shape、yeying_single），以后升级直接覆盖即可；2.5 的 yeying25_* 方案可以从方案列表里移除。3.x 有 46 组字根相对 2.x 换了键位，建议先用[字根练习](https://loswater.github.io/Nightingale/tools/root-practice.html)的“只练改动过的根”过一遍。
+从 3.0、3.1 升级：解压覆盖后重新部署即可（V5 版升级后可删掉 yeying_v5/runtime/libonnxruntime.1.dylib，不删也不影响）。从 2.5 升级：3.x 的方案标识不再带版本号（yeying_v5、yeying_shape、yeying_single），以后升级直接覆盖即可；2.5 的 yeying25_* 方案可以从方案列表里移除。3.x 有 46 组字根相对 2.x 换了键位，建议先用[字根练习](https://loswater.github.io/Nightingale/tools/root-practice.html)的“只练改动过的根”过一遍。
 
 ### 其他输入法与工具
 
-- [手心 · 搜狗 · 冰凌 · Bime 等平台码表](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-3.1-tables-20261015.zip)
-- [啾啾工具箱 · 单文件](https://github.com/losWater/Nightingale/releases/download/v3.1/Nightingale-Toolbox-3.1-20261015.html)：拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表，离线可用
+- [手心 · 搜狗 · 冰凌 · Bime 等平台码表](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-3.2-tables-20261121.zip)
+- [啾啾工具箱 · 单文件](https://github.com/losWater/Nightingale/releases/download/v3.2/Nightingale-Toolbox-3.2-20261121.html)：拆分查询、部件反查、字根练习、字根表、字根图、完整拆分表，离线可用
 
 ## 魔虎原作者与声明
 
