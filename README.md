@@ -4,6 +4,8 @@
 
 当前正式版本为 **2.5**。[官网](https://loswater.github.io/Nightingale/) · [发布页与全部附件](https://github.com/losWater/Nightingale/releases/tag/v2.5)
 
+> **本分支的 README 停留在 2.5 时期。** 对外版本说明、下载与站点以 [`main` 分支的 README](https://github.com/losWater/Nightingale/blob/main/README.md) 和 [v3.1 发布页](https://github.com/losWater/Nightingale/releases/tag/v3.1) 为准。本分支是 3.x 的工作分支，维护入口见 [`work/夜莺3.0/release/发布流程.md`](https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0/release/发布流程.md)。
+
 ## Rime 下载
 
 **只建议使用 V5 版本。V5 模型：强烈推荐。** 形码和形码单字版仅供需要固定码表输入或单字练习的用户选择。
@@ -50,6 +52,9 @@ Rime 中输入 ~ 或反引号后接全拼/小鹤双拼查询拆分；F2 筛选�
 
 ## 维护
 
-[维护架构](MAINTENANCE.md) → [当前维护目录：夜莺2.5](夜莺2.5/README.md)。主表、拆分和修改台账以该目录为准；通用维护工具位于 tools/maintenance，Mac 适配工具位于 tools/rime_mac。
+本分支同时放着两条链路，别走错：
 
-历史发布与旧维护记录保留供追溯，不作为当前构建入口。
+- **3.x（当前对外正式版）**：码表、构建与发布在 `work/夜莺3.0`。数据在 `work/夜莺3.0/data/`，`build/rebuild_table.py` 重出单字表，`release/update_local_rime.py` 装进本机 Rime，`release/publish.py` 发版；完整步骤见 [`release/发布流程.md`](https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0/release/发布流程.md)。3.x 的版本号、日期、文件名都从 `release/版本.json` 读取，不写死在脚本里。
+- **2.x（遗留）**：[维护架构](MAINTENANCE.md) → [夜莺2.5](夜莺2.5/README.md)。主表、拆分和修改台账以该目录为准，由 `tools/maintenance` 维护，保留供 2.x 追溯与历史构建。
+
+**3.x 的字、码、词、简码改动不写进 `夜莺2.5/记录/修改台账.tsv`**，那边的台账与 `rollover.py` 只服务 2.x。

@@ -1,6 +1,8 @@
 # 维护架构
 
-当前周期是 **夜莺2.5**：指 2.5 发布以后、下次发布以前的维护过程。只维护 maintenance.json 指向的目录。
+> **适用范围**：本页只描述根目录的 2.x 维护链。本分支实际维护的 3.x（对外正式版 3.1）走 `work/夜莺3.0`——数据在 `work/夜莺3.0/data/`，重建用 `build/rebuild_table.py`，装本机用 `release/update_local_rime.py`，发版用 `release/publish.py`，步骤见 [`release/发布流程.md`](https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0/release/发布流程.md)。本页的 `maintenance.json` / `apply_ledger.py` / `rollover.py` 流程**不覆盖 3.x**。
+
+2.x 当前周期是 **夜莺2.5**：指 2.5 发布以后、下次发布以前的维护过程。只维护 maintenance.json 指向的目录。（3.x 的口径见上方适用范围。）
 
 ```text
 Nightingale/
@@ -72,4 +74,4 @@ python3 tools/maintenance/rollover.py 2.6 --apply  # 确认发布后执行
 - 20260930 Windows 包已通过原生引擎验证，证据见当前周期 `记录/Windows引擎验证-20260930.json`。后续每次发布须固定源包清单、上游散列、平台宿主并复验，不能沿用旧验证结论。旧 Windows 全平台脚本仍是历史工具；手机版尚未验证。
 - 规则文档保留历史裁定原文，其中旧路径只作来源追溯；日常操作以本页为准。
 
-原 `/Users/ice2447/nightingale-mac` 只保留已安装包、备份和此前 Git 历史，后续不在两份仓库间双向维护。本仓库未推送。
+原 `/Users/ice2447/nightingale-mac` 只保留已安装包、备份和此前 Git 历史，后续不在两份仓库间双向维护。本仓库已推送至 GitHub（`losWater/Nightingale`），以该仓库为准。
