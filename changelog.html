@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="夜莺各版本更新日志，最新为 3.1。">
-  <title>更新日志 · 夜莺3.1</title>
+  <meta name="description" content="夜莺各版本更新日志，最新为 3.2。">
+  <title>更新日志 · 夜莺3.2</title>
   <link rel="icon" href="bird.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="author.css">
@@ -14,42 +14,755 @@
 <a class="skip" href="#article">跳到正文</a>
 <header class="header"><a class="brand" href="index.html"><img src="bird.svg" alt="" width="34" height="34">夜莺<span>NIGHTINGALE</span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="performance.html">性能</a><a href="index.html#updates">更新日志</a></nav><div class="header-end"><button id="theme" type="button" aria-label="切换至浅色模式">☼</button></div></header>
 <main class="author-page">
-  <header class="article-heading"><p class="eyebrow">夜莺</p><h1>更新日志</h1><p>最新：3.1（2026-10-15）</p></header>
+  <header class="article-heading"><p class="eyebrow">夜莺</p><h1>更新日志</h1><p>最新：3.2（2026-11-21）</p></header>
   <div class="reading-layout">
     <aside class="article-contents"><details open><summary>文章目录</summary><nav aria-label="文章目录"><div class="toc">
 <ul>
+<li><a href="#32">夜莺 3.2</a><ul>
+<li><a href="#_1">一、根的修改</a></li>
+<li><a href="#_2">二、字的修改</a></li>
+<li><a href="#_3">三、词的修改</a></li>
+<li><a href="#_4">四、简词的修改</a></li>
+<li><a href="#_5">五、码位的修改</a></li>
+<li><a href="#_6">六、输入法</a></li>
+<li><a href="#_7">附录</a><ul>
+<li><a href="#200">单字码变化（200 字）</a></li>
+<li><a href="#426">首选变化（426 个码位）</a></li>
+<li><a href="#6">新增词条（6 条）</a></li>
+<li><a href="#u-1">ü 码：首选变化（1 个码位）</a></li>
+<li><a href="#u-0">ü 码：新增词条（0 条）</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#31">夜莺 3.1</a><ul>
-<li><a href="#_1">拆分</a></li>
-<li><a href="#_2">简码</a></li>
-<li><a href="#_3">字词</a></li>
-<li><a href="#_4">输入法</a></li>
+<li><a href="#_8">一、根的修改</a></li>
+<li><a href="#_9">二、字的修改</a></li>
+<li><a href="#_10">三、词的修改</a></li>
+<li><a href="#_11">四、简词的修改</a></li>
+<li><a href="#_12">五、码位的修改</a></li>
+<li><a href="#_13">六、输入法</a></li>
+<li><a href="#u-jvqvxvyv">七、ü 码（jv、qv、xv、yv）</a></li>
+<li><a href="#_14">附录</a><ul>
+<li><a href="#42">单字码变化（42 字）</a></li>
+<li><a href="#102">首选变化（102 个码位）</a></li>
+<li><a href="#9">新增词条（9 条）</a></li>
+<li><a href="#u-224">ü 码：首选变化（224 个码位）</a></li>
+<li><a href="#u-250">ü 码：新增词条（250 条）</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#30">夜莺 3.0</a><ul>
-<li><a href="#_5">字根</a></li>
-<li><a href="#_6">单字</a></li>
-<li><a href="#_7">字词</a></li>
+<li><a href="#_15">字根</a></li>
+<li><a href="#_16">单字</a></li>
+<li><a href="#_17">字词</a></li>
 <li><a href="#25">性能（与 2.5 同口径重算）</a></li>
-<li><a href="#_8">输入法与工具</a></li>
+<li><a href="#_18">输入法与工具</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </nav></details></aside>
-    <article class="article-body" id="article"><h2 id="31">夜莺 3.1</h2>
+    <article class="article-body" id="article"><h2 id="32">夜莺 3.2</h2>
+<p>2026-11-21</p>
+<p>词与词之间的顺序原来沿用 2.5，来源是 2.0 时的综合词频，有不少地方偏了（如 wuyi 五一排在无疑前面）。这次用虎码词库和五类现代语料（新闻、维基、知乎、论坛、网文各 800 万字）交叉比对，两边都认为排错的 763 个码位由作者逐条核对，改了 163 处；容易拆开打的词按作者习惯保留原序。</p>
+<h3 id="_1">一、根的修改</h3>
+<ul>
+<li><strong>新增字根“睿字头”，并入宝盖组</strong>（j 键）：睿、壑、壡上部（原拆 ⺊＋冖＋一＋八＋人）当作帽子，归宝盖。原拆法保留，两种打法都能用：睿 rvj／rvjb（原 rvv／rvvb 保留）；壑 hejm（原 hev／hevm 保留）；壡 rvjm（原 rvvm 保留）。</li>
+<li><strong>去掉字根“衣”“襄”“襄省”，衣组取消</strong>：衣拆成上面的亠（e 键）和下面的 𧘇；𧘇 并入止组（s 键，2.5 里两者本就同键）。衣字架的字按 亠＋里面＋𧘇 拆，如 哀＝亠＋口＋𧘇（aies）、衷 vses、褒 bces、裹 goes；衣在右边、下面的字末码由 l 变 s，如 依 yiks、袋 ddks、装 vles、裂 lpfs、表 bnrs、浓 nsas。襄＝亠＋口＋口＋龷＋𧘇，囊的下部＝龷＋𧘇，如 嚷 rhts、壤 rhms、镶 xlss、囊 nhjs、襄 xles。共 149 字的码变化，8105 字里实际选重少 1 个，手感（当量、左右互击、小指干扰）略有变好。</li>
+<li>跟着变的简码：衣 yie（原 yil，yil 给了益）、哀 aie、衷 vse、袤 mce、衮 gye、裒 pze、瓤 rhe；霭 ail、耄 mcl 新得三简；衰、亵、裹、襄、彝 不再有三简（衰 ukes、亵 xpes、裹 goes、襄 xles、彝 yieg）；率（shuài）仍是 uke。</li>
+</ul>
+<h3 id="_2">二、字的修改</h3>
+<ul>
+<li><strong>变上二简 bm</strong>（原来是边），变原来的三简 bmt 不好按，现在打 bm 就行；bmt 仍保留。</li>
+<li><strong>边改打 bml</strong>（新增容错码：先拆走之），全码 bmil 照旧。</li>
+<li>编仍是 bmi。</li>
+<li><strong>壑在全码 hejm 上排首选</strong>，不让给“核减”。</li>
+<li><strong>走之字加“先拆走之”的三码</strong>（默认仍是后拆走之，全码都不变）：除了边 bml，再给 39 个走之字加上先拆走之的三码（音＋走之 l）。</li>
+<li>三码位上没有字，且没有简词或首选简词以“了”结尾时加（32 字），“了”结尾的简词排到第二：进 jbl（具备了）、迪 dil（当成了）、逃 tcl、透 tzl、途 tul、逛 gll（过来了）、逮 ddl、逞 igl（成功了）、迢 tnl、遁 dyl、迥 jsl、遽 jul、遑 hll（回来了）、逖 til、逋 bul、邆 tgl、迾 lpl、迧 ifl、辸 rgl；远 yrl、达 dal、迫 pol、逻 lol、遢 tal、遨 aol、迮 zel，以及遶 rcl、遳 col、遪 cal、遤 mal、逴 iol、迊 zal。</li>
+<li>字本身没有简码、又比原来占这个三简的字常用时，占这个三简，原字退回全码（7 字）：逐 vul（煮 vulp）、迈 mdl（霾 mdlh）、遛 lql（旒 lqln）、暹 xml（霰 xmlq）、迩 erl（鸸 erlj）、逄 phl（耪 phll）、遘 gzl（耇 gzlt）。</li>
+<li>首选简词不是“了”结尾的不加，如 tsl 特斯拉、jxl 接下来、fgl 反过来。</li>
+<li>有了三码的字，全码按让位规则排在词后：迪 dihl（帝皇在前）；退回全码的字在全码上排首选：霾 mdlh（原 麦浪 在前）、耪 phll（原 雱 在前）、霰 xmlq（原 限流 在前）。</li>
+</ul>
+<h3 id="_3">三、词的修改</h3>
+<ul>
+<li><strong>新增词</strong>：还没完 hmw（排第一）。</li>
+<li><strong>新增词</strong>（作者形码版录词）：帮你 bhni、富商 fuuh（排在负伤后）、红温 hswf、要把 ycba、也在 yezd。</li>
+</ul>
+<h3 id="_4">四、简词的修改</h3>
+<ul>
+<li><strong>简词顺序按作者核对调整</strong>（46 处，旧首选→新首选）：vm 证明→这么；bls 不利索→布鲁斯；bxb 便携版→补习班；ddj 跺跺脚→电动机；diz 电池组→动车组；dvw 逗着玩→动植物；dwu 耽误事→对我说；dwy 都未有→动物园；dzr 得罪人→大自然；gdg 搞的鬼→郭德纲；ggs 贵公司→该公司；ghg 广寒宫→共和国；gjm 关节面→郭敬明；glj 高露洁→管理局；gqd 跟前的→过去的；gsu 钢丝绳→甘肃省；hmw 还没玩→还没完；hug 活守寡→还是个；idx 吃得下→吃东西；jbs 渐变色→锦标赛；jiu 经常是→基础上；jiy 金疮药→检察院；jlj 捡垃圾→据了解；juf 经双方→健身房；lid 拉扯大→理查德；lnu 冷凝水→辽宁省；mgw 没个完→名古屋；mum 买什么→没什么；mys 每一艘→没意思；ngr 哪个人→那个人；nuh 哪时候→那时候；nyd 那也得→那样的；qad 亲爱哒→亲爱的；qvd 圈重点→其中的；swd 送我的→所谓的；tib 统筹部→调查表；uyw 是一位→是因为；vld 整理的→这里的；wll 我溜了→我来了；wmd 完美的→我们的；wmu 外面是→我们是；xqy 详情页→星期一；xtb 小图标→新台币；ytr 一头热→犹太人；ywv 一万种→意味着；zlm 走了吗→在里面。</li>
+<li><strong>作者钉选</strong>（3 处）：qd 期待→确定；ujg 苫→世界观（苫退到第二）；ygg 一根根→一个个。</li>
+</ul>
+<h3 id="_5">五、码位的修改</h3>
+<ul>
+<li><strong>全码码位的词序按作者核对调整</strong>（117 处，旧首选→新首选）：bdff 白粉→百分；bdhe 白鹤→百合；bkqq 不可强求→冰球；bugx 卜卦→表示感谢；buwm 榜上无名→不是我们；bvyg 不值一顾→不止一个；cdyz 菜油→才有；deld 吊儿郎当→得来；diao 低凹→迪奥；diji 第几→低级；diuz 低手→敌手；dmug 当面是人，背后是鬼→大马士革；dmvc 店招→点着；fvqu 反治其身→发展趋势；gdgx 搞东搞西→感到高兴；gehh 隔行→各行；ghzz 过河卒子→刚走；gjhz 干吼→国际合作；glzd 膏粱子弟→光在；gruv 灌水→关税；gtnl 故土难离→共同努力；gulk 骨龄→孤零；hcdi 好滴→好地；hhyx 挥挥衣袖→哈哈一笑；hlhe 黄鹤→黄河；hvuh 会商→会上；hxpm 划片→画片；ieiu 扯出→撤出；iffh 陈放→充分发挥；ijlv 掣襟露肘→产率；iuji 初几→初级；jibm 几遍→即便；jicg 几层→基层；jida 几大→极大；jido 几朵→极多；jidr 几段→极端；jids 几栋→激动；jiih 几场→机场；jijb 几斤→基金；jijp 几届→季节；jijq 几丘→急救；jipi 几批→鸡皮；jipn 几票→机票；jiqu 几区→汲取；jiuz 几首→棘手；jiva 几匝→叽喳；jivs 几种→集中；jmgx 紧密关系→经贸关系；jmhz 将门虎子→经贸合作；jttz 䦆头→噱头；jtwm 进退无门→今天我们；judl 绝世独立→精神动力；jugc 举高→居高；kesv 客岁→可随；kyqd 抗压强度→可以确定；lbkf 礼不可废→林肯；lbqu 临去→林区；lcji 老几→牢记；lcvh 老丈→老张；lkjb 领进→领巾；lkji 另计→灵机；llbf 来历不凡→两本；lvuy 捋顺→旅顺；lyxg 兰因絮果→利益相关；maua 麻纱→玛莎；mdih 卖唱→卖场；ngji 能级→能及；nmih 碾场→年长；nwtn 内调→哪条；pkpk 评评→平平；pmuj 偏衫→平面设计；qigo 起锅→齐国；qmku 钱库→期末考试；qssi 穷死→琼斯；qtjm 情同姐妹→却见；qvyv 其中有诈→其中一种；rfrf 忍忍→人人；rgxz 人工选择→如果现在；rgyz 日拱一卒→仍有；sjdd 随机弹道→三代；sjqk 三缄其口→实际情况；ssbb 送殡→随随便便；takj 踏勘→他看；tbxh 太不像话→特别喜欢；tkju 挺举→厅局；trxd 突然行动→突然想到；uedm 设点→射电；upjj 生平仅见→商品经济；uuby 实属不易→莎士比亚；uwxl 首尾相连→谁想；veyc 折腰→这要；vfer 真二→震耳；viiz 纸抽→之仇；vsts 肿痛→中通；vsvl 中装→重装；vysx 中庸思想→重要思想；whyu 妄语→文化艺术；wjzd 万载→湾仔；wuyi 五一→无疑；wwye 尾页→伟业；xgxx 心肝血虚→相关信息；xkhd 形骸→星海；ycmo 妖魔→要么；ycsi 咬死→要死；yibh 依傍→一帮；yidd 一袋→一代；yiqr 乙醛→一圈；yiru 移入→一如；yith 饴糖→一趟；yitr 疑团→一团；yiuo 臆说→一说；yvvy 由衷之言→一直这样；yydh 允当→愿意的话；yzng 影子内阁→又能；zdhc 做得很不错→再好；zdwo 在握→在我；zrgs 钻工→责任公司。</li>
+<li><strong>作者钉选</strong>（14 处）：cihz 伺候→此后；ffww 分为→氛围；gejv 格局→歌剧；iajb 插进→差劲；jinm 几年→纪念；jiui 几十→即使；jkmi 劲→精密；ldve 来者→来着；lqyi 六一→留意；naxp 那些→哪些；ving 只能→智能；xmce 献策→酰；yici 一次→依次；yjho 验货→烟火。</li>
+</ul>
+<h3 id="_6">六、输入法</h3>
+<ul>
+<li><strong>修复：形码版、V5 版打字后按句号没反应</strong>。Rime 默认按键把句号设成了“下一页”，有候选时句号被当成翻页吃掉，不能顶字上屏（逗号正常）。现在两个方案都不再导入默认按键表，句号、逗号都直接顶字上屏；翻页用 - = 或 [ ]。单字版本来就没有这个问题。</li>
+<li><strong>新增：单字版可以自己调字序</strong>。有候选时按 Ctrl+数字，把当前页第几个字提到首选；Ctrl+D 把选中的字下移一级（如全码上到三简，原来占这个三简的字退回全码）；Ctrl+U 把选中的字上移一级（如三简退回全码，空出的简码位由字频最高的字补上）；Ctrl+0 撤销上一步。调整立即生效，记录在用户目录的 yeying_single_adjust.tsv 里，只在本机生效，升级不会覆盖。Ctrl+J 仍是拆分开关。</li>
+<li><strong>V5 版：魔虎运行库更新到上游 2026-10-23 版</strong>（模型不变）。上游去掉了语义打分，Mac 运行库不再带 onnxruntime，包小了约 33MB；整句结果与原来相同（1000 个小句实测逐句一致）。从 3.1 升级的用户可以删掉 Rime 用户目录里的 yeying_v5/runtime/libonnxruntime.1.dylib（不删也不影响）。</li>
+</ul>
+<h3 id="_7">附录</h3>
+<p>以下由 3.1 与 3.2 的字词表逐条比对生成，包含上面所有改动带来的全部变化。</p>
+<h4 id="200">单字码变化（200 字）</h4>
+<ul>
+<li>进：jb jbgl → jb jbl jbgl</li>
+<li>表：bn bnrl → bn bnrs</li>
+<li>变：bmt bmtq → bm bmt bmtq</li>
+<li>达：day dayl → dal day dayl</li>
+<li>边：bm bmil → bml bmil</li>
+<li>远：yrp yrpl → yrl yrp yrpl</li>
+<li>农：nsj nsjl → nsj nsjs</li>
+<li>装：vl vlel → vl vles</li>
+<li>依：yikl → yiks</li>
+<li>益：yile → yil yile</li>
+<li>衣：yil yill → yie yies</li>
+<li>逐：vuol → vul vuol</li>
+<li>逃：tca tcal → tca tcl tcal</li>
+<li>迫：pdd pod pddl podl → pdd pod pol pddl podl</li>
+<li>透：tzn tznl → tzl tzn tznl</li>
+<li>途：tux tuxl → tul tux tuxl</li>
+<li>裁：cdc cdcl → cdc cdcs</li>
+<li>袭：xin xinl → xin xins</li>
+<li>袋：ddkl → ddks</li>
+<li>裂：lpfl → lpfs</li>
+<li>迪：dihl → dil dihl</li>
+<li>浓：nsa nsal → nsa nsas</li>
+<li>逻：loel → lol loel</li>
+<li>迈：mdcl → mdl mdcl</li>
+<li>衰：ukl uklp → ukes</li>
+<li>哀：ail ailt → aie aies</li>
+<li>袁：yrm yrml → yrm yrms</li>
+<li>囊：nh nhj nhjl → nh nhj nhjs</li>
+<li>衷：vsl vsln → vse vses</li>
+<li>逮：dde ddel → dde ddl ddel</li>
+<li>嚷：rht rhtl → rht rhts</li>
+<li>猿：yrol → yros</li>
+<li>裹：gol golh → goes</li>
+<li>壤：rhm rhml → rhm rhms</li>
+<li>煮：vul vulp → vulp</li>
+<li>逛：glo glol → gll glo glol</li>
+<li>裔：yilt → yies</li>
+<li>裳：uhjl → uhjs</li>
+<li>裘：qqp qqpl → qqp qqps</li>
+<li>镶：xlsl → xlss</li>
+<li>襄：xll xlll → xles</li>
+<li>裴：pwe pwel → pwe pwes</li>
+<li>逞：igtl → igl igtl</li>
+<li>遁：dyfl → dyl dyfl</li>
+<li>侬：nsk nskl → nsk nsks</li>
+<li>脓：nsz nszl → nsz nszs</li>
+<li>攘：rho rhol → rho rhos</li>
+<li>睿：rvv rvvb → rvj rvv rvjb rvvb</li>
+<li>亵：xpl xplh → xpes</li>
+<li>袅：nnj nnjl → nnj nnjs</li>
+<li>褒：bclw → bces</li>
+<li>彝：yie yieg → yieg</li>
+<li>哝：nst nstl → nst nsts</li>
+<li>迥：jsr jsrl → jsl jsr jsrl</li>
+<li>辕：yrc yrcl → yrc yrcs</li>
+<li>壑：hev hevm → hev hejm hevm</li>
+<li>迢：tng tngl → tng tnl tngl</li>
+<li>遽：juvl → jul juvl</li>
+<li>寰：hrj hrjl → hrj hrjs</li>
+<li>囔：nht nhtl → nht nhts</li>
+<li>袤：mcl mclz → mce mces</li>
+<li>婊：bnu bnul → bnu bnus</li>
+<li>霭：ailr → ail ailr</li>
+<li>霾：mdl mdlh → mdlh</li>
+<li>迩：ergl → erl ergl</li>
+<li>馕：nhq nhql → nhq nhqs</li>
+<li>耄：mclg → mcl mclg</li>
+<li>骧：xlv xlvl → xlv xlvs</li>
+<li>遛：lqfl → lql lqfl</li>
+<li>暹：xmbl → xml xmbl</li>
+<li>霰：xml xmlq → xmlq</li>
+<li>裟：uaal → uaas</li>
+<li>铱：yisl → yiss</li>
+<li>袈：jxil → jxis</li>
+<li>衮：gyl gylh → gye gyes</li>
+<li>裱：bnd bndl → bnd bnds</li>
+<li>遨：aopl → aol aopl</li>
+<li>遑：hldl → hll hldl</li>
+<li>遢：tab tabl → tab tal tabl</li>
+<li>瓤：rhl rhli → rhe rhei</li>
+<li>逋：buw buwl → bul buw buwl</li>
+<li>衾：qbq qbql → qbq qbqs</li>
+<li>穰：rhn rhnl → rhn rhns</li>
+<li>圜：hrjl yrjl → hrjs yrjs</li>
+<li>逖：tiol → til tiol</li>
+<li>禳：rhd rhdl → rhd rhds</li>
+<li>耪：phl phll → phll</li>
+<li>曩：nhb nhbl → nhb nhbs</li>
+<li>鬟：hrpl → hrps</li>
+<li>褰：qmjl → qmjs</li>
+<li>逄：phql → phl phql</li>
+<li>旒：lql lqln → lqln</li>
+<li>鸸：erl erlj → erlj</li>
+<li>俵：bnk bnkl → bnk bnks</li>
+<li>偯：yikl → yiks</li>
+<li>儇：xrk xrkl → xrk xrks</li>
+<li>儴：rhk rhkl → rhk rhks</li>
+<li>勷：rhli → rhei</li>
+<li>噮：yrtl → yrts</li>
+<li>嚢：nhjl → nhjs</li>
+<li>壊：hkml → hkms</li>
+<li>壌：rhml → rhms</li>
+<li>壡：rvvm → rvjm rvvm</li>
+<li>媴：yrul → yrus</li>
+<li>嬛：xru xrul → xru xrus</li>
+<li>嬝：nnul → nnus</li>
+<li>嬢：nlul → nlus</li>
+<li>庡：yiql → yiqs</li>
+<li>彋：hsbl → hsbs</li>
+<li>忀：xlkl → xlks</li>
+<li>懁：xrvl → xrvs</li>
+<li>懐：hkvl → hkvs</li>
+<li>懹：rhvl → rhvs</li>
+<li>扆：yibl → yibs</li>
+<li>挔：lvol → lvos</li>
+<li>搇：qbol → qbos</li>
+<li>擐：hrol → hros</li>
+<li>攌：hrol → hros</li>
+<li>攐：qmol → qmos</li>
+<li>攮：nho nhol → nho nhos</li>
+<li>榬：yrwl → yrws</li>
+<li>檈：xrwl → xrws</li>
+<li>欀：xlwl → xlws</li>
+<li>欜：nhwl → nhws</li>
+<li>溒：yral → yras</li>
+<li>滖：sval → svas</li>
+<li>澴：hral → hras</li>
+<li>瀤：hkal → hkas</li>
+<li>瀼：rha rhal → rha rhas</li>
+<li>灢：nhal → nhas</li>
+<li>爙：rhpl → rhps</li>
+<li>環：hrrl → hrrs</li>
+<li>瓖：xlrl → xlrs</li>
+<li>畩：yihl → yihs</li>
+<li>睘：qsel → qses</li>
+<li>瞏：qsel → qses</li>
+<li>秾：nsn nsnl → nsn nsns</li>
+<li>穣：rhnl → rhns</li>
+<li>簔：sohl → sohs</li>
+<li>糫：hrzl → hrzs</li>
+<li>纕：rhil → rhis</li>
+<li>缳：hril → hris</li>
+<li>耇：gzl gzlt → gzlt</li>
+<li>耲：hkll → hkls</li>
+<li>脿：bnzl → bnzs</li>
+<li>蘘：rhg rhgl → rhg rhgs</li>
+<li>蘹：hkgl → hkgs</li>
+<li>蘾：hkgl → hkgs</li>
+<li>蠉：xrml → xrms</li>
+<li>衺：xpel → xpes</li>
+<li>袃：idul → idus</li>
+<li>袠：viel → vies</li>
+<li>袬：yult → yues</li>
+<li>裒：pzl pzld → pze pzes</li>
+<li>裚：jiol → jios</li>
+<li>裛：yilk → yies</li>
+<li>裝：vlel → vles</li>
+<li>裠：qyel → qyes</li>
+<li>裦：fzel → fzes</li>
+<li>裵：pwel → pwes</li>
+<li>裻：duvl → duvs</li>
+<li>褁：gohl → gohs</li>
+<li>褎：xqel → xqes</li>
+<li>褏：xqel → xqes</li>
+<li>褜：pczl → pczs</li>
+<li>褢：hkel → hkes</li>
+<li>褤：yrdl → yrds</li>
+<li>褧：jsfl → jsfs</li>
+<li>褩：bjcl → bjcs</li>
+<li>褭：nnel → nnes</li>
+<li>褮：ykpl → ykps</li>
+<li>褱：hkel → hkes</li>
+<li>襞：bibl → bibs</li>
+<li>諘：bnfl → bnfs</li>
+<li>譲：rhfl → rhfs</li>
+<li>躟：rhsl → rhss</li>
+<li>辸：rgsl → rgl rgsl</li>
+<li>迊：zapl → zal zapl</li>
+<li>迧：ifhl → ifl ifhl</li>
+<li>迮：zek zekl → zek zel zekl</li>
+<li>迾：lpfl → lpl lpfl</li>
+<li>逴：iovl → iol iovl</li>
+<li>遘：gzgl → gzl gzgl</li>
+<li>遤：mavl → mal mavl</li>
+<li>遪：cahl → cal cahl</li>
+<li>遳：cogl → col cogl</li>
+<li>遶：rcml → rcl rcml</li>
+<li>邆：tgfl → tgl tgfl</li>
+<li>醸：nlcl → nlcs</li>
+<li>錶：bnxl → bnxs</li>
+<li>鎱：yrxl → yrxs</li>
+<li>镮：hrsl → hrss</li>
+<li>阛：hrrl → hrrs</li>
+<li>饻：xiql → xiqs</li>
+<li>馘：golp → gol golp</li>
+<li>鱞：grsl → grss</li>
+<li>齉：nhd nhdl → nhd nhds</li>
+<li>𫍽：xrfl → xrfs</li>
+<li>𬙋：xlil → xlis</li>
+<li>𬪩：nsc nscl → nsc nscs</li>
+</ul>
+<h4 id="426">首选变化（426 个码位）</h4>
+<ul>
+<li>bm：边 → 变</li>
+<li>qd：期待 → 确定</li>
+<li>vm：证明 → 这么</li>
+<li>aie：（空） → 哀</li>
+<li>ail：哀 → 霭</li>
+<li>aol：（空） → 遨</li>
+<li>bls：不利索 → 布鲁斯</li>
+<li>bml：避免了 → 边</li>
+<li>bul：别说了 → 逋</li>
+<li>bxb：便携版 → 补习班</li>
+<li>cal：（空） → 遪</li>
+<li>col：（空） → 遳</li>
+<li>dal：（空） → 达</li>
+<li>ddj：跺跺脚 → 电动机</li>
+<li>ddl：达到了 → 逮</li>
+<li>dil：当成了 → 迪</li>
+<li>diz：电池组 → 动车组</li>
+<li>dvw：逗着玩 → 动植物</li>
+<li>dwu：耽误事 → 对我说</li>
+<li>dwy：都未有 → 动物园</li>
+<li>dyl：都有了 → 遁</li>
+<li>dzr：得罪人 → 大自然</li>
+<li>erl：鸸 → 迩</li>
+<li>ghg：广寒宫 → 共和国</li>
+<li>glj：高露洁 → 管理局</li>
+<li>gll：过来了 → 逛</li>
+<li>gol：裹 → 馘</li>
+<li>gqd：跟前的 → 过去的</li>
+<li>gsu：钢丝绳 → 甘肃省</li>
+<li>gye：（空） → 衮</li>
+<li>gyl：衮 → 给予了</li>
+<li>hll：回来了 → 遑</li>
+<li>hmw：还没玩 → 还没完</li>
+<li>idx：吃得下 → 吃东西</li>
+<li>ifl：吃饭了 → 迧</li>
+<li>igl：成功了 → 逞</li>
+<li>iol：（空） → 逴</li>
+<li>jbl：具备了 → 进</li>
+<li>jlj：捡垃圾 → 据了解</li>
+<li>jsl：就算了 → 迥</li>
+<li>jul：减少了 → 遽</li>
+<li>lol：（空） → 逻</li>
+<li>lpl：离谱了 → 迾</li>
+<li>lql：旒 → 遛</li>
+<li>mal：（空） → 遤</li>
+<li>mce：没错儿 → 袤</li>
+<li>mcl：袤 → 耄</li>
+<li>mdl：霾 → 迈</li>
+<li>mum：买什么 → 没什么</li>
+<li>mys：每一艘 → 没意思</li>
+<li>ngr：哪个人 → 那个人</li>
+<li>nuh：笯 → 那时候</li>
+<li>nyd：那也得 → 那样的</li>
+<li>phl：耪 → 逄</li>
+<li>pol：（空） → 迫</li>
+<li>pze：（空） → 裒</li>
+<li>pzl：裒 → （空）</li>
+<li>qad：亲爱哒 → 亲爱的</li>
+<li>qvd：圈重点 → 其中的</li>
+<li>rcl：（空） → 遶</li>
+<li>rgl：让给了 → 辸</li>
+<li>rhe：（空） → 瓤</li>
+<li>rhl：瓤 → 熔化炉</li>
+<li>rvj：（空） → 睿</li>
+<li>swd：送我的 → 所谓的</li>
+<li>tal：（空） → 遢</li>
+<li>tcl：太菜了 → 逃</li>
+<li>tgl：提供了 → 邆</li>
+<li>til：提出了 → 逖</li>
+<li>tnl：太难了 → 迢</li>
+<li>tul：太少了 → 途</li>
+<li>tzl：逃走了 → 透</li>
+<li>ujg：苫 → 世界观</li>
+<li>ukl：衰 → 顺口溜</li>
+<li>uyw：楯 → 是因为</li>
+<li>vse：（空） → 衷</li>
+<li>vsl：衷 → 致死量</li>
+<li>vul：煮 → 逐</li>
+<li>wll：我溜了 → 我来了</li>
+<li>wmd：完美的 → 我们的</li>
+<li>wmu：外面是 → 我们是</li>
+<li>xll：襄 → 血淋淋</li>
+<li>xml：霰 → 暹</li>
+<li>xpl：亵 → 下坡路</li>
+<li>xqy：详情页 → 星期一</li>
+<li>xtb：小图标 → 新台币</li>
+<li>ygg：一根根 → 一个个</li>
+<li>yie：彝 → 衣</li>
+<li>yil：衣 → 益</li>
+<li>yrl：（空） → 远</li>
+<li>ywv：一万种 → 意味着</li>
+<li>zal：（空） → 迊</li>
+<li>zel：（空） → 迮</li>
+<li>zlm：走了吗 → 在里面</li>
+<li>aies：（空） → 哀</li>
+<li>ailt：哀 → （空）</li>
+<li>bces：（空） → 褒</li>
+<li>bclw：褒 → 堡垒</li>
+<li>bdff：白粉 → 百分</li>
+<li>bdhe：白鹤 → 百合</li>
+<li>bhni：（空） → 帮你</li>
+<li>bibl：襞 → 避</li>
+<li>bibs：（空） → 襞</li>
+<li>bjcl：褩 → （空）</li>
+<li>bkqq：不可强求 → 冰球</li>
+<li>bndl：裱 → （空）</li>
+<li>bnds：（空） → 裱</li>
+<li>bnfs：（空） → 諘</li>
+<li>bnkl：俵 → （空）</li>
+<li>bnks：（空） → 俵</li>
+<li>bnrl：表 → （空）</li>
+<li>bnrs：（空） → 表</li>
+<li>bnul：婊 → （空）</li>
+<li>bnus：（空） → 婊</li>
+<li>bugx：卜卦 → 表示感谢</li>
+<li>buwm：榜上无名 → 不是我们</li>
+<li>bvyg：不值一顾 → 不止一个</li>
+<li>cdcl：裁 → （空）</li>
+<li>cdcs：（空） → 裁</li>
+<li>cdyz：菜油 → 才有</li>
+<li>cihz：伺候 → 此后</li>
+<li>ddkl：袋 → （空）</li>
+<li>ddks：（空） → 袋</li>
+<li>deld：吊儿郎当 → 得来</li>
+<li>diao：低凹 → 迪奥</li>
+<li>dihl：迪 → 帝皇</li>
+<li>diji：第几 → 低级</li>
+<li>diuz：低手 → 敌手</li>
+<li>dmug：当面是人，背后是鬼 → 大马士革</li>
+<li>dmvc：店招 → 点着</li>
+<li>ffww：分为 → 氛围</li>
+<li>fvqu：反治其身 → 发展趋势</li>
+<li>fzel：裦 → （空）</li>
+<li>fzes：（空） → 裦</li>
+<li>gdgx：搞东搞西 → 感到高兴</li>
+<li>gehh：隔行 → 各行</li>
+<li>ghzz：过河卒子 → 刚走</li>
+<li>gjhz：干吼 → 国际合作</li>
+<li>glzd：膏粱子弟 → 光在</li>
+<li>goes：（空） → 裹</li>
+<li>gohl：褁 → （空）</li>
+<li>gohs：（空） → 褁</li>
+<li>golh：裹 → （空）</li>
+<li>grss：（空） → 鱞</li>
+<li>gruv：灌水 → 关税</li>
+<li>gtnl：故土难离 → 共同努力</li>
+<li>gulk：骨龄 → 孤零</li>
+<li>gyes：（空） → 衮</li>
+<li>gylh：衮 → 过于落后</li>
+<li>hcdi：好滴 → 好地</li>
+<li>hejm：核减 → 壑</li>
+<li>hhyx：挥挥衣袖 → 哈哈一笑</li>
+<li>hkal：瀤 → （空）</li>
+<li>hkas：（空） → 瀤</li>
+<li>hkel：褢 → （空）</li>
+<li>hkes：（空） → 褢</li>
+<li>hkgl：蘹 → （空）</li>
+<li>hkll：耲 → （空）</li>
+<li>hkls：（空） → 耲</li>
+<li>hkml：壊 → （空）</li>
+<li>hkms：（空） → 壊</li>
+<li>hkvl：懐 → （空）</li>
+<li>hlhe：黄鹤 → 黄河</li>
+<li>hral：澴 → （空）</li>
+<li>hras：（空） → 澴</li>
+<li>hrjl：圜 → 逭</li>
+<li>hrjs：（空） → 圜</li>
+<li>hrol：擐 → （空）</li>
+<li>hros：（空） → 擐</li>
+<li>hrpl：鬟 → 还</li>
+<li>hrps：（空） → 鬟</li>
+<li>hrrl：阛 → （空）</li>
+<li>hrrs：（空） → 阛</li>
+<li>hrsl：镮 → （空）</li>
+<li>hrzl：糫 → （空）</li>
+<li>hrzs：（空） → 糫</li>
+<li>hsbl：彋 → 晎</li>
+<li>hswf：（空） → 红温</li>
+<li>hvuh：会商 → 会上</li>
+<li>hxpm：划片 → 画片</li>
+<li>iajb：插进 → 差劲</li>
+<li>idus：（空） → 袃</li>
+<li>ieiu：扯出 → 撤出</li>
+<li>iffh：陈放 → 充分发挥</li>
+<li>ijlv：掣襟露肘 → 产率</li>
+<li>iuji：初几 → 初级</li>
+<li>jibm：几遍 → 即便</li>
+<li>jicg：几层 → 基层</li>
+<li>jida：几大 → 极大</li>
+<li>jido：几朵 → 极多</li>
+<li>jidr：几段 → 极端</li>
+<li>jids：几栋 → 激动</li>
+<li>jiih：几场 → 机场</li>
+<li>jijb：几斤 → 基金</li>
+<li>jijp：几届 → 季节</li>
+<li>jinm：几年 → 纪念</li>
+<li>jiol：裚 → （空）</li>
+<li>jios：（空） → 裚</li>
+<li>jipi：几批 → 鸡皮</li>
+<li>jipn：几票 → 机票</li>
+<li>jiqu：几区 → 汲取</li>
+<li>jiui：几十 → 即使</li>
+<li>jiuz：几首 → 棘手</li>
+<li>jiva：几匝 → 叽喳</li>
+<li>jivs：几种 → 集中</li>
+<li>jkmi：劲 → 精密</li>
+<li>jmgx：紧密关系 → 经贸关系</li>
+<li>jmhz：将门虎子 → 经贸合作</li>
+<li>jsfl：褧 → （空）</li>
+<li>jttz：䦆头 → 噱头</li>
+<li>jtwm：进退无门 → 今天我们</li>
+<li>judl：绝世独立 → 精神动力</li>
+<li>jugc：举高 → 居高</li>
+<li>jxis：甲虫 → 袈</li>
+<li>kesv：客岁 → 可随</li>
+<li>kyqd：抗压强度 → 可以确定</li>
+<li>lbkf：礼不可废 → 林肯</li>
+<li>lbqu：临去 → 林区</li>
+<li>lcji：老几 → 牢记</li>
+<li>lcvh：老丈 → 老张</li>
+<li>ldve：来者 → 来着</li>
+<li>lkjb：领进 → 领巾</li>
+<li>lkji：另计 → 灵机</li>
+<li>llbf：来历不凡 → 两本</li>
+<li>lpfl：裂 → 迾</li>
+<li>lpfs：鮤 → 裂</li>
+<li>lqyi：六一 → 留意</li>
+<li>lvol：挔 → （空）</li>
+<li>lvos：（空） → 挔</li>
+<li>lvuy：捋顺 → 旅顺</li>
+<li>lyxg：兰因絮果 → 利益相关</li>
+<li>maua：麻纱 → 玛莎</li>
+<li>mces：（空） → 袤</li>
+<li>mclg：耄 → 旄</li>
+<li>mclz：袤 → （空）</li>
+<li>mdih：卖唱 → 卖场</li>
+<li>mdlh：麦浪 → 霾</li>
+<li>naxp：那些 → 哪些</li>
+<li>ngji：能级 → 能及</li>
+<li>nhal：灢 → （空）</li>
+<li>nhas：（空） → 灢</li>
+<li>nhbl：曩 → 奈何不了</li>
+<li>nhbs：（空） → 曩</li>
+<li>nhds：（空） → 齉</li>
+<li>nhjl：囊 → （空）</li>
+<li>nhjs：（空） → 囊</li>
+<li>nhol：攮 → （空）</li>
+<li>nhos：（空） → 攮</li>
+<li>nhql：馕 → （空）</li>
+<li>nhqs：（空） → 馕</li>
+<li>nhtl：囔 → （空）</li>
+<li>nhts：（空） → 囔</li>
+<li>nhwl：欜 → （空）</li>
+<li>nhws：（空） → 欜</li>
+<li>nlcl：醸 → （空）</li>
+<li>nlul：嬢 → （空）</li>
+<li>nmih：碾场 → 年长</li>
+<li>nnel：褭 → （空）</li>
+<li>nnes：（空） → 褭</li>
+<li>nnjl：袅 → （空）</li>
+<li>nnjs：（空） → 袅</li>
+<li>nnus：（空） → 嬝</li>
+<li>nsal：浓 → （空）</li>
+<li>nsas：（空） → 浓</li>
+<li>nscl：𬪩 → （空）</li>
+<li>nscs：（空） → 𬪩</li>
+<li>nsjs：（空） → 农</li>
+<li>nskl：侬 → （空）</li>
+<li>nsks：（空） → 侬</li>
+<li>nsnl：秾 → （空）</li>
+<li>nstl：哝 → （空）</li>
+<li>nszl：脓 → （空）</li>
+<li>nszs：（空） → 脓</li>
+<li>nwtn：内调 → 哪条</li>
+<li>pczl：褜 → （空）</li>
+<li>pczs：（空） → 褜</li>
+<li>phll：雱 → 耪</li>
+<li>pkpk：评评 → 平平</li>
+<li>pmuj：偏衫 → 平面设计</li>
+<li>pwel：裴 → （空）</li>
+<li>pwes：（空） → 裴</li>
+<li>pzes：（空） → 裒</li>
+<li>pzld：裒 → （空）</li>
+<li>qbol：搇 → （空）</li>
+<li>qbos：捦 → 搇</li>
+<li>qigo：起锅 → 齐国</li>
+<li>qmjl：褰 → （空）</li>
+<li>qmjs：（空） → 褰</li>
+<li>qmku：钱库 → 期末考试</li>
+<li>qmol：攐 → （空）</li>
+<li>qmos：攓 → 攐</li>
+<li>qqps：（空） → 裘</li>
+<li>qsel：瞏 → （空）</li>
+<li>qses：（空） → 瞏</li>
+<li>qssi：穷死 → 琼斯</li>
+<li>qtjm：情同姐妹 → 却见</li>
+<li>qvyv：其中有诈 → 其中一种</li>
+<li>qyel：裠 → （空）</li>
+<li>qyes：（空） → 裠</li>
+<li>rfrf：忍忍 → 人人</li>
+<li>rgxz：人工选择 → 如果现在</li>
+<li>rgyz：日拱一卒 → 仍有</li>
+<li>rhal：瀼 → （空）</li>
+<li>rhas：（空） → 瀼</li>
+<li>rhdl：禳 → （空）</li>
+<li>rhds：（空） → 禳</li>
+<li>rhei：（空） → 瓤</li>
+<li>rhfl：譲 → （空）</li>
+<li>rhfs：（空） → 譲</li>
+<li>rhgl：蘘 → （空）</li>
+<li>rhgs：（空） → 蘘</li>
+<li>rhil：纕 → （空）</li>
+<li>rhis：（空） → 纕</li>
+<li>rhkl：儴 → （空）</li>
+<li>rhks：（空） → 儴</li>
+<li>rhml：壤 → （空）</li>
+<li>rhms：人喊马嘶 → 壤</li>
+<li>rhnl：穰 → （空）</li>
+<li>rhns：（空） → 穰</li>
+<li>rhol：攘 → （空）</li>
+<li>rhos：（空） → 攘</li>
+<li>rhpl：爙 → （空）</li>
+<li>rhps：（空） → 爙</li>
+<li>rhsl：躟 → （空）</li>
+<li>rhss：（空） → 躟</li>
+<li>rhtl：嚷 → （空）</li>
+<li>rhts：（空） → 嚷</li>
+<li>rhvl：懹 → （空）</li>
+<li>rhvs：（空） → 懹</li>
+<li>sjdd：随机弹道 → 三代</li>
+<li>sjqk：三缄其口 → 实际情况</li>
+<li>sohl：簔 → （空）</li>
+<li>sohs：（空） → 簔</li>
+<li>ssbb：送殡 → 随随便便</li>
+<li>sval：滖 → 澻</li>
+<li>svas：（空） → 滖</li>
+<li>takj：踏勘 → 他看</li>
+<li>tbxh：太不像话 → 特别喜欢</li>
+<li>tkju：挺举 → 厅局</li>
+<li>trxd：突然行动 → 突然想到</li>
+<li>uaal：裟 → （空）</li>
+<li>uedm：设点 → 射电</li>
+<li>uhjl：裳 → 上将</li>
+<li>uhjs：（空） → 裳</li>
+<li>ukes：（空） → 衰</li>
+<li>uklp：衰 → （空）</li>
+<li>upjj：生平仅见 → 商品经济</li>
+<li>uuby：实属不易 → 莎士比亚</li>
+<li>uwxl：首尾相连 → 谁想</li>
+<li>veyc：折腰 → 这要</li>
+<li>vfer：真二 → 震耳</li>
+<li>viel：袠 → （空）</li>
+<li>vies：（空） → 袠</li>
+<li>viiz：纸抽 → 之仇</li>
+<li>ving：只能 → 智能</li>
+<li>vlel：装 → （空）</li>
+<li>vles：（空） → 装</li>
+<li>vses：（空） → 衷</li>
+<li>vsts：肿痛 → 中通</li>
+<li>vsvl：中装 → 重装</li>
+<li>vysx：中庸思想 → 重要思想</li>
+<li>whyu：妄语 → 文化艺术</li>
+<li>wjzd：万载 → 湾仔</li>
+<li>wuyi：五一 → 无疑</li>
+<li>wwye：尾页 → 伟业</li>
+<li>xgxx：心肝血虚 → 相关信息</li>
+<li>xiql：饻 → （空）</li>
+<li>xiqs：（空） → 饻</li>
+<li>xkhd：形骸 → 星海</li>
+<li>xles：（空） → 襄</li>
+<li>xlrl：瓖 → （空）</li>
+<li>xlsl：镶 → （空）</li>
+<li>xlss：相送 → 镶</li>
+<li>xlwl：欀 → （空）</li>
+<li>xmce：献策 → 酰</li>
+<li>xmlq：限流 → 霰</li>
+<li>xpel：衺 → （空）</li>
+<li>xpes：（空） → 亵</li>
+<li>xqes：（空） → 褎</li>
+<li>xrfl：𫍽 → （空）</li>
+<li>xrml：蠉 → （空）</li>
+<li>xrul：嬛 → 顈</li>
+<li>xrus：嫙 → 嬛</li>
+<li>xrwl：檈 → （空）</li>
+<li>xrws：（空） → 檈</li>
+<li>ycba：（空） → 要把</li>
+<li>ycmo：妖魔 → 要么</li>
+<li>ycsi：咬死 → 要死</li>
+<li>yezd：（空） → 也在</li>
+<li>yibh：依傍 → 一帮</li>
+<li>yibl：扆 → （空）</li>
+<li>yibs：（空） → 扆</li>
+<li>yici：一次 → 依次</li>
+<li>yidd：一袋 → 一代</li>
+<li>yies：（空） → 裔</li>
+<li>yikl：依 → 迤</li>
+<li>yiks：一空 → 依</li>
+<li>yile：益 → 怡乐</li>
+<li>yilt：裔 → （空）</li>
+<li>yiqr：乙醛 → 一圈</li>
+<li>yiqs：（空） → 庡</li>
+<li>yiru：移入 → 一如</li>
+<li>yisl：铱 → 逸</li>
+<li>yith：饴糖 → 一趟</li>
+<li>yitr：疑团 → 一团</li>
+<li>yiuo：臆说 → 一说</li>
+<li>yjho：验货 → 烟火</li>
+<li>ykpl：褮 → （空）</li>
+<li>ykps：（空） → 褮</li>
+<li>yral：溒 → （空）</li>
+<li>yras：（空） → 溒</li>
+<li>yrcl：辕 → （空）</li>
+<li>yrcs：（空） → 辕</li>
+<li>yrml：袁 → 遠</li>
+<li>yrms：（空） → 袁</li>
+<li>yrol：猿 → （空）</li>
+<li>yros：（空） → 猿</li>
+<li>yrul：媴 → （空）</li>
+<li>yrws：（空） → 榬</li>
+<li>yues：（空） → 袬</li>
+<li>yvvy：由衷之言 → 一直这样</li>
+<li>yydh：允当 → 愿意的话</li>
+<li>yzng：影子内阁 → 又能</li>
+<li>zdhc：做得很不错 → 再好</li>
+<li>zdwo：在握 → 在我</li>
+<li>zrgs：钻工 → 责任公司</li>
+</ul>
+<h4 id="6">新增词条（6 条）</h4>
+<p>还没完 hmw、帮你 bhni、富商 fuuh、红温 hswf、要把 ycba、也在 yezd。</p>
+<h4 id="u-1">ü 码：首选变化（1 个码位）</h4>
+<ul>
+<li>gejv：格局 → 歌剧</li>
+</ul>
+<h4 id="u-0">ü 码：新增词条（0 条）</h4>
+<p>。</p>
+<h2 id="31">夜莺 3.1</h2>
 <p>2026-10-15</p>
 <p>3.1 是 3.0 发布后根据作者实打和群友反馈做的一次整理：新增两个归并字根，修正几处拆分，调整一批常用字的简码和词序，加了二字词的 ü 容错码；输入法方面，Rime 包解压即用，形码版可以加词。字根键位没有变。</p>
-<h3 id="_1">拆分</h3>
+<h3 id="_8">一、根的修改</h3>
 <ul>
-<li><strong>新增字根“出”，并入山组（H 键）</strong>：原来拆成“凵 ＋ 山”的 38 个字改拆为出，如 拙 = 扌 ＋ 出、础 = 石 ＋ 出、屈 = 尸 ＋ 出。变码 5 字：出 iurh→iuhh、祟 svrt→svht、粜 tnrz→tnhz（失去三简）、糶、䢺。</li>
+<li><strong>新增字根“出”，并入山组（H 键）</strong>：原来拆成“凵 ＋ 山”的 38 个字改拆为出：出、础、屈、掘、拙、窟、崛、咄、祟、倔、黜、茁、绌、堀、诎、粜、䓛、䢺、朏、饳、柮、忁、曓、糶、貀、啒、淈、誳、袦、崫、趉、韷、昢、蟗、鈯、聉、笜、煀。变码 5 字：出 iurh→iuhh、祟 svrt→svht、粜 tnrz→tnhz（失去三简）、糶、䢺。</li>
 <li><strong>睾的上部归入皿组（E 键）</strong>：原来拆成“丿 ＋ 罒”，现在作为“睾字头”与皿、罒、血同组。睾 gcfu→gceu（失去三简，gcf 给了诰）。</li>
-<li><strong>冒字头（冃）按扁日“曰”拆</strong>：冒、帽、瑁、冕、勖、冔、毷、媢、蝐、艒、赗、焨 共 12 字，如 冒 = 曰 ＋ 目、冕 = 曰 ＋ 免。</li>
+<li><strong>冒字头（冃）按扁日“曰”拆</strong>：冒、帽、瑁、冕、勖、冔、毷、媢、蝐、艒、赗、焨 共 12 字。冒 = 曰 ＋ 目、冕 = 曰 ＋ 免，其余同理。</li>
 <li>变码：冒 mcrb→mcbb，三简 mcr→mcb；冕 mmrs→mmbs（失去三简）；勖 xuri→xubi（失去三简）；冔 xurc→xubc；毷 mcrg→mcbg。</li>
 <li>连带：昴让出三简 mcb（只剩 mcbi）；瑁得三简 mcr；顼得三简 xur。</li>
 <li><strong>彧按字形拆为 弋 ＋ 口 ＋ 彡</strong>（原拆 戈＋口＋一＋丿＋丿），码不变 yuef。</li>
 <li>现为 129 组字根、408 个根形。</li>
+<li>现为 129 组字根、408 个根形。</li>
 </ul>
-<h3 id="_2">简码</h3>
+<h3 id="_9">二、字的修改</h3>
 <ul>
 <li><strong>出、处、厨、吃</strong>：一简 i 由“吃”改为“出”，二简 iu 由“出”改为“处”，三简 iuq 给“厨”（原来只有四码）；吃改用三简 iit（嗤只留全码 iitm）。</li>
 <li><strong>只、知、智</strong>：二简 vi 给“只”（单用很多，原来的 vit 不好按）；知改用三简 vih；智只留全码 vihb。vihv 上“智慧”排第一、“只会”第二。</li>
@@ -57,25 +770,418 @@
 <li><strong>激、浅、附</strong>：jia 给“激”（济改打全码 jian）；qma 给“浅”（同 2.5，潜改打全码 qmab）；fuy 给“附”（夫改打全码 fuyy，仍排第一）。</li>
 <li><strong>煮 vul</strong>（朱改打全码 vull）、<strong>伸 ufk</strong>（什改打全码 ufkc、uikc）、<strong>右 yzc</strong>（友改打全码 yzcq）、<strong>搓 coo</strong>（措改打全码 coob）、<strong>幕 muf</strong>（慕改打全码 mufv）、<strong>景 jkb</strong>（睛改打全码 jkbz）。</li>
 </ul>
-<h3 id="_3">字词</h3>
+<h3 id="_10">三、词的修改</h3>
 <ul>
-<li><strong>ü 单字码字在前</strong>：jv 剧、xv 绪，以及 jvb 居、jvr 巨、jvo 狙、yvz 予、yvl 欲、yvo 羽、yvc 郁，是方便打字的正式码（如居的全码 jubt 不好按），一律单字排第一（3.0 里这些码排在词后）。</li>
-<li><strong>二字词的 ü 容错码</strong>：词频前 20000 的二字词，第一个字是 ju、qu、xu 的可以写成 jv、qv、xv，第二个字是 ju 的可以写成 jv，原码照常可用。如 居然 jurj/jvrj、区域 quyu/qvyu、根据 gfju/gfjv。共 250 个新码；新码上容错词排第一，原有的长词让位。</li>
-<li><strong>三码位让给特别常用的简词</strong>：三码位仍然是字在前，但简词的词频超过字频 1000 倍时简词排第一。共 33 处，原来排第一的都是几乎不用的字，如 nag 哪个、jsu 就算是、dgr 打工人、mgx 没关系、vfb 支付宝、hzm 孩子们、npy 女朋友、kyu 可以说。</li>
-<li><strong>词序按作者实打调整</strong>（33 个码位）：如 jiji 积极、lmxi 练习、tsyi 同意、vfui 真实、duzi 独自、qmli 潜力、guge 谷歌、gowh 过往、jkvy 精准、ourj 偶然、dt 点头、yeyk 夜莺。</li>
-<li><strong>新增词</strong>：催更、等我、当我、幻都、出价、就好、拿钱、小岛、渔夫。</li>
+<li><strong>新增词</strong>：催更 cvgg、等我 dgwo、当我 dhwo、幻都 hrdu、出价 iujx、就好 jqhc、拿钱 naqm、小岛 xndc、渔夫 yufu。</li>
+</ul>
+<h3 id="_11">四、简词的修改</h3>
+<ul>
+<li><strong>三码位让给特别常用的简词</strong>：三码位仍然是字在前，但简词的词频超过字频 1000 倍时简词排第一。共 33 处（原来排第一的都是几乎不用的字）：bbh 并不会、bjb 笔记本、bng 不能够、dgr 打工人、ggx 高跟鞋、gzl 骨子里、huu 活生生、hyv 后遗症、hzm 孩子们、izx 创造性、jsu 就算是、jum 叫什么、kyu 可以说、lbb 冷冰冰、lnr 老年人、mgh 玫瑰花、mgx 没关系、nag 哪个、nju 那就是、npy 女朋友、qyj 企业家、thl 太好了、val 张爱玲、vdq 主动权、vfb 支付宝、vir 主持人、vyj 转眼间、vyk 这一刻、xpt 须菩提、xrk 向日葵、xrx 虚荣心、ybv 用不着、ycc 一次次。</li>
+<li><strong>简词顺序按作者实打调整</strong>（2 处）：dt 点头；lyb 另一边。</li>
+</ul>
+<h3 id="_12">五、码位的修改</h3>
+<ul>
+<li><strong>全码码位顺序按作者实打调整</strong>（29 处，列出的排在最前，按此顺序）：bkjn 病娇、冰窖；cvgg 催更；djxi 旦夕；dmll 电量；duzi 独自；gowh 过往；guge 谷歌、骨骼；herf 何人；hfql 很强、合法权利；jiji 积极；jkvy 精准；jqhc 就好；jvzi 橘子；ldve 来者；lmxi 练习；mcdk 锚定；ourj 偶然；qiyi 奇异；qmli 潜力；tdmh 太忙；tmti 天梯；tsyi 同意；vfui 真实；wjnm 晚年；xndc 小岛；yeyk 夜莺、夜桜；yjuf 眼神、延伸；yufu 渔夫；vihv 智慧、只会。</li>
 <li><strong>脯（果脯的 fǔ）不再让给长词</strong>：fuzw 上脯排在“丰收在望”前面。</li>
 </ul>
-<h3 id="_4">输入法</h3>
+<h3 id="_13">六、输入法</h3>
 <ul>
 <li><strong>解压即用</strong>：Rime 包直接带好 default.custom.yaml，解压到用户文件夹、点“重新部署”就能用，不用再改名或合并配置。V5、形码、单字三个方案都已列好，装几个包、先后顺序都不影响。注意：这会替换用户文件夹里原有的 default.custom.yaml，如果你还用着别的方案，部署后要把它们加回方案列表。</li>
 <li><strong>形码版加词（录词）</strong>：按 Ctrl+Enter 开始录词，照常逐字打出，再按 Ctrl+Enter 结束，录下的字按夜莺词规则存为词（二字 AaAbBaBb、三字 AaBaCa、四字以上 AaBaCaZa）。录词时第一个候选后面显示〔录词：…〕，没有输入时按 Esc 取消；造的词带〔造〕，选中后 Shift+Delete 删除。形码版的词表独立，与 V5 版的造词互不影响。</li>
 <li><strong>Windows 包</strong>改用魔虎当前的运行库（不再需要 onnxruntime.dll）。</li>
 </ul>
+<h3 id="u-jvqvxvyv">七、ü 码（jv、qv、xv、yv）</h3>
+<ul>
+<li><strong>ü 单字码字在前</strong>：jv 剧、xv 绪，以及 jvb 居、jvr 巨、jvo 狙、yvz 予、yvl 欲、yvo 羽、yvc 郁，是方便打字的正式码（如居的全码 jubt 不好按），一律单字排第一（3.0 里这些码排在词后）。</li>
+<li><strong>二字词的 ü 容错码</strong>：词频前 20000 的二字词，第一个字是 ju、qu、xu 的可以写成 jv、qv、xv，第二个字是 ju 的可以写成 jv，原码照常可用。新码上容错词排第一，原有的长词让位。共 250 个新码（按词频）：需要 xvyc、许多 xvdo、一句 yijv、根据 gfjv、具有 jvyz、居然 jvrj、证据 vgjv、拒绝 jvjt、距离 jvli、具体 jvti、巨大 jvda、取得 qvde、数据 uujv、区域 qvyu、恐惧 ksjv、需求 xvqq、去找 qvvc、去看 qvkj、凝聚 nkjv、这句 vejv、结局 jpjv、工具 gsjv、依据 yijv、具备 jvbw、据说 jvuo、几句 jijv、规矩 gvjv、差距 iajv、局面 jvmm、区别 qvbp、居民 jvmb、举动 jvds、居住 jvvu、虚空 xvks、许久 xvjq、邻居 lbjv、格局 gejv、举行 jvxk、去世 qvui、剧烈 jvlp、占据 vjjv、举起 jvqi、取出 qviu、聚集 jvji、渠道 qvdc、汇聚 hvjv、居于 jvyu、面具 mmjv、布局 bujv、趋势 qvui、畏惧 wwjv、许可 xvke、取消 qvxn、沮丧 jvsh、虚假 xvjx、那句 najv、拘役 jvyi、聚会 jvhv、去过 qvgo、去年 qvnm、悲剧 bwjv、两句 lljv、举措 jvco、虚伪 xvww、举办 jvbj、须要 xvyc、局部 jvbu、局长 jvvh、玩具 wjjv、大局 dajv、诅咒 jvvz、虚弱 xvro、剧情 jvqk、家具 jxjv、曲折 qvve、全局 qrjv、选举 xrjv、虚幻 xvhr、虚无 xvwu、区分 qvff、去买 qvmd、抗拒 khjv、拘留 jvlq、票据 pnjv、驱动 qvds、惧怕 jvpa、取代 qvdd、区区 qvqu、巨人 jvrf、聚焦 jvjn、相聚 xljv、句子 jvzi、剧痛 jvts、虚荣 xvrs、不惧 bujv、巨龙 jvls、举证 jvvg、举报 jvbc、虚拟 xvni、躯体 qvti、剧本 jvbf、曲线 qvxm、巨头 jvtz、叙述 xvuu、巨石 jvui、举止 jvvi、举手 jvuz、局势 jvui、聚在 jvzd、取决 qvjt、局限 jvxm、举着 jvve、取款 qvkr、徐徐 xvxu、娶了 qvle、去死 qvsi、屈指 qvvi、分局 ffjv、许下 xvxx、高举 gcjv、菊花 jvhx、戏剧 xijv、趣味 qvww、屈服 qvfu、取悦 qvyt、驱逐 qvvu、取下 qvxx、开具 kdjv、须在 xvzd、巨响 jvxl、加剧 jxjv、咀嚼 jvjt、艰巨 jmjv、盘踞 pjjv、拒收 jvuz、据此 jvci、曲子 qvzi、屈辱 qvru、驱使 qvui、同居 tsjv、说句 uojv、诗句 uijv、取胜 qvug、聚成 jvig、鞠躬 jvgs、取暖 qvnr、狙击 jvji、取舍 qvue、虚度 xvdu、最具 zvjv、聚散 jvsj、喜剧 xijv、许诺 xvno、虚构 xvgz、巨浪 jvlh、半句 bjjv、区间 qvjm、剧变 jvbm、道具 dcjv、须弥 xvmi、取笑 qvxn、去掉 qvdn、语句 yujv、须知 xvvi、警局 jkjv、去路 qvlu、去除 qviu、收据 uzjv、巨型 jvxk、定居 dkjv、举杯 jvbw、驱赶 qvgj、去向 qvxl、之举 vijv、居高 jvgc、取名 qvmk、举例 jvli、无惧 wujv、许愿 xvyr、出局 iujv、器具 qijv、极具 jijv、驱散 qvsj、此举 cijv、须臾 xvyu、更具 ggjv、取经 qvjk、聚餐 jvcj、区内 qvnw、编剧 bmjv、虚心 xvxb、居家 jvjx、一局 yijv、隐居 ybjv、橘子 jvzi、团聚 trjv、徐州 xvvz、惊惧 jkjv、句句 jujv、句句 jvju、句句 jvjv、居多 jvdo、聚合 jvhe、序列 xvlp、趋于 qvyu、句号 jvhc、巨额 jvee、用具 ysjv、当局 dhjv、变局 bmjv、列举 lpjv、取回 qvhv、虚妄 xvwh、饭局 fjjv、居所 jvso、安居 anjv、剧毒 jvdu、取证 qvvg、急剧 jijv、被拒 bwjv、取向 qvxl、战局 vjjv、总局 zsjv、续费 xvfw、取走 qvzz、取保 qvbc、拘束 jvuu、屈原 qvyr、相距 xljv、大举 dajv、局促 jvcu、歌剧 gejv、举国 jvgo、飓风 jvfg、剧院 jvyr、分居 ffjv、剧组 jvzu、拒签 jvqm、躯壳 qvke、开局 kdjv、字句 zijv、科举 kejv、去留 qvlq、词句 cijv、酗酒 xvjq、邮局 yzjv、单据 djjv、虚实 xvui、巨蟒 jvmh、火炬 hojv。</li>
+</ul>
+<h3 id="_14">附录</h3>
+<p>以下由 3.0 与 3.1 的字词表逐条比对生成，包含上面所有改动带来的全部变化。</p>
+<h4 id="42">单字码变化（42 字）</h4>
+<ul>
+<li>出：iu iurh → i iuhh</li>
+<li>只：vit vitl → vi vit vitl</li>
+<li>知：vi viht → vih viht</li>
+<li>什：ufk ufkc uikc → ufkc uikc</li>
+<li>处：iuq iuqv → iu iuqv</li>
+<li>导：dck dcko → dcko</li>
+<li>济：jia jian → jian</li>
+<li>夫：fuy fuyy → fuyy</li>
+<li>吃：i iitb → iit iitb</li>
+<li>友：yzc yzcq → yzcq</li>
+<li>倒：dckg → dck dckg</li>
+<li>激：jiaq → jia jiaq</li>
+<li>右：yzct → yzc yzct</li>
+<li>景：jkby → jkb jkby</li>
+<li>智：vih vihb → vihb</li>
+<li>附：fuyf → fuy fuyf</li>
+<li>睛：jkb jkbz → jkbz</li>
+<li>潜：qma qmab → qmab</li>
+<li>朱：vul vull → vull</li>
+<li>措：coo coob → coob</li>
+<li>伸：ufkh → ufk ufkh</li>
+<li>冒：mcr mcrb → mcb mcbb</li>
+<li>幕：mufp → muf mufp</li>
+<li>浅：qmae → qma qmae</li>
+<li>慕：muf mufv → mufv</li>
+<li>厨：iuqo → iuq iuqo</li>
+<li>煮：vulp → vul vulp</li>
+<li>搓：coom → coo coom</li>
+<li>嗤：iit iitm → iitm</li>
+<li>祟：svrt → svht</li>
+<li>冕：mmr mmrs → mmbs</li>
+<li>睾：gcf gcfu → gceu</li>
+<li>顼：xurj → xur xurj</li>
+<li>诰：gcft → gcf gcft</li>
+<li>瑁：mcrb → mcr mcrb</li>
+<li>勖：xur xuri → xubi</li>
+<li>昴：mcb mcbi → mcbi</li>
+<li>粜：tnr tnrz → tnhz</li>
+<li>䢺：iury → iuhy</li>
+<li>冔：xurc → xubc</li>
+<li>毷：mcrg → mcbg</li>
+<li>糶：tnrd → tnhd</li>
+</ul>
+<h4 id="102">首选变化（102 个码位）</h4>
+<ul>
+<li>i：吃 → 出</li>
+<li>dt：冬天 → 点头</li>
+<li>iu：出 → 处</li>
+<li>vi：知 → 只</li>
+<li>bbh：豳 → 并不会</li>
+<li>bjb：昄 → 笔记本</li>
+<li>bng：藨 → 不能够</li>
+<li>coo：措 → 搓</li>
+<li>dck：导 → 倒</li>
+<li>dgr：璒 → 打工人</li>
+<li>fuy：夫 → 附</li>
+<li>gcf：睾 → 诰</li>
+<li>ggx：𬒔 → 高跟鞋</li>
+<li>gzl：耇 → 骨子里</li>
+<li>huu：嫭 → 活生生</li>
+<li>hyv：惛 → 后遗症</li>
+<li>hzm：堠 → 孩子们</li>
+<li>iit：嗤 → 吃</li>
+<li>iuq：处 → 厨</li>
+<li>izx：侴 → 创造性</li>
+<li>jia：济 → 激</li>
+<li>jkb：睛 → 景</li>
+<li>jsu：颎 → 就算是</li>
+<li>jum：弆 → 叫什么</li>
+<li>kyu：婫 → 可以说</li>
+<li>lbb：瞵 → 冷冰冰</li>
+<li>lnr：髎 → 老年人</li>
+<li>lyb：另一半 → 另一边</li>
+<li>mcb：昴 → 冒</li>
+<li>mcr：冒 → 瑁</li>
+<li>mgh：㠓 → 玫瑰花</li>
+<li>mgx：礞 → 没关系</li>
+<li>mmr：冕 → 蒙面人</li>
+<li>muf：慕 → 幕</li>
+<li>nag：𦰡 → 哪个</li>
+<li>nju：婻 → 那就是</li>
+<li>npy：陧 → 女朋友</li>
+<li>qma：潜 → 浅</li>
+<li>qyj：囷 → 企业家</li>
+<li>thl：耥 → 太好了</li>
+<li>tnr：粜 → （空）</li>
+<li>ufk：什 → 伸</li>
+<li>val：霅 → 张爱玲</li>
+<li>vdq：瘵 → 主动权</li>
+<li>vfb：昣 → 支付宝</li>
+<li>vih：智 → 知</li>
+<li>vir：氏 → 主持人</li>
+<li>vul：朱 → 煮</li>
+<li>vyj：窀 → 转眼间</li>
+<li>vyk：衠 → 这一刻</li>
+<li>xpt：叶 → 须菩提</li>
+<li>xrk：儇 → 向日葵</li>
+<li>xrx：碹 → 虚荣心</li>
+<li>xur：勖 → 顼</li>
+<li>ybv：愔 → 用不着</li>
+<li>ycc：轺 → 一次次</li>
+<li>yzc：友 → 右</li>
+<li>bkjn：冰窖 → 病娇</li>
+<li>coom：搓 → 挫</li>
+<li>cvgg：毳 → 催更</li>
+<li>dckg：倒 → 导坑</li>
+<li>dgwo：（空） → 等我</li>
+<li>dhwo：（空） → 当我</li>
+<li>djxi：单膝 → 旦夕</li>
+<li>dmll：点亮 → 电量</li>
+<li>duzi：肚子 → 独自</li>
+<li>fuyy：浮云 → 夫</li>
+<li>fuzw：丰收在望 → 脯</li>
+<li>gceu：（空） → 睾</li>
+<li>gowh：国王 → 过往</li>
+<li>guge：骨骼 → 谷歌</li>
+<li>herf：鹤人 → 何人</li>
+<li>hfql：合法权利 → 很强</li>
+<li>iury：䢺 → （空）</li>
+<li>jian：积案 → 济</li>
+<li>jiji：几级 → 积极</li>
+<li>jkvy：憬 → 精准</li>
+<li>jqhc：九号 → 就好</li>
+<li>ldve：来着 → 来者</li>
+<li>lmxi：联系 → 练习</li>
+<li>mcbb：（空） → 冒</li>
+<li>mcdk：铆钉 → 锚定</li>
+<li>mcrg：毷 → （空）</li>
+<li>mmbs：（空） → 冕</li>
+<li>naqm：（空） → 拿钱</li>
+<li>ourj：鸥 → 偶然</li>
+<li>qiyi：起义 → 奇异</li>
+<li>qmli：千里 → 潜力</li>
+<li>svht：（空） → 祟</li>
+<li>svrt：祟 → （空）</li>
+<li>tdmh：头顶冒汗 → 太忙</li>
+<li>tmti：天体 → 天梯</li>
+<li>tnhz：套你猴子 → 粜</li>
+<li>tnrd：糶 → （空）</li>
+<li>tnrz：粜 → （空）</li>
+<li>tsyi：统一 → 同意</li>
+<li>vfui：真是 → 真实</li>
+<li>vihv：只会 → 智慧</li>
+<li>wjnm：万年 → 晚年</li>
+<li>xndc：笑道 → 小岛</li>
+<li>yeyk：野营 → 夜莺</li>
+<li>yufu：预付 → 渔夫</li>
+</ul>
+<h4 id="9">新增词条（9 条）</h4>
+<p>催更 cvgg、等我 dgwo、当我 dhwo、幻都 hrdu、出价 iujx、就好 jqhc、拿钱 naqm、小岛 xndc、渔夫 yufu。</p>
+<h4 id="u-224">ü 码：首选变化（224 个码位）</h4>
+<ul>
+<li>jv：简直 → 剧</li>
+<li>xv：寻找 → 绪</li>
+<li>jvb：颈椎病 → 居</li>
+<li>jvr：见证人 → 巨</li>
+<li>yvc：眼中刺 → 郁</li>
+<li>yvl：意志力 → 欲</li>
+<li>yvz：一直在 → 予</li>
+<li>anjv：（空） → 安居</li>
+<li>bjjv：不见经传 → 半句</li>
+<li>bmjv：保密级画质 → 编剧</li>
+<li>bujv：博施济众 → 布局</li>
+<li>bwjv：（空） → 悲剧</li>
+<li>cijv：（空） → 此举</li>
+<li>dajv：（空） → 大局</li>
+<li>dcjv：（空） → 道具</li>
+<li>dhjv：刁滑奸诈 → 当局</li>
+<li>djjv：大家记住 → 单据</li>
+<li>dkjv：（空） → 定居</li>
+<li>ffjv：防范机制 → 分局</li>
+<li>fjjv：（空） → 饭局</li>
+<li>gcjv：高层建筑 → 高举</li>
+<li>gejv：（空） → 格局</li>
+<li>gfjv：高附加值 → 根据</li>
+<li>ggjv：关关雎鸠，在河之洲。 → 更具</li>
+<li>gsjv：（空） → 工具</li>
+<li>gvjv：（空） → 规矩</li>
+<li>hojv：（空） → 火炬</li>
+<li>hvjv：寭 → 汇聚</li>
+<li>iajv：（空） → 差距</li>
+<li>iujv：（空） → 出局</li>
+<li>jijv：检查机制 → 几句</li>
+<li>jkjv：（空） → 警局</li>
+<li>jmjv：（空） → 艰巨</li>
+<li>jpjv：检票进站 → 结局</li>
+<li>jujv：举世皆知 → 句句</li>
+<li>jvbc：（空） → 举报</li>
+<li>jvbf：举止不凡 → 剧本</li>
+<li>jvbj：接踵比肩 → 举办</li>
+<li>jvbm：（空） → 剧变</li>
+<li>jvbu：紧追不舍 → 局部</li>
+<li>jvbw：脚正不怕鞋歪 → 具备</li>
+<li>jvci：（空） → 据此</li>
+<li>jvcj：紧张刺激 → 聚餐</li>
+<li>jvco：（空） → 举措</li>
+<li>jvcu：（空） → 局促</li>
+<li>jvda：（空） → 巨大</li>
+<li>jvdo：聚众斗殴 → 居多</li>
+<li>jvds：（空） → 举动</li>
+<li>jvdu：竞争对手 → 剧毒</li>
+<li>jvee：（空） → 巨额</li>
+<li>jvfg：建筑风格 → 飓风</li>
+<li>jvgc：（空） → 居高</li>
+<li>jvgo：（空） → 举国</li>
+<li>jvgs：胶柱鼓瑟 → 鞠躬</li>
+<li>jvhc：（空） → 句号</li>
+<li>jvhe：（空） → 聚合</li>
+<li>jvhv：绝症患者 → 聚会</li>
+<li>jvhx：（空） → 菊花</li>
+<li>jvig：（空） → 聚成</li>
+<li>jvji：（空） → 聚集</li>
+<li>jvjn：（空） → 聚焦</li>
+<li>jvjt：（空） → 拒绝</li>
+<li>jvju：集中精神 → 句句</li>
+<li>jvjv：竭忠尽智 → 句句</li>
+<li>jvjx：简直就像 → 居家</li>
+<li>jvlh：（空） → 巨浪</li>
+<li>jvli：价值连城 → 距离</li>
+<li>jvlp：（空） → 剧烈</li>
+<li>jvlq：（空） → 拘留</li>
+<li>jvls：（空） → 巨龙</li>
+<li>jvmb：就这么办 → 居民</li>
+<li>jvmh：（空） → 巨蟒</li>
+<li>jvmm：金珠玛米 → 局面</li>
+<li>jvpa：（空） → 惧怕</li>
+<li>jvqi：鸠占鹊巢 → 举起</li>
+<li>jvqk：（空） → 剧情</li>
+<li>jvqm：（空） → 拒签</li>
+<li>jvrf：（空） → 巨人</li>
+<li>jvrj：（空） → 居然</li>
+<li>jvsh：九洲四海 → 沮丧</li>
+<li>jvsj：（空） → 聚散</li>
+<li>jvso：（空） → 居所</li>
+<li>jvti：（空） → 具体</li>
+<li>jvts：（空） → 剧痛</li>
+<li>jvtz：举止投足 → 巨头</li>
+<li>jvui：（空） → 巨石</li>
+<li>jvuo：（空） → 据说</li>
+<li>jvuu：（空） → 拘束</li>
+<li>jvuz：（空） → 举手</li>
+<li>jvve：（空） → 举着</li>
+<li>jvvg：（空） → 举证</li>
+<li>jvvh：近朱者赤，近墨者黑 → 局长</li>
+<li>jvvi：近朱者赤 → 举止</li>
+<li>jvvu：尽忠职守 → 居住</li>
+<li>jvvz：（空） → 诅咒</li>
+<li>jvxk：（空） → 举行</li>
+<li>jvxl：（空） → 巨响</li>
+<li>jvxm：（空） → 局限</li>
+<li>jvyi：（空） → 拘役</li>
+<li>jvyr：（空） → 剧院</li>
+<li>jvyu：建筑艺术 → 居于</li>
+<li>jvyz：今朝有酒今朝醉 → 具有</li>
+<li>jvzd：（空） → 聚在</li>
+<li>jvzi：（空） → 橘子</li>
+<li>jvzu：聚众滋事 → 剧组</li>
+<li>jxjv：尽心尽职 → 家具</li>
+<li>kdjv：看得见摸得着 → 开具</li>
+<li>kejv：（空） → 科举</li>
+<li>khjv：（空） → 抗拒</li>
+<li>ksjv：（空） → 恐惧</li>
+<li>lbjv：（空） → 邻居</li>
+<li>lljv：淋漓尽致 → 两句</li>
+<li>lpjv：（空） → 列举</li>
+<li>mmjv：（空） → 面具</li>
+<li>najv：（空） → 那句</li>
+<li>nkjv：（空） → 凝聚</li>
+<li>pjjv：评价机制 → 盘踞</li>
+<li>pnjv：（空） → 票据</li>
+<li>qijv：浅尝即止 → 器具</li>
+<li>qrjv：（空） → 全局</li>
+<li>qvbc：气质不错 → 取保</li>
+<li>qvbp：（空） → 区别</li>
+<li>qvdc：（空） → 渠道</li>
+<li>qvdd：群众的眼睛是雪亮的 → 取代</li>
+<li>qvde：（空） → 取得</li>
+<li>qvdn：（空） → 去掉</li>
+<li>qvds：（空） → 驱动</li>
+<li>qvff：（空） → 区分</li>
+<li>qvfu：（空） → 屈服</li>
+<li>qvgj：（空） → 驱赶</li>
+<li>qvgo：（空） → 去过</li>
+<li>qvhv：（空） → 取回</li>
+<li>qviu：（空） → 取出</li>
+<li>qvjk：群众疾苦 → 取经</li>
+<li>qvjm：（空） → 区间</li>
+<li>qvjt：（空） → 取决</li>
+<li>qvke：（空） → 躯壳</li>
+<li>qvkj：（空） → 去看</li>
+<li>qvkr：（空） → 取款</li>
+<li>qvle：（空） → 娶了</li>
+<li>qvlq：（空） → 去留</li>
+<li>qvlu：（空） → 去路</li>
+<li>qvmd：穷追猛打 → 去买</li>
+<li>qvmk：（空） → 取名</li>
+<li>qvnm：（空） → 去年</li>
+<li>qvnr：（空） → 取暖</li>
+<li>qvnw：（空） → 区内</li>
+<li>qvqu：（空） → 区区</li>
+<li>qvru：（空） → 屈辱</li>
+<li>qvsi：（空） → 去死</li>
+<li>qvsj：（空） → 驱散</li>
+<li>qvti：强制退出 → 躯体</li>
+<li>qvue：（空） → 取舍</li>
+<li>qvug：（空） → 取胜</li>
+<li>qvui：抢占市场 → 去世</li>
+<li>qvvc：（空） → 去找</li>
+<li>qvve：（空） → 曲折</li>
+<li>qvvg：（空） → 取证</li>
+<li>qvvi：（空） → 屈指</li>
+<li>qvvu：（空） → 驱逐</li>
+<li>qvww：强者为王 → 趣味</li>
+<li>qvxl：强装笑脸 → 去向</li>
+<li>qvxm：旗帜鲜明 → 曲线</li>
+<li>qvxn：（空） → 取消</li>
+<li>qvxx：（空） → 取下</li>
+<li>qvyr：（空） → 屈原</li>
+<li>qvyt：（空） → 取悦</li>
+<li>qvyu：轻舟已过万重山 → 区域</li>
+<li>qvzi：（空） → 曲子</li>
+<li>qvzz：（空） → 取走</li>
+<li>trjv：天人交战 → 团聚</li>
+<li>tsjv：推送机制 → 同居</li>
+<li>uijv：市场竞争 → 诗句</li>
+<li>uojv：（空） → 说句</li>
+<li>uujv：（空） → 数据</li>
+<li>uzjv：十字军东征 → 收据</li>
+<li>vejv：（空） → 这句</li>
+<li>vgjv：（空） → 证据</li>
+<li>vijv：（空） → 之举</li>
+<li>vjjv：捉襟见肘 → 占据</li>
+<li>wjjv：（空） → 玩具</li>
+<li>wujv：（空） → 无惧</li>
+<li>wwjv：围魏救赵 → 畏惧</li>
+<li>xijv：窸 → 戏剧</li>
+<li>xljv：（空） → 相聚</li>
+<li>xrjv：（空） → 选举</li>
+<li>xvdo：（空） → 许多</li>
+<li>xvdu：（空） → 虚度</li>
+<li>xvfw：（空） → 续费</li>
+<li>xvgz：（空） → 虚构</li>
+<li>xvhr：（空） → 虚幻</li>
+<li>xvjq：心智健全 → 许久</li>
+<li>xvjx：（空） → 虚假</li>
+<li>xvke：（空） → 许可</li>
+<li>xvks：（空） → 虚空</li>
+<li>xvlp：（空） → 序列</li>
+<li>xvmi：（空） → 须弥</li>
+<li>xvni：（空） → 虚拟</li>
+<li>xvno：（空） → 许诺</li>
+<li>xvqq：兴致缺缺 → 需求</li>
+<li>xvro：（空） → 虚弱</li>
+<li>xvrs：（空） → 虚荣</li>
+<li>xvui：（空） → 虚实</li>
+<li>xvuu：虚张声势 → 叙述</li>
+<li>xvvi：（空） → 须知</li>
+<li>xvvz：（空） → 徐州</li>
+<li>xvwh：（空） → 虚妄</li>
+<li>xvwu：心中无数 → 虚无</li>
+<li>xvww：（空） → 虚伪</li>
+<li>xvxb：（空） → 虚心</li>
+<li>xvxu：（空） → 徐徐</li>
+<li>xvxx：（空） → 许下</li>
+<li>xvyc：（空） → 需要</li>
+<li>xvyr：心中一热 → 许愿</li>
+<li>xvyu：心中有数 → 须臾</li>
+<li>xvzd：（空） → 须在</li>
+<li>ybjv：（空） → 隐居</li>
+<li>yijv：（空） → 一句</li>
+<li>ysjv：有所进展 → 用具</li>
+<li>yujv：约束机制 → 语句</li>
+<li>yzjv：（空） → 邮局</li>
+<li>zijv：自出机杼 → 字句</li>
+<li>zsjv：（空） → 总局</li>
+<li>zvjv：字斟句酌 → 最具</li>
+</ul>
+<h4 id="u-250">ü 码：新增词条（250 条）</h4>
+<p>安居 anjv、半句 bjjv、编剧 bmjv、变局 bmjv、布局 bujv、不惧 bujv、被拒 bwjv、悲剧 bwjv、词句 cijv、此举 cijv、大举 dajv、大局 dajv、道具 dcjv、当局 dhjv、单据 djjv、定居 dkjv、分居 ffjv、分局 ffjv、饭局 fjjv、高举 gcjv、歌剧 gejv、格局 gejv、根据 gfjv、更具 ggjv、工具 gsjv、规矩 gvjv、火炬 hojv、汇聚 hvjv、差距 iajv、出局 iujv、几句 jijv、急剧 jijv、极具 jijv、警局 jkjv、惊惧 jkjv、艰巨 jmjv、结局 jpjv、句句 jujv、举报 jvbc、剧本 jvbf、举办 jvbj、剧变 jvbm、局部 jvbu、举杯 jvbw、具备 jvbw、据此 jvci、聚餐 jvcj、举措 jvco、局促 jvcu、巨大 jvda、居多 jvdo、举动 jvds、剧毒 jvdu、巨额 jvee、飓风 jvfg、居高 jvgc、举国 jvgo、鞠躬 jvgs、句号 jvhc、聚合 jvhe、聚会 jvhv、菊花 jvhx、聚成 jvig、狙击 jvji、聚集 jvji、聚焦 jvjn、拒绝 jvjt、咀嚼 jvjt、句句 jvju、句句 jvjv、居家 jvjx、巨浪 jvlh、距离 jvli、举例 jvli、剧烈 jvlp、拘留 jvlq、巨龙 jvls、居民 jvmb、巨蟒 jvmh、局面 jvmm、惧怕 jvpa、举起 jvqi、剧情 jvqk、拒签 jvqm、巨人 jvrf、居然 jvrj、沮丧 jvsh、聚散 jvsj、居所 jvso、具体 jvti、剧痛 jvts、巨头 jvtz、巨石 jvui、局势 jvui、据说 jvuo、拘束 jvuu、举手 jvuz、拒收 jvuz、举着 jvve、举证 jvvg、局长 jvvh、举止 jvvi、居住 jvvu、诅咒 jvvz、举行 jvxk、巨型 jvxk、巨响 jvxl、局限 jvxm、拘役 jvyi、剧院 jvyr、居于 jvyu、具有 jvyz、聚在 jvzd、橘子 jvzi、句子 jvzi、剧组 jvzu、家具 jxjv、加剧 jxjv、开局 kdjv、开具 kdjv、科举 kejv、抗拒 khjv、恐惧 ksjv、邻居 lbjv、两句 lljv、列举 lpjv、面具 mmjv、那句 najv、凝聚 nkjv、盘踞 pjjv、票据 pnjv、器具 qijv、全局 qrjv、取保 qvbc、区别 qvbp、渠道 qvdc、取代 qvdd、取得 qvde、去掉 qvdn、驱动 qvds、区分 qvff、屈服 qvfu、驱赶 qvgj、去过 qvgo、取回 qvhv、取出 qviu、去除 qviu、取经 qvjk、区间 qvjm、取决 qvjt、躯壳 qvke、去看 qvkj、取款 qvkr、娶了 qvle、去留 qvlq、去路 qvlu、去买 qvmd、取名 qvmk、去年 qvnm、取暖 qvnr、区内 qvnw、区区 qvqu、屈辱 qvru、去死 qvsi、驱散 qvsj、躯体 qvti、取舍 qvue、取胜 qvug、趋势 qvui、去世 qvui、驱使 qvui、去找 qvvc、曲折 qvve、取证 qvvg、屈指 qvvi、驱逐 qvvu、趣味 qvww、去向 qvxl、取向 qvxl、曲线 qvxm、取笑 qvxn、取消 qvxn、取下 qvxx、屈原 qvyr、取悦 qvyt、趋于 qvyu、区域 qvyu、曲子 qvzi、取走 qvzz、团聚 trjv、同居 tsjv、诗句 uijv、说句 uojv、数据 uujv、收据 uzjv、这句 vejv、证据 vgjv、之举 vijv、战局 vjjv、占据 vjjv、玩具 wjjv、无惧 wujv、畏惧 wwjv、戏剧 xijv、喜剧 xijv、相聚 xljv、相距 xljv、选举 xrjv、许多 xvdo、虚度 xvdu、续费 xvfw、虚构 xvgz、虚幻 xvhr、许久 xvjq、酗酒 xvjq、虚假 xvjx、许可 xvke、虚空 xvks、序列 xvlp、须弥 xvmi、虚拟 xvni、许诺 xvno、需求 xvqq、虚弱 xvro、虚荣 xvrs、虚实 xvui、叙述 xvuu、须知 xvvi、徐州 xvvz、虚妄 xvwh、虚无 xvwu、虚伪 xvww、虚心 xvxb、徐徐 xvxu、许下 xvxx、需要 xvyc、须要 xvyc、许愿 xvyr、须臾 xvyu、须在 xvzd、隐居 ybjv、依据 yijv、一句 yijv、一局 yijv、用具 ysjv、语句 yujv、邮局 yzjv、字句 zijv、总局 zsjv、最具 zvjv。</p>
 <h2 id="30">夜莺 3.0</h2>
 <p>2026-10-07</p>
 <p>夜莺 3.0 仍然是小鹤双拼加首末字根，编码规则不变：单字全码 = 双拼音码 + 首根 + 末根，二字词取两字双拼，三字词取三字首码。这次主要重排了字根键位，常用字的简码也做了调整。</p>
-<h3 id="_5">字根</h3>
+<h3 id="_15">字根</h3>
 <ul>
 <li><strong>新布局 NB46</strong>：在 2.5 的基础上，46 组字根换了键位，目标是手感更顺、重码更少。“只练改动过的根”可以在字根练习里单独练，题目会提示这个根在 2.x 的键位。</li>
 <li><strong>夭并入天组（Y 键）</strong>：原来拆成“撇 ＋ 大”的 38 个字改拆为夭，如 笑 = ⺮ ＋ 夭、妖 = 女 ＋ 夭。</li>
@@ -83,7 +1189,7 @@
 <li>删去已没有字使用的“鱼省”。</li>
 <li>现为 129 组字根、406 个根形。</li>
 </ul>
-<h3 id="_6">单字</h3>
+<h3 id="_16">单字</h3>
 <ul>
 <li><strong>读音即字</strong>：多音字的每个读音当作一个字，按这个读音的字频决定简码和候选顺序。</li>
 <li><strong>一简、二简</strong>沿用 2.5，调整了几处：ui 给“事”（时改为三简 uib），en 给“嗯”，qb 给“勤”（秦改为三简 qbn），yr 给“元”（远改为三简 yrp）。</li>
@@ -91,7 +1197,7 @@
 <li><strong>三简</strong>按 3.0 字频重新分配，另有一批作者手动调整（如 游 yza、符 fuh、圆 yrj、型 xkp、攻 gsm、竹 vuh）。</li>
 <li>通用规范汉字表 8105 字中，4476 字的全码有变化（主要是字根换键），三简变化 2022 字，二简变化 10 字。</li>
 </ul>
-<h3 id="_7">字词</h3>
+<h3 id="_17">字词</h3>
 <ul>
 <li>词库沿用 2.5，按 3.0 的字码重新排序。</li>
 <li><strong>字重要</strong>：一、二、三简位上永远是字在前，简词排在字后面。</li>
@@ -141,7 +1247,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_8">输入法与工具</h3>
+<h3 id="_18">输入法与工具</h3>
 <ul>
 <li>Rime 包的方案标识去掉了版本号：yeying_v5、yeying_shape、yeying_single。以后升级直接覆盖，不会再留下带旧版本号的文件。</li>
 <li>啾啾工具箱全部换成 3.0 数据：拆分查询、部件反查、字根练习（新增“只练改动过的根”）、字根表、字根图、完整拆分表。</li>
