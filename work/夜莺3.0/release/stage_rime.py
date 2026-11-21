@@ -26,7 +26,17 @@ def render(rows): return ''.join(f'{t}\t{c}\n' for t, c in rows)
 
 STAGE.mkdir(parents=True, exist_ok=True)
 link = STAGE / 'assets'
-if not link.exists(): link.symlink_to(NG / 'assets')
+if C.RIME_CACHE is None:
+    if not link.exists(): link.symlink_to(NG / 'assets')
+else:                                                   # 别的方案（夜桜）：魔虎发布信息用自己缓存里的最新版，其余资源链接夜莺仓库
+    if link.is_symlink(): link.unlink()
+    if link.exists(): shutil.rmtree(link)
+    for item in (NG / 'assets').iterdir():
+        if item.name != 'rime': (link / item.name).parent.mkdir(parents=True, exist_ok=True); (link / item.name).symlink_to(item)
+    for item in (NG / 'assets/rime').iterdir():
+        (link / 'rime').mkdir(parents=True, exist_ok=True)
+        if item.name != 'mohu-release.json': (link / 'rime' / item.name).symlink_to(item)
+    shutil.copy(C.RIME_CACHE / 'mohu-release.json', link / 'rime/mohu-release.json')
 tools = STAGE / 'tools'
 if tools.is_symlink(): tools.unlink()
 if tools.exists(): shutil.rmtree(tools)
@@ -40,11 +50,24 @@ for p in sorted(tools.rglob('*'), key=lambda p: -len(p.parts)):
             t2 = t2.replace(a, b)
         if t2 != t: p.write_text(t2, encoding='utf-8')
     if 'yeying25_' in p.name: p.rename(p.with_name(p.name.replace('yeying25_', 'yeying_')))
+if C.ID != 'nightingale':                               # 别的方案（夜桜）：标识、名称、双拼、测试另行替换
+    sys.path.insert(0, str(ROOT / 'yozakura'))
+    import rime_patch
+    rime_patch.patch(tools, C)
 TEST_PATCH = [('rime_mac/verify_single.py', "'zip{space}'", "'zie{space}'")]   # verify_release 已改为从包内码表抽测试码，不用再改
 for f, a, b in TEST_PATCH:
     t = (tools / f).read_text(encoding='utf-8'); assert a in t, (f, a[:40]); (tools / f).write_text(t.replace(a, b), encoding='utf-8')
 (STAGE / '.cache').mkdir(exist_ok=True)
-if not (STAGE / '.cache/rime').exists(): (STAGE / '.cache/rime').symlink_to(NG / '.cache/rime')
+_cache = STAGE / '.cache/rime'
+if _cache.is_symlink() and _cache.resolve() != Path(C.RIME_CACHE or NG / '.cache/rime').resolve(): _cache.unlink()
+if not _cache.exists(): _cache.symlink_to(C.RIME_CACHE or NG / '.cache/rime')
+# 魔虎 2026-10-15 起 Mac 运行库不含 onnxruntime：上游包里没有就不取
+import zipfile
+_up = next((C.RIME_CACHE or NG / '.cache/rime') / n for n in ('rime-mohu-zrm-latest.zip', 'rime-mohu-flypy-latest.zip') if ((C.RIME_CACHE or NG / '.cache/rime') / n).exists())
+if 'mohu/runtime/libonnxruntime.1.dylib' not in zipfile.ZipFile(_up).namelist():
+    _b = tools / 'rime_mac/build_v5.py'; _t = _b.read_text(encoding='utf-8')
+    _a = "for name in ('libtigerengine.dylib', 'libonnxruntime.1.dylib'):"
+    assert _a in _t; _b.write_text(_t.replace(_a, "for name in ('libtigerengine.dylib',):   # 魔虎 2026-10-15 起 Mac 运行库不含 onnxruntime"), encoding='utf-8')
 (STAGE / 'maintenance.json').write_text(json.dumps({'active': C.NAME}, ensure_ascii=False, indent=2) + '\n')
 for d in ('主表', '配置', '资料', '记录', '产物', '备份'): (V / d).mkdir(parents=True, exist_ok=True)
 (V / '版本.json').write_text(json.dumps({'version': C.V, 'status': 'active', 'note': f'夜莺 {C.V}（{C.LAYOUT}）构建，由 Yozakura release/stage_rime.py 搭台；不是正式维护目录。'},
@@ -54,7 +77,7 @@ for d in ('主表', '配置', '资料', '记录', '产物', '备份'): (V / d).m
 ci = rd(C.T('字词表.txt'))
 sym = rd(N25 / '主表/符号表.txt'); symset = set(sym)
 single = [(t, c) for t, c in ci if len(t) == 1]          # 字词表里的单字（含彩蛋码、容错码），候选序同字词表
-plain = [r for r in rd(C.T('普通单字表.txt')) if r not in symset]
+plain = [r for r in rd(C.PLAIN) if r not in symset]
 pos = {r: i for i, r in enumerate(plain)}
 special = [r for r in single if r not in pos]
 by_code = collections.defaultdict(list)
@@ -71,6 +94,16 @@ types = [{'text': t, 'code': c, 'type': k} for t, c, k in info['特殊码']]
 (V / '配置/编码类型.json').write_text(json.dumps({'source': f'Yozakura release/make_ciku.py 特殊码（{C.V}）', 'entries': types},
                                               ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 (V / '配置/单字版差异.json').write_text('[]\n'); (V / '配置/词语读音.json').write_text('{}\n')
+# 单字版自己调字序：补简码位时按字频挑字。通规字各读音的字频（字\t双拼音节\t字频），只含这些核心字
+import yaml
+sys.path.insert(0, str(ROOT / 'lib'))
+from shuangpin import encode
+lv = set()
+for i in (1, 2, 3): lv |= {c for c in open(ROOT / f'data/inputs/通规分级/level-{i}.txt', encoding='utf-8').read().split() if len(c) == 1}
+fq = collections.defaultdict(float)
+for e in yaml.load(open(C.INP / 'elements.yaml', encoding='utf-8'), Loader=yaml.CSafeLoader):
+    if e['拼音'] != 'reserved' and e['词'] in lv: fq[(e['词'], encode(e['拼音'], C.SCHEME))] += e['频率']
+(V / '配置/单字调频字频.txt').write_text(''.join(f'{t}\t{s}\t{f:.4f}\n' for (t, s), f in sorted(fq.items(), key=lambda x: -x[1])), encoding='utf-8')
 for f in ('码表概念与规则.md', '评估规则.md'):
     shutil.copy(N25 / '资料' / f, V / '资料' / f)
 
@@ -78,5 +111,5 @@ for f in ('码表概念与规则.md', '评估规则.md'):
 import subprocess, tempfile
 with tempfile.TemporaryDirectory() as tmp:
     subprocess.run([sys.executable, str(ROOT / 'release/make_toolbox.py'), tmp], check=True)
-    shutil.copy(Path(tmp) / '夜莺啾啾工具箱.html', V / '资料/拆分原本.html')
+    shutil.copy(Path(tmp) / f'{C.TOOLBOX}.html', V / '资料/拆分原本.html')
 print('搭台', STAGE, '；单字表', len(single), '字词表', len(ci), '；特殊码', len(types))

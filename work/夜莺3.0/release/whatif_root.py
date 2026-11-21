@@ -2,6 +2,7 @@
 把指定字拆分里的一段（如 八＋㐅）合并成新根并入某根组，或换成已有字根（如 贝字框＋二 → 曰）；重建引擎输入 → NB46 重跑引擎 → 出表（含手动调整）→ 门禁 → 与正式表对比 → 实打统计。
 用法：.venv/bin/python release/whatif_root.py <名字> <新根> <并入组> <原序列,逗号分隔> [只作用于这些字 | -排除这些字]
 例：  .venv/bin/python release/whatif_root.py fuA 父 G007 八,㐅 父爸爷爹斧釜
+新根写“前置”则不合并，只把这段挪到拆分最前（并入组随便写）：.venv/bin/python release/whatif_root.py zz 前置 - 辶 边这还…
 """
 import collections, json, os, subprocess, sys
 from pathlib import Path
@@ -25,14 +26,18 @@ for c, rs in sp.items():
     n = [x[0] for x in rs]
     for i in range(len(n) - len(pat) + 1):
         if n[i:i + len(pat)] == pat:
-            sp[c] = rs[:i] + [[root, '?']] + rs[i + len(pat):]; changed.append(c); break
+            if root == '前置':                            # 不合并，只把这段挪到拆分最前（如走之先拆）
+                if i: sp[c] = rs[i:i + len(pat)] + rs[:i] + rs[i + len(pat):]; changed.append(c)
+            else:
+                sp[c] = rs[:i] + [[root, '?']] + rs[i + len(pat):]; changed.append(c)
+            break
 RUN.mkdir(parents=True, exist_ok=True)
 spath = RUN / 'splits.json'
 json.dump(sp, open(spath, 'w', encoding='utf-8'), ensure_ascii=False)
 print(f'改拆分 {len(changed)} 字：{"".join(changed)}')
 
 # 2. 引擎输入
-known = {r for rs in json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))['groups'].values() for r in rs}
+known = {'前置'} | {r for rs in json.load(open(ROOT / 'build/out/n30/meta.json', encoding='utf-8'))['groups'].values() for r in rs}
 env = dict(os.environ, YZ_SPLITS=str(spath), YZ_EXTRA_ROOTS=json.dumps({} if root in known else {group: [root]}, ensure_ascii=False),   # 已有字根（如 曰）不重复加
            YZ_FIX=str(ROOT / 'data/inputs/一二简.json'))
 w = (ROOT / 'build/out/n30/weights.json').read_text(encoding='utf-8')
@@ -49,7 +54,7 @@ subprocess.run([str(ROOT / 'engine/target/release/chai'), 'encode', 'run.json', 
                stdout=subprocess.DEVNULL, stderr=open(RUN / 'stderr.log', 'w'), check=True)
 
 # 4. 出表（含手动调整）
-tenv = dict(env, YZ_INP=OUT.name, YZ_MANUAL=str(ROOT / 'data/inputs/手动调整.json'))
+tenv = dict(env, YZ_INP=OUT.name, YZ_MANUAL=os.environ.get('YZ_MANUAL') or str(ROOT / 'data/inputs/手动调整.json'))   # 改了首根时手动简码要按新码换算，可另给一份
 subprocess.run([PY, str(ROOT / 'build/make_plain_table.py'), str(RUN), str(TBL), 'xiaohe'], env=tenv, check=True, stdout=subprocess.DEVNULL)
 new = next(TBL.glob('*.txt'))
 

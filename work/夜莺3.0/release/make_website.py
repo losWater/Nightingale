@@ -111,6 +111,11 @@ rest = rest.replace('releases/v2.5/05_规则与裁决/码表概念与规则.md',
 rest = rest.replace(C.UPGRADE, '')
 for h in [C.PREV] + C.HISTORY: rest = rest.replace(f'历史版本：{h} 发布页', '')
 assert not re.search(r'2\.[05]', rest), re.findall(r'.{30}2\.[05].{10}', rest)
+# 夜桜（自然码版）入口：导航与首屏各一处，页面由 release/make_website_yozakura.py 生成在 yozakura/
+t = rep(t, '<a href="#author">作者的话</a></nav>', '<a href="#author">作者的话</a><a href="yozakura/">夜桜 · 自然码</a></nav>')
+t = rep(t, '<a class="quiet-link" href="tools/split.html">已经在用了？查一个字的拆分 ↗</a>',
+        '<a class="quiet-link" href="tools/split.html">已经在用了？查一个字的拆分 ↗</a><br>'
+        '<a class="quiet-link" style="margin-top:8px" href="yozakura/">用自然码双拼？同一套字根的夜桜 ↗</a>')
 (OUT / 'index.html').write_text(t, encoding='utf-8')
 
 # ---- 性能页 ----
@@ -222,4 +227,5 @@ t = t.replace('<a href="index.html#author">作者的话</a>', '<a href="index.ht
 t = t.replace('</head>', '<style>.article-body table{border-collapse:collapse;margin:1em 0}.article-body th,.article-body td{border:1px solid var(--line,#ccc);padding:6px 12px;text-align:center}</style></head>', 1)
 (OUT / 'changelog.html').write_text(t, encoding='utf-8')
 shutil.rmtree(tmp)
+subprocess.run([sys.executable, str(ROOT / 'release/make_website_yozakura.py'), str(OUT)], check=True)   # 夜桜分页
 print(OUT, '；字根组', n_groups, '根形', n_forms, '；前1500选重', r15['选重'], '前6000加权', r60['选重加权%'], '；冲突', cf['全部单字全码'], '→', cf['剔除有简码的字'])

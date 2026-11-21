@@ -19,8 +19,16 @@ for x in FO.WD:
     words.setdefault(x['码'], []).append([x['词'], x['排名']])
 c = {x['moved']: x['layout'] for x in json.load(open(MD.ROOT / 'neighborhood/curve.json'))}
 w65 = {x['moved']: x['layout'] for x in json.load(open(MD.ROOT / 'neighborhood/w65.json'))}
-pr = json.load(open(MD.ROOT / 'construct/prefs_syllable.json', encoding='utf-8'))
-layouts = {'喜好第一名': pr['layout'], 'NB46': c[46], 'W55': w65[55], '2.5': MD.B, '退火冠军': E.champion()}
+ZR = FO.SCHEME != 'xiaohe'                          # 夜桜：NB_INP=zr31 NB_BASE=release/NB46_form.json（见 tool/tiaogen/build.sh yozakura）
+SUF = '' if FO.INP.name == 'n30' else '_' + FO.INP.name
+_pp = MD.ROOT / f'construct/prefs_syllable{SUF}.json'   # 算法喜好（construct/prefs.py 出），没有就不显示
+pr = json.load(open(_pp, encoding='utf-8')) if _pp.exists() else {'layout': None, 'prefs': {}}
+if ZR:
+    _form = lambda f: {g: json.load(open(MD.ROOT / f, encoding='utf-8'))['mapping'][g] for g in G}
+    layouts = {'ZR27': _form('yozakura/ZR27_form.json'), 'NB46': MD.B}
+    if pr['layout']: layouts['喜好第一名'] = pr['layout']
+else:
+    layouts = {'喜好第一名': pr['layout'], 'NB46': c[46], 'W55': w65[55], '2.5': MD.B, '退火冠军': E.champion()}
 data = {
     'groups': [{'id': g, 'roots': MD.META['groups'][g], 'b25': MD.B[g]} for g in G],
     'readings': R,
@@ -31,7 +39,7 @@ data = {
     'low': MD.LOW,
     'mutex': [int(MD.GB), int(MD.GC)],
     'layouts': layouts,
-    'prefs': {g: pr['prefs'][g]['排名'] for g in G},
+    'prefs': {g: pr['prefs'][g]['排名'] for g in G if g in pr['prefs']},
 }
 # 扩展字与符号表（与 build/make_plain_table.py 同规则：2.5 单字表中 8105 以外、正式全码的字；符号沿用 2.5 原码）
 from pathlib import Path as _P
@@ -43,7 +51,7 @@ g_of = {r: g for g, rs in MD.META['groups'].items() for r in rs}
 GI = {g: i for i, g in enumerate(G)}
 core = {e['词'] for e in FO.E[:N]}
 sys.path.insert(0, str(MD.ROOT / 'lib'))
-from shuangpin import encode as _enc
+from shuangpin import encode as _enc, recode as _rec
 VALID = {_enc(py, 'xiaohe') for py in json.load(open(MD.ROOT / 'data/inputs/全音节映射.json', encoding='utf-8'))['小鹤']}
 ext = []
 for l in open(N25 / '主表/单字表.txt', encoding='utf-8-sig'):
@@ -56,7 +64,7 @@ for l in open(N25 / '主表/单字表.txt', encoding='utf-8-sig'):
     rs25 = splits25.get(p_[0], rs)
     if p_[1][2:] != old_keys[rs25[0][0]] + old_keys[rs25[-1][0]]:
         continue
-    ext.append([p_[0], p_[1][:2], GI[g_of[rs[0][0]]], GI[g_of[rs[-1][0]]]])
+    ext.append([p_[0], _rec(p_[1][:2], 'xiaohe', FO.SCHEME), GI[g_of[rs[0][0]]], GI[g_of[rs[-1][0]]]])
 data['ext'] = ext
 data['sym'] = [l.rstrip('\n').split('\t')[:2] for l in open(N25 / '主表/符号表.txt', encoding='utf-8-sig') if len(l.rstrip('\n').split('\t')) >= 2]
 data['oneTwo'] = [e.get('简码长度') or 0 for e in FO.E[:N]]

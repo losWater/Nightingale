@@ -40,3 +40,36 @@ def encode(py, scheme='ziranma'):
             return fin
         return fin[0] + table[fin]
     return INIT.get(ini, ini) + table[fin]
+
+
+_SYL = None
+
+
+def syllables():
+    """音节表（全音节映射 + 补充音节）。"""
+    global _SYL
+    if _SYL is None:
+        import json
+        from pathlib import Path
+        sy = json.load(open(Path(__file__).resolve().parent.parent / 'data/inputs/全音节映射.json', encoding='utf-8'))['小鹤']
+        _SYL = list(sy) + ['fiao', 'rua', 'chua', 'zhei', 'shei', 'sei']
+    return _SYL
+
+
+def recode(code2, src='xiaohe', dst='ziranma'):
+    """一个音节的双拼码（两码）从 src 方案换成 dst 方案；音节表取 data/inputs/全音节映射.json（另补 fiao、rua、chua 与口语音 zhei、shei、sei）；表外的码（作者自定义、特殊码）原样返回。"""
+    if src == dst: return code2
+    m = {}
+    for py in syllables():
+        m.setdefault(encode(py, src), set()).add(encode(py, dst))
+    out = m.get(code2, {code2})
+    assert len(out) == 1, (code2, out)
+    return next(iter(out))
+
+
+def recode_word(word, code, src='xiaohe', dst='ziranma'):
+    """词码换方案：二字词四码 = 两音节双拼（逐个换）、三码 = 首音节双拼 + 次字声母（换首音节）；
+    二码（声母缩写或作者自定义）与三字以上的词（只取声母，两方案声母键相同）不变。"""
+    if src == dst or len(word) != 2 or len(code) < 3: return code
+    head = recode(code[:2], src, dst)
+    return head + (recode(code[2:], src, dst) if len(code) == 4 else code[2:])

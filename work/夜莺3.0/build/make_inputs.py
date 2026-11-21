@@ -6,7 +6,7 @@
 - 夜桜字音基准（data/inputs/夜桜字音基准.json）：新分读音频率。
 
 改动：
-1. 根组：戈 += 戈无点；止 += 正；天组 += 夭、母组 += 父（2026-10-05）；山组 += 出、皿组 += 睾字头（2026-10-15）；鱼省 移除（2.5 无）；水火合组（锚定）；车(东)+西合组（锚定）；
+1. 根组：戈 += 戈无点；止 += 正；天组 += 夭、母组 += 父（2026-10-05）；山组 += 出、皿组 += 睾字头（2026-10-15）；宝盖组 += 睿字头（2026-10-17）；衣、襄、襄省拆开、衣组去掉、𧘇 并入止组（2026-10-18）；鱼省 移除（2.5 无）；水火合组（锚定）；车(东)+西合组（锚定）；
    虫、𠀐 自 鸟／虫 组拆出为新组（与鸟组互斥，由目标函数约束）。
 2. 元素：首末根按 2.5 拆分重映射到新根组；音码换自然码；频率 = 夜桜自然频率；按读音频率降序（读音即字）。
 3. 分层：前 N = 前 N 字主读音 + 频率 ≥ 第 N 字的次要读音；写入各 tier 的 top。
@@ -36,6 +36,7 @@ def load(p):
 groups = {f"G{g['序号']:03d}": list(g['根形']) for g in load(F54 / '当前完整根表.json')['根组']}
 groups['G094'].append('戈无点')
 groups['G104'].append('正')
+groups['G024'].append('睿字头')               # 2026-10-17 作者：睿的上部（原拆为 ⺊＋冖＋一＋八＋人）当帽子并入宝盖组；原拆法保留为自定义码
 groups['G124'].append('睾字头')               # 2026-10-15 作者：睾的上部（原拆为 丿＋罒）并入皿／血组
 groups['G100'].append('出')                   # 2026-10-15 作者：出（原拆为 凵＋山）并入山组
 groups['G065'].append('夭')                   # 2026-10-05 群友建议、作者同意：夭归并入天组（原拆为 撇＋大）
@@ -43,6 +44,9 @@ groups['G007'].append('父')                   # 2026-10-05 作者：父归并�
 for _g, _rs in json.loads(os.environ.get('YZ_EXTRA_ROOTS', '{}')).items():   # 试算：追加归并根 {组: [根…]}
     groups[_g] += _rs
 groups['G032'] = [r for r in groups['G032'] if r != '鱼省']
+groups.pop('G045')                            # 2026-10-18 作者：衣、襄、襄省三根拆开（衣＝亠＋𧘇，衣字架＝亠＋内部＋𧘇，襄＝亠＋口＋口＋龷＋𧘇，襄省＝龷＋𧘇），衣组去掉
+groups['G104'].append('𧘇')                   # 2026-10-18 作者：𧘇 并入止组（2.5 两者同在 S）
+REMOVED = {'衣', '襄', '襄省'}               # 已拆开、不再作根
 groups['G016'] += groups.pop('G127')          # 水 + 火（锚定同键）
 groups['G088'] += groups.pop('G126')          # 车/东 + 西（锚定同键）
 chong = ['虫', '𠀐']
@@ -53,7 +57,7 @@ MUTEX = [('G020', 'G135')]
 root_key = load(ROOT / 'data/baseline/root_key.json')
 splits = load(os.environ.get('YZ_SPLITS') or ROOT / 'data/baseline/splits.json')   # 试算可换拆分
 g_of = {r: g for g, rs in groups.items() for r in rs}
-missing = sorted(set(root_key) - set(g_of))
+missing = sorted(set(root_key) - set(g_of) - REMOVED)
 assert not missing, ('2.5 字根未归组', missing)
 layout = {}
 for g, rs in groups.items():

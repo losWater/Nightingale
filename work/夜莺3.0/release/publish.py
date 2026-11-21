@@ -13,7 +13,7 @@
   7. 更新日志去掉“草稿”、写上发布日期并提交；Yozakura 打标签 v<版本>，同步到夜莺仓库 3.x 分支（work/夜莺3.0），推送
   8. GitHub 建发布页 v<版本>（正文 = 下载说明 + 更新日志），上传附件
   9. 触发 Windows 工作流（版本、日期作为输入），等它验证并上传 Windows 包
-  10. 按发布页实际附件重新生成官网，推到 gh-pages；逐个检查线上下载链接
+  10. 按发布页实际附件重新生成官网，推到 gh-pages；夜莺仓库首页 README 同步更新；逐个检查线上下载链接
 用法：.venv/bin/python release/publish.py [--publish] [--skip-table]
 """
 import hashlib, json, re, shutil, subprocess, sys, time, urllib.parse, urllib.request, zipfile
@@ -56,6 +56,21 @@ def changelog_ready():
     assert len(body) > 3, '更新日志几乎是空的'
 
 
+def changelog_txt(md, out):
+    """更新日志纯文本版（线下用）：去掉 Markdown 符号，标题单独成行，条目用“·”开头。"""
+    lines = []
+    for l in md.read_text(encoding='utf-8').split('\n'):
+        if l.startswith('（草稿'): continue
+        l = l.replace('**', '')
+        if l.startswith('# '): l = l[2:]
+        elif l.startswith('### '): l = '〖' + l[4:] + '〗'; lines.append('')
+        elif l.startswith('## '): l = '【' + l[3:] + '】'; lines.append('')
+        elif l.startswith('  - '): l = '    - ' + l[4:]
+        elif l.startswith('- '): l = '· ' + l[2:]
+        lines.append(l)
+    out.write_text(re.sub(r'\n{3,}', '\n\n', '\n'.join(lines)).strip() + '\n', encoding='utf-8')
+
+
 def build(skip_table):
     OUT.mkdir(parents=True, exist_ok=True)
     step(1, '码表')
@@ -90,6 +105,8 @@ def build(skip_table):
     step(5, '校验值')
     (OUT / f'SHA256SUMS-tables-toolbox-{C.STAMP}.txt').write_text(
         ''.join(f'{sha(p)}  {p.name}\n' for p in (tables, toolbox)), encoding='utf-8')
+    run(PY, ROOT / 'release/changelog_appendix.py')        # 附录：与上一版逐条比对，全部列出
+    changelog_txt(C.CHANGELOG, OUT / f'{C.NAME}更新日志.txt')
     step(6, '官网本地预览')
     shutil.rmtree(SITE, ignore_errors=True)
     run(PY, ROOT / 'release/make_website.py', SITE, **quiet)
@@ -193,6 +210,17 @@ def publish():
     run('git', '-C', PAGES, 'add', '-A', '.')
     run('git', '-C', PAGES, 'commit', '-q', '-m', f'site: 夜莺 {C.V}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>')
     run('git', '-C', PAGES, 'push', '-q', 'origin', 'gh-pages')
+    # 仓库首页 README 与官网同步（下载按发布页实际附件生成）
+    # 用 GitHub API 读写 main 上的 README（不动本地 ~/Nightingale 工作区）
+    import base64
+    s, cur = api('GET', f'{API}/contents/README.md?ref=main'); assert s == 200, s
+    tmp = OUT / 'README.md'; tmp.write_bytes(base64.b64decode(cur['content']))
+    run(PY, ROOT / 'release/make_readme.py', tmp)
+    new = tmp.read_bytes(); tmp.unlink()
+    if new != base64.b64decode(cur['content']):
+        s, _ = api('PUT', f'{API}/contents/README.md', {'message': f'README：夜莺 {C.V}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>',
+                                                      'content': base64.b64encode(new).decode(), 'sha': cur['sha'], 'branch': 'main'})
+        assert s in (200, 201), s
     s, rel = api('GET', f'{API}/releases/tags/v{C.V}')
     bad = []
     for a in rel['assets']:

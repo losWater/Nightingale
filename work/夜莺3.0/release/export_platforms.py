@@ -11,6 +11,7 @@ from config import C
 N25 = Path.home() / 'Nightingale/夜莺2.5'
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / f'Downloads/{C.NAME}_字词表与输入法'
 NAME, VER = C.NAME, f'{C.V}|' + C.STAMP[2:]
+BRAND = C.NAME.removesuffix(C.V)                       # 方案名（夜莺 / 夜桜），不带版本号
 
 
 def write(p, s, enc='utf-8-sig'):
@@ -21,11 +22,11 @@ def rd(p):
     return [tuple(l.rstrip('\r\n').split('\t')[:2]) for l in open(p, encoding='utf-8-sig') if '\t' in l]
 
 
-SRC = ROOT / 'release/tables/字词表.txt'
+SRC = C.T('字词表.txt')
 rows = rd(SRC)
 assert len(rows) == len(set(rows))
 symbols = rd(N25 / '主表/符号表.txt'); symbolset = set(symbols)
-single = [r for r in rd(ROOT / 'release/tables/普通单字表.txt') if r not in symbolset]
+single = [r for r in rd(C.PLAIN) if r not in symbolset]
 special = {(t, c) for t, c in rows if len(t) == 1} - set(single)          # 彩蛋码、容错码只在字词表里
 single_all = single + sorted(special, key=lambda r: r[1])
 assert {(t, c) for t, c in rows if len(t) == 1} == set(single_all)
@@ -97,15 +98,15 @@ write(OUT / f'搜狗挂接/{NAME}_挂接_含快符.txt', ''.join(f'{c},{n}={t}\r
 assert len(valid) <= 200000, len(valid)
 write(OUT / f'搜狗五笔/{NAME}_五笔_含快符.txt', ''.join(f'{c}\t{t}\r\n' for t, c, n in valid), 'utf-8')
 # 冰凌五笔
-header = (f'[CODETABLEHEADER]\r\nName={NAME}词库\r\nVersion={VER}\r\nAuthor=nightingale\r\nCodeScheme={NAME}[夜莺]\r\nCodeLength=4\r\n'
+header = (f'[CODETABLEHEADER]\r\nName={NAME}词库\r\nVersion={VER}\r\nAuthor={C.ID}\r\nCodeScheme={NAME}[{BRAND}]\r\nCodeLength=4\r\n'
           'BWCodeLength=0\r\nSpecialPrefix=0\r\nPhraseRule=3\r\npa2=w11w12w21w22\r\npa3=w11w21w31\r\npe4=w11w21w31r11\r\n[CODETABLE]\r\n')
 write(OUT / f'冰凌五笔/{NAME}_词库_含快符.txt', header + ''.join(f'{c}\t{t}\t{10000 - n}\r\n' for t, c, n in valid), 'utf-16')
 # Bime（字词 + 拆分）
-write(OUT / f'Bime/mb/{NAME}/夜莺字词.txt', ''.join(f'{t}\t{c}\t{100000 - n}\r\n' for t, c, n in valid))
+write(OUT / f'Bime/mb/{NAME}/{BRAND}字词.txt', ''.join(f'{t}\t{c}\t{100000 - n}\r\n' for t, c, n in valid))
 splits = json.load(open(ROOT / 'data/baseline/splits.json', encoding='utf-8'))
 chars = sorted({t for t, c in single_all})
 missing = [t for t in chars if t not in splits]
-write(OUT / f'Bime/mb/{NAME}/夜莺.拆分', ''.join(f'{t}\t{" ＋ ".join(p[0] for p in splits[t])}\r\n' for t in chars if t in splits))
+write(OUT / f'Bime/mb/{NAME}/{BRAND}.拆分', ''.join(f'{t}\t{" ＋ ".join(p[0] for p in splits[t])}\r\n' for t in chars if t in splits))
 write(OUT / 'Bime/使用说明.txt', f'将mb内的{NAME}文件夹复制到Bime的mb目录，再重载码表、选择{NAME}。最大码长设4。包含快符及全部{len(chars)}字的拆分。没有覆盖个人config.txt或用户调整.txt。旧个人调频可能改变候选顺序。\r\n')
 
 write(OUT / '使用说明.txt', f'{NAME} 码表导出，{C.DATE}：单字（{C.LAYOUT} 布局，含手动调整）＋ 词（沿用夜莺2.5词库，按 {C.V} 字词让位规则重排）＋ 符号表 ＋ 快符。简码位字在前、简词在后。\r\n'
@@ -114,7 +115,7 @@ write(OUT / '使用说明.txt', f'{NAME} 码表导出，{C.DATE}：单字（{C.L
       '搜狗五笔为编码TAB字词，UTF-8。冰凌为UTF-16LE BOM专用文本词库。\r\n手心挂接使用UTF-8；Bime使用UTF-8 BOM、CRLF。\r\n'
       '定长四码平台不导入超过四码的条目，完整内容仍在普通表，并附单独清单。Rime独立打包。\r\n'
       '其他平台本次为格式及数据核验，未在输入法界面实测导入。\r\n')
-report = {'来源': str(SRC.relative_to(ROOT)), '来源SHA256': hashlib.sha256(SRC.read_bytes()).hexdigest(),
+report = {'来源': str(SRC.relative_to(ROOT) if SRC.is_relative_to(ROOT) else SRC), '来源SHA256': hashlib.sha256(SRC.read_bytes()).hexdigest(),
           '字词表条数': len(rows), '无简词条数': len(no_short), '快符': len(quick), '符号表条数': len(symbols),
           '综合表条数': len(allrows), '四码内含快符': len(valid), '超过四码条目': len(excluded), '普通单字表条数': len(plain_single),
           '手心模块': {k: len(v) for k, v in sorted(modules.items())}, '辅助码字数': len(aux), '搜狗挂接条数': len(sogou),

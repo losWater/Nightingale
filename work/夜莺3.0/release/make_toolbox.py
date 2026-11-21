@@ -63,7 +63,7 @@ q25 = views['query']
 D, _, _ = locate(q25, 'D')
 ROOTS, _, _ = locate(q25, 'ROOTS')
 fam = {r['根']: r['组'] for r in ROOTS}
-fam['夭'] = fam['天']; fam['父'] = fam['母']; fam['出'] = fam['山']; fam['睾字头'] = fam['皿']
+fam['夭'] = fam['天']; fam['父'] = fam['母']; fam['出'] = fam['山']; fam['睾字头'] = fam['皿']; fam['睿字头'] = fam['宀']
 roots3 = []
 for r in ROOTS:
     if r['根'] not in g_of: continue                      # 鱼省：2.5 起已无字使用
@@ -71,6 +71,7 @@ for r in ROOTS:
     if r['根'] == '天': roots3.append({'根': '夭', '键': key('夭'), '组': fam['夭']})
     if r['根'] == '山': roots3.append({'根': '出', '键': key('出'), '组': fam['出']})
     if r['根'] == '皿': roots3.append({'根': '睾字头', '键': key('睾字头'), '组': fam['睾字头']})
+    if r['根'] == '宀': roots3.append({'根': '睿字头', '键': key('睿字头'), '组': fam['睿字头']})
     if r['根'] == '毌': roots3.append({'根': '父', '键': key('父'), '组': fam['父']})
 assert {r['根'] for r in roots3} == set(g_of), set(g_of) ^ {r['根'] for r in roots3}
 changed = 0
@@ -130,6 +131,7 @@ for k, cell, family, ex in old:
     if rs[0] == '天': new_rows.append((key('夭'), '夭', fam['夭'], examples(['夭'], '笑、跃、沃、妖')))
     if rs[0] == '山': new_rows.append((key('出'), '出', fam['出'], examples(['出'], '出、础、拙、屈')))
     if rs[0] == '皿': new_rows.append((key('睾字头'), '睾字头', fam['睾字头'], examples(['睾字头'], '睾')))
+    if rs[0] == '宀': new_rows.append((key('睿字头'), '睿字头', fam['睿字头'], examples(['睿字头'], '睿')))
     if rs[0] == '毌': new_rows.append((key('父'), '父', fam['父'], examples(['父'], '父、爸、交、校')))
 new_rows.sort(key=lambda x: x[0])                        # 稳定排序：同键内保持 2.5 顺序（根族连在一起）
 a, b = t.index('<tbody>') + 7, t.index('</tbody>')

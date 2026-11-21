@@ -1,17 +1,19 @@
 const $ = s => document.querySelector(s);
+// 方案名、换键基准、默认起点/对照、本地存储前缀；夜桜版由 build.sh 注入 window.TIAOGEN_BRAND
+const BR = Object.assign({ 名称: '夜莺', 基准: '2.5', 起点: '喜好第一名', 对照: 'NB46', 存储: 'tiaogen' }, window.TIAOGEN_BRAND || {});
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-let D, M, k, cur, prevM = null, refM = null, sel = null, heat = 'none', tab = 'group', startName = 'b:喜好第一名', refName = 'b:NB46';
+let D, M, k, cur, prevM = null, refM = null, sel = null, heat = 'none', tab = 'group', startName = 'b:' + BR.起点, refName = 'b:' + BR.对照;
 let hist = [], fut = [], log = [], tabu = [], moveCache = null, busy = false, clashSort = 'char', clashAll = false;
 // 字词冲突页：按形码盒子字频（按字）筛选起止，0 = 不限
 let clashFrom = 0, clashTo = 0;
-try { const c = JSON.parse(localStorage.getItem('tiaogen_clash') || 'null'); if (c) { clashFrom = c.from || 0; clashTo = c.to || 0; } } catch (e) { }
+try { const c = JSON.parse(localStorage.getItem(BR.存储 + '_clash') || 'null'); if (c) { clashFrom = c.from || 0; clashTo = c.to || 0; } } catch (e) { }
 const ROWS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
 const CELLS = [
   ['形码成本', m => m.形码成本, v => v.toFixed(4), -1], ['三简', m => m.三简, v => v, 1], ['前1500四码', m => m.四码, v => v, -1],
   ['p 占比', m => m.p占比 * 100, v => v.toFixed(2) + '%', -1], ['撞②', m => m.撞码[1], v => v, -1], ['撞③', m => m.撞码[2], v => v, -1],
   ['6 万词冲突', m => m.撞码[3], v => v, -1], ['前1521选重', m => m['1521重'], v => v, -1], ['前3571选重', m => m['3571重'], v => v, -1],
   ['小指干扰≈', m => m['小指干扰%'], v => v.toFixed(2) + '%', -1], ['同指大跨排≈', m => m['同指大跨排%'], v => v.toFixed(2) + '%', -1],
-  ['键均当量≈', m => m.键均当量, v => v.toFixed(4), -1], ['换键（对 2.5）', m => m.换键根组, v => v, -1]];
+  ['键均当量≈', m => m.键均当量, v => v.toFixed(4), -1], ['换键（对 ' + BR.基准 + '）', m => m.换键根组, v => v, -1]];
 const gname = g => D.groups[g].roots[0];
 const groupLink = g => `<span class="g" data-g="${g}" title="${esc(D.groups[g].roots.join(' '))}">${esc(gname(g))}</span>`;
 const zi = i => `<span class="zi">${esc(D.readings[i][0])}</span><small>${esc(D.readings[i][1])}</small>`;
@@ -46,18 +48,18 @@ function fillSelects() {
 function init(d) {
   D = d; M = makeModel(D);
 
-  let st = null; try { st = JSON.parse(localStorage.getItem('tiaogen') || 'null'); } catch (e) { }
+  let st = null; try { st = JSON.parse(localStorage.getItem(BR.存储) || 'null'); } catch (e) { }
   if (st && st.k && st.k.length === M.NG) {
     k = Int8Array.from(st.k); log = st.log || [];
     startName = st.start ? (/^[bs]:/.test(st.start) ? st.start : 'b:' + st.start) : startName;
     if (st.ref) refName = st.ref;
   } else k = layoutFor(startName);
   fillSelects();
-  refM = M.evaluate(layoutFor(refName) || layoutArr('NB46'), false);
+  refM = M.evaluate(layoutFor(refName) || layoutArr(BR.对照), false);
   bind(); refresh();
 }
 
-function save() { try { localStorage.setItem('tiaogen', JSON.stringify({ k: Array.from(k), start: startName, ref: refName, log: log.slice(0, 200) })); } catch (e) { } }
+function save() { try { localStorage.setItem(BR.存储, JSON.stringify({ k: Array.from(k), start: startName, ref: refName, log: log.slice(0, 200) })); } catch (e) { } }
 
 function refresh() {
   cur = M.evaluate(k, true); moveCache = null; involve();
@@ -151,7 +153,7 @@ function renderKbd() {
     const ki = M.KI[ch];
     const chips = byKey[ki].sort((a, b) => (ginv[b] || 0) - (ginv[a] || 0) || a - b).map(g => {
       const n = ginv[g] || 0, moved = k[g] !== M.B25[g];
-      return `<span class="chip${moved ? ' moved' : ''}${n ? ' hot' : ''}${sel === g ? ' sel' : ''}" draggable="true" data-g="${g}" title="${esc(D.groups[g].roots.join(' '))}${moved ? '（2.5 在 ' + M.K[M.B25[g]].toUpperCase() + '）' : ''}">${esc(gname(g))}${n ? `<span class="x">${n}</span>` : ''}</span>`;
+      return `<span class="chip${moved ? ' moved' : ''}${n ? ' hot' : ''}${sel === g ? ' sel' : ''}" draggable="true" data-g="${g}" title="${esc(D.groups[g].roots.join(' '))}${moved ? '（' + BR.基准 + ' 在 ' + M.K[M.B25[g]].toUpperCase() + '）' : ''}">${esc(gname(g))}${n ? `<span class="x">${n}</span>` : ''}</span>`;
     }).join('');
     return `<div class="key" data-k="${ki}"><div class="heat" style="opacity:${(0.28 * keyHeat[ki] / mx).toFixed(3)}"></div><div class="kh"><b>${ch}</b><small>${(100 * cur.keyUse[ki]).toFixed(1)}%</small></div><div class="chips">${chips}</div></div>`;
   }).join('') + (ri ? '<div></div>' : '') + '</div>').join('');
@@ -204,11 +206,11 @@ function renderPane() {
     const curRow = rows.find(r => r.kk === k[g]).m;
     const rk = pref.indexOf(M.K[k[g]]);
     P.innerHTML = `<h3>${esc(D.groups[g].roots.join(' '))}</h3>
-      <p>当前 <b>${M.K[k[g]].toUpperCase()}</b> · 2.5 在 ${M.K[M.B25[g]].toUpperCase()} · 算法喜好：${pref.slice(0, 5).map((x, i) => (x === M.K[k[g]] ? '<b>' : '') + (i + 1) + '.' + x.toUpperCase() + (x === M.K[k[g]] ? '</b>' : '')).join(' ')}${rk >= 5 ? `（当前键排第 ${rk + 1}）` : ''}</p>
+      <p>当前 <b>${M.K[k[g]].toUpperCase()}</b> · ${BR.基准} 在 ${M.K[M.B25[g]].toUpperCase()}${pref.length ? ' · 算法喜好：' : ''}${pref.slice(0, 5).map((x, i) => (x === M.K[k[g]] ? '<b>' : '') + (i + 1) + '.' + x.toUpperCase() + (x === M.K[k[g]] ? '</b>' : '')).join(' ')}${pref.length && rk >= 5 ? `（当前键排第 ${rk + 1}）` : ''}</p>
       <p>牵涉：重码 ${INV.dup[g] || 0} · 字词冲突 ${INV.clash[g] || 0} 条 · 前1521没拿到三简 ${INV.lose[g] || 0}</p>
       ${sanPanel(g)}
       <table><thead><tr><th>挪到</th><th>总分变化</th><th>门禁</th><th>6万冲突</th><th>三简</th><th>形码成本</th></tr></thead><tbody>`
-      + rows.map(({ kk, m }) => `<tr class="click${kk === k[g] ? ' cur' : ''}" data-move="${kk}"><td><b>${M.K[kk].toUpperCase()}</b>${kk === M.B25[g] ? ' <small>2.5</small>' : ''}</td>`
+      + rows.map(({ kk, m }) => `<tr class="click${kk === k[g] ? ' cur' : ''}" data-move="${kk}"><td><b>${M.K[kk].toUpperCase()}</b>${kk === M.B25[g] ? ` <small>${BR.基准}</small>` : ''}</td>`
         + `<td class="num">${kk === k[g] ? '当前' : (m.S - curRow.S >= 0 ? '+' : '') + (m.S - curRow.S).toFixed(2)}</td>`
         + `<td>${m.pen ? `<span class="gate fail">✗${m.pen}</span>` : '✓'}</td>`
         + `<td class="num">${m.撞码[3] - curRow.撞码[3] >= 0 ? '+' : ''}${m.撞码[3] - curRow.撞码[3]}</td>`
@@ -328,8 +330,8 @@ function runFix(n) {
 
 // 保存：优先云端（db），不可用时退回本浏览器
 let db = null, saved = [];
-function localSaved() { try { return JSON.parse(localStorage.getItem('tiaogen_saved') || '[]'); } catch (e) { return []; } }
-function setLocal(list) { saved = list; try { localStorage.setItem('tiaogen_saved', JSON.stringify(list)); } catch (e) { stat('浏览器存储不可用，请用“导出全部”另存文件'); } fillSelects(); if (tab === 'saved' && M) renderPane(); }
+function localSaved() { try { return JSON.parse(localStorage.getItem(BR.存储 + '_saved') || '[]'); } catch (e) { return []; } }
+function setLocal(list) { saved = list; try { localStorage.setItem(BR.存储 + '_saved', JSON.stringify(list)); } catch (e) { stat('浏览器存储不可用，请用“导出全部”另存文件'); } fillSelects(); if (tab === 'saved' && M) renderPane(); }
 // 合并导入的布局：同 id 的跳过；返回新增条数
 function mergeLocal(list) {
   const have = new Set(saved.map(s => s.id)), add = list.filter(s => s && s.id && s.name && s.layout && !have.has(s.id));
@@ -338,7 +340,7 @@ function mergeLocal(list) {
 }
 function seedLocal() {
   saved = localSaved();
-  let seeded = false; try { seeded = localStorage.getItem('tiaogen_seeded') === '1'; localStorage.setItem('tiaogen_seeded', '1'); } catch (e) { }
+  let seeded = false; try { seeded = localStorage.getItem(BR.存储 + '_seeded') === '1'; localStorage.setItem(BR.存储 + '_seeded', '1'); } catch (e) { }
   if (!seeded && window.TIAOGEN_SEED) mergeLocal(window.TIAOGEN_SEED);
 }
 (async () => {
@@ -383,7 +385,7 @@ function saveFile(filename, blob) {
 (async () => { try { if (!LOCAL) dls = await window.claude.use('downloads'); } catch (e) { dls = null; } if (dls || LOCAL) { $('#dl').hidden = false; $('#dl2').hidden = false; } })();
 async function downloadTable(codeFirst) {
   const base = $('#savename').value.trim() || labelFor(startName) + (hist.length ? '_调整版' : '');
-  const fname = ('夜莺_' + base + '_普通单字表' + (codeFirst ? '_码前' : '') + '.txt').replace(/[\\/:*?"<>|]/g, '_');
+  const fname = (BR.名称 + '_' + base + '_普通单字表' + (codeFirst ? '_码前' : '') + '.txt').replace(/[\\/:*?"<>|]/g, '_');
   $('#dl').disabled = true; $('#dl2').disabled = true;
   try {
     let txt = buildTable(D, M, k);
@@ -399,7 +401,7 @@ async function downloadTable(codeFirst) {
 }
 
 function exportSaved() {
-  const name = '夜莺调根台_布局_' + new Date().toISOString().slice(0, 10) + '.json';
+  const name = BR.名称 + '调根台_布局_' + new Date().toISOString().slice(0, 10) + '.json';
   saveFile(name, new Blob([JSON.stringify(saved, null, 1)], { type: 'application/json' })).then(() => stat('已导出：' + name), () => stat('导出失败'));
 }
 async function importSaved(file) {
@@ -416,7 +418,7 @@ function bind() {
     if (e.target.id === 'clashFrom' || e.target.id === 'clashTo') {
       const v = Math.max(0, parseInt(e.target.value, 10) || 0);
       if (e.target.id === 'clashFrom') clashFrom = v; else clashTo = v;
-      try { localStorage.setItem('tiaogen_clash', JSON.stringify({ from: clashFrom, to: clashTo })); } catch (er) { }
+      try { localStorage.setItem(BR.存储 + '_clash', JSON.stringify({ from: clashFrom, to: clashTo })); } catch (er) { }
       renderPane();
     }
   });

@@ -57,5 +57,6 @@ else:
 for r in range(8):
     if not sweep(None, f'全量第{r + 1}遍'):
         break
+SUF = '' if MD.FO.INP.name == 'n30' else '_' + MD.FO.INP.name   # 夜桜（zr31）另存，不覆盖夜莺
 out = {g: {'排名': prefs[g][0], '分': {k: round(float(prefs[g][1][k] - prefs[g][1][prefs[g][0][0]]), 2) for k in prefs[g][0]}} for g in G}
-json.dump({'layout': lay, 'prefs': out}, open(MD.ROOT / f'construct/prefs_{MODE}.json', 'w', encoding='utf-8'), ensure_ascii=False)
+json.dump({'layout': lay, 'prefs': out}, open(MD.ROOT / f'construct/prefs_{MODE}{SUF}.json', 'w', encoding='utf-8'), ensure_ascii=False)

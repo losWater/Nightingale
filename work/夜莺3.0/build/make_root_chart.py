@@ -18,7 +18,8 @@ def family_map():
         p = l.split('\t')
         if len(p) >= 3:
             fam[p[0]] = p[2]
-    fam.setdefault('睾字头', fam.get('皿'))      # 3.1 新增：睾字头归入皿所在的根族
+    fam.setdefault('睾字头', fam.get('皿'))
+    fam.setdefault('睿字头', fam.get('宀'))      # 3.2 新增：睿字头归入宝盖所在的根族      # 3.1 新增：睾字头归入皿所在的根族
     fam.setdefault('出', fam.get('山'))          # 3.1 新增：出归入山所在的根族
     fam.setdefault('夭', fam.get('天'))          # 3.0 新增：夭归入天所在的根族（大／小）
     fam.setdefault('父', fam.get('母'))          # 3.0 新增：父归入母所在的根族

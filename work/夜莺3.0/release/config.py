@@ -34,6 +34,11 @@ class _C:
         self.STORAGE = 'nightingale_memory_v1'                      # 练习进度的浏览器存储名
         self.TOOLBOX = '夜莺啾啾工具箱'
         self.MASCOT = None                                          # 工具箱 Q 版形象图；None＝沿用页面里的夜莺形象
+        self.SCHEME = 'xiaohe'                                      # 双拼方案；字词表的词码按 2.5 小鹤码换算成它
+        self.ID = 'nightingale'                                     # 方案标识（码表作者字段、文件名等；不带版本号）
+        self.RIME_CACHE = Path.home() / '.cache/yeying-rime'         # 魔虎上游包与 mohu-release.json（2026-11-21 起不再用夜莺仓库里 9 月的旧包；模型 zip 链接夜莺缓存）
+        self.INP = ROOT / 'build/out/n30'                           # 引擎输入（读音频率、元素）
+        self.BASIS = ROOT / 'data/inputs/字音基准.json'              # 字音基准（音码按本方案双拼）；官网性能统计用
         if os.environ.get('YZ_BRAND'):
             b = json.load(open(os.environ['YZ_BRAND'], encoding='utf-8'))
             base = Path(os.environ['YZ_BRAND']).resolve().parent
@@ -44,6 +49,12 @@ class _C:
             self.PRACTICE_BASE = path(b['练习对照']['布局'])
             self.STORAGE, self.TOOLBOX = b['练习存储'], b['工具箱名']
             self.MASCOT = path(b.get('形象'))
+            self.SCHEME, self.INP, self.ID = b['双拼'], path(b['引擎输入']), b['标识']
+            if b.get('字音基准'): self.BASIS = path(b['字音基准'])
+            if b.get('码表目录'): self.TABLES = path(b['码表目录'])
+            self.STAGE = Path.home() / f'.cache/{self.ID}-build'      # 搭台目录、魔虎缓存与夜莺分开
+            self.MAC_OUT = self.STAGE / f'{self.NAME}/产物/mac'
+            self.RIME_CACHE = Path.home() / f'.cache/{self.ID}-rime'
 
     def T(self, name):
         return self.TABLES / name

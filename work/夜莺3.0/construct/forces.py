@@ -13,7 +13,8 @@ import numpy as np
 import yaml
 ROOT = Path(__file__).resolve().parent.parent
 L = getattr(yaml, 'CSafeLoader', yaml.SafeLoader)
-INP = ROOT / 'build/out/n30'
+import os
+INP = ROOT / 'build/out' / os.environ.get('NB_INP', 'n30')   # 夜桜：NB_INP=zr31（自然码输入）
 E = yaml.load(open(INP / 'elements.yaml', encoding='utf-8'), Loader=L)
 META = json.load(open(INP / 'meta.json', encoding='utf-8'))
 G = sorted(META['groups']); GI = {g: i for i, g in enumerate(G)}; NG = len(G)
@@ -46,6 +47,11 @@ rank = {i: r for r, i in enumerate(sorted(range(N), key=lambda i: -fr[i]))}
 
 # 词（虎码词库 6 万：常用 4 万 + 新码位 2 万；排名用于 ①②③ 分档）
 WD = json.load(open(ROOT / 'data/inputs/虎码词库_字词避重6万词.json', encoding='utf-8'))
+SCHEME = json.load(open(INP / 'weights.json', encoding='utf-8')).get('scheme', 'xiaohe')
+if SCHEME != 'xiaohe':                                     # 词库码是小鹤，逐音节换成本方案（同 build/make_inputs.py）
+    sys.path.insert(0, str(ROOT / 'lib'))
+    from shuangpin import recode_word
+    WD = [dict(x, 码=recode_word(x['词'], x['码'], 'xiaohe', SCHEME)) for x in WD]
 words_by_syl = collections.defaultdict(list)
 for x in WD:
     words_by_syl[x['码'][:2]].append((KI[x['码'][2]], KI[x['码'][3]], x['排名']))

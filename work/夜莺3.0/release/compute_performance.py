@@ -26,7 +26,9 @@ for l in open(ROOT / 'data/inputs/当量表.tsv', encoding='utf-8'):
         k, v = l.rstrip('\n').split('\t')
         if len(k) == 2: eq[k] = float(v)
 pron = collections.defaultdict(list)
-for r in J(ROOT / 'data/inputs/字音基准.json'): pron[r['字']].append(r)
+sys.path.insert(0, str(ROOT / 'release'))
+from config import C                                      # 字音基准随方案（YZ_BRAND）换：音码要与码表同一双拼
+for r in J(C.BASIS): pron[r['字']].append(r)
 
 
 def calc(c, k):
@@ -42,7 +44,7 @@ ROW = {k: r for r, keys in enumerate(['qwertyuiop', 'asdfghjkl', 'zxcvbnm']) for
 chars = []
 for c, ks in codes.items():
     if c not in rank or not pron[c]: continue
-    main = max(pron[c], key=lambda r: r.get('自然频率', r['频率']))
+    main = max(pron[c], key=lambda r: r['自然频率'] if '自然频率' in r else r['频率'])
     av = [k for k in ks if k.startswith(main['音码']) or (len(k) == 1 and main['音码'].startswith(k)) or (c == '六' and k == 'lqq')] or ks
     chosen = min([calc(c, k) for k in av], key=lambda x: (x['键数'], x['候选位'], len(x['码']), x['码']))
     full = [k for k in av if len(k) == 4] or [k for k in ks if len(k) == 4]

@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PY = str(ROOT / '.venv/bin/python')
 RIME = Path.home() / 'Library/Rime'
-DL = Path.home() / 'Downloads'
+DL = Path(os.environ.get('YZ_DL') or Path.home() / 'Downloads')   # 下载目录（整句包所在、刷新表的去处）
 STATE = Path.home() / '.cache/yeying-local'
 sys.path.insert(0, str(ROOT / 'release'))
 from config import C
@@ -33,11 +33,11 @@ if not installed.exists():
         if r.returncode == 0: installed.write_bytes(r.stdout); break
 
 _p = json.load(open(PERSONAL, encoding='utf-8')) if PERSONAL.exists() else {}
-if any(_p.get(k) for k in ('一简', '二简', '三简', '自定义码', '钉选')):
+if any(_p.get(k) for k in ('一简', '二简', '三简', '先拆三简', '自定义码', '钉选')):
     # 个人版：正式手动调整 + 个人调整（后者在后、覆盖前者），在 runs/n30_v30/current 的引擎结果上重新出表，放到单独目录
     TABLES = STATE / 'tables'; TABLES.mkdir(exist_ok=True); PLAIN = TABLES / '普通单字表.txt'
     merged = json.load(open(ROOT / 'data/inputs/手动调整.json', encoding='utf-8'))
-    for k in ('一简', '二简', '三简', '自定义码'): merged[k] = merged.get(k, []) + _p.get(k, [])
+    for k in ('一简', '二简', '三简', '先拆三简', '自定义码'): merged[k] = merged.get(k, []) + _p.get(k, [])
     json.dump(merged, open(STATE / '手动调整_含个人.json', 'w', encoding='utf-8'), ensure_ascii=False)
     out = STATE / 'plain'; shutil.rmtree(out, ignore_errors=True)
     run(PY, ROOT / 'build/make_plain_table.py', ROOT / 'runs/n30_v30/current', out, 'xiaohe',
@@ -45,7 +45,7 @@ if any(_p.get(k) for k in ('一简', '二简', '三简', '自定义码', '钉选
     shutil.copy(next(out.glob('*.txt')), PLAIN)
     os.environ['YZ_TABLES'] = str(TABLES)                 # 之后的字词表、搭台都读个人版的表
     os.environ['YZ_PERSONAL'] = str(PERSONAL)             # 字词表叠加个人钉选
-    print('个人调整已叠加：', '；'.join(f'{k} ' + ' '.join(f'{c}{ch}' for c, ch, _ in _p.get(k, [])) for k in ('一简', '二简', '三简', '自定义码') if _p.get(k)))
+    print('个人调整已叠加：', '；'.join(f'{k} ' + ' '.join(f'{c}{ch}' for c, ch, _ in _p.get(k, [])) for k in ('一简', '二简', '三简', '先拆三简', '自定义码') if _p.get(k)))
 print('1/5 字词表'); run(PY, ROOT / 'release/make_ciku.py', **quiet)
 print('2/5 调频方案')
 run(PY, ROOT / 'rime/make_dict.py', installed, PLAIN, 'local-' + datetime.datetime.now().strftime('%Y%m%d%H%M'), **quiet)

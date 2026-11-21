@@ -10,7 +10,7 @@ import forces as FO
 import n30_rank as R
 
 ROOT = FO.ROOT; G = FO.G; KEYS = FO.KEYS; KI = FO.KI; N = FO.N
-Y = json.load(open(ROOT / 'build/out/n30/yozakura.json'))['shape']
+Y = json.load(open(FO.INP / 'yozakura.json'))['shape']
 TOP = np.zeros(N, bool); TOP[[i for i in Y['top'] if i < N]] = True
 REST = np.zeros(N, bool); REST[[i for i in Y['rest'] if i < N]] = True
 FOUR = np.zeros(N, bool); FOUR[[i for i in Y['four_idx'] if i < N]] = True
@@ -27,6 +27,8 @@ WC = {}
 for x in FO.WD:
     r = x['排名']; c = WC.setdefault(x['码'], [0, 0, 0]); c[0] += r <= 10000; c[1] += r <= 30000; c[2] += 1
 META = FO.META; B = META['layout']
+if os.environ.get('NB_BASE'):                       # 夜桜：换键根组对 NB46 计（NB_BASE=release/NB46_form.json）
+    B = {g: json.load(open(ROOT / os.environ['NB_BASE'], encoding='utf-8'))['mapping'][g] for g in G}
 GB = FO.GI[next(g for g in G if '鸟' in META['groups'][g])]; GC = FO.GI[next(g for g in G if '虫' in META['groups'][g])]
 SCORE = dict(R.SCORE); SCORE['字词冲突6万'] = (15, 631, 315); LOW = {'字词冲突6万': -1.5}
 CAL_PATH = ROOT / 'construct/model_cal.json'

@@ -112,15 +112,18 @@ def main(run_dir, out_dir, scheme='ziranma'):
             if n2 == 2:
                 two_short[:] = [t for t in two_short if not (t[3][:2] == code2 and t[2] in old)] + [(0, idx, ch, rows[idx][1])]
             print('手动一简' if n2 == 1 else '手动二简', code2, ch, '（原', ''.join(old) or '空', '）')
-        for code3, ch, _ in json.load(open(manual, encoding='utf-8'))['三简']:
-            assert any(c[:3] == code3 and len(c) == 4 and ch in [x for _, x in v] for c, v in slots.items()), (code3, ch)
+        # “先拆三简”（作者 2026-11-21）：同三简，但码不必是该字全码的前三码（如先拆走之的三码）
+        for kind, code3, ch in [('三简', *e[:2]) for e in _m['三简']] + [('先拆三简', *e[:2]) for e in _m.get('先拆三简', [])]:
+            if kind == '三简': assert any(c[:3] == code3 and len(c) == 4 and ch in [x for _, x in v] for c, v in slots.items()), (code3, ch)
             old = [x for _, x in slots.get(code3, [])]
             slots[code3] = [((0, 0, 0, -1), ch)]
             # 全码位的“有简让全”标记跟着改：得三简的字标为有简，失去的标为无简
             for c, v in slots.items():
                 if len(c) == 4 and c[:3] == code3:
                     slots[c] = [((k[0], 1 if x == ch else (0 if x in old else k[1]), k[2], k[3]), x) if k[0] == 0 else (k, x) for k, x in v]
-            print('手动三简', code3, ch, '（原', ''.join(old) or '空', '）')
+                elif kind == '先拆三简' and len(c) == 4 and c[:2] == code3[:2]:   # 该字（同读音）的全码不以此三码开头，单独标为有简
+                    slots[c] = [((k[0], 1, k[2], k[3]), x) if k[0] == 0 and x == ch else (k, x) for k, x in v]
+            print('手动' + kind, code3, ch, '（原', ''.join(old) or '空', '）')
         # 自定义码（作者 2026-10-15）：不按“音码＋首根”的码，如 吃 iio；该码上原有的字不动，排在它后面
         for code, ch, _ in json.load(open(manual, encoding='utf-8')).get('自定义码', []):
             slots[code] = [((-1, 0, 0, 0), ch)] + [e for e in slots.get(code, []) if e[1] != ch]
