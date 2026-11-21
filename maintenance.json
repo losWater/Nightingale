@@ -1,3 +1,4 @@
 {
-  "active": "夜莺2.5"
+  "active": "夜莺2.5",
+  "note": "2.x 维护周期目录。正式版 3.x 的码表真源不在 main：见分支 work/yeying30-nb46 的 work/夜莺3.0。"
 }

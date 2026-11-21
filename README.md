@@ -55,4 +55,8 @@ Rime 中输入 ~ 或反引号后接全拼/小鹤双拼查询拆分；F2 筛选�
 
 ## 维护
 
-3.x 的码表、拆分与发布工具在 [work/yeying30-nb46](https://github.com/losWater/Nightingale/tree/work/yeying30-nb46/work/夜莺3.0) 分支的 work/夜莺3.0 目录维护；发布流程见其中的 release/发布流程.md。[维护架构](MAINTENANCE.md) 与 [夜莺2.5](夜莺2.5/README.md) 目录保留供追溯。
+`main` 承载站点与发布页，以及 **2.x 周期**的维护链（`maintenance.json` → `夜莺2.5` → `rollover.py`）。
+
+**正式版 3.x 的码表不在这里。** 3.1 的码表、拆分、构建与发布都在 [work/yeying30-nb46](https://github.com/losWater/Nightingale/tree/work/yeying30-nb46/work/夜莺3.0) 分支的 `work/夜莺3.0` 目录维护：发布流程见其中的 [`release/发布流程.md`](https://github.com/losWater/Nightingale/blob/work/yeying30-nb46/work/夜莺3.0/release/发布流程.md)，入口见该分支根目录的 `AGENTS.md` 与 `MAINTENANCE.md`。要改正式版的字、码、词、简码，先切到该分支。
+
+`main` 上的 [维护架构](MAINTENANCE.md) 与 [夜莺2.5](夜莺2.5/README.md) 供 2.x 追溯与历史构建使用。
